@@ -13,15 +13,18 @@ class Paper:
         #blank
         self.title = "blah"
         
-        
-        
-if __name__ == "__main__":
 
-    url = 'http://export.arxiv.org/api/query?search_query=all:{0}&start=0&max_results=5'.format(sys.argv[1])
+
+
+def SearchPapers(input_str,max_results=5):
+    """ Function to search arxiv for papers and print them to the screen.  In the future, will
+    use this to collect data into a format we like."""
+
+    url = 'http://export.arxiv.org/api/query?search_query=all:{0}&start=0&max_results={1}'.format(input_str,max_results)
 
     data = urllib.urlopen(url).read()
 
-#remove namespaces
+    #remove namespaces
     data = re.sub(' xmlns="[^"]+"', '', data, count=1)
     
     root = ET.fromstring(data)
@@ -41,9 +44,11 @@ if __name__ == "__main__":
         print "  "
         print "Abstract:"
         print summary
-        print "  "
-            
-            
-            
-            
-            
+        print "  "   
+
+    return
+        
+        
+if __name__ == "__main__":
+
+    SearchPapers(sys.argv[1],1)
