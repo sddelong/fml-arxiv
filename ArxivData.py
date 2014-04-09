@@ -5,6 +5,7 @@ import urllib
 import re #for removing namespaces
 import sys
 from xml.etree import ElementTree as ET
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 class Paper:
@@ -16,9 +17,9 @@ class Paper:
                authors - list of strings, names of authors of the paper.
     """
 
-    def __init__(self,xml_entry):
+    def __init__(self,entry):
         #blank
-        self.title =entry.find('title').text
+        self.title = entry.find('title').text
         self.abstract = entry.find('summary').text
         
         self.authors = []
@@ -139,12 +140,36 @@ def GetDatedPapers(date,max_results = None):
 
     return paper_list
 
+
+def GetAbstracts(paper_list):
+    """ Given a list of papers, return a list containing the abstracts 
+
+    inputs: 
+         paper_list - list of papers
+    
+    return value:
+         abstract_list - list of strings, each string is the abstract of 
+                         the corresponding paper.
+         
+   """
+    abstract_list = []
+    for paper in paper_list:
+        abstract_list.append(paper.abstract)
+        
+    return abstract_list
             
 if __name__ == "__main__":
 
-    paper_list = SearchPapers(sys.argv[1],4)
+    paper_list = SearchPapers(sys.argv[1],20)
 
-    for paper in paper_list:
-        paper.Print()
-  
+#    for paper in paper_list:
+#        paper.Print()
+        
+    vectorizer = TfidfVectorizer()
+    abstracts = GetAbstracts(paper_list)
+
+#    print abstracts
+    abstract_vectors = vectorizer.fit_transform(abstracts)
+    print abstract_vectors.shape
+    print abstract_vectors.nnz/float(abstract_vectors.shape[0])
                           
