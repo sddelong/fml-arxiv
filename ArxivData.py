@@ -26,13 +26,38 @@ class Paper:
         for author in authors:
             name = author.find('name').text
             self.authors.append(name)
-        
-        
 
+        self.published = entry.find('published').text
 
+    def Print(self):
+        print "--------------------------"
+        print "Title:", self.title
+        print "  "
+        print "Authors:"
+        for author in self.authors:
+            print author
+        print "  "
+        print "Published: ", self.published
+        print "Abstract:"
+        print self.abstract
+        print "  "   
+
+        return
+        
 def SearchPapers(input_str,max_results=5):
-    """ Function to search arxiv for papers and print them to the screen.  In the future, will
-    use something like this to collect data into a format we like."""
+    """ Function to search arxiv for papers and return a list of paper objects
+     a format we like.
+
+     inputs:
+           input_str - string to search arxiv for
+           max_results - maximum number of papers to return, default 5
+
+     return value:
+           paper_list - list of paper objects containing the returned data.
+
+     """
+
+    paper_list = []
 
     url = 'http://export.arxiv.org/api/query?search_query=all:{0}&start=0&max_results={1}'.format(input_str,max_results)
 
@@ -44,24 +69,39 @@ def SearchPapers(input_str,max_results=5):
     root = ET.fromstring(data)
     
     for entry in root.findall('entry'):
-        print "--------------------------"
+        paper_list.append(Paper(entry))
+    
+    return paper_list
+
+
+def PrintEntry(entry):
+    """ Given an entry from an xml tree, print information about the paper
+
+    inputs:
+          entry - xml tree entry from arxiv
+    return:
+          <No Return Value>
+          
+    """
+
+    print "--------------------------"
         
-        summary = entry.find('summary').text
-        title = entry.find('title').text
-        print "Title:", title
-        print "  "
-        print "Authors:"
-        authors = entry.findall('author')
-        for author in authors:
-            name = author.find('name').text
-            print name
-        print "  "
-        print "Abstract:"
-        print summary
-        print "  "   
+    summary = entry.find('summary').text
+    title = entry.find('title').text
+    print "Title:", title
+    print "  "
+    print "Authors:"
+    authors = entry.findall('author')
+    for author in authors:
+        name = author.find('name').text
+        print name
+    print "Published: ", entry.find('published').text                      
+    print "  "
+    print "Abstract:"
+    print summary
+    print "  "   
 
     return
-
 
 def GetDatedPapers(date,max_results = None):
     """ 
@@ -87,12 +127,24 @@ def GetDatedPapers(date,max_results = None):
 
     #extract info here.
 
+    data = urllib.urlopen(url).read()
+
+    #remove namespaces
+    data = re.sub(' xmlns="[^"]+"', '', data, count=1)
+    
+    root = ET.fromstring(data)
+
+    for entry in root.findall('entry'):
+        paper_list.append(Paper(entry))
+
     return paper_list
 
-    
-
-
-        
+            
 if __name__ == "__main__":
 
-    SearchPapers(sys.argv[1],4)
+    paper_list = SearchPapers(sys.argv[1],4)
+
+    for paper in paper_list:
+        paper.Print()
+  
+                          
