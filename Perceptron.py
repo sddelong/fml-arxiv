@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def sign(x):
     """ compute sign of x, with convention that 0 is positive """
     if x >= 0:
@@ -40,7 +41,6 @@ class PerceptronClassifier:
             self.weights = self.weights + self.eta*y*x
         else:
             self.n_correct += 1
-            
         
         return
         
@@ -49,6 +49,7 @@ class PerceptronClassifier:
         """ predict y by using sign of a dot product of x with weights """
         
         return sign(np.dot(self.weights,x))
+
 
     def ReportAccuracy(self):
         

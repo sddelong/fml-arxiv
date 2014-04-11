@@ -34,8 +34,10 @@ if __name__ == "__main__":
 
     # grab a bunch of physics papers
     paper_list = SearchPapers(sys.argv[2],n_negative)
-    vectorizer = TfidfVectorizer(stop_words='english')
     abstracts.extend(GetAbstracts(paper_list))
+
+    #create vectorizer
+    vectorizer = TfidfVectorizer(stop_words='english')
 
     #permute abstracts in order of indices, then make a vector of 
     # word features
@@ -58,19 +60,31 @@ if __name__ == "__main__":
         x = np.array(x)
                      
         y_hat = perceptron_classifier.Predict(x)
+        y = target_vector[k]
         print "-"*80
         if y_hat == 1:
             print "  "
             print "Perceptron indicates that this article is about {0}".format(sys.argv[1])
             print "  "
+            if y == 1:
+                print "This prediction is correct."
+                print "  "
+            else:
+                print "This prediction is NOT correct."
+                print "  "                
         else:
             print "  "
             print "Perceptron indicates that this article is about {0}".format(sys.argv[2])
             print "  "
+            if y == -1:
+                print "This prediction is correct."
+                print "  "
+            else:
+                print "This prediction is NOT correct."
+                print "  "                
             
         print abstracts[k]
         print "-"*80
-        y = target_vector[k]
         perceptron_classifier.Update(x,y_hat,y)
     
     print "Accuracy of Perceptron is ", perceptron_classifier.ReportAccuracy()

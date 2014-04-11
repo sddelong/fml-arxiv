@@ -7,7 +7,6 @@ import sys
 from xml.etree import ElementTree as ET
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-
 class Paper:
     """ Class to hold paper information.
 
@@ -15,6 +14,7 @@ class Paper:
                title - string, title of the paper
                abstract - string, abstract of the paper
                authors - list of strings, names of authors of the paper.
+               published - string, date and time the paper was published.
     """
 
     def __init__(self,entry):
@@ -158,6 +158,7 @@ def GetAbstracts(paper_list):
         
     return abstract_list
             
+
 if __name__ == "__main__":
 
     paper_list = SearchPapers(sys.argv[1],20)
