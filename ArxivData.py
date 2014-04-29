@@ -166,6 +166,7 @@ def GetTodaysPapers():
     id_list = []
     paper_list = []
     
+    #TODO, loop through subjects
     url = "http://export.arxiv.org/rss/math"
 
 

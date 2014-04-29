@@ -7,12 +7,14 @@ python TrainArxivBatch <string1> <string2>
 
 """
 
-from ArxivData import GetDatedPapers
+#from ArxivData import GetDatedPapers
 from ArxivData import SearchPapers
 from ArxivData import GetAbstracts
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from Perceptron import PerceptronClassifier
+from Perceptron import KernelPerceptronClassifier
+from Perceptron import DotKernel
 import numpy as np
 import sys
 
@@ -21,8 +23,8 @@ if __name__ == "__main__":
 
 
     #parameters
-    n_negative = 80
-    n_positive = 80
+    n_negative = 10
+    n_positive = 10
     
     #random permutation of indices, so 
     # the algorithm doesn't see data all positive then all negative
@@ -51,7 +53,7 @@ if __name__ == "__main__":
     
     #create perceptron classifier
     perceptron_classifier = PerceptronClassifier(abstract_vectors.shape[1],0.3)
-    
+
     for k in range(abstract_vectors.shape[0]):
         x = []
         for j in range(abstract_vectors.shape[1]):
@@ -88,6 +90,48 @@ if __name__ == "__main__":
         perceptron_classifier.Update(x,y_hat,y)
     
     print "Accuracy of Perceptron is ", perceptron_classifier.ReportAccuracy()
+
+
+    #create perceptron classifier
+    kernel_classifier = KernelPerceptronClassifier(abstract_vectors.shape[1],0.3,DotKernel)
+
+    for k in range(abstract_vectors.shape[0]):
+        x = []
+        for j in range(abstract_vectors.shape[1]):
+            x.append(abstract_vectors[(k,j)])
+
+        x = np.array(x)
+                     
+        y_hat = kernel_classifier.Predict(x)
+        y = target_vector[k]
+        print "-"*80
+        if y_hat == 1:
+            print "  "
+            print "Kernel Perceptron indicates that this article is about {0}".format(sys.argv[1])
+            print "  "
+            if y == 1:
+                print "This prediction is correct."
+                print "  "
+            else:
+                print "This prediction is NOT correct."
+                print "  "                
+        else:
+            print "  "
+            print "Kernel Perceptron indicates that this article is about {0}".format(sys.argv[2])
+            print "  "
+            if y == -1:
+                print "This prediction is correct."
+                print "  "
+            else:
+                print "This prediction is NOT correct."
+                print "  "                
+            
+        print abstracts[k]
+        print "-"*80
+        kernel_classifier.Update(x,y_hat,y)
+    
+    print "Accuracy of Kernel Perceptron is ", kernel_classifier.ReportAccuracy()
+
 
         
     
