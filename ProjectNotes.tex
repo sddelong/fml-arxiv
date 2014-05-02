@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\newcommand{\V}[1]{\boldsymbol{#1}}
+\newcommand{\E}[0]{\mathbb{E}}
+\title{Machine Learning Project Notes}
+
+\author{Joseph McDonald and Steven Delong}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{Perceptron with Positive Corrections.}
+
+We would like to modify the perceptron algorithm to only make updates when $\hat{y} = 1$ in order for the user to not have to see every article, but this will leave the number of mistakes made with $\hat{y} = 0$ unbounded.  as a compromise, let us generate iid variables $k_i$ for each observation which are equal to 1 with probability $p$ and equal to $0$ with probability $1-p$.  If $\hat{y} = 0$ and $k=1$, the algorithm will ask for the correct label and make an update, otherwise if $\hat{y} = 0$ and $k=1$, the algorithm does not ask for the correct label, and makes no update.  It seems that in this way, we should still be able to bound the number of mistakes, perhaps in expectation or probabilistically.\\
+
+Let us let $I_1$ be the set of $t$ where a mistake was made and,
+$\hat{y}=1$.  Let $I_2$ be the set where a mistake was made and
+$\hat{y} = 0, k = 1$, and let $I_3$ be the set where a mistake was
+made, $\hat{y} = 0$ and $k = 0$. Finally, let $M_i = |I_i|$ for $i =
+1,2,3$. We then can bound $M_1 + M_2$ in the same way that we bound
+$M$ in the usual perceptron case.  We assume that there exits a $\rho$
+and $R$ satisfying the assumptions of theorem 7.8. Let $M' = M_1 + M_2$, then
+\begin{align*}
+M' =& \frac{\V{v}}{\|\V{v}\|}\sum_{I_1 \cup I_2}
+y_t\V{x}_t \\
+ \leq & \  \|\sum_{t \in I_1 \cup I_2} y_t \V{x}_t \|\\
+= & \ \|\sum_{t \in I_1 \cup I_2} \V{w}_{t+1} - \V{w}_t) \| \\
+= & \ \|\V{w}_{T+1} \| \\
+= & \sqrt{\sum_{t \in I_1 \cup I_2} \|  \V{w}_{t+1}\|^2 -
+  \|\V{w}_t\|^2 }\\
+= & \sqrt{\sum_{t \in I_1 \cup I_2} \|  \V{w}_{t} + y_t\V{x}_t\|^2 -
+  \|\V{w}_t\|^2 }\\
+= & \sqrt{\sum_{t \in I_1 \cup I_2} 2y_t\V{w}_t\cdot \V{x}_t -
+  \|\V{x}_t\|^2} \\
+\leq & \sqrt{\sum_{t \in I_1 \cup I_2} \|\V{x}_t\|^2} \leq
+\sqrt{M'r^2} \\
+\Rightarrow M' \leq &\frac{r^2}{\rho^2} \\
+\end{align}
+We then have that $M = M' + M_3$, so we would like a bound on $M_3$.
+Here we revert to a weaker bound, considering the expectation of
+$M_3$.  
+\begin{align*}
+M_3 = & \sum_{I_2} 1_{k = 0} \\
+\E[M_3] = & \sum_{I_2} \E[1_{k = 0}] = (1 - p) (M_3 + M_2) \\
+M_2 = & \sum_{I_2} 1_{k = 1} \\
+\E[M_2] = & p (M_3 + M_2) \\
+\Rightarrow E[M_3] = & \frac{1-p}{p}\E[M_2]\\
+\end{align}
+We may then apply the crude bound $\E[M_3] \leq & \frac{1-p}{p}
+M'$, since $M_2 \leq M'$. We then bound the expected number of mistakes with
+\begin{align*}
+\E[M]  =  & \E[M'] + \E[M_3] \\
+\leq & \frac{r^2}{\rho^2} + \frac{1-p}{p}\frac{r^2}{\rho^2} \\
+\leq = \frac{1}{p}\frac{r^2}{\rho^2} \\
+\end{align}
+Note that this is a weak bound.  Not only is it greater than the
+original perceptron bound by a factor of $1/p$, it is also only a
+bound in expectation.
+
+\end{document}
