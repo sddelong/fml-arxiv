@@ -1,5 +1,5 @@
 \documentclass{article}
-
+\usepackage{amssymb}
 \usepackage{amsmath}
 \newcommand{\V}[1]{\boldsymbol{#1}}
 \newcommand{\E}[0]{\mathbb{E}}
@@ -38,7 +38,7 @@ y_t\V{x}_t \\
 \leq & \sqrt{\sum_{t \in I_1 \cup I_2} \|\V{x}_t\|^2} \leq
 \sqrt{M'r^2} \\
 \Rightarrow M' \leq &\frac{r^2}{\rho^2} \\
-\end{align}
+\end{align*}
 We then have that $M = M' + M_3$, so we would like a bound on $M_3$.
 Here we revert to a weaker bound, considering the expectation of
 $M_3$.  
@@ -47,15 +47,15 @@ M_3 = & \sum_{I_2} 1_{k = 0} \\
 \E[M_3] = & \sum_{I_2} \E[1_{k = 0}] = (1 - p) (M_3 + M_2) \\
 M_2 = & \sum_{I_2} 1_{k = 1} \\
 \E[M_2] = & p (M_3 + M_2) \\
-\Rightarrow E[M_3] = & \frac{1-p}{p}\E[M_2]\\
-\end{align}
-We may then apply the crude bound $\E[M_3] \leq & \frac{1-p}{p}
+\Rightarrow E[M_3] = & \frac{1-p}{p}\E[M_2]
+\end{align*}
+We may then apply the crude bound $\E[M_3] \leq  \frac{1-p}{p}
 M'$, since $M_2 \leq M'$. We then bound the expected number of mistakes with
 \begin{align*}
 \E[M]  =  & \E[M'] + \E[M_3] \\
 \leq & \frac{r^2}{\rho^2} + \frac{1-p}{p}\frac{r^2}{\rho^2} \\
 \leq = \frac{1}{p}\frac{r^2}{\rho^2} \\
-\end{align}
+\end{align*}
 Note that this is a weak bound.  Not only is it greater than the
 original perceptron bound by a factor of $1/p$, it is also only a
 bound in expectation.
