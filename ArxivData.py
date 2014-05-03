@@ -7,6 +7,7 @@ import sys
 from xml.etree import ElementTree as ET
 from sklearn.feature_extraction.text import TfidfVectorizer
 import time
+from datetime import date
 
 class Paper:
     """ Class to hold paper information.
@@ -146,7 +147,7 @@ def IDFromLink(link):
     return paper_id
     
 
-def GetTodaysPapers():
+def GetTodaysPapers(subject=''):
     """ 
     GetTodaysPapers()
     
@@ -158,17 +159,31 @@ def GetTodaysPapers():
     return value:
            This function returns a list of Paper objects, populated from the papers on Arxiv
     """
+    
 
-    #list of all subjects to grab papers from
-    subject_list = ["cs","math","physics","cond-mat","math-ph","stat"]
+    #list of all subjects to grab papers from, check if optional argument set is in list
+    subject_list = ['physics:astro-ph','physics:cond-mat','physics:gr-qc',
+        'physics:hep-ex','physics:hep-lat','physics:hep-ph','physics:hep-th',
+        'physics:math-ph','physics:nlin','physics:nucl-ex','physics:nucl-th',
+        'physics','physics:quant-ph','math','cs','q-bio','q-fin','stat']
+    if subject in subject_list:
+        subject_string = '&set='+subject
+    elif subject:
+    #RAISE ERROR since subject doesn't match a set name TODO
+        return
+    else:
+        subject_string = ''
+
+    # get today's date as a string 'YYYY-MM-DD'
+    today = str(date.today())
 
     #initialize paper list
     id_list = []
     paper_list = []
     
-    #TODO, loop through subjects
-    url = "http://export.arxiv.org/rss/math"
-
+    #set the URL using OAI-PMH standard,  TODO, loop through subjects
+    url = 'http://export.arxiv.org/oai2?verb=ListRecords&from='+today+subject_string+'&metadataPrefix=oai_dc'
+    #url = "http://export.arxiv.org/rss/math"
 
     #extract info here.
     data = urllib.urlopen(url).read()
