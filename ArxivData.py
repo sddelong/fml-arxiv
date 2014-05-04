@@ -94,6 +94,7 @@ def SearchPapers(input_str,max_results=5):
 
     #remove namespaces
     data = re.sub(' xmlns="[^"]+"', '', data, count=1)
+    data = re.sub(' xmlns:="[^"]+"', '', data, count=1)
     
     root = ET.fromstring(data)
     
@@ -151,7 +152,7 @@ def GetTodaysPapers(subject=''):
     """ 
     GetTodaysPapers()
     
-    Function to get all arxiv papers published on the current day.
+    Function to get all arxiv papers published on the current day, using RSS feed
     
     inputs:
             <none>
@@ -166,6 +167,7 @@ def GetTodaysPapers(subject=''):
         'physics:hep-ex','physics:hep-lat','physics:hep-ph','physics:hep-th',
         'physics:math-ph','physics:nlin','physics:nucl-ex','physics:nucl-th',
         'physics','physics:quant-ph','math','cs','q-bio','q-fin','stat']
+
     if subject in subject_list:
         subject_string = '&set='+subject
     elif subject:
@@ -174,29 +176,24 @@ def GetTodaysPapers(subject=''):
     else:
         subject_string = ''
 
-    # get today's date as a string 'YYYY-MM-DD'
-    today = str(date.today())
-
-    #initialize paper list
-    id_list = []
-    paper_list = []
-    
-    #set the URL using OAI-PMH standard,  TODO, loop through subjects
-    url = 'http://export.arxiv.org/oai2?verb=ListRecords&from='+today+subject_string+'&metadataPrefix=oai_dc'
-    #url = "http://export.arxiv.org/rss/math"
+    #set the URL using API, loop through subjects TODO
+    url = "http://export.arxiv.org/rss/math"
 
     #extract info here.
     data = urllib.urlopen(url).read()
     
     #remove namespaces
-    data = re.sub(' xmlns="[^"]+"', '', data, count=1)
-    
+    data = re.sub(' xmlns="[^"]+"', '', data, count=1)    
     root = ET.fromstring(data)
+
+    #initialize paper list
+    id_list = []
+    paper_list = []    
 
     for item in root.findall('item'):
         id_list.append(IDFromLink(item.find('link').text))
 
-    
+
     query_str = "id:" + str(id_list[0])
     for k in range(1,len(id_list)):
         query_str = query_str + "+OR+id:" + str(id_list[k])
@@ -215,12 +212,91 @@ def GetTodaysPapers(subject=''):
     for entry in root.findall('entry'):
         this_paper = Paper(entry,"query")
         print "this paper published", this_paper.published
-        print "todays date", time.strftime("%Y-%m-%d")
+        print "today's date", str(date.today()) #time.strftime("%Y-%m-%d")
         #check that the paper was published today, not just updated.
         if this_paper.published[0:10] == time.strftime("%Y-%m-%d"):
             paper_list.append(this_paper)
             
     return paper_list
+
+
+def GetPapersOAI(day='', subject=''):
+    """ 
+    GetPapersOAI()
+    
+    Function to get all arxiv papers updated on the specific day within subject using OAI-PMH protocol,
+        for harvesting large batches of papers.
+    
+    inputs:
+            day (optional), subject (optional)
+
+    return value:
+            This function returns a list of Paper objects, populated from Arxiv papers updated on given
+            day within given subject set
+    """
+    
+
+    #list of all subjects to grab papers from, check if optional argument set is in list
+    subject_list = ['physics:astro-ph','physics:cond-mat','physics:gr-qc',
+        'physics:hep-ex','physics:hep-lat','physics:hep-ph','physics:hep-th',
+        'physics:math-ph','physics:nlin','physics:nucl-ex','physics:nucl-th',
+        'physics','physics:quant-ph','math','cs','q-bio','q-fin','stat']
+    if subject in subject_list:
+        subject_string = '&set='+subject
+    elif subject:
+    #RAISE ERROR since subject doesn't match a set name TODO
+        return
+    else:
+        subject_string = ''
+
+    # if day not specified, get today's date as a string 'YYYY-MM-DD'
+    if not day:
+        day = str(date.today())
+
+    #set the URL using OAI-PMH standard, choosing from today's records with chosen subject, loop through subjects TODO
+    url = 'http://export.arxiv.org/oai2?verb=ListRecords&from='+day+subject_string+'&metadataPrefix=oai_dc'
+
+    #extract info here.
+    data = urllib.urlopen(url).read()
+    
+    #remove namespaces
+    data = data.replace(' xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"','')
+    root = ET.fromstring(data)
+
+    #initialize paper list
+    id_list = []
+    paper_list = []    
+
+    for item in root.findall('item'):
+        id_list.append(IDFromLink(item.find('link').text))
+
+
+    query_str = "id:" + str(id_list[0])
+    for k in range(1,len(id_list)):
+        query_str = query_str + "+OR+id:" + str(id_list[k])
+    
+    #now get URL for all papers we want TODO: don't hardcode length, make this work
+    url = 'http://export.arxiv.org/api/query?search_query={0}&max_results=300'.format(query_str)
+    
+    #get xml data
+    data = urllib.urlopen(url).read()
+    #remove namespace
+    data = re.sub(' xmlns="[^"]+"', '', data, count=1)
+    # get root
+    root = ET.fromstring(data)
+    
+    #create list of papers
+    for entry in root.findall('entry'):
+        this_paper = Paper(entry,"query")
+        print "this paper published", this_paper.published
+        print "today's date", time.strftime("%Y-%m-%d")
+        #check that the paper was published today, not just updated.
+        if this_paper.published[0:10] == time.strftime("%Y-%m-%d"):
+            paper_list.append(this_paper)
+            
+    return paper_list
+
 
 
 def GetAbstracts(paper_list):
