@@ -1,5 +1,5 @@
 import numpy as np
-
+from ArxivData import TextFeatureVector
 
 def sign(x):
     """ compute sign of x, with convention that 0 is positive """
@@ -13,16 +13,14 @@ def sign(x):
 class PerceptronClassifier:
     """ Simple perceptron algorithm for online learning. """
     
-    def __init__(self,n,eta):
+    def __init__(self,eta):
         """ Constructor for Perceptron. 
 
            Arguments:
                    eta - learning rate
-                   n - length of input data. (We may want to do this differently
-                            to be specific to bags of words)
         """
         self.eta = eta
-        self.weights = np.zeros(n)
+        self.weights = dict()
         self.n_correct = 0
         self.n_wrong = 0
         
@@ -30,7 +28,8 @@ class PerceptronClassifier:
         """ given that the Perceptron has guessed y_hat for data x, update it 
         using the correct value y.
 
-        Note: must be used after every prediction to obtain a correct accuracy estimate
+        Note: must be used after prediction to obtain a correct accuracy estimate, 
+        We will only update on some of the predictions where y_hat = -1 (undesireable paper).
         """
         if y_hat != y:
             #update

@@ -56,11 +56,11 @@ class TextFeatureVector:
 
     def __str__(self):
         
-        string_rep = ""
+        string_rep = "{ "
         for word in iter(self.words):
-            string_rep += word + ": " + str(float(self.words[word])/float(self.total_words)) + "\n"
+            string_rep += word + ": " + str(float(self.words[word])/float(self.total_words)) + ", "
         
-        return string_rep
+        return string_rep + "}"
 
     __repr__ = __str__
 
@@ -323,7 +323,7 @@ if __name__ == "__main__":
     abstracts = GetAbstracts(paper_list)
 
     feature_vector = FeaturizeAbstract(abstracts[0])
-    
+    print feature_vector
 
 #    print abstracts
 #    abstract_vectors = vectorizer.fit_transform(abstracts)
