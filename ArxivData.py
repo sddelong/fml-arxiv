@@ -268,26 +268,26 @@ def GetPapersOAI(day='', subject=''):
     id_list = []
     paper_list = []    
 
-    for item in root.findall('item'):
-        id_list.append(IDFromLink(item.find('link').text))
-
-
-    query_str = "id:" + str(id_list[0])
-    for k in range(1,len(id_list)):
-        query_str = query_str + "+OR+id:" + str(id_list[k])
-    
-    #now get URL for all papers we want TODO: don't hardcode length, make this work
-    url = 'http://export.arxiv.org/api/query?search_query={0}&max_results=300'.format(query_str)
-    
-    #get xml data
-    data = urllib.urlopen(url).read()
-    #remove namespace
-    data = re.sub(' xmlns="[^"]+"', '', data, count=1)
-    # get root
-    root = ET.fromstring(data)
+#    for item in root.findall('record'):
+#        id_list.append(item.find('identifier').text)
+#
+#
+#    query_str = "id:" + str(id_list[0])
+#    for k in range(1,len(id_list)):
+#        query_str = query_str + "+OR+id:" + str(id_list[k])
+#    
+#    #now get URL for all papers we want TODO: don't hardcode length, make this work
+#    url = 'http://export.arxiv.org/api/query?search_query={0}&max_results=300'.format(query_str)
+#    
+#    #get xml data
+#    data = urllib.urlopen(url).read()
+#    #remove namespace
+#    data = re.sub(' xmlns="[^"]+"', '', data, count=1)
+#    # get root
+#    root = ET.fromstring(data)
     
     #create list of papers
-    for entry in root.findall('entry'):
+    for entry in root.findall('record'):
         this_paper = Paper(entry,"query")
         print "this paper published", this_paper.published
         print "today's date", time.strftime("%Y-%m-%d")
