@@ -29,7 +29,15 @@ class TextFeatureVector:
             
         return
 
-    def _mul_(self,other):
+    def GetWord(self,word):
+        """ return value for a given word"""
+        if word in iter(self.words):
+            return float(self.words[word])/float(self.total_words)
+        else:
+            return 0.0
+        
+        
+    def __mul__(self,other):
         """ dot product of two feature vectors """
 
         value = 0
@@ -41,7 +49,7 @@ class TextFeatureVector:
         
         return value
 
-    def dot(self,weights):
+    def Dot(self,weights):
         """ dot product with vector of weights, similar to _mul_ above, but 
         weights won't have a total_words, it will be just numeric."""
 
@@ -53,6 +61,18 @@ class TextFeatureVector:
         value = float(value)/float(self.total_words)
 
         return value
+
+    def UpdateWeights(self,weights,y,eta):
+        """ update weights according to the rule weigts = weights + eta*x*y """
+        
+        for word in iter(self.words):
+            if word in weights:
+                weights[word] = weights[word] + eta*y*self.words[word]/self.total_words
+            else:
+                weights[word] = eta*y*self.words[word]/self.total_words
+                
+        return weights
+
 
     def __str__(self):
         
@@ -286,47 +306,57 @@ def GetAbstracts(paper_list):
     return abstract_list
 
 
-def FeaturizeAbstract(abstract):
-    """ Given a string of the abstract, return a TextFeatureVector object: a vector of frequency of the word. 
+def FeaturizeAbstracts(abstracts):
+    """ Given a list of abstracts, each a string, return a TextFeatureVector object: a vector of frequency of the word. 
         Excludes stop words.
     
     inputs:
-        abstract - string of abstract text for the paper
+        abstracts - list of strings of abstract text for the papers
         
     outputs:
-        abstract_vector  -  feature vector stored as a dictionary of normalized word frequency 
-                            (portion of words in the document equal to the given word).
+        abstract_vectors  -  list of TextFeatureVectors, one for each abstract.
 
     """
     stop_words = ["is","it","that","the","a","an","of","in","this","and"]
 
+    feature_list = []
     #initialize feature vector
-    text_features = TextFeatureVector()
+    for abstract in abstracts:
+        text_features = TextFeatureVector()
+    
+        bag_of_words = re.findall(r"[\w']+",abstract)
+        for word in bag_of_words:
+            word = word.lower()
+            if word not in stop_words:
+                text_features.AddWord(word)
 
-    bag_of_words = re.findall(r"[\w']+",abstract)
-    for word in bag_of_words:
-        word = word.lower()
-        if word not in stop_words:
-            text_features.AddWord(word)
-            
-    return text_features
+        feature_list.append(text_features)
+
+    return feature_list
             
 if __name__ == "__main__":
 
-    paper_list = SearchPapers(sys.argv[1],2)
-#    paper_list = GetTodaysPapers()
 
-#    for paper in paper_list:
-#        paper.Print()
-        
-#    vectorizer = TfidfVectorizer()
-    abstracts = GetAbstracts(paper_list)
 
-    feature_vector = FeaturizeAbstract(abstracts[0])
-    print feature_vector
+    #test Feature Vector stuff
+    feature_vector = FeaturizeAbstracts(["This is a physics abstract.  Physics is presumably the topic."])
 
-#    print abstracts
-#    abstract_vectors = vectorizer.fit_transform(abstracts)
-#    print abstract_vectors.shape
-#    print abstract_vectors.nnz/float(abstract_vectors.shape[0])
+    #de-reference to get first (and only) feature vector
+    feature_vector = feature_vector[0]    
+
+    #stop words, this is a stop word
+    assert 'this' not in feature_vector.words, "this shouldn't appear in feature vector, it is a stop word."
+    
+    assert feature_vector.GetWord('physics') == 2./5. , "physics should be 2/5 of the relevant words in this example."
+    assert feature_vector.GetWord('presumably') == 1./5., "presumably should be 2/5 of the relevant words in this example."
+
+    #test fetching and printing some machine learning abstracts. 
+    # this is a "soft" test, no assertions.
+
+    paper_list = SearchPapers("Machine Learning.")
+    abstract_list = GetAbstracts(paper_list)
+    
+    print abstract_list
+
+    
                           

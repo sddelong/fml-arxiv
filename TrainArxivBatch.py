@@ -10,6 +10,7 @@ python TrainArxivBatch <string1> <string2>
 #from ArxivData import GetDatedPapers
 from ArxivData import SearchPapers
 from ArxivData import GetAbstracts
+from ArxivData import FeaturizeAbstracts
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from Perceptron import PerceptronClassifier
@@ -23,8 +24,8 @@ if __name__ == "__main__":
 
 
     #parameters
-    n_negative = 2
-    n_positive = 2
+    n_negative = 80
+    n_positive = 80
     
     #random permutation of indices, so 
     # the algorithm doesn't see data all positive then all negative
@@ -39,98 +40,91 @@ if __name__ == "__main__":
     abstracts.extend(GetAbstracts(paper_list))
 
     #create vectorizer
-    vectorizer = TfidfVectorizer(stop_words='english')
 
     #permute abstracts in order of indices, then make a vector of 
     # word features
     abstracts = np.array(abstracts)[idxs]
     abstracts = list(abstracts)
-    abstract_vectors = vectorizer.fit_transform(abstracts)
 
-    print abstract_vectors
-    print abstracts
+    abstract_vectors = FeaturizeAbstracts(abstracts)
 
     #create target data and permute
     target_vector = np.concatenate((np.ones(n_positive),-1.*np.ones(n_negative)))
     target_vector = target_vector[idxs]
     
     #create perceptron classifier
-    perceptron_classifier = PerceptronClassifier(abstract_vectors.shape[1],0.3)
+    perceptron_classifier = PerceptronClassifier(0.3)
 
-    for k in range(abstract_vectors.shape[0]):
-        x = []
-        for j in range(abstract_vectors.shape[1]):
-            x.append(abstract_vectors[(k,j)])
-
-        x = np.array(x)
+    for k in range(n_positive + n_negative):
                      
+        x = abstract_vectors[k]
         y_hat = perceptron_classifier.Predict(x)
         y = target_vector[k]
-        print "-"*80
-        if y_hat == 1:
-            print "  "
-            print "Perceptron indicates that this article is about {0}".format(sys.argv[1])
-            print "  "
-            if y == 1:
-                print "This prediction is correct."
+        if k < 20: #only print out first 20 guesses
+            print "-"*80
+            if y_hat == 1:
                 print "  "
-            else:
-                print "This prediction is NOT correct."
-                print "  "                
-        else:
-            print "  "
-            print "Perceptron indicates that this article is about {0}".format(sys.argv[2])
-            print "  "
-            if y == -1:
-                print "This prediction is correct."
+                print "Kernel Perceptron indicates that this article is about {0}".format(sys.argv[1])
                 print "  "
+                if y == 1:
+                    print "This prediction is correct."
+                    print "  "
+                else:
+                    print "This prediction is NOT correct."
+                    print "  "                
             else:
-                print "This prediction is NOT correct."
-                print "  "                
+                print "  "
+                print "Kernel Perceptron indicates that this article is about {0}".format(sys.argv[2])
+                print "  "
+                if y == -1:
+                    print "This prediction is correct."
+                    print "  "
+                else:
+                    print "This prediction is NOT correct."
+                    print "  "                
             
-        print abstracts[k]
-        print "-"*80
+            print abstracts[k]
+            print "-"*80
         perceptron_classifier.Update(x,y_hat,y)
     
     print "Accuracy of Perceptron is ", perceptron_classifier.ReportAccuracy()
 
 
     #create perceptron classifier
-    kernel_classifier = KernelPerceptronClassifier(abstract_vectors.shape[1],0.3,DotKernel)
+    kernel_classifier = KernelPerceptronClassifier(0.3,DotKernel)
 
-    for k in range(abstract_vectors.shape[0]):
-        x = []
-        for j in range(abstract_vectors.shape[1]):
-            x.append(abstract_vectors[(k,j)])
-
-        x = np.array(x)
+    for k in range(n_positive + n_negative):
                      
+        x = abstract_vectors[k]
         y_hat = kernel_classifier.Predict(x)
         y = target_vector[k]
-        print "-"*80
-        if y_hat == 1:
-            print "  "
-            print "Kernel Perceptron indicates that this article is about {0}".format(sys.argv[1])
-            print "  "
-            if y == 1:
-                print "This prediction is correct."
+
+        if k < 20: #only print out first 20 guesses
+            print "-"*80
+            if y_hat == 1:
                 print "  "
-            else:
-                print "This prediction is NOT correct."
-                print "  "                
-        else:
-            print "  "
-            print "Kernel Perceptron indicates that this article is about {0}".format(sys.argv[2])
-            print "  "
-            if y == -1:
-                print "This prediction is correct."
+                print "Kernel Perceptron indicates that this article is about {0}".format(sys.argv[1])
                 print "  "
+                if y == 1:
+                    print "This prediction is correct."
+                    print "  "
+                else:
+                    print "This prediction is NOT correct."
+                    print "  "                
             else:
-                print "This prediction is NOT correct."
-                print "  "                
+                print "  "
+                print "Kernel Perceptron indicates that this article is about {0}".format(sys.argv[2])
+                print "  "
+                if y == -1:
+                    print "This prediction is correct."
+                    print "  "
+                else:
+                    print "This prediction is NOT correct."
+                    print "  "                
             
-        print abstracts[k]
-        print "-"*80
+            print abstracts[k]
+            print "-"*80
+
         kernel_classifier.Update(x,y_hat,y)
     
     print "Accuracy of Kernel Perceptron is ", kernel_classifier.ReportAccuracy()

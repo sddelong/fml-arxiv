@@ -34,7 +34,7 @@ class PerceptronClassifier:
         if y_hat != y:
             #update
             self.n_wrong += 1
-            self.weights = self.weights + self.eta*y*x
+            x.UpdateWeights(self.weights,y,self.eta)
         else:
             self.n_correct += 1
         
@@ -43,7 +43,7 @@ class PerceptronClassifier:
     def Predict(self,x):
         """ predict y by using sign of a dot product of x with weights """
         
-        return sign(np.dot(self.weights,x))
+        return sign(x.Dot(self.weights))
 
     def ReportAccuracy(self):
         
@@ -55,15 +55,13 @@ class KernelPerceptronClassifier():
     """ Simple perceptron algorithm for online learning, dual implementation 
     that can take a Kernel. This algorithm has to carry "Support Vectors" around with it.  
     """
-    def __init__(self,n,eta,kernel):
+    def __init__(self,eta,kernel):
         """ Constructor for Perceptron. 
 
            Arguments:
                    eta    - learning rate
-                   n      - length of input data. (We may want to do this differently
-                             to be specific to bags of words)
                    kernel - kernel function to use, must be a PSD kernel that takes
-                            two vectors and returns a scalar.
+                            two TextFeatureVectors and returns a scalar.
         """
         
         self.eta = eta
@@ -107,15 +105,15 @@ class KernelPerceptronClassifier():
         
         return float(self.n_correct)/float(self.n_wrong + self.n_correct)
 
-""" Define some default kernels here to use with KernelPerceptronClassifier """
+""" Define some default kernels here to use with KernelPerceptronClassifier 
+    Kernels operate on TextFeatureVectors. """
 
 def DotKernel(x,y):
-    """ simple dot kernel, gives the simple dual perceptron algorithm if used"""
+    """ simple dot kernel, gives the simple dual perceptron algorithm if used, 
+        """
 
-    return np.dot(x,y)
-
-
-
+    #multiplication of TextFeatureVectors gives a dot product.
+    return x*y
 
 class WinnowClassifier():
     
