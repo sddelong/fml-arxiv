@@ -2,11 +2,71 @@
     document preferences.  """
 
 import urllib
-import re #for removing namespaces
+import re #for removing namespaces, featurizing abstracts
 import sys
 from xml.etree import ElementTree as ET
 from sklearn.feature_extraction.text import TfidfVectorizer
 import time
+
+class TextFeatureVector:
+    """ feature vector, just a dictionary of words present in an abstract, and for each word
+    a counter that keeps track of (# occurences)/(# total "relevant" words), where relevant words
+    are everything but stop words. """
+    
+    def __init__(self):
+        
+        self.words = dict();
+        self.total_words = 0
+
+    def AddWord(self,word):
+        """ add word to self.words. """
+        if word in iter(self.words):
+            self.words[word] = self.words[word] + 1
+        else:
+            self.words[word] = 1
+            
+        self.total_words += 1
+            
+        return
+
+    def _mul_(self,other):
+        """ dot product of two feature vectors """
+
+        value = 0
+        for word in iter(self.words):
+            if word in other.words:
+                value += self.words[word]*other.words[word]
+                
+        value = float(value)/float(self.total_words)/float(other.total_words)
+        
+        return value
+
+    def dot(self,weights):
+        """ dot product with vector of weights, similar to _mul_ above, but 
+        weights won't have a total_words, it will be just numeric."""
+
+        value = 0
+        for word in iter(self.words):
+            if word in weights:
+                value += self.words[word]*weights[word]
+                
+        value = float(value)/float(self.total_words)
+
+        return value
+
+    def __str__(self):
+        
+        string_rep = ""
+        for word in iter(self.words):
+            string_rep += word + ": " + str(float(self.words[word])/float(self.total_words)) + "\n"
+        
+        return string_rep
+
+    __repr__ = __str__
+
+    # end of class TextFeatureVector
+
+    
 
 class Paper:
     """ Class to hold paper information.
@@ -224,19 +284,46 @@ def GetAbstracts(paper_list):
         abstract_list.append(paper.abstract)
         
     return abstract_list
-            
 
+
+def FeaturizeAbstract(abstract):
+    """ Given a string of the abstract, return a TextFeatureVector object: a vector of frequency of the word. 
+        Excludes stop words.
+    
+    inputs:
+        abstract - string of abstract text for the paper
+        
+    outputs:
+        abstract_vector  -  feature vector stored as a dictionary of normalized word frequency 
+                            (portion of words in the document equal to the given word).
+
+    """
+    stop_words = ["is","it","that","the","a","an","of","in","this","and"]
+
+    #initialize feature vector
+    text_features = TextFeatureVector()
+
+    bag_of_words = re.findall(r"[\w']+",abstract)
+    for word in bag_of_words:
+        word = word.lower()
+        if word not in stop_words:
+            text_features.AddWord(word)
+            
+    return text_features
+            
 if __name__ == "__main__":
 
-#    paper_list = SearchPapers(sys.argv[1],20)
-    paper_list = GetTodaysPapers()
+    paper_list = SearchPapers(sys.argv[1],2)
+#    paper_list = GetTodaysPapers()
 
-    print len(paper_list)
-    for paper in paper_list:
-        paper.Print()
+#    for paper in paper_list:
+#        paper.Print()
         
-    vectorizer = TfidfVectorizer()
+#    vectorizer = TfidfVectorizer()
     abstracts = GetAbstracts(paper_list)
+
+    feature_vector = FeaturizeAbstract(abstracts[0])
+    
 
 #    print abstracts
 #    abstract_vectors = vectorizer.fit_transform(abstracts)

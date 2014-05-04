@@ -23,8 +23,8 @@ if __name__ == "__main__":
 
 
     #parameters
-    n_negative = 10
-    n_positive = 10
+    n_negative = 2
+    n_positive = 2
     
     #random permutation of indices, so 
     # the algorithm doesn't see data all positive then all negative
@@ -46,6 +46,9 @@ if __name__ == "__main__":
     abstracts = np.array(abstracts)[idxs]
     abstracts = list(abstracts)
     abstract_vectors = vectorizer.fit_transform(abstracts)
+
+    print abstract_vectors
+    print abstracts
 
     #create target data and permute
     target_vector = np.concatenate((np.ones(n_positive),-1.*np.ones(n_negative)))

@@ -21,12 +21,10 @@ class PerceptronClassifier:
                    n - length of input data. (We may want to do this differently
                             to be specific to bags of words)
         """
-        
         self.eta = eta
         self.weights = np.zeros(n)
         self.n_correct = 0
         self.n_wrong = 0
-        
         
     def Update(self,x,y_hat,y):
         """ given that the Perceptron has guessed y_hat for data x, update it 
@@ -34,7 +32,6 @@ class PerceptronClassifier:
 
         Note: must be used after every prediction to obtain a correct accuracy estimate
         """
-        
         if y_hat != y:
             #update
             self.n_wrong += 1
@@ -44,32 +41,30 @@ class PerceptronClassifier:
         
         return
         
-
     def Predict(self,x):
         """ predict y by using sign of a dot product of x with weights """
         
         return sign(np.dot(self.weights,x))
-
 
     def ReportAccuracy(self):
         
         return float(self.n_correct)/float(self.n_wrong + self.n_correct)
 
 
-
 class KernelPerceptronClassifier():
 
     """ Simple perceptron algorithm for online learning, dual implementation 
     that can take a Kernel. This algorithm has to carry "Support Vectors" around with it.  
-    WARNING: THIS ALGORIHTM IS NOT YET IMPLEMENTED"""
-    
+    """
     def __init__(self,n,eta,kernel):
         """ Constructor for Perceptron. 
 
            Arguments:
-                   eta - learning rate
-                   n - length of input data. (We may want to do this differently
-                            to be specific to bags of words)
+                   eta    - learning rate
+                   n      - length of input data. (We may want to do this differently
+                             to be specific to bags of words)
+                   kernel - kernel function to use, must be a PSD kernel that takes
+                            two vectors and returns a scalar.
         """
         
         self.eta = eta
@@ -121,11 +116,14 @@ def DotKernel(x,y):
     return np.dot(x,y)
 
 
+
+
 class WinnowClassifier():
     
     """ Simple Winnow algorithm for online learning. 
     
-    TODO: this is not applicable with only positive features, need to think about this. 
+    TODO: this is not applicable with only positive features, need to think about this and perhaps
+    modify to make something that will work with our problem. 
     """
     
     def __init__(self,n,eta):
