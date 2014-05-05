@@ -162,7 +162,7 @@ class Paper:
         print "Published: ", self.published
         print "Abstract:"
         print self.abstract
-        print "  "   
+        print "  "
 
         return
         
@@ -313,7 +313,7 @@ def GetTodaysPapers(subject=''):
     return paper_list
 
 
-def GetPapersOAI(day='', subject=''):
+def GetPapersOAI(day='', until='', subject=''):
     """ 
     GetPapersOAI()
     
@@ -334,6 +334,15 @@ def GetPapersOAI(day='', subject=''):
         'physics:hep-ex','physics:hep-lat','physics:hep-ph','physics:hep-th',
         'physics:math-ph','physics:nlin','physics:nucl-ex','physics:nucl-th',
         'physics','physics:quant-ph','math','cs','q-bio','q-fin','stat']
+
+    # if day not specified, get today's date as a string 'YYYY-MM-DD'; if until specified, create string
+    # if until not specified, papers range  current day
+    if not day:
+        day = str(date.today())
+    if until:
+        until_string = '&until='+until
+
+    #check for valid optional subject, create string
     if subject in subject_list:
         subject_string = '&set='+subject
     elif subject:
@@ -342,19 +351,13 @@ def GetPapersOAI(day='', subject=''):
     else:
         subject_string = ''
 
-    # if day not specified, get today's date as a string 'YYYY-MM-DD'
-    if not day:
-        day = str(date.today())
-
     #set the URL using OAI-PMH standard, choosing from today's records with chosen subject, loop through subjects TODO
-    url = 'http://export.arxiv.org/oai2?verb=ListRecords&from='+day+subject_string+'&metadataPrefix=oai_dc'
+    url = 'http://export.arxiv.org/oai2?verb=ListRecords&from='+day+until_string+subject_string+'&metadataPrefix=oai_dc'
 
     #extract info here.
     data = urllib.urlopen(url).read()
 
-    # declare/remove namespaces
-    #data = data.replace(' xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    #    xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"','')
+    # declare namespaces
     ns = {'ns':'http://www.openarchives.org/OAI/2.0/',
         'dc':'http://purl.org/dc/elements/1.1/'}
     root = ET.fromstring(data)
@@ -382,15 +385,13 @@ def GetPapersOAI(day='', subject=''):
 #    root = ET.fromstring(data)
     
     # create list of papers
-    for entry in root.findall('.//ns:record', namespaces=ns): #'http://www.openarchives.org/OAI/2.0/}record'):
-        #print entry #.find('{http://www.openarchives.org/OAI/2.0/}identifier')#('ns:identifier', namespaces=ns)
+    for entry in root.findall('.//ns:record', namespaces=ns):
         this_paper = Paper(entry,"OAI")
-        #print entry.find('.//ns:identifier', namespaces=ns).text
         #print "this paper published", this_paper.published
         #print "today's date", time.strftime("%Y-%m-%d")
         
         # check that the paper was published today, not just updated.
-        if this_paper.published == day: #time.strftime("%Y-%m-%d"):
+        if this_paper.published == day:
             paper_list.append(this_paper)
             
     return paper_list
@@ -413,6 +414,29 @@ def GetAbstracts(paper_list):
         abstract_list.append(paper.abstract)
         
     return abstract_list
+
+
+def PromptUser(entry):
+    print 'Do you like this abstract?'
+    entry.Print()
+    input = raw_input('Yes/No?')
+    
+    answered = false
+    while not answered:
+        if input == 'Yes' or input == 'yes' or input == 'y' or input == '1':
+            label = 1
+            answered = true
+        elif input == 'No' or input == 'no' or input == 'n' or input == '0':
+            label = -1
+            answered = true
+        # use quit to leave TODO
+        elif input == 'quit':
+            raise 
+        else:
+            input = raw_input('Invalid response. Yes/No? Use "quit" to leave.')
+    
+    if label = 1:
+        #TODO print 
 
 
 def FeaturizeAbstracts(abstracts):
