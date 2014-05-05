@@ -2,12 +2,92 @@
     document preferences.  """
 
 import urllib
-import re #for removing namespaces
+import re #for removing namespaces, featurizing abstracts
 import sys
 from xml.etree import ElementTree as ET
 from sklearn.feature_extraction.text import TfidfVectorizer
 import time
 from datetime import date
+
+class TextFeatureVector:
+    """ feature vector, just a dictionary of words present in an abstract, and for each word
+    a counter that keeps track of (# occurences)/(# total "relevant" words), where relevant words
+    are everything but stop words. """
+    
+    def __init__(self):
+        
+        self.words = dict();
+        self.total_words = 0
+
+    def AddWord(self,word):
+        """ add word to self.words. """
+        if word in iter(self.words):
+            self.words[word] = self.words[word] + 1
+        else:
+            self.words[word] = 1
+            
+        self.total_words += 1
+            
+        return
+
+    def GetWord(self,word):
+        """ return value for a given word"""
+        if word in iter(self.words):
+            return float(self.words[word])/float(self.total_words)
+        else:
+            return 0.0
+        
+        
+    def __mul__(self,other):
+        """ dot product of two feature vectors """
+
+        value = 0
+        for word in iter(self.words):
+            if word in other.words:
+                value += self.words[word]*other.words[word]
+                
+        value = float(value)/float(self.total_words)/float(other.total_words)
+        
+        return value
+
+    def Dot(self,weights):
+        """ dot product with vector of weights, similar to _mul_ above, but 
+        weights won't have a total_words, it will be just numeric."""
+
+        value = 0
+        for word in iter(self.words):
+            if word in weights:
+                value += self.words[word]*weights[word]
+                
+        value = float(value)/float(self.total_words)
+
+        return value
+
+    def UpdateWeights(self,weights,y,eta):
+        """ update weights according to the rule weigts = weights + eta*x*y """
+        
+        for word in iter(self.words):
+            if word in weights:
+                weights[word] = weights[word] + eta*y*self.words[word]/self.total_words
+            else:
+                weights[word] = eta*y*self.words[word]/self.total_words
+                
+        return weights
+
+
+    def __str__(self):
+        
+        string_rep = "{ "
+        for word in iter(self.words):
+            string_rep += word + ": " + str(float(self.words[word])/float(self.total_words)) + ", "
+        
+        return string_rep + "}"
+
+    __repr__ = __str__
+
+    # end of class TextFeatureVector
+
+    
 
 class Paper:
     """ Class to hold paper information.
@@ -333,25 +413,70 @@ def GetAbstracts(paper_list):
         abstract_list.append(paper.abstract)
         
     return abstract_list
-            
 
+
+def FeaturizeAbstracts(abstracts):
+    """ Given a list of abstracts, each a string, return a TextFeatureVector object: a vector of frequency of the word. 
+        Excludes stop words.
+    
+    inputs:
+        abstracts - list of strings of abstract text for the papers
+        
+    outputs:
+        abstract_vectors  -  list of TextFeatureVectors, one for each abstract.
+
+    """
+    stop_words = ["is","it","that","the","a","an","of","in","this","and"]
+
+    feature_list = []
+    #initialize feature vector
+    for abstract in abstracts:
+        text_features = TextFeatureVector()
+    
+        bag_of_words = re.findall(r"[\w']+",abstract)
+        for word in bag_of_words:
+            word = word.lower()
+            if word not in stop_words:
+                text_features.AddWord(word)
+
+        feature_list.append(text_features)
+
+    return feature_list
+            
 if __name__ == "__main__":
 
 #    paper_list = SearchPapers(sys.argv[1],20)
 #    paper_list = GetTodaysPapers()
-    paper_list = GetPapersOAI('2014-05-02', 'math')
 
+    paper_list = GetPapersOAI('2014-05-02', 'math')
     print len(paper_list)
+
 #    for paper in paper_list:
 #        paper.Print()
-#    paper_list[0].Print()
 
         
-    vectorizer = TfidfVectorizer()
-    abstracts = GetAbstracts(paper_list)
+#    vectorizer = TfidfVectorizer()
+#    abstracts = GetAbstracts(paper_list)
 
-#    print abstracts
-#    abstract_vectors = vectorizer.fit_transform(abstracts)
-#    print abstract_vectors.shape
-#    print abstract_vectors.nnz/float(abstract_vectors.shape[0])
+    #test Feature Vector stuff
+    feature_vector = FeaturizeAbstracts(["This is a physics abstract.  Physics is presumably the topic."])
+
+    #de-reference to get first (and only) feature vector
+    feature_vector = feature_vector[0]    
+
+    #stop words, this is a stop word
+    assert 'this' not in feature_vector.words, "this shouldn't appear in feature vector, it is a stop word."
+    
+    assert feature_vector.GetWord('physics') == 2./5. , "physics should be 2/5 of the relevant words in this example."
+    assert feature_vector.GetWord('presumably') == 1./5., "presumably should be 2/5 of the relevant words in this example."
+
+    #test fetching and printing some machine learning abstracts. 
+    # this is a "soft" test, no assertions.
+
+    paper_list = SearchPapers("Machine Learning.")
+    abstract_list = GetAbstracts(paper_list)
+    
+    print abstract_list
+
+    
                           
