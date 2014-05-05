@@ -87,16 +87,16 @@ class TextFeatureVector:
 
     # end of class TextFeatureVector
 
-    
 
 class Paper:
     """ Class to hold paper information.
 
     member variables:
-               title - string, title of the paper
-               abstract - string, abstract of the paper
-               authors - list of strings, names of authors of the paper.
-               published - string, date and time the paper was published.
+                title - string, title of the paper
+                abstract - string, abstract of the paper
+                authors - list of strings, names of authors of the paper.
+                published - string, date and time the paper was published.
+                id - string, arXiv identifier
     """
 
     def __init__(self, entry, xml_type):
@@ -144,7 +144,7 @@ class Paper:
                 self.authors.append(name)
 
             self.published = entry.find('.//dc:date', namespaces=ns).text
-
+            self.id = entry.find('.//ns:identifier', namespaces=ns).text
         else:
             print "Error: xml_type must be one of: query, rss, OAI"
             raise NotImplementedError
@@ -363,13 +363,8 @@ def GetPapersOAI(day='', until='', subject=''):
     root = ET.fromstring(data)
 
     #initialize paper list
-    #id_list = []
     paper_list = []    
 
-#    for item in root.findall('record'):
-#        id_list.append(item.find('identifier').text)
-#
-#
 #    query_str = "id:" + str(id_list[0])
 #    for k in range(1,len(id_list)):
 #        query_str = query_str + "+OR+id:" + str(id_list[k])
@@ -386,7 +381,7 @@ def GetPapersOAI(day='', until='', subject=''):
     
     # create list of papers
     for entry in root.findall('.//ns:record', namespaces=ns):
-        this_paper = Paper(entry,"OAI")
+        this_paper = Paper(entry, "OAI")
         #print "this paper published", this_paper.published
         #print "today's date", time.strftime("%Y-%m-%d")
         
@@ -395,7 +390,6 @@ def GetPapersOAI(day='', until='', subject=''):
             paper_list.append(this_paper)
             
     return paper_list
-
 
 
 def GetAbstracts(paper_list):
@@ -431,12 +425,14 @@ def PromptUser(entry):
             answered = true
         # use quit to leave TODO
         elif input == 'quit':
-            raise 
+            raise SystemExit
         else:
             input = raw_input('Invalid response. Yes/No? Use "quit" to leave.')
     
     if label = 1:
-        #TODO print 
+        print entry.id
+
+    return label
 
 
 def FeaturizeAbstracts(abstracts):
@@ -466,19 +462,24 @@ def FeaturizeAbstracts(abstracts):
         feature_list.append(text_features)
 
     return feature_list
-            
+
+ 
 if __name__ == "__main__":
 
 #    paper_list = SearchPapers(sys.argv[1],20)
 #    paper_list = GetTodaysPapers()
 
     paper_list = GetPapersOAI('2014-05-02', 'math')
-    print len(paper_list)
+#    print len(paper_list)
+    rec_list = []
+    for paper in paper_list:
+        label = PromptUser(paper)
 
-#    for paper in paper_list:
-#        paper.Print()
-
-        
+        if label == 1:
+            rec_list.append(paper.id)
+    
+    
+    
 #    vectorizer = TfidfVectorizer()
 #    abstracts = GetAbstracts(paper_list)
 
