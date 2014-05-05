@@ -8,6 +8,7 @@ from xml.etree import ElementTree as ET
 from sklearn.feature_extraction.text import TfidfVectorizer
 import time
 from datetime import date
+import cPickle
 
 class TextFeatureVector:
     """ feature vector, just a dictionary of words present in an abstract, and for each word
@@ -415,22 +416,22 @@ def PromptUser(entry):
     entry.Print()
     input = raw_input('Yes/No?')
     
-    answered = false
+    answered = False
     while not answered:
         if input == 'Yes' or input == 'yes' or input == 'y' or input == '1':
             label = 1
-            answered = true
+            answered = True
         elif input == 'No' or input == 'no' or input == 'n' or input == '0':
             label = -1
-            answered = true
+            answered = True
         # use quit to leave TODO
         elif input == 'quit':
             raise SystemExit
         else:
             input = raw_input('Invalid response. Yes/No? Use "quit" to leave.')
     
-    if label = 1:
-        print entry.id
+#    if label == 1:
+#        print entry.id
 
     return label
 
@@ -466,11 +467,8 @@ def FeaturizeAbstracts(abstracts):
  
 if __name__ == "__main__":
 
-#    paper_list = SearchPapers(sys.argv[1],20)
-#    paper_list = GetTodaysPapers()
-
     paper_list = GetPapersOAI('2014-05-02', 'math')
-#    print len(paper_list)
+    print len(paper_list)
     rec_list = []
     for paper in paper_list:
         label = PromptUser(paper)
@@ -479,10 +477,6 @@ if __name__ == "__main__":
             rec_list.append(paper.id)
     
     
-    
-#    vectorizer = TfidfVectorizer()
-#    abstracts = GetAbstracts(paper_list)
-
     #test Feature Vector stuff
     feature_vector = FeaturizeAbstracts(["This is a physics abstract.  Physics is presumably the topic."])
 
@@ -501,6 +495,9 @@ if __name__ == "__main__":
     paper_list = SearchPapers("Machine Learning.")
     abstract_list = GetAbstracts(paper_list)
     
+    outfile = open("./machinelearningtestpapers.pkl","wb")
+    cPickle.dump(paper_list,outfile)
+
     print abstract_list
 
     
