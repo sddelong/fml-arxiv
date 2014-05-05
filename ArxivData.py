@@ -19,7 +19,7 @@ class Paper:
                published - string, date and time the paper was published.
     """
 
-    def __init__(self,entry,xml_type):
+    def __init__(self, entry, xml_type):
         
         """create a paper object from an XML entry, which could be returned 
         from a query using the arxiv api, in which case specify xml_type == "query", 
@@ -52,8 +52,21 @@ class Paper:
 
             self.published = None # TODO(delong) Make this todays date.
 
+        elif xml_type == "OAI":
+            ns = {'ns':'http://www.openarchives.org/OAI/2.0/', 
+                'dc':'http://purl.org/dc/elements/1.1/'}
+            self.title = entry.find('.//dc:title', namespaces=ns).text
+            self.abstract = entry.find('.//dc:description', namespaces=ns).text
+
+            self.authors = []
+            for author in entry.findall('.//dc:creator', namespaces=ns):
+                name = author.text
+                self.authors.append(name)
+
+            self.published = entry.find('.//dc:date', namespaces=ns).text
+
         else:
-            print "Error: xml_type must be one of: query, rss"
+            print "Error: xml_type must be one of: query, rss, OAI"
             raise NotImplementedError
         
 
@@ -258,14 +271,16 @@ def GetPapersOAI(day='', subject=''):
 
     #extract info here.
     data = urllib.urlopen(url).read()
-    
-    #remove namespaces
-    data = data.replace(' xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"','')
+
+    # declare/remove namespaces
+    #data = data.replace(' xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    #    xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"','')
+    ns = {'ns':'http://www.openarchives.org/OAI/2.0/',
+        'dc':'http://purl.org/dc/elements/1.1/'}
     root = ET.fromstring(data)
 
     #initialize paper list
-    id_list = []
+    #id_list = []
     paper_list = []    
 
 #    for item in root.findall('record'):
@@ -286,13 +301,16 @@ def GetPapersOAI(day='', subject=''):
 #    # get root
 #    root = ET.fromstring(data)
     
-    #create list of papers
-    for entry in root.findall('record'):
-        this_paper = Paper(entry,"query")
-        print "this paper published", this_paper.published
-        print "today's date", time.strftime("%Y-%m-%d")
-        #check that the paper was published today, not just updated.
-        if this_paper.published[0:10] == time.strftime("%Y-%m-%d"):
+    # create list of papers
+    for entry in root.findall('.//ns:record', namespaces=ns): #'http://www.openarchives.org/OAI/2.0/}record'):
+        #print entry #.find('{http://www.openarchives.org/OAI/2.0/}identifier')#('ns:identifier', namespaces=ns)
+        this_paper = Paper(entry,"OAI")
+        #print entry.find('.//ns:identifier', namespaces=ns).text
+        #print "this paper published", this_paper.published
+        #print "today's date", time.strftime("%Y-%m-%d")
+        
+        # check that the paper was published today, not just updated.
+        if this_paper.published == day: #time.strftime("%Y-%m-%d"):
             paper_list.append(this_paper)
             
     return paper_list
@@ -320,11 +338,14 @@ def GetAbstracts(paper_list):
 if __name__ == "__main__":
 
 #    paper_list = SearchPapers(sys.argv[1],20)
-    paper_list = GetTodaysPapers()
+#    paper_list = GetTodaysPapers()
+    paper_list = GetPapersOAI('2014-05-02', 'math')
 
     print len(paper_list)
-    for paper in paper_list:
-        paper.Print()
+#    for paper in paper_list:
+#        paper.Print()
+#    paper_list[0].Print()
+
         
     vectorizer = TfidfVectorizer()
     abstracts = GetAbstracts(paper_list)
