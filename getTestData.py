@@ -8,8 +8,7 @@ if __name__ == '__main__':
         +ad.GetPapersOAI('2014-04-30','2014-05-02','cs'))
 
 with open('TestData.pkl','w') as file:
-    for paper in paper_list:
-        dump(paper,file)
+    dump(paper_list,file)
 
 
 
