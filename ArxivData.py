@@ -7,7 +7,7 @@ import sys
 from xml.etree import ElementTree as ET
 from sklearn.feature_extraction.text import TfidfVectorizer
 #import time
-from datetime import date
+from datetime import datetime
 import cPickle
 
 class TextFeatureVector:
@@ -136,16 +136,16 @@ class Paper:
         elif xml_type == "OAI":
             ns = {'ns':'http://www.openarchives.org/OAI/2.0/', 
                 'dc':'http://purl.org/dc/elements/1.1/'}
-            self.title = entry.find('.//dc:title', namespaces=ns).text
-            self.abstract = entry.find('.//dc:description', namespaces=ns).text
+            self.title = entry.find('.//{http://purl.org/dc/elements/1.1/}title').text #, namespaces=ns).text
+            self.abstract = entry.find('.//{http://purl.org/dc/elements/1.1/}description').text #, namespaces=ns).text
 
             self.authors = []
-            for author in entry.findall('.//dc:creator', namespaces=ns):
+            for author in entry.findall('.//{http://purl.org/dc/elements/1.1/}creator'): #, namespaces=ns):
                 name = author.text
                 self.authors.append(name)
 
-            self.published = entry.find('.//dc:date', namespaces=ns).text
-            self.id = entry.find('.//ns:identifier', namespaces=ns).text
+            self.published = entry.find('.//{http://purl.org/dc/elements/1.1/}date').text #, namespaces=ns).text
+            self.id = entry.find('.//{http://www.openarchives.org/OAI/2.0/}identifier').text #, namespaces=ns).text
         else:
             print "Error: xml_type must be one of: query, rss, OAI"
             raise NotImplementedError
@@ -306,9 +306,9 @@ def GetTodaysPapers(subject=''):
     for entry in root.findall('entry'):
         this_paper = Paper(entry,"query")
         print "this paper published", this_paper.published
-        print "today's date", str(date.today())
+        print "today's date", str(datetime.today())
         #check that the paper was published today, not just updated.
-        if this_paper.published[0:10] == str(date.today()):
+        if this_paper.published[0:10] == str(datetime.today()):
             paper_list.append(this_paper)
             
     return paper_list
@@ -336,10 +336,65 @@ def GetPapersOAI(day='', until='', subject=''):
         'physics:math-ph','physics:nlin','physics:nucl-ex','physics:nucl-th',
         'physics','physics:quant-ph','math','cs','q-bio','q-fin','stat']
 
+    math = ['Algebraic Geometry','Algebraic Topology','Analysis of PDEs','Category Theory',
+        'Classical Analysis and ODEs','Combinatorics','Commutative Algebra',
+        'Complex Variables','Differential Geometry','Dynamical Systems','Functional Analysis',
+        'General Mathematics','General Topology','Geometric Topology','Group Theory',
+        'History and Overview','Information Theory','K-Theory and Homology','Logic',
+        'Mathematical Physics','Metric Geometry','Number Theory','Numerical Analysis',
+        'Operator Algebras','Optimization and Control','Probability','Quantum Algebra',
+        'Representation Theory','Rings and Algebras','Spectral Theory','Statistics Theory',
+        'Symplectic Geometry']
+
+    physics = ['Accelerator Physics','Atmospheric and Oceanic Physics','Atomic Physics',
+        'Atomic and Molecular Clusters','Biological Physics','Chemical Physics','Classical Physics',
+        'Computational Physics','Data Analysis, Statistics and Probability','Fluid Dynamics',
+        'General Physics','Geophysics','History and Philosophy of Physics',
+        'Instrumentation and Detectors','Medical Physics','Optics','Physics Education',
+        'Physics and Society','Plasma Physics','Popular Physics','Space Physics']
+
+    astrophysics = ['Astrophysics of Galaxies','Cosmology and Nongalactic Astrophysics',
+        'Earth and Planetary Astrophysics','High Energy Astrophysical Phenomena',
+        'Instrumentation and Methods for Astrophysics','Solar and Stellar Astrophysics']
+
+    cond_matter = ['Disordered Systems and Neural Networks','Materials Science',
+        'Mesoscale and Nanoscale Physics','Other Condensed Matter','Quantum Gases',
+        'Soft Condensed Matter','Statistical Mechanics','Strongly Correlated Electrons',
+        'Superconductivity']
+
+    nonlin_sciences = ['Adaptation and Self-Organizing Systems','Cellular Automata and Lattice Gases',
+        'Chaotic Dynamics','Exactly Solvable and Integrable Systems','Pattern Formation and Solitons']
+
+    computer_science = ['Artificial Intelligence','Computation and Language',
+        'Computational Complexity','Computational Engineering, Finance, and Science',
+        'Computational Geometry','Computer Science and Game Theory',
+        'Computer Vision and Pattern Recognition','Computers and Society',
+        'Cryptography and Security','Data Structures and Algorithms','Databases',
+        'Digital Libraries','Discrete Mathematics','Distributed, Parallel, and Cluster Computing',
+        'Emerging Technologies','Formal Languages and Automata Theory','General Literature',
+        'Graphics','Hardware Architecture','Human-Computer Interaction','Information Retrieval',
+        'Information Theory','Learning','Logic in Computer Science','Mathematical Software',
+        'Multiagent Systems','Multimedia','Networking and Internet Architecture',
+        'Neural and Evolutionary Computing','Numerical Analysis','Operating Systems',
+        'Other Computer Science','Performance','Programming Languages','Robotics',
+        'Social and Information Networks','Software Engineering','Sound','Symbolic Computation',
+        'Systems and Control']
+
+    quant_bio = ['Biomolecules','Cell Behavior','Genomics','Molecular Networks',
+        'Neurons and Cognition','Other Quantitative Biology','Populations and Evolution',
+        'Quantitative Methods','Subcellular Processes','Tissues and Organs']
+
+    quant_fin = ['Computational Finance','Economics','General Finance','Mathematical Finance',
+        'Portfolio Management','Pricing of Securities','Risk Management','Statistical Finance',
+        'Trading and Market Microstructure']
+
+    statistics = ['Applications','Computation','Machine Learning','Methodology',
+        'Other Statistics','Statistics Theory']
+
     # if day not specified, get today's date as a string 'YYYY-MM-DD'; if until specified, create string
     # if until not specified, papers range  current day
     if not day:
-        day = str(date.today())
+        day = str(datetime.today())
     if until:
         until_string = '&until='+until
 
@@ -362,20 +417,26 @@ def GetPapersOAI(day='', until='', subject=''):
     ns = {'ns':'http://www.openarchives.org/OAI/2.0/',
         'dc':'http://purl.org/dc/elements/1.1/'}
     root = ET.fromstring(data)
-
+    
     #initialize paper list
     paper_list = []    
 
     # create list of papers
-    for entry in root.findall('.//ns:record', namespaces=ns):
-        this_paper = Paper(entry, "OAI")
-        #print "this paper published", this_paper.published
-        #print "today's date", time.strftime("%Y-%m-%d")
+    for entry in root.findall('.//{http://www.openarchives.org/OAI/2.0/}record'): #, namespaces=ns):
+        this_paper = Paper(entry, 'OAI')
+        print "this paper published", this_paper.published
+        print "today's date", str(datetime.today())
         
         # check that the paper was published today, not just updated.
-        if this_paper.published == day:
-            paper_list.append(this_paper)
-            
+        if day and until:
+            if (datetime.strptime(day, '%Y-%m-%d')
+                <= datetime.strptime(this_paper.published, '%Y-%m-%d')
+                <= datetime.strptime(until, '%Y-%m-%d')):
+                paper_list.append(this_paper)
+        elif day:
+            if (datetime.strptime(day, '%Y-%m-%d')
+                <= datetime.strptime(this_paper.published, '%Y-%m-%d')):
+                paper_list.append(this_paper)
     return paper_list
 
 
