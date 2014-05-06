@@ -10,7 +10,7 @@ from ArxivData import Paper
 from ArxivData import PromptUser
 
 #filename where data is stored
-data_filename = "./testpapers.pkl"
+data_filename = "TestData.pkl"
 
 data_file = open(data_filename,"rb")
 
@@ -18,6 +18,8 @@ data_file = open(data_filename,"rb")
 user_name = raw_input("Please enter your name (no spaces):")
 
 paper_list = cPickle.load(data_file)
+
+print paper_list
 
 #initialize list of labels
 label_list = []
