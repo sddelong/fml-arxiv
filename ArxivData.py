@@ -6,7 +6,7 @@ import re #for removing namespaces, featurizing abstracts
 import sys
 from xml.etree import ElementTree as ET
 from sklearn.feature_extraction.text import TfidfVectorizer
-import time
+#import time
 from datetime import date
 
 class TextFeatureVector:
@@ -305,9 +305,9 @@ def GetTodaysPapers(subject=''):
     for entry in root.findall('entry'):
         this_paper = Paper(entry,"query")
         print "this paper published", this_paper.published
-        print "today's date", str(date.today()) #time.strftime("%Y-%m-%d")
+        print "today's date", str(date.today())
         #check that the paper was published today, not just updated.
-        if this_paper.published[0:10] == time.strftime("%Y-%m-%d"):
+        if this_paper.published[0:10] == str(date.today()):
             paper_list.append(this_paper)
             
     return paper_list
@@ -325,7 +325,7 @@ def GetPapersOAI(day='', until='', subject=''):
 
     return value:
             This function returns a list of Paper objects, populated from Arxiv papers updated on given
-            day within given subject set
+            range of days within given subject set
     """
     
 
@@ -365,20 +365,6 @@ def GetPapersOAI(day='', until='', subject=''):
     #initialize paper list
     paper_list = []    
 
-#    query_str = "id:" + str(id_list[0])
-#    for k in range(1,len(id_list)):
-#        query_str = query_str + "+OR+id:" + str(id_list[k])
-#    
-#    #now get URL for all papers we want TODO: don't hardcode length, make this work
-#    url = 'http://export.arxiv.org/api/query?search_query={0}&max_results=300'.format(query_str)
-#    
-#    #get xml data
-#    data = urllib.urlopen(url).read()
-#    #remove namespace
-#    data = re.sub(' xmlns="[^"]+"', '', data, count=1)
-#    # get root
-#    root = ET.fromstring(data)
-    
     # create list of papers
     for entry in root.findall('.//ns:record', namespaces=ns):
         this_paper = Paper(entry, "OAI")
@@ -423,9 +409,9 @@ def PromptUser(entry):
         elif input == 'No' or input == 'no' or input == 'n' or input == '0':
             label = -1
             answered = true
-        # use quit to leave TODO
+        # use quit to leave
         elif input == 'quit':
-            raise SystemExit
+            raise SystemExit('Exiting.')
         else:
             input = raw_input('Invalid response. Yes/No? Use "quit" to leave.')
     
