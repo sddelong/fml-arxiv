@@ -19,6 +19,8 @@ user_name = raw_input("Please enter your name (no spaces):")
 
 paper_list = cPickle.load(data_file)
 
+print paper_list
+
 #initialize list of labels
 label_list = []
 

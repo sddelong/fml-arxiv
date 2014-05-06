@@ -12,7 +12,7 @@ if __name__ == '__main__':
     paper_list = math_list #+cs_list #(ad.GetPapersOAI('2014-04-30','2014-05-02','math')
         #+ad.GetPapersOAI('2014-04-30','2014-05-02','cs'))
 
-    with open('TestData.pkl','w') as file:
+    with open('TestData.pkl','wb') as file:
         dump(paper_list,file)
 
 
