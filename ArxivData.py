@@ -314,7 +314,7 @@ def GetTodaysPapers(subject=''):
     return paper_list
 
 
-def GetPapersOAI(day='', until='', subject=''):
+def GetPapersOAI(day='', until='', subject='',subcategories=None):
     """ 
     GetPapersOAI()
     
@@ -335,6 +335,8 @@ def GetPapersOAI(day='', until='', subject=''):
         'physics:hep-ex','physics:hep-lat','physics:hep-ph','physics:hep-th',
         'physics:math-ph','physics:nlin','physics:nucl-ex','physics:nucl-th',
         'physics','physics:quant-ph','math','cs','q-bio','q-fin','stat']
+    
+    subcategory_list = ['Mathematics - Differential Geometry','Mathematics - Functional Analysis','Mathematics - Numerical Analysis','Mathematics - Probability']
 
     math = ['Algebraic Geometry','Algebraic Topology','Analysis of PDEs','Category Theory',
         'Classical Analysis and ODEs','Combinatorics','Commutative Algebra',
@@ -407,6 +409,17 @@ def GetPapersOAI(day='', until='', subject=''):
     else:
         subject_string = ''
 
+
+    #check for valid subcategories
+    if subcategories:
+        for category in subcategories:
+            if category not in subcategory_list:
+                print "ERROR: You may only specify valid subcategories:"
+                print subcategory_list
+    else:
+        #just take all of them
+        subcategories = subcategory_list
+
     #set the URL using OAI-PMH standard, choosing from today's records with chosen subject, loop through subjects TODO
     url = 'http://export.arxiv.org/oai2?verb=ListRecords&from='+day+until_string+subject_string+'&metadataPrefix=oai_dc'
 
@@ -422,22 +435,46 @@ def GetPapersOAI(day='', until='', subject=''):
     paper_list = []    
 
     # create list of papers
+
     for entry in root.findall('.//{http://www.openarchives.org/OAI/2.0/}record'): #, namespaces=ns):
         this_paper = Paper(entry, 'OAI')
         print "this paper published", this_paper.published
         print "today's date", str(datetime.today())
-        
-        # check that the paper was published today, not just updated.
-        if day and until:
-            if (datetime.strptime(day, '%Y-%m-%d')
-                <= datetime.strptime(this_paper.published, '%Y-%m-%d')
-                <= datetime.strptime(until, '%Y-%m-%d')):
-                paper_list.append(this_paper)
-        elif day:
-            if (datetime.strptime(day, '%Y-%m-%d')
-                <= datetime.strptime(this_paper.published, '%Y-%m-%d')):
-                paper_list.append(this_paper)
+       
+        if IsPaperInSubcategories(entry, subcategory, ns):
+            # check that the paper was published today, not just updated.
+#MAKE SUBCATEGORY DICTIONARY FOR CHECKING
+            if day and until:
+                if (datetime.strptime(day, '%Y-%m-%d')
+                    <= datetime.strptime(this_paper.published, '%Y-%m-%d')
+                    <= datetime.strptime(until, '%Y-%m-%d')):
+                    paper_list.append(this_paper)
+            elif day:
+                if (datetime.strptime(day, '%Y-%m-%d')
+                    <= datetime.strptime(this_paper.published, '%Y-%m-%d')):
+                    paper_list.append(this_paper)
+               
     return paper_list
+
+def IsPaperInSubcategories(entry,subcategories,ns):
+    """ check to see if any of the subjects of entry match any of the given subcategories. 
+    
+    inputs:
+         entry - OAI format entry for paper (record)
+         subcategories - list of strings given subcategories to check against
+         ns - namespaces, dictionary of namespaces for OAI format
+         
+    outputs:
+        is_in_sub - boolean, is this paper in any of the given subcategories or not.
+    """
+    
+    paper_subcategories = [a.text for a in entry.findall('.//dc:subject',namespaces=ns)]
+
+    for cat in paper_subcategories:
+        if cat in subcategories:
+            return True
+        
+    return False
 
 
 def GetAbstracts(paper_list):
@@ -514,14 +551,15 @@ def FeaturizeAbstracts(abstracts):
  
 if __name__ == "__main__":
 
-    paper_list = GetPapersOAI('2014-05-02', 'math')
+    paper_list = GetPapersOAI('2014-05-02', '2014-05-03','math')
     print len(paper_list)
-    rec_list = []
-    for paper in paper_list:
-        label = PromptUser(paper)
+    print paper_list
+#    rec_list = []
+#    for paper in paper_list:
+#        label = PromptUser(paper)
 
-        if label == 1:
-            rec_list.append(paper.id)
+#        if label == 1:
+#            rec_list.append(paper.id)
     
     
     #test Feature Vector stuff
