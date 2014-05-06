@@ -1,6 +1,6 @@
 """
 Script that grabs arxiv papers matching two different strings and trains a perceptron classifier
-using bag of words from the abstract to identify which of the subjects the article is on 
+using bag of words from the abstract to identify which of the subjects the article is about.
 run with:
 
 python TrainArxivBatch <string1> <string2>
