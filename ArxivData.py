@@ -393,6 +393,13 @@ def GetPapersOAI(day='', until='', subject='',subcategories=None):
     statistics = ['Applications','Computation','Machine Learning','Methodology',
         'Other Statistics','Statistics Theory']
 
+    subcat_dict = {'math' : math, 'physics' : physics, 'astro-ph' : astrophysics, 'cond-mat' : cond_matter, 
+                   'cs' : computer_science, 'q-bio' : quant_bio} 
+
+    #Hard code testing subcategories for now.
+    testing_subcategories = ["Mathematics - Numerical Analysis","Mathematics - Functional Analysis", "Mathematics - Probability", "Mathematics - Probability", "Computer Science - Data Structures and Algorithms", "Computer Science - Information Theory", "Mathematics - Analysis of PDEs",'Computer Science - Computational Engineering, Finance, and Science', 'Computer Science - Learning']
+                   
+
     # if day not specified, get today's date as a string 'YYYY-MM-DD'; if until specified, create string
     # if until not specified, papers range  current day
     if not day:
@@ -438,10 +445,11 @@ def GetPapersOAI(day='', until='', subject='',subcategories=None):
 
     for entry in root.findall('.//{http://www.openarchives.org/OAI/2.0/}record'): #, namespaces=ns):
         this_paper = Paper(entry, 'OAI')
-        print "this paper published", this_paper.published
-        print "today's date", str(datetime.today())
+#        print "this paper published", this_paper.published
+#        print "today's date", str(datetime.today())
        
-        if IsPaperInSubcategories(entry, subcategory, ns):
+        if IsPaperInSubcategories(entry, testing_subcategories, ns):
+            print this_paper.title
             # check that the paper was published today, not just updated.
 #MAKE SUBCATEGORY DICTIONARY FOR CHECKING
             if day and until:
@@ -468,7 +476,8 @@ def IsPaperInSubcategories(entry,subcategories,ns):
         is_in_sub - boolean, is this paper in any of the given subcategories or not.
     """
     
-    paper_subcategories = [a.text for a in entry.findall('.//dc:subject',namespaces=ns)]
+    paper_subcategories = [a.text for a in entry.findall('.//{http://purl.org/dc/elements/1.1/}subject')]
+    print paper_subcategories
 
     for cat in paper_subcategories:
         if cat in subcategories:
