@@ -19,19 +19,22 @@ if __name__ == '__main__':
         #+ad.GetPapersOAI('2014-04-30','2014-05-02','cs'))
 
     #remove duplicates, do this the dumb way for now
-    remove_list = []
+    unique_paper_list = []
     for j in range(len(paper_list)):
-        for k in range(j,len(paper_list)):
+        unique_flag = True
+        for k in range(j+1,len(paper_list)):
             if paper_list[j].id == paper_list[k].id:
-                remove_list.append(paper_list[k])
+                unique_flag = False
+                print paper_list[j].title
                 
-    for r in remove_list:
-        paper_list.remove(r)
-
-    print "total articles: " , len(paper_list)
+        if unique_flag:
+            unique_paper_list.append(paper_list[j])
+                
+                
+    print "total articles: " , len(unique_paper_list)
 
     with open('TestData.pkl','wb') as file:
-        dump(paper_list,file)
+        dump(unique_paper_list,file)
 
 
 

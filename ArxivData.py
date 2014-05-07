@@ -397,7 +397,7 @@ def GetPapersOAI(day='', until='', subject='',subcategories=None):
                    'cs' : computer_science, 'q-bio' : quant_bio} 
 
     #Hard code testing subcategories for now.
-    testing_subcategories = ["Mathematics - Numerical Analysis","Mathematics - Functional Analysis", "Mathematics - Probability", "Mathematics - Probability", "Computer Science - Data Structures and Algorithms", "Computer Science - Information Theory", "Mathematics - Analysis of PDEs",'Computer Science - Computational Engineering, Finance, and Science', 'Computer Science - Learning']
+    testing_subcategories = ["Mathematics - Numerical Analysis","Mathematics - Functional Analysis", "Mathematics - Probability", "Mathematics - Probability", "Computer Science - Data Structures and Algorithms", "Computer Science - Information Theory", "Mathematics - Analysis of PDEs",'Computer Science - Computational Engineering, Finance, and Science', 'Computer Science - Learning','Mathematics - Combinatorics','Mathematical Physics']
                    
 
     # if day not specified, get today's date as a string 'YYYY-MM-DD'; if until specified, create string
