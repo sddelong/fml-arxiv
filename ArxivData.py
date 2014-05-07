@@ -314,16 +314,17 @@ def GetTodaysPapers(subject=''):
     return paper_list
 
 
-def GetPapersOAI(day='', until='', subject='',subcategories=None):
+def GetPapersOAI(day='', until='', subject='', subcategories=None):
     """ 
-    GetPapersOAI()
-    
     Function to get all arxiv papers updated on the specific day within subject using OAI-PMH protocol,
         for harvesting large batches of papers.
     
     inputs:
-            day (optional), subject (optional)
-
+            day
+            until
+            subject
+            subcategories
+            
     return value:
             This function returns a list of Paper objects, populated from Arxiv papers updated on given
             range of days within given subject set
@@ -355,19 +356,19 @@ def GetPapersOAI(day='', until='', subject='',subcategories=None):
         'Instrumentation and Detectors','Medical Physics','Optics','Physics Education',
         'Physics and Society','Plasma Physics','Popular Physics','Space Physics']
 
-    astrophysics = ['Astrophysics of Galaxies','Cosmology and Nongalactic Astrophysics',
+    astroph = ['Astrophysics of Galaxies','Cosmology and Nongalactic Astrophysics',
         'Earth and Planetary Astrophysics','High Energy Astrophysical Phenomena',
         'Instrumentation and Methods for Astrophysics','Solar and Stellar Astrophysics']
 
-    cond_matter = ['Disordered Systems and Neural Networks','Materials Science',
+    cond-mat = ['Disordered Systems and Neural Networks','Materials Science',
         'Mesoscale and Nanoscale Physics','Other Condensed Matter','Quantum Gases',
         'Soft Condensed Matter','Statistical Mechanics','Strongly Correlated Electrons',
         'Superconductivity']
 
-    nonlin_sciences = ['Adaptation and Self-Organizing Systems','Cellular Automata and Lattice Gases',
+    nlin-sci = ['Adaptation and Self-Organizing Systems','Cellular Automata and Lattice Gases',
         'Chaotic Dynamics','Exactly Solvable and Integrable Systems','Pattern Formation and Solitons']
 
-    computer_science = ['Artificial Intelligence','Computation and Language',
+    cs = ['Artificial Intelligence','Computation and Language',
         'Computational Complexity','Computational Engineering, Finance, and Science',
         'Computational Geometry','Computer Science and Game Theory',
         'Computer Vision and Pattern Recognition','Computers and Society',
@@ -382,16 +383,23 @@ def GetPapersOAI(day='', until='', subject='',subcategories=None):
         'Social and Information Networks','Software Engineering','Sound','Symbolic Computation',
         'Systems and Control']
 
-    quant_bio = ['Biomolecules','Cell Behavior','Genomics','Molecular Networks',
+    q-bio = ['Biomolecules','Cell Behavior','Genomics','Molecular Networks',
         'Neurons and Cognition','Other Quantitative Biology','Populations and Evolution',
         'Quantitative Methods','Subcellular Processes','Tissues and Organs']
 
-    quant_fin = ['Computational Finance','Economics','General Finance','Mathematical Finance',
+    q-fin = ['Computational Finance','Economics','General Finance','Mathematical Finance',
         'Portfolio Management','Pricing of Securities','Risk Management','Statistical Finance',
         'Trading and Market Microstructure']
 
-    statistics = ['Applications','Computation','Machine Learning','Methodology',
+    stat = ['Applications','Computation','Machine Learning','Methodology',
         'Other Statistics','Statistics Theory']
+
+    subject_dict = {'physics:astro-ph':astroph, 'physics:cond-mat':cond-mat,
+        'physics:gr-qc':[], 'physics:hep-ex':[],'physics:hep-lat':[],'physics:hep-ph':[],
+        'physics:hep-th':[],'physics:math-ph':[],'physics:nlin':nlin-sci,'physics:nucl-ex':[],
+        'physics:nucl-th':[],'physics':physics,'physics:quant-ph':[],'math':math,'cs':cs,
+        'q-bio':q-bio,'q-fin':q-fin,'stat':stat}
+
 
     # if day not specified, get today's date as a string 'YYYY-MM-DD'; if until specified, create string
     # if until not specified, papers range  current day
@@ -457,7 +465,8 @@ def GetPapersOAI(day='', until='', subject='',subcategories=None):
     return paper_list
 
 def IsPaperInSubcategories(entry,subcategories,ns):
-    """ check to see if any of the subjects of entry match any of the given subcategories. 
+    """
+    Checks to see if any of the subjects of entry match any of the given subcategories. 
     
     inputs:
          entry - OAI format entry for paper (record)
@@ -478,7 +487,8 @@ def IsPaperInSubcategories(entry,subcategories,ns):
 
 
 def GetAbstracts(paper_list):
-    """ Given a list of papers, return a list containing the abstracts 
+    """ 
+    Given a list of papers, return a list containing the abstracts 
 
     inputs: 
          paper_list - list of papers
@@ -496,16 +506,27 @@ def GetAbstracts(paper_list):
 
 
 def PromptUser(entry):
+    """ 
+    For a given entry/record in arXiv, prompts user and receives
+        a label from input
+
+    inputs:
+        entry - Paper object
+
+    return value:
+        label - paper label indicating like (1) or dislike (-1)
+
+    """
     print 'Do you like this abstract?'
     entry.Print()
     input = raw_input('Yes/No?')
     
     answered = False
     while not answered:
-        if input == 'Yes' or input == 'yes' or input == 'y' or input == '1':
+        if input in ['Yes', 'yes', 'y', '1']:
             label = 1
             answered = True
-        elif input == 'No' or input == 'no' or input == 'n' or input == '0':
+        elif input in ['No', 'no', 'n', '0']:
             label = -1
             answered = True
         # use quit to leave
