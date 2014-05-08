@@ -75,6 +75,19 @@ class TextFeatureVector:
                 
         return weights
 
+    def UpdateWeightsSVM(self,weights,y,eta,C):
+        """ update weights according to the rule 
+        weights = weights - eta(w_t - C*x*y) 
+        for online SVM"""
+        
+        for word in iter(self.words):
+            if word in weights:
+                weights[word] = weights[word] - eta*(weights[word] - C*y*self.words[word]/self.total_words)
+            else:
+                weights[word] = C*eta*y*self.words[word]/self.total_words
+                
+        return weights
+
 
     def __str__(self):
         

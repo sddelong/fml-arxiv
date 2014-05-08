@@ -1,5 +1,6 @@
 import numpy as np
 from ArxivData import TextFeatureVector
+from ArxivData import FeaturizeAbstracts #for testing.
 
 def sign(x):
     """ compute sign of x, with convention that 0 is positive """
@@ -171,24 +172,26 @@ class WinnowClassifier():
 if __name__ == "__main__":
     
 
-    x = np.ones(10)
-    pclassifier = PerceptronClassifier(10,0.3)
+    x = ["This is a test abstract"]
+    x = FeaturizeAbstracts(x)
+    pclassifier = PerceptronClassifier(0.3)
     
-    y_hat = pclassifier.Predict(x)
+    y_hat = pclassifier.Predict(x[0])
     
     assert y_hat == 1, "y_hat for perceptron should be 1 at initialization, it is not"
     
-    pclassifier.Update(x,y_hat,-1)
-    y_hat_2 = pclassifier.Predict(x)
+    pclassifier.Update(x[0],y_hat,-1)
+    y_hat_2 = pclassifier.Predict(x[0])
     
     assert y_hat_2 == -1, "y_hat should be -1 after update, it is not"
 
-
+    
+    #NOTE: Winnow currently unused
     wclassifier = WinnowClassifier(8,0.3)
     
     x = np.array([1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0])
     y_hat = wclassifier.Predict(x)
-    
+
     assert y_hat == 1, "y_hat for winnow should be 1 at initialization for this x, it is not"
     
     wclassifier.Update(x,y_hat,-1)
