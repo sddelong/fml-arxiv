@@ -1,6 +1,7 @@
 import ArxivData as ad
 from cPickle import dump
 import time
+from random import shuffle
 
 paper_list = []
 
@@ -32,6 +33,8 @@ if __name__ == '__main__':
                 
                 
     print "total articles: " , len(unique_paper_list)
+
+    shuffle(unique_paper_list)
 
     with open('TestData.pkl','wb') as file:
         dump(unique_paper_list,file)

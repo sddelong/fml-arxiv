@@ -360,12 +360,12 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
         'Earth and Planetary Astrophysics','High Energy Astrophysical Phenomena',
         'Instrumentation and Methods for Astrophysics','Solar and Stellar Astrophysics']
 
-    cond-mat = ['Disordered Systems and Neural Networks','Materials Science',
+    cond_mat = ['Disordered Systems and Neural Networks','Materials Science',
         'Mesoscale and Nanoscale Physics','Other Condensed Matter','Quantum Gases',
         'Soft Condensed Matter','Statistical Mechanics','Strongly Correlated Electrons',
         'Superconductivity']
 
-    nlin-sci = ['Adaptation and Self-Organizing Systems','Cellular Automata and Lattice Gases',
+    nlin_sci = ['Adaptation and Self-Organizing Systems','Cellular Automata and Lattice Gases',
         'Chaotic Dynamics','Exactly Solvable and Integrable Systems','Pattern Formation and Solitons']
 
     cs = ['Artificial Intelligence','Computation and Language',
@@ -383,34 +383,34 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
         'Social and Information Networks','Software Engineering','Sound','Symbolic Computation',
         'Systems and Control']
 
-    q-bio = ['Biomolecules','Cell Behavior','Genomics','Molecular Networks',
+    q_bio = ['Biomolecules','Cell Behavior','Genomics','Molecular Networks',
         'Neurons and Cognition','Other Quantitative Biology','Populations and Evolution',
         'Quantitative Methods','Subcellular Processes','Tissues and Organs']
 
-    q-fin = ['Computational Finance','Economics','General Finance','Mathematical Finance',
+    q_fin = ['Computational Finance','Economics','General Finance','Mathematical Finance',
         'Portfolio Management','Pricing of Securities','Risk Management','Statistical Finance',
         'Trading and Market Microstructure']
 
     stat = ['Applications','Computation','Machine Learning','Methodology',
         'Other Statistics','Statistics Theory']
 
-    subject_dict = {'physics:astro-ph':astroph, 'physics:cond-mat':cond-mat,
-        'physics:gr-qc':[], 'physics:hep-ex':[],'physics:hep-lat':[],'physics:hep-ph':[],
-        'physics:hep-th':[],'physics:math-ph':[],'physics:nlin':nlin-sci,'physics:nucl-ex':[],
+    subject_dict = {'physics:astro-ph':astroph,'physics:cond-mat':cond_mat,
+        'physics:gr-qc':[],'physics:hep-ex':[],'physics:hep-lat':[],'physics:hep-ph':[],
+        'physics:hep-th':[],'physics:math-ph':[],'physics:nlin':nlin_sci,'physics:nucl-ex':[],
         'physics:nucl-th':[],'physics':physics,'physics:quant-ph':[],'math':math,'cs':cs,
-        'q-bio':q-bio,'q-fin':q-fin,'stat':stat}
+        'q-bio':q_bio,'q-fin':q_fin,'stat':stat}
 
 
 
-    subcat_dict = {'math' : math, 'physics' : physics, 'astro-ph' : astrophysics, 'cond-mat' : cond_matter, 
-                   'cs' : computer_science, 'q-bio' : quant_bio} 
+    subcat_dict = {'math' : math, 'physics' : physics, 'astro-ph' : astroph, 'cond-mat' : cond_mat, 
+                   'cs' : cs, 'q-bio' : q_bio} 
 
     #Hard code testing subcategories for now.
     testing_subcategories = ["Mathematics - Numerical Analysis","Mathematics - Functional Analysis", "Mathematics - Probability", "Mathematics - Probability", "Computer Science - Data Structures and Algorithms", "Computer Science - Information Theory", "Mathematics - Analysis of PDEs",'Computer Science - Computational Engineering, Finance, and Science', 'Computer Science - Learning','Mathematics - Combinatorics','Mathematical Physics']
                    
 
     # if day not specified, get today's date as a string 'YYYY-MM-DD'; if until specified, create string
-    # if until not specified, papers range  current day
+    # if until not specified, papers range through current day
     if not day:
         day = str(datetime.today())
     if until:
@@ -470,7 +470,7 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
                 if (datetime.strptime(day, '%Y-%m-%d')
                     <= datetime.strptime(this_paper.published, '%Y-%m-%d')):
                     paper_list.append(this_paper)
-               
+              
     return paper_list
 
 def IsPaperInSubcategories(entry,subcategories,ns):
@@ -487,7 +487,7 @@ def IsPaperInSubcategories(entry,subcategories,ns):
     """
     
     paper_subcategories = [a.text for a in entry.findall('.//{http://purl.org/dc/elements/1.1/}subject')]
-    print paper_subcategories
+    #print paper_subcategories
 
     for cat in paper_subcategories:
         if cat in subcategories:

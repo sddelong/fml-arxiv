@@ -1,0 +1,3869 @@
+(lp1
+(iArxivData
+Paper
+p2
+(dp3
+S'published'
+p4
+S'2014-05-01'
+p5
+sS'abstract'
+p6
+S'  We prove a structure theorem for multiplicative functions on the Gaussian\nintegers, showing that every bounded multiplicative function on the Gaussian\nintegers can be decomposed into a term which is approximately periodic and\nanother which has a small U^3-Gowers uniformity norm. We apply this to prove\npartition regularity results over the Gaussian integers for certain equations\ninvolving quadratic forms in three variables. For example, we show that for any\nfinite coloring of the Gaussian integers, there exists dfferent nonzero\nelements x and y of the same color such that x^2-y^2=n^2 for some Gaussian\ninteger n, the analog of which over Z remains open.\n'
+p7
+sS'authors'
+p8
+(lp9
+S'Sun, Wenbo'
+p10
+asS'id'
+p11
+S'oai:arXiv.org:1405.0241'
+p12
+sS'title'
+p13
+S'A structure theorem for multiplicative functions over the Gaussian\n  integers and applications'
+p14
+sba(iArxivData
+Paper
+p15
+(dp16
+g4
+S'2014-05-01'
+p17
+sg6
+S'  We extend the Kubo-Kishi theorem concerning the charge susceptibility of the\nHubbard model in the following way: (i) The electron-photon interaction is\ntaken into account. (ii) Not only on-site but also general Coulomb repulsion is\nconsidered.\n'
+p18
+sg8
+(lp19
+S'Miyao, Tadahiro'
+p20
+asg11
+S'oai:arXiv.org:1405.0112'
+p21
+sg13
+S'Upper bounds on the charge susceptibility of many-electron systems\n  coupled to the quantized radiation field'
+p22
+sba(iArxivData
+Paper
+p23
+(dp24
+g4
+S'2014-05-01'
+p25
+sg6
+S'  Localization and tracking of a mobile node (MN) in non-line-of-sight (NLOS)\nscenarios, based on time of arrival (TOA) measurements, is considered in this\nwork. To this end, we develop a constrained form of square root unscented\nKalman filter (SRUKF), where the sigma points of the unscented transformation\nare projected onto the feasible region by solving constrained optimization\nproblems. The feasible region is the intersection of several discs formed by\nthe NLOS measurements. We show how we can reduce the size of the optimization\nproblem and formulate it as a convex quadratically constrained quadratic\nprogram (QCQP), which depends on the Cholesky factor of the \\textit{a\nposteriori} error covariance matrix of SRUKF. As a result of these\nmodifications, the proposed constrained SRUKF (CSRUKF) is more efficient and\nhas better numerical stability compared to the constrained UKF. Through\nsimulations, we also show that the CSRUKF achieves a smaller localization error\ncompared to other techniques and that its performance is robust under different\nNLOS conditions.\n'
+p26
+sg8
+(lp27
+S'Yousefi, Siamak'
+p28
+aS'Chang, Xiao-Wen'
+p29
+aS'Champagne, Benoit'
+p30
+asg11
+S'oai:arXiv.org:1405.0212'
+p31
+sg13
+S'Mobile Localization in Non-Line-of-Sight Using Constrained Square-Root\n  Unscented Kalman Filter'
+p32
+sba(iArxivData
+Paper
+p33
+(dp34
+g4
+S'2014-05-01'
+p35
+sg6
+S"  Results are obtained for two minimization problems: $$I_k(c)=\\inf\n\\{\\lambda_k(\\Omega): \\Omega\\ \\textup{open, convex in}\\ \\mathbb{R}^m,\\\n\\mathcal{T}(\\Omega)= c \\},$$ and $$J_k(c)=\\inf\\{\\lambda_k(\\Omega): \\Omega\\\n\\textup{quasi-open in}\\ \\mathbb{R}^m, |\\Omega|\\le 1, \\mathcal {P}(\\Omega)\\le c\n\\},$$ where $c>0$, $\\lambda_k(\\Omega)$ is the $k$'th eigenvalue of the\nDirichlet Laplacian acting in $L^2(\\Omega)$, $|\\Omega|$ denotes the Lebesgue\nmeasure of $\\Omega$, $\\mathcal{P}(\\Omega)$ denotes the perimeter of $\\Omega$,\nand where $\\mathcal{T}$ is in a suitable class set functions. The latter\ninclude for example the perimeter of $\\Omega$, and the moment of inertia of\n$\\Omega$ with respect to its center of mass.\n"
+p36
+sg8
+(lp37
+S'Berg, M. van den'
+p38
+asg11
+S'oai:arXiv.org:1405.0127'
+p39
+sg13
+S'On the minimization of Dirichlet eigenvalues'
+p40
+sba(iArxivData
+Paper
+p41
+(dp42
+g4
+S'2014-04-29'
+p43
+sg6
+S'  A graph is called a pseudo-core if every endomorphism is either an\nautomorphism or a colouring. In this paper, we show that every Grassmann graph\n$J_q(n,m)$ is a pseudo-core. Moreover, the Grassmann graph $J_q(n,m)$ is a core\nwhenever $m$ and $n-m+1$ are not relatively prime, and $J_q(2pk-2, pk-1)$ is a\ncore whenever $p,k\\geq 2$.\n'
+p44
+sg8
+(lp45
+S'Huang, Li-Ping'
+p46
+aS'Lv, Benjian'
+p47
+aS'Wang, Kaishun'
+p48
+asg11
+S'oai:arXiv.org:1404.7578'
+p49
+sg13
+S'The endomorphism of Grassmann graphs'
+p50
+sba(iArxivData
+Paper
+p51
+(dp52
+g4
+S'2014-05-01'
+p53
+sg6
+S"  In this article we review Tononi's (2008) theory of consciousness as\nintegrated information. We argue that previous formalizations of integrated\ninformation (e.g. Griffith, 2014) depend on information loss. Since lossy\nintegration would necessitate continuous damage to existing memories, we\npropose it is more natural to frame consciousness as a lossless integrative\nprocess and provide a formalization of this idea using algorithmic information\ntheory. We prove that complete lossless integration requires noncomputable\nfunctions. This result implies that if unitary consciousness exists, it cannot\nbe modelled computationally.\n"
+p54
+sg8
+(lp55
+S'Maguire, Phil'
+p56
+aS'Moser, Philippe'
+p57
+aS'Maguire, Rebecca'
+p58
+aS'Griffith, Virgil'
+p59
+asg11
+S'oai:arXiv.org:1405.0126'
+p60
+sg13
+S'Is Consciousness Computable? Quantifying Integrated Information Using\n  Algorithmic Information Theory'
+p61
+sba(iArxivData
+Paper
+p62
+(dp63
+g4
+S'2014-04-29'
+p64
+sg6
+S'  We study the uniqueness of minimal liftings of cut-generating functions\nobtained from maximal lattice-free polyhedra. We prove a basic invariance\nproperty of unique minimal liftings for general maximal lattice-free polyhedra.\nThis generalizes a previous result by Basu, Cornu\\\'ejols and K\\"oppe for {\\em\nsimplicial} maximal lattice-free polytopes, thus completely settling this\nfundamental question about lifting. We further give a very general iterative\nconstruction to get maximal lattice-free polyhedra with the unique-lifting\nproperty in arbitrary dimensions. This single construction not only obtains all\npreviously known polyhedra with the unique-lifting property, but goes further\nand vastly expands the known list of such polyhedra. Along the way, we develop\ntools which clarify topological properties of the space of maximal lattice-free\npolyhedra with unique-liftings which we believe to be of independent interest.\nFinally, we extend characterizations from the literature about lifting with\nrespect to maximal lattice-free simplices to more general polytopes. These\nnontrivial generalizations rely on a number of results theorems from discrete\ngeometry, including the Venkov-Alexandrov-McMullen theorem on translative\ntilings and characterizations of zonotopes in terms of central symmetry of\ntheir faces.\n'
+p65
+sg8
+(lp66
+S'Averkov, Gennadiy'
+p67
+aS'Basu, Amitabh'
+p68
+asg11
+S'oai:arXiv.org:1404.7421'
+p69
+sg13
+S'Lifting properties of maximal lattice-free polyhedra'
+p70
+sba(iArxivData
+Paper
+p71
+(dp72
+g4
+S'2014-04-30'
+p73
+sg6
+S'  In this paper, we design and analyze distributed vector quantization (VQ) for\ncompressed measurements of correlated sparse sources over noisy channels.\nInspired by the framework of compressed sensing (CS) for acquiring compressed\nmeasurements of the sparse sources, we develop optimized quantization schemes\nthat enable distributed encoding and transmission of CS measurements over noisy\nchannels followed by joint decoding at a decoder. The optimality is addressed\nwith respect to minimizing the sum of mean-square error (MSE) distortions\nbetween the sparse sources and their reconstruction vectors at the decoder. We\npropose a VQ encoder-decoder design via an iterative algorithm, and derive a\nlower-bound on the end-to-end MSE of the studied distributed system. Through\nseveral simulation studies, we evaluate the performance of the proposed\ndistributed scheme.\n'
+p74
+sg8
+(lp75
+S'Shirazinia, Amirpasha'
+p76
+aS'Chatterjee, Saikat'
+p77
+aS'Skoglund, Mikael'
+p78
+asg11
+S'oai:arXiv.org:1404.7640'
+p79
+sg13
+S'Distributed Quantization for Measurement of Correlated Sparse Sources\n  over Noisy Channels'
+p80
+sba(iArxivData
+Paper
+p81
+(dp82
+g4
+S'2014-04-29'
+p83
+sg6
+S'  Distributed voting is a fundamental topic in distributed computing. In pull\nvoting, in each step every vertex chooses a neighbour uniformly at random, and\nadopts its opinion. The voting is completed when all vertices hold the same\nopinion. On many graph classes including regular graphs, pull voting requires\n$\\Theta(n)$ expected steps to complete, even if initially there are only two\ndistinct opinions.\n  In this paper we consider a related process which we call two-sample voting:\nevery vertex chooses two random neighbours in each step. If the opinions of\nthese neighbours coincide, then the vertex revises its opinion according to the\nchosen sample. Otherwise, it keeps its own opinion. We consider the performance\nof this process in the case where two di?erent opinions reside on vertices of\nsome (arbitrary) sets $A$ and $B$, respectively. Here, $|A| + |B| = n$ is the\nnumber of vertices of the graph.\n  We show that there is a constant $K$ such that if the initial imbalance\nbetween the two opinions is ?$\\nu_0 = (|A| - |B|)/n \\geq K \\sqrt{(1/d) +\n(d/n)}$, then with high probability two sample voting completes in a random $d$\nregular graph in $O(\\log n)$ steps and the initial majority opinion wins. We\nalso show the same performance for any regular graph, if $\\nu_0 \\geq K\n\\lambda_2$ where $\\lambda_2$ is the second largest eigenvalue of the transition\nmatrix. In the graphs we consider, standard pull voting requires $\\Omega(n)$\nsteps, and the minority can still win with probability $|B|/n$.\n'
+p84
+sg8
+(lp85
+S'Cooper, Colin'
+p86
+aVElsässer, Robert
+p87
+aS'Radzik, Tomasz'
+p88
+asg11
+S'oai:arXiv.org:1404.7479'
+p89
+sg13
+S'The Power of Two Choices in Distributed Voting'
+p90
+sba(iArxivData
+Paper
+p91
+(dp92
+g4
+S'2014-04-29'
+p93
+sg6
+S'  In this paper, we propose to study four meteorological and seasonal time\nseries coupled with a multi-layer perceptron (MLP) modeling. We chose to\ncombine two transfer functions for the nodes of the hidden layer, and to use a\ntemporal indicator (time index as input) in order to take into account the\nseasonal aspect of the studied time series. The results of the prediction\nconcern two years of measurements and the learning step, eight independent\nyears. We show that this methodology can improve the accuracy of meteorological\ndata estimation compared to a classical MLP modelling with a homogenous\ntransfer function.\n'
+p94
+sg8
+(lp95
+S'Voyant, Cyril'
+p96
+aS'Nivet, Marie Laure'
+p97
+aS'Paoli, Christophe'
+p98
+aS'Muselli, Marc'
+p99
+aS'Notton, Gilles'
+p100
+asg11
+S'oai:arXiv.org:1404.7255'
+p101
+sg13
+S'Meteorological time series forecasting based on MLP modelling using\n  heterogeneous transfer functions'
+p102
+sba(iArxivData
+Paper
+p103
+(dp104
+g4
+S'2014-04-29'
+p105
+sg6
+S'  We consider a class of kinetically constrained interacting particle systems\non $Z^d$ which play a key role in several heuristic qualitative and\nquantitative approaches to describe the complex behavior of glassy dynamics.\nWith rate one and independently among the vertices of $Z^d$, to each occupation\nvariable $\\eta(x)$ a new value is proposed by tossing a (1-q)-coin. If a\ncertain local constraint is satisfied by the current configuration the proposed\nmove is accepted, otherwise it is rejected. For d=1 the constraint requires\nthat there is a vacancy at the vertex to the left of the updating vertex. In\nthis case the process is the well known East process. In two dimensions the\nWest or the South neighbor of the updating vertex must contain a vacancy.\nSimilarly in higher dimensions. Despite of their apparent simplicity, in the\nlimit of low vacancy density, corresponding to a low temperature physical\nsetting, these processes feature a rather complicated dynamic behavior with\nhierarchical relaxation time scales, heterogeneity and universality. Using\nrenormalization group ideas, we first show that the relaxation time in\nd-dimensions scales as the 1/d-root of the relaxation time of the East process,\nconfirming indications coming from massive numerical simulations. Next we\ncompute the relaxation time in finite boxes by carefully analyzing the subtle\nenergy-entropy competition, using a multi-scale analysis, capacity methods and\nan algorithmic construction. Our results establish dynamic heterogeneity and a\ndramatic dependence on the boundary conditions. Finally we prove a rather\nstrong anisotropy property of these processes: the creation of a new vacancy at\na vertex $x$ out of an isolated one at the origin (a seed) may occur on\n(logarithmically) different time scales which heavily depend not only on the\n$\\ell_1$-norm of $x$ but also on its direction.\n'
+p106
+sg8
+(lp107
+S'Chleboun, Paul'
+p108
+aS'Faggionato, Alessandra'
+p109
+aS'Martinelli, Fabio'
+p110
+asg11
+S'oai:arXiv.org:1404.7257'
+p111
+sg13
+S'Relaxation to equilibrium of generalized east processes on $Z^d$:\n  Renormalization group analysis and energy-entropy competition'
+p112
+sba(iArxivData
+Paper
+p113
+(dp114
+g4
+S'2014-05-01'
+p115
+sg6
+S'  Using distribution theory we present the moment asymptotic expansion of\ncontinuous wavelet transform in different distributional spaces for large and\nsmall values of dilation parameter $a$. We also obtain asymptotic expansions\nfor certain wavelet transform.\n'
+p116
+sg8
+(lp117
+S'Pathak, R S'
+p118
+aS'Pathak, Ashish'
+p119
+asg11
+S'oai:arXiv.org:1405.0146'
+p120
+sg13
+S'Moment Asymptotic Expansions of the Wavelet Transforms'
+p121
+sba(iArxivData
+Paper
+p122
+(dp123
+g4
+S'2014-04-29'
+p124
+sg6
+S'  In this paper, we deal with the existence and multiplicity of solutions for\nthe fractional elliptic problems involving critical and supercritical Sobolev\nexponent via variational arguments. By means of the truncation combining with\nthe Moser iteration, we prove that the problems has at least three solutions.\n'
+p125
+sg8
+(lp126
+S'Zhang, Jinguo'
+p127
+asg11
+S'oai:arXiv.org:1404.7361'
+p128
+sg13
+S'Three solutions for a fractional elliptic problems with critical and\n  supercritical growth'
+p129
+sba(iArxivData
+Paper
+p130
+(dp131
+g4
+S'2014-04-29'
+p132
+sg6
+S'  We consider solutions of the competitive elliptic system \\[\n  \\left\\{ \\begin{array}{ll} -\\Delta u_i = - \\sum_{j \\neq i} u_i u_j^2 &\n\\text{in $\\mathbb{R}^N$} \\\\ u_i >0 & \\text{in $\\mathbb{R}^N$}\n\\end{array}\\right. \\qquad i=1,\\dots,k. \\] We are concerned with the\nclassification of entire solutions, according with their growth rate. The\nprototype of our main results is the following: there exists a function\n$\\delta=\\delta(k,N) \\in \\mathbb{N}$, increasing in $k$, such that if\n$(u_1,\\dots,u_k)$ is a solution and \\[ u_1(x)+\\cdots+u_k(x) \\le C(1+|x|^d)\n\\qquad \\text{for every $x \\in \\mathbb{R}^N$}, \\] then $d \\ge \\delta$. This\nmeans that the number of components $k$ of the solution imposes an increasing\nin $k$ minimal growth on the solution itself. If $N=2$, the expression of\n$\\delta$ is explicit and optimal, while in higher dimension it can be\ncharacterized in terms of an optimal partition problem. We discuss the\nsharpness of our results and, as a further step, for every $N \\ge 2$ we can\nprove the $1$-dimensional symmetry of the solutions satisfying suitable\nassumptions, extending known results which are available for $k=2$. The proofs\nrest upon a blow-down analysis and on some monotonicity formulae.\n'
+p133
+sg8
+(lp134
+S'Soave, Nicola'
+p135
+aS'Terracini, Susanna'
+p136
+asg11
+S'oai:arXiv.org:1404.7288'
+p137
+sg13
+S'Liouville theorems and $1$-dimensional symmetry for solutions of an\n  elliptic system modelling phase separation'
+p138
+sba(iArxivData
+Paper
+p139
+(dp140
+g4
+S'2014-05-01'
+p141
+sg6
+S'  In bootstrap percolation it is known that the critical percolation threshold\ntends to converge slowly to zero with increasing system size, or, inversely,\nthe critical size diverges fast when the percolation probability goes to zero.\nTo obtain higher-order terms (that is, sharp and sharper thresholds) for the\npercolation threshold in general is a hard question. In the case of\ntwo-dimensional anisotropic models, sometimes correction terms can be obtained\nfrom inversion in a relatively simple manner.\n'
+p142
+sg8
+(lp143
+S'van Enter, Aernout C. D.'
+p144
+asg11
+S'oai:arXiv.org:1405.0152'
+p145
+sg13
+S'Scaling and Inverse Scaling in Anisotropic Bootstrap percolation'
+p146
+sba(iArxivData
+Paper
+p147
+(dp148
+g4
+S'2014-04-30'
+p149
+sg6
+S'  The bandwidth of a $n$-vertex graph $G$ is the smallest integer $b$ such that\nthere exists a bijective function $f : V(G) \\rightarrow \\{1,...,n\\}$, called a\nlayout of $G$, such that for every edge $uv \\in E(G)$, $|f(u) - f(v)| \\leq b$.\nIn the {\\sc Bandwidth} problem we are given as input a graph $G$ and integer\n$b$, and asked whether the bandwidth of $G$ is at most $b$. We present two\nresults concerning the parameterized complexity of the {\\sc Bandwidth} problem\non trees.\n  First we show that an algorithm for {\\sc Bandwidth} with running time\n$f(b)n^{o(b)}$ would violate the Exponential Time Hypothesis, even if the input\ngraphs are restricted to be trees of pathwidth at most two. Our lower bound\nshows that the classical $2^{O(b)}n^{b+1}$ time algorithm by Saxe [SIAM Journal\non Algebraic and Discrete Methods, 1980] is essentially optimal.\n  Our second result is a polynomial time algorithm that given a tree $T$ and\ninteger $b$, either correctly concludes that the bandwidth of $T$ is more than\n$b$ or finds a layout of $T$ of bandwidth at most $b^{O(b)}$. This is the first\nparameterized approximation algorithm for the bandwidth of trees.\n'
+p150
+sg8
+(lp151
+S'Dregi, Markus Sortland'
+p152
+aS'Lokshtanov, Daniel'
+p153
+asg11
+S'oai:arXiv.org:1404.7810'
+p154
+sg13
+S'Parameterized Complexity of Bandwidth on Trees'
+p155
+sba(iArxivData
+Paper
+p156
+(dp157
+g4
+S'2014-04-30'
+p158
+sg6
+S'  A generalization of the Lorenz equations is proposed where the variables take\nvalues in a Lie algebra. The finite dimensionality of the representation\nencodes the quantum fluctuations, while the non-linear nature of the equations\ncan describe chaotic fluctuations. We identify a criterion, for the appearance\nof such non-linear terms. This depends on whether an invariant, symmetric\ntensor of the algebra can vanish or not. This proposal is studied in detail for\nthe fundamental representation of $\\mathfrak{u}(2)$. We find a knotted\nstructure for the attractor, a bimodal distribution for the largest Lyapunov\nexponent and that the dynamics takes place within the Cartan subalgebra, that\ndoes not contain only the identity matrix, thereby can describe the quantum\nfluctuations.\n'
+p159
+sg8
+(lp160
+S'Tranchida, J.'
+p161
+aS'Thibaudeau, P.'
+p162
+aS'Nicolis, S.'
+p163
+asg11
+S'oai:arXiv.org:1404.7774'
+p164
+sg13
+S'Knotted Strange Attractors and Matrix Lorenz Systems'
+p165
+sba(iArxivData
+Paper
+p166
+(dp167
+g4
+S'2014-04-29'
+p168
+sg6
+S"  The sum secure degrees of freedom (s.d.o.f.) of two fundamental multi-user\nnetwork structures, the K-user Gaussian multiple access (MAC) wiretap channel\nand the K-user interference channel (IC) with secrecy constraints, have been\ndetermined recently as K(K-1)/(K(K-1)+1) [1,2] and K(K-1)/(2K-1) [3,4],\nrespectively. In this paper, we determine the entire s.d.o.f. regions of these\ntwo channel models. The converse for the MAC follows from a middle step in the\nconverse of [1,2]. The converse for the IC includes constraints both due to\nsecrecy as well as due to interference. Although the portion of the region\nclose to the optimum sum s.d.o.f. point is governed by the upper bounds due to\nsecrecy constraints, the other portions of the region are governed by the upper\nbounds due to interference constraints. Different from the existing literature,\nin order to fully understand the characterization of the s.d.o.f. region of the\nIC, one has to study the 4-user case, i.e., the 2 or 3-user cases do not\nillustrate the generality of the problem. In order to prove the achievability,\nwe use the polytope structure of the converse region. In both MAC and IC cases,\nwe develop explicit schemes that achieve the extreme points of the polytope\nregion given by the converse. Specifically, the extreme points of the MAC\nregion are achieved by an m-user MAC wiretap channel with (K-m) helpers, i.e.,\nby setting (K-m) users' secure rates to zero and utilizing them as pure\n(structured) cooperative jammers. The extreme points of the IC region are\nachieved by a (K-m)-user IC with confidential messages, m helpers, and N\nexternal eavesdroppers, for m>=1 and a finite N. A byproduct of our results in\nthis paper is that the sum s.d.o.f. is achieved only at one extreme point of\nthe s.d.o.f. region, which is the symmetric-rate extreme point, for both MAC\nand IC channel models.\n"
+p169
+sg8
+(lp170
+S'Xie, Jianwei'
+p171
+aS'Ulukus, Sennur'
+p172
+asg11
+S'oai:arXiv.org:1404.7478'
+p173
+sg13
+S'Secure Degrees of Freedom Regions of Multiple Access and Interference\n  Channels: The Polytope Structure'
+p174
+sba(iArxivData
+Paper
+p175
+(dp176
+g4
+S'2014-04-30'
+p177
+sg6
+S'  We consider a resource-limited scenario where a sensor that uses compressed\nsensing (CS) collects a low number of measurements in order to observe a sparse\nsignal, and the measurements are subsequently quantized at a low bit-rate\nfollowed by transmission or storage. For such a scenario, we design new\nalgorithms for source coding with the objective of achieving good\nreconstruction performance of the sparse signal. Our approach is based on an\nanalysis-by-synthesis principle at the encoder, consisting of two main steps:\n(1) the synthesis step uses a sparse signal reconstruction technique for\nmeasuring the direct effect of quantization of CS measurements on the final\nsparse signal reconstruction quality, and (2) the analysis step decides\nappropriate quantized values to maximize the final sparse signal reconstruction\nquality. Through simulations, we compare the performance of the proposed\nquantization algorithms vis-a-vis existing quantization schemes.\n'
+p178
+sg8
+(lp179
+S'Shirazinia, Amirpasha'
+p180
+aS'Chatterjee, Saikat'
+p181
+aS'Skoglund, Mikael'
+p182
+asg11
+S'oai:arXiv.org:1404.7659'
+p183
+sg13
+S'Analysis-by-Synthesis Quantization for Compressed Sensing Measurements'
+p184
+sba(iArxivData
+Paper
+p185
+(dp186
+g4
+S'2014-04-29'
+p187
+sg6
+S'  We study the wave propagator for a Friedmann - Robertson - Walker background\nspace-time, which is singular at time t=0. Using a spherical means formulation\nfor the solution of the wave equation that is due to Klainerman and Sarnak, we\nderive three properties of solutions. the first is sharp time decay properties,\nusing ideas of Fritz John. the second is that the wave equation in Friedmann -\nRobertson - Walker space-time does not satisfy the sharp Huygens property. The\nthird is that the initial value problem for a class of data posed at the\ntingular time is well defined. Since the wave equation is reversible, this\nrepresents a class of data which propagates information smoothly from the past\nto the future passing through the space-time singularity.\n'
+p188
+sg8
+(lp189
+S'Abbasi, Bilal'
+p190
+aS'Craig, Walter'
+p191
+asg11
+S'oai:arXiv.org:1404.7457'
+p192
+sg13
+S'On the initial value problem for the wave equation in Friedmann --\n  Robertson -- Walker space-times'
+p193
+sba(iArxivData
+Paper
+p194
+(dp195
+g4
+S'2014-05-01'
+p196
+sg6
+S'  We are interested in almost global existence cases in the general theory for\nnonlinear wave equations, which are caused by critical exponents of nonlinear\nterms. Such situations can be found in only three cases in the theory, cubic\nterms in two space dimensions, quadratic terms in three space dimesions and\nquadratic terms including a square of unknown functions itself in four space\ndimensions. Except for the last case, criterions to classify nonlinear terms\ninto the almost global, or global existence case, are well-studied and known to\nbe so-called null condition and non-positive condition.\n  Our motivation of this work is to find such a kind of the criterion in four\nspace dimensions. In our previous paper, an example of the non-single term for\nthe almost global existence case is introduced. In this paper, we show an\nexample of the global existence case. These two examples have nonlinear\nintegral terms which are closely related to derivative loss due to high\ndimensions. But it may help us to describe the final form of the criterion.\n'
+p197
+sg8
+(lp198
+S'Takamura, Hiroyuki'
+p199
+aS'Wakasa, Kyouhei'
+p200
+asg11
+S'oai:arXiv.org:1405.0120'
+p201
+sg13
+S'Global existence for semilinear wave equations with the critical blow-up\n  term in high dimensions'
+p202
+sba(iArxivData
+Paper
+p203
+(dp204
+g4
+S'2014-04-30'
+p205
+sg6
+S"  The inverse theorem for the Gowers norms, in the form proved by Green, Tao\nand Ziegler, applies to functions on an interval $[M]$. A recent paper of\nCandela and Sisask requires a stronger conclusion when applied to $N$-periodic\nfunctions; specifically, that the corresponding nilsequence should also be\n$N$-periodic in a strong sense.\n  In most cases, this result is implied by work of Szegedy (and Camarena and\nSzegedy) on the inverse theorem. This deduction is given in Candela and\nSisask's paper. Here, we give an alternative proof, which uses only the\nGreen--Tao--Ziegler inverse theorem as a black box. The result is also\nmarginally stronger, removing a technical condition from the statement.\n  The proof centers around a general construction in the category of\nnilsequences and nilmanifolds, which is possibly of some independent interest.\n"
+p206
+sg8
+(lp207
+S'Manners, Frederick'
+p208
+asg11
+S'oai:arXiv.org:1404.7742'
+p209
+sg13
+S'Periodic nilsequences and inverse theorems on cyclic groups'
+p210
+sba(iArxivData
+Paper
+p211
+(dp212
+g4
+S'2014-04-30'
+p213
+sg6
+S'  The existence of global-in-time classical solutions to the Cauchy problem of\nincompressible Magnetohydrodynamic flows with zero magnetic diffusivity is\nconsidered in two dimensions. The linearization of equations is a degenerated\nparabolic-hyperbolic system. The solution is constructed as a small\nperturbation of a constant background in critical spaces. The deformation\ngradient has been introduced to decouple the subtle coupling between the flow\nand the magnetic field. The $L^1$ dissipation of the velocity is obtained.\n'
+p214
+sg8
+(lp215
+S'Hu, Xianpeng'
+p216
+aS'Lin, Fanghua'
+p217
+asg11
+S'oai:arXiv.org:1405.0082'
+p218
+sg13
+S'Global Existence for Two Dimensional Incompressible Magnetohydrodynamic\n  Flows with Zero Magnetic Diffusivity'
+p219
+sba(iArxivData
+Paper
+p220
+(dp221
+g4
+S'2014-04-30'
+p222
+sg6
+S'  We review recent results concerning the evolution of fermionic systems. We\nare interested in the mean field regime, where particles experience many weak\ncollisions. For fermions, the mean field regime is naturally linked with a\nsemiclassical limit. Assuming some regularity of the interaction potential we\nshow that the many body evolution of initial states close to Slater\ndeterminants exhibiting the appropriate semiclassical structure can be\napproximated by the Hartree-Fock equation. Our method provides precise bounds\non the rate of the convergence.\n'
+p223
+sg8
+(lp224
+S'Benedikter, Niels'
+p225
+aS'Porta, Marcello'
+p226
+aS'Schlein, Benjamin'
+p227
+asg11
+S'oai:arXiv.org:1404.7769'
+p228
+sg13
+S'Hartree-Fock dynamics for weakly interacting fermions'
+p229
+sba(iArxivData
+Paper
+p230
+(dp231
+g4
+S'2014-04-30'
+p232
+sg6
+S'  Entropy and other fundamental quantities of information theory are\ncustomarily expressed and manipulated as functions of probabilities. Here we\nstudy the entropy H and subentropy Q as functions of the elementary symmetric\npolynomials in the probabilities, and reveal a series of remarkable properties.\nDerivatives of all orders are shown to satisfy a complete monotonicity\nproperty. H and Q themselves become multivariate Bernstein functions and we\nderive the density functions of their Levy-Khintchine representations. We also\nshow that H and Q are Pick functions in each symmetric polynomial variable\nseparately. Furthermore we see that H and the intrinsically quantum\ninformational quantity Q become surprisingly closely related in functional\nform, suggesting a special significance for the symmetric polynomials in\nquantum information theory. Using the symmetric polynomials we also derive a\nseries of further properties of H and Q.\n'
+p233
+sg8
+(lp234
+S'Jozsa, Richard'
+p235
+aS'Mitchison, Graeme'
+p236
+asg11
+S'oai:arXiv.org:1404.7694'
+p237
+sg13
+S'Symmetric polynomials in information theory: entropy and subentropy'
+p238
+sba(iArxivData
+Paper
+p239
+(dp240
+g4
+S'2014-05-01'
+p241
+sg6
+S'  A maximal minor $M$ of the Laplacian of an $n$-vertex Eulerian digraph\n$\\Gamma$ gives rise to a finite group $\\mathbb{Z}^{n-1}/\\mathbb{Z}^{n-1}M$\nknown as the sandpile (or critical) group $S(\\Gamma)$ of $\\Gamma$. We determine\n$S(\\Gamma)$ of the generalized de Bruijn graphs $\\Gamma=\\mathrm{DB}(n,d)$ with\nvertices $0,\\dots,n-1$ and arcs $(i,di+k)$ for $0\\leq i\\leq n-1$ and $0\\leq\nk\\leq d-1$, and closely related generalized Kautz graphs, extending and\ncompleting earlier results for the classical de Bruijn and Kautz graphs.\n  Moreover, for a prime $p$ and an $n$-cycle permutation matrix\n$X\\in\\mathrm{GL}_n(p)$ we show that $S(\\mathrm{DB}(n,p))$ is isomorphic to the\nquotient by $\\langle X\\rangle$ of the centralizer of $X$ in\n$\\mathrm{PGL}_n(p)$. This offers an explanation for the coincidence of\nnumerical data in sequences A027362 and A003473 of the OEIS, and allows one to\nspeculate upon a possibility to construct normal bases in the finite field\n$\\mathbb{F}_{p^n}$ from spanning trees in $\\mathrm{DB}(n,p)$.\n'
+p242
+sg8
+(lp243
+S'Chan, Swee Hong'
+p244
+aS'Hollmann, Henk D. L.'
+p245
+aS'Pasechnik, Dmitrii V.'
+p246
+asg11
+S'oai:arXiv.org:1405.0113'
+p247
+sg13
+S'Sandpile groups of generalized de Bruijn and Kautz graphs and circulant\n  matrices over finite fields'
+p248
+sba(iArxivData
+Paper
+p249
+(dp250
+g4
+S'2014-05-01'
+p251
+sg6
+S'  For a networked control system, we consider the problem of encoder and\ncontroller design. We study a discrete-time linear plant with a finite horizon\nperformance cost, comprising of a quadratic function of the states and\ncontrols, and an additive communication cost. We study separation in design of\nthe encoder and controller, along with related closed-loop properties such as\nthe dual effect and certainty equivalence. We consider three basic formats for\nencoder outputs: quantized samples, real-valued samples at event-triggered\ntimes, and real-valued samples over additive noise channels. If the controller\nand encoder are dynamic, then we show that the performance cost is minimized by\na separated design: the controls are updated at each time instant as per a\ncertainty equivalence law, and the encoder is chosen to minimize an aggregate\nquadratic distortion of the estimation error. This separation is shown to hold\neven though a dual effect is present in the closed-loop system. We also show\nthat this separated design need not be optimal when the controller or encoder\nare to be chosen from within restricted classes.\n'
+p252
+sg8
+(lp253
+S'Rabi, Maben'
+p254
+aS'Ramesh, Chithrupa'
+p255
+aS'Johansson, Karl Henrik'
+p256
+asg11
+S'oai:arXiv.org:1405.0135'
+p257
+sg13
+S'Separated design of encoder and controller for networked linear\n  quadratic optimal control'
+p258
+sba(iArxivData
+Paper
+p259
+(dp260
+g4
+S'2014-04-29'
+p261
+sg6
+S'  It is well-known that the number of planar maps with prescribed vertex degree\ndistribution and suitable labeling can be represented as the leading\ncoefficient of the $\\frac{1}{N}$-expansion of a joint cumulant of traces of\npowers of an $N$-by-$N$ GUE matrix. Here we undertake the calculation of this\nleading coefficient in a different way. Firstly, we tridiagonalize the GUE\nmatrix in the manner of Trotter and Dumitriu-Edelman and then alter it by\nconjugation to make the subdiagonal identically equal to $1$. Secondly, we\napply the cluster expansion technique (specifically, the\nBrydges-Kennedy-Abdesselam-Rivasseau formula) from rigorous statistical\nmechanics. Thirdly, by sorting through the terms of the expansion thus\ngenerated we arrive at an alternate interpretation for the leading coefficient\nrelated to factorizations of the long cycle $(12\\cdots n)\\in S_n$. Finally, we\nreconcile the group-theoretical objects emerging from our calculation with the\nlabeled mobiles of Bouttier-Di Francesco-Guitter.\n'
+p262
+sg8
+(lp263
+S'Abdesselam, Abdelmalek'
+p264
+aS'Anderson, Greg W.'
+p265
+aS'Miller, Alexander R.'
+p266
+asg11
+S'oai:arXiv.org:1404.7415'
+p267
+sg13
+S'Tridiagonalized GUE matrices are a matrix model for labeled mobiles'
+p268
+sba(iArxivData
+Paper
+p269
+(dp270
+g4
+S'2014-04-29'
+p271
+sg6
+S'  We investigate how different learning restrictions reduce learning power and\nhow the different restrictions relate to one another. We give a complete map\nfor nine different restrictions both for the cases of complete information\nlearning and set-driven learning. This completes the picture for these\nwell-studied \\emph{delayable} learning restrictions. A further insight is\ngained by different characterizations of \\emph{conservative} learning in terms\nof variants of \\emph{cautious} learning.\n  Our analyses greatly benefit from general theorems we give, for example\nshowing that learners with exclusively delayable restrictions can always be\nassumed total.\n'
+p272
+sg8
+(lp273
+VKötzing, Timo
+p274
+aS'Palenta, Raphaela'
+p275
+asg11
+S'oai:arXiv.org:1404.7527'
+p276
+sg13
+S'A Map of Update Constraints in Inductive Inference'
+p277
+sba(iArxivData
+Paper
+p278
+(dp279
+g4
+S'2014-04-29'
+p280
+sg6
+S'  Fully dynamic graph is a data structure that (1) supports edge insertions and\ndeletions and (2) answers problem specific queries. The time complexity of (1)\nand (2) are referred to as the update time and the query time respectively.\nThere are many researches on dynamic graphs whose update time and query time\nare $o(|G|)$, that is, sublinear in the graph size. However, almost all such\nresearches are for problems in P. In this paper, we investigate dynamic graphs\nfor NP-hard problems exploiting the notion of fixed parameter tractability\n(FPT).\n  We give dynamic graphs for Vertex Cover and Cluster Vertex Deletion\nparameterized by the solution size $k$. These dynamic graphs achieve almost the\nbest possible update time $O(\\mathrm{poly}(k)\\log n)$ and the query time\n$O(f(\\mathrm{poly}(k),k))$, where $f(n,k)$ is the time complexity of any static\ngraph algorithm for the problems. We obtain these results by dynamically\nmaintaining an approximate solution which can be used to construct a small\nproblem kernel. Exploiting the dynamic graph for Cluster Vertex Deletion, as a\ncorollary, we obtain a quasilinear-time (polynomial) kernelization algorithm\nfor Cluster Vertex Deletion. Until now, only quadratic time kernelization\nalgorithms are known for this problem.\n  We also give a dynamic graph for Chromatic Number parameterized by the\nsolution size of Cluster Vertex Deletion, and a dynamic graph for\nbounded-degree Feedback Vertex Set parameterized by the solution size. Assuming\nthe parameter is a constant, each dynamic graph can be updated in $O(\\log n)$\ntime and can compute a solution in $O(1)$ time. These results are obtained by\nanother approach.\n'
+p281
+sg8
+(lp282
+S'Iwata, Yoichi'
+p283
+aS'Oka, Keigo'
+p284
+asg11
+S'oai:arXiv.org:1404.7307'
+p285
+sg13
+S'Fast Dynamic Graph Algorithms for Parameterized Problems'
+p286
+sba(iArxivData
+Paper
+p287
+(dp288
+g4
+S'2014-04-29'
+p289
+sg6
+S'  We consider a $q$-TASEP model started from step initial condition where all\nbut finitely many particles have speed $1$ and a few particles are slower. It\nis shown in [9] that the rescaled particles position of $q$-TASEP with\nidentical hopping rates obeys a central limit theorem \\`a la Tracy-Widom. We\nadapt this work to the case of different hopping rates and show that one\nobserves the so-called BBP transition. Our proof is a refinement of\nFerrari-Vet\\"o\'s and does not require any condition on the parameter $q$ nor\nthe macroscopic position of particles.\n'
+p290
+sg8
+(lp291
+S'Barraquand, Guillaume'
+p292
+asg11
+S'oai:arXiv.org:1404.7409'
+p293
+sg13
+S'A phase transition for $q$-TASEP with a few slower particles'
+p294
+sba(iArxivData
+Paper
+p295
+(dp296
+g4
+S'2014-04-30'
+p297
+sg6
+S'  We construct an exact expression for the site percolation threshold p_c on a\nquasi-regular tree, and a related exact lower bound for a quasi-regular graph.\nBoth are given by the inverse spectral radius of the appropriate Hashimoto\nmatrix used to count non-backtracking walks. The obtained bound always exceeds\nthe inverse spectral radius of the original graph, and it is also generally\ntighter than the existing bound in terms of the maximum degree.\n'
+p298
+sg8
+(lp299
+S'Hamilton, Kathleen E.'
+p300
+aS'Pryadko, Leonid P.'
+p301
+asg11
+S'oai:arXiv.org:1405.0050'
+p302
+sg13
+S'Tight lower bound for percolation threshold on a quasi-regular graph'
+p303
+sba(iArxivData
+Paper
+p304
+(dp305
+g4
+S'2014-04-30'
+p306
+sg6
+S"  A $t$-spanner of a weighted undirected graph $G=(V,E)$, is a subgraph $H$\nsuch that $d_H(u,v)\\le t\\cdot d_G(u,v)$ for all $u,v\\in V$. The sparseness of\nthe spanner can be measured by its size (the number of edges) and weight (the\nsum of all edge weights), both being important measures of the spanner's\nquality -- in this work we focus on the latter.\n  Specifically, it is shown that for any parameters $k\\ge 1$ and $\\epsilon>0$,\nany weighted graph $G$ on $n$ vertices admits a\n$(2k-1)\\cdot(1+\\epsilon)$-stretch spanner of weight at most $w(MST(G))\\cdot\nO_\\epsilon(kn^{1/k}/\\log k)$, where $w(MST(G))$ is the weight of a minimum\nspanning tree of $G$. Our result is obtained via a novel analysis of the\nclassic greedy algorithm, and improves previous work by a factor of $O(\\log\nk)$.\n"
+p307
+sg8
+(lp308
+S'Elkin, Michael'
+p309
+aS'Neiman, Ofer'
+p310
+aS'Solomon, Shay'
+p311
+asg11
+S'oai:arXiv.org:1404.7703'
+p312
+sg13
+S'Light Spanners'
+p313
+sba(iArxivData
+Paper
+p314
+(dp315
+g4
+S'2014-04-30'
+p316
+sg6
+S"  For each of the notions of hypergraph quasirandomness that have been studied,\nwe identify a large class of hypergraphs F so that every quasirandom hypergraph\nH admits a perfect F-packing. An informal statement of a special case of our\ngeneral result for 3-uniform hypergraphs is as follows. Fix an integer r >= 4\nand 0<p<1. Suppose that H is an n-vertex triple system with r|n and the\nfollowing two properties:\n  * for every graph G with V(G)=V(H), at least p proportion of the triangles in\nG are also edges of H,\n  * for every vertex x of H, the link graph of x is a quasirandom graph with\ndensity at least p.\n  Then H has a perfect $K_r^{(3)}$-packing. Moreover, we show that neither\nhypotheses above can be weakened, so in this sense our result is tight. A\nsimilar conclusion for this special case can be proved by Keevash's hypergraph\nblowup lemma, with a slightly stronger hypothesis on H.\n"
+p317
+sg8
+(lp318
+S'Lenz, John'
+p319
+aS'Mubayi, Dhruv'
+p320
+asg11
+S'oai:arXiv.org:1405.0065'
+p321
+sg13
+S'Perfect Packings in Quasirandom Hypergraphs II'
+p322
+sba(iArxivData
+Paper
+p323
+(dp324
+g4
+S'2014-04-29'
+p325
+sg6
+S'  We study the metric $s$-$t$ path Traveling Salesman Problem (TSP). [An,\nKleinberg, and Shmoys, STOC 2012] improved on the long standing\n$\\frac{5}{3}$-approximation factor and presented an algorithm that achieves an\napproximation factor of $\\frac{1+\\sqrt{5}}{2}\\approx1.61803$. Later [Seb\\H{o},\nIPCO 2013] further improved the approximation factor to $\\frac{8}{5}$. We\npresent a simple, self-contained analysis that unifies both results; our main\ncontribution is a \\emph{unified correction vector}. We compare two different\nlinear programming (LP) relaxations of the $s$-$t$ path TSP, namely, the path\nversion of the Held-Karp LP relaxation for TSP and a weaker LP relaxation, and\nwe show that both LPs have the same (fractional) optimal value. Also, we show\nthat the minimum-cost of integral solutions of the two LPs are within a factor\nof $\\frac{3}{2}$ of each other. We prove that a half-integral solution of the\nstronger LP-relaxation of cost $c$ can be rounded to an integral solution of\ncost at most $\\frac{3}{2}c$. Additionally, we give a bad instance that presents\nobstructions to two obvious methods that aim for an approximation factor of\n$\\frac{3}{2}$.\n'
+p326
+sg8
+(lp327
+S'Gao, Zhihan'
+p328
+asg11
+S'oai:arXiv.org:1404.7569'
+p329
+sg13
+S'On the metric s-t path Traveling Salesman Problem'
+p330
+sba(iArxivData
+Paper
+p331
+(dp332
+g4
+S'2014-05-01'
+p333
+sg6
+S'  We prove that well-known speed of light restrictions on electromagnetic\nenergy velocity can be extended to a new level of generality, encompassing even\nnonlocal chiral media in periodic geometries, while at the same time weakening\nthe underlying assumptions to only passivity and linearity of the medium\n(either with a transparency window or with dissipation). As was also shown by\nother authors under more limiting assumptions, passivity alone is sufficient to\nguarantee causality and positivity of the energy density (with no thermodynamic\nassumptions). Our proof is general enough to include a very broad range of\nmaterial properties, including anisotropy, bianisotropy (chirality),\nnonlocality, dispersion, periodicity, and even delta functions or similar\ngeneralized functions. We also show that the "dynamical energy density" used by\nsome previous authors in dissipative media reduces to the standard Brillouin\nformula for dispersive energy density in a transparency window. The results in\nthis paper are proved by exploiting deep results from linear-response theory,\nharmonic analysis, and functional analysis that had previously not been brought\ntogether in the context of electrodynamics.\n'
+p334
+sg8
+(lp335
+S'Welters, Aaron'
+p336
+aS'Avniel, Yehuda'
+p337
+aS'Johnson, Steven G.'
+p338
+asg11
+S'oai:arXiv.org:1405.0238'
+p339
+sg13
+S'Speed-of-light limitations in passive linear media'
+p340
+sba(iArxivData
+Paper
+p341
+(dp342
+g4
+S'2014-05-01'
+p343
+sg6
+S'  Significant correlations between arrivals of load-generating events make the\nnumerical evaluation of the workload of a system a challenging problem. In this\npaper, we construct highly accurate approximations of the workload distribution\nof the MAP/G/1 queue that capture the tail behavior of the exact workload\ndistribution and provide a bounded relative error. Motivated by statistical\nanalysis, we consider the service times as a mixture of a phase-type and a\nheavy-tailed distribution. With the aid of perturbation analysis, we derive our\napproximations as a sum of the workload distribution of the MAP/PH/1 queue and\na heavy-tailed component that depends on the perturbation parameter. We refer\nto our approximations as corrected phase-type approximations, and we exhibit\ntheir performance with a numerical study.\n'
+p344
+sg8
+(lp345
+S'Vatamidou, Eleni'
+p346
+aS'Adan, Ivo J. B. F.'
+p347
+aS'Vlasiou, Maria'
+p348
+aS'Zwart, Bert'
+p349
+asg11
+S'oai:arXiv.org:1405.0138'
+p350
+sg13
+S'Corrected phase-type approximations of heavy-tailed queueing models in a\n  Markovian environment'
+p351
+sba(iArxivData
+Paper
+p352
+(dp353
+g4
+S'2014-05-01'
+p354
+sg6
+S'  We determine the long-time asymptotic behavior of a relativistic diffusion\ntaking values in the unitary tangent bundle of a Robertson-Walker space-time.\nWe prove in particular that when approaching the explosion time of the\ndiffusion, its projection on the base manifold almost surely converges to a\nrandom point of the causal boundary and we also describe the behavior of the\ntangent vector in the neighborhood of this limiting point.\n'
+p355
+sg8
+(lp356
+VAngst, Jürgen
+p357
+asg11
+S'oai:arXiv.org:1405.0142'
+p358
+sg13
+S'Asymptotic behavior of a relativistic diffusion in Robertson-Walker\n  space-times'
+p359
+sba(iArxivData
+Paper
+p360
+(dp361
+g4
+S'2014-04-30'
+p362
+sg6
+S'  For the fractional diffusion-wave equation with the Caputo-Dzhrbashyan\nfractional derivative of order $\\alpha \\in (1,2)$ with respect to the time\nvariable, we prove an analog of the principle of limiting amplitude (well-known\nfor the wave equation and some other hyperbolic equations) and a pointwise\nstabilization property of solutions (similar to a well-known property of the\nheat equation and some other parabolic equations).\n'
+p363
+sg8
+(lp364
+S'Kochubei, Anatoly N.'
+p365
+asg11
+S'oai:arXiv.org:1404.7612'
+p366
+sg13
+S'Asymptotic Properties of Solutions of the Fractional Diffusion-Wave\n  Equation'
+p367
+sba(iArxivData
+Paper
+p368
+(dp369
+g4
+S'2014-04-29'
+p370
+sg6
+S'  We study integral representations of random variables with respect to general\nH\\"older continuous processes and with respect to two particular cases;\nfractional Brownian motion and mixed fractional Brownian motion. We prove that\narbitrary random variable can be represented as an improper integral, and that\nthe stochastic integral can have any distribution. If in addition the random\nvariable is a final value of an adapted H\\"older continuous process, then it\ncan be represented as a proper integral. It is also shown that in the\nparticular case of mixed fractional Brownian motion, any adapted random\nvariable can be represented as a proper integral.\n'
+p371
+sg8
+(lp372
+S'Shevchenko, Georgiy'
+p373
+aS'Viitasaari, Lauri'
+p374
+asg11
+S'oai:arXiv.org:1404.7518'
+p375
+sg13
+S'Adapted integral representations of random variables'
+p376
+sba(iArxivData
+Paper
+p377
+(dp378
+g4
+S'2014-04-29'
+p379
+sg6
+S'  We study moduli spaces of rational weighted stable tropical curves, and their\nconnections with the classical Hassett spaces. Given a vector $w$ of weights,\nthe moduli space of tropical $w$-stable curves can be given the structure of a\nbalanced fan if and only if $w$ has only heavy and light entries. In this case,\nwe can express the moduli space as the Bergman fan of a graphic matroid.\nFurthermore, we realize the tropical moduli space as a geometric\ntropicalization, and as a Berkovich skeleton, of the classical moduli space.\nThis builds on previous work of Tevelev, Gibney--Maclagan, and\nAbramovich--Caporaso--Payne. Finally, we construct the moduli spaces of\nheavy/light weighted tropical curves as fiber products of unweighted spaces,\nand explore parallels with the algebraic world.\n'
+p380
+sg8
+(lp381
+S'Cavalieri, Renzo'
+p382
+aS'Hampe, Simon'
+p383
+aS'Markwig, Hannah'
+p384
+aS'Ranganathan, Dhruv'
+p385
+asg11
+S'oai:arXiv.org:1404.7426'
+p386
+sg13
+S'Moduli spaces of rational weighted stable curves and tropical geometry'
+p387
+sba(iArxivData
+Paper
+p388
+(dp389
+g4
+S'2014-05-01'
+p390
+sg6
+S'  Let $(X,T^{1,0}X)$ be a compact orientable embeddable three dimensional\nstrongly pseudoconvex CR manifold and let ${\\rm P\\,}$ be the associated CR\nPaneitz operator. In this paper, we show that (I) ${\\rm P\\,}$ is self-adjoint\nand ${\\rm P\\,}$ has $L^2$ closed range. Let $N$ and $\\Pi$ be the associated\npartial inverse and the orthogonal projection onto ${\\rm Ker\\,}{\\rm P\\,}$\nrespectively, then $N$ and $\\Pi$ enjoy some regularity properties. (II) Let\n$\\hat{\\mathcal{P}}$ and $\\hat{\\mathcal{P}_0}$ be the space of $L^2$ CR\npluriharmonic functions and the space of real part of $L^2$ global CR functions\nrespectively. Let $S$ be the associated Szeg\\"o projection and let $\\tau$,\n$\\tau_0$ be the orthogonal projections onto $\\hat{\\mathcal{P}}$ and\n$\\hat{\\mathcal{P}_0}$ respectively. Then, $\\Pi=S+\\ol S+F_0$, $\\tau=S+\\ol\nS+F_1$, $\\tau_0=S+\\ol S+F_2$, where $F_0, F_1, F_2$ are smoothing operators on\n$X$. In particular, $\\Pi$, $\\tau$ and $\\tau_0$ are Fourier integral operators\nwith complex phases and $\\hat{\\mathcal{P}}^\\perp\\bigcap{\\rm Ker\\,}{\\rm P\\,}$,\n$\\hat{\\mathcal{P}_0}^\\perp\\bigcap\\hat{\\mathcal{P}}$,\n$\\hat{\\mathcal{P}_0}^\\perp\\bigcap{\\rm Ker\\,}{\\rm P\\,}$ are all finite\ndimensional subspaces of $C^\\infty(X)$ (it is well-known that\n$\\hat{\\mathcal{P}_0}\\subset\\hat{\\mathcal{P}}\\subset{\\rm Ker\\,}{\\rm P\\,}$).\n(III) ${\\rm Spec\\,}{\\rm P\\,}$ is a discrete subset of $\\Real$ and for every\n$\\lambda\\in{\\rm Spec\\,}{\\rm P\\,}$, $\\lambda\\neq0$, $\\lambda$ is an eigenvalue\nof ${\\rm P\\,}$ and the associated eigenspace $H_\\lambda({\\rm P\\,})$ is a finite\ndimensional subspace of $C^\\infty(X)$.\n'
+p391
+sg8
+(lp392
+S'Hsiao, Chin-Yu'
+p393
+asg11
+S'oai:arXiv.org:1405.0158'
+p394
+sg13
+S'On CR Paneitz operators and CR pluriharmonic functions'
+p395
+sba(iArxivData
+Paper
+p396
+(dp397
+g4
+S'2014-04-30'
+p398
+sg6
+S'  We consider vector-quantized (VQ) transmission of compressed sensing (CS)\nmeasurements over noisy channels. Adopting mean-square error (MSE) criterion to\nmeasure the distortion between a sparse vector and its reconstruction, we\nderive channel-optimized quantization principles for encoding CS measurement\nvector and reconstructing sparse source vector. The resulting necessary optimal\nconditions are used to develop an algorithm for training channel-optimized\nvector quantization (COVQ) of CS measurements by taking the end-to-end\ndistortion measure into account.\n'
+p399
+sg8
+(lp400
+S'Shirazinia, Amirpasha'
+p401
+aS'Chatterjee, Saikat'
+p402
+aS'Skoglund, Mikael'
+p403
+asg11
+S'oai:arXiv.org:1404.7648'
+p404
+sg13
+S'Channel-Optimized Vector Quantizer Design for Compressed Sensing\n  Measurements'
+p405
+sba(iArxivData
+Paper
+p406
+(dp407
+g4
+S'2014-04-30'
+p408
+sg6
+S'  A chordless cycle (induced cycle) $C$ of a graph is a cycle without any\nchord, meaning that there is no edge outside the cycle connecting two vertices\nof the cycle. A chordless path is defined similarly. In this paper, we consider\nthe problems of enumerating chordless cycles/paths of a given graph $G=(V,E),$\nand propose algorithms taking $O(|E|)$ time for each chordless cycle/path. In\nthe existing studies, the problems had not been deeply studied in the\ntheoretical computer science area, and no output polynomial time algorithm has\nbeen proposed. Our experiments showed that the computation time of our\nalgorithms is constant per chordless cycle/path for non-dense random graphs and\nreal-world graphs. They also show that the number of chordless cycles is much\nsmaller than the number of cycles. We applied the algorithm to prediction of\nNMR (Nuclear Magnetic Resonance) spectra, and increased the accuracy of the\nprediction.\n'
+p409
+sg8
+(lp410
+S'Uno, Takeaki'
+p411
+aS'Satoh, Hiroko'
+p412
+asg11
+S'oai:arXiv.org:1404.7610'
+p413
+sg13
+S'An Efficient Algorithm for Enumerating Chordless Cycles and Chordless\n  Paths'
+p414
+sba(iArxivData
+Paper
+p415
+(dp416
+g4
+S'2014-04-30'
+p417
+sg6
+S'  Let $D$ be a strongly connected directed graph of order $n\\geq 4$ vertices\nwhich satisfies the following condition for every triple $x,y,z$ of vertices\nsuch that $x$ and $y$ are non-adjacent: If there is no arc from $x$ to $z$,\nthen $d(x)+d(y)+d^+(x)+d^-(z)\\geq 3n-2$. If there is no arc from $z$ to $x$,\nthen $d(x)+d(y)+d^-(x)+d^+(z)\\geq 3n-2$. In \\cite{[15]} (J. of Graph Theory,\nVol.16, No. 5, 51-59, 1992) Y. Manoussakis proved that $D$ is Hamiltonian. In\n[9] it was shown that $D$ contains a pre-Hamiltonian cycle (i.e., a cycle of\nlength $n-1$) or $n$ is even and $D$ is isomorphic to the complete bipartite\ndigraph with partite sets of cardinalities of $n/2$ and $n/2$. In this paper we\nshow that $D$ contains also a Hamiltonian bypass, (i.e., a subdigraph obtained\nfrom a Hamiltonian cycle by reversing exactly one arc) or $D$ is isomorphic to\none tournament of order 5.\n'
+p418
+sg8
+(lp419
+S'Darbinyan, Samvel Kh.'
+p420
+asg11
+S'oai:arXiv.org:1405.0002'
+p421
+sg13
+S'On Hamiltonian Bypasses in Digraphs with the Condition of Y. Manoussakis'
+p422
+sba(iArxivData
+Paper
+p423
+(dp424
+g4
+S'2014-04-30'
+p425
+sg6
+S'  We solve the (deterministic) weakly almost periodic homogenization problem\nfor the solutions of the Dirichlet problem for fully nonlinear elliptic\nequations of the form $F(\\frac{x}{\\ve},x,D^2u)=f(\\frac{x}{\\ve},x)$, $x\\in\\Om$,\nin a bounded domain $\\Om\\subset\\R^n$. Here, $F(y,x,M)$, $M\\in\\S$, is uniformly\nelliptic, where $\\S$ is the space of $n\\X n$ symmetric matrices, $F(y,x,\\cdot)$\nis concave (or convex), for each $(x,y)\\in\\bar\\Om\\X\\R^n$, and we also impose a\ntechnical condition of small oscillation on $F(\\cdot,x,M)$, throughout $\\R^n$,\nuniformly for $x\\in\\Om$ and $M\\in\\S$, with $\\|M\\|=1$. For each $x\\in\\bar\\Om, \\\nM\\in\\S$, we assume that the functions $F(\\cdot,x,M)$ and $f(\\cdot,x)$ are\nweakly almost periodic functions. The latter class of functions is an ergodic\nalgebra in $\\R^n$, which contains properly the algebra of almost periodic\nfunctions, as well as the algebra of Fourier-Stieltjes transforms. A similar\nresult, for fully nonlinear uniformly elliptic equations was known so far only\nin the case where $F(\\cdot,x, M ), f(\\cdot,x)$ are almost periodic functions,\nfor each $(x,M)\\in\\Om\\X\\S$, in which case we may drop both the concavity and\nsmall oscillation restrictions on $F(y,x,\\cdot)$ and $F(\\cdot,x,M)$,\nrespectively. We also indicate the straightforward adaptations that need to be\nmade in order to prove the analogous result for the parabolic equation\n$u_t-G(\\frac{x}{\\ve},x,t, D^2 u)=g(\\frac{x}{\\ve},x,t)$.\n'
+p426
+sg8
+(lp427
+S'Frid, Hermano'
+p428
+asg11
+S'oai:arXiv.org:1405.0040'
+p429
+sg13
+S'On the weakly almost periodic homogenization of fully nonlinear elliptic\n  and parabolic equations'
+p430
+sba(iArxivData
+Paper
+p431
+(dp432
+g4
+S'2014-04-30'
+p433
+sg6
+S'  We consider ensembles of channel codes that are partitioned into bins, and\nfocus on analysis of exact random coding error exponents associated with\noptimum decoding of the index of the bin to which the transmitted codeword\nbelongs. Two main conclusions arise from this analysis: (i) for independent\nrandom selection of codewords within a given type class, the random coding\nexponent of optimal bin index decoding is given by the ordinary random coding\nexponent function, computed at the rate of the entire code, independently of\nthe exponential rate of the size of the bin. (ii) for this ensemble of codes,\nsub-optimal bin index decoding, that is based on ordinary maximum likelihood\n(ML) decoding, is as good as the optimal bin index decoding in terms of the\nrandom coding error exponent achieved. Finally, for the sake of completeness,\nwe also outline how our analysis of exact random coding exponents extends to\nthe hierarchical ensemble that correspond to superposition coding and optimal\ndecoding, where for each bin, first, a cloud center is drawn at random, and\nthen the codewords of this bin are drawn conditionally independently given the\ncloud center. For this ensemble, conclusions (i) and (ii), mentioned above, no\nlonger hold necessarily in general.\n'
+p434
+sg8
+(lp435
+S'Merhav, Neri'
+p436
+asg11
+S'oai:arXiv.org:1404.7604'
+p437
+sg13
+S'Exact random coding error exponents of optimal bin index decoding'
+p438
+sba(iArxivData
+Paper
+p439
+(dp440
+g4
+S'2014-04-29'
+p441
+sg6
+S'  The Synchrosqueezing transform is a time-frequency analysis method that can\ndecompose complex signals into time-varying oscillatory components. It is a\nform of time-frequency reassignment that is both sparse and invertible,\nallowing for the recovery of the signal. This article presents an overview of\nthe theory and stability properties of Synchrosqueezing, as well as\napplications of the technique to topics in cardiology, climate science and\neconomics.\n'
+p442
+sg8
+(lp443
+S'Thakur, Gaurav'
+p444
+asg11
+S'oai:arXiv.org:1404.7550'
+p445
+sg13
+S'The Synchrosqueezing transform for instantaneous spectral analysis'
+p446
+sba(iArxivData
+Paper
+p447
+(dp448
+g4
+S'2014-04-29'
+p449
+sg6
+S"  This paper presents a near-optimal distributed approximation algorithm for\nthe minimum-weight connected dominating set (MCDS) problem. The presented\nalgorithm finds an $O(\\log n)$ approximation in $\\tilde{O}(D+\\sqrt{n})$ rounds,\nwhere $D$ is the network diameter and $n$ is the number of nodes.\n  MCDS is a classical NP-hard problem and the achieved approximation factor\n$O(\\log n)$ is known to be optimal up to a constant factor, unless P=NP.\nFurthermore, the $\\tilde{O}(D+\\sqrt{n})$ round complexity is known to be\noptimal modulo logarithmic factors (for any approximation), following [Das\nSarma et al.---STOC'11].\n"
+p450
+sg8
+(lp451
+S'Ghaffari, Mohsen'
+p452
+asg11
+S'oai:arXiv.org:1404.7559'
+p453
+sg13
+S'Near-Optimal Distributed Approximation of Minimum-Weight Connected\n  Dominating Set'
+p454
+sba(iArxivData
+Paper
+p455
+(dp456
+g4
+S'2014-04-29'
+p457
+sg6
+S'  It is well known that in K-user constant single-antenna interference channels\nK/2 degrees of freedom (DoF) can be achieved for almost all channel matrices.\nExplicit conditions on the channel matrix to admit K/2 DoF are, however, not\navailable. The purpose of this paper is to identify such explicit conditions,\nwhich are satisfied for almost all channel matrices. We also provide a\nconstruction of corresponding asymptotically DoF-optimal input distributions.\nThe main technical tool used is a recent breakthrough result by Hochman in\nfractal geometry.\n'
+p458
+sg8
+(lp459
+S'Stotz, David'
+p460
+aVBölcskei, Helmut
+p461
+asg11
+S'oai:arXiv.org:1404.7374'
+p462
+sg13
+S'Explicit and almost sure conditions for K/2 degrees of freedom'
+p463
+sba(iArxivData
+Paper
+p464
+(dp465
+g4
+S'2014-04-30'
+p466
+sg6
+S"  We give a characterization of $BMO^\\alpha$-martingale spaces by using\nfractional Carleson measures. We get the boudedness of martingale transform and\nsquare function on $BMO^\\alpha$-martingale spaces easily by using this\ncharacterization. We also proved the martingale version of Carleson's\ninequality related with $BMO^\\alpha$-martingales.\n"
+p467
+sg8
+(lp468
+S'Zhang, Chao'
+p469
+aS'Chen, Wei'
+p470
+aS'Liu, Peide'
+p471
+asg11
+S'oai:arXiv.org:1404.7721'
+p472
+sg13
+S'A Characterization of BMO^\\alpha-martingale spaces by fractional\n  Carleson measures'
+p473
+sba(iArxivData
+Paper
+p474
+(dp475
+g4
+S'2014-05-01'
+p476
+sg6
+S"  Given a collection of categorical data, we want to find the parameters of a\nDirichlet distribution which maximizes the likelihood of that data. Newton's\nmethod is typically used for this purpose but current implementations require\nreading through the entire dataset on each iteration. In this paper, we propose\na modification which requires only a single pass through the dataset and\nsubstantially decreases running time. Furthermore we analyze both theoretically\nand empirically the performance of the proposed algorithm, and provide an open\nsource implementation.\n"
+p477
+sg8
+(lp478
+S'Sklar, Max'
+p479
+asg11
+S'oai:arXiv.org:1405.0099'
+p480
+sg13
+S'Fast MLE Computation for the Dirichlet Multinomial'
+p481
+sba(iArxivData
+Paper
+p482
+(dp483
+g4
+S'2014-05-01'
+p484
+sg6
+S'  A symmetric and a nonsymmetric variant of the additive Schwarz preconditioner\nare proposed for the solution of a nonsymmetric system of algebraic equations\narising from a general finite volume element discretization of symmetric\nelliptic problems with large jumps in the entries of the coefficient matrices\nacross subdomains. It is shown in the analysis, that the convergence of the\npreconditioned GMRES iteration with the proposed preconditioners, depends\npolylogarithmically on the mesh parameters, in other words, the convergence is\nonly weakly dependent on the mesh parameters, and it is robust with respect to\nthe jumps in the coefficients.\n'
+p485
+sg8
+(lp486
+S'Marcinkowski, Leszek'
+p487
+aS'Rahman, Talal'
+p488
+aS'Valdman, Jan'
+p489
+asg11
+S'oai:arXiv.org:1405.0185'
+p490
+sg13
+S'Additive Schwarz preconditioner for the general finite volume element\n  discretization of symmetric elliptic problems'
+p491
+sba(iArxivData
+Paper
+p492
+(dp493
+g4
+S'2014-04-30'
+p494
+sg6
+S'  We give a bound on the mixing time of a uniformly ergodic, reversible Markov\nchain in terms of the spectral radius of the transition operator. This bound\nhas been established previously in finite state spaces, and is widely believed\nto hold in general state spaces, but a proof has not been provided to our\nknowledge.\n'
+p495
+sg8
+(lp496
+S'Woodard, Dawn B.'
+p497
+asg11
+S'oai:arXiv.org:1405.0028'
+p498
+sg13
+S'A Lower Bound on the Mixing Time of Uniformly Ergodic Markov Chains in\n  Terms of the Spectral Radius'
+p499
+sba(iArxivData
+Paper
+p500
+(dp501
+g4
+S'2014-04-29'
+p502
+sg6
+S'  As surrogate functions of $L_0$-norm, many nonconvex penalty functions have\nbeen proposed to enhance the sparse vector recovery. It is easy to extend these\nnonconvex penalty functions on singular values of a matrix to enhance low-rank\nmatrix recovery. However, different from convex optimization, solving the\nnonconvex low-rank minimization problem is much more challenging than the\nnonconvex sparse minimization problem. We observe that all the existing\nnonconvex penalty functions are concave and monotonically increasing on\n$[0,\\infty)$. Thus their gradients are decreasing functions. Based on this\nproperty, we propose an Iteratively Reweighted Nuclear Norm (IRNN) algorithm to\nsolve the nonconvex nonsmooth low-rank minimization problem. IRNN iteratively\nsolves a Weighted Singular Value Thresholding (WSVT) problem. By setting the\nweight vector as the gradient of the concave penalty function, the WSVT problem\nhas a closed form solution. In theory, we prove that IRNN decreases the\nobjective function value monotonically, and any limit point is a stationary\npoint. Extensive experiments on both synthetic data and real images demonstrate\nthat IRNN enhances the low-rank matrix recovery compared with state-of-the-art\nconvex algorithms.\n'
+p503
+sg8
+(lp504
+S'Lu, Canyi'
+p505
+aS'Tang, Jinhui'
+p506
+aS'Yan, Shuicheng'
+p507
+aS'Lin, Zhouchen'
+p508
+asg11
+S'oai:arXiv.org:1404.7306'
+p509
+sg13
+S'Generalized Nonconvex Nonsmooth Low-Rank Minimization'
+p510
+sba(iArxivData
+Paper
+p511
+(dp512
+g4
+S'2014-04-29'
+p513
+sg6
+S'  In this paper, the Cramer Rao bound (CRB) for range estimation between two\nunderwater nodes is calculated under a Gaussian noise assumption on the\nmeasurements. The nodes can measure their depths, their mutual time of flight,\nand they have access to noisy sound speed samples at different depths. The\neffect of each measurement on the CRB will be analyzed, and it will be shown\nthat for long distances, the effect of the sound speed measurement noise is\ndominant, and its impact depends on the positions of the nodes, actual sound\nspeed profile, the number of sound speed samples, and the depths at which the\nsound speed samples are gathered.\n'
+p514
+sg8
+(lp515
+S'Ramezani, Hamid'
+p516
+aS'Rajan, Raj Thilak'
+p517
+aS'Leus, Geert'
+p518
+asg11
+S'oai:arXiv.org:1404.7313'
+p519
+sg13
+S'Cramer Rao Lower Bound for Underwater Range Estimation with Noisy Sound\n  Speed Profile'
+p520
+sba(iArxivData
+Paper
+p521
+(dp522
+g4
+S'2014-04-29'
+p523
+sg6
+S'  This paper is devoted to the Moser-Trudinger-Onofri inequality on smooth\ncompact connected Riemannian manifolds. We establish a rigidity result for the\nEuler-Lagrange equation and deduce an estimate of the optimal constant in the\ninequality on two-dimensional closed Riemannian manifolds. Compared to existing\nresults, we provide a non-local criterion which is well adapted to variational\nmethods, introduce a nonlinear flow along which the evolution of a functional\nrelated with the inequality is monotone and get an integral remainder term\nwhich allows to discuss optimality issues. As an important application of our\nmethod, we also consider the non-compact case of the Moser-Trudinger-Onofri\ninequality on the two-dimensional Euclidean space, with weights. The standard\nweight is the one that is computed when projecting the two-dimensional sphere\nusing the stereographic projection, but we also give more general results which\nare of interest, for instance, for the Keller-Segel model in chemotaxis\n'
+p524
+sg8
+(lp525
+S'Dolbeault, Jean'
+p526
+aS'Esteban, Maria J.'
+p527
+aS'Jankowiak, Gaspard'
+p528
+asg11
+S'oai:arXiv.org:1404.7338'
+p529
+sg13
+S'Rigidity results for semilinear elliptic equations with exponential\n  nonlinearities and Moser-Trudinger-Onofri inequalities on two-dimensional\n  Riemannian manifolds'
+p530
+sba(iArxivData
+Paper
+p531
+(dp532
+g4
+S'2014-05-01'
+p533
+sg6
+S'  We study the existence and non-existence of nontrivial weak solution of $$\n{\\Delta^2u-\\mu\\frac{u}{|x|^{4}} =\n\\frac{|u|^{q_{\\beta}-2}u}{|x|^{\\beta}}+|u|^{q-2}u\\quad\\textrm{in ${\\mathbb\nR}^N$,}} $$ where $N\\geq 5$, $q_{\\beta}=\\frac{2(N-\\beta)}{N-4}$, $0<\\beta<4$,\n$1<q\\leq 2^{**}$ and $\\mu<\\mu_1:=\\big(\\frac{N(N-4)}{4}\\big)^2$. Using Pohozaev\ntype of identity, we prove the non-existence result when $1<q< 2^{**}$. On the\nother hand when the equation has multiple critical nonlinearities i.e.\n$q=2^{**}$ and $-(N-2)^2\\leq\\mu<\\mu_1$, we establish the existence of\nnontrivial solution using the Mountain-Pass theorem by Ambrosetti and\nRabinowitz and the variational methods.\n'
+p534
+sg8
+(lp535
+S'Bhakta, Mousomi'
+p536
+asg11
+S'oai:arXiv.org:1405.0162'
+p537
+sg13
+S'A note on semilinear elliptic equation with biharmonic operator and\n  multiple critical nonlinearities'
+p538
+sba(iArxivData
+Paper
+p539
+(dp540
+g4
+S'2014-04-30'
+p541
+sg6
+S'  We study the learning algorithm corresponding to the incremental gradient\ndescent defined by the empirical risk over an infinite dimensional hypotheses\nspace. We consider a statistical learning setting and show that, provided with\na universal step-size and a suitable early stopping rule, the learning\nalgorithm thus obtained is universally consistent and derive finite sample\nbounds. Our results provide a theoretical foundation for considering early\nstopping in online learning algorithms and shed light on the effect of allowing\nfor multiple passes over the data.\n'
+p542
+sg8
+(lp543
+S'Rosasco, Lorenzo'
+p544
+aS'Tacchetti, Andrea'
+p545
+aS'Villa, Silvia'
+p546
+asg11
+S'oai:arXiv.org:1405.0042'
+p547
+sg13
+S'Regularization by Early Stopping for Online Learning Algorithms'
+p548
+sba(iArxivData
+Paper
+p549
+(dp550
+g4
+S'2014-04-29'
+p551
+sg6
+S'  In this tutorial, we demonstrate how easy it is to construct finite state\nmachines, in particular automata and transducers, within the computer algebra\nsystem Sage. As a beneficent byproduct, we calculate the asymptotic Hamming\nweight of a non-adjacent-form-like digit expansion, which was not known before.\n'
+p552
+sg8
+(lp553
+S'Heuberger, Clemens'
+p554
+aS'Krenn, Daniel'
+p555
+aS'Kropf, Sara'
+p556
+asg11
+S'oai:arXiv.org:1404.7458'
+p557
+sg13
+S'Automata and Transducers in the Computer Algebra System Sage'
+p558
+sba(iArxivData
+Paper
+p559
+(dp560
+g4
+S'2014-05-01'
+p561
+sg6
+S'  We study in details the long-time asymptotic behavior of a relativistic\ndiffusion taking values in the unitary tangent bundle of a curved Lorentzian\nmanifold, namely a spatially flat and fast expanding Robertson-Walker\nspace-time. We prove in particular that the Poisson boundary of the diffusion\ncan be identified with the causal boundary of the underlying manifold.\n'
+p562
+sg8
+(lp563
+VAngst, Jürgen
+p564
+asg11
+S'oai:arXiv.org:1405.0148'
+p565
+sg13
+S'Poisson boundary of a relativistic diffusion in curved space-times: an\n  example'
+p566
+sba(iArxivData
+Paper
+p567
+(dp568
+g4
+S'2014-04-29'
+p569
+sg6
+S'  Smooth Kahler-Einstein metrics have been studied for the past 80 years. More\nrecently, singular Kahler-Einstein metrics have emerged as objects of intrinsic\ninterest, both in differential and algebraic geometry, as well as a powerful\ntool in better understanding their smooth counterparts. This article is mostly\na survey of some of these developments.\n'
+p570
+sg8
+(lp571
+S'Rubinstein, Yanir A.'
+p572
+asg11
+S'oai:arXiv.org:1404.7451'
+p573
+sg13
+S'Smooth and singular Kahler-Einstein metrics'
+p574
+sba(iArxivData
+Paper
+p575
+(dp576
+g4
+S'2014-04-30'
+p577
+sg6
+S'  We address the problem of testing whether a given dynamic graph is temporally\nconnected, {\\it i.e.} a temporal path (also called a {\\em journey}) exists\nbetween all pairs of vertices. We consider a discrete version of the problem,\nwhere the topology is given as an evolving graph\n$\\mathcal{G}=\\{G_1,G_2,...,G_{k}\\}$ whose set of vertices is invariant and the\nset of (directed) edges varies over time. Two cases are studied, depending on\nwhether a single edge or an unlimited number of edges can be crossed in a same\n$G_i$ (strict journeys {\\it vs} non-strict journeys).\n  In the case of strict journeys, two algorithms designed for other problems\ncan be adapted. However, we show that a dedicated approach performs better than\none of them in all cases, and than the other one for a large range of graphs,\nin particular those whose density is low at any time (though potentially high\nover time). The time complexity of our algorithm is $O(k\\mu n)$, where\n$k=|\\mathcal{G}|$ is the number of time steps $\\mathcal{G}$ covers and\n$\\mu=max(|E_i|)$ is the maximum {\\em instant} density, to be contrasted with\n$m=|\\cup E_i|$, the {\\em cumulated} density. Indeed, it is not uncommon for a\nmobility scenario to satisfy, for instance, both $\\mu=o(n)$ and\n$m=\\Theta(n^2)$. We characterize the key values of $k, \\mu$ and $m$ for which\nour algorithm should be used.\n  In the case of non-strict journeys, for which no algorithm is known, we show\nthat a similar strategy can be used to answer the question, still in $O(k\\mu\nn)$ time.\n  Both algorithms gradually build the transitive closure of strict journeys\n($\\mathcal{G}^*_{st}$) or non-strict journeys ($\\mathcal{G}^*$) as the edges\nare examined. A by-product of the execution is to make $\\mathcal{G}^*_{st}$ and\n$\\mathcal{G}^*$ available for further connectivity queries (in a temporal\nversion), these queries being then reduced to simple adjacency tests in a\nstatic graph.\n'
+p578
+sg8
+(lp579
+S'Barjon, Matthieu'
+p580
+aS'Casteigts, Arnaud'
+p581
+aS'Chaumette, Serge'
+p582
+aS'Johnen, Colette'
+p583
+aS'Neggaz, Yessin M.'
+p584
+asg11
+S'oai:arXiv.org:1404.7634'
+p585
+sg13
+S'Testing Temporal Connectivity in Sparse Dynamic Graphs'
+p586
+sba(iArxivData
+Paper
+p587
+(dp588
+g4
+S'2014-04-30'
+p589
+sg6
+S'  For the static list update problem, given an ordered list $\\rho_0$ (an\nordering of the list $L$ = \\{ $a_a, a_2, ..., a_l$ \\}), and a sequence $\\sigma\n= (\\sigma_1, \\sigma_2, ..., \\sigma_m)$ of requests for items in $L$, we\ncharacterize the list reorganizations in an optimal offline solution in terms\nof an initial permutation of the list followed by a sequence of $m$ {\\em\nelement transfers}, where an element transfer is a type of list reorganization\nwhere only the requested item can be moved. Then we make use of this\ncharacterization to design an $O(l^{2} (l-1)!m)$ time optimal offline\nalgorithm.\n'
+p590
+sg8
+(lp591
+S'Divakaran, Srikrishnan'
+p592
+asg11
+S'oai:arXiv.org:1404.7638'
+p593
+sg13
+S'An Optimal Offline Algorithm for List Update'
+p594
+sba(iArxivData
+Paper
+p595
+(dp596
+g4
+S'2014-05-01'
+p597
+sg6
+S"  The overarching goal of this paper is to link the notion of sets of finite\nperimeter (a concept associated with $N^{1,1}$-spaces) and the theory of heat\nsemigroups (a concept related to $N^{1,2}$-spaces) in the setting of metric\nmeasure spaces whose measure is doubling and supports a $1$-Poincar\\'e\ninequality. We prove a characterization of sets of finite perimeter in terms of\na short time behavior of the heat semigroup in such metric spaces. We also give\na new characterization of ${\\rm BV}$ functions in terms of a near-diagonal\nenergy in this general setting.\n"
+p598
+sg8
+(lp599
+S'Marola, Niko'
+p600
+aS'Miranda Jr., Michele'
+p601
+aS'Shanmugalingam, Nageswari'
+p602
+asg11
+S'oai:arXiv.org:1405.0186'
+p603
+sg13
+S'Characterizations of sets of finite perimeter using heat kernels in\n  metric spaces'
+p604
+sba(iArxivData
+Paper
+p605
+(dp606
+g4
+S'2014-05-01'
+p607
+sg6
+S'  Let $\\sigma$ be a partition of the positive integer $r$. A\n$\\sigma$-hypergraph $H=H(n,r,q|\\sigma)$ is an $r$-uniform hypergraph on $nq$\nvertices which are partitioned into $n$ classes $V_1, V_2, \\ldots, V_n$ each\ncontaining $q$ vertices. An $r$-subset $K$ of vertices is an edge of the\nhypergraph if the partition of $r$ formed by the non-zero cardinalities $|K\\cap\nV_i|, 1\\leq i \\leq n,$ is $\\sigma$.\n  In earlier works we have considered colourings of the vertices of $H$ which\nare constrained such that any edge has at least $\\alpha$ and at most $\\beta$\nvertices of the same colour, and we have shown that interesting results can be\nobtained by varying $\\alpha, \\beta$ and the parameters of $H$ appropriately. In\nthis paper we continue to investigate the versatility of $\\sigma$-hypergraphs\nby considering two classical problems: independence and matchings.\n  We first demonstrate an interesting link between the constrained colourings\ndescribed above and the $k$-independence number of a hypergraph, that is, the\nlargest cardinality of a subset of vertices of a hypergraph not containing\n$k+1$ vertices in the same edge. We also give an exact computation of the\n$k$-independence number of the $\\sigma$-hypergraph $H$. We then present results\non maximum, and sometimes perfect, matchings in $H$. These results often depend\non divisibility relations between the parameters of $H$ and on the highest\ncommon factor of the parts of $\\sigma$.\n'
+p608
+sg8
+(lp609
+S'Caro, Yair'
+p610
+aS'Lauri, Josef'
+p611
+aS'Zarb, Christina'
+p612
+asg11
+S'oai:arXiv.org:1405.0107'
+p613
+sg13
+S'Independence and Matchings in $\\sigma$-hypergraphs'
+p614
+sba(iArxivData
+Paper
+p615
+(dp616
+g4
+S'2014-04-30'
+p617
+sg6
+S'  Chemotaxis refers to the directed movement of cells in response to a chemical\nsignal called chemoattractant. A crucial point in the mathematical modeling of\nchemotactic processes is the correct description of the chemotactic sensitivity\nand of the production rate of the chemoattractant. In this paper, we\ninvestigate the identification of these non-linear parameter functions in a\nchemotaxis model with volume filling. We also discuss the numerical realization\nof Tikhonov regularization for the stable solution of the inverse problem. Our\ntheoretical findings are supported by numerical tests.\n'
+p618
+sg8
+(lp619
+S'Egger, Herbert'
+p620
+aS'Pietschmann, Jan-Frederik'
+p621
+aS'Schlottbom, Matthias'
+p622
+asg11
+S'oai:arXiv.org:1404.7780'
+p623
+sg13
+S'Identification of Chemotaxis Models with Volume Filling'
+p624
+sba(iArxivData
+Paper
+p625
+(dp626
+g4
+S'2014-04-30'
+p627
+sg6
+S'  Let $\\mathcal{C} = (C_1, C_2, \\ldots)$ be a sequence of codes such that each\n$C_i$ is a linear $[n_i,k_i,d_i]$-code over some fixed finite field\n$\\mathbb{F}$, where $n_i$ is the length of the codewords, $k_i$ is the\ndimension, and $d_i$ is the minimum distance. We say that $\\mathcal{C}$ is\nasymptotically good if, for some $\\varepsilon > 0$ and for all $i$, $n_i \\geq\ni$, $k_i/n_i \\geq \\varepsilon$, and $d_i/n_i \\geq \\varepsilon$. Sequences of\nasymptotically good codes exist. We prove that if $\\mathcal{C}$ is a class of\nGF$(p^n)$-linear codes (where $p$ is prime and $n \\geq 1$), closed under\npuncturing and shortening, and if $\\mathcal{C}$ contains an asymptotically good\nsequence, then $\\mathcal{C}$ must contain all GF$(p)$-linear codes. Our proof\nrelies on a powerful new result from matroid structure theory.\n'
+p628
+sg8
+(lp629
+S'Nelson, Peter'
+p630
+aS'van Zwam, Stefan H. M.'
+p631
+asg11
+S'oai:arXiv.org:1404.7771'
+p632
+sg13
+S'On the existence of asymptotically good linear codes in minor-closed\n  classes'
+p633
+sba(iArxivData
+Paper
+p634
+(dp635
+g4
+S'2014-04-30'
+p636
+sg6
+S'  In arXiv:1301.6911, we built and studied a Curie-Weiss model exhibiting\nself-organized criticality : it is a model with a self-interaction leading to\nfluctuations of order $n^{3/4}$ and a limiting law proportional to\n$\\exp(-x^4/12)$. In this paper we modify our model in order to "kill the term\n$x^4$" and to obtain a self-interaction leading to fluctuations of order\n$n^{5/6}$ and a limiting law $C\\,\\exp(-\\lambda x^6)\\,dx$, for suitable positive\nconstants $C$ and $\\lambda$.\n'
+p637
+sg8
+(lp638
+S'Gorny, Matthias'
+p639
+asg11
+S'oai:arXiv.org:1404.7637'
+p640
+sg13
+S'A Self-Interaction Leading to Fluctuations of Order $n^{5/6}$'
+p641
+sba(iArxivData
+Paper
+p642
+(dp643
+g4
+S'2014-04-30'
+p644
+sg6
+S"  In this paper we deal with the well-posedness of Dirichlet problems\nassociated to nonlocal Hamilton-Jacobi parabolic equations in a bounded, smooth\ndomain $\\Omega$, in the case when the classical boundary condition may be lost.\nWe address the problem for both coercive and noncoercive Hamiltonians: for\ncoercive Hamiltonians, our results rely more on the regularity properties of\nthe solutions, while noncoercive case are related to optimal control problems\nand the arguments are based on a careful study of the dynamics near the\nboundary of the domain. Comparison principles for bounded sub and\nsupersolutions are obtained in the context of viscosity solutions with\ngeneralized boundary conditions, and consequently we obtain the existence and\nuniqueness of solutions in $C(\\bar{\\Omega} \\times [0,+\\infty))$ by the\napplication of Perron's method. Finally, we prove that the solution of these\nproblems converges to the solutions of the associated stationary problem as $t\n\\to +\\infty$ under suitable assumptions on the data.\n"
+p645
+sg8
+(lp646
+S'Barles, Guy'
+p647
+aS'Topp, Erwin'
+p648
+asg11
+S'oai:arXiv.org:1404.7804'
+p649
+sg13
+S'Existence, Uniqueness and Asymptotic Behavior for Nonlocal Parabolic\n  Problems with Dominating Gradient Terms'
+p650
+sba(iArxivData
+Paper
+p651
+(dp652
+g4
+S'2014-04-30'
+p653
+sg6
+S"  Confirming a conjecture of Diestel, we prove that every locally finite\ntransitive graph whose cycle space is generated by cycles of bounded length is\naccessible. This also implies Dunwoody's conjecture that locally finite\nhyperbolic transitive graphs are accessible. As a further application, we\nobtain a combinatorial proof of Dunwoody's accessibility theorem of finitely\npresented groups.\n"
+p654
+sg8
+(lp655
+S'Hamann, Matthias'
+p656
+asg11
+S'oai:arXiv.org:1404.7677'
+p657
+sg13
+S'Accessibility in transitive graphs'
+p658
+sba(iArxivData
+Paper
+p659
+(dp660
+g4
+S'2014-04-30'
+p661
+sg6
+S'  A space-time physical-layer network coding (ST-PNC) method is presented for\ninformation exchange among multiple users over fully-connected multi-way relay\nnetworks. The method involves two key steps: i) side-information learning and\nii) space-time relay transmission. In the first phase of side-information\nlearning, different sets of users are scheduled to send signals over networks\nand the remaining users and relays overhear the transmitted signals, thereby\nlearning the interference patterns. In the second phase of space-time relay\ntransmission, multiple relays cooperatively send out linear combinations of\nreceived signals in the previous phase using space-time precoding so that all\nusers efficiently exploit their side-information in the form of: 1) what they\nsent and 2) what they overheard in decoding. This coding concept is illustrated\nthrough two simple network examples, and it is shown that ST-PNC improves the\nsum of degrees of freedom (sum-DoF) of the network compared to existing\ninterference management methods. With ST-PNC, the sum-DoF of a general\nmulti-way relay network without channel knowledge at users is characterized in\nterms of relevant system parameters, chiefly the number of users, the number of\nrelays, and the number of antennas at relays. A major implication of the\nderived results is that efficiently harnessing both transmitted and overheard\nsignals as side-information brings significant performance improvements to\nfully-connected multi-way relay networks.\n'
+p662
+sg8
+(lp663
+S'Lee, Namyoon'
+p664
+aS'Heath Jr, Robert W.'
+p665
+asg11
+S'oai:arXiv.org:1405.0029'
+p666
+sg13
+S'Space-Time Physical-Layer Network Coding'
+p667
+sba(iArxivData
+Paper
+p668
+(dp669
+g4
+S'2014-04-30'
+p670
+sg6
+S"  We give an explicit bound for the $L_1$-distance between two additive\nprocesses of local characteristics $(f_j(\\cdot),\\sigma^2(\\cdot),\\nu_j)$, $j =\n1,2$. The cases $\\sigma =0$ and $\\sigma > 0$ are both treated. We allow $\\nu_1$\nand $\\nu_2$ to be equivalent time-homogeneous L\\'evy measures, possibly with\ninfinite variation. Some examples of possible applications are discussed.\n"
+p671
+sg8
+(lp672
+VEtoré, Pierre
+p673
+aS'Mariucci, Ester'
+p674
+asg11
+S'oai:arXiv.org:1404.7779'
+p675
+sg13
+S"$L_1$-distance for additive processes with time-homogeneous L\\'evy\n  measures"
+p676
+sba(iArxivData
+Paper
+p677
+(dp678
+g4
+S'2014-04-29'
+p679
+sg6
+S'  It is well-known that in Banach spaces with finite cotype, the $R$-bounded\nand $\\gamma$-bounded families of operators coincide. If in addition $X$ is a\nBanach lattice, then these notions can be expressed as square function\nestimates. It is also clear that $R$-boundedness implies $\\gamma$-boundedness.\nIn this note we show that all other possible inclusions fail. Furthermore, we\nwill prove that $R$-boundedness is stable under taking adjoints if and only if\nthe underlying space is $K$-convex.\n'
+p680
+sg8
+(lp681
+VKwapie\u0144, Stanislaw
+p682
+aS'Veraar, Mark'
+p683
+aS'Weis, Lutz'
+p684
+asg11
+S'oai:arXiv.org:1404.7328'
+p685
+sg13
+S'$R$-boundedness versus $\\gamma$-boundedness'
+p686
+sba(iArxivData
+Paper
+p687
+(dp688
+g4
+S'2014-05-01'
+p689
+sg6
+S'  The Allen-Cahn equation, coupled with dynamic boundary conditions, has\nrecently received a good deal of attention. The new issue of this paper is the\nsetting of a rather general mass constraint which may involve either the\nsolution inside the domain or its trace on the boundary. The system of\nnonlinear partial differential equations can be formulated as variational\ninequality. The presence of the constraint in the evolution process leads to\nadditional terms in the equation and the boundary condition containing a\nsuitable Lagrange multiplier. A well-posedness result is proved for the related\ninitial value problem.\n'
+p690
+sg8
+(lp691
+S'Colli, Pierluigi'
+p692
+aS'Fukao, Takeshi'
+p693
+asg11
+S'oai:arXiv.org:1405.0116'
+p694
+sg13
+S'The Allen-Cahn equation with dynamic boundary conditions and mass\n  constraints'
+p695
+sba(iArxivData
+Paper
+p696
+(dp697
+g4
+S'2014-04-30'
+p698
+sg6
+S'  OFDM (Orthogonal Frequency Division Multiplexing)provides the promising\nphysical layer for 4G and 3GPP LTE Systems in terms of efficient use of\nbandwidth and data rates. This paper highlights the implementation of OFDM in\nDigital Video Broadcasting-Terrestrial (DVB-T). It mainly focuses on the timing\noffset problem present in OFDM systems and its proposed solution using Cyclic\nPrefix (CP) as a modified SC (Schmidl and COX) algorithm. It also highlights\nthe timing synchronization as well as performance comparison through bit error\nrate. Synchronization issues in OFDM are important and can lead to information\nloss if not properly addressed. Simulations were performed to implement DVB-T\nsystem and to compare different synchronization methods under certain\ndistribution model.\n'
+p699
+sg8
+(lp700
+S'Farhan, Farhan'
+p701
+asg11
+S'oai:arXiv.org:1404.7843'
+p702
+sg13
+S'Study of Timing Synchronization in MIMO-OFDM Systems Using DVB-T'
+p703
+sba(iArxivData
+Paper
+p704
+(dp705
+g4
+S'2014-04-30'
+p706
+sg6
+S'  A skew Hadamard difference set (SHDS) is a difference set that satisfies the\nskew condition. It is known that if a group G admits a skew hadamard difference\nset, then G is a p-group with order congruent to 3 modulo 4. We will generalize\nskew Hadamard difference sets to Generalized Skew Hadamard Difference Sets\n(GSHDS) to cover the case when p is congruent to 1 module 4, and we will extend\nall known results that yield necessary existence conditions of skew Hadamard\ndifference sets to our generalization, including the known exponent bounds. We\nwill also show a set of necessary existence conditions a special family of\ngroups. We will close the article with a general p-divisibility condition of\nthe difference intersection numbers of a GSHDS for a special class of subgroups\nL.\n'
+p707
+sg8
+(lp708
+S'Salazar-Lazaro, Carlos'
+p709
+asg11
+S'oai:arXiv.org:1405.0045'
+p710
+sg13
+S'Generalized Skew Hadamard Difference Sets'
+p711
+sba(iArxivData
+Paper
+p712
+(dp713
+g4
+S'2014-04-29'
+p714
+sg6
+S'  Inspired by recent results on the effect of integrable boundary conditions on\nthe bulk behavior of an integrable system, and in particular on the behavior of\nan existing defect we systematically formulate the Lax pairs in the\nsimultaneous presence of integrable boundaries and defects. The respective\nsewing conditions as well as the relevant equations of motion on the defect\npoint are accordingly extracted. We consider a specific prototype i.e. the\nvector non-linear Schrodinger (NLS) model to exemplify our construction.\n'
+p715
+sg8
+(lp716
+S'Doikou, Anastasia'
+p717
+asg11
+S'oai:arXiv.org:1404.7329'
+p718
+sg13
+S'Lax pair formulation in the simultaneous presence of boundaries and\n  defects'
+p719
+sba(iArxivData
+Paper
+p720
+(dp721
+g4
+S'2014-04-29'
+p722
+sg6
+S'  We introduce the notion of Hypergraph Weighted Model (HWM) that generically\nassociates a tensor network to a hypergraph and then computes a value by tensor\ncontractions directed by its hyperedges. A series $r$ defined on a hypergraph\nfamily is said to be recognizable if there exists a HWM that computes it. This\nmodel generalizes the notion of rational series on strings and trees. We prove\nsome closure properties and study at which conditions, finite support series\nare recognizable.\n'
+p723
+sg8
+(lp724
+VBailly, Raphaël
+p725
+aVDenis, François
+p726
+aS'Rabusseau, Guillaume'
+p727
+asg11
+S'oai:arXiv.org:1404.7533'
+p728
+sg13
+S'Recognizable Series on Hypergraphs'
+p729
+sba(iArxivData
+Paper
+p730
+(dp731
+g4
+S'2014-04-29'
+p732
+sg6
+S'  In this paper we study the backward uniqueness for parabolic equations with\nnon-Lipschitz coefficients in time and space. The result presented here\nimproves an old uniqueness theorem due to Lions and Malgrange [Math. Scand.\n${\\bf 8}$ (1960), 277--286] and some more recent results of Del Santo and\nPrizzi [J. Math. Pures Appl. ${\\bf 84}$ (2005), 471--491; Ann. Mat. Pura Appl.,\nto appear].\n'
+p733
+sg8
+(lp734
+S'Del Santo, Daniele'
+p735
+aVJäh, Christian
+p736
+aS'Paicu, Marius'
+p737
+asg11
+S'oai:arXiv.org:1404.7405'
+p738
+sg13
+S'Backward uniqueness for parabolic operators with non-Lipschitz\n  coefficients'
+p739
+sba(iArxivData
+Paper
+p740
+(dp741
+g4
+S'2014-04-29'
+p742
+sg6
+S'  We study the problem of a random Gaussian vector field given that a\nparticular real quadratic form $\\mathcal{Q}$ is arbitrarily large. We prove\nthat in such a case the Gaussian field is primarily governed by the fundamental\neigenmode of a particular operator. As a good check of our proposition we use\nit to re-derive the result of Adler dealing with the structure of field in the\nvicinity of a high local maxima. We have also applied our result to an\nincompressible homogeneous Gaussian random flow in the limit of large local\nhelicity and calculate the structure of the flow.\n'
+p743
+sg8
+(lp744
+S'Sharma, Girish'
+p745
+asg11
+S'oai:arXiv.org:1404.7424'
+p746
+sg13
+S'Concentration properties of Gaussian random fields'
+p747
+sba(iArxivData
+Paper
+p748
+(dp749
+g4
+S'2014-05-01'
+p750
+sg6
+S'  We show that a physically motivated trial solution of a damped driven\nnon-linear Schr\\"odinger equation does neither encounter collapse nor so-called\npseudocollapse although the exponent of the non-linearity is critical. This\nresult sheds new light on the accuracy of numerical solutions to this problem\nobtained in an earlier paper where the authors claim pseudocollapse of the\ntrial solution when the variance of the driving noise is below a certain level.\n'
+p751
+sg8
+(lp752
+S'Assing, Sigurd'
+p753
+aS'Hilbert, Astrid'
+p754
+asg11
+S'oai:arXiv.org:1405.0151'
+p755
+sg13
+S'On the collapse of a wave function satisfying a damped driven non-linear\n  Schr\\"odinger equation'
+p756
+sba(iArxivData
+Paper
+p757
+(dp758
+g4
+S'2014-05-01'
+p759
+sg6
+S"  In 1969, Andrews proved a theorem on partitions with difference conditions\nwhich generalises Schur's celebrated partition identity. In this paper, we\ngeneralise Andrews' theorem to overpartitions. The proof uses q-differential\nequations and recurrences.\n"
+p760
+sg8
+(lp761
+S'Dousse, Jehanne'
+p762
+asg11
+S'oai:arXiv.org:1405.0255'
+p763
+sg13
+S'A generalisation of a partition theorem of Andrews to overpartitions'
+p764
+sba(iArxivData
+Paper
+p765
+(dp766
+g4
+S'2014-04-29'
+p767
+sg6
+S"  Optical communication is well-suited to low probability of detection (LPD)\napplications. Several practical LPD systems exist that leverage the narrow beam\nspread at optical frequencies, and spread-spectrum modulation formats. We\nrecently proved that theoretically one can send $\\mathcal{O}(\\sqrt{n})$ bits\nreliably and covertly over $n$ modes of a lossy optical channel with non-zero\nexcess noise present either in the channel or in the adversary's receiver when\nthe adversary Willie is assumed to be able to intercept all the light\ntransmitted by Alice not received by the intended receiver Bob. In this paper\nwe present the theory and implementation of optical LPD communication using a\npulse position modulation (PPM) alphabet and a Reed-Solomon outer code. We\nprove that, when the receiver and the adversary are both equipped with photon\ncounting receivers with non-zero dark count rates, Alice can reliably transmit\n$\\mathcal{O}(\\sqrt{n}\\log Q)$ bits over a lossy channel using $n$ symbols of a\n$Q$-ary PPM constellation with essentially zero probability of detection by\nWillie, even if Willie can intercept all transmitted photons not received by\nBob. We corroborate our theoretical result with an experiment on an optical\ntestbed, which we believe is the first proof-of-concept demonstration of\ninformation-theoretically secure LPD communication.\n"
+p768
+sg8
+(lp769
+S'Bash, Boulat A.'
+p770
+aS'Gheorghe, Andrei H.'
+p771
+aS'Patel, Monika'
+p772
+aS'Habif, Jonathan'
+p773
+aS'Goeckel, Dennis'
+p774
+aS'Towsley, Don'
+p775
+aS'Guha, Saikat'
+p776
+asg11
+S'oai:arXiv.org:1404.7347'
+p777
+sg13
+S'Covert Optical Communication'
+p778
+sba(iArxivData
+Paper
+p779
+(dp780
+g4
+S'2014-05-01'
+p781
+sg6
+S'  As graphs continue to grow in size, we seek ways to effectively process such\ndata at scale. The model of streaming graph processing, in which a compact\nsummary is maintained as each edge insertion/deletion is observed, is an\nattractive one. However, few results are known for optimization problems over\nsuch dynamic graph streams.\n  In this paper, we introduce a new approach to handling graph streams, by\ninstead seeking solutions for the parameterized versions of these problems\nwhere we are given a parameter $k$ and the objective is to decide whether there\nis a solution bounded by $k$. By combining kernelization techniques with\nrandomized sketch structures, we obtain the first streaming algorithms for the\nparameterized versions of the Vertex Cover problem. We consider the following\nthree models for a graph stream on $n$ nodes:\n  1. The insertion-only model where the edges can only be added.\n  2. The dynamic model where edges can be both inserted and deleted.\n  3. The \\emph{promised} dynamic model where we are guaranteed that at each\ntimestamp there is a solution of size at most $k$.\n  In each of these three models we are able to design parameterized streaming\nalgorithms for the Vertex Cover problem. We are also able to show matching\nlower bound for the space complexity of our algorithms.\n  (Due to the arXiv limit of 1920 characters for abstract field, please see the\nabstract in the paper for detailed description of our results)\n'
+p782
+sg8
+(lp783
+S'Chitnis, Rajesh'
+p784
+aS'Cormode, Graham'
+p785
+aS'Hajaghayi, MohammadTaghi'
+p786
+aS'Monemizadeh, Morteza'
+p787
+asg11
+S'oai:arXiv.org:1405.0093'
+p788
+sg13
+S'Parameterized Streaming Algorithms for Vertex Cover'
+p789
+sba(iArxivData
+Paper
+p790
+(dp791
+g4
+S'2014-04-30'
+p792
+sg6
+S"  Stricker's theorem states that a Gaussian process is a semimartingale in its\nnatural filtration if and only if it is the sum of an independent increment\nGaussian process and a Gaussian process of finite variation, see [1983, Z.\nWahrsch. Verw. Gebiete 64(3)]. We consider extensions of this result to non\nGaussian infinitely divisible processes. First we show that the class of\ninfinitely divisible semimartingales is so large that the natural analog of\nStricker's theorem fails to hold. Then, as the main result, we prove that an\ninfinitely divisible semimartingale relative to the filtration generated by a\nrandom measure admits a unique decomposition into an independent increment\nprocess and an infinitely divisible process of finite variation. Consequently,\nthe natural analog of Stricker's theorem holds for all strictly representable\nprocesses (as defined in this paper). Since Gaussian processes are strictly\nrepresentable due to Hida's multiplicity theorem, the classical Stricker's\ntheorem follows from our result. Another consequence is that the question when\nan infinitely divisible process is a semimartingale can often be reduced to a\npath property, when a certain associated infinitely divisible process is of\nfinite variation. Along these lines, using Basse-O'Connor and Rosi\\'nski [2013,\nStochastic Process. Appl. 123(6)], we characterize semimartingales within a\nlarge class of stationary increment infinitely divisible processes; this class\nincludes many infinitely divisible processes of interest, including linear\nfractional processes, mixed moving averages, and supOU processes, as particular\ncases. The proof of the main theorem relies on series representations of jumps\nof c\\`adl\\`ag infinitely divisible processes given in Basse-O'Connor and\nRosi\\'nski [2013, Ann. Probab. 41(6)] combined with techniques of stochastic\nanalysis.\n"
+p793
+sg8
+(lp794
+S"Basse-O'Connor, Andreas"
+p795
+aVRosi\u0144ski, Jan
+p796
+asg11
+S'oai:arXiv.org:1404.7598'
+p797
+sg13
+S'On infinitely divisible semimartingales'
+p798
+sba(iArxivData
+Paper
+p799
+(dp800
+g4
+S'2014-05-01'
+p801
+sg6
+S'  This paper is a sequel of \\cite{CD:2012}. We show how to establish a\nfunctional Edgeworth expansion of any order thanks to the Stein method. We\napply the procedure to the Brownian approximation of compensated Poisson\nprocess and to the linear interpolation of the Brownian motion. It is then\napparent that these two expansions are of rather different form.\n'
+p802
+sg8
+(lp803
+S'Coutin, Laure'
+p804
+aS'Decreusefond, Laurent'
+p805
+asg11
+S'oai:arXiv.org:1405.0235'
+p806
+sg13
+S'Higher order expansions via Stein method'
+p807
+sba(iArxivData
+Paper
+p808
+(dp809
+g4
+S'2014-04-29'
+p810
+sg6
+S"  We apply stochastic Perron's method to a singular control problem where an\nindividual targets at a given consumption rate, invests in a risky financial\nmarket in which trading is subject to proportional transaction costs, and seeks\nto minimize her probability of lifetime ruin. Without relying on the dynamic\nprogramming principle (DPP), we characterize the value function as the unique\nviscosity solution of an associated Hamilton-Jacobi-Bellman (HJB) variational\ninequality. We also provide a complete proof of the comparison principle which\nis the main assumption of stochastic Perron's method.\n"
+p811
+sg8
+(lp812
+S'Bayraktar, Erhan'
+p813
+aS'Zhang, Yuchong'
+p814
+asg11
+S'oai:arXiv.org:1404.7406'
+p815
+sg13
+S"Stochastic Perron's Method for the Probability of lifetime ruin problem\n  under transaction costs"
+p816
+sba(iArxivData
+Paper
+p817
+(dp818
+g4
+S'2014-04-30'
+p819
+sg6
+S'  Using Pathak and Pathak techniques, the basic function $D^\\alpha(u,v,w)$\nassociated with general novel fractional wavelet transform (GNFrWT)is defined\nand its properties are investigated. By using basic function $D^\\alpha(u,v,w)$\ntranslation and convolution associated with GNFrWT are defined and certain\nexistence theorems are proved for basic function and associated convolution.\n'
+p820
+sg8
+(lp821
+S'Pathak, Ashish'
+p822
+aS'Yadav, Prabhat'
+p823
+aS'Dixit, M M'
+p824
+asg11
+S'oai:arXiv.org:1404.7682'
+p825
+sg13
+S'On convolution for general novel fractional wavelet transform'
+p826
+sba(iArxivData
+Paper
+p827
+(dp828
+g4
+S'2014-04-29'
+p829
+sg6
+S'  In this paper, we investigate the anti-Ramsey (more precisely, anti-van der\nWaerden) properties of arithmetic progressions. For positive integers $n$ and\n$k$, the expression $\\mathrm{aw}([n],k)$ denotes the smallest number of colors\nwith which the integers $\\{1,\\ldots,n\\}$ can be colored and still guarantee\nthere is a rainbow arithmetic progression of length $k$. We establish that\n$\\mathrm{aw}([n],3)=\\Theta(\\log n)$ and $\\mathrm{aw}([n],k)=n^{1-o(1)}$ for\n$k\\geq 4$.\n  For positive integers $n$ and $k$, the expression\n$\\mathrm{aw}(\\mathbb{Z}_n,k)$ denotes the smallest number of colors with which\nelements of the cyclic group of order $n$ can be colored and still guarantee\nthere is a rainbow arithmetic progression of length $k$. In this setting,\narithmetic progressions can "wrap around," and $\\mathrm{aw}(\\mathbb{Z}_n,3)$\nbehaves quite differently from $\\mathrm{aw}([n],3)$, depending on the\ndivisibility of $n$. In fact, $\\mathrm{aw}(\\mathbb{Z}_{2^m},3) = 3$ for any\npositive integer $m$. However, for $k\\geq 4$, the behavior is similar to the\nprevious case, that is, $\\mathrm{aw}(\\mathbb{Z}_n,k)=n^{1-o(1)}$.\n'
+p830
+sg8
+(lp831
+S'Butler, Steve'
+p832
+aS'Erickson, Craig'
+p833
+aS'Hogben, Leslie'
+p834
+aS'Hogenson, Kirsten'
+p835
+aS'Kramer, Lucas'
+p836
+aS'Kramer, Richard L.'
+p837
+aS'Lin, Jephian Chin-Hung'
+p838
+aS'Martin, Ryan R.'
+p839
+aS'Stolee, Derrick'
+p840
+aS'Warnberg, Nathan'
+p841
+aS'Young, Michael'
+p842
+asg11
+S'oai:arXiv.org:1404.7232'
+p843
+sg13
+S'Rainbow arithmetic progressions'
+p844
+sba(iArxivData
+Paper
+p845
+(dp846
+g4
+S'2014-04-29'
+p847
+sg6
+S"  We present elementary proofs of weighted embedding theorems for radial\npotential spaces and some generalizations of Ni's and Strauss' inequalities in\nthis setting.\n"
+p848
+sg8
+(lp849
+S'De Napoli, Pablo L.'
+p850
+aS'Drelichman, Irene'
+p851
+asg11
+S'oai:arXiv.org:1404.7468'
+p852
+sg13
+S'Elementary proofs of Embedding Theorems for Potential Spaces of Radial\n  Functions'
+p853
+sba(iArxivData
+Paper
+p854
+(dp855
+g4
+S'2014-04-29'
+p856
+sg6
+S"  Orbifolding two-dimensional quantum field theories by a symmetry group can\ninvolve a choice of discrete torsion. We apply the general formalism of\n`orbifolding defects' to study and elucidate discrete torsion for topological\nfield theories. In the case of Landau-Ginzburg models only the bulk sector had\nbeen studied previously, and we re-derive all known results. We also introduce\nthe notion of `projective matrix factorisations', show how they naturally\ndescribe boundary and defect sectors, and we further illustrate the efficiency\nof the defect-based approach by explicitly computing RR charges.\n  Roughly half of our results are not restricted to Landau-Ginzburg models but\nhold more generally, for any topological field theory. In particular we prove\nthat for a pivotal bicategory, any two objects of its orbifold completion that\nhave the same base are orbifold equivalent. Equivalently, from any orbifold\ntheory (including those based on nonabelian groups) the original unorbifolded\ntheory can be be obtained by orbifolding via the `quantum symmetry defect'.\n"
+p857
+sg8
+(lp858
+S'Brunner, Ilka'
+p859
+aS'Carqueville, Nils'
+p860
+aS'Plencner, Daniel'
+p861
+asg11
+S'oai:arXiv.org:1404.7497'
+p862
+sg13
+S'Discrete torsion defects'
+p863
+sba(iArxivData
+Paper
+p864
+(dp865
+g4
+S'2014-04-30'
+p866
+sg6
+S'  It is established that every (not necessarily linear) 2-local\n$^*$-homomorphism from a von Neumann algebra into a C$^*$-algebra is linear and\na $^*$-homomorphism. In the setting of (not necessarily linear) 2-local\n$^*$-homomorphism from a compact C$^*$-algebra we prove that the same\nconclusion remains valid. We also prove that every 2-local Jordan\n$^*$-homomorphism from a JBW$^*$-algebra into a JB$^*$-algebra is linear and a\nJordan $^*$-homomorphism.\n'
+p867
+sg8
+(lp868
+VBurgos, María
+p869
+aVFernández-Polo, Francisco J.
+p870
+aVGarcés, Jorge J.
+p871
+aS'Peralta, Antonio M.'
+p872
+asg11
+S'oai:arXiv.org:1404.7597'
+p873
+sg13
+S'A Kowalski-S{\\l}odkowski theorem for 2-local $^*$-homomorphisms on von\n  Neumann algebras'
+p874
+sba(iArxivData
+Paper
+p875
+(dp876
+g4
+S'2014-04-30'
+p877
+sg6
+S"  In the past few years, a lot of attention has been devoted to multimedia\nindexing by fusing multimodal informations. Two kinds of fusion schemes are\ngenerally considered: The early fusion and the late fusion. We focus on late\nclassifier fusion, where one combines the scores of each modality at the\ndecision level. To tackle this problem, we investigate a recent and elegant\nwell-founded quadratic program named MinCq coming from the machine learning\nPAC-Bayesian theory. MinCq looks for the weighted combination, over a set of\nreal-valued functions seen as voters, leading to the lowest misclassification\nrate, while maximizing the voters' diversity. We propose an extension of MinCq\ntailored to multimedia indexing. Our method is based on an order-preserving\npairwise loss adapted to ranking that allows us to improve Mean Averaged\nPrecision measure while taking into account the diversity of the voters that we\nwant to fuse. We provide evidence that this method is naturally adapted to late\nfusion procedures and confirm the good behavior of our approach on the\nchallenging PASCAL VOC'07 benchmark.\n"
+p878
+sg8
+(lp879
+S'Morvant, Emilie'
+p880
+aS'Habrard, Amaury'
+p881
+aVAyache, Stéphane
+p882
+asg11
+S'oai:arXiv.org:1404.7796'
+p883
+sg13
+S'Majority Vote of Diverse Classifiers for Late Fusion'
+p884
+sba(iArxivData
+Paper
+p885
+(dp886
+g4
+S'2014-04-29'
+p887
+sg6
+S'  We propose three strategies for Presenter in on-line graph coloring games.\nThe first one constructs bipartite graphs and forces any on-line coloring\nalgorithm to use $2\\log_2 n - 10$ colors, where $n$ is the number of vertices\nin the constructed graph. This is best possible up to an additive constant. The\nsecond strategy constructs triangle-free graphs and forces\n$\\Omega(n^\\frac{1}{2})$ colors. The third one constructs graphs that contain\nneither $C_3$ nor $C_5$ as a subgraph and forces $\\Omega(\\frac{n}{\\log\nn}^\\frac{1}{3})$ colors. The existence of an on-line algorithm using $o(n)$\ncolors on triangle-free graphs remains a tantalizing open problem.\n'
+p888
+sg8
+(lp889
+S'Gutowski, Grzegorz'
+p890
+aS'Kozik, Jakub'
+p891
+aS'Micek, Piotr'
+p892
+aS'Zhu, Xuding'
+p893
+asg11
+S'oai:arXiv.org:1404.7259'
+p894
+sg13
+S'Lower bounds for on-line graph colorings'
+p895
+sba(iArxivData
+Paper
+p896
+(dp897
+g4
+S'2014-05-01'
+p898
+sg6
+S'  Let $A, B$ be positive definite $n\\times n$ matrices. We present several\nreverse Heinz type inequalities, in particular \\begin{align*} \\|AX+XB\\|_2^2+\n2(\\nu-1) \\|AX-XB\\|_2^2\\leq \\|A^{\\nu}XB^{1-\\nu}+A^{1-\\nu}XB^{\\nu}\\|_2^2,\n  \\end{align*} where $X$ is an arbitrary $n \\times n$ matrix, $\\|\\cdot\\|_2$ is\nHilbert-Schmidt norm and $\\nu>1$. We also establish a Heinz type inequality\ninvolving the Hadamard product of the form \\begin{align*} 2|||A^{1\\over2}\\circ\nB^{1\\over2}|||\\leq|||A^{s}\\circ B^{1-t}+A^{1-s}\\circ B^{t}|||\n\\leq\\max\\{|||(A+B)\\circ I|||,|||(A\\circ B)+I|||\\}, \\end{align*} in which $s,\nt\\in [0,1]$ and $|||\\cdot|||$ is a unitarily invariant norm.\n'
+p899
+sg8
+(lp900
+S'Bakherad, Mojtaba'
+p901
+aS'Moslehian, Mohammad Sal'
+p902
+asg11
+S'oai:arXiv.org:1405.0164'
+p903
+sg13
+S'Reverses and variations of Heinz inequality'
+p904
+sba(iArxivData
+Paper
+p905
+(dp906
+g4
+S'2014-04-30'
+p907
+sg6
+S'  We study the existence of solutions in Hilbert space $H$ of the semilinear\nequation \\[ L u+N(u)=h, \\] where $L$ is linear self-adjoint, $N$ is a nonlinear\noperator and $h\\in H$. We concentrate on the case when $0$ is a right boundary\npoint of a gap in the spectrum of $L$ and an element of essential spectrum. The\nsufficient conditions for solvability are based on monotonicity and sign\nassumptions on operator $N$, and its behaviour on $\\ker L$. We illustrate the\nmain theorem by an application to the study of nonlinear stationary\nSchr\\"{o}dinger equation on $\\mathbb{R}^n$.\n'
+p908
+sg8
+(lp909
+VZieli\u0144ski, Przemys\u0142aw
+p910
+asg11
+S'oai:arXiv.org:1404.7624'
+p911
+sg13
+S'Solvability of semilinear equations with zero on the boundary of\n  spectral gap and applications to nonlinear Schr\\"{o}dinger equation'
+p912
+sba(iArxivData
+Paper
+p913
+(dp914
+g4
+S'2014-04-30'
+p915
+sg6
+S'  Recently the hierarchical defect substructures were observed experimentally\nin several metals and alloys before and after fracture. The general models of\ncrystal defect aggregation with appearance hierarchical defect substructures\nare proposed and considered in the wide range of scales. Their general group\nanalysis is performed, and symmetries of the governing equations are\nidentified. The models of defect aggregate growth are considered for several\npartial cases and compared with classical Lifshitz-Slyozov-Wagner theory of\ncoarsening, Leyvraz-Redner scaling theory of aggregate growth, etc. The reduced\nequations of new models are generated and solved, and the general scaling\nsolutions are given. The results obtained are illustrated by preliminary\nsimulations.\n'
+p916
+sg8
+(lp917
+S'Gordienko, Yuri G.'
+p918
+asg11
+S'oai:arXiv.org:1404.7646'
+p919
+sg13
+S'Migration-Driven Hierarchical Crystal Defect Aggregation - Symmetry and\n  Scaling Analysis'
+p920
+sba(iArxivData
+Paper
+p921
+(dp922
+g4
+S'2014-05-01'
+p923
+sg6
+S'  The spectral excess theorem states that, in a regular graph G, the average\nexcess, which is the mean of the numbers of vertices at maximum distance from a\nvertex, is bounded above by the spectral excess (a number that is computed by\nusing the adjacency spectrum of G), and G is distance-regular if and only if\nequality holds. In this note we prove the corresponding result by using the\nLaplacian spectrum without requiring regularity of G.\n'
+p924
+sg8
+(lp925
+S'van Dam, Edwin R.'
+p926
+aS'Fiol, Miquel Angel'
+p927
+asg11
+S'oai:arXiv.org:1405.0169'
+p928
+sg13
+S'The Laplacian spectral excess theorem for distance-regular graphs'
+p929
+sba(iArxivData
+Paper
+p930
+(dp931
+g4
+S'2014-05-01'
+p932
+sg6
+S'  In many applications, significant correlations between arrivals of\nload-generating events make the numerical evaluation of the load of a system a\nchallenging problem. Here, we construct very accurate approximations of the\nworkload distribution of the MAP/G/1 queue that capture the tail behavior of\nthe exact workload distribution and provide a small relative error. Motivated\nby statistical analysis, we assume that the service times are a mixture of a\nphase-type and a heavy-tailed distribution. With the aid of perturbation\nanalysis, we derive our approximations as a sum of the workload distribution of\nthe MAP/PH/1 queue and a heavy-tailed component that depends on the\nperturbation parameter. We refer to our approximations as corrected phase-type\napproximations, and we exhibit their performance with a numerical study.\n'
+p933
+sg8
+(lp934
+S'Vatamidou, Eleni'
+p935
+aS'Adan, Ivo J. B. F.'
+p936
+aS'Vlasiou, Maria'
+p937
+aS'Zwart, Bert'
+p938
+asg11
+S'oai:arXiv.org:1405.0141'
+p939
+sg13
+S'Corrected phase-type approximations for the workload of the MAP/G/1\n  queue with heavy-tailed service times'
+p940
+sba(iArxivData
+Paper
+p941
+(dp942
+g4
+S'2014-04-30'
+p943
+sg6
+S'  Biomedical signals aid in the diagnosis of different disorders and\nabnormalities. When targeting lossy compression of such signals, the medically\nrelevant information that lies within the data should maintain its accuracy and\nthus its reliability. In fact, signal models that are inspired by the\nbio-physical properties of the signals at hand allow for a compression that\npreserves more naturally the clinically significant features of these signals.\nIn this paper, we illustrate this through the example of EEG signals; more\nspecifically, we analyze three specific lossy EEG compression schemes. These\nschemes are based on signal models that have different degrees of reliance on\nsignal production and physiological characteristics of EEG. The resilience of\nthese schemes is illustrated through the performance of seizure detection post\ncompression.\n'
+p944
+sg8
+(lp945
+S'Daou, Hoda'
+p946
+aS'Labeau, Fabrice'
+p947
+asg11
+S'oai:arXiv.org:1405.0086'
+p948
+sg13
+S'Medically Relevant Criteria used in EEG Compression for Improved\n  Post-Compression Seizure Detection'
+p949
+sba(iArxivData
+Paper
+p950
+(dp951
+g4
+S'2014-04-30'
+p952
+sg6
+S'  We study the directed last-passage percolation model on the planar integer\nlattice with nearest-neighbor steps and general i.i.d. weights on the vertices,\noutside the class of exactly solvable models. Stationary cocycles are\nconstructed for this percolation model from queueing fixed points. These\ncocycles serve as boundary conditions for stationary last-passage percolation,\ndefine solutions to variational formulas that characterize limit shapes, and\nyield new results for Busemann functions, geodesics and the competition\ninterface.\n'
+p953
+sg8
+(lp954
+S'Georgiou, Nicos'
+p955
+aS'Rassoul-Agha, Firas'
+p956
+aVSeppäläinen, Timo
+p957
+asg11
+S'oai:arXiv.org:1404.7786'
+p958
+sg13
+S'Stationary cocycles for the corner growth model'
+p959
+sba(iArxivData
+Paper
+p960
+(dp961
+g4
+S'2014-04-29'
+p962
+sg6
+S'  The square of a connected graph $G$ is obtained from $G$ by adding an edge\nbetween every pair of vertices at distance $2$. In this paper we give some\nupper or lower bounds for the spectral radius of the square of connected\ngraphs, trees and unicyclic graphs respectively.We also investigate the\nspectral radius of the square of unicyclic graphs with given girth or trees\nwith fixed diameter.\n'
+p963
+sg8
+(lp964
+S'Fan, Yi-Zheng'
+p965
+aS'Wang, Long'
+p966
+asg11
+S'oai:arXiv.org:1404.7286'
+p967
+sg13
+S'The spectral radius of the square of graphs'
+p968
+sba(iArxivData
+Paper
+p969
+(dp970
+g4
+S'2014-04-29'
+p971
+sg6
+S"  A new filter for independent stochastic populations is studied and detailed,\nbased on recent works introducing the concept of distinguishability in point\nprocesses. This filter propagates a set of hypotheses corresponding to\nindividuals in a population, using a version of Bayes' theorem for multi-object\nsystems. Due to the inherent complexity of the general multi-object data\nassociation problem, approximations are required to make the filter tractable.\nThese approximations are justified and detailed along with explanations for the\nmodelling choices. The efficiency of this new approach is then demonstrated\nthrough a comparison against one of the most popular multi-object filters.\n"
+p972
+sg8
+(lp973
+S'Houssineau, J.'
+p974
+aS'Clark, D. E.'
+p975
+asg11
+S'oai:arXiv.org:1404.7408'
+p976
+sg13
+S'Hypothesised filter for independent stochastic populations'
+p977
+sba(iArxivData
+Paper
+p978
+(dp979
+g4
+S'2014-05-01'
+p980
+sg6
+S"  We describe local and global properties of wavelet transforms of\nultradifferentiable functions. The results are given in the form of continuity\nproperties of the wavelet transform on Gelfand-Shilov type spaces and their\nduals. In particular, we introduce a new family of highly time-scale localized\nspaces on the upper half-space. We study the wavelet synthesis operator (the\nleft-inverse of the wavelet transform) and obtain the resolution of identity\n(Calder\\'{o}n reproducing formula) in the context of ultradistributions.\n"
+p981
+sg8
+(lp982
+S'Pilipovic, Stevan'
+p983
+aS'Rakic, Dusan'
+p984
+aS'Teofanov, Nenad'
+p985
+aS'Vindas, Jasson'
+p986
+asg11
+S'oai:arXiv.org:1405.0111'
+p987
+sg13
+S'The wavelet transforms in Gelfand-Shilov spaces'
+p988
+sba(iArxivData
+Paper
+p989
+(dp990
+g4
+S'2014-04-29'
+p991
+sg6
+S'  The boxicity (respectively cubicity) of a graph $G$ is the minimum\nnon-negative integer $k$, such that $G$ can be represented as an intersection\ngraph of axis-parallel $k$-dimensional boxes (respectively $k$-dimensional unit\ncubes) and is denoted by $box(G)$ (respectively $cub(G)$). It was shown by\nAdiga and Chandran (Journal of Graph Theory, 65(4), 2010) that for any graph\n$G$, $cub(G) \\le$ box$(G) \\left \\lceil \\log_2 \\alpha \\right \\rceil$, where\n$\\alpha = \\alpha(G)$ is the cardinality of the maximum independent set in $G$.\nIn this note we show that $cub(G) \\le 2 \\left \\lceil \\log_2 \\chi(G) \\right\n\\rceil box(G) + \\chi(G) \\left \\lceil \\log_2 \\alpha(G) \\right \\rceil $. In\ngeneral, this result can provide a much better upper bound than that of Adiga\nand Chandran for graph classes with bounded chromatic number. For example, for\nbipartite graphs we get, $cub(G) \\le 2 (box(G) + \\left \\lceil \\log_2 \\alpha(G)\n\\right \\rceil )$.\n  Moreover we show that for every positive integer $k$, there exist graphs with\nchromatic number $k$, such that for every $\\epsilon > 0$, the value given by\nour upper bound is at most $(1+\\epsilon)$ times their cubicity. Thus, our upper\nbound is almost tight.\n'
+p992
+sg8
+(lp993
+S'Chandran, L. Sunil'
+p994
+aS'Mathew, Rogers'
+p995
+aS'Rajendraprasad, Deepak'
+p996
+asg11
+S'oai:arXiv.org:1404.7261'
+p997
+sg13
+S'Upper bound on cubicity in terms of boxicity for graphs of low chromatic\n  number'
+p998
+sba(iArxivData
+Paper
+p999
+(dp1000
+g4
+S'2014-05-01'
+p1001
+sg6
+S'  Jumbled indexing is the problem of indexing a text $T$ for queries that ask\nwhether there is a substring of $T$ matching a pattern represented as a Parikh\nvector, i.e., the vector of frequency counts for each character. Jumbled\nindexing has garnered a lot of interest in the last four years. There is a\nnaive algorithm that preprocesses all answers in $O(n^2|\\Sigma|)$ time allowing\nquick queries afterwards, and there is another naive algorithm that requires no\npreprocessing but has $O(n\\log|\\Sigma|)$ query time. Despite a tremendous\namount of effort there has been little improvement over these running times.\n  In this paper we provide good reason for this. We show that, under a\n3SUM-hardness assumption, jumbled indexing for alphabets of size $\\omega(1)$\nrequires $\\Omega(n^{2-\\epsilon})$ preprocessing time or $\\Omega(n^{1-\\delta})$\nquery time for any $\\epsilon,\\delta>0$. In fact, under a stronger 3SUM-hardness\nassumption, for any constant alphabet size $r\\ge 3$ there exist describable\nfixed constant $\\epsilon_r$ and $\\delta_r$ such that jumbled indexing requires\n$\\Omega(n^{2-\\epsilon_r})$ preprocessing time or $\\Omega(n^{1-\\delta_r})$ query\ntime.\n'
+p1002
+sg8
+(lp1003
+S'Amir, Amihood'
+p1004
+aS'Chan, Timothy'
+p1005
+aS'Lewenstein, Moshe'
+p1006
+aS'Lewenstein, Noa'
+p1007
+asg11
+S'oai:arXiv.org:1405.0189'
+p1008
+sg13
+S'On Hardness of Jumbled Indexing'
+p1009
+sba(iArxivData
+Paper
+p1010
+(dp1011
+g4
+S'2014-04-30'
+p1012
+sg6
+S'  We study a bivariate mean reverting stochastic volatility model, finding an\nexplicit expression for the decay of cross-asset correlations over time. We\ncompare our result with the empirical time series of the Dow Jones Industrial\nAverage and the Financial Times Stock Exchange 100 in the period 1984-2013,\nfinding an excellent agreement. The main features of the model consist in the\njumps in the volatilities and a nonlinear mean reversion. Based on these\nfeatures, we propose an algorithm for the detection of jumps in the volatility.\n'
+p1013
+sg8
+(lp1014
+S'Bonino, Mario'
+p1015
+aS'Camelia, Matteo'
+p1016
+aS'Pigato, Paolo'
+p1017
+asg11
+S'oai:arXiv.org:1404.7632'
+p1018
+sg13
+S'A multivariate model for financial indexes and an algorithm for\n  detection of jumps in the volatility'
+p1019
+sba(iArxivData
+Paper
+p1020
+(dp1021
+g4
+S'2014-05-01'
+p1022
+sg6
+S'  We characterize the capacity region of the two-user Binary Fading\nInterference Channel where the transmitters have no knowledge of the channel\nstate information. We show that the entire capacity region is achieved by\napplying point-to-point erasure codes with appropriate rates at each\ntransmitter, and using either treat-interference-as-erasure or\ninterference-decoding at each receiver, based on the channel parameters. The\nresult is obtained by developing a novel outer-bound that has three main steps.\nWe first create a contracted channel that has fewer states compared to the\noriginal channel, in order to make the analysis tractable. Using a Correlation\nLemma, we then show that an outer-bound on the capacity region of the\ncontracted channel also serves as an outer-bound for the original channel.\nFinally, using a Conditional Entropy Leakage Lemma, we derive our outer-bound\non the capacity region of the contracted channel, and show that it coincides\nwith the achievable region by either treat-interference-as-erasure or\ninterference-decoding at each receiver. We also show that having access to\ndelayed local knowledge of the channel state information, does not enlarge the\ncapacity region.\n'
+p1023
+sg8
+(lp1024
+S'Vahid, Alireza'
+p1025
+aS'Maddah-Ali, Mohammad Ali'
+p1026
+aS'Avestimehr, Amir Salman'
+p1027
+asg11
+S'oai:arXiv.org:1405.0203'
+p1028
+sg13
+S'Binary Fading Interference Channel with No CSIT'
+p1029
+sba(iArxivData
+Paper
+p1030
+(dp1031
+g4
+S'2014-04-29'
+p1032
+sg6
+S'  A drawing of a graph is {\\em pseudolinear} if there is a pseudoline\narrangement such that each pseudoline contains exactly one edge of the drawing.\nThe {\\em pseudolinear crossing number} of a graph $G$ is the minimum number of\npairwise crossings of edges in a pseudolinear drawing of $G$. We establish\nseveral facts on the pseudolinear crossing number, including its computational\ncomplexity and its relationship to the usual crossing number and to the\nrectilinear crossing number. This investigation was motivated by open questions\nand issues raised by Marcus Schaefer in his comprehensive survey of the many\nvariants of the crossing number of a graph.\n'
+p1033
+sg8
+(lp1034
+S'Hernandez-Velez, Cesar'
+p1035
+aS'Leanos, Jesus'
+p1036
+aS'Salazar, Gelasio'
+p1037
+asg11
+S'oai:arXiv.org:1404.7332'
+p1038
+sg13
+S'On the pseudolinear crossing number'
+p1039
+sba(iArxivData
+Paper
+p1040
+(dp1041
+g4
+S'2014-04-30'
+p1042
+sg6
+S'  A class of robust estimators of scatter applied to information-plus-impulsive\nnoise samples is studied, where the sample information matrix is assumed of low\nrank; this generalizes the study of (Couillet et al., 2013b) to spiked random\nmatrix models. It is precisely shown that, as opposed to sample covariance\nmatrices which may have asymptotically unbounded (eigen-)spectrum due to the\nsample impulsiveness, the robust estimator of scatter has bounded spectrum and\nmay contain isolated eigenvalues which we fully characterize. We show that, if\nfound beyond a certain detectability threshold, these eigenvalues allow one to\nperform statistical inference on the eigenvalues and eigenvectors of the\ninformation matrix. We use this result to derive new eigenvalue and eigenvector\nestimation procedures, which we apply in practice to the popular array\nprocessing problem of angle of arrival estimation. This gives birth to an\nimproved algorithm based on the MUSIC method, which we refer to as robust\nG-MUSIC.\n'
+p1043
+sg8
+(lp1044
+S'Couillet, Romain'
+p1045
+asg11
+S'oai:arXiv.org:1404.7685'
+p1046
+sg13
+S'Robust spiked random matrices and a robust G-MUSIC estimator'
+p1047
+sba(iArxivData
+Paper
+p1048
+(dp1049
+g4
+S'2014-05-01'
+p1050
+sg6
+S"  Combining the modified matrix-vector equation approach with the technique of\nLyapunov majorant function and the Banach fixed point principle, we obtain new\nrigorous perturbation bounds for the LU and QR factorizations with normwise or\ncomponentwise perturbations in the given matrix, where the componentwise\nperturbations have the form of backward error resulting from the standard\nfactorization algorithms. Each of the new rigorous perturbation bounds is a\nrigorous version of the first-order perturbation bound derived by the\nmatrix-vector equation approach in the literature, and we present their\nexplicit expressions. These bounds improve the results given by Chang &\nStehl\\'{e} (2010). Moreover, we derive new sharper first-order perturbation\nbounds including two optimal ones for the LU factorization, and provide the\nexplicit expressions of the optimal first-order perturbation bounds for the LU\nand QR factorizations.\n"
+p1051
+sg8
+(lp1052
+S'Li, Hanyu'
+p1053
+aS'Wei, Yimin'
+p1054
+asg11
+S'oai:arXiv.org:1405.0179'
+p1055
+sg13
+S'New rigorous perturbation bounds for the LU and QR factorizations'
+p1056
+sba(iArxivData
+Paper
+p1057
+(dp1058
+g4
+S'2014-04-30'
+p1059
+sg6
+S'  We derive global estimates in critical scale invariant norms for solutions of\nelliptic systems with antisymmetric potentials and almost holomorphic Hopf\ndifferential in two dimensions. Moreover we obtain new energy identities in\nsuch norms for sequences of solutions of these systems. The results apply to\nharmonic maps into general target manifolds and surfaces with prescribed mean\ncurvature. In particular our results confirm a conjecture of Rivi\\`ere in the\ntwo-dimensional setting.\n'
+p1060
+sg8
+(lp1061
+S'Lamm, Tobias'
+p1062
+aS'Sharp, Ben'
+p1063
+asg11
+S'oai:arXiv.org:1404.7709'
+p1064
+sg13
+S'Global estimates and energy identities for elliptic systems with\n  antisymmetric potentials'
+p1065
+sba(iArxivData
+Paper
+p1066
+(dp1067
+g4
+S'2014-04-30'
+p1068
+sg6
+S"  Let $D$ be a strongly connected directed graph of order $n\\geq 4$. In\n\\cite{[14]} (J. of Graph Theory, Vol.16, No. 5, 51-59, 1992) Y. Manoussakis\nproved the following theorem: Suppose that $D$ satisfies the following\ncondition for every triple $x,y,z$ of vertices such that $x$ and $y$ are\nnon-adjacent: If there is no arc from $x$ to $z$, then\n$d(x)+d(y)+d^+(x)+d^-(z)\\geq 3n-2$. If there is no arc from $z$ to $x$, then\n$d(x)+d(y)+d^-(x)+d^+(z)\\geq 3n-2$. Then $D$ is Hamiltonian. In this paper we\nshow that: If $D$ satisfies the condition of Manoussakis' theorem, then $D$\ncontains a pre-Hamiltonian cycle (i.e., a cycle of length $n-1$) or $n$ is even\nand $D$ is isomorphic to the complete bipartite digraph with partite sets of\ncardinalities $n/2$ and $n/2$.\n"
+p1069
+sg8
+(lp1070
+S'Darbinyan, Samvel Kh.'
+p1071
+asg11
+S'oai:arXiv.org:1404.7620'
+p1072
+sg13
+S'On pre-Hamiltonian Cycles in Hamiltonian Digraphs'
+p1073
+sba(iArxivData
+Paper
+p1074
+(dp1075
+g4
+S'2014-05-01'
+p1076
+sg6
+S'  We address the problem of testing whether a dynamic graph is temporally\nconnected, i.e. a temporal path ({\\em journey}) exists between all pairs of\nvertices. We consider a discrete version of the problem, where the topology is\ngiven as an evolving graph $\\G=\\{G_1,G_2,...,G_{k}\\}$ in which only the set of\n(directed) edges varies. Two cases are studied, depending on whether a single\nedge or an unlimited number of edges can be crossed in a same $G_i$ (strict\njourneys {\\it vs} non-strict journeys). For strict journeys, two existing\nalgorithms designed for other problems can be adapted. However, we show that a\ndedicated approach achieves a better time complexity than one of these two\nalgorithms in all cases, and than the other one for those graphs whose density\nis low at any time (though arbitrary over time). The time complexity of our\nalgorithm is $O(k\\mu n)$, where $k=|\\G|$ is the number of time steps and\n$\\mu=max(|E_i|)$ is the maximum {\\em instant} density, to be contrasted with\n$m=|\\cup E_i|$, the {\\em cumulated} density. Indeed, it is not uncommon for a\nmobility scenario to satisfy, for instance, both $\\mu=o(n)$ and\n$m=\\Theta(n^2)$. We characterize the key values of $k, \\mu$ and $m$ for which\nour algorithm should be used. For non-strict journeys, for which no algorithm\nis known, we show that a similar strategy can be used to answer the question,\nstill in $O(k\\mu n)$ time.\n'
+p1077
+sg8
+(lp1078
+S'Barjon, Matthieu'
+p1079
+aS'Casteigts, Arnaud'
+p1080
+aS'Chaumette, Serge'
+p1081
+aS'Johnen, Colette'
+p1082
+aS'Neggaz, Yessin M.'
+p1083
+asg11
+S'oai:arXiv.org:1405.0170'
+p1084
+sg13
+S"Un algorithme de test pour la connexit\\'e temporelle des graphes\n  dynamiques de faible densit\\'e"
+p1085
+sba(iArxivData
+Paper
+p1086
+(dp1087
+g4
+S'2014-04-29'
+p1088
+sg6
+S'  An inverse scattering problem is formulated for reconstructing optical\nproperties of biological tissues. A recursive linearization algorithm is used\nto solve the inverse scattering problem. We employed the idea of finite element\nboundary integral method and added suitable boundary conditions on the surface\nof the domain. The initial guess is obtained by Born approximation based on the\nfact of weak scattering. The reconstruction is then improved each time by an\nincrement on wave number. Finite element method is used for the interior domain\ncontaining inhomogeneity. Nystr\\"om method is used for setting up the boundary\nconditions and jump conditions. Two numerical examples are presented.\n'
+p1089
+sg8
+(lp1090
+S'Li, Ying'
+p1091
+asg11
+S'oai:arXiv.org:1404.7404'
+p1092
+sg13
+S'Inverse Scattering Approach on Tomography Problem Using Multi-frequency\n  Data'
+p1093
+sba(iArxivData
+Paper
+p1094
+(dp1095
+g4
+S'2014-04-30'
+p1096
+sg6
+S'  In this paper, we endeavor for predicting the performance of quantized\ncompressive sensing under the use of sparse reconstruction estimators. We\nassume that a high rate vector quantizer is used to encode the noisy\ncompressive sensing measurement vector. Exploiting a block sparse source model,\nwe use Gaussian mixture density for modeling the distribution of the source.\nThis allows us to formulate an optimal rate allocation problem for the vector\nquantizer. Considering noisy CS quantized measurements, we analyze upper- and\nlower-bounds on reconstruction error performance guarantee of two estimators -\nconvex relaxation based basis pursuit de-noising estimator and an\noracle-assisted least-squares estimator.\n'
+p1097
+sg8
+(lp1098
+S'Shirazinia, Amirpasha'
+p1099
+aS'Chatterjee, Saikat'
+p1100
+aS'Skoglund, Mikael'
+p1101
+asg11
+S'oai:arXiv.org:1404.7643'
+p1102
+sg13
+S'Performance Bounds for Vector Quantized Compressive Sensing'
+p1103
+sba(iArxivData
+Paper
+p1104
+(dp1105
+g4
+S'2014-04-30'
+p1106
+sg6
+S'  Subspace codes have received an increasing interest recently, due to their\napplication in error-correction for random network coding. In particular,\ncyclic subspace codes are possible candidates for large codes with efficient\nencoding and decoding algorithms. In this paper we consider such cyclic codes.\nWe provide constructions of optimal cyclic codes for which their codewords do\nnot have full length orbits. We further introduce a new way to represent\nsubspace codes by a class of polynomials called subspace polynomials. We\npresent some constructions of such codes which are cyclic and analyze their\nparameters.\n'
+p1107
+sg8
+(lp1108
+S'Ben-Sasson, Eli'
+p1109
+aS'Etzion, Tuvi'
+p1110
+aS'Gabizon, Ariel'
+p1111
+aS'Raviv, Netanel'
+p1112
+asg11
+S'oai:arXiv.org:1404.7739'
+p1113
+sg13
+S'Subspace Polynomials and Cyclic Subspace Codes'
+p1114
+sba(iArxivData
+Paper
+p1115
+(dp1116
+g4
+S'2014-05-01'
+p1117
+sg6
+S'  We present a fast direct algorithm for computing symmetric factorizations,\ni.e. $A = WW^T$, of symmetric positive-definite hierarchical matrices with\nweak-admissibility conditions. The computational cost for the symmetric\nfactorization scales as $\\mathcal{O}(n \\log^2 n)$ for hierarchically\noff-diagonal low-rank matrices. Once this factorization is obtained, the cost\nfor inversion, application, and determinant computation scales as\n$\\mathcal{O}(n \\log n)$. In particular, this allows for the near optimal\ngeneration of correlated random variates in the case where $A$ is a covariance\nmatrix. This symmetric factorization algorithm depends on two key ingredients.\nFirst, we present a novel symmetric factorization formula for low-rank updates\nto the identity of the form $I+UKU^T$. This factorization can be computed in\n$\\mathcal{O}(n)$ time, if the rank of the perturbation is sufficiently small.\nSecond, combining this formula with a recursive divide-and-conquer strategy,\nnear linear complexity symmetric factorizations for hierarchically structured\nmatrices can be obtained. We present numerical results for matrices relevant to\nproblems in probability \\& statistics (Gaussian processes), interpolation\n(Radial basis functions), and Brownian dynamics calculations in fluid mechanics\n(the Rotne-Prager-Yamakawa tensor).\n'
+p1118
+sg8
+(lp1119
+S'Ambikasaran, Sivaram'
+p1120
+aS"O'Neil, Michael"
+p1121
+asg11
+S'oai:arXiv.org:1405.0223'
+p1122
+sg13
+S'Fast symmetric factorization of hierarchical matrices with applications'
+p1123
+sba(iArxivData
+Paper
+p1124
+(dp1125
+g4
+S'2014-04-30'
+p1126
+sg6
+S'  We investigate massive multiple-input-multiple output (MIMO) uplink systems\nwith 1-bit analog-to-digital converters (ADCs) on each receiver antenna.\nReceivers that rely on 1-bit ADC do not need energy-consuming interfaces such\nas automatic gain control (AGC). This decreases both ADC building and\noperational costs. Our design is based on maximal ratio combining (MRC),\nzero-forcing (ZF), and least squares (LS) detection, taking into account the\neffects of the 1-bit ADC on channel estimation. Through numerical results, we\nshow good performance of the system in terms of mutual information and symbol\nerror rate (SER). Furthermore, we provide an analytical approach to calculate\nthe mutual information and SER of the MRC receiver. The analytical approach\nreduces complexity in the sense that a symbol and channel noise vectors Monte\nCarlo simulation is avoided.\n'
+p1127
+sg8
+(lp1128
+S'Risi, Chiara'
+p1129
+aS'Persson, Daniel'
+p1130
+aS'Larsson, Erik G.'
+p1131
+asg11
+S'oai:arXiv.org:1404.7736'
+p1132
+sg13
+S'Massive MIMO with 1-bit ADC'
+p1133
+sba(iArxivData
+Paper
+p1134
+(dp1135
+g4
+S'2014-04-29'
+p1136
+sg6
+S'  We study smooth tropical plane quartic curves and show that they satisfy\ncertain properties analogous to (but also different from) smooth plane quartics\nin algebraic geometry. For example, we show that every such curve admits either\ninfinitely many or exactly 7 bitangent lines. We also prove that a smooth\ntropical plane quartic curve cannot be hyperelliptic.\n'
+p1137
+sg8
+(lp1138
+S'Baker, Matt'
+p1139
+aS'Len, Yoav'
+p1140
+aS'Morrison, Ralph'
+p1141
+aS'Pflueger, Nathan'
+p1142
+aS'Ren, Qingchun'
+p1143
+asg11
+S'oai:arXiv.org:1404.7568'
+p1144
+sg13
+S'Bitangents of tropical plane quartic curves'
+p1145
+sba(iArxivData
+Paper
+p1146
+(dp1147
+g4
+S'2014-05-01'
+p1148
+sg6
+S'  In this paper, we propose an orbital-based parallelization approach for\nelectronic structure calculations. This approach is based on finite element\ndiscretizations and iterative techniques, and permits us to carry out\nelectronic structure calculations in an orbital separation fashion and compute\neigenvalues of a class of eigenvalue problems in principle individually. It is\nshown by our numerical experiments that this new approach is quite efficient\nfor all-electron calculations for a class of molecular systems.\n'
+p1149
+sg8
+(lp1150
+S'Dai, Xiaoying'
+p1151
+aS'Gong, Xingao'
+p1152
+aS'Zhou, Aihui'
+p1153
+aS'Zhu, Jinwei'
+p1154
+asg11
+S'oai:arXiv.org:1405.0260'
+p1155
+sg13
+S'A Parallel Orbital-Updating Approach for Electronic Structure\n  Calculations'
+p1156
+sba(iArxivData
+Paper
+p1157
+(dp1158
+g4
+S'2014-04-30'
+p1159
+sg6
+S'  Let $\\mathcal{F}$ be a family of fixed graphs and let $d$ be large enough.\nFor every $d$-regular graph $G$, we study the existence of a spanning\n$\\mathcal{F}$-free subgraph of $G$ with large minimum degree. This problem is\nwell-understood if $\\mathcal{F}$ does not contain bipartite graphs. Here we\nprovide asymptotically tight results for many families of bipartite graphs such\nas cycles or complete bipartite graphs.\n'
+p1160
+sg8
+(lp1161
+S'Perarnau, Guillem'
+p1162
+aS'Reed, Bruce'
+p1163
+asg11
+S'oai:arXiv.org:1404.7764'
+p1164
+sg13
+S'Existence of spanning $\\mathcal{F}$-free subgraphs with large minimum\n  degree'
+p1165
+sba(iArxivData
+Paper
+p1166
+(dp1167
+g4
+S'2014-04-30'
+p1168
+sg6
+S'  The stable set polytope of a graph $G$, denoted as STAB($G$), is the convex\nhull of all the incidence vectors of stable sets of $G$. To describe a linear\nsystem which defines STAB($G$) seems to be a difficult task in the general\ncase. In this paper we present a complete description of the stable set\npolytope of ($P_6$,triangle)-free graphs (and more generally of\n($P_6$,paw)-free graphs). For that we combine different tools, in the context\nof a well known result of Chv\\\'atal \\cite{Chvatal1975} which allows to focus\njust on prime facet-inducing graphs, with particular reference to a structure\nresult on prime ($P_6$,triangle)-free graphs due to Brandst\\"adt et al.\n\\cite{BraKleMah2005}. Also we point out some peculiarities of new\nfacet-inducing graphs detected along this study with the help of a software.\n'
+p1169
+sg8
+(lp1170
+S'Mosca, Raffaele'
+p1171
+asg11
+S'oai:arXiv.org:1404.7623'
+p1172
+sg13
+S'The stable set polytope of ($P_6$,triangle)-free graphs and new\n  facet-inducing graphs'
+p1173
+sba(iArxivData
+Paper
+p1174
+(dp1175
+g4
+S'2014-04-29'
+p1176
+sg6
+S'  We consider a mathematical model for the study of the dynamical behavior of\nsuspension bridges. We show that internal resonances, which depend on the\nbridge structure only, are the origin of torsional instability. We obtain both\ntheoretical and numerical estimates of the thresholds of instability. Our\nmethod is based on a finite dimensional projection of the phase space which\nreduces the stability analysis of the model to the stability of suitable Hill\nequations. This gives an answer to a long-standing question about the origin of\ntorsional instability in suspension bridges.\n'
+p1177
+sg8
+(lp1178
+S'Berchio, E.'
+p1179
+aS'Gazzola, F.'
+p1180
+asg11
+S'oai:arXiv.org:1404.7351'
+p1181
+sg13
+S'A qualitative explanation of the origin of torsional instability in\n  suspension bridges'
+p1182
+sba(iArxivData
+Paper
+p1183
+(dp1184
+g4
+S'2014-04-30'
+p1185
+sg6
+S'  We study the eigenvalues and eigenfunctions of the time-frequency\nlocalization operator $H_\\Omega$ on a domain $\\Omega$ of the time-frequency\nplane. The eigenfunctions are the appropriate prolate spheroidal functions for\nan arbitrary domain $\\Omega$. Indeed, in analogy to the classical theory of\nLandau-Slepian-Pollak, the number of eigenvalues of $H_\\Omega$ in $[1-\\delta ,\n1]$ is equal to the measure of $\\Omega$ up to an error term depending on the\nperimeter of the boundary of $\\Omega$. Our main results shows that the\nspectrograms of the eigenfunctions corresponding to the large eigenvalues\n(which we call the accumulated spectrogram) form an approximate partition\nofunity of the given domain $\\Omega $. We derive both asymptotic,\nnon-asymptotic, and weak $L^2$ error estimates for the accumulated spectrogram.\nAs a consequence the domain $\\Omega$ can be approximated solely from the\nspectrograms of eigenfunctions without information about their phase.\n'
+p1186
+sg8
+(lp1187
+VAbreu, Luís Daniel
+p1188
+aVGröchenig, Karlheinz
+p1189
+aVRomero, José Luis
+p1190
+asg11
+S'oai:arXiv.org:1404.7713'
+p1191
+sg13
+S'On accumulated spectrograms'
+p1192
+sba(iArxivData
+Paper
+p1193
+(dp1194
+g4
+S'2014-04-30'
+p1195
+sg6
+S'  We prove the compactness of solutions to general fourth order elliptic\nequations which are L^1-perturbations of the Q-curvature equation on compact\nRiemannian 4-maniods. Consequently, we prove the global existence and\nconvergence of the Q-curvature flow on a generic class of Riemannian\n4-manifolds. As a by product, we give a positive answer to an open question by\nA. Malchiodi on the existence of bounded Palais-Smale sequences for the\nQ-curvature problem when the Paneitz operator is positive with trivial kernel.\n'
+p1196
+sg8
+(lp1197
+S'Fardoun, Ali'
+p1198
+aS'Regbaoui, Rachid'
+p1199
+asg11
+S'oai:arXiv.org:1405.0024'
+p1200
+sg13
+S'Compactness Properties for Geometric Fourth order Elliptic equations\n  with Application to the Q-curvature Flow'
+p1201
+sba(iArxivData
+Paper
+p1202
+(dp1203
+g4
+S'2014-05-01'
+p1204
+sg6
+S'  The domination game on a graph $G$ (introduced by B. Bre\\v{s}ar, S.\nKlav\\v{z}ar, D.F. Rall \\cite{BKR2010}) consists of two players, Dominator and\nStaller, who take turns choosing a vertex from $G$ such that whenever a vertex\nis chosen by either player, at least one additional vertex is dominated.\nDominator wishes to dominate the graph in as few steps as possible, and Staller\nwishes to delay this process as much as possible. The game domination number\n$\\gamma _{{\\small g}}(G)$ is the number of vertices chosen when Dominator\nstarts the game; when Staller starts, it is denoted by $\\gamma _{{\\small\ng}}^{\\prime }(G).$\n  In this paper, the domination game on line graph $L\\left(\nK_{\\overline{m}}\\right) $ of complete multipartite graph $K_{\\overline{m}}$\n$(\\overline{m}\\equiv (m_{1},...,m_{n})\\in \\mathbb{N} ^{n})$ is considered, the\nexact values for game domination numbers are obtained and optimal strategy for\nboth players is described. Particularly, it is proved that for $m_{1}\\leq\nm_{2}\\leq ...\\leq m_{n}$ both $\\gamma _{{\\small g}}\\left( L\\left(\nK_{\\overline{m}}\\right) \\right) =\\min \\left\\{ \\left\\lceil \\frac{2}{3}\\left\\vert\nV\\left( K_{\\overline{m}}\\right) \\right\\vert \\right\\rceil ,\\right.$ $\\left.\n2\\max \\left\\{ \\left\\lceil \\frac{1}{2}\\left( m_{1}+...+m_{n-1}\\right)\n\\right\\rceil ,\\text{ }m_{n-1}\\right\\} \\right\\} -1$ when $n\\geq 2$ and $\\gamma\n_{g}^{\\prime }(L\\left( K_{\\overline{m}}\\right) )=\\min \\left\\{ \\left\\lceil\n\\frac{2}{3}\\left( \\left\\vert V(K_{_{\\overline{m}}})\\right\\vert -2\\right)\n\\right\\rceil ,\\right.$ $\\left. 2\\max \\left\\{ \\left\\lceil \\frac{1}{2}\\left(\nm_{1}+...+m_{n-1}-1\\right) \\right\\rceil ,\\text{ }m_{n-1}\\right\\} \\right\\} $\nwhen $n\\geq 4$.\n'
+p1205
+sg8
+(lp1206
+S'Tananyan, Hovhannes G.'
+p1207
+asg11
+S'oai:arXiv.org:1405.0087'
+p1208
+sg13
+S'Domination games played on line graphs of complete multipartite graphs'
+p1209
+sba(iArxivData
+Paper
+p1210
+(dp1211
+g4
+S'2014-04-29'
+p1212
+sg6
+S"  The limiting extremal processes of the branching Brownian motion (BBM), the\ntwo-speed BBM, and the branching random walk are known to be randomly shifted\ndecorated Poisson point processes (SDPPP). In the proofs of those results, the\nLaplace functional of the limiting extremal process is shown to satisfy\n$L[\\theta_y f]=g(y-\\tau_f)$ for any nonzero, nonnegative, compactly supported,\ncontinuous function $f$, where $\\theta_y$ is the shift operator, $\\tau_f$ is a\nreal number that depends on $f$, and $g$ is a real function that is independent\nof $f$. We show that, under some assumptions, this property characterizes the\nstructure of SDPPP. Moreover, when it holds, we show that $g$ has to be a\nconvolution of the Gumbel distribution with some measure.\n  The above property of the Laplace functional is closely related to a\n`freezing phenomenon' that is expected by physicists to occur in a wide class\nof log-correlated fields, and which has played an important role in the\nanalysis of various models. Our results shed light on this intriguing\nphenomenon and provide a natural tool for proving an SDPPP structure in these\nand other models.\n"
+p1213
+sg8
+(lp1214
+S'Subag, Eliran'
+p1215
+aS'Zeitouni, Ofer'
+p1216
+asg11
+S'oai:arXiv.org:1404.7346'
+p1217
+sg13
+S'Freezing and decorated Poisson point processes'
+p1218
+sba(iArxivData
+Paper
+p1219
+(dp1220
+g4
+S'2014-05-01'
+p1221
+sg6
+S'  In this paper, we provide a new approach to estimating the error of\nreconstruction from $\\Sigma\\Delta$ quantized compressed sensing measurements.\n  Our method is based on the restricted isometry property (RIP) of a certain\nprojection of the measurement matrix.\n  Our result yields simple proofs and a slight generalization of the best-known\nreconstruction error bounds for Gaussian and subgaussian measurement matrices.\n'
+p1222
+sg8
+(lp1223
+S'Feng, Joe-Mei'
+p1224
+aS'Krahmer, Felix'
+p1225
+asg11
+S'oai:arXiv.org:1405.0237'
+p1226
+sg13
+S'An RIP-based approach to $\\Sigma\\Delta$ quantization for compressed\n  sensing'
+p1227
+sba(iArxivData
+Paper
+p1228
+(dp1229
+g4
+S'2014-05-01'
+p1230
+sg6
+S'  The industry is satisfying the increasing demand for wireless bandwidth by\ndensely deploying a large number of access points which are centrally managed,\ne.g. enterprise WiFi networks deployed in university campuses, companies,\nairports etc. This small cell architecture is gaining traction in the cellular\nworld as well, as witnessed by the direction in which 4G+ and 5G\nstandardization is moving. Prior academic work in analyzing such large-scale\nwireless networks either uses oversimplified models for the physical layer, or\nignores other important, real-world aspects of the problem, like MAC layer\nconsiderations, topology characteristics, and protocol overhead. On the other\nhand, the industry is using for deployment purposes on-site surveys and\nsimulation tools which do not scale, cannot efficiently optimize the design of\nsuch a network, and do not explain why one design choice is better than\nanother. In this paper we introduce a simple yet accurate analytical model\nwhich combines the realism and practicality of industrial simulation tools with\nthe ability to scale, analyze the effect of various design parameters, and\noptimize the performance of real- world deployments. The model takes into\naccount all central system parameters, including channelization, power\nallocation, user scheduling, load balancing, MAC, advanced PHY techniques\n(single and multi user MIMO as well as cooperative transmission from multiple\naccess points), topological characteristics and protocol overhead. The accuracy\nof the model is verified via extensive simulations and the model is used to\nstudy a wide range of real world scenarios, providing design guidelines on the\neffect of various design parameters on performance.\n'
+p1231
+sg8
+(lp1232
+S'Michaloliakos, Antonios'
+p1233
+aS'Rogalin, Ryan'
+p1234
+aS'Zhang, Yonglong'
+p1235
+aS'Psounis, Konstantinos'
+p1236
+aS'Caire, Giuseppe'
+p1237
+asg11
+S'oai:arXiv.org:1405.0089'
+p1238
+sg13
+S'Performance Modeling of Next-Generation Wireless Networks'
+p1239
+sba(iArxivData
+Paper
+p1240
+(dp1241
+g4
+S'2014-04-30'
+p1242
+sg6
+S'  The sum-capacity of a three user interference wired network for time-varying\nchannels is considered. Due to the channel variations, it is assumed that the\ntransmitters are only able to track the connectivity between the individual\nnodes, thus only the (alternating) state of the network is known. By\nconsidering a special subset of all possible states, we show that state\nsplitting combined with joint encoding over the alternating states is required\nto achieve the sum-capacity. Regarding upper bounds, we use a genie aided\napproach to show the optimality of this scheme. This highlights that more\ninvolved transmit strategies are required for characterizing the degrees of\nfreedom even if the transmitters have heavily restricted channel state\ninformation.\n'
+p1243
+sg8
+(lp1244
+S'Gherekhloo, Soheil'
+p1245
+aS'Chaaban, Anas'
+p1246
+aS'Sezgin, Aydin'
+p1247
+asg11
+S'oai:arXiv.org:1404.7827'
+p1248
+sg13
+S'Resolving Entanglements in Topological Interference Management with\n  Alternating Connectivity'
+p1249
+sba(iArxivData
+Paper
+p1250
+(dp1251
+g4
+S'2014-04-29'
+p1252
+sg6
+S"  This article is concerned with the infinite depth water wave equation in two\nspace dimensions. We consider this problem expressed in position-velocity\npotential holomorphic coordinates,and prove that small localized data leads to\nglobal solutions. This article is a continuation of authors' earlier paper\narXiv:1401.1252.\n"
+p1253
+sg8
+(lp1254
+S'Ifrim, Mihaela'
+p1255
+aS'Tataru, Daniel'
+p1256
+asg11
+S'oai:arXiv.org:1404.7583'
+p1257
+sg13
+S'Two dimensional water waves in holomorphic coordinates II: global\n  solutions'
+p1258
+sba(iArxivData
+Paper
+p1259
+(dp1260
+g4
+S'2014-05-01'
+p1261
+sg6
+S'  Learning a distance function or metric on a given data manifold is of great\nimportance in machine learning and pattern recognition. Many of the previous\nworks first embed the manifold to Euclidean space and then learn the distance\nfunction. However, such a scheme might not faithfully preserve the distance\nfunction if the original manifold is not Euclidean. Note that the distance\nfunction on a manifold can always be well-defined. In this paper, we propose to\nlearn the distance function directly on the manifold without embedding. We\nfirst provide a theoretical characterization of the distance function by its\ngradient field. Based on our theoretical analysis, we propose to first learn\nthe gradient field of the distance function and then learn the distance\nfunction itself. Specifically, we set the gradient field of a local distance\nfunction as an initial vector field. Then we transport it to the whole manifold\nvia heat flows on vector fields. Finally, the geodesic distance function can be\nobtained by requiring its gradient field to be close to the normalized vector\nfield. Experimental results on both synthetic and real data demonstrate the\neffectiveness of our proposed algorithm.\n'
+p1262
+sg8
+(lp1263
+S'Lin, Binbin'
+p1264
+aS'Yang, Ji'
+p1265
+aS'He, Xiaofei'
+p1266
+aS'Ye, Jieping'
+p1267
+asg11
+S'oai:arXiv.org:1405.0133'
+p1268
+sg13
+S'Geodesic Distance Function Learning via Heat Flows on Vector Fields'
+p1269
+sba(iArxivData
+Paper
+p1270
+(dp1271
+g4
+S'2014-04-29'
+p1272
+sg6
+S'  Hidden Markov models (HMMs) are widely used statistical models for modeling\nsequential data. The parameter estimation for HMMs from time series data is an\nimportant learning problem. The predominant methods for parameter estimation\nare based on local search heuristics, most notably the expectation-maximization\n(EM) algorithm. These methods are prone to local optima and oftentimes suffer\nfrom high computational and sample complexity. Recent years saw the emergence\nof spectral methods for the parameter estimation of HMMs, based on a method of\nmoments approach. Two spectral learning algorithms as proposed by Hsu, Kakade\nand Zhang 2012 (arXiv:0811.4413) and Anandkumar, Hsu and Kakade 2012\n(arXiv:1203.0683) are assessed in this work. Using experiments with synthetic\ndata, the algorithms are compared with each other. Furthermore, the spectral\nmethods are compared to the Baum-Welch algorithm, a well-established method\napplying the EM algorithm to HMMs. The spectral algorithms are found to have a\nmuch more favorable computational and sample complexity. Even though the\nalgorithms readily handle high dimensional observation spaces, instability\nissues are encountered in this regime. In view of learning from real-world\nexperimental data, the representation of real-valued observations for the use\nin spectral methods is discussed, presenting possible methods to represent data\nfor the use in the learning algorithms.\n'
+p1273
+sg8
+(lp1274
+S'Mattfeld, Carl'
+p1275
+asg11
+S'oai:arXiv.org:1404.7472'
+p1276
+sg13
+S'Implementing spectral methods for hidden Markov models with real-valued\n  emissions'
+p1277
+sba(iArxivData
+Paper
+p1278
+(dp1279
+g4
+S'2014-05-01'
+p1280
+sg6
+S'  A graph $G$ is sparse if for every $X\\subseteq V(G)$ with $|X|\\ge 2$, the\nnumber of edges induced by $X$ is at most $2|X|-3$. We prove a characterization\nof graphs that can be decomposed to sparse graphs and forests, which extends\nthe well-known result of Nash-Williams on decomposing graphs into forests. As\nan application, we show that if the fractional arboricity $\\gamma(G)<k+1$, then\n$G$ decomposes into $k$ forests and a subgraph with maximum degree at most\n$(2|V(G)|-5)/3$, which strengthens the Weaker Nine Dragon Tree Conjecture\n\\cite{MORZ12} when $\\gamma(G)$ is close to $k+1$.\n  We also provide partition conditions for a graph with edge-disjoint spanning\nrigid subgraphs and spanning trees. In particular, we prove that every $[3k+l,\nk]$-partition-connected graph with multiplicity at most $k$ contains\nedge-disjoint $k$ spanning rigid subgraphs and $l$ spanning trees. As a\ncorollary, every $(6k+2l, 2k)$-connected graph with multiplicity at most $k$\ncontains edge-disjoint $k$ spanning rigid subgraphs and $l$ spanning trees,\nwhich is a multigraph version of a theorem of Cheriyan, Durand de Gevigney and\nSzigeti \\cite{ChGS14}.\n'
+p1281
+sg8
+(lp1282
+S'Gu, Xiaofeng'
+p1283
+asg11
+S'oai:arXiv.org:1405.0247'
+p1284
+sg13
+S'Covering and Packing of spanning trees and rigid subgraphs'
+p1285
+sba(iArxivData
+Paper
+p1286
+(dp1287
+g4
+S'2014-04-30'
+p1288
+sg6
+S'  We consider difference schemes for the time-fractional diffusion equation\nwith variable coefficients and nonlocal boundary conditions containing real\nparameters $\\alpha$, $\\beta$ and $\\gamma$. By the method of energy\ninequalities, for the solution of the difference problem, we obtain a priori\nestimates, which imply the stability and convergence of these difference\nschemes. The obtained results are supported by the numerical calculations\ncarried out for some test problems.\n'
+p1289
+sg8
+(lp1290
+S'Alikhanov, A. A.'
+p1291
+asg11
+S'oai:arXiv.org:1405.0030'
+p1292
+sg13
+S'A difference method of solving the Steklov nonlocal boundary value\n  problem of the second kind for the time-fractional diffusion equation'
+p1293
+sba(iArxivData
+Paper
+p1294
+(dp1295
+g4
+S'2014-04-30'
+p1296
+sg6
+S"  We present a restricted variable generalization of Warning's Second Theorem\n(a result giving a lower bound on the number of solutions of a low degree\npolynomial system over a finite field, assuming one solution exists). This is\nanalogous to Brink's restricted variable generalization of Chevalley's Theorem\n(a result giving conditions for a low degree polynomial system not to have\nexactly one solution). Just as Warning's Second Theorem implies Chevalley's\nTheorem, our result implies Brink's Theorem. We include several combinatorial\napplications, enough to show that we have a general tool for obtaining\nquantitative refinements of combinatorial existence theorems.\n"
+p1297
+sg8
+(lp1298
+S'Clark, Pete L.'
+p1299
+aS'Forrow, Aden'
+p1300
+aS'Schmitt, John R.'
+p1301
+asg11
+S'oai:arXiv.org:1404.7793'
+p1302
+sg13
+S"Warning's Second Theorem with Resricted Variables"
+p1303
+sba(iArxivData
+Paper
+p1304
+(dp1305
+g4
+S'2014-04-30'
+p1306
+sg6
+S'  This paper proposes an interference alignment method with distributed and\ndelayed channel state information at the transmitter (CSIT) for a class of\ninterference networks. The core idea of the proposed method is to align\ninterference signals over time at the unintended receivers in a distributed\nmanner. With the proposed method, trade-off regions between the sum of degrees\nof freedom (sum-DoF) and feedback delay of CSI are characterized in both the X\nchannel and three-user interference channel to reveal the impact on on how the\nCSI feedback delay affects the sum-DoF of the interference networks. A major\nimplication of derived results is that distributed and moderately-delayed CSIT\nis useful to obtain strictly better the sum-DoF over the case of no CSI at the\ntransmitter in a certain class of interference networks. For a class of X\nchannels, the results show how to optimally use distributed and\nmoderately-delayed CSIT to yield the same sum-DoF as instantaneous and global\nCSIT. Further, leveraging the proposed transmission method and the known outer\nbound results, the ergodic sum-capacity of the two-user X channel is\ncharacterized within a constant bit.\n'
+p1307
+sg8
+(lp1308
+S'Lee, Namyoon'
+p1309
+aS'Tandon, Ravi'
+p1310
+aS'Heath Jr, Robert W.'
+p1311
+asg11
+S'oai:arXiv.org:1405.0032'
+p1312
+sg13
+S'Distributed Space-Time Interference Alignment'
+p1313
+sba(iArxivData
+Paper
+p1314
+(dp1315
+g4
+S'2014-04-29'
+p1316
+sg6
+S'  An oriented graph $G^\\sigma$ is a digraph without loops and multiple arcs,\nwhere $G$ is called the underlying graph of $G^\\sigma$. Let $S(G^\\sigma)$\ndenote the skew-adjacency matrix of $G^\\sigma$. The rank of the skew-adjacency\nmatrix of $G^\\sigma$ is called the {\\it skew-rank} of $G^\\sigma$, denoted by\n$sr(G^\\sigma)$. The skew-adjacency matrix of an oriented graph is skew\nsymmetric and the skew-rank is even. In this paper we consider the skew-rank of\nsimple oriented graphs. Firstly we give some preliminary results about the\nskew-rank. Secondly we characterize the oriented graphs with skew-rank 2 and\ncharacterize the oriented graphs with pendant vertices which attain the\nskew-rank 4. As a consequence, we list the oriented unicyclic graphs, the\noriented bicyclic graphs with pendant vertices which attain the skew-rank 4.\nMoreover, we determine the skew-rank of oriented unicyclic graphs of order $n$\nwith girth $k$ in terms of matching number. We investigate the minimum value of\nthe skew-rank among oriented unicyclic graphs of order $n$ with girth $k$ and\ncharacterize oriented unicyclic graphs attaining the minimum value. In\naddition, we consider oriented unicyclic graphs whose skew-adjacency matrices\nare nonsingular.\n'
+p1317
+sg8
+(lp1318
+S'Li, Xueliang'
+p1319
+aS'Yu, Guihai'
+p1320
+asg11
+S'oai:arXiv.org:1404.7230'
+p1321
+sg13
+S'The skew-rank of oriented graphs'
+p1322
+sba(iArxivData
+Paper
+p1323
+(dp1324
+g4
+S'2014-04-29'
+p1325
+sg6
+S'  We introduce the notion of Hermitian Higgs bundle as a natural generalization\nof the notion of Hermitian vector bundle and we study some vanishing theorems\nconcerning Hermitian Higgs bundles when the base manifold is a compact complex\nmanifold. We show that a first vanishing result, proved for these objects when\nthe base manifold was K\\"ahler, also holds when the manifold is compact\ncomplex. From this fact and some basic properties of Hermitian Higgs bundles,\nwe conclude several results. In particular we show that, in analogy to the\nclassical case, there are vanishing theorems for invariant sections of tensor\nproducts of Higgs bundles. Then, we prove that a Higgs bundle admits no nonzero\ninvariant sections if there is a condition of negativity on the greatest\neigenvalue of the Hitchin-Simpson mean curvature. Finally, we prove that the\ninvariant sections of certain tensor products of a weak Hermitian-Yang-Mills\nHiggs bundle are all parallel in the classical sense.\n'
+p1326
+sg8
+(lp1327
+S'Cardona, S. A. H.'
+p1328
+asg11
+S'oai:arXiv.org:1404.7544'
+p1329
+sg13
+S'On vanishing theorems for Higgs bundles'
+p1330
+sba(iArxivData
+Paper
+p1331
+(dp1332
+g4
+S'2014-04-29'
+p1333
+sg6
+S'  We prove that the harmonic map flow from the Euclidean space $\\mathbb{R}^d$\ninto the sphere $S^d$ has no equivariant self-similar shrinking solutions in\ndimensions $d\\geq 7$.\n'
+p1334
+sg8
+(lp1335
+VBizo\u0144, Piotr
+p1336
+aS'Wasserman, Arthur'
+p1337
+asg11
+S'oai:arXiv.org:1404.7381'
+p1338
+sg13
+S'Non-existence of shrinkers for the harmonic map flow in higher\n  dimensions'
+p1339
+sba(iArxivData
+Paper
+p1340
+(dp1341
+g4
+S'2014-04-29'
+p1342
+sg6
+S'  We present complete simplicial fan realizations of any spherical subword\ncomplex of type $A_n$ for $n\\leq 3$. This provides complete simplicial fan\nrealizations of simplicial multi-associahedra $\\Delta_{2k+4,k}$, whose facets\nare in correspondence with $k$-triangulations of a convex $(2k+4)$-gon. This\nsolves the first open case of the problem of finding fan realizations where\npolytopality is not known. The technics presented in this paper work for all\nfinite Coxeter groups and we hope that they will be useful to construct fans\nrealizing subword complexes in general.\n'
+p1343
+sg8
+(lp1344
+S'Bergeron, Nantel'
+p1345
+aS'Ceballos, Cesar'
+p1346
+aVLabbé, Jean-Philippe
+p1347
+asg11
+S'oai:arXiv.org:1404.7380'
+p1348
+sg13
+S'Fan realizations of subword complexes and multi-associahedra via Gale\n  duality'
+p1349
+sba(iArxivData
+Paper
+p1350
+(dp1351
+g4
+S'2014-04-30'
+p1352
+sg6
+S'  For $X$, $Y$, $Z$ and $W$ compact metric spaces, consider two uniformly\ncontractive IFS $\\{\\tau_x: Z\\to Z,\\, x\\in x\\}$ and $\\{\\tau_y:W\\to W,\\, y\\in\nY\\}$. For a fixed $\\alpha \\in \\mathcal{P}(X)$ with $supp(\\alpha)=X$ we define\nthe entropy of a holonomic measure $\\pi \\in \\mathcal{P}(X\\times Z)$ relative to\n$\\alpha$, the pressure of a continuous cost function $c(x,z)$ and show that for\n$c$ Lipschitz this pressure coincides with the spectral radius of the\nassociated transfer operator. The same approach can be applied to the pair\n$Y,W$. For fixed probabilities $\\alpha \\in \\mathcal{P}(X)$ and $\\beta \\in\n\\mathcal{P}(Y)$ with $supp(\\alpha)=X,\\,supp(\\beta)=Y$ we denote by\n$H_\\alpha(\\pi), \\pi \\in \\Pi(\\cdot,\\cdot,\\tau)$, the entropy of the\n$(X,Z)-$marginal of $\\pi$ relative to $\\alpha$ and denote by $H_\\beta(\\pi)$,\nthe entropy of the $(Y,W)-$marginal of $\\pi$ relative to $\\beta$. The marginal\npressure of a continuous cost function $c \\in C(X\\times Y \\times Z \\times W)$\nrelative to $(\\alpha,\\beta)$ will be defined by $P^{m}(c) =\n\\sup_{\\pi\\in\\Pi(\\cdot,\\cdot,\\tau)} \\int c\\, d\\pi + H_{\\alpha}(\\pi)\n+H_{\\beta}(\\pi)$ and we will show the following duality result: \\[\\inf_{P^{m}(c\n-\\varphi(x) -\\psi(y))=0} \\int \\varphi(x)\\,d\\mu +\\int \\psi(y)\\,d\\nu =\n\\sup_{\\pi\\in\\Pi(\\mu,\\nu,\\tau)} \\int c\\, d\\pi + H_{\\alpha}(\\pi)\n+H_{\\beta}(\\pi).\\] When $Z$ and $W$ have only one point and the entropy is\nunconsidered this equality can be rewritten as the Kantorovich Duality for\ncompact spaces $X,Y$ and continuous cost $-c$: \\[\\inf_{c -\\varphi(x)\n-\\psi(y)\\leq 0} \\int \\varphi(x)\\,d\\mu +\\int \\psi(y)\\,d\\nu =\n\\sup_{\\pi\\in\\Pi(\\mu,\\nu)} \\int c\\, d\\pi .\\]\n'
+p1353
+sg8
+(lp1354
+S'Mengue, Jairo K.'
+p1355
+aS'Oliveira, Elismar R.'
+p1356
+asg11
+S'oai:arXiv.org:1404.7801'
+p1357
+sg13
+S'Duality results for Iterated Function Systems with a general family of\n  branches'
+p1358
+sba(iArxivData
+Paper
+p1359
+(dp1360
+g4
+S'2014-04-29'
+p1361
+sg6
+S'  This article is concerned with the small data problem for the cubic nonlinear\nSchr\\"odinger equation (NLS) in one space dimension, and short range\nmodifications of it. We provide a new, simpler approach in order to prove that\nglobal solutions exist for data which is small in $H^{0,1}$. In the same\nsetting we also discuss the related problems of obtaining a modified scattering\nexpansion for the solution, as well as asymptotic completeness.\n'
+p1362
+sg8
+(lp1363
+S'Ifrim, Mihaela'
+p1364
+aS'Tataru, Daniel'
+p1365
+asg11
+S'oai:arXiv.org:1404.7581'
+p1366
+sg13
+S'Global bounds for the cubic nonlinear Schr\\"odinger equation (NLS) in\n  one space dimension'
+p1367
+sba(iArxivData
+Paper
+p1368
+(dp1369
+g4
+S'2014-04-30'
+p1370
+sg6
+S'  In this work, we prove the existence of least energy nodal solution for a\nclass of elliptic problem in both cases, bounded and unbounded domain, when the\nnonlinearity has exponential critical growth in $\\mathbb{R}^2$. Moreover, we\nalso prove a nonexistence result of least energy nodal solution for the\nautonomous case in whole $\\mathbb{R}^{2}$.\n'
+p1371
+sg8
+(lp1372
+S'Alves, Claudianor O.'
+p1373
+aS'Pereira, Denilson S.'
+p1374
+asg11
+S'oai:arXiv.org:1404.7649'
+p1375
+sg13
+S'Existence and nonexistence of least energy nodal solution for a class of\n  elliptic problem in $\\mathbb{R}^{2}$'
+p1376
+sba(iArxivData
+Paper
+p1377
+(dp1378
+g4
+S'2014-04-30'
+p1379
+sg6
+S'  We study distributed coding of compressed sensing (CS) measurements using\nvector quantizer (VQ). We develop a distributed framework for realizing\noptimized quantizer that enables encoding CS measurements of correlated sparse\nsources followed by joint decoding at a fusion center. The optimality of VQ\nencoder-decoder pairs is addressed by minimizing the sum of mean-square errors\nbetween the sparse sources and their reconstruction vectors at the fusion\ncenter. We derive a lower-bound on the end-to-end performance of the studied\ndistributed system, and propose a practical encoder-decoder design through an\niterative algorithm.\n'
+p1380
+sg8
+(lp1381
+S'Shirazinia, Amirpasha'
+p1382
+aS'Chatterjee, Saikat'
+p1383
+aS'Skoglund, Mikael'
+p1384
+asg11
+S'oai:arXiv.org:1404.7666'
+p1385
+sg13
+S'Distributed Quantization for Compressed Sensing'
+p1386
+sba(iArxivData
+Paper
+p1387
+(dp1388
+g4
+S'2014-05-01'
+p1389
+sg6
+S'  We derive a new Sequential-Monte-Carlo-based algorithm to estimate the\ncapacity of two-dimensional channel models. The focus is on computing the\nnoiseless capacity of the 2-D one-infinity run-length limited constrained\nchannel, but the underlying idea is generally applicable. The proposed\nalgorithm is profiled against a state-of-the-art method, yielding more than an\norder of magnitude improvement in estimation accuracy for a given computation\ntime.\n'
+p1390
+sg8
+(lp1391
+S'Naesseth, Christian A.'
+p1392
+aS'Lindsten, Fredrik'
+p1393
+aVSchön, Thomas B.
+p1394
+asg11
+S'oai:arXiv.org:1405.0102'
+p1395
+sg13
+S'Capacity estimation of two-dimensional channels using Sequential Monte\n  Carlo'
+p1396
+sba(iArxivData
+Paper
+p1397
+(dp1398
+g4
+S'2014-04-29'
+p1399
+sg6
+S'  For H\\"older continuous functions $W(t,x)$ and $\\phi_t$, we define nonlinear\nintegral $\\int_a^b W(dt, \\phi_t)$ in various senses, including It\\^o-Skorohod\nand pathwise. We study their properties and relations. The stochastic flow in a\ntime dependent rough vector field associated with $\\dot \\phi_t=(\\partial\n_tW)(t, \\phi_t)$ is also studied and its applications to the transport equation\n$\\partial _t u(t,x)-\\partial _t W(t,x)\\nabla u(t,x)=0$ in rough media is given.\nThe Feynman-Kac solution to the stochastic partial differential equation with\nrandom coefficients $\\partial _t u(t,x)+Lu(t,x) +u(t,x)W(t,x)=0$ are given,\nwhere $L$ is a second order elliptic differential operator with random\ncoefficients (dependent on $W$). To establish such formula the main difficulty\nis the exponential integrability of some nonlinear integrals, which is proved\nto be true under some mild conditions on the covariance of $W$. Along the way,\nwe also obtain an upper bound for increments of stochastic processes on\nmultidimensional rectangles by majorizing measures.\n'
+p1400
+sg8
+(lp1401
+S'Hu, Yaozhong'
+p1402
+aS'Le, Khoa'
+p1403
+asg11
+S'oai:arXiv.org:1404.7582'
+p1404
+sg13
+S'Nonlinear Young integrals and differential systems in H\\"older media'
+p1405
+sba(iArxivData
+Paper
+p1406
+(dp1407
+g4
+S'2014-05-01'
+p1408
+sg6
+S'  For a general multipartite quantum state, we formulate a locally checkable\ncondition, under which the expectation values of certain nonlocal observables\nare completely determined by the expectation values of some local observables.\nThe condition is satisfied by ground states of gapped quantum many-body systems\nin two spatial dimensions, assuming a widely conjectured form of area law is\ncorrect. Its implications on the studies of gapped quantum many-body systems,\nquantum state tomography, and quantum state verification are discussed. These\nresults are based on a partial characterization of states with small yet\nnonzero conditional mutual information, which may be of independent interest.\n'
+p1409
+sg8
+(lp1410
+S'Kim, Isaac H.'
+p1411
+asg11
+S'oai:arXiv.org:1405.0137'
+p1412
+sg13
+S'On the informational completeness of local observables'
+p1413
+sba(iArxivData
+Paper
+p1414
+(dp1415
+g4
+S'2014-04-29'
+p1416
+sg6
+S'  We describe quasi-Hopf twist deformations of flat closed string\ncompactifications with non-geometric R-flux using a suitable cochain twist, and\nconstruct nonassociative deformations of fields and differential calculus. We\nreport on our new findings in using this formalism to construct perturbative\nnonassociative field theories on these backgrounds. We describe the\nmodifications to the usual classification of Feynman diagrams into planar and\nnon-planar graphs. The example of phi(4) theory is studied in detail and the\none-loop contributions to the two-point function are calculated.\n'
+p1417
+sg8
+(lp1418
+S'Mylonas, Dionysios'
+p1419
+aS'Szabo, Richard J.'
+p1420
+asg11
+S'oai:arXiv.org:1404.7304'
+p1421
+sg13
+S'Nonassociative Field Theory on Non-Geometric Spaces'
+p1422
+sba(iArxivData
+Paper
+p1423
+(dp1424
+g4
+S'2014-04-30'
+p1425
+sg6
+S"  The Kolmogorov distances between a symmetric hypergeometric law with standard\ndeviation $\\sigma$ and its usual normal approximations are computed and shown\nto be less than $1/(\\sqrt{8\\pi}\\,\\sigma)$, with the order $1/\\sigma$ and the\nconstant $1/\\sqrt{8\\pi}$ being optimal. The results of Hipp and Mattner (2007)\nfor symmetric binomial laws are obtained as special cases. Connections to\nBerry-Esseen type results in more general situations concerning sums of simple\nrandom samples or Bernoulli convolutions are explained. Auxiliary results of\nindependent interest include rather sharp normal distribution function\ninequalities, a simple identifiability result for hypergeometric laws, and some\nremarks related to L\\'evy's concentration-variance inequality.\n"
+p1426
+sg8
+(lp1427
+S'Mattner, Lutz'
+p1428
+aS'Schulz, Jona'
+p1429
+asg11
+S'oai:arXiv.org:1404.7657'
+p1430
+sg13
+S'On normal approximations to symmetric hypergeometric laws'
+p1431
+sba(iArxivData
+Paper
+p1432
+(dp1433
+g4
+S'2014-04-30'
+p1434
+sg6
+S'  We consider the distributed detection of a zero-mean Gaussian signal in an\nanalog wireless sensor network with a fusion center (FC) configured with a\nlarge number of antennas. The transmission gains of the sensor nodes are\noptimized by minimizing the ratio of the log probability of detection (PD) and\nlog probability of false alarm (PFA). We show that the problem is convex with\nrespect to the squared norm of the transmission gains, and that a closed-form\nsolution can be found using the Karush-Kuhn-Tucker conditions. Our results\nindicate that a constant PD can be maintained with decreasing sensor transmit\ngain provided that the number of antennas increases at the same rate. This is\ncontrasted with the case of a single-antenna FC, where PD is monotonically\ndecreasing with transmit gain. On the other hand, we show that when the\ntransmit power is high, the single- and multi-antenna FC both asymptotically\nachieve the same PD upper bound.\n'
+p1435
+sg8
+(lp1436
+S'Jiang, Feng'
+p1437
+aS'Chen, Jie'
+p1438
+aS'Swindlehurst, A. Lee'
+p1439
+asg11
+S'oai:arXiv.org:1404.7586'
+p1440
+sg13
+S'Detection in Analog Sensor Networks with a Large Scale Antenna Fusion\n  Center'
+p1441
+sba(iArxivData
+Paper
+p1442
+(dp1443
+g4
+S'2014-04-29'
+p1444
+sg6
+S'  Tensor models generalize matrix models and generate colored triangulations of\npseudo-manifolds in dimensions $D\\geq 3$. The free energies of some models have\nbeen recently shown to admit a double scaling limit, i.e. large tensor size $N$\nwhile tuning to criticality, which turns out to be summable in dimension less\nthan six. This double scaling limit is here extended to arbitrary models. This\nis done by means of the Schwinger--Dyson equations, which generalize the loop\nequations of random matrix models, coupled to a double scale analysis of the\ncumulants.\n'
+p1445
+sg8
+(lp1446
+S'Bonzom, Valentin'
+p1447
+aS'Gurau, Razvan'
+p1448
+aS'Ryan, James P.'
+p1449
+aS'Tanasa, Adrian'
+p1450
+asg11
+S'oai:arXiv.org:1404.7517'
+p1451
+sg13
+S'The double scaling limit of random tensor models'
+p1452
+sba(iArxivData
+Paper
+p1453
+(dp1454
+g4
+S'2014-04-30'
+p1455
+sg6
+S'  Many hard graph problems can be solved efficiently when restricted to graphs\nof bounded treewidth, and more generally to graphs of bounded clique-width. But\nthere is a price to be paid for this generality, exemplified by the four\nproblems MaxCut, Graph Coloring, Hamiltonian Cycle and Edge Dominating Set that\nare all FPT parameterized by treewidth but none of which can be FPT\nparameterized by clique-width unless FPT = W[1], as shown by Fomin et al [7,\n8]. We therefore seek a structural graph parameter that shares some of the\ngenerality of clique-width without paying this price. Based on splits, branch\ndecompositions and the work of Vatshelle [18] on Maximum Matching-width, we\nconsider the graph parameter sm-width which lies between treewidth and\nclique-width. Some graph classes of unbounded treewidth, like\ndistance-hereditary graphs, have bounded sm-width. We show that MaxCut, Graph\nColoring, Hamiltonian Cycle and Edge Dominating Set are all FPT parameterized\nby sm-width.\n'
+p1456
+sg8
+(lp1457
+VSæther, Sigve Hortemo
+p1458
+aS'Telle, Jan Arne'
+p1459
+asg11
+S'oai:arXiv.org:1404.7758'
+p1460
+sg13
+S'Between Treewidth and Clique-width'
+p1461
+sba(iArxivData
+Paper
+p1462
+(dp1463
+g4
+S'2014-04-29'
+p1464
+sg6
+S'  The explicit constructions of periodic and doubly periodic vortex relative\nequilibria using the theory of monodromy-free Schroedinger operators are\ndescribed. Several concrete examples with the qualitative analysis of the\ncorresponding travelling vortex streets are given.\n'
+p1465
+sg8
+(lp1466
+S'Hemery, A. D.'
+p1467
+aS'Veselov, A. P.'
+p1468
+asg11
+S'oai:arXiv.org:1404.7234'
+p1469
+sg13
+S'Periodic vortex streets and complex monodromy'
+p1470
+sba(iArxivData
+Paper
+p1471
+(dp1472
+g4
+S'2014-05-01'
+p1473
+sg6
+S'  This paper characterizes the performance of cellular networks employing\nmultiple antenna open-loop spatial multiplexing techniques. We use a stochastic\ngeometric framework to model distance depended inter cell interference. Using\nthis framework, we analyze the coverage and rate using two linear receivers,\nnamely, partial zero-forcing (PZF) and minimum-mean-square-estimation (MMSE)\nreceivers. Analytical expressions are obtained for coverage and rate\ndistribution that are suitable for fast numerical computation.\n  In the case of the PZF receiver, we show that it is not optimal to utilize\nall the receive antenna for canceling interference. With $\\alpha$ as the path\nloss exponent, $N_t$ transmit antenna, $N_r$ receive antenna, we show that it\nis optimal to use $N_t\\left\\lceil\\left(1-\\frac{2}{\\alpha}\\right) \\left(\n\\frac{N_r}{N_t} -\\frac{1}{2}\\right)\\right\\rceil$ receive antennas for\ninterference cancellation and the remaining antennas for signal enhancement\n(array gain). For both PZF and MMSE receivers, we observe that increasing the\nnumber of data streams provides an improvement in the mean data rate with\ndiminishing returns. Also transmitting $N_r$ streams is not optimal in terms of\nthe mean sum rate. We observe that increasing the SM rate with a PZF receiver\nalways degrades the cell edge data rate while the performance with MMSE\nreceiver is nearly independent of the SM rate.\n'
+p1474
+sg8
+(lp1475
+S'Veetil, Sreejith T.'
+p1476
+aS'Kuchi, Kiran'
+p1477
+aS'Ganti, Radha Krishna'
+p1478
+asg11
+S'oai:arXiv.org:1405.0209'
+p1479
+sg13
+S'Performance of PZF and MMSE Receivers in Cellular Networks with\n  Multi-User Spatial Multiplexing'
+p1480
+sba(iArxivData
+Paper
+p1481
+(dp1482
+g4
+S'2014-05-01'
+p1483
+sg6
+S'  Random walk on $\\mathbb{N}$ with negative drift and absorption at 0, when\nconditioned on survival, has uncountably many invariant measures\n(quasi-stationary distributions, qsd) $\\nu_c$. We study a Fleming-Viot(FV)\nparticle system driven by this process and show that mean normalized densities\nof the FV unique stationary measure converge to the minimal qsd, $\\nu_0$, as $N\n\\to \\infty$. Furthermore, every other qsd of the random walk ($\\nu_c$, $c>0$)\ncorresponds to a metastable state of the FV particle system.\n'
+p1484
+sg8
+(lp1485
+S'Maric, Nevena'
+p1486
+asg11
+S'oai:arXiv.org:1405.0094'
+p1487
+sg13
+S'Fleming-Viot particle system driven by a random walk on $\\mathbb{N}$'
+p1488
+sba(iArxivData
+Paper
+p1489
+(dp1490
+g4
+S'2014-04-30'
+p1491
+sg6
+S'  We consider a resource-constrained scenario where a compressed sensing- (CS)\nbased sensor has a low number of measurements which are quantized at a low rate\nfollowed by transmission or storage. Applying this scenario, we develop a new\nquantizer design which aims to attain a high-quality reconstruction performance\nof a sparse source signal based on analysis-by-synthesis framework. Through\nsimulations, we compare the performance of the proposed quantization algorithm\nvis-a-vis existing quantization methods.\n'
+p1492
+sg8
+(lp1493
+S'Shirazinia, Amirpasha'
+p1494
+aS'Chatterjee, Saikat'
+p1495
+aS'Skoglund, Mikael'
+p1496
+asg11
+S'oai:arXiv.org:1404.7651'
+p1497
+sg13
+S'Analysis-by-Synthesis-based Quantization of Compressed Sensing\n  Measurements'
+p1498
+sba(iArxivData
+Paper
+p1499
+(dp1500
+g4
+S'2014-04-30'
+p1501
+sg6
+S'  Let $\\lambda$ be a partition, viewed as a Young diagram. We define the hook\ndifference of a cell of $\\lambda$ to be the difference of its leg and arm\nlengths. Define $h_{1,1}(\\lambda)$ to be the number of cells of $\\lambda$ with\nhook difference one. In the paper of Buryak and Feigin (arXiv:1206.5640),\nalgebraic geometry is used to prove a generating function identity which\nimplies that $h_{1,1}$ is equidistributed with $a_2$, the largest part of a\npartition that appears at least twice, over the partitions of a given size. In\nthis paper, we propose a refinement of the theorem of Buryak and Feigin and\nprove some partial results using combinatorial methods. We also obtain a new\nformula for the q-Catalan numbers which naturally leads us to define a new\nq,t-Catalan number with a simple combinatorial interpretation.\n'
+p1502
+sg8
+(lp1503
+S'Huang, Jiaoyang'
+p1504
+aS'Senger, Andrew'
+p1505
+aS'Wear, Peter'
+p1506
+aS'Wu, Tianqi'
+p1507
+asg11
+S'oai:arXiv.org:1405.0072'
+p1508
+sg13
+S'Partition Statistics Equidistributed with the Number of Hook Difference\n  One Cells'
+p1509
+sba(iArxivData
+Paper
+p1510
+(dp1511
+g4
+S'2014-05-01'
+p1512
+sg6
+S'  We briefly report on some exact results [G. Fiore, arXiv:1312.4665 preprint,\nto appear in J. Phys. A] regarding plane waves in a relativistic cold plasma.\nIf the plasma, initially at rest, is reached by a transverse plane\nelectromagnetic travelling-wave, then its motion has a very simple dependence\non this wave in the limit of zero density, otherwise can be determined by an\niterative procedure whose accuracy decreases with time or the plasma density.\nThus one can describe in particular the impact of a very intense and short\nlaser pulse onto a plasma and determine conditions for the "slingshot effect"\n[G. Fiore, R. Fedele, U. De Angelis, arXiv:1309.1400 preprint] to occur. The\nmotion in vacuum of a charged test particle subject to a wave of the same kind\nis also determined, for any initial velocity.\n'
+p1513
+sg8
+(lp1514
+S'Fiore, Gaetano'
+p1515
+asg11
+S'oai:arXiv.org:1405.0163'
+p1516
+sg13
+S'On plane waves in diluted relativistic cold plasmas'
+p1517
+sba(iArxivData
+Paper
+p1518
+(dp1519
+g4
+S'2014-04-29'
+p1520
+sg6
+S'  Ramsey theory is the study of conditions under which mathematical objects\nshow order when partitioned. Ramsey theory on the integers concerns itself with\npartitions of $[1,n]$ into $r$ subsets and asks the question whether one (or\nmore) of these $r$ subsets contains a $k$-term member of $\\mathcal{F}$, where\n$[1,n]=\\{1,2,3,\\ldots,n\\}$ and $\\mathcal{F}$ is a certain family of subsets of\n$\\mathbb{Z}^+$. When $\\mathcal{F}$ is fixed to be the set of arithmetic\nprogressions, the corresponding Ramsey-type numbers are called the van der\nWaerden numbers.\n  I started the project choosing $\\mathcal{F}$ to be the set of\nsemi-progressions of scope $m$. A semi-progression of scope $m\\in \\mathbb{Z}^+$\nis a set of integers $\\{x_1,x_2,\\ldots,x_k\\}$ such that for some\n$d\\in\\mathbb{Z}^+$, $x_{i}-x_{i-1}\\in\\{d,2d,\\ldots,md\\}$ for all\n$i\\in\\{2,3,\\ldots,k\\}$. The exact values of Ramsey-type functions corresponding\nto semi-progressions are not known. We use $SP_m(k)$ to denote these numbers as\na Ramsey-type function of $k$ for a fixed scope $m$. During this project, I\nused the probabilistic method to get an exponential lower bound for any fixed\n$m$. The first chapter starts with a brief introduction to Ramsey theory and\nthen explains the problem considered. In the second chapter, I give the results\nobtained on semi-progressions. In the third chapter, I will discuss the lower\nbound obtained on $Q_1(k)$. When $\\mathcal{F}$ is chosen to be\nquasi-progressions of diameter $n$, the corresponding Ramsey-type numbers\nobtained are denoted as $Q_n(k)$. The last chapter gives an exposition of\nadvanced probabilistic techniques, in particular concentration inequalities and\nhow to apply them.\n'
+p1521
+sg8
+(lp1522
+S'Janardhanan, Mano Vikash'
+p1523
+asg11
+S'oai:arXiv.org:1404.7348'
+p1524
+sg13
+S'Topics in Ramsey Theory'
+p1525
+sba(iArxivData
+Paper
+p1526
+(dp1527
+g4
+S'2014-05-01'
+p1528
+sg6
+S'  This is the first of the proposed sets of notes to be published in the\nwebsite Gonit Sora (http://gonitsora.com). The notes will hopefully be able to\nhelp the students to learn their subject in an easy and comprehensible way.\nThese notes are aimed at mimicking exactly what would be typically taught in a\none-semester course at a college or university. The level of the notes would be\nroughly at the undergraduate level. The present sets of notes are not yet\ncomplete and this is the second version that is being posted. These notes\ncontain very few proofs and only state the important results in Probability\nTheory. These notes are based on the course taught at Tezpur University, Assam,\nIndia by Dr. Santanu Dutta. There may be some errors and typos in these notes\nwhich we hope the reader would bring to our notice.\n'
+p1529
+sg8
+(lp1530
+S'Haloi, Rupam'
+p1531
+aS'Saikia, Manjil P.'
+p1532
+asg11
+S'oai:arXiv.org:1405.0250'
+p1533
+sg13
+S'Notes on Probability Theory'
+p1534
+sba(iArxivData
+Paper
+p1535
+(dp1536
+g4
+S'2014-04-29'
+p1537
+sg6
+S'  The chromatic symmetric function of a graph is a generalization of the\nchromatic polynomial. The key motivation for studying the structure of a\nchromatic symmetric function is to answer positivity conjectures by Stanley in\n1995 and Gasharov in 1996. As a symmetric function one can write the chromatic\nsymmetric function in the basis of Schur functions. In this paper we address\nthe positivity of the Schur coefficients when the parameter of the Schur\nfunction is a hook shape. Furthermore, when a graph is the incomparability\ngraph of a poset with specific properties we construct a correspondence between\nacyclic orientations of the graph and P-tableaux with a hook shape.\n'
+p1538
+sg8
+(lp1539
+S'Kaliszewski, Ryan'
+p1540
+asg11
+S'oai:arXiv.org:1404.7531'
+p1541
+sg13
+S'Hook coefficients of chromatic symmetric functions'
+p1542
+sba(iArxivData
+Paper
+p1543
+(dp1544
+g4
+S'2014-04-30'
+p1545
+sg6
+S'  In recent years, deep neural networks (including recurrent ones) have won\nnumerous contests in pattern recognition and machine learning. This historical\nsurvey compactly summarises relevant work, much of it from the previous\nmillennium. Shallow and deep learners are distinguished by the depth of their\ncredit assignment paths, which are chains of possibly learnable, causal links\nbetween actions and effects. I review deep supervised learning (also\nrecapitulating the history of backpropagation), unsupervised learning,\nreinforcement learning & evolutionary computation, and indirect search for\nshort programs encoding deep and large networks.\n'
+p1546
+sg8
+(lp1547
+S'Schmidhuber, Juergen'
+p1548
+asg11
+S'oai:arXiv.org:1404.7828'
+p1549
+sg13
+S'Deep Learning in Neural Networks: An Overview'
+p1550
+sba(iArxivData
+Paper
+p1551
+(dp1552
+g4
+S'2014-04-30'
+p1553
+sg6
+S'  We consider radial solutions of a general elliptic equation involving a\nweighted $p$-Laplace operator with a subcritical nonlinearity. By a shooting\nmethod we prove the existence of solutions with any prescribed number of nodes.\nThe method is based on a change of variables in the phase plane, a very general\ncomputation of an angular velocity and new estimates for the decay of an energy\nassociated with an asymptotic Hamiltonian problem. Estimating the rate of decay\nfor the energy requires a sub-criticality condition. The method covers the case\nof solutions which are not compactly supported or which have compact support.\nIn the last case, we show that the size of the support increases with the\nnumber of nodes.\n'
+p1554
+sg8
+(lp1555
+VCortázar, Carmen
+p1556
+aS'Dolbeault, Jean'
+p1557
+aS'Garcia-Huidobro, Marta'
+p1558
+aVManásevich, Raul
+p1559
+asg11
+S'oai:arXiv.org:1404.7607'
+p1560
+sg13
+S'Existence of sign changing solutions for an equation with a weighted\n  p-Laplace operator'
+p1561
+sba(iArxivData
+Paper
+p1562
+(dp1563
+g4
+S'2014-04-29'
+p1564
+sg6
+S'  The following online bin packing problem is considered: Items with integer\nsizes are given and variable sized bins arrive online. A bin must be used if\nthere is still an item remaining which fits in it when the bin arrives. The\ngoal is to minimize the total size of all the bins used. Previously, a lower\nbound of 5/4 on the competitive ratio of this problem was achieved using jobs\nof size S and 2S-1 and maximum bin size 4S-4. For this case, we obtain matching\nupper and lower bounds, which vary depending on the ratio of the number of\nsmall jobs to the number of large jobs.\n'
+p1565
+sg8
+(lp1566
+S'Boyar, Joan'
+p1567
+aS'Ellen, Faith'
+p1568
+asg11
+S'oai:arXiv.org:1404.7325'
+p1569
+sg13
+S'Tight Bounds for an Online Bin Packing Problem'
+p1570
+sba(iArxivData
+Paper
+p1571
+(dp1572
+g4
+S'2014-04-29'
+p1573
+sg6
+S'  Random network coding recently attracts attention as a technique to\ndisseminate information in a network. This paper considers a non-coherent\nmulti-shot network, where the unknown and time-variant network is used several\ntimes. In order to create dependencies between the different shots, particular\nconvolutional codes in rank metric are used. These codes are so-called\n(partial) unit memory ((P)UM) codes, i.e., convolutional codes with memory one.\nFirst, distance measures for convolutional codes in rank metric are shown and\ntwo constructions of (P)UM codes in rank metric based on the generator matrices\nof maximum rank distance codes are presented. Second, an efficient\nerror-erasure decoding algorithm for these codes is presented. Its guaranteed\ndecoding radius is derived and its complexity is bounded. Finally, it is shown\nhow to apply these codes for error correction in random linear and affine\nnetwork coding.\n'
+p1574
+sg8
+(lp1575
+S'Wachter-Zeh, Antonia'
+p1576
+aS'Stinner, Markus'
+p1577
+aS'Sidorenko, Vladimir'
+p1578
+asg11
+S'oai:arXiv.org:1404.7251'
+p1579
+sg13
+S'Convolutional Codes in Rank Metric with Application to Random Network\n  Coding'
+p1580
+sba(iArxivData
+Paper
+p1581
+(dp1582
+g4
+S'2014-05-01'
+p1583
+sg6
+S'  In many modern applications, difficulty in evaluating the posterior density\nmakes taking performing a single MCMC step slow; this difficulty can be caused\nby intractable likelihood functions, but also appears for routine problems with\nlarge data sets. Many researchers have responded by running approximate\nversions of MCMC algorithms. In this note, we develop very general quantitative\nbounds for showing the ergodicity of these approximate samplers. In particular,\nour bounds can be used to perform a bias-variance trade-off argument to give\npractical guidance on the quality of approximation that should be used for a\ngiven total computational budget. We present a few applications of our results\nin recently proposed algorithms, including the "austerity" framework,\nStochastic Gradient Langevin Dynamics, exponential random graphs and ABC-MCMC\nalgorithms.\n'
+p1584
+sg8
+(lp1585
+S'Pillai, Natesh S.'
+p1586
+aS'Smith, Aaron'
+p1587
+asg11
+S'oai:arXiv.org:1405.0182'
+p1588
+sg13
+S'Ergodicity of Approximate MCMC Chains with Applications to Large Data\n  Sets'
+p1589
+sba(iArxivData
+Paper
+p1590
+(dp1591
+g4
+S'2014-05-01'
+p1592
+sg6
+S'  In this paper we discuss global well - posedness and scattering for some\ninitial value problems that are $L^{2}$ supercritical and $\\dot{H}^{1}$\nsubcritical, with radial data. We prove global well - posedness and scattering\nfor radial data in $H^{s}$, $s > s_{c}$, where the problem is $\\dot{H}^{s_{c}}$\n- critical. We make use of the long time Strichartz estimates of \\cite{D2} to\ndo this.\n'
+p1593
+sg8
+(lp1594
+S'Dodson, Benjamin'
+p1595
+asg11
+S'oai:arXiv.org:1405.0218'
+p1596
+sg13
+S'Global well-posedness and scattering for nonlinear Schr{\\"o}dinger\n  equations with algebraic nonlinearity when $d = 2, 3$, $u_{0}$ radial'
+p1597
+sba.
