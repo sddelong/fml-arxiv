@@ -48,7 +48,24 @@ class OnlineSVMClassifier:
         """ predict y by using sign of w dot x """
 
         return sign(x.Dot(self.weights))
+    
+    def __repr__(self):
+        
+        repstring = 'Online SVM Classifier, eta = %1.3f, C = %1.3f'.format(self.eta, self.C)
+        
+        return repstring
+    
+    __str__ = __repr__
+        
 
+
+#wrapper functions to set up classifiers for testing
+def MakeOnlineSVMClassifier(parameters):
+    """ parameters are just eta """
+    
+    classifier = OnlineSVMClassifier(parameters[0],parameters[1])
+    
+    return classifier
 
 
 if __name__ == "__main__":

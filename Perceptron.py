@@ -50,11 +50,22 @@ class PerceptronClassifier:
         
         return float(self.n_correct)/float(self.n_wrong + self.n_correct)
 
+    def __repr__(self):
+        
+        repstring = 'Perceptron Classifier, eta = %1.3f'.format(self.eta)
+        
+        return repstring
+    
+    __str__ = __repr__
+
+
 #wrapper functions to set up classifiers for testing
-def makePerceptronClassifier(parameters):
+def MakePerceptronClassifier(parameters):
     """ parameters are just eta """
     
     classifier = PerceptronClassifier(parameters[0])
+    
+    return classifier
 
 
 class KernelPerceptronClassifier():
