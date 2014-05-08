@@ -50,6 +50,12 @@ class PerceptronClassifier:
         
         return float(self.n_correct)/float(self.n_wrong + self.n_correct)
 
+#wrapper functions to set up classifiers for testing
+def makePerceptronClassifier(parameters):
+    """ parameters are just eta """
+    
+    classifier = PerceptronClassifier(parameters[0])
+
 
 class KernelPerceptronClassifier():
 
