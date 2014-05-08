@@ -10,7 +10,7 @@ from ArxivData import Paper
 from ArxivData import PromptUser
 
 #filename where data is stored
-data_filename = "./TestData.pkl"
+data_filename = "./OfficialTestData.pkl"
 
 data_file = open(data_filename,"rb")
 
