@@ -5,7 +5,7 @@ import urllib
 import re #for removing namespaces, featurizing abstracts
 import sys
 from xml.etree import ElementTree as ET
-from sklearn.feature_extraction.text import TfidfVectorizer
+#from sklearn.feature_extraction.text import TfidfVectorizer
 #import time
 from datetime import datetime
 import cPickle
