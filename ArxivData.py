@@ -380,95 +380,6 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
             range of days within given subject set
     """
     
-
-    #list of all subjects to grab papers from, check if optional argument set is in list
-#    subject_list = ['physics:astro-ph','physics:cond-mat','physics:gr-qc',
-#        'physics:hep-ex','physics:hep-lat','physics:hep-ph','physics:hep-th',
-#        'physics:math-ph','physics:nlin','physics:nucl-ex','physics:nucl-th',
-#        'physics','physics:quant-ph','math','cs','q-bio','q-fin','stat']
-#    
-#    #subcategory_list = ['Mathematics - Differential Geometry','Mathematics - Functional Analysis','Mathematics - Numerical Analysis','Mathematics - Probability']
-#
-#    math = ['Algebraic Geometry','Algebraic Topology','Analysis of PDEs','Category Theory',
-#        'Classical Analysis and ODEs','Combinatorics','Commutative Algebra',
-#        'Complex Variables','Differential Geometry','Dynamical Systems','Functional Analysis',
-#        'General Mathematics','General Topology','Geometric Topology','Group Theory',
-#        'History and Overview','Information Theory','K-Theory and Homology','Logic',
-#        'Mathematical Physics','Metric Geometry','Number Theory','Numerical Analysis',
-#        'Operator Algebras','Optimization and Control','Probability','Quantum Algebra',
-#        'Representation Theory','Rings and Algebras','Spectral Theory','Statistics Theory',
-#        'Symplectic Geometry']
-#
-#    physics = ['Accelerator Physics','Atmospheric and Oceanic Physics','Atomic Physics',
-#        'Atomic and Molecular Clusters','Biological Physics','Chemical Physics','Classical Physics',
-#        'Computational Physics','Data Analysis, Statistics and Probability','Fluid Dynamics',
-#        'General Physics','Geophysics','History and Philosophy of Physics',
-#        'Instrumentation and Detectors','Medical Physics','Optics','Physics Education',
-#        'Physics and Society','Plasma Physics','Popular Physics','Space Physics']
-#
-#    astroph = ['Astrophysics of Galaxies','Cosmology and Nongalactic Astrophysics',
-#        'Earth and Planetary Astrophysics','High Energy Astrophysical Phenomena',
-#        'Instrumentation and Methods for Astrophysics','Solar and Stellar Astrophysics']
-#
-#    cond_mat = ['Disordered Systems and Neural Networks','Materials Science',
-#        'Mesoscale and Nanoscale Physics','Other Condensed Matter','Quantum Gases',
-#        'Soft Condensed Matter','Statistical Mechanics','Strongly Correlated Electrons',
-#        'Superconductivity']
-#
-#    nlin_sci = ['Adaptation and Self-Organizing Systems','Cellular Automata and Lattice Gases',
-#        'Chaotic Dynamics','Exactly Solvable and Integrable Systems','Pattern Formation and Solitons']
-#
-#    cs = ['Artificial Intelligence','Computation and Language',
-#        'Computational Complexity','Computational Engineering, Finance, and Science',
-#        'Computational Geometry','Computer Science and Game Theory',
-#        'Computer Vision and Pattern Recognition','Computers and Society',
-#        'Cryptography and Security','Data Structures and Algorithms','Databases',
-#        'Digital Libraries','Discrete Mathematics','Distributed, Parallel, and Cluster Computing',
-#        'Emerging Technologies','Formal Languages and Automata Theory','General Literature',
-#        'Graphics','Hardware Architecture','Human-Computer Interaction','Information Retrieval',
-#        'Information Theory','Learning','Logic in Computer Science','Mathematical Software',
-#        'Multiagent Systems','Multimedia','Networking and Internet Architecture',
-#        'Neural and Evolutionary Computing','Numerical Analysis','Operating Systems',
-#        'Other Computer Science','Performance','Programming Languages','Robotics',
-#        'Social and Information Networks','Software Engineering','Sound','Symbolic Computation',
-#        'Systems and Control']
-#
-#    q_bio = ['Biomolecules','Cell Behavior','Genomics','Molecular Networks',
-#        'Neurons and Cognition','Other Quantitative Biology','Populations and Evolution',
-#        'Quantitative Methods','Subcellular Processes','Tissues and Organs']
-#
-#    q_fin = ['Computational Finance','Economics','General Finance','Mathematical Finance',
-#        'Portfolio Management','Pricing of Securities','Risk Management','Statistical Finance',
-#        'Trading and Market Microstructure']
-#
-#    stat = ['Applications','Computation','Machine Learning','Methodology',
-#        'Other Statistics','Statistics Theory']
-#
-#    subject_dict = {'physics:astro-ph':astroph,'physics:cond-mat':cond_mat,
-#        'physics:gr-qc':[],'physics:hep-ex':[],'physics:hep-lat':[],'physics:hep-ph':[],
-#        'physics:hep-th':[],'physics:math-ph':[],'physics:nlin':nlin_sci,'physics:nucl-ex':[],
-#        'physics:nucl-th':[],'physics':physics,'physics:quant-ph':[],'math':math,'cs':cs,
-#        'q-bio':q_bio,'q-fin':q_fin,'stat':stat}
-#
-#    subject_name = {'physics:astro-ph':'Astrophysics','physics:cond-mat':'Condensed Matter',
-#        'physics:gr-qc':'General Relativity and Quantum Cosmology',
-#        'physics:hep-ex':'High Energy Physics - Experiment',
-#        'physics:hep-lat':'High Energy Physics - Lattice',
-#        'physics:hep-ph':'High Energy Physics - Phenomenology',
-#        'physics:hep-th':'High Energy Physics - Theory','physics:math-ph':'Mathematical Physics',
-#        'physics:nlin':'Nonlinear Sciences','physics:nucl-ex':'Nuclear Experiment',
-#        'physics:nucl-th':'Nuclear Theory','physics':'Physics',
-#        'physics:quant-ph':'Quantum Physics','math':'Mathematics','cs':'Computer Science',
-#        'q-bio':'Quantitative Biology','q-fin':'Quantitative Finance','stat':'Statistics'}
-#
-#    #subcat_dict = {'math' : math, 'physics' : physics, 'astro-ph' : astroph, 'cond-mat' : cond_mat, 
-##                   'cs' : cs, 'q-bio' : q_bio} 
-#
-    #Hard code testing subcategories for now.
-#    testing_subcategories = ["Mathematics - Numerical Analysis","Mathematics - Functional Analysis", "Mathematics - Probability", "Computer Science - Data Structures and Algorithms", "Computer Science - Information Theory", "Mathematics - Analysis of PDEs",'Computer Science - Computational Engineering, Finance, and Science', 'Computer Science - Learning','Mathematics - Combinatorics','Mathematical Physics']
-
-    #testing_subcategories = ["Mathematics - Numerical Analysis", "Computer Science - Learning","Mathematical Phyics", "Physics - Computational Physics"]
-
     if arxs.subject_dict[subject]:   
         subcategory_list = [arxs.subject_name[subject]+' - '+subcategory for subcategory in subcategories]
     else:
@@ -491,27 +402,11 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
     else:
         subject_string = ''
 
-
-    #check for valid subcategories
-#    if subcategories:
-#        for category in subcategories:
-#            if category not in subcategory_list:
-#                print "ERROR: You may only specify valid subcategories:"
-#                print subcategory_list
-#    else:
-#        #just take all of them
-#        subcategories = subcategory_list
-    
-    
-
     #set the URL using OAI-PMH standard, choosing from today's records with chosen subject, loop through subjects TODO
     url = 'http://export.arxiv.org/oai2?verb=ListRecords&from='+day+until_string+subject_string+'&metadataPrefix=oai_dc'
 
     #extract info here.
-    start = time.clock()
     data = urllib.urlopen(url).read()
-    end = time.clock()
-    print "Time to get data: ", end - start
 
     # declare namespaces
     ns = {'ns':'http://www.openarchives.org/OAI/2.0/',
@@ -530,12 +425,9 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
     start = time.clock()
     for entry in root.findall('.//{http://www.openarchives.org/OAI/2.0/}record'): #, namespaces=ns):
         this_paper = Paper(entry, 'OAI')
-#        print "this paper published", this_paper.published
-#        print "today's date", str(datetime.today())
-       
+
         if IsPaperInSubcategories(entry, subcategory_list, ns):
             # check that the paper was published today, not just updated.
-            #TODO: MAKE SUBCATEGORY DICTIONARY FOR CHECKING
             if day and until:
                 if (datetime.strptime(day, '%Y-%m-%d')
                     <= datetime.strptime(this_paper.published, '%Y-%m-%d')
@@ -546,8 +438,6 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
                     <= datetime.strptime(this_paper.published, '%Y-%m-%d')):
                     paper_list.append(this_paper)
               
-    end = time.clock()
-    print "Time to check data: ", end - start
     return paper_list
 
 def IsPaperInSubcategories(entry,subcategories,ns):
@@ -564,6 +454,7 @@ def IsPaperInSubcategories(entry,subcategories,ns):
     """
     
     paper_subcategories = [a.text for a in entry.findall('.//{http://purl.org/dc/elements/1.1/}subject')]
+
     for cat in paper_subcategories:
         if cat in subcategories:
             return True

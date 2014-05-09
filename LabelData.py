@@ -9,13 +9,16 @@ import cPickle
 from ArxivData import Paper
 from ArxivData import PromptUser
 
+
+
+#get users name
+user_name = raw_input("Please enter your name (no spaces, should match the name given to getTestData.py)):")
+
 #filename where data is stored
-data_filename = "./OfficialTestData.pkl"
+data_filename = "./" + user_name + "CustomTestData.pkl"
 
 data_file = open(data_filename,"rb")
 
-#get users name
-user_name = raw_input("Please enter your name (no spaces):")
 
 paper_list = cPickle.load(data_file)
 
@@ -31,7 +34,7 @@ for paper in paper_list:
     label_list.append(label)
     
 
-out_file = open(str(user_name) + "labels.pkl","wb")
+out_file = open(str(user_name) + "customlabels.pkl","wb")
 cPickle.dump(label_list,out_file)
     
     
