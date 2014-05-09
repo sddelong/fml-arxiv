@@ -41,17 +41,17 @@ y_t\V{x}_t \\
 \end{align*}
 We then have that $M = M' + M_3$, so we would like a bound on $M_3$.
 Here we revert to a weaker bound, considering the expectation of
-$M_3$.  
+$M_3$.
 \begin{align*}
-M_3 = & \sum_{i=1}^m 1_{\hat{y_i} = 0 \cap y_i = 1}}1_{k_i = 0} \\
-\E[M_3] = & \sum_{i=1}^m \E[1_{\hat{y_i} = 0 \cap y_i = 1}}]\E[1_{k = 0}] \\
- = & (1 - p)\sum_{i=1}^m \E[1_{\hat{y_i} = 0 \cap y_i = 1}}]\\
+M_3 =& \sum_{i=1}^m 1_{\left\{\hat{y}_i = 0 \cap y_i = 1\right\}}1_{k_i = 0} \\
+\E[M_3] = & \sum_{i=1}^m \E[1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}]\E[1_{k = 0}] \\
+ = & (1 - p)\sum_{i=1}^m \E[1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}]\\
 \end{align*}
 Where the last equality used the fact that $k_i$ is independent of the data.  Now we want to control the sum of expectations in this expression, and to do this we consider the expectation of $M_2$.
 \begin{align*}
-M_2 = & \sum_{i=1}^m 1_{\hat{y_i} = 0 \cap y_i = 1}}1_{k_i = 1} \\
-\E[M_2] = & \sum_{i=1}^m \E[1_{\hat{y_i} = 0 \cap y_i = 1}}]\E[1_{k = 1}] \\
-= & p\sum_{i=1}^m \E[1_{\hat{y_i} = 0 \cap y_i = 1}}]\\
+M_2 = & \sum_{i=1}^m 1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}1_{k_i = 1} \\
+\E[M_2] = & \sum_{i=1}^m \E[1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}]\E[1_{k = 1}] \\
+= & p\sum_{i=1}^m \E[1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}]\\
 \Rightarrow E[M_3] = & \frac{1-p}{p}\E[M_2]
 \end{align*}
 We may then apply the crude bound $\E[M_3] \leq  \frac{1-p}{p}
