@@ -133,6 +133,55 @@ def DotKernel(x,y):
     #multiplication of TextFeatureVectors gives a dot product.
     return x*y
 
+class MarginPerceptronClassifier():
+    "Margin perceptron for online learning """
+    
+    def __init__(self,eta,rho):
+        """ Constructor for margin perceptron, sets learning rate eta and
+        margin rho """
+        
+        self.eta = eta
+        self.rho = rho
+        self.weights = dict()
+
+    def Update(self,x,y_hat,y):
+        """ Update classifier based on incorrect decision """
+        
+        #if weights  == 0
+        
+        w_norm = self.GetWNorm()
+        
+        if (w_norm == 0) or (y*x.Dot(self.weights)/w_norm < self.rho/2.):
+            x.UpdateWeights(self.weights,y,self.eta)
+            
+        return
+
+    def GetWNorm(self):
+        """ Calculate 2-norm of the weight vector """
+        value = 0.
+        for word in self.weights:
+            value += weights[word]**2
+            
+        value = np.sqrt(value)
+
+        return value
+
+    def Predict(self,x):
+        """ predict y by using the sign of a dot product of x with weights """
+
+        return sign(x.Dot(self.weights))        
+
+
+    def __repr__(self):
+        
+        repstring = 'Perceptron Classifier, eta = %1.3f, rho = ' % (self.eta, self.rho)
+        
+        return repstring
+
+
+    __str__ = __repr__
+
+
 class WinnowClassifier():
     
     """ Simple Winnow algorithm for online learning. 
@@ -202,7 +251,19 @@ if __name__ == "__main__":
     
     assert y_hat_2 == -1, "y_hat should be -1 after update, it is not"
 
+
+
+    margin_pclassifier = MarginPerceptronClassifier(0.3,0.02)
     
+    y_hat = margin_pclassifier.Predict(x[0])
+    
+    assert y_hat == 1, "y_hat for margin perceptron should be 1 at initialization, it is not"
+    
+    margin_pclassifier.Update(x[0],y_hat,-1)
+    y_hat_2 = margin_pclassifier.Predict(x[0])
+    
+    assert y_hat_2 == -1, "margin perceptron y_hat should be -1 after update, it is not"
+
     #NOTE: Winnow currently unused
     wclassifier = WinnowClassifier(8,0.3)
     
