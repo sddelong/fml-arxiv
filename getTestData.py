@@ -10,7 +10,6 @@ if __name__ == '__main__':
     # Fetch articles from different subjects.
     go_again = True
     while go_again:
-        time.sleep(20)
         this_paper_list = ad.OAIWrapper()
         print "Number of Articles found: ", len(this_paper_list)
         paper_list.extend(this_paper_list)
@@ -19,6 +18,7 @@ if __name__ == '__main__':
         if in_str in ["yes","Yes","y","Y","1"]:
             go_again = True
             print "Waiting for 20 seconds before retrieving data again from arxiv."
+            time.sleep(20)
         elif in_str in ["no","No","n","N","0"]:
             go_again = False
 
