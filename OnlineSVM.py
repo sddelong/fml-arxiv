@@ -51,7 +51,7 @@ class OnlineSVMClassifier:
     
     def __repr__(self):
         
-        repstring = 'Online SVM Classifier, eta = %1.3f, C = %1.3f'.format(self.eta, self.C)
+        repstring = 'Online SVM Classifier, eta = %1.3f, C = %1.3f' % (self.eta, self.C)
         
         return repstring
     

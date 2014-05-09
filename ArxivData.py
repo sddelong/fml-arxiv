@@ -419,7 +419,9 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
                    'cs' : cs, 'q-bio' : q_bio} 
 
     #Hard code testing subcategories for now.
-    testing_subcategories = ["Mathematics - Numerical Analysis","Mathematics - Functional Analysis", "Mathematics - Probability", "Mathematics - Probability", "Computer Science - Data Structures and Algorithms", "Computer Science - Information Theory", "Mathematics - Analysis of PDEs",'Computer Science - Computational Engineering, Finance, and Science', 'Computer Science - Learning','Mathematics - Combinatorics','Mathematical Physics']
+#    testing_subcategories = ["Mathematics - Numerical Analysis","Mathematics - Functional Analysis", "Mathematics - Probability", "Computer Science - Data Structures and Algorithms", "Computer Science - Information Theory", "Mathematics - Analysis of PDEs",'Computer Science - Computational Engineering, Finance, and Science', 'Computer Science - Learning','Mathematics - Combinatorics','Mathematical Physics']
+
+    testing_subcategories = ["Mathematics - Numerical Analysis", "Computer Science - Learning","Mathematical Phyics", "Physics - Computational Physics"]
                    
 
     # if day not specified, get today's date as a string 'YYYY-MM-DD'; if until specified, create string
@@ -454,11 +456,13 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
 
     #extract info here.
     data = urllib.urlopen(url).read()
-
+    
     # declare namespaces
     ns = {'ns':'http://www.openarchives.org/OAI/2.0/',
         'dc':'http://purl.org/dc/elements/1.1/'}
     root = ET.fromstring(data)
+
+
     
     #initialize paper list
     paper_list = []    
@@ -471,17 +475,18 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
 #        print "today's date", str(datetime.today())
        
         if IsPaperInSubcategories(entry, testing_subcategories, ns):
-            print this_paper.title
             # check that the paper was published today, not just updated.
-#MAKE SUBCATEGORY DICTIONARY FOR CHECKING
+            #TODO: MAKE SUBCATEGORY DICTIONARY FOR CHECKING
             if day and until:
                 if (datetime.strptime(day, '%Y-%m-%d')
                     <= datetime.strptime(this_paper.published, '%Y-%m-%d')
                     <= datetime.strptime(until, '%Y-%m-%d')):
+                    print "appending paper"
                     paper_list.append(this_paper)
             elif day:
                 if (datetime.strptime(day, '%Y-%m-%d')
                     <= datetime.strptime(this_paper.published, '%Y-%m-%d')):
+                    print "appending paper"
                     paper_list.append(this_paper)
               
     return paper_list

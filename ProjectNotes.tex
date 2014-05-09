@@ -27,7 +27,7 @@ and $R$ satisfying the assumptions of theorem 7.8. Let $M' = M_1 + M_2$, then
 M' =& \frac{\V{v}}{\|\V{v}\|}\sum_{I_1 \cup I_2}
 y_t\V{x}_t \\
  \leq & \  \|\sum_{t \in I_1 \cup I_2} y_t \V{x}_t \|\\
-= & \ \|\sum_{t \in I_1 \cup I_2} \V{w}_{t+1} - \V{w}_t) \| \\
+= & \ \|\sum_{t \in I_1 \cup I_2} (\V{w}_{t+1} - \V{w}_t) \| \\
 = & \ \|\V{w}_{T+1} \| \\
 = & \sqrt{\sum_{t \in I_1 \cup I_2} \|  \V{w}_{t+1}\|^2 -
   \|\V{w}_t\|^2 }\\
@@ -43,18 +43,23 @@ We then have that $M = M' + M_3$, so we would like a bound on $M_3$.
 Here we revert to a weaker bound, considering the expectation of
 $M_3$.  
 \begin{align*}
-M_3 = & \sum_{I_2} 1_{k = 0} \\
-\E[M_3] = & \sum_{I_2} \E[1_{k = 0}] = (1 - p) (M_3 + M_2) \\
-M_2 = & \sum_{I_2} 1_{k = 1} \\
-\E[M_2] = & p (M_3 + M_2) \\
+M_3 = & \sum_{i=1}^m 1_{\hat{y_i} = 0 \cap y_i = 1}}1_{k_i = 0} \\
+\E[M_3] = & \sum_{i=1}^m \E[1_{\hat{y_i} = 0 \cap y_i = 1}}]\E[1_{k = 0}] \\
+ = & (1 - p)\sum_{i=1}^m \E[1_{\hat{y_i} = 0 \cap y_i = 1}}]\\
+\end{align*}
+Where the last equality used the fact that $k_i$ is independent of the data.  Now we want to control the sum of expectations in this expression, and to do this we consider the expectation of $M_2$.
+\begin{align*}
+M_2 = & \sum_{i=1}^m 1_{\hat{y_i} = 0 \cap y_i = 1}}1_{k_i = 1} \\
+\E[M_2] = & \sum_{i=1}^m \E[1_{\hat{y_i} = 0 \cap y_i = 1}}]\E[1_{k = 1}] \\
+= & p\sum_{i=1}^m \E[1_{\hat{y_i} = 0 \cap y_i = 1}}]\\
 \Rightarrow E[M_3] = & \frac{1-p}{p}\E[M_2]
 \end{align*}
 We may then apply the crude bound $\E[M_3] \leq  \frac{1-p}{p}
 M'$, since $M_2 \leq M'$. We then bound the expected number of mistakes with
 \begin{align*}
 \E[M]  =  & \E[M'] + \E[M_3] \\
-\leq & \frac{r^2}{\rho^2} + \frac{1-p}{p}\frac{r^2}{\rho^2} \\
-\leq = \frac{1}{p}\frac{r^2}{\rho^2} \\
+\leq &  \frac{r^2}{\rho^2} + \frac{1-p}{p}\frac{r^2}{\rho^2} \\
+\leq  & \frac{1}{p}\frac{r^2}{\rho^2} \\
 \end{align*}
 Note that this is a weak bound.  Not only is it greater than the
 original perceptron bound by a factor of $1/p$, it is also only a

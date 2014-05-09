@@ -52,7 +52,7 @@ class PerceptronClassifier:
 
     def __repr__(self):
         
-        repstring = 'Perceptron Classifier, eta = %1.3f'.format(self.eta)
+        repstring = 'Perceptron Classifier, eta = %1.3f' % self.eta
         
         return repstring
     

@@ -42,29 +42,40 @@ for cln in range(len(classifier_list)):
             label_file = open(label_filename,"rb")
             labels = cPickle.load(label_file)
 
-            n_wrong = 0
-            n_right = 0
+            #initialize counts for accuracy
+            n_pos_right = 0
+            n_precision_wrong = 0
+            n_recall_wrong = 0
             for i in range(len(abstract_vectors)):
             
                 x = abstract_vectors[i]
                 y_hat = classifier.Predict(x)
                 y = labels[i]
-                if y == y_hat:
-                    n_right += 1
+                if y == 1 and y_hat == 1:
+                    n_pos_right += 1
+                elif y == -1 and y_hat == -1:
+                    #do nothing, doesn't count as positive correct
+                    pass
                 elif y_hat == 1:
                     #update on false positive, add one to n_wrong
-                    n_wrong += 1
+                    n_precision_wrong += 1
                     classifier.Update(x,y_hat,y)
                 else:
                     #maybe update on false negative, depends on p.
-                    k = np.random.binomial(p,1)
-                    n_wrong += 1
+                    n_recall_wrong += 1
+                    k = np.random.binomial(1,p)
                     if k == 1:
                         classifier.Update(x,y_hat,y)
                         
 
             print "User: ", name
-            print "Accuracy: ", float(n_right)/float(n_wrong + n_right)
+            print "Total preferred papers: ", n_pos_right + n_recall_wrong
+            if n_pos_right != 0:
+                print "Recall: ", float(n_pos_right)/float(n_pos_right + n_recall_wrong)
+                print "Precision: ", float(n_pos_right)/float(n_pos_right + n_precision_wrong)
+            else:
+                print "Recall: ", 0.0
+                print "Precision: ", 0.0
 
         print "-"*80
             
