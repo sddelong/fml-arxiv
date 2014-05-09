@@ -326,6 +326,37 @@ def GetTodaysPapers(subject=''):
             
     return paper_list
 
+def OAIWrapper():
+    print 'Please enter an arXiv category from the following list:'
+    print subject_list
+
+    while True:
+        subject = raw_input()
+        
+        if subject in subject_list:
+            break
+        else:
+            print 'Invalid subject, please choose from list.'
+
+    day = raw_input('Enter a start date in form YYYY-MM-DD:')
+    until = raw_input('Enter an end date in form YYYY-MM-DD:')
+    
+    subcategories = []
+    if subject_dict[subject]:
+        print ('Enter all preferred subcategories from subject as listed below (capitalization). 
+            Enter "done" when finished.')
+        print subject_dict[subject]
+        
+        while True:
+            subcategory = raw_input()
+            if subcategory in subject_dict[subject]:
+                subcategories.append(subcategory)
+            elif subcategory == 'done':
+                break
+            else:
+                print 'Must choose valid subcategory or enter "done" and continue.'
+
+    GetPapersOAI(day=day, until=until, subject=subject, *subcategories)
 
 def GetPapersOAI(day='', until='', subject='', subcategories=None):
     """ 
@@ -350,7 +381,7 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
         'physics:math-ph','physics:nlin','physics:nucl-ex','physics:nucl-th',
         'physics','physics:quant-ph','math','cs','q-bio','q-fin','stat']
     
-    subcategory_list = ['Mathematics - Differential Geometry','Mathematics - Functional Analysis','Mathematics - Numerical Analysis','Mathematics - Probability']
+    #subcategory_list = ['Mathematics - Differential Geometry','Mathematics - Functional Analysis','Mathematics - Numerical Analysis','Mathematics - Probability']
 
     math = ['Algebraic Geometry','Algebraic Topology','Analysis of PDEs','Category Theory',
         'Classical Analysis and ODEs','Combinatorics','Commutative Algebra',
@@ -413,16 +444,29 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
         'physics:nucl-th':[],'physics':physics,'physics:quant-ph':[],'math':math,'cs':cs,
         'q-bio':q_bio,'q-fin':q_fin,'stat':stat}
 
+    subject_name = {'physics:astro-ph':'Astrophysics','physics:cond-mat':'Condensed Matter',
+        'physics:gr-qc':'General Relativity and Quantum Cosmology',
+        'physics:hep-ex':'High Energy Physics - Experiment',
+        'physics:hep-lat':'High Energy Physics - Lattice',
+        'physics:hep-ph':'High Energy Physics - Phenomenology',
+        'physics:hep-th':'High Energy Physics - Theory','physics:math-ph':'Mathematical Physics',
+        'physics:nlin':'Nonlinear Sciences','physics:nucl-ex':'Nuclear Experiment',
+        'physics:nucl-th':'Nuclear Theory','physics':'Physics',
+        'physics:quant-ph':'Quantum Physics','math':'Mathematics','cs':'Computer Science',
+        'q-bio':'Quantitative Biology','q-fin':'Quantitative Finance','stat':'Statistics'}
 
-
-    subcat_dict = {'math' : math, 'physics' : physics, 'astro-ph' : astroph, 'cond-mat' : cond_mat, 
+    #subcat_dict = {'math' : math, 'physics' : physics, 'astro-ph' : astroph, 'cond-mat' : cond_mat, 
                    'cs' : cs, 'q-bio' : q_bio} 
 
     #Hard code testing subcategories for now.
 #    testing_subcategories = ["Mathematics - Numerical Analysis","Mathematics - Functional Analysis", "Mathematics - Probability", "Computer Science - Data Structures and Algorithms", "Computer Science - Information Theory", "Mathematics - Analysis of PDEs",'Computer Science - Computational Engineering, Finance, and Science', 'Computer Science - Learning','Mathematics - Combinatorics','Mathematical Physics']
 
-    testing_subcategories = ["Mathematics - Numerical Analysis", "Computer Science - Learning","Mathematical Phyics", "Physics - Computational Physics"]
-                   
+    #testing_subcategories = ["Mathematics - Numerical Analysis", "Computer Science - Learning","Mathematical Phyics", "Physics - Computational Physics"]
+
+    if subject_dict[subject]:   
+        subcategory_list = [subject_name[subject]+' - '+subcategory for subcategory in subcategories]
+    else:
+        subcategory_list = [subject_name[subject]]
 
     # if day not specified, get today's date as a string 'YYYY-MM-DD'; if until specified, create string
     # if until not specified, papers range through current day
@@ -442,14 +486,16 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
 
 
     #check for valid subcategories
-    if subcategories:
-        for category in subcategories:
-            if category not in subcategory_list:
-                print "ERROR: You may only specify valid subcategories:"
-                print subcategory_list
-    else:
-        #just take all of them
-        subcategories = subcategory_list
+#    if subcategories:
+#        for category in subcategories:
+#            if category not in subcategory_list:
+#                print "ERROR: You may only specify valid subcategories:"
+#                print subcategory_list
+#    else:
+#        #just take all of them
+#        subcategories = subcategory_list
+    
+    
 
     #set the URL using OAI-PMH standard, choosing from today's records with chosen subject, loop through subjects TODO
     url = 'http://export.arxiv.org/oai2?verb=ListRecords&from='+day+until_string+subject_string+'&metadataPrefix=oai_dc'
@@ -474,7 +520,7 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
 #        print "this paper published", this_paper.published
 #        print "today's date", str(datetime.today())
        
-        if IsPaperInSubcategories(entry, testing_subcategories, ns):
+        if IsPaperInSubcategories(entry, subcategory_list, ns):
             # check that the paper was published today, not just updated.
             #TODO: MAKE SUBCATEGORY DICTIONARY FOR CHECKING
             if day and until:
