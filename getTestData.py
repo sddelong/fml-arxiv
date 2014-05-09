@@ -6,30 +6,22 @@ from random import shuffle
 paper_list = []
 
 if __name__ == '__main__':
+    
+    # Fetch articles from different subjects.
+    go_again = True
+    while go_again:
+        time.sleep(20)
+        this_paper_list = ad.OAIWrapper()
+        print "Number of Articles found: ", len(this_paper_list)
+        paper_list.extend(this_paper_list)
+        in_str = raw_input("Would you like to look at another subject as well? yes/no.")
 
-    # Note: Modified to be more relevant and increase total number of 
-    #       articles for OfficialTestData2.pkl
+        if in_str in ["yes","Yes","y","Y","1"]:
+            go_again = True
+            print "Waiting for 20 seconds before retrieving data again from arxiv."
+        elif in_str in ["no","No","n","N","0"]:
+            go_again = False
 
-    #originally was 5-30 - 04-02
-    math_list = ad.GetPapersOAI('2014-02-20', '2014-03-08', 'math')
-
-    print "math: ", len(math_list)
-
-    #sleep for 21 , have to do this in order to use OAI MP again
-    time.sleep(21)
-
-    cs_list = ad.GetPapersOAI('2014-02-20', '2014-03-08', 'cs')
-
-    print "cs: ", len(cs_list)
-
-    time.sleep(21)
-
-    phys_list = ad.GetPapersOAI('2014-01-20', '2014-03-10', 'physics')
-
-    print 'math:', len(math_list), ', cs: ', len(cs_list), ', physics: ', len(phys_list)
-
-    paper_list = math_list + cs_list  + phys_list#(ad.GetPapersOAI('2014-04-30','2014-05-02','math')
-        #+ad.GetPapersOAI('2014-04-30','2014-05-02','cs'))
 
     #remove duplicates, do this the dumb way for now
     unique_paper_list = []
@@ -43,7 +35,7 @@ if __name__ == '__main__':
             unique_paper_list.append(paper_list[j])
                 
                 
-    print "total articles: " , len(unique_paper_list)
+    print "total articles after removing duplicates: " , len(unique_paper_list)
 
     shuffle(unique_paper_list)
 
