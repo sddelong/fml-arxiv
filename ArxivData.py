@@ -429,7 +429,7 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
         if IsPaperInSubcategories(entry, subcategory_list, ns):
             # check that the paper was published today, not just updated.
             if day and until:
-                if (datetime.strptime(day, '%Y-%m-%d')
+                if (datetime.fromordinal(datetime.strptime(day, '%Y-%m-%d').toordinal()-5)
                     <= datetime.strptime(this_paper.published, '%Y-%m-%d')
                     <= datetime.strptime(until, '%Y-%m-%d')):
                     paper_list.append(this_paper)
