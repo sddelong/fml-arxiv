@@ -523,6 +523,10 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
 
     # create list of papers
 
+    print len(root.findall('.//{http://www.openarchives.org/OAI/2.0/}record')), 'papers harvested.'
+    if len(root.findall('.//{http://www.openarchives.org/OAI/2.0/}record')) == 1000:
+        print 'Choose smaller date range to receive newer papers.'
+
     start = time.clock()
     for entry in root.findall('.//{http://www.openarchives.org/OAI/2.0/}record'): #, namespaces=ns):
         this_paper = Paper(entry, 'OAI')
