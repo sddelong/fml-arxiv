@@ -1,0 +1,3721 @@
+(lp1
+(iArxivData
+Paper
+p2
+(dp3
+S'published'
+p4
+S'2014-04-07'
+p5
+sS'abstract'
+p6
+S'  We consider a dynamic scheduling problem for a multi-class queueing network\nwith a large pool of statistically identical servers. The arrival processes are\nPoisson, and service times and patience times are assumed to be exponentially\ndistributed and class dependent. The optimization criterion is the expected\nlong time average (ergodic) of a general (non-linear) running cost function of\nthe queue lengths. We consider this control problem in the Halfin-Whitt (QED)\nregime.\n  The optimal solution of this control problem can be approximated by that of\nthe corresponding ergodic diffusion control problem in the limit. We introduce\na broad class of ergodic control problems for controlled diffusions, which\nincludes a large class of queueing models in the diffusion approximation, and\nestablish a complete characterization of optimality via the study of the\nassociated HJB equation. We also prove the asymptotic convergence of the values\nfor the multi-class queueing control problem to the value of the associated\nergodic diffusion control problem. The proof relies on an approximation method\nby spatial truncation for the ergodic control of diffusion processes, where the\nMarkov policies follow a fixed priority policy outside a fixed compact set.\n'
+p7
+sS'authors'
+p8
+(lp9
+S'Arapostathis, Ari'
+p10
+aS'Biswas, Anup'
+p11
+aS'Pang, Guodong'
+p12
+asS'id'
+p13
+S'oai:arXiv.org:1404.1957'
+p14
+sS'title'
+p15
+S'Ergodic Control of Multi-Class M/M/N+M Queues in the Halfin-Whitt Regime'
+p16
+sba(iArxivData
+Paper
+p17
+(dp18
+g4
+S'2014-04-10'
+p19
+sg6
+S"  We consider the symmetric FEM-BEM coupling that connects two linear elliptic\nsecond order partial differential equations posed in a bounded domain $\\Omega$\nand its complement, where the exterior problem is restated by an integral\nequation on the coupling boundary $\\Gamma=\\partial\\Omega$. We assume that the\ncorresponding transmission problem admits a shift theorem by more than $1/2$.\nWe analyze the discretization by piecewise polynomials of degree $k$ for the\ndomain variable and piecewise polynomials of degree $k-1$ for the flux variable\non the coupling boundary. Given sufficient regularity we show that (up to\nlogarithmic factors) the optimal convergence $O(h^{k+1/2})$ in the\n$H^{-1/2}(\\Gamma)$-norm is obtained for the flux variable, while classical\narguments by C\\'ea-type quasi-optimality and standard approximation results\nprovide only $O(h^k)$ for the overall error in the natural product norm on\n$H^1(\\Omega)\\times H^{-1/2}(\\Gamma)$.\n"
+p20
+sg8
+(lp21
+S'Melenk, Jens Markus'
+p22
+aS'Praetorius, Dirk'
+p23
+aS'Wohlmuth, Barbara'
+p24
+asg13
+S'oai:arXiv.org:1404.2744'
+p25
+sg15
+S'Simultaneous quasi-optimal convergence in FEM-BEM coupling'
+p26
+sba(iArxivData
+Paper
+p27
+(dp28
+g4
+S'2014-03-31'
+p29
+sg6
+S'  We propose a generalisation of Mori dream spaces to stacks. We show that this\nnotion is preserved under root constructions and taking abelian gerbes. Unlike\nthe case of Mori dream spaces, such a stack is not always given as a quotient\nof the spectrum of its Cox ring by the Picard group. We give a criterion when\nthis is true in terms of Mori dream spaces and root constructions. Finally, we\ncompare this notion with the one of smooth toric Deligne-Mumford stacks.\n'
+p30
+sg8
+(lp31
+S'Hochenegger, Andreas'
+p32
+aS'Martinengo, Elena'
+p33
+asg13
+S'oai:arXiv.org:1403.7984'
+p34
+sg15
+S'MD-stacks'
+p35
+sba(iArxivData
+Paper
+p36
+(dp37
+g4
+S'2014-03-31'
+p38
+sg6
+S'  The idea of using fast sweeping methods for solving stationary systems of\nconservation laws has previously been proposed for efficiently computing\nsolutions with sharp shocks. We further develop these methods to allow for a\nmore challenging class of problems including problems with sonic points, shocks\noriginating in the interior of the domain, rarefaction waves, and\ntwo-dimensional systems. We show that fast sweeping methods can produce\nhigher-order accuracy. Computational results validate the claims of accuracy,\nsharp shock curves, and optimal computational efficiency.\n'
+p39
+sg8
+(lp40
+S'Engquist, Bjorn'
+p41
+aS'Froese, Brittany D.'
+p42
+aS'Tsai, Yen-Hsi Richard'
+p43
+asg13
+S'oai:arXiv.org:1404.0025'
+p44
+sg15
+S'Fast Sweeping Methods for Hyperbolic Systems of Conservation Laws at\n  Steady State II'
+p45
+sba(iArxivData
+Paper
+p46
+(dp47
+g4
+S'2014-03-30'
+p48
+sg6
+S'  It is now five years since the launch of the International Journal of\nBio-Inspired Computation (IJBIC). At the same time, significant new progress\nhas been made in the area of bio-inspired computation. This review paper\nsummarizes the success and achievements of IJBIC in the past five years, and\nalso highlights the challenges and key issues for further research.\n'
+p49
+sg8
+(lp50
+S'Yang, Xin-She'
+p51
+aS'Cui, Zhihua'
+p52
+asg13
+S'oai:arXiv.org:1403.7795'
+p53
+sg15
+S'Bio-Inspired Computation: Success and Challenges of IJBIC'
+p54
+sba(iArxivData
+Paper
+p55
+(dp56
+g4
+S'2014-04-02'
+p57
+sg6
+S'  Flower pollination algorithm is a new nature-inspired algorithm, based on the\ncharacteristics of flowering plants. In this paper, we extend this flower\nalgorithm to solve multi-objective optimization problems in engineering. By\nusing the weighted sum method with random weights, we show that the proposed\nmulti-objective flower algorithm can accurately find the Pareto fronts for a\nset of test functions. We then solve a bi-objective disc brake design problem,\nwhich indeed converges quickly.\n'
+p58
+sg8
+(lp59
+S'Yang, Xin-She'
+p60
+aS'Karamanoglu, M.'
+p61
+aS'He, Xingshi'
+p62
+asg13
+S'oai:arXiv.org:1404.0695'
+p63
+sg15
+S'Multi-objective Flower Algorithm for Optimization'
+p64
+sba(iArxivData
+Paper
+p65
+(dp66
+g4
+S'2014-04-10'
+p67
+sg6
+S'  Learning-based control methods are an attractive approach for addressing\nperformance and efficiency challenges in robotics and automation systems. One\nsuch technique that has found application in these domains is learning-based\nmodel predictive control (LBMPC). An important novelty of LBMPC lies in the\nfact that its robustness and stability properties are independent of the type\nof online learning used. This allows the use of advanced statistical or machine\nlearning methods to provide the adaptation for the controller. This paper is\nconcerned with providing practical comparisons of different optimization\nalgorithms for implementing the LBMPC method, for the special case where the\ndynamic model of the system is linear and the online learning provides linear\nupdates to the dynamic model. For comparison purposes, we have implemented a\nprimal-dual infeasible start interior point method that exploits the sparsity\nstructure of LBMPC. Our open source implementation (called LBmpcIPM) is\navailable through a BSD license and is provided freely to enable the rapid\nimplementation of LBMPC on other platforms. This solver is compared to the\ndense active set solvers LSSOL and qpOASES using a quadrotor helicopter\nplatform. Two scenarios are considered: The first is a simulation comparing\nhovering control for the quadrotor, and the second is on-board control\nexperiments of dynamic quadrotor flight. Though the LBmpcIPM method has better\nasymptotic computational complexity than LSSOL and qpOASES, we find that for\ncertain integrated systems (like our quadrotor testbed) these methods can\noutperform LBmpcIPM. This suggests that actual benchmarks should be used when\nchoosing which algorithm is used to implement LBMPC on practical systems.\n'
+p68
+sg8
+(lp69
+S'Aswani, Anil'
+p70
+aS'Bouffard, Patrick'
+p71
+aS'Zhang, Xiaojing'
+p72
+aS'Tomlin, Claire'
+p73
+asg13
+S'oai:arXiv.org:1404.2843'
+p74
+sg15
+S'Practical Comparison of Optimization Algorithms for Learning-Based MPC\n  with Linear Models'
+p75
+sba(iArxivData
+Paper
+p76
+(dp77
+g4
+S'2014-03-31'
+p78
+sg6
+S'  New architectures and algorithms are needed to reflect the mixture of local\nand global information that is available as multi-agent systems connect over\nthe cloud. We present a novel architecture for multi-agent coordination where\nthe cloud is assumed to be able to gather information from all agents, perform\ncentralized computations, and disseminate the results in an intermittent\nmanner. The cloud model accounts for delays in communications both when sending\ndata to and receiving data from the agents. This architecture is used to solve\na multi-agent optimization problem in which each agent has a local objective\nfunction unknown to the other agents, and in which the agents are collectively\nsubject to global constraints. Leveraging the cloud, a dual problem is\nformulated and solved by finding a saddle point of the associated Lagrangian.\n'
+p79
+sg8
+(lp80
+S'Hale, Matthew'
+p81
+aS'Egerstedt, Magnus'
+p82
+asg13
+S'oai:arXiv.org:1404.0098'
+p83
+sg15
+S'Cloud-Based Optimization: A Quasi-Decentralized Approach to Multi-Agent\n  Coordination'
+p84
+sba(iArxivData
+Paper
+p85
+(dp86
+g4
+S'2014-04-10'
+p87
+sg6
+S'  We consider a large-scale Ad-auction where adverts are assigned over a\npotentially infinite number of searches. Via a decomposition argument, we show\nthat an optimization which maximizes aggregate utility can be solved in\nseparate optimizations conducted by the advertisement platform and advertisers.\nHere, on each search occurrence, the platform solves an assignment problem and,\non a slower time scale, each advertiser submits a bid which matches its demand\nfor click-throughs with supply. By separating the problem in this way,\nknowledge of global parameters, such as the distribution of search terms, is\nnot required. We then consider how this decomposition can be achieved in an\nadversarial setting. Exploiting the information asymmetry between the platform\nand advertiser, we describe a simple mechanism which incentivizes truthful\nbidding and has a unique Nash equilibrium, which implements our decomposition.\nFinally, we consider models where advertisers adapt their bids smoothly over\ntime, and prove convergence to the solution that maximizes aggregate utility.\n'
+p88
+sg8
+(lp89
+S'Kelly, Frank'
+p90
+aS'Key, Peter'
+p91
+aS'Walton, Neil'
+p92
+asg13
+S'oai:arXiv.org:1404.2750'
+p93
+sg15
+S'Incentivized Optimal Advert Assignment via Utility Decomposition'
+p94
+sba(iArxivData
+Paper
+p95
+(dp96
+g4
+S'2014-04-01'
+p97
+sg6
+S"  For a K3 surface S, consider the subring of CH(S^n) generated by divisor and\ndiagonal classes (with Q-coefficients). Voisin conjectures that the restriction\nof the cycle class map to this ring is injective. We prove that Voisin's\nconjecture is equivalent to the finite dimensionality of S in the sense of\nKimura-O'Sullivan. As a consequence, we obtain examples of S whose Hilbert\nschemes satisfy the Beauville-Voisin conjecture.\n"
+p98
+sg8
+(lp99
+S'Yin, Qizheng'
+p100
+asg13
+S'oai:arXiv.org:1404.0171'
+p101
+sg15
+S'Finite dimensionality and cycles on powers of K3 surfaces'
+p102
+sba(iArxivData
+Paper
+p103
+(dp104
+g4
+S'2014-04-09'
+p105
+sg6
+S'  Stochastic collocation methods for random partial differential equations\nsuffer from the curse of dimensionality, whereby increases in the stochastic\ndimension cause an explosion of computational effort. In this article, we\ntherefore consider a multilevel version of the stochastic collocation method,\nwhich --as in multilevel Monte Carlo methods-- uses hierarchies of spatial\napproximations to reduce the computational complexity. We present a general\nconvergence and computational cost analysis of the multilevel method,\ndemonstrating its advantages with regard to standard, single level\napproximation. {Numerical results confirm the effectiveness of the multilevel\nmethod.\n'
+p106
+sg8
+(lp107
+S'Gunzburger, Max'
+p108
+aS'Jantsch, Peter'
+p109
+aS'Teckentrup, Aretha L.'
+p110
+aS'Webster, Clayton G.'
+p111
+asg13
+S'oai:arXiv.org:1404.2647'
+p112
+sg15
+S'Multilevel Acceleration of Stochastic Collocation Methods for PDEs with\n  Random Input Data'
+p113
+sba(iArxivData
+Paper
+p114
+(dp115
+g4
+S'2014-04-02'
+p116
+sg6
+S'  In this paper we present nonparametric estimators for coefficients in\nstochastic differential equation if the data are described by independent,\nidentically distributed random variables. The problem is formulated as a\nnonlinear ill-posed operator equation with a deterministic forward operator\ndescribed by the Fokker-Planck equation. We derive convergence rates of the\nrisk for penalized maximum likelihood estimators with convex penalty terms and\nfor Newton-type methods. The assumptions of our general convergence results are\nverified for estimation of the drift coefficient. The advantages of\nlog-likelihood compared to quadratic data fidelity terms are demonstrated in\nMonte-Carlo simulations.\n'
+p117
+sg8
+(lp118
+S'Dunker, Fabian'
+p119
+aS'Hohage, Thorsten'
+p120
+asg13
+S'oai:arXiv.org:1404.0651'
+p121
+sg15
+S'On parameter identification in stochastic differential equations by\n  penalized maximum likelihood'
+p122
+sba(iArxivData
+Paper
+p123
+(dp124
+g4
+S'2014-04-12'
+p125
+sg6
+S'  This short note provides a minor correction to the sufficient conditions, and\nalso a small extension of the structural results for Partially Observed Markov\nDecision Processes (POMDPs) given in [Lovejoy 1987] and [Rieder 1991].\nSufficient conditions are provided so that the optimal policy can be upper and\nlower bounded by judiciously chosen myopic policies. These myopic policy bounds\nare constructed to maximize the volume of belief states where they coincide\nwith the optimal policy. Numerical examples illustrate these myopic bounds for\nboth continuous and discrete observation sets.\n'
+p126
+sg8
+(lp127
+S'Krishnamurthy, Vikram'
+p128
+aS'Pareek, Udit'
+p129
+asg13
+S'oai:arXiv.org:1404.3328'
+p130
+sg15
+S"Myopic Bounds for Optimal Policy of POMDPs: A minor extension of\n  Lovejoy's structural results"
+p131
+sba(iArxivData
+Paper
+p132
+(dp133
+g4
+S'2014-04-15'
+p134
+sg6
+S'  In this paper, we introduce the concept of sparse bilinear logistic\nregression for decision problems involving explanatory variables that are\ntwo-dimensional matrices. Such problems are common in computer vision,\nbrain-computer interfaces, style/content factorization, and parallel factor\nanalysis. The underlying optimization problem is bi-convex; we study its\nsolution and develop an efficient algorithm based on block coordinate descent.\nWe provide a theoretical guarantee for global convergence and estimate the\nasymptotical convergence rate using the Kurdyka-{\\L}ojasiewicz inequality. A\nrange of experiments with simulated and real data demonstrate that sparse\nbilinear logistic regression outperforms current techniques in several\nimportant applications.\n'
+p135
+sg8
+(lp136
+S'Shi, Jianing V.'
+p137
+aS'Xu, Yangyang'
+p138
+aS'Baraniuk, Richard G.'
+p139
+asg13
+S'oai:arXiv.org:1404.4104'
+p140
+sg15
+S'Sparse Bilinear Logistic Regression'
+p141
+sba(iArxivData
+Paper
+p142
+(dp143
+g4
+S'2014-04-01'
+p144
+sg6
+S'  We describe an efficient parallel implementation of the selected inversion\nalgorithm for distributed memory computer systems, which we call\n\\texttt{PSelInv}. The \\texttt{PSelInv} method computes selected elements of a\ngeneral sparse matrix $A$ that can be decomposed as $A = LU$, where $L$ is\nlower triangular and $U$ is upper triangular. The implementation described in\nthis paper focuses on the case of sparse symmetric matrices. It contains an\ninterface that is compatible with the distributed memory parallel sparse direct\nfactorization \\texttt{SuperLU\\_DIST}. However, the underlying data structure\nand design of \\texttt{PSelInv} allows it to be easily combined with other\nfactorization routines such as \\texttt{PARDISO}. We discuss general\nparallelization strategies such as data and task distribution schemes. In\nparticular, we describe how to exploit the concurrency exposed by the\nelimination tree associated with the $LU$ factorization of $A$. We demonstrate\nthe efficiency and accuracy of \\texttt{PSelInv} by presenting a number of\nnumerical experiments. In particular, we show that \\texttt{PSelInv} can run\nefficient on more than $4,000$ processors for a modestly sized matrix. We also\ndemonstrate how \\texttt{PSelInv} can be used to accelerate large-scale\nelectronic structure calculations.\n'
+p145
+sg8
+(lp146
+S'Jacquelin, Mathias'
+p147
+aS'Lin, Lin'
+p148
+aS'Yang, Chao'
+p149
+asg13
+S'oai:arXiv.org:1404.0447'
+p150
+sg15
+S'PSelInv -- A Distributed Memory Parallel Algorithm for Selected\n  Inversion : the Symmetric Case'
+p151
+sba(iArxivData
+Paper
+p152
+(dp153
+g4
+S'2014-04-03'
+p154
+sg6
+S'  Stochastic sampling methods are arguably the most direct and least intrusive\nmeans of incorporating parametric uncertainty into numerical simulations of\npartial differential equations with random inputs. However, to achieve an\noverall error that is within a desired tolerance, a large number of sample\nsimulations may be required (to control the sampling error), each of which may\nneed to be run at high levels of spatial fidelity (to control the spatial\nerror). Multilevel sampling methods aim to achieve the same accuracy as\ntraditional sampling methods, but at a reduced computational cost, through the\nuse of a hierarchy of spatial discretization models. Multilevel algorithms\ncoordinate the number of samples needed at each discretization level by\nminimizing the computational cost, subject to a given error tolerance. They can\nbe applied to a variety of sampling schemes, exploit nesting when available,\ncan be implemented in parallel and can be used to inform adaptive spatial\nrefinement strategies. We extend the multilevel sampling algorithm to sparse\ngrid stochastic collocation methods, discuss its numerical implementation and\ndemonstrate its efficiency both theoretically and by means of numerical\nexamples.\n'
+p155
+sg8
+(lp156
+S'van Wyk, Hans-Werner'
+p157
+asg13
+S'oai:arXiv.org:1404.0963'
+p158
+sg15
+S'Multilevel Sparse Grid Methods for Elliptic Partial Differential\n  Equations with Random Coefficients'
+p159
+sba(iArxivData
+Paper
+p160
+(dp161
+g4
+S'2014-04-07'
+p162
+sg6
+S'  In a 1988 article, Dziuk introduced a nodal finite element method for the\nLaplace-Beltrami equation on 2-surfaces approximated by a piecewise-linear\ntriangulation, initiating a line of research into surface finite element\nmethods (SFEM). Demlow and Dziuk built on the original results, introducing an\nadaptive method for problems on 2-surfaces, and Demlow later extended the a\npriori theory to 3-surfaces and higher order elements. In a separate line of\nresearch, the Finite Element Exterior Calculus (FEEC) framework has been\ndeveloped over the last decade by Arnold, Falk and Winther and others as a way\nto exploit the observation that mixed variational problems can be posed on a\nHilbert complex, and Galerkin-type mixed methods can be obtained by solving\nfinite dimensional subproblems. In 2011, Holst and Stern merged these two lines\nof research by developing a framework for variational crimes in abstract\nHilbert complexes, allowing for application of the FEEC framework to problems\nthat violate the subcomplex assumption of Arnold, Falk and Winther. When\napplied to Euclidean hypersurfaces, this new framework recovers the original a\npriori results and extends the theory to problems posed on surfaces of\narbitrary dimensions. In yet another seemingly distinct line of research,\nHolst, Mihalik and Szypowski developed a convergence theory for a specific\nclass of adaptive problems in the FEEC framework. Here, we bring these ideas\ntogether, showing convergence and optimality of an adaptive finite element\nmethod for the mixed formulation of the Hodge Laplacian on hypersurfaces.\n'
+p163
+sg8
+(lp164
+S'Holst, Michael'
+p165
+aS'Mihalik, Adam'
+p166
+aS'Szypowski, Ryan'
+p167
+asg13
+S'oai:arXiv.org:1404.1956'
+p168
+sg15
+S'Convergence and Optimality of Adaptive Mixed Methods on Surfaces'
+p169
+sba(iArxivData
+Paper
+p170
+(dp171
+g4
+S'2014-04-14'
+p172
+sg6
+S'  Let $A$ be either a complex or real matrix with all distinct eigenvalues. We\npropose a new method for the computation of both the unstructured and the\nreal-structured (if the matrix is real) distance $w_{\\mathbb K}(A)$ (where\n${\\mathbb K}=\\mathbb C$ if general complex matrices are considered and\n${\\mathbb K} ={\\mathbb R}$ if only real matrices are allowed) of the matrix $A$\nfrom the set of defective matrices, that is the set of those matrices with at\nleast a multiple eigenvalue with algebraic multiplicity larger than its\ngeometric multiplicity. For $0 < \\varepsilon \\le w_{\\mathbb K}(A)$, this\nproblem is closely related to the computation of the most ill-conditioned\n$\\varepsilon$-pseudoeigenvalues of $A$, that is points in the\n$\\varepsilon$-pseudospectrum of $A$ characterized by the highest condition\nnumber. The method we propose couples a system of differential equations on a\nlow rank (possibly structured) manifold which computes the\n$\\varepsilon$-pseudoeigenvalue of $A$ which is closest to coalesce, with a fast\nNewton-like iteration aiming to determine the minimal value $\\varepsilon$ such\nthat such an $\\varepsilon$-pseudoeigenvalue becomes defective. The method has a\nlocal behaviour; this means that in general we find upper bounds for\n$w_{\\mathbb K}(A)$. However, they usually provide good approximations, in those\n(simple) cases where we can check this. The methodology can be extended to a\nstructured matrix where it is required that the distance is computed within\nsome manifold defining the structure of the matrix. In this paper we\nextensively examine the case of real matrices but we also consider pattern\nstructures. As far as we know there do not exist methods in the literature able\nto compute such distance.\n'
+p173
+sg8
+(lp174
+VButtà, Paolo
+p175
+aS'Guglielmi, Nicola'
+p176
+aS'Manetta, Manuela'
+p177
+aS'Noschese, Silvia'
+p178
+asg13
+S'oai:arXiv.org:1404.3592'
+p179
+sg15
+S'Differential equations for real-structured (and unstructured)\n  defectivity measures'
+p180
+sba(iArxivData
+Paper
+p181
+(dp182
+g4
+S'2014-04-05'
+p183
+sg6
+S'  The dual representation of the martingale optimal transport problem in the\nSkorokhod space of multi dimensional c?adl?ag processes is proved. The dual is\na minimization problem with constraints involving stochastic integrals and is\nsimilar to the Kantorovich dual of the standard optimal transport problem. The\nconstraints are required to hold for very path in the Skorokhod space. This\nproblem has the ?nancial interpretation as the robust hedging of path dependent\nEuropean options.\n'
+p184
+sg8
+(lp185
+S'Dolinsky, Y.'
+p186
+aS'Soner, H. M.'
+p187
+asg13
+S'oai:arXiv.org:1404.1516'
+p188
+sg15
+S'Martingale optimal transport in the Skorokhod space'
+p189
+sba(iArxivData
+Paper
+p190
+(dp191
+g4
+S'2014-04-03'
+p192
+sg6
+S"  Let X be an algebraic variety of characteristic zero. Terminal valuations are\ndefined in the sense of the minimal model program, as those valuations given by\nthe exceptional divisors on a minimal model over X. We prove that every\nterminal valuation over X is in the image of the Nash map, and thus it\ncorresponds to a maximal family of arcs through the singular locus of X. In\ndimension two, this result gives a new proof of the theorem of Fern\\'andez de\nBobadilla and Pe Pereira stating that, for surfaces, the Nash map is a\nbijection.\n"
+p193
+sg8
+(lp194
+S'de Fernex, Tommaso'
+p195
+aS'Docampo, Roi'
+p196
+asg13
+S'oai:arXiv.org:1404.0762'
+p197
+sg15
+S'Terminal valuations and the Nash problem'
+p198
+sba(iArxivData
+Paper
+p199
+(dp200
+g4
+S'2014-04-14'
+p201
+sg6
+S'  We introduce a numerical method based on an integral equation formulation for\nsimulating drops in viscous fluids in the plane. It builds upon the method\nintroduced by Kropinski in 2001, but improves on it by adding an interpolatory\nquadrature approach for handling near-singular integrals. Such integrals\ntypically arise when drop boundaries come close to one another, and are\ndifficult to compute accurately using standard quadrature rules. Adapting the\ninterpolatory quadrature method introduced by Helsing and Ojala in 2008 to the\ncurrent application, very general drop configurations can be handled while\nstill maintaining stability and high accuracy. The performance of the new\nmethod is demonstrated by some challenging numerical examples.\n'
+p202
+sg8
+(lp203
+S'Ojala, Rikard'
+p204
+aS'Tornberg, Anna-Karin'
+p205
+asg13
+S'oai:arXiv.org:1404.3552'
+p206
+sg15
+S'An accurate integral equation method for simulating multi-phase Stokes\n  flow'
+p207
+sba(iArxivData
+Paper
+p208
+(dp209
+g4
+S'2014-04-09'
+p210
+sg6
+S'  The computation of spectral expansion coefficients is an important aspect in\nthe implementation of spectral methods. In this paper, we explore two\nstrategies for computing the coefficients of polynomial expansions of analytic\nfunctions, including Chebyshev, Legendre, ultraspherical and Jacobi\ncoefficients, in the complex plane. The first strategy maximizes computational\nefficiency and results in an FFT-based $\\mathcal{O}(N \\log N)$ algorithm for\ncomputing the first $N$ spectral expansion coefficients. This strategy is\nstable with respect to absolute errors and recovers some recent algorithms for\nthe computation of Legendre and ultraspherical spectral coefficients as special\ncases. The second strategy maximizes computational accuracy. We show that an\noptimal contour in the complex plane exists for each Chebyshev expansion\ncoefficient. With these contours Chebyshev coefficients can be computed with\nsmall relative error, rather than the usual small absolute error, at a cost of\nincreasing the computational complexity. We show that high accuracy is\nmaintained even after repeated differentiation of the expansion, such that very\nhigh order derivatives of analytic functions can be computed to near machine\nprecision accuracy from their Chebyshev expansions using standard floating\npoint arithmetic. This result is similar to a result recently obtained by\nBornemann for the computation of high order derivatives by Cauchy integrals. We\nextend this strategy to the accurate computation of Jacobi coefficients.\n'
+p211
+sg8
+(lp212
+S'Wang, Haiyong'
+p213
+aS'Huybrechs, Daan'
+p214
+asg13
+S'oai:arXiv.org:1404.2463'
+p215
+sg15
+S'Fast and accurate computation of Jacobi expansion coefficients of\n  analytic functions'
+p216
+sba(iArxivData
+Paper
+p217
+(dp218
+g4
+S'2014-04-03'
+p219
+sg6
+S'  A Klein surface is a surface with a dianalytic structure. A double of a Klein\nsurface $X$ is a Klein surface $Y$ such that there is a degree two morphism (of\nKlein surfaces) $Y\\rightarrow X$. There are many doubles of a given Klein\nsurface and among them the so-called natural doubles which are: the complex\ndouble, the Schottky double and the orienting double. We prove that if $X$ is a\nnon-orientable Klein surface with non-empty boundary, the three natural\ndoubles, although distinct Klein surfaces, share a common double: "the double\nof doubles" denoted by $DX$. We describe how to use the double of doubles in\nthe study of both moduli spaces and automorphisms of Klein surfaces.\nFurthermore, we show that the morphism from $DX$ to $X$ is not given by the\naction of an isometry group on classical surfaces.\n'
+p220
+sg8
+(lp221
+S'Costa, Antonio F.'
+p222
+aS'Cristofori, Paola'
+p223
+aS'Porto, Ana M.'
+p224
+asg13
+S'oai:arXiv.org:1404.0958'
+p225
+sg15
+S'The double of the doubles of Klein surfaces'
+p226
+sba(iArxivData
+Paper
+p227
+(dp228
+g4
+S'2014-03-31'
+p229
+sg6
+S"  Several results on constrained spline smoothing are obtained. In particular,\nwe establish a general result, showing how one can constructively smooth any\nmonotone or convex piecewise polynomial function (ppf) (or any $q$-monotone\nppf, $q\\geq 3$, with one additional degree of smoothness) to be of minimal\ndefect while keeping it close to the original function in the ${\\mathbb\nL}_p$-(quasi)norm. It is well known that approximating a function by ppf's of\nminimal defect (splines) avoids introduction of artifacts which may be\nunrelated to the original function, thus it is always preferable. On the other\nhand, it is usually easier to construct constrained ppf's with as little\nrequirements on smoothness as possible. Our results allow to obtain\nshape-preserving splines of minimal defect with equidistant or Chebyshev knots.\nThe validity of the corresponding Jackson-type estimates for shape-preserving\nspline approximation is summarized, in particular we show, that the ${\\mathbb\nL}_p$-estimates, $p\\ge1$, can be immediately derived from the ${\\mathbb\nL}_\\infty$-estimates.\n"
+p230
+sg8
+(lp231
+S'Kopotun, K.'
+p232
+aS'Leviatan, D.'
+p233
+aS'Prymak, A.'
+p234
+asg13
+S'oai:arXiv.org:1403.7983'
+p235
+sg15
+S'Constrained Spline Smoothing'
+p236
+sba(iArxivData
+Paper
+p237
+(dp238
+g4
+S'2014-04-16'
+p239
+sg6
+S"  We consider the problem of communicating the state of a dynamical system via\na Shannon Gaussian channel with a given power constraint and no feedback. The\ntransmitter observes a possibly noisy measurement of the state. These\nmeasurements are then used to encode the message to be transmitted over a noisy\nGaussian channel, where a power constraint is imposed on the transmitted\nmessage. The receiver, which acts as both a decoder and estimator, observes the\nnoisy measurement of the channel output and makes an optimal estimate of the\nstate of the dynamical system in the minimum mean square sense. Thus, we get a\nmixed problem of Shannon's source-channel coding problem and a sort of Kalman\nfiltering problem. We show that optimal encoders and decoders are linear\nfilters with a finite memory and we give explicitly the state space realization\nof the optimal filters. We also present the solution of the case where the\ntransmitter has access to noisy measurements of the state where we derive a\nseparation principle for this communication scheme. Finally, we give necessary\nand sufficient conditions for the existence of a stationary solution.\n"
+p240
+sg8
+(lp241
+S'Gattami, Ather'
+p242
+asg13
+S'oai:arXiv.org:1404.4350'
+p243
+sg15
+S'Kalman meets Shannon'
+p244
+sba(iArxivData
+Paper
+p245
+(dp246
+g4
+S'2014-03-30'
+p247
+sg6
+S'  In this paper we investigate a minimization problem related to the principal\neigenvalue of the $s$-wave Schr\\"{o}dinger operator. The operator depends\nnonlinearly on the eigenparameter. We prove the existence of a solution for the\noptimization problem and the uniqueness will be addressed when the domain is a\nball. The optimized solution can be applied to design new electronic and\nphotonic devices based on the quantum dots.\n'
+p248
+sg8
+(lp249
+S'Mohammadi, Abbasali'
+p250
+aS'Bahrami, Fariba'
+p251
+asg13
+S'oai:arXiv.org:1403.7762'
+p252
+sg15
+S'A nonlinear eigenvalue problem arising in a nanostructured quantum dot'
+p253
+sba(iArxivData
+Paper
+p254
+(dp255
+g4
+S'2014-04-02'
+p256
+sg6
+S"  The optimal power flow (OPF) problem is fundamental in power system\noperations and planning. Large-scale renewable penetration calls for real-time\nfeedback control, and hence the need for fast and distributed solutions for\nOPF. This is difficult because OPF is nonconvex and Kirchhoff's laws are\nglobal. In this paper we propose a solution for radial networks. It exploits\nrecent results that suggest solving for a globally optimal solution of OPF over\na radial network through the second-order cone program (SOCP) relaxation. Our\ndistributed algorithm is based on alternating direction method of multiplier\n(ADMM), but unlike standard ADMM algorithms that often require iteratively\nsolving optimization subproblems in each ADMM iteration, our decomposition\nallows us to derive closed form solutions for these subproblems, greatly\nspeeding up each ADMM iteration. We present simulations on a real-world\n2,065-bus distribution network to illustrate the scalability and optimality of\nthe proposed algorithm.\n"
+p257
+sg8
+(lp258
+S'Peng, Qiuyu'
+p259
+aS'Low, Steven H.'
+p260
+asg13
+S'oai:arXiv.org:1404.0700'
+p261
+sg15
+S'Distributed Algorithm for Optimal Power Flow on a Radial Network'
+p262
+sba(iArxivData
+Paper
+p263
+(dp264
+g4
+S'2014-03-30'
+p265
+sg6
+S'  This paper presents an explicit solution to a two player distributed LQR\nproblem in which communication between controllers occurs across a\ncommunication link with varying delay. We extend known dynamic programming\nmethods to accommodate this varying delay, and show that under suitable\nassumptions, the optimal control actions are linear in their information, and\nthat the resulting controller has piecewise linear dynamics dictated by the\ncurrent effective delay regime.\n'
+p266
+sg8
+(lp267
+S'Matni, Nikolai'
+p268
+aS'Lamperski, Andrew'
+p269
+aS'Doyle, John C.'
+p270
+asg13
+S'oai:arXiv.org:1403.7790'
+p271
+sg15
+S'Optimal Two Player LQR State Feedback With Varying Delay'
+p272
+sba(iArxivData
+Paper
+p273
+(dp274
+g4
+S'2014-04-16'
+p275
+sg6
+S'  In this paper we study rare events associated to solutions of elliptic\npartial differential equations with spatially varying random coefficients. The\nrandom coefficients follow the lognormal distribution, which is determined by a\nGaussian process. This model is employed to study the failure problem of\nelastic materials in random media in which the failure is characterized by that\nthe strain field exceeds a high threshold. We propose an efficient importance\nsampling scheme to compute small failure probabilities in the high threshold\nlimit. The change of measure in our scheme is parametrized by two density\nfunctions. The efficiency of the importance sampling scheme is validated by\nnumerical examples.\n'
+p276
+sg8
+(lp277
+S'Liu, Jingchen'
+p278
+aS'Lu, Jianfeng'
+p279
+aS'Zhou, Xiang'
+p280
+asg13
+S'oai:arXiv.org:1404.4225'
+p281
+sg15
+S'Efficient rare event simulation for failure problems in random media'
+p282
+sba(iArxivData
+Paper
+p283
+(dp284
+g4
+S'2014-03-30'
+p285
+sg6
+S'  The pressure vessel design problem is a well-known design benchmark for\nvalidating bio-inspired optimization algorithms. However, its global optimality\nis not clear and there has been no mathematical proof put forward. In this\npaper, a detailed mathematical analysis of this problem is provided that proves\nthat 6059.714335048436 is the global minimum. The Lagrange multiplier method is\nalso used as an alternative proof and this method is extended to find the\nglobal optimum of a cantilever beam design problem.\n'
+p286
+sg8
+(lp287
+S'Yang, Xin-She'
+p288
+aS'Huyck, Christian'
+p289
+aS'Karamanoglu, Mehmet'
+p290
+aS'Khan, Nawaz'
+p291
+asg13
+S'oai:arXiv.org:1403.7793'
+p292
+sg15
+S'True Global Optimality of the Pressure Vessel Design Problem: A\n  Benchmark for Bio-Inspired Optimisation Algorithms'
+p293
+sba(iArxivData
+Paper
+p294
+(dp295
+g4
+S'2014-04-05'
+p296
+sg6
+S"  In this paper a local approximation method on the sphere is presented. As\ninterpolation scheme we consider a partition of unity method, such as the\nmodified spherical Shepard's method, which uses zonal basis functions (ZBFs)\nplus spherical harmonics as local approximants. Moreover, a spherical zone\nalgorithm is efficiently implemented, which works well also when the amount of\ndata is very large, since it is based on an optimized searching procedure.\nNumerical results show good accuracy of the method, also on real geomagnetic\ndata.\n"
+p297
+sg8
+(lp298
+S'De Rossi, Alessandra'
+p299
+asg13
+S'oai:arXiv.org:1404.1475'
+p300
+sg15
+S'Hybrid spherical approximation'
+p301
+sba(iArxivData
+Paper
+p302
+(dp303
+g4
+S'2014-04-08'
+p304
+sg6
+S'  Relative observability has been introduced and studied in the framework of\npartially observed discrete-event systems as a condition stronger than\nobservability, but weaker than normality. However, unlike observability,\nrelative observability is closed under language unions, which makes it\ninteresting for practical applications. In this paper, we investigate this\nnotion in the framework of coordination control. We prove that conditional\nnormality is a stronger condition than conditional (strong) relative\nobservability, hence conditional strong relative observability can be used in\ncoordination control instead of conditional normality, and present a\ndistributive procedure for the computation of a conditionally controllable and\nconditionally observable sublanguage of the specification that contains the\nsupremal conditionally strong relative observable sublanguage.\n'
+p305
+sg8
+(lp306
+S'Komenda, Jan'
+p307
+aVMasopust, Tomá\u0161
+p308
+aS'van Schuppen, Jan H.'
+p309
+asg13
+S'oai:arXiv.org:1404.2195'
+p310
+sg15
+S'A Note on Relative Observability in Coordination Control'
+p311
+sba(iArxivData
+Paper
+p312
+(dp313
+g4
+S'2014-04-02'
+p314
+sg6
+S'  High-order reconstruction schemes for the solution of hyperbolic conservation\nlaws in orthogonal curvilinear coordinates are revised in the finite volume\napproach. The formulation employs a piecewise polynomial approximation to the\nzone-average values to reconstruct left and right interface states from within\na computational zone to arbitrary order of accuracy by inverting a\nVandermonde-like linear system of equations with spatially varying\ncoefficients. The approach is general and can be used on uniform and\nnon-uniform meshes although explicit expressions are derived for polynomials\nfrom second to fifth degree in cylindrical and spherical geometries with\nuniform grid spacing. It is shown that, in regions of large curvature, the\nresulting expressions differ considerably from their Cartesian counterparts and\nthat the lack of such corrections can severely degrade the accuracy of the\nsolution close to the coordinate origin. Limiting techniques and monotonicity\nconstraints are revised for conventional reconstruction schemes, namely, the\npiecewise linear method (PLM), third-order weighted essentially non-oscillatory\n(WENO) scheme and the piecewise parabolic method (PPM).\n  The performance of the improved reconstruction schemes is investigated in a\nnumber of selected numerical benchmarks involving the solution of both scalar\nand systems of nonlinear equations (such as the equations of gas dynamics and\nmagnetohydrodynamics) in cylindrical and spherical geometries in one and two\ndimensions. Results confirm that the proposed approach yields considerably\nsmaller errors, higher convergence rates and it avoid spurious numerical\neffects at a symmetry axis.\n'
+p315
+sg8
+(lp316
+S'Mignone, A.'
+p317
+asg13
+S'oai:arXiv.org:1404.0537'
+p318
+sg15
+S'High-order conservative reconstruction schemes for finite volume methods\n  in cylindrical and spherical coordinates'
+p319
+sba(iArxivData
+Paper
+p320
+(dp321
+g4
+S'2014-04-09'
+p322
+sg6
+S'  This paper continues to develop a fault tolerant extension of the sparse grid\ncombination technique recently proposed in [B. Harding and M. Hegland, ANZIAM\nJ., 54 (CTAC2012), pp. C394-C411]. The approach is novel for two reasons, first\nit provides several levels in which one can exploit parallelism leading towards\nmassively parallel implementations, and second, it provides algorithm-based\nfault tolerance so that solutions can still be recovered if failures occur\nduring computation. We present a generalisation of the combination technique\nfrom which the fault tolerant algorithm is a consequence. Using a model for the\ntime between faults on each node of a high performance computer we provide\nbounds on the expected error for interpolation with this algorithm. Numerical\nexperiments on the scalar advection PDE demonstrate that the algorithm is\nresilient to faults on a real application. It is observed that the trade-off of\nrecovery time to decreased accuracy of the solution is suitably small. A\ncomparison with traditional checkpoint-restart methods applied to the\ncombination technique show that our approach is highly scalable with respect to\nthe number of faults.\n'
+p323
+sg8
+(lp324
+S'Harding, Brendan'
+p325
+aS'Hegland, Markus'
+p326
+aS'Larson, Jay'
+p327
+aS'Southern, James'
+p328
+asg13
+S'oai:arXiv.org:1404.2670'
+p329
+sg15
+S'Scalable and Fault Tolerant Computation with the Sparse Grid Combination\n  Technique'
+p330
+sba(iArxivData
+Paper
+p331
+(dp332
+g4
+S'2014-03-31'
+p333
+sg6
+S"  Let ${\\mathcal S}(M)$ be the ring of (continuous) semialgebraic functions on\na semialgebraic set $M\\subset{\\mathbb R}^m$ and ${\\mathcal S}^*(M)$ its subring\nof bounded semialgebraic functions. In this work we compute the size of the\nfibers of the spectral maps ${\\rm Spec}({\\tt j})_1:{\\rm Spec}({\\mathcal\nS}(N))\\to{\\rm Spec}({\\mathcal S}(M))$ and ${\\rm Spec}({\\tt j})_2:{\\rm\nSpec}({\\mathcal S}^*(N))\\to{\\rm Spec}({\\mathcal S}^*(M))$ induced by the\ninclusion ${\\tt j}:N\\hookrightarrow M$ of a semialgebraic subset $N$ of $M$.\nThe ring ${\\mathcal S}(M)$ can be understood as the localization of ${\\mathcal\nS}^*(M)$ at the multiplicative subset ${\\mathcal W}_M$ of those bounded\nsemialgebraic functions on $M$ with empty zero set. This provides a natural\ninclusion ${\\mathfrak i}_M:{\\rm Spec}({\\mathcal S}(M))\\hookrightarrow{\\rm\nSpec}({\\mathcal S}^*(M))$ that reduces both problems above to an analysis of\nthe fibers of the spectral map ${\\rm Spec}({\\tt j})_2:{\\rm Spec}({\\mathcal\nS}^*(N))\\to{\\rm Spec}({\\mathcal S}^*(M))$. If we denote $Z:={\\rm cl}_{{\\rm\nSpec}({\\mathcal S}^*(M))}(M\\setminus N)$, it holds that the restriction map\n${\\rm Spec}({\\tt j})_2|:{\\rm Spec}({\\mathcal S}^*(N))\\setminus{\\rm Spec}({\\tt\nj})_2^{-1}(Z)\\to{\\rm Spec}({\\mathcal S}^*(M))\\setminus Z$ is a homeomorphism.\nOur problem concentrates on the computation of the size of the fibers of ${\\rm\nSpec}({\\tt j})_2$ at the points of $Z$. The size of the fibers of prime ideals\n`close' to the complement $Y:=M\\setminus N$ provides valuable information\nconcerning how $N$ is immersed inside $M$. If $N$ is dense in $M$, the map\n${\\rm Spec}({\\tt j})_2$ is surjective and the generic fiber of a prime ideal\n${\\mathfrak p}\\in Z$ contains infinitely many elements. However, finite fibers\nmay also appear and we provide a criterium to decide when the fiber ${\\rm\nSpec}({\\tt j})_2^{-1}({\\mathfrak p})$ is a finite set for ${\\mathfrak p}\\in Z$.\n"
+p334
+sg8
+(lp335
+S'Fernando, Jose F.'
+p336
+asg13
+S'oai:arXiv.org:1403.8059'
+p337
+sg15
+S'On the size of the fibers of spectral maps induced by semialgebraic\n  embeddings'
+p338
+sba(iArxivData
+Paper
+p339
+(dp340
+g4
+S'2014-04-11'
+p341
+sg6
+S'  A residual based {\\em a posteriori} error estimator is derived for a\nquadratic finite element method (fem) for the elliptic obstacle problem. The\nerror estimator involves various residuals consisting the data of the problem,\ndiscrete solution and a Lagrange multiplier related to the obstacle constraint.\n{\\em A priori} error estimates for the Lagrange multiplier have been derived\nand further under an assumption that the contact set does not degenerate to a\ncurve in any part of the domain, optimal order {\\em a priori} error estimates\nhave been derived whenever the data and the solution are sufficiently regular,\nprecisely, under the sufficient conditions required for quadratic fem in the\ncase of linear elliptic problem. The numerical experiments of adaptive fem for\na model problem satisfying the above condition on contact set show optimal\norder convergence. This demonstrates that the quadratic fem for obstacle\nproblem can exhibit optimal performance.\n'
+p342
+sg8
+(lp343
+S'Gudi, Thirupathi'
+p344
+aS'Porwal, Kamana'
+p345
+asg13
+S'oai:arXiv.org:1404.3147'
+p346
+sg15
+S'A Posteriori and A Priori Error Estimates of Quadratic Finite Element\n  Method for Elliptic Obstacle Problem'
+p347
+sba(iArxivData
+Paper
+p348
+(dp349
+g4
+S'2014-03-31'
+p350
+sg6
+S'  We are interested in the following problem: given an open, bounded domain\n$\\Omega \\subset \\mathbb{R}^2$, what is the largest constant $\\alpha =\n\\alpha(\\Omega) > 0$ such that there exist an infinite sequence of disks $B_1,\nB_2, \\dots, B_N, \\dots \\subset \\mathbb{R}^2$ and a sequence $(n_i)$ with $n_i\n\\in \\left\\{1,2\\right\\}$ such that $$ \\sup_{N \\in \\mathbb{N}}{N^{\\alpha}\\left\\|\n\\chi_{\\Omega} -\n\\sum_{i=1}^{N}{(-1)^{n_i}\\chi_{B_i}}\\right\\|_{L^1(\\mathbb{R}^2)}} < \\infty,$$\nwhere $\\chi$ denotes the characteristic function? We prove that certain\n(somewhat peculiar) domains $\\Omega \\subset \\mathbb{R}^2$ satisfy the property\nwith $\\alpha = 0.53$. For these domains there exists a sequence of points\n$(x_i)_{i=1}^{\\infty}$ in $\\Omega$ with weights $(a_i)_{i=1}^{\\infty}$ such\nthat for all harmonic functions $u:\\mathbb{R}^2 \\rightarrow \\mathbb{R}$ $$\n\\left|\\int_{\\Omega}{u(x)dx} - \\sum_{i=1}^{N}{a_i u(x_i)}\\right| \\leq\nC_{\\Omega}\\frac{\\|u\\|_{L^{\\infty}(\\Omega)}}{N^{0.53}},$$ where $C_{\\Omega}$\ndepends only on $\\Omega$. This gives a Quasi-Monte-Carlo method for harmonic\nfunctions which improves on the probabilistic Monte-Carlo bound\n$\\|u\\|_{L^{2}(\\Omega)}/N^{0.5}$ \\textit{without} introducing a dependence on\nthe total variation. We do not know which decay rates are optimal.\n'
+p351
+sg8
+(lp352
+S'Steinerberger, Stefan'
+p353
+asg13
+S'oai:arXiv.org:1403.8002'
+p354
+sg15
+S'A Remark on Disk Packings and Numerical Integration of Harmonic\n  Functions'
+p355
+sba(iArxivData
+Paper
+p356
+(dp357
+g4
+S'2014-04-11'
+p358
+sg6
+S'  One typical application of unmanned aerial vehicles is the intelligence,\nsurveillance, and reconnaissance mission, where the objective is to improve\nsituation awareness through information acquisition. For examples, an efficient\nway to gather information regarding a target is to deploy UAV in such a way\nthat it orbits around this target at a desired distance. Such a UAV motion is\ncalled circumnavigation. The objective of the paper is to design a UAV control\nalgorithm such that this circumnavigation mission is achieved under a\nGPS-denied environment using range-only measurement. The control algorithm is\nconstructed in two steps. The first step is to design a UAV control algorithm\nby assuming the availability of both range and range rate measurements, where\nthe associated control input is always bounded. The second step is to further\neliminate the use of range rate measurement by using an estimated range rate,\nobtained via a sliding-mode estimator using range measurement, to replace\nactual range rate measurement. Such a controller design technique is applicable\nin the control design of other UAV navigation and control missions under a\nGPS-denied environment.\n'
+p359
+sg8
+(lp360
+S'Cao, Yongcan'
+p361
+asg13
+S'oai:arXiv.org:1404.3221'
+p362
+sg15
+S'UAV Circumnavigating an Unknown Target Under a GPS-denied Environment\n  with Range-only Measurements'
+p363
+sba(iArxivData
+Paper
+p364
+(dp365
+g4
+S'2014-04-13'
+p366
+sg6
+S'  In this paper, we give estimates for both upper and lower bounds of\neigenvalues of a simple matrix. The estimates are shaper than the known\nresults.\n'
+p367
+sg8
+(lp368
+S'Chen, J.'
+p369
+asg13
+S'oai:arXiv.org:1404.3437'
+p370
+sg15
+S'On bounds of matrix eigenvalues'
+p371
+sba(iArxivData
+Paper
+p372
+(dp373
+g4
+S'2014-03-31'
+p374
+sg6
+S'  Symbolic models have recently spurred the interest of the research community\nbecause they offer a correct-by-design approach to the control of embedded and\ncyber-physical systems. In this paper we address construction of symbolic\nmodels for networks of discrete-time nonlinear control systems. The main result\nof the paper shows that under some small gain theorem-type conditions, a\nnetwork of symbolic models can be constructed which approximates a network of\nincrementally stable control systems in the sense of approximate bisimulation\nwith any desired accuracy. Compositional design of quantization parameters of\nthe symbolic models is also derived and based on the topological properties of\nthe network.\n'
+p375
+sg8
+(lp376
+S'Pola, Giordano'
+p377
+aS'Pepe, Pierdomenico'
+p378
+aS'Di Benedetto, Maria Domenica'
+p379
+asg13
+S'oai:arXiv.org:1404.0048'
+p380
+sg15
+S'Compositional Symbolic Models for Networks of Incrementally Stable\n  Control Systems'
+p381
+sba(iArxivData
+Paper
+p382
+(dp383
+g4
+S'2014-04-14'
+p384
+sg6
+S"  We give sufficient conditions such that the exponential stability of the\nlinearization of a non-linear system implies that the non-linear system is\n(locally) exponentially stable. One of these conditions is that the non-linear\nsystem is Fr\\'{e}chet differential at the equilibrium, if it is only Gateaux\ndifferentiable, then we show by means of an example that the result does not\nhold.\n"
+p385
+sg8
+(lp386
+S'Zwart, Hans'
+p387
+asg13
+S'oai:arXiv.org:1404.3475'
+p388
+sg15
+S'Linearization and exponential stability'
+p389
+sba(iArxivData
+Paper
+p390
+(dp391
+g4
+S'2014-04-10'
+p392
+sg6
+S'  We consider the problem of minimizing costs in the generation unit commitment\nproblem, a cornerstone in electric power system operations, while enforcing an\nN-k-e reliability criterion. This reliability criterion is a generalization of\nthe well-known $N$-$k$ criterion, and dictates that at least $(1-e_ j)$\nfraction of the total system demand must be met following the failures of $k$\nor fewer system components. We refer to this problem as the\nContingency-Constrained Unit Commitment problem, or CCUC. We present a\nmixed-integer programming formulation of the CCUC that accounts for both\ntransmission and generation element failures. We propose novel cutting plane\nalgorithms that avoid the need to explicitly consider an exponential number of\ncontingencies. Computational studies are performed on several IEEE test systems\nand a simplified model of the Western US interconnection network, which\ndemonstrate the effectiveness of our proposed methods relative to current\nstate-of-the-art.\n'
+p393
+sg8
+(lp394
+S'Chen, Richard Li-Yang'
+p395
+aS'Fan, Neng'
+p396
+aS'Pinar, Ali'
+p397
+aS'Watson, Jean-Paul'
+p398
+asg13
+S'oai:arXiv.org:1404.2964'
+p399
+sg15
+S'Contingency-Constrained Unit Commitment with Post-Contingency Corrective\n  Recourse'
+p400
+sba(iArxivData
+Paper
+p401
+(dp402
+g4
+S'2014-04-17'
+p403
+sg6
+S'  In this paper, the fractional differential matrices based on the Jacobi-Gauss\npoints are derived with respect to the Caputo and Riemann-Liouville fractional\nderivative operators. The spectral radii of the fractional differential\nmatrices are investigated numerically. The spectral collocation schemes are\nillustrated to solve the fractional ordinary differential equations and\nfractional partial differential equations. Numerical examples are also\npresented to illustrate the effectiveness of the derived methods, which show\nbetter performances over some existing methods.\n'
+p404
+sg8
+(lp405
+S'Zeng, Fanhai'
+p406
+aS'Li, Changpin'
+p407
+asg13
+S'oai:arXiv.org:1404.4429'
+p408
+sg15
+S'Fractional differential matrices with applications'
+p409
+sba(iArxivData
+Paper
+p410
+(dp411
+g4
+S'2014-04-16'
+p412
+sg6
+S"  In this paper hierarchical analysis-suitable T-splines (HASTS) are developed.\nThe resulting spaces are a superset of both analysis-suitable T-splines and\nhierarchical B-splines. The additional flexibility provided by the hierarchy of\nT-spline spaces results in simple, highly localized refinement algorithms which\ncan be utilized in a design or analysis context. A detailed theoretical\nformulation is presented including a proof of local linear independence for\nanalysis-suitable T-splines, a requisite theoretical ingredient for HASTS.\nB\\'{e}zier extraction is extended to HASTS simplifying the implementation of\nHASTS in existing finite element codes. The behavior of a simple HASTS\nrefinement algorithm is compared to the local refinement algorithm for\nanalysis-suitable T-splines demonstrating the superior efficiency and locality\nof the HASTS algorithm. Finally, HASTS are utilized as a basis for adaptive\nisogeometric analysis.\n"
+p413
+sg8
+(lp414
+S'Evans, Emily J.'
+p415
+aS'Scott, Michael A.'
+p416
+aS'Li, Xin'
+p417
+aS'Thomas, Derek C.'
+p418
+asg13
+S'oai:arXiv.org:1404.4346'
+p419
+sg15
+S"Hierarchical analysis-suitable T-splines: Formulation, B\\'{e}zier\n  extraction, and application as an adaptive basis for isogeometric analysis"
+p420
+sba(iArxivData
+Paper
+p421
+(dp422
+g4
+S'2014-04-09'
+p423
+sg6
+S'  We propose the new reconstruction formula for the continuous wavelet\ntransform. It is applicable even if the admissibility condition is violated.\nThe case of the transform with the standard Morlet wavelet, which is an\nimportant example of such analyzing functions, is discussed in details from\nboth points of view: analytical one and perspectives of a numerical\nrealization.\n'
+p424
+sg8
+(lp425
+S'Lebedeva, Elena A.'
+p426
+aS'Postnikov, Eugene B.'
+p427
+asg13
+S'oai:arXiv.org:1404.2419'
+p428
+sg15
+S'Wavelet reconstruction formula that does not require the admissibility\n  condition'
+p429
+sba(iArxivData
+Paper
+p430
+(dp431
+g4
+S'2014-04-11'
+p432
+sg6
+S'  This article concerned with the issue of solving a nonlinear equation with\nthe help of iterative method where no any derivative evaluation is required per\niteration. Therefore, this work contributes to a new class of optimal\neighth-order Steffensen-type methods. Theoretical proof has been given to\nreveal the eighth-order convergence. Numerical comparisons have been carried\nout to show the effectiveness of contributed scheme.\n'
+p433
+sg8
+(lp434
+S'Singh, Anuradha'
+p435
+aS'Jaiswal, J. P.'
+p436
+asg13
+S'oai:arXiv.org:1404.3053'
+p437
+sg15
+S'A class of optimal eighth-order Steffensen-type iterative methods for\n  solving nonlinear equations and their basins of attraction'
+p438
+sba(iArxivData
+Paper
+p439
+(dp440
+g4
+S'2014-04-02'
+p441
+sg6
+S'  We derive optimal order a posteriori error estimates for fully discrete\napproximations of the initial-boundary value problem for the heat equation. For\nthe discretization in time we apply the fractional-step $\\vartheta$-scheme and\nfor the discretization in space the finite element method with finite element\nspaces that are allowed to change with time. The first optimal order a\nposteriori error estimates in $L^\\infty(0, T ; L^2({\\varOmega}))$ are derived\nby applying the reconstruction technique.\n'
+p442
+sg8
+(lp443
+S'Fotini, Karakatsani'
+p444
+asg13
+S'oai:arXiv.org:1404.0497'
+p445
+sg15
+S'A posteriori error estimates for fully discrete fractional-step\n  $\\vartheta$-approximations for the heat equation'
+p446
+sba(iArxivData
+Paper
+p447
+(dp448
+g4
+S'2014-04-17'
+p449
+sg6
+S'  Schwarz methods are attractive parallel solvers for large scale linear\nsystems obtained when partial differential equations are discretized. For\nhybridizable discontinuous Galerkin (HDG) methods, this is a relatively new\nfield of research, because HDG methods impose continuity across elements using\na Robin condition, while classical Schwarz solvers use Dirichlet transmission\nconditions. Robin conditions are used in optimized Schwarz methods to get\nfaster convergence compared to classical Schwarz methods, and this even without\noverlap, when the Robin parameter is well chosen. We present in this paper a\nrigorous convergence analysis of Schwarz methods for the concrete case of\nhybridizable interior penalty (IPH) method. We show that the penalization\nparameter needed for convergence of IPH leads to slow convergence of the\nclassical additive Schwarz method, and propose a modified solver which leads to\nmuch faster convergence. Our analysis is entirely at the discrete level, and\nthus holds for arbitrary interfaces between two subdomains. We then generalize\nthe method to the case of many subdomains, including cross points, and obtain a\nnew class of preconditioners for Krylov subspace methods which exhibit better\nconvergence properties than the classical additive Schwarz preconditioner. We\nillustrate our results with numerical experiments.\n'
+p450
+sg8
+(lp451
+S'Gander, Martin J.'
+p452
+aS'Hajian, Soheil'
+p453
+asg13
+S'oai:arXiv.org:1404.4518'
+p454
+sg15
+S'Analysis of Schwarz Algorithms for a Discontinuous Galerkin Method'
+p455
+sba(iArxivData
+Paper
+p456
+(dp457
+g4
+S'2014-04-07'
+p458
+sg6
+S'  The purpose of this paper is to close the remaining gaps in the understanding\nof the role that the constrained generalized continuous algebraic Riccati\nequation plays in singular linear-quadratic (LQ) optimal control. Indeed, in\nspite of the vast literature on LQ problems, it is only in a recent paper that\na sufficient condition for the existence of a non-impulsive optimal control has\nfor the first time connected this equation with the singular LQ optimal control\nproblem. In this paper, we establish four equivalent conditions providing a\ncomplete picture that connects the singular LQ problem with the generalized\ncontinuous algebraic Riccati equation and with the geometric properties of the\nunderlying system.\n'
+p459
+sg8
+(lp460
+S'Ferrante, Augusto'
+p461
+aS'Ntogramatzidis, Lorenzo'
+p462
+asg13
+S'oai:arXiv.org:1404.1667'
+p463
+sg15
+S'Continuous-Time Singular Linear-Quadratic Control: Necessary and\n  Sufficient Conditions for the Existence of Regular Solutions'
+p464
+sba(iArxivData
+Paper
+p465
+(dp466
+g4
+S'2014-03-30'
+p467
+sg6
+S'  For $i = 0, 1, \\ldots, n$, let $C_i$ be independent and identically\ndistributed random variables with distribution $F$ with support $(0,\\infty)$.\nThe number of zeros of the random tropical polynomials $\\mathcal{T}f_n(x) =\n\\min_{i=1,\\ldots,n}(C_i + ix)$ is also the number of faces of the lower convex\nhull of the $n+1$ random points $(i,C_i)$ in $\\mathbb{R}^2$. We show that this\nnumber, $Z_n$, satisfies a central limit theorem when $F$ has polynomial decay\nnear $0$. Specifically, if $F$ near $0$ behaves like a $gamma(a,1)$\ndistribution for some $a > 0$, then $Z_n$ has the same asymptotics as the\nnumber of renewals on the interval $[0,\\log(n)/a]$ of a renewal process with\ninter-arrival distribution $-\\log(Beta(a,2))$. Our proof draws on connections\nbetween random partitions, renewal theory and random polytopes. In particular,\nwe obtain generalizations and simple proofs of the central limit theorem for\nthe number of vertices of the convex hull of $n$ uniform random points in a\nsquare. Our work leads to many open problems in stochastic tropical geometry,\nthe study of functionals and intersections of random tropical varieties.\n'
+p468
+sg8
+(lp469
+S'Baccelli, Francois'
+p470
+aS'Tran, Ngoc Mai'
+p471
+asg13
+S'oai:arXiv.org:1403.7829'
+p472
+sg15
+S'Zeros of random tropical polynomials, random polytopes and\n  stick-breaking'
+p473
+sba(iArxivData
+Paper
+p474
+(dp475
+g4
+S'2014-04-14'
+p476
+sg6
+S'  The many variants of the restricted isometry property (RIP) have proven to be\ncrucial theoretical tools in the fields of compressed sensing and matrix\ncompletion. The study of extending compressed sensing to accommodate phaseless\nmeasurements naturally motivates a strong notion of restricted isometry\nproperty (SRIP), which we develop in this paper. We show that if $A \\in\n\\mathbb{R}^{m\\times n}$ satisfies SRIP and phaseless measurements $|Ax_0| = b$\nare observed about a $k$-sparse signal $x_0 \\in \\mathbb{R}^n$, then minimizing\nthe $\\ell_1$ norm subject to $ |Ax| = b $ recovers $x_0$ up to multiplication\nby a global sign. Moreover, we establish that the SRIP holds for the random\nGaussian matrices typically used for standard compressed sensing, implying that\nphaseless compressed sensing is possible from $O(k \\log (n/k))$ measurements\nwith these matrices via $\\ell_1$ minimization over $|Ax| = b$. Our analysis\nalso yields an erasure robust version of the Johnson-Lindenstrauss Lemma.\n'
+p477
+sg8
+(lp478
+S'Voroninski, Vladislav'
+p479
+aS'Xu, Zhiqiang'
+p480
+asg13
+S'oai:arXiv.org:1404.3811'
+p481
+sg15
+S'A strong restricted isometry property, with an application to phaseless\n  compressed sensing'
+p482
+sba(iArxivData
+Paper
+p483
+(dp484
+g4
+S'2014-04-09'
+p485
+sg6
+S'  A vector-valued signal in N dimensions is a signal whose value at any time\ninstant is an N-dimensional vector, that is, an element of $\\mathbb{R}^N$. The\nsum of an arbitrary number of such signals of the same frequency is shown to\ntrace an ellipse in N-dimensional space, that is, to be confined to a plane.\nThe parameters of the ellipse (major and minor axes, represented by\nN-dimensional vectors; and phase) are obtained algebraically in terms of the\ndirections of oscillation of the constituent signals, and their phases. It is\nshown that the major axis of the ellipse can always be determined\nalgebraically. That is, a vector, whose value can be computed algebraically\n(without decisions or comparisons of magnitude) from parameters of the\nconstituent signals, always represents the major axis of the ellipse. The\nramifications of this result for the processing and Fourier analysis of signals\nwith vector values or samples are discussed, with reference to the definition\nof Fourier transforms, particularly discrete Fourier transforms, such as have\nbeen defined in several hypercomplex algebras, including Clifford algebras. The\ntreatment in the paper, however, is entirely based on signals with values in\n$\\mathbb{R}^N$. Although the paper is written in terms of vector signals (which\nare taken to include images and volumetric images), the analysis clearly also\napplies to a superposition of simple harmonic motions in N dimensions.\n'
+p486
+sg8
+(lp487
+S'Sangwine, Stephen J.'
+p488
+asg13
+S'oai:arXiv.org:1404.2492'
+p489
+sg15
+S'On harmonic analysis of vector-valued signals'
+p490
+sba(iArxivData
+Paper
+p491
+(dp492
+g4
+S'2014-04-07'
+p493
+sg6
+S'  In contrast to taking the dual approach for finding a global minimum solution\nof a double well potential function, in Part II of the paper, we characterize a\nlocal minimizer, local maximizer, and global minimizer directly from the primal\nside. It is proven that, for a ``nonsingular" double well function, there\nexists at most one local, but non-global, minimizer and at most one local\nmaximizer. Moreover, when it exists, the local maximizer is ``surrounded" by\nlocal minimizers in the sense that the norm of the local maximizer is strictly\nless than that of any local minimizer. We also establish some necessary and\nsufficient optimality conditions for the global minimizer, local non-global\nminimizer and local maximizer by studying a convex secular function over\nspecific intervals. These conditions lead to three algorithms for identifying\ndifferent types of critical points of a given double well function.\n'
+p494
+sg8
+(lp495
+S'Xia, Yong'
+p496
+aS'Sheu, Ruey-Lin'
+p497
+aS'Fang, Shu-Cherng'
+p498
+aS'Xing, Wenxun'
+p499
+asg13
+S'oai:arXiv.org:1404.1963'
+p500
+sg15
+S'Double Well Potential Function and Its Optimization in the n-dimensional\n  Real Space - Part II'
+p501
+sba(iArxivData
+Paper
+p502
+(dp503
+g4
+S'2014-04-10'
+p504
+sg6
+S'  We develop a new paradigm for finding bifurcations of solutions of nonlinear\nproblems, which is based on the detection of extreme values of new type of\nvariational functional associated with the considering problem. The variational\nfunctional is obtained constructively by the extended functional method which\ncan be applied to a wide class of parametric problems including nonlinear\npartial differential equations and problems in non-variational form. The main\nfeature of the approach is that it allows to consider the problem of finding\nbifurcations from another geometric point of view, namely using the extended\nvariational functional. Sufficient and necessary conditions for the existence\nof a maximal turning point by the approach are proved. Based on these, an\nalgorithm of the quasi-direction of steepest ascent is introduced. Simulation\nexperiments are used to illustrate the behavior of the method and to discuss\nits advantages and disadvantages in comparison with the alternatives.\n'
+p505
+sg8
+(lp506
+S'Ilyasov, Yavdat'
+p507
+aS'Ivanov, Alexsandr'
+p508
+asg13
+S'oai:arXiv.org:1404.2810'
+p509
+sg15
+S'Computation of maximal turning points by a variational approach'
+p510
+sba(iArxivData
+Paper
+p511
+(dp512
+g4
+S'2014-04-07'
+p513
+sg6
+S'  An algorithmic bridge is starting to be established between sparse\nreconstruction theory and distributed control theory. For example,\n$\\ell_1$-regularization has been suggested as an appropriate means for\nco-designing sparse feedback gains and consensus topologies subject to\nperformance bounds. In recent work, we showed that ideas from atomic norm\nminimization could be used to simultaneously co-design a distributed optimal\ncontroller and the communication delay structure on which it is to be\nimplemented. While promising and successful, these results lack the same\ntheoretical support that their sparse reconstruction counterparts enjoy -- as\nthings stand, these methods are at best viewed as principled heuristics. In\nthis paper, we describe theoretical connections between sparse reconstruction\nand systems design by developing approximation bounds for control co-design\nproblems via convex optimization. We also give a concrete example of a design\nproblem for which our approach provides approximation guarantees.\n'
+p514
+sg8
+(lp515
+S'Matni, Nikolai'
+p516
+aS'Chandrasekaran, Venkat'
+p517
+asg13
+S'oai:arXiv.org:1404.1972'
+p518
+sg15
+S'Regularization for Design'
+p519
+sba(iArxivData
+Paper
+p520
+(dp521
+g4
+S'2014-03-31'
+p522
+sg6
+S"  Joint approximate diagonalization of non-commuting symmetric matrices is an\nimportant process in independent component analysis. It is known that this\nproblem can be formulated as an optimization problem on the Stiefel manifold.\nRiemannian optimization techniques can be used to solve this optimization\nproblem. Among the available techniques, we have studied Riemannian Newton's\nmethod for the joint diagonalization problem. In particular, we have shown that\nthe resultant Newton's equation can be effectively solved using the Kronecker\nproduct and vec operator. We have performed numerical experiments to show that\nthe proposed method improves the accuracy of an approximate solution of the\nproblem, and have applied the method to independent component analysis.\n"
+p523
+sg8
+(lp524
+S'Sato, Hiroyuki'
+p525
+asg13
+S'oai:arXiv.org:1403.8064'
+p526
+sg15
+S"Riemannian Newton's method for joint diagonalization on the Stiefel\n  manifold with application to ICA"
+p527
+sba(iArxivData
+Paper
+p528
+(dp529
+g4
+S'2014-04-11'
+p530
+sg6
+S'  We extend the ideas of [Diening, Kreuzer, Stevenson, arXiv e-print:\n1306.0377, 2013] from conforming approximations of the Poisson problem to\nnonconforming Crouzeix-Raviart approximations of the Poisson and the Stokes\nproblem. As a consequence, we obtain instance optimality of an AFEM with a\nmodified maximum marking strategy.\n'
+p531
+sg8
+(lp532
+S'Kreuzer, Christian'
+p533
+aS'Schedensack, Mira'
+p534
+asg13
+S'oai:arXiv.org:1404.3065'
+p535
+sg15
+S'Instance optimal Crouzeix-Raviart adaptive finite element methods for\n  the Poisson and Stokes problems'
+p536
+sba(iArxivData
+Paper
+p537
+(dp538
+g4
+S'2014-04-14'
+p539
+sg6
+S'  We study a hybrid conditional gradient - smoothing algorithm (HCGS) for\nsolving composite convex optimization problems which contain several terms over\na bounded set. Examples of these include regularization problems with several\nnorms as penalties and a norm constraint. HCGS extends conditional gradient\nmethods to cases with multiple nonsmooth terms, in which standard conditional\ngradient methods may be difficult to apply. The HCGS algorithm borrows\ntechniques from smoothing proximal methods and requires first-order\ncomputations (subgradients and proximity operations). Unlike proximal methods,\nHCGS benefits from the advantages of conditional gradient methods, which render\nit more efficient on certain large scale optimization problems. We demonstrate\nthese advantages with simulations on two matrix optimization problems:\nregularization of matrices with combined $\\ell_1$ and trace norm penalties; and\na convex relaxation of sparse PCA.\n'
+p540
+sg8
+(lp541
+S'Argyriou, Andreas'
+p542
+aS'Signoretto, Marco'
+p543
+aS'Suykens, Johan'
+p544
+asg13
+S'oai:arXiv.org:1404.3591'
+p545
+sg15
+S'Hybrid Conditional Gradient - Smoothing Algorithms with Applications to\n  Sparse and Low Rank Regularization'
+p546
+sba(iArxivData
+Paper
+p547
+(dp548
+g4
+S'2014-03-30'
+p549
+sg6
+S'  We consider kernels of discrete convolution operators or, equivalently,\nhomogeneous solutions of partial difference operators and show that these\nsolutions always have to be exponential polynomials. The respective polynomial\nspace in connected directly though somewhat intricately to the multiplicity of\nthe common zeros of certain multivariate polynomials, a concept introduced by\nGr\\"obner in the description of kernels of partial differential operators with\nconstant coefficients. These results can are then used to determine the kernels\nof stationary subdivision operators as well.\n'
+p550
+sg8
+(lp551
+S'Sauer, Tomas'
+p552
+asg13
+S'oai:arXiv.org:1403.7724'
+p553
+sg15
+S'Kernels of discrete convolutions and subdivision operators'
+p554
+sba(iArxivData
+Paper
+p555
+(dp556
+g4
+S'2014-04-08'
+p557
+sg6
+S"  In this paper we are interested to the zygodactyly phenomenon in birds, and\nin particolar in parrots. This arrangement, common in species living on trees,\nis a distribution of the foot with two toes facing forward and two back. We\ngive a model for the foot, and thanks to the methods of iterated function\nsystem we are able to describe the reachability set. Moreover we give a\nnecessary and sufficient condition for the grasping problem. Finally we\nintroduce a hybrid dynamical system modeling owl's foot in various stages of\nhunting (flying, attack, grasp).\n"
+p558
+sg8
+(lp559
+S'Lai, Anna Chiara'
+p560
+aS'Loreti, Paola'
+p561
+asg13
+S'oai:arXiv.org:1404.2072'
+p562
+sg15
+S"A control model for zygodactyl bird's foot"
+p563
+sba(iArxivData
+Paper
+p564
+(dp565
+g4
+S'2014-04-01'
+p566
+sg6
+S'  Let $X$ be a smooth affine algebraic variety over the field of complex\nnumbers which is contractible. Then every algebraic $G$-torsor on $X$ is\nalgebraically trivial if $G$ is a semi-simple algebraic group. We also show\nthat if $X$ is a smooth affine algebraic variety such that $\\Omega^1_X$ is\ntrivial and $X$ is topologically simply connected with $H^i(X,\\ZZ)=0$ for\n$i=1,2$ and $3$, then every algebraic $G$-torsor on $X$ is algebraically\ntrivial for a semi-simple algebraic group $G$.\n'
+p567
+sg8
+(lp568
+S'Subramanian, S.'
+p569
+asg13
+S'oai:arXiv.org:1404.0143'
+p570
+sg15
+S'Torsors on Affine Varieties'
+p571
+sba(iArxivData
+Paper
+p572
+(dp573
+g4
+S'2014-03-31'
+p574
+sg6
+S'  We examine the Chern class mapping ${c}_{1}: {\\rm NS}(S)/p{\\rm NS}(S)\n\\rightarrow {\\rm H}^{1}(S, \\Omega^{1}_{S})$ for an abelian surface $S$ in\ncharacteristic $p \\geq 3$, and give a basis of the kernel $c_{1}$ for the\nsuperspecial abelian surface.\n'
+p575
+sg8
+(lp576
+S'Katsura, Toshiyuki'
+p577
+asg13
+S'oai:arXiv.org:1403.7894'
+p578
+sg15
+S'The Chern class mapping on abelian surfaces'
+p579
+sba(iArxivData
+Paper
+p580
+(dp581
+g4
+S'2014-04-02'
+p582
+sg6
+S'  In this work we provide a first order sensitivity analysis of some\nparameterized stochastic optimal control problems. The parameters can be given\nby random processes. The main tool is the one-to-one correspondence between the\nadjoint states appearing in a weak form of the stochastic Pontryagin principle\nand the Lagrange multipliers associated to the state equation.\n'
+p583
+sg8
+(lp584
+S'Backhoff, Julio'
+p585
+aS'Silva, Francisco'
+p586
+asg13
+S'oai:arXiv.org:1404.0586'
+p587
+sg15
+S'Some sensitivity results in stochastic optimal control: A Lagrange\n  multiplier point of view'
+p588
+sba(iArxivData
+Paper
+p589
+(dp590
+g4
+S'2014-04-16'
+p591
+sg6
+S"  The intent of this research is to generate a set of non-dominated policies\nfrom which one of two agents (the leader) can select a most preferred policy to\ncontrol a dynamic system that is also affected by the control decisions of the\nother agent (the follower). The problem is described by an infinite horizon,\npartially observed Markov game (POMG). At each decision epoch, each agent\nknows: its past and present states, its past actions, and noise corrupted\nobservations of the other agent's past and present states. The actions of each\nagent are determined at each decision epoch based on these data. The leader\nconsiders multiple objectives in selecting its policy. The follower considers a\nsingle objective in selecting its policy with complete knowledge of and in\nresponse to the policy selected by the leader. This leader-follower assumption\nallows the POMG to be transformed into a specially structured, partially\nobserved Markov decision process (POMDP). This POMDP is used to determine the\nfollower's best response policy. A multi-objective genetic algorithm (MOGA) is\nused to create the next generation of leader policies based on the fitness\nmeasures of each leader policy in the current generation. Computing a fitness\nmeasure for a leader policy requires a value determination calculation, given\nthe leader policy and the follower's best response policy. The policies from\nwhich the leader can select a most preferred policy are the non-dominated\npolicies of the final generation of leader policies created by the MOGA. An\nexample is presented that illustrates how these results can be used to support\na manager of a liquid egg production process (the leader) in selecting a\nsequence of actions to best control this process over time, given that there is\nan attacker (the follower) who seeks to contaminate the liquid egg production\nprocess with a chemical or biological toxin.\n"
+p592
+sg8
+(lp593
+S'Chang, Yanling'
+p594
+aS'Erera, Alan L.'
+p595
+aS'White III, Chelsea C.'
+p596
+asg13
+S'oai:arXiv.org:1404.4388'
+p597
+sg15
+S'Partially Observed, Multi-objective Markov Games'
+p598
+sba(iArxivData
+Paper
+p599
+(dp600
+g4
+S'2014-04-01'
+p601
+sg6
+S'  In this paper we use a dynamic programming approach to analytically solve an\nendogenous growth model with internal habits where the key parameters\ndescribing their formation, namely the intensity, persistence and lag structure\n(or memory), are kept generic. Then we show that external and internal habits\nlead to the same closed loop policy function and then to the same (Pareto)\noptimal equilibrium path of the aggregate variables when the utility function\nis subtractive nonseparable. The paper uses new theoretical results from those\npreviously developed by the dynamic programming literature applied to optimal\ncontrol problems with delay and it extends the existing results on the\nequivalence between models with internal and external habits to the case of\nfinite memory.\n'
+p602
+sg8
+(lp603
+S'Augeraud-Veron, Emmanuelle'
+p604
+aS'Bambi, Mauro'
+p605
+aS'Gozzi, Fausto'
+p606
+asg13
+S'oai:arXiv.org:1404.0189'
+p607
+sg15
+S'On the equivalence of internal and external habit formation models with\n  finite memory'
+p608
+sba(iArxivData
+Paper
+p609
+(dp610
+g4
+S'2014-04-02'
+p611
+sg6
+S'  Modelling, simulation and optimization form an integrated part of modern\ndesign practice in engineering and industry. Tremendous progress has been\nobserved for all three components over the last few decades. However, many\nchallenging issues remain unresolved, and the current trends tend to use\nnature-inspired algorithms and surrogate-based techniques for modelling and\noptimization. This 4th workshop on Computational Optimization, Modelling and\nSimulation (COMS 2013) at ICCS 2013 will further summarize the latest\ndevelopments of optimization and modelling and their applications in science,\nengineering and industry. In this review paper, we will analyse the recent\ntrends in modelling and optimization, and their associated challenges. We will\ndiscuss important topics for further research, including parameter-tuning,\nlarge-scale problems, and the gaps between theory and applications.\n'
+p612
+sg8
+(lp613
+S'Yang, Xin-She'
+p614
+aS'Koziel, Slawomir'
+p615
+aS'Leifsson, Leifur'
+p616
+asg13
+S'oai:arXiv.org:1404.0708'
+p617
+sg15
+S'Computational Optimization, Modelling and Simulation: Recent Trends and\n  Challenges'
+p618
+sba(iArxivData
+Paper
+p619
+(dp620
+g4
+S'2014-04-15'
+p621
+sg6
+S'  In this paper, we investigate the application of the maximum principle\npreserving (MPP) parametrized flux limiters to the high order finite volume\nscheme with Runge-Kutta time discretization for solving convection dominated\nproblems. Such flux limiter was originally proposed in [Xu, Math. Comp., 2013]\nand further developed in [Xiong et. al., J. Comp. Phys., 2013] for finite\ndifference WENO schemes with Runge-Kutta time discretization for convection\nequations. The main idea is to limit the temporal integrated high order\nnumerical flux toward a first order MPP monotone flux. In this paper, we\ngeneralize such flux limiter to high order finite volume methods solving\nconvection-dominated problems, which is easy to implement and introduces little\ncomputational overhead. More importantly, for the first time in the finite\nvolume setting, we provide a general proof that the proposed flux limiter\nmaintains high order accuracy of the original WENO scheme for linear advection\nproblems without any additional time step restriction. For general nonlinear\nconvection-dominated problems, we prove that the proposed flux limiter\nintroduces up to $O(\\Delta x^3+\\Delta t^3)$ modification to the high order\ntemporal integrated flux in the original WENO scheme without extra time step\nconstraint. We also numerically investigate the preservation of up to ninth\norder accuracy of the proposed flux limiter in a general setting. The advantage\nof the proposed method is demonstrated through various numerical experiments.\n'
+p622
+sg8
+(lp623
+S'Yang, Pei'
+p624
+aS'Xiong, Tao'
+p625
+aS'Qiu, Jing-Mei'
+p626
+aS'Xu, Zhengfu'
+p627
+asg13
+S'oai:arXiv.org:1404.4041'
+p628
+sg15
+S'High order maximum principle preserving finite volume method for\n  convection dominated problems'
+p629
+sba(iArxivData
+Paper
+p630
+(dp631
+g4
+S'2014-03-28'
+p632
+sg6
+S'  In this work, we study the numerical solution for parabolic equations whose\nsolutions have a common property of blowing up in finite time and the equations\nare invariant under the following scaling transformation $$u \\mapsto\nu_\\lambda(x,t):= \\lambda^{\\frac{2}{p-1}}u(\\lambda x, \\lambda^2 t).$$ For that\npurpose, we apply the rescaling method proposed by Berger and Kohn in 1988 to\nsuch problems. The convergence of the method is proved under some regularity\nassumption. Some numerical experiments are given to derive the blow-up profile\nverifying henceforth the theoretical results.\n'
+p633
+sg8
+(lp634
+S'Van-Tien, Nguyen'
+p635
+asg13
+S'oai:arXiv.org:1403.7547'
+p636
+sg15
+S'Numerical analysis of the rescaling method for parabolic problems with\n  blow-up in finite time'
+p637
+sba(iArxivData
+Paper
+p638
+(dp639
+g4
+S'2014-04-03'
+p640
+sg6
+S'  This article shall serve as a quick reference for somebody who needs precise\ninformation on concepts and results related to resolution of singularities. As\nsuch, it is more a technical manual than a bedtime story.\n  Topics which are covered: Singular and regular points of varieties and\nschemes; various definitions of blowups and their mutual relations; properties\nof blowups; transforms of varieties, schemes and ideals; exceptional divisors;\nCartier and normal crossings divisors; transversality; hypersurfaces of maximal\ncontact; flags; coefficient ideals; resolution invariants; order of ideals;\nHilbert-Samuel function; semicontinuity; various resolution statements;\ncharacteristic zero resolution; characteristic p phenomena.\n  The text is complemented with lots of illustrating examples.\n'
+p641
+sg8
+(lp642
+S'Hauser, Herwig'
+p643
+asg13
+S'oai:arXiv.org:1404.1041'
+p644
+sg15
+S'Blowups and Resolution'
+p645
+sba(iArxivData
+Paper
+p646
+(dp647
+g4
+S'2014-04-01'
+p648
+sg6
+S'  We introduce an innovative wavelet-based approach to dynamically adjust the\nlocal grid resolution to maintain a uniform specified error tolerance.\nExtending the work of Dubos and Kevlahan (2013), a wavelet multi-scale\napproximation is used to make dynamically adaptive the TRiSK model (Ringler et\nal. 2010) for the rotating shallow water equations on the sphere. This paper\nfocuses on the challenges encountered when extending the adaptive wavelet\nmethod to the sphere and ensuring an efficient parallel implementation using\nMPI. The wavelet method is implemented in Fortran95 with an emphasis on\ncomputational efficiency and scales well up to O(10^2) processors for\nload-unbalanced scenarios and up to at least O(10^3) processors for\nload-balanced scenarios. The method is verified using standard smooth test\ncases (Williamson et al. 1992) and a nonlinear test case proposed by (Galewsky\nte al. 2004). The dynamical grid adaption provides compression ratios of up to\n50 times in a challenging homogenous turbulence test case. The adaptive code is\nabout three times slower per active grid point than the equivalent non-adaptive\nTRiSK code and about four times slower per active grid point than an equivalent\nspectral code. This computationally efficient adaptive dynamical core could\nserve as the foundation on which to build a complete climate or weather model.\n'
+p649
+sg8
+(lp650
+S'Aechtner, Matthias'
+p651
+aS'Kevlahan, Nicholas'
+p652
+aS'Dubos, Thomas'
+p653
+asg13
+S'oai:arXiv.org:1404.0405'
+p654
+sg15
+S'A conservative adaptive wavelet method for the shallow water equations\n  on the sphere'
+p655
+sba(iArxivData
+Paper
+p656
+(dp657
+g4
+S'2014-04-01'
+p658
+sg6
+S'  In this paper we study flatness of the restriction on some special subgerms\n(e.g. the reduction and the unmixed part) of the total space of a flat morphism\nover a smooth base space. We give a relationship between reducedness of the\ntotal space and that of the generic fibers of a flat morphism over a reduced\nCohen-Macaulay base space. Moreover, we study flatness of the composition of a\nflat morphism over a smooth base space and the normalization of the total space\nof that morphism.\n'
+p659
+sg8
+(lp660
+VCông-Trình, Lê
+p661
+asg13
+S'oai:arXiv.org:1404.0430'
+p662
+sg15
+S'Some remarks on flatness of morphisms over smooth base spaces'
+p663
+sba(iArxivData
+Paper
+p664
+(dp665
+g4
+S'2014-04-01'
+p666
+sg6
+S"  There are two natural notions of algebraic log stack in literatures, this\npaper proves that they are equivalent, by using W.Gillam's notion of minimal\nobjects in \\cite{Gi1}, in particular we generalize a M.Olsson's theorem of\nrepresentation of log algebraic stack in \\cite{Ol1}, and obtain several\nfundamental results in algebraic log stack resemble to those in algebraic\nstacks.\n"
+p667
+sg8
+(lp668
+S'Shentu, Junchao'
+p669
+asg13
+S'oai:arXiv.org:1404.0157'
+p670
+sg15
+S'Algebraic Logarithmic Stack and Minimal Objects'
+p671
+sba(iArxivData
+Paper
+p672
+(dp673
+g4
+S'2014-04-01'
+p674
+sg6
+S'  In this paper we study the optimality of the certainty equivalence\napproximation in robust finite-horizon optimization problems with expected\ncost. We provide an algorithm for determining the subset of the state-space for\nwhich the certainty equivalence technique is optimal. In the second part of the\npaper we show how patterns in the problem structure called symmetries can be\nused to reduce the computational complexity of the previous algorithm. Finally\nwe demonstrate our technique through numerical examples. In particular we\nexamine networked battery systems and radiant slab building control, for which\nwe show the certainty equivalence controller is optimal over the entire\noperating range.\n'
+p675
+sg8
+(lp676
+S'Chuang, Frank'
+p677
+aS'Danielson, Claus'
+p678
+aS'Borrelli, Francesco'
+p679
+asg13
+S'oai:arXiv.org:1404.0413'
+p680
+sg15
+S'Optimality of certainty equivalence in expected value problems for\n  uncertain linear systems'
+p681
+sba(iArxivData
+Paper
+p682
+(dp683
+g4
+S'2014-04-15'
+p684
+sg6
+S'  Compressed sensing extends from the recovery of sparse vectors from\nundersampled measurements via efficient algorithms to the recovery of matrices\nof low rank from incomplete information. Here we consider a further extension\nto the reconstruction of tensors of low multi-linear rank in recently\nintroduced hierarchical tensor formats from a small number of measurements.\nHierarchical tensors are a flexible generalization of the well-known Tucker\nrepresentation, which have the advantage that the number of degrees of freedom\nof a low rank tensor does not scale exponentially with the order of the tensor.\nWhile corresponding tensor decompositions can be computed efficiently via\nsuccessive applications of (matrix) singular value decompositions, some\nimportant properties of the singular value decomposition do not extend from the\nmatrix to the tensor case. This results in major computational and theoretical\ndifficulties in designing and analyzing algorithms for low rank tensor\nrecovery. For instance, a canonical analogue of the tensor nuclear norm is\nNP-hard to compute in general, which is in stark contrast to the matrix case.\nIn this book chapter we consider versions of iterative hard thresholding\nschemes adapted to hierarchical tensor formats. A variant builds on methods\nfrom Riemannian optimization and uses a retraction mapping from the tangent\nspace of the manifold of low rank tensors back to this manifold. We provide\nfirst partial convergence results based on a tensor version of the restricted\nisometry property (TRIP) of the measurement map. Moreover, an estimate of the\nnumber of measurements is provided that ensures the TRIP of a given tensor rank\nwith high probability for Gaussian measurement maps.\n'
+p685
+sg8
+(lp686
+S'Rauhut, Holger'
+p687
+aS'Schneider, Reinhold'
+p688
+aS'Stojanac, Zeljka'
+p689
+asg13
+S'oai:arXiv.org:1404.3905'
+p690
+sg15
+S'Tensor completion in hierarchical tensor representations'
+p691
+sba(iArxivData
+Paper
+p692
+(dp693
+g4
+S'2014-03-28'
+p694
+sg6
+S'  An algorithmic framework to compute sparse or minimal-TV solutions of linear\nsystems is proposed. The framework includes both the Kaczmarz method and the\nlinearized Bregman method as special cases and also several new methods such as\na sparse Kaczmarz solver. The algorithmic framework has a variety of\napplications and is especially useful for problems in which the linear\nmeasurements are slow and expensive to obtain. We present examples for online\ncompressed sensing, TV tomographic reconstruction and radio interferometry.\n'
+p695
+sg8
+(lp696
+S'Lorenz, Dirk A.'
+p697
+aS'Wenger, Stephan'
+p698
+aVSchöpfer, Frank
+p699
+aS'Magnor, Marcus'
+p700
+asg13
+S'oai:arXiv.org:1403.7543'
+p701
+sg15
+S'A sparse Kaczmarz solver and a linearized Bregman method for online\n  compressed sensing'
+p702
+sba(iArxivData
+Paper
+p703
+(dp704
+g4
+S'2014-04-01'
+p705
+sg6
+S"  We study in this article the dual of a (strictly) commutative group stack $G$\nand give some applications. Using the Picard functor and the Picard stack of\n$G$, we first give some sufficient conditions for $G$ to be dualizable. Then,\nfor an algebraic stack $X$ with suitable assumptions, we define an Albanese\nmorphism $a_X : X\\to A^1(X)$ where $A^1(X)$ is a torsor under the dual\ncommutative group stack $A^0(X)$ of $Pic_{X/S}$. We prove that $a_X$ satisfies\na natural universal property. We give two applications of our Albanese\nmorphism. On the one hand, we give a geometric description of the elementary\nobstruction and of universal torsors (standard tools in the study of rational\nvarieties over number fields). On the other hand we give some examples of\nalgebraic stacks that satisfy Grothendieck's section conjecture.\n"
+p706
+sg8
+(lp707
+S'Brochard, Sylvain'
+p708
+asg13
+S'oai:arXiv.org:1404.0285'
+p709
+sg15
+S'Duality for commutative group stacks'
+p710
+sba(iArxivData
+Paper
+p711
+(dp712
+g4
+S'2014-03-29'
+p713
+sg6
+S'  We study the action of $\\operatorname{Gal}(\\overline{\\mathbb{Q}}/\\mathbb{Q})$\non the category of Belyi functions (finite, \\\'{e}tale covers of\n$\\mathbb{P}^1_{\\overline{\\mathbb{Q}}}\\setminus \\{0,1,\\infty\\}$). We describe a\nnew combinatorial\n$\\operatorname{Gal}(\\overline{\\mathbb{Q}}/\\mathbb{Q})$-invariant for a certain\nclass of Belyi functions. As a corollary, we obtain that for all $k <\n2^{\\sqrt{\\frac{2}{3}}}$ and all positive integers $N$, there is an $n \\le N$\nsuch that the set of degree $n$ Belyi functions of a particular rational\nNielsen class must split into at least $\\Omega\\left(k^{\\sqrt{N}}\\right)$ Galois\norbits. In addition, we define a new version of the\nGrothendieck-Teichm\\"{u}ller group $\\widehat{GT}$ into which\n$\\operatorname{Gal}(\\overline{\\mathbb{Q}}/\\mathbb{Q})$ embeds.\n'
+p714
+sg8
+(lp715
+S'Jagadeesan, Ravi'
+p716
+asg13
+S'oai:arXiv.org:1403.7690'
+p717
+sg15
+S"A new $\\operatorname{Gal}(\\overline{\\mathbb{Q}}/\\mathbb{Q})$ invariant\n  of dessins d'enfants"
+p718
+sba(iArxivData
+Paper
+p719
+(dp720
+g4
+S'2014-04-16'
+p721
+sg6
+S"  MATSuMoTo is the MATLAB Surrogate Model Toolbox for computationally\nexpensive, black-box, global optimization problems that may have continuous,\nmixed-integer, or pure integer variables. Due to the black-box nature of the\nobjective function, derivatives are not available. Hence, surrogate models are\nused as computationally cheap approximations of the expensive objective\nfunction in order to guide the search for improved solutions. Due to the\ncomputational expense of doing a single function evaluation, the goal is to\nfind optimal solutions within very few expensive evaluations. The multimodality\nof the expensive black-box function requires an algorithm that is able to\nsearch locally as well as globally. MATSuMoTo is able to address these\nchallenges. MATSuMoTo offers various choices for surrogate models and surrogate\nmodel mixtures, initial experimental design strategies, and sampling\nstrategies. MATSuMoTo is able to do several function evaluations in parallel by\nexploiting MATLAB's Parallel Computing Toolbox.\n"
+p722
+sg8
+(lp723
+S'Mueller, Juliane'
+p724
+asg13
+S'oai:arXiv.org:1404.4261'
+p725
+sg15
+S'MATSuMoTo: The MATLAB Surrogate Model Toolbox For Computationally\n  Expensive Black-Box Global Optimization Problems'
+p726
+sba(iArxivData
+Paper
+p727
+(dp728
+g4
+S'2014-04-01'
+p729
+sg6
+S"  This work presents a method to adaptively refine reduced-order models a\nposteriori without requiring additional full-order-model solves. The technique\nis analogous to mesh-adaptive $h$-refinement: it enriches the reduced-basis\nspace by `splitting' selected basis vectors into several vectors with disjoint\nsupport. The splitting scheme is defined by a tree structure constructed via\nrecursive $k$-means clustering of the state variables using snapshot data. The\nmethod identifies the vectors to split using a dual-weighted residual approach\nthat seeks to reduce error in an output quantity of interest. The resulting\nmethod generates a hierarchy of subspaces online without requiring large-scale\noperations or high-fidelity solves. Further, it enables the reduced-order model\nto satisfy any prescribed error tolerance online regardless of its original\nfidelity, as a completely refined reduced-order model is equivalent to the\noriginal full-order model. Experiments on a parameterized inviscid Burgers\nequation highlight the ability of the method to capture phenomena (e.g., moving\nshocks) not contained in the span of the original reduced basis.\n"
+p730
+sg8
+(lp731
+S'Carlberg, Kevin'
+p732
+asg13
+S'oai:arXiv.org:1404.0442'
+p733
+sg15
+S'Adaptive $h$-refinement for reduced-order models'
+p734
+sba(iArxivData
+Paper
+p735
+(dp736
+g4
+S'2014-03-30'
+p737
+sg6
+S'  We construct an example of a uniform Banach algebra such that a rational\nlocalisation of the Berkovich spectrum does not preserve the uniformity. It is\nan example of a non-sheafy uniform Banach algebra. We also construct examples\nof uniform affinoid rings such that rational localisations of the adic spectra\ndo not preserve the uniformity. One of them is an example of a non-sheafy\nuniform affinoid ring.\n'
+p738
+sg8
+(lp739
+S'Mihara, Tomoki'
+p740
+asg13
+S'oai:arXiv.org:1403.7856'
+p741
+sg15
+S'On Tate Acyclicity and Uniformity of Berkovich Spectra and Adic Spectra'
+p742
+sba(iArxivData
+Paper
+p743
+(dp744
+g4
+S'2014-04-14'
+p745
+sg6
+S'  The Streamline Upwind Petrov--Galerkin (SUPG) finite element method for a\ntransient convection-diffusion-reaction equation in time-dependent domains is\nproposed and studied. In particular, a stabilized numerical scheme for a\nconvection dominated transient scalar problem in deforming domains is\ndeveloped. The time-dependent domain is handle by the arbitrary\nLagrangian-Eulerian (ALE) approach, whereas the SUPG finite element method is\nused for the spatial discretization. Further, the backward Euler method is used\nfor the temporal discretization. It is shown that the stability of the\nsemidiscrete (in space) inconsistent SUPG-ALE equation is independent of the\nmesh velocity, whereas the stability of the fully discrete problem is only\nconditionally stable. Moreover, the stability estimate of the fully discrete\nconsistent SUPG-ALE equation is also derived, and it also depends the mesh\nvelocity. Numerical results are presented to show the influence of the SUPG\nstabilization parameter in a time-dependent domain. Further, the proposed\nnumerical scheme is applied to a boundary/interior layer problem in a\ntime--dependent domain.\n'
+p746
+sg8
+(lp747
+S'Ganesan, Sashikumaar'
+p748
+aS'Srivastava, Shweta'
+p749
+asg13
+S'oai:arXiv.org:1404.3531'
+p750
+sg15
+S'ALE-SUPG finite element method for convection-diffusion problems in\n  time-dependent domains'
+p751
+sba(iArxivData
+Paper
+p752
+(dp753
+g4
+S'2014-03-28'
+p754
+sg6
+S'  We study the connectedness of the non-subklt locus over the spectrum of a\nformal power series ring. In dimension 3, we prove the existence and normality\nof the smallest lc centre, and apply it to the ACC for minimal log\ndiscrepancies greater than 1 on non-singular 3-folds.\n'
+p755
+sg8
+(lp756
+S'Kawakita, Masayuki'
+p757
+asg13
+S'oai:arXiv.org:1403.7582'
+p758
+sg15
+S'A connectedness theorem over the spectrum of a formal power series ring'
+p759
+sba(iArxivData
+Paper
+p760
+(dp761
+g4
+S'2014-04-14'
+p762
+sg6
+S"  Accurate upper-lower bounds on homogenized matrix, arising from the unit cell\nproblem for periodic media, are calculated for a scalar elliptic setting. Our\napproach builds on the recent variational reformulation of the Moulinec-Suquet\n(1994) Fast Fourier Transform (FFT) homogenization scheme by Vond\\v{r}ejc et\nal. (2014), which is based on the conforming Galerkin approximation with\ntrigonometric polynomials. Upper-lower bounds are obtained by adjusting the\nprimal-dual finite element framework developed independently by Dvo\\v{r}\\'{a}k\n(1993) and Wi\\c{e}ckowski (1995) to the FFT-based Galerkin setting. We show\nthat the discretization procedure differs for odd and non-odd number of\ndiscretization points. In particular, thanks to the Helmholtz decomposition\ninherited from the continuous formulation, the duality structure is fully\nrecovered for odd discretization. In the latter case, the more complex\nprimal-dual structure is observed due to the trigonometric polynomials\nassociated with the Nyquist frequencies. These theoretical findings are\nconfirmed with numerical examples. To conclude, the main advantage of the\nFFT-based approach over the two finite-element schemes of Dvo\\v{r}\\'{a}k and\nWi\\c{e}ckowski is that the primal and the dual problems can be treated on the\nsame basis, and this property can be extended beyond the scalar elliptic\nproblem.\n"
+p763
+sg8
+(lp764
+VVond\u0159ejc, Jaroslav
+p765
+aS'Zeman, Jan'
+p766
+aS'Marek, Ivo'
+p767
+asg13
+S'oai:arXiv.org:1404.3614'
+p768
+sg15
+S'Accurate upper-lower bounds on homogenized matrix by FFT-based Galerkin\n  method'
+p769
+sba(iArxivData
+Paper
+p770
+(dp771
+g4
+S'2014-03-31'
+p772
+sg6
+S'  We prove novel convergence results for a stochastic forward-backward\nsplitting algorithm for solving monotone inclusions given by the sum of a\nmaximal monotone operator and a single-valued maximal monotone cocoercive\noperator. We derive convergence rates in expectation in the strongly monotone\ncase, as well as almost sure convergence results under weaker assumptions.\n'
+p773
+sg8
+(lp774
+S'Rosasco, Lorenzo'
+p775
+aS'Villa, Silvia'
+p776
+aVV\u0169, Bang Công
+p777
+asg13
+S'oai:arXiv.org:1403.7999'
+p778
+sg15
+S'A Stochastic forward-backward splitting method for solving monotone\n  inclusions in Hilbert spaces'
+p779
+sba(iArxivData
+Paper
+p780
+(dp781
+g4
+S'2014-04-02'
+p782
+sg6
+S'  The objective is to design distributed coordination strategies for a network\nof agents in a cyber-physical environment. In particular, we concentrate on the\nrendez-vous of agents having double-integrator dynamics with the addition of a\ndamping term in the velocity dynamics. We start with distributed controllers\nthat solve the problem in continuous-time, and we then explain how to implement\nthese using event-based sampling. The idea is to define a triggering rule per\nedge using a clock variable which only depends on the local variables. The\ntriggering laws are designed to compensate for the perturbative term introduced\nby the sampling, a technique that reminds of Lyapunov-based control redesign.\nWe first present an event-triggered solution which requires continuous\nmeasurement of the relative position and we then explain how to convert it to a\nself-triggered policy. The latter only requires the measurements of the\nrelative position and velocity at the last transmission instants, which is\nuseful to reduce both the communication and the computation costs. The\nstrategies guarantee the existence of a uniform minimum amount of times between\nany two edge events. The analysis is carried out using an invariance principle\nfor hybrid systems.\n'
+p783
+sg8
+(lp784
+S'de Persis, Claudio'
+p785
+aS'Postoyan, Romain'
+p786
+asg13
+S'oai:arXiv.org:1404.0576'
+p787
+sg15
+S'A Lyapunov redesign of coordination algorithms for cyberphysical systems'
+p788
+sba(iArxivData
+Paper
+p789
+(dp790
+g4
+S'2014-04-14'
+p791
+sg6
+S"  Using the normalized B-bases of vector spaces of trigonometric and hyperbolic\npolynomials of finite order, we specify control point configurations for the\nexact description of higher dimensional (rational) curves and (hybrid)\nmultivariate surfaces determined by coordinate functions that are exclusively\ngiven either by traditional trigonometric or hyperbolic polynomials in each of\ntheir variables. The usefulness and applicability of theoretical results and\nproposed algorithms are illustrated by many examples that also comprise the\ncontrol point based exact description of several famous curves (like epi- and\nhypocycloids, foliums, torus knots, Bernoulli's lemniscate, hyperbolas),\nsurfaces (such as pure trigonometric or hybrid surfaces of revolution like tori\nand hyperboloids, respectively) and 3-dimensional volumes. The core of the\nproposed modeling methods relies on basis transformation matrices with entries\nthat can be efficiently obtained by order elevation. Providing subdivision\nformulae for curves described by convex combinations of these normalized\nB-basis functions and control points, we also ensure the possible incorporation\nof all proposed techniques into today's CAD systems.\n"
+p792
+sg8
+(lp793
+VRóth, Ágoston
+p794
+asg13
+S'oai:arXiv.org:1404.3767'
+p795
+sg15
+S'Control point based exact description of higher dimensional\n  trigonometric and hyperbolic curves and multivariate surfaces'
+p796
+sba(iArxivData
+Paper
+p797
+(dp798
+g4
+S'2014-03-29'
+p799
+sg6
+S'  Consider a singular curve $\\Gamma$ contained in a smooth 3-fold $X$. Assuming\nthe general elephant conjecture, the general hypersurface section\n$\\Gamma\\subset S\\subset X$ is Du Val. Under that assumption, this paper\ndescribes the construction of a divisorial extraction from $\\Gamma$ by\nKustin--Miller unprojection. Terminal extractions from $\\Gamma\\subset X$ are\nproved not to exist if $S$ is of type $D_{2k}, E_7$ or $E_8$ and are classified\nif $S$ is of type $A_1,A_2$ or $E_6$. The $A_n$ and $D_{2k+1}$ cases shall be\nconsidered in a further paper.\n'
+p800
+sg8
+(lp801
+S'Ducat, Tom'
+p802
+asg13
+S'oai:arXiv.org:1403.7614'
+p803
+sg15
+S'Divisorial Extractions from Singular Curves in Smooth 3-Folds, I'
+p804
+sba(iArxivData
+Paper
+p805
+(dp806
+g4
+S'2014-04-06'
+p807
+sg6
+S'  It is shown that the orthogonal polynomials, corresponding to the oscillatory\nweight $e^{\\im\\omega x}$, exists if $\\omega$ is a transcendental number and\n$\\tan\\omega/\\omega\\in\\Q$. Also, it is proved that such orthogonal polynomials\nexist for almost every $\\omega>0$, and the roots are all simple if $\\omega>0$\nis either small enough or large enough.\n'
+p808
+sg8
+(lp809
+S'Majidian, Hassan'
+p810
+asg13
+S'oai:arXiv.org:1404.1551'
+p811
+sg15
+S'On the existence of orthogonal polynomials for oscillatory weights on a\n  bounded interval'
+p812
+sba(iArxivData
+Paper
+p813
+(dp814
+g4
+S'2014-04-09'
+p815
+sg6
+S"  By using Moreau's decomposition theorem for projecting onto cones, the\nproblem of projecting onto a simplicial cone is reduced to finding the unique\nsolution of a nonsmooth system of equations. It is shown that a semi-smooth\nNewton method applied to the system of equations associated to the problem of\nprojecting onto a simplicial cone is always well defined, and the generated\nsequence is bounded for any starting point and under a somewhat restrictive\nassumption it is finite. Besides, under a mild assumption on the simplicial\ncone, the generated sequence converges linearly to the solution of the\nassociated system of equations.\n"
+p816
+sg8
+(lp817
+S'Ferreira, O. P.'
+p818
+aVNémeth, S. Z.
+p819
+asg13
+S'oai:arXiv.org:1404.2427'
+p820
+sg15
+S'Projection onto simplicial cones by a semi-smooth Newton method'
+p821
+sba(iArxivData
+Paper
+p822
+(dp823
+g4
+S'2014-03-31'
+p824
+sg6
+S"  In this paper, we study chance constrained mixed integer program with\nconsideration of recourse decisions and their incurred cost, developed on a\nfinite discrete scenario set. Through studying a non-traditional bilinear mixed\ninteger formulation, we derive its linear counterparts and show that they could\nbe stronger than existing linear formulations. We also develop a variant of\nJensen's inequality that extends the one for stochastic program. To solve this\nchallenging problem, we present a variant of Benders decomposition method in\nbilinear form, which actually provides an easy-to-use algorithm framework to\nintegrate existing improvement techniques, along with a few enhancement\nstrategies based on the structure of chance constrained program. Computational\nstudy shows that the presented Benders decomposition method outperforms a\ncommercial solver by an order of magnitude on solving chance constrained\nprogram or detecting its infeasibility.\n"
+p825
+sg8
+(lp826
+S'Zeng, Bo'
+p827
+aS'An, Yu'
+p828
+aS'Kuznia, Ludwig'
+p829
+asg13
+S'oai:arXiv.org:1403.7875'
+p830
+sg15
+S'Chance Constrained Mixed Integer Program: Bilinear and Linear\n  Formulations, and Benders Decomposition'
+p831
+sba(iArxivData
+Paper
+p832
+(dp833
+g4
+S'2014-04-10'
+p834
+sg6
+S"  Switched queueing networks model wireless networks, input queued switches and\nnumerous other networked communications systems. For single-hop networks, we\nconsider a {($\\alpha,g$)-switch policy} which combines the MaxWeight policies\nwith bandwidth sharing networks -- a further well studied model of Internet\ncongestion. We prove the maximum stability property for this class of\nrandomized policies. Thus these policies have the same first order behavior as\nthe MaxWeight policies. However, for multihop networks some of these\ngeneralized polices address a number of critical weakness of the\nMaxWeight/BackPressure policies.\n  For multihop networks with fixed routing, we consider the Proportional\nScheduler (or (1,log)-policy). In this setting, the BackPressure policy is\nmaximum stable, but must maintain a queue for every route-destination, which\ntypically grows rapidly with a network's size. However, this proportionally\nfair policy only needs to maintain a queue for each outgoing link, which is\ntypically bounded in number. As is common with Internet routing, by maintaining\nper-link queueing each node only needs to know the next hop for each packet and\nnot its entire route. Further, in contrast to BackPressure, the Proportional\nScheduler does not compare downstream queue lengths to determine weights, only\nlocal link information is required. This leads to greater potential for\ndecomposed implementations of the policy. Through a reduction argument and an\nentropy argument, we demonstrate that, whilst maintaining substantially less\nqueueing overhead, the Proportional Scheduler achieves maximum throughput\nstability.\n"
+p835
+sg8
+(lp836
+S'Walton, Neil'
+p837
+asg13
+S'oai:arXiv.org:1404.2725'
+p838
+sg15
+S'Concave Switching in Single and Multihop Networks'
+p839
+sba(iArxivData
+Paper
+p840
+(dp841
+g4
+S'2014-03-31'
+p842
+sg6
+S"  Tate gave a famous construction of the residue symbol on curves by using some\nnon-commutative operator algebra in the context of algebraic geometry. We\nexplain Beilinson's multidimensional generalization, which is not so\nwell-documented in the literature. As a novelty, we introduce a\nHochschild/cyclic homology counterpart of the theory. It allows to bypass\nrelative homology by exploiting an excision phenomenon and this leads to a new\nconstruction of the same map. All constructions work readily for\nnon-commutative rings, but I cannot offer much of an interpretation what these\ngeneralized maps mean.\n"
+p843
+sg8
+(lp844
+S'Braunling, Oliver'
+p845
+asg13
+S'oai:arXiv.org:1403.8142'
+p846
+sg15
+S'On the local residue symbol in the style of Tate and Beilinson'
+p847
+sba(iArxivData
+Paper
+p848
+(dp849
+g4
+S'2014-04-09'
+p850
+sg6
+S'  Mean field games are studied in the framework of controlled martingale\nproblems, and general existence theorems are proven in which the equilibrium\ncontrol is Markovian. The framework is flexible enough to include degenerate\nvolatility, which may depend on both the control and the mean field. The\nobjectives need not be strictly convex, and the mean field interactions\nconsidered are nonlocal and Wasserstein-continuous. When the volatility is\nnondegenerate, the continuity assumptions may be weakened considerably. The\nproofs first use relaxed controls, which may be interpreted as mixed\nstrategies, to establish the existence of equilibria. Then, strict\n(non-relaxed) Markovian equilibria are constructed from relaxed equilibria by a\nmeasurable selection argument.\n'
+p851
+sg8
+(lp852
+S'Lacker, Daniel'
+p853
+asg13
+S'oai:arXiv.org:1404.2642'
+p854
+sg15
+S'Mean field games via controlled martingale problems: existence of\n  Markovian equilibria'
+p855
+sba(iArxivData
+Paper
+p856
+(dp857
+g4
+S'2014-04-01'
+p858
+sg6
+S"  Distributed consensus in the Wasserstein metric space of probability measures\nis introduced for the first time in this work. It is shown that convergence of\nthe individual agents' measures to a common measure value is guaranteed so long\nas a weak network connectivity condition is satisfied asymptotically. The\ncommon measure achieved asymptotically at each agent is the one closest\nsimultaneously to all initial agent measures in the sense that it minimises a\nweighted sum of Wasserstein distances between it and all the initial measures.\nThis algorithm has applicability in the field of distributed estimation.\n"
+p859
+sg8
+(lp860
+S'Bishop, Adrian N.'
+p861
+aS'Doucet, Arnaud'
+p862
+asg13
+S'oai:arXiv.org:1404.0145'
+p863
+sg15
+S'Distributed Nonlinear Consensus in the Space of Probability Measures'
+p864
+sba(iArxivData
+Paper
+p865
+(dp866
+g4
+S'2014-04-16'
+p867
+sg6
+S'  This paper is concerned with the problem of tracking single or multiple\ntargets with multiple non-target specific observations (measurements). For such\nfiltering problems with data association uncertainty, a novel feedback\ncontrol-based particle filter algorithm is introduced. The algorithm is\nreferred to as the probabilistic data association-feedback particle filter\n(PDA-FPF). The proposed filter is shown to represent a generalization to the\nnonlinear non-Gaussian case of the classical Kalman filter-based probabilistic\ndata association filter (PDAF). One remarkable conclusion is that the proposed\nPDA-FPF algorithm retains the innovation error-based feedback structure of the\nclassical PDAF algorithm, even in the nonlinear non-Gaussian case. The\ntheoretical results are illustrated with the aid of numerical examples\nmotivated by multiple target tracking applications.\n'
+p868
+sg8
+(lp869
+S'Yang, Tao'
+p870
+aS'Mehta, Prashant G.'
+p871
+asg13
+S'oai:arXiv.org:1404.4386'
+p872
+sg15
+S'Probabilistic Data Association-Feedback Particle Filter for Multiple\n  Target Tracking Applications'
+p873
+sba(iArxivData
+Paper
+p874
+(dp875
+g4
+S'2014-04-11'
+p876
+sg6
+S'  This paper analyses a $(1,\\lambda)$-Evolution Strategy, a randomised\ncomparison-based adaptive search algorithm, on a simple constraint optimisation\nproblem. The algorithm uses resampling to handle the constraint and optimizes a\nlinear function with a linear constraint. Two cases are investigated: first the\ncase where the step-size is constant, and second the case where the step-size\nis adapted using path length control. We exhibit for each case a Markov chain\nwhose stability analysis would allow us to deduce the divergence of the\nalgorithm depending on its internal parameters. We show divergence at a\nconstant rate when the step-size is constant. We sketch that with step-size\nadaptation geometric divergence takes place. Our results complement previous\nstudies where stability was assumed.\n'
+p877
+sg8
+(lp878
+S'Chotard, Alexandre'
+p879
+aS'Auger, Anne'
+p880
+aS'Hansen, Nikolaus'
+p881
+asg13
+S'oai:arXiv.org:1404.3023'
+p882
+sg15
+S'Markov Chain Analysis of Evolution Strategies on a Linear Constraint\n  Optimization Problem'
+p883
+sba(iArxivData
+Paper
+p884
+(dp885
+g4
+S'2014-04-04'
+p886
+sg6
+S'  In this paper, we study a strategic model of marketing and product\nconsumption in social networks. We consider two competing firms in a market\nproviding two substitutable products with preset qualities. Agents choose their\nconsumptions following a myopic best response dynamics which results in a\nlocal, linear update for the consumptions. At some point in time, firms receive\na limited budget which they can use to trigger a larger consumption of their\nproducts in the network. Firms have to decide between marginally improving the\nquality of their products and giving free offers to a chosen set of agents in\nthe network in order to better facilitate spreading their products. We derive a\nsimple threshold rule for the optimal allocation of the budget and describe the\nresulting Nash equilibrium. It is shown that the optimal allocation of the\nbudget depends on the entire distribution of centralities in the network,\nquality of products and the model parameters. In particular, we show that in a\ngraph with a higher number of agents with centralities above a certain\nthreshold, firms spend more budget on seeding in the optimal allocation.\nFurthermore, if seeding budget is nonzero for a balanced graph, it will also be\nnonzero for any other graph, and if seeding budget is zero for a star graph, it\nwill be zero for any other graph too. We also show that firms allocate more\nbudget to quality improvement when their qualities are close, in order to\ndistance themselves from the rival firm. However, as the gap between qualities\nwidens, competition in qualities becomes less effective and firms spend more\nbudget on seeding.\n'
+p887
+sg8
+(lp888
+S'Fazeli, Arastoo'
+p889
+aS'Ajorlou, Amir'
+p890
+aS'Jadbabaie, Ali'
+p891
+asg13
+S'oai:arXiv.org:1404.1405'
+p892
+sg15
+S'Optimal Budget Allocation in Social Networks: Quality or Seeding'
+p893
+sba(iArxivData
+Paper
+p894
+(dp895
+g4
+S'2014-04-10'
+p896
+sg6
+S'  In this paper we consider the heat equation with memory in a bounded region\n$\\Omega \\subset\\mathbb{R}^d$, $d\\geq 1$, in the case that the propagation speed\nof the signal is infinite (i.e. the Colemann-Gurtin model). The memory kernel\nis of class $C^1$. We examine its controllability properties both under the\naction of boundary controls or when the controls are distributed in a subregion\nof $\\Omega$. We prove approximate controllability of the system and, in\ncontrast with this, we prove the existence of initial conditions which cannot\nbe steered to hit the target $0$ in a certain time $T$, of course when the\nmemory kernel is not identically zero. In both the cases we derive our results\nfrom well known properties of the heat equation.\n'
+p897
+sg8
+(lp898
+S'Pandolfi, L.'
+p899
+aS'Halanay, A.'
+p900
+asg13
+S'oai:arXiv.org:1404.2745'
+p901
+sg15
+S'Approximate controllability and lack of controllability to zero of the\n  heat equation with memory'
+p902
+sba(iArxivData
+Paper
+p903
+(dp904
+g4
+S'2014-04-02'
+p905
+sg6
+S'  Let $M$ be an irreducible smooth complex projective variety equipped with an\naction of a compact Lie group $G$, and let $({\\mathcal L},h)$ be a\n$G$-equivariant holomorphic Hermitian line bundle on $M$. Given a compact\nconnected Riemann surface $X$, we construct a $G$-equivariant holomorphic\nHermitian line bundle $(L\\,,H)$ on $X\\times M$ (the action of $G$ on $X$ is\ntrivial), such that the corresponding Quillen determinant line bundle\n$({\\mathcal Q}, h_Q)$, which is a $G$--equivariant holomorphic Hermitian line\nbundle on $M$, is isomorphic to the given $G$--equivariant holomorphic\nHermitian line bundle $({\\mathcal L}\\,,h)$. This proves a conjecture of Dey and\nMathai in \\cite{DM}.\n'
+p906
+sg8
+(lp907
+S'Biswas, Indranil'
+p908
+asg13
+S'oai:arXiv.org:1404.0458'
+p909
+sg15
+S'Realization of an equivariant holomorphic Hermitian line bundle as a\n  Quillen determinant bundle'
+p910
+sba(iArxivData
+Paper
+p911
+(dp912
+g4
+S'2014-04-14'
+p913
+sg6
+S'  We consider tractability of integration in reproducing kernel Hilbert spaces\nwhich are a tensor product of a Walsh space and a Korobov space. The main\nresult provides necessary and sufficient conditions for weak, polynomial and\nstrong polynomial tractability.\n'
+p914
+sg8
+(lp915
+S'Kritzer, Peter'
+p916
+aS'Pillichshammer, Friedrich'
+p917
+asg13
+S'oai:arXiv.org:1404.3493'
+p918
+sg15
+S'Tractability of multivariate integration in hybrid function spaces'
+p919
+sba(iArxivData
+Paper
+p920
+(dp921
+g4
+S'2014-04-13'
+p922
+sg6
+S'  We present a fast direct solver for the simulation of electromagnetic\nscattering from an arbitrarily-shaped, large, empty cavity embedded in an\ninfinite perfectly conducting half space. The governing Maxwell equations are\nreformulated as a well-conditioned second kind integral equation and the\nresulting linear system is solved in nearly linear time using a hierarchical\nmatrix factorization technique. We illustrate the performance of the scheme\nwith several numerical examples for complex cavity shapes over a wide range of\nfrequencies.\n'
+p923
+sg8
+(lp924
+S'Lai, Jun'
+p925
+aS'Ambikasaran, Sivaram'
+p926
+aS'Greengard, Leslie F.'
+p927
+asg13
+S'oai:arXiv.org:1404.3451'
+p928
+sg15
+S'A fast direct solver for high frequency scattering from a large cavity\n  in two dimensions'
+p929
+sba(iArxivData
+Paper
+p930
+(dp931
+g4
+S'2014-04-02'
+p932
+sg6
+S"  It is expected that, under mild conditions, local Langlands correspondence\npreserves depths of representations. In this article, we formulate a\nconjectural geometrisation of this expectation. We prove half of this\nconjecture by showing that the depth of a categorical representation of the\nloop group is less than or equal to the depth of its underlying geometric\nLanglands parameter. A key ingredient of our proof is a new definition of the\nslope of a meromorphic connection, a definition which uses opers. In the\nappendix, we consider a relationship between our conjecture and Zhu's\nconjecture on non-vanishing of the Hecke eigensheaves produced by Beilinson and\nDrinfeld's quantisation of Hitchin's fibration for non-constant groups.\n"
+p933
+sg8
+(lp934
+S'Chen, Tsao-Hsien'
+p935
+aS'Kamgarpour, Masoud'
+p936
+asg13
+S'oai:arXiv.org:1404.0598'
+p937
+sg15
+S'Preservation of depth in local geometric Langlands correspondence'
+p938
+sba(iArxivData
+Paper
+p939
+(dp940
+g4
+S'2014-04-11'
+p941
+sg6
+S'  The nonnegative rank of a matrix A is the smallest integer r such that A can\nbe written as the sum of r rank-one nonnegative matrices. The nonnegative rank\nhas received a lot of attention recently due to its application in\noptimization, probability and communication complexity. In this paper we study\na class of atomic rank functions defined on a convex cone which generalize\nseveral notions of "positive" ranks such as nonnegative rank or cp-rank (for\ncompletely positive matrices). The main contribution of the paper is a new\nmethod to obtain lower bounds for such ranks which improve on previously known\nbounds. Additionally the bounds we propose can be computed by semidefinite\nprogramming. The idea of the lower bound relies on an atomic norm approach\nwhere the atoms are self-scaled according to the vector (or matrix, in the case\nof nonnegative rank) of interest. This results in a lower bound that is\ninvariant under scaling and that is at least as good as other existing\nnorm-based bounds.\n  We mainly focus our attention on the two important cases of nonnegative rank\nand cp-rank where our bounds satisfying interesting properties: For the\nnonnegative rank we show that our lower bound can be interpreted as a\nnon-combinatorial version of the fractional rectangle cover number, while the\nsum-of-squares relaxation is closely related to the Lov\\\'asz theta number of\nthe rectangle graph of the matrix. We also prove that the lower bound inherits\nmany of the structural properties satisfied by the nonnegative rank such as\ninvariance under diagonal scaling, subadditivity, etc. We also apply our method\nto obtain lower bounds on the cp-rank for completely positive matrices. In this\ncase we prove that our lower bound is always greater than or equal the plain\nrank lower bound, and we show that it has interesting connections with\ncombinatorial lower bounds based on edge-clique cover number.\n'
+p942
+sg8
+(lp943
+S'Fawzi, Hamza'
+p944
+aS'Parrilo, Pablo A.'
+p945
+asg13
+S'oai:arXiv.org:1404.3240'
+p946
+sg15
+S'Self-scaled bounds for atomic cone ranks: applications to nonnegative\n  rank and cp-rank'
+p947
+sba(iArxivData
+Paper
+p948
+(dp949
+g4
+S'2014-04-11'
+p950
+sg6
+S'  In this paper we address the problem of locating a new facility on a\n$d$-dimensional space when the distance measure ($\\ell_p$- or polyhedral-norms)\nis different at each one of the sides of a given hyperplane $\\mathcal{H}$. We\nrelate this problem with the physical phenomenon of refraction, and extends it\nto any finite dimension space and different distances at each one of the sides\nof any hyperplane. An application to this problem is the location of a facility\nwithin or outside an urban area where different distance measures must be used.\nWe provide a new second order cone programming formulation, based on the\n$\\ell_p$-norm representation given in \\cite{BPE2014} that allows to solve,\nexactly, the problem in any finite dimension space with semidefinite\nprogramming tools. We also extend the problem to the case where the hyperplane\nis considered as a rapid transit media (a different third norm is also\nconsidered over $\\mathcal{H}$) that allows the demand to travel faster through\n$\\mathcal{H}$ to reach the new facility. Extensive computational experiments\nrun in Gurobi are reported in order to show the effectiveness of the approach.\n'
+p951
+sg8
+(lp952
+S'Blanco, Victor'
+p953
+aS'Puerto, Justo'
+p954
+aS'Ponce, Diego'
+p955
+asg13
+S'oai:arXiv.org:1404.3068'
+p956
+sg15
+S'Continuous Location under Refraction'
+p957
+sba(iArxivData
+Paper
+p958
+(dp959
+g4
+S'2014-04-13'
+p960
+sg6
+S"  This article examines mean-field games for marriage. The results support the\nargument that optimizing the long-term well-being through effort and social\nfeeling state distribution (mean-field) will help to stabilize marriage.\nHowever, if the cost of effort is very high, the couple fluctuates in a bad\nfeeling state or the marriage breaks down. We then examine the influence of\nsociety on a couple using mean field sentimental games. We show that, in\nmean-field equilibrium, the optimal effort is always higher than the one-shot\noptimal effort. We illustrate numerically the influence of the couple's network\non their feeling states and their well-being.\n"
+p961
+sg8
+(lp962
+S'Bauso, Dario'
+p963
+aS'Dia, Ben Mansour'
+p964
+aS'Djehiche, Boualem'
+p965
+aS'Tembine, Hamidou'
+p966
+aS'Tempone, Raul'
+p967
+asg13
+S'oai:arXiv.org:1404.3389'
+p968
+sg15
+S'Mean-Field Games for Marriage'
+p969
+sba(iArxivData
+Paper
+p970
+(dp971
+g4
+S'2014-04-07'
+p972
+sg6
+S'  Recently two kinds of HSS-based iteration methods to solve the absolute value\nequation (AVE) are proposed. In present paper, we focus on developing the\nCSCS-based methods for solving the absolute value equation (AVE) involving the\nToeplitz structure, and propose the Picard-CSCS method and the nonlinear\nCSCS-like iterative method. With the help of introducing a smoothing\napproximate function, we give some theoretical analyses for the convergence of\nthe CSCS-based iteration methods for AVE. The advantage of these methods is\nthat they do not require storage of coefficient matrix, and the linear\nsub-systems can be solved efficiently via fast Fouriertransform (FFT).\nTherefore, computational workloads and computer storage may be saved in actual\nimplementations. Extensive numerical experiments are employed to demonstrate\nthe feasibility, robustness and effectiveness of the CSCS-based methods and to\ncompare with the recent methods.\n'
+p973
+sg8
+(lp974
+S'Gu, Xian-Ming'
+p975
+aS'Huang, Ting-Zhu'
+p976
+aS'Wang, Sheng-Feng'
+p977
+aS'Li, Hou-Biao'
+p978
+aS'Li, Liang'
+p979
+asg13
+S'oai:arXiv.org:1404.1678'
+p980
+sg15
+S'Two CSCS-based iteration methods for absolute value equations with\n  Toeplitz structure'
+p981
+sba(iArxivData
+Paper
+p982
+(dp983
+g4
+S'2014-04-02'
+p984
+sg6
+S'  In this paper, we describe a mathematical model and a numerical simulation\nmethod for the condenser component of a novel two-phase thermosyphon cooling\nsystem for power electronics applications. The condenser consists of a set of\nroll-bonded vertically mounted fins among which air flows by either natural or\nforced convection. In order to deepen the understanding of the mechanisms that\ndetermine the performance of the condenser and to facilitate the further\noptimization of its industrial design, a multiscale approach is developed to\nreduce as much as possible the complexity of the simulation code while\nmaintaining reasonable predictive accuracy. To this end, heat diffusion in the\nfins and its convective transport in air are modeled as 2D processes while the\nflow of the two-phase coolant within the fins is modeled as a 1D network of\npipes. For the numerical solution of the resulting equations, a Dual\nMixed-Finite Volume scheme with Exponential Fitting stabilization is used for\n2D heat diffusion and convection while a Primal Mixed Finite Element\ndiscretization method with upwind stabilization is used for the 1D coolant\nflow. The mathematical model and the numerical method are validated through\nextensive simulations of realistic device structures which prove to be in\nexcellent agreement with available experimental data.\n'
+p985
+sg8
+(lp986
+S'Sacco, Riccardo'
+p987
+aS'Carichino, Lucia'
+p988
+aS'de Falco, Carlo'
+p989
+aS'Verri, Maurizio'
+p990
+aS'Agostini, Francesco'
+p991
+aS'Gradinger, Thomas'
+p992
+asg13
+S'oai:arXiv.org:1404.0587'
+p993
+sg15
+S'A Multiscale Thermo-Fluid Computational Model for a Two-Phase Cooling\n  System'
+p994
+sba(iArxivData
+Paper
+p995
+(dp996
+g4
+S'2014-04-03'
+p997
+sg6
+S'  We study deformations of a pair of a $\\mathbb{Q}$-Fano $3$-fold $X$ with only\nterminal singularities and its elephant $D \\in |{-}K_X|$. We prove that, if $X$\nhas only quotient singularities and there exists $D$ with only isolated\nsingularities, the pair $(X,D)$ can be deformed to a pair of a\n$\\mathbb{Q}$-Fano $3$-fold and a Du Val elephant. When there are only\nnon-normal elephants, we reduce the existence problem of such a deformation to\na local problem around the singular locus of the elephant. We also give several\nexamples of $\\mathbb{Q}$-Fano $3$-folds without Du Val elephants.\n'
+p998
+sg8
+(lp999
+S'Sano, Taro'
+p1000
+asg13
+S'oai:arXiv.org:1404.0909'
+p1001
+sg15
+S'Deforming elephants of Fano threefolds with terminal singularities'
+p1002
+sba(iArxivData
+Paper
+p1003
+(dp1004
+g4
+S'2014-04-15'
+p1005
+sg6
+S'  Continuously tracking the movement of a fluid or a plume in the subsurface is\na challenge that is often encountered in applications, such as tracking a plume\nof injected CO$_2$ or of a hazardous substance. Advances in monitoring\ntechniques have made it possible to collect measurements at a high frequency\nwhile the plume moves, which has the potential advantage of providing\ncontinuous high-resolution images of fluid flow with the aid of data\nprocessing. However, the applicability of this approach is limited by the high\ncomputational cost associated with having to analyze large data sets within the\ntime constraints imposed by real-time monitoring. Existing data assimilation\nmethods have computational requirements that increase super-linearly with the\nsize of the unknowns $m$. In this paper, we present the HiKF, a new Kalman\nfilter (KF) variant powered by the hierarchical matrix approach that\ndramatically reduces the computational and storage cost of the standard KF from\n$\\mathcal{O}(m^2)$ to $\\mathcal{O}(m)$, while producing practically the same\nresults. The version of HiKF that is presented here takes advantage of the\nso-called random walk dynamical model, which is tailored to a class of data\nassimilation problems in which measurements are collected quasi-continuously.\nThe proposed method has been applied to a realistic CO$_2$ injection model and\ncompared with the ensemble Kalman filter (EnKF). Numerical results show that\nHiKF can provide estimates that are more accurate than EnKF, and also\ndemonstrate the usefulness of modeling the system dynamics as a random walk in\nthis context.\n'
+p1006
+sg8
+(lp1007
+S'Li, Judith Y.'
+p1008
+aS'Ambikasaran, Sivaram'
+p1009
+aS'Darve, Eric F.'
+p1010
+aS'Kitanidis, Peter K.'
+p1011
+asg13
+S'oai:arXiv.org:1404.3816'
+p1012
+sg15
+S'A Kalman filter powered by $\\mathcal{H}^2$-matrices for quasi-continuous\n  data assimilation problems'
+p1013
+sba(iArxivData
+Paper
+p1014
+(dp1015
+g4
+S'2014-04-01'
+p1016
+sg6
+S'  This article considers stochastic algorithms for efficiently solving a class\nof large scale non-linear least squares (NLS) problems which frequently arise\nin applications. We propose eight variants of a practical randomized algorithm\nwhere the uncertainties in the major stochastic steps are quantified. Such\nstochastic steps involve approximating the NLS objective function using\nMonte-Carlo methods, and this is equivalent to the estimation of the trace of\ncorresponding symmetric positive semi-definite (SPSD) matrices. For the latter,\nwe prove tight necessary and sufficient conditions on the sample size (which\ntranslates to cost) to satisfy the prescribed probabilistic accuracy. We show\nthat these conditions are practically computable and yield small sample sizes.\nThey are then incorporated in our stochastic algorithm to quantify the\nuncertainty in each randomized step. The bounds we use are applications of more\ngeneral results regarding extremal tail probabilities of linear combinations of\ngamma distributed random variables. We derive and prove new results concerning\nthe maximal and minimal tail probabilities of such linear combinations, which\ncan be considered independently of the rest of this paper.\n'
+p1017
+sg8
+(lp1018
+S'Roosta-Khorasani, Farbod'
+p1019
+aVSzékely, Gábor J.
+p1020
+aS'Ascher, Uri'
+p1021
+asg13
+S'oai:arXiv.org:1404.0122'
+p1022
+sg15
+S'Assessing stochastic algorithms for large scale nonlinear least squares\n  problems using extremal probabilities of linear combinations of gamma random\n  variables'
+p1023
+sba(iArxivData
+Paper
+p1024
+(dp1025
+g4
+S'2014-03-31'
+p1026
+sg6
+S'  We study solution techniques for evolution equations with fractional\ndiffusion and fractional time derivative in a polyhedral bounded domain. The\nfractional time derivative, in the sense of Caputo, is discretized by a first\norder scheme and analyzed in a general Hilbert space setting. We show discrete\nstability estimates which yield an energy estimate for evolution problems with\nfractional time derivative. The spatial fractional diffusion is realized as the\nDirichlet-to-Neumann map for a nonuniformly elliptic problem posed on a\nsemi-infinite cylinder in one more spatial dimension. We write our evolution\nproblem as a quasi-stationary elliptic problem with a dynamic boundary\ncondition, and we analyze it in the framework of weighted Sobolev spaces. The\nrapid decay of the solution to this problem suggests a truncation that is\nsuitable for numerical approximation. We propose and analyze a first order\nsemi-implicit fully-discrete scheme to discretize the truncation: first degree\ntensor product finite elements in space and a first order discretization in\ntime. We prove stability and a near optimal a priori error estimate of the\nnumerical scheme, in both order and regularity.\n'
+p1027
+sg8
+(lp1028
+S'Nochetto, Ricardo H.'
+p1029
+aS'Otarola, Enrique'
+p1030
+aS'Salgado, Abner J.'
+p1031
+asg13
+S'oai:arXiv.org:1404.0068'
+p1032
+sg15
+S'A PDE approach to space-time fractional parabolic problems'
+p1033
+sba(iArxivData
+Paper
+p1034
+(dp1035
+g4
+S'2014-04-01'
+p1036
+sg6
+S'  We study Riemannian geometry of canonical Kahler-Einstein currents on\nprojective Calabi-Yau varieties and canonical models of general type with\ncrepant singularities. We prove that the metric completion of the regular part\nof such a canonical current is a compact metric length space homeomorphic to\nthe original projective variety, with well-defined tangent cones. We also prove\na special degeneration for Kahler-Einstein manifolds of general type as an\napproach to establish the compactification of the moduli space of\nKahler-Einstein manifolds of general type. A number of applications are given\nfor degeneration of Calabi-Yau manifolds and the Kahler-Ricci flow on smooth\nminimal models of general type.\n'
+p1037
+sg8
+(lp1038
+S'Song, Jian'
+p1039
+asg13
+S'oai:arXiv.org:1404.0445'
+p1040
+sg15
+S'Riemannian geometry of Kahler-Einstein currents'
+p1041
+sba(iArxivData
+Paper
+p1042
+(dp1043
+g4
+S'2014-04-08'
+p1044
+sg6
+S"  We present a fast algorithm that constructs a data-sparse approximation of\nmatrices arising in the context of integral equation methods for elliptic\npartial differential equations.\n  The new algorithm uses Green's representation formula in combination with\nquadrature to obtain a first approximation of the kernel function and then\napplies nested cross approximation to obtain a more efficient representation.\n  The resulting $\\mathcal{H}^2$-matrix representation requires $\\mathcal{O}(n\nk)$ units of storage for an $n\\times n$ matrix, where $k$ depends on the\nprescribed accuracy.\n"
+p1045
+sg8
+(lp1046
+VBörm, Steffen
+p1047
+aS'Christophersen, Sven'
+p1048
+asg13
+S'oai:arXiv.org:1404.2234'
+p1049
+sg15
+S'Approximation of integral operators by Green quadrature and nested cross\n  approximation'
+p1050
+sba(iArxivData
+Paper
+p1051
+(dp1052
+g4
+S'2014-03-27'
+p1053
+sg6
+S'  Recently Salkuyeh proposed the Picard-HSS iteration method to solve the\nabsolute value equation (AVE). In this paper, we focus our attention to improve\nthe performance of Picard-HSS iterative method, and proposed a nonlinear\nHSS-like iterative method. By introducing the smoothing approximate function,\nwe give a theoretical proof for the convergence of the nonlinear HSS-like\niteration method for AVE. Some numerical experiments are used to demonstrate\nthe feasibility robustness and effectiveness of the nonlinear HSS-like method\nand to compare with Picard-HSS iterative method.\n'
+p1054
+sg8
+(lp1055
+S'Zhu, Mu-Zheng'
+p1056
+aS'Zhang, Guo-Feng'
+p1057
+aS'Liang, Zhao-Zheng'
+p1058
+asg13
+S'oai:arXiv.org:1403.7013'
+p1059
+sg15
+S'The nonlinear HSS-like iteration method for absolute value equations'
+p1060
+sba(iArxivData
+Paper
+p1061
+(dp1062
+g4
+S'2014-04-06'
+p1063
+sg6
+S'  In this paper, we investigate the power of online learning in stochastic\nnetwork optimization with unknown system statistics {\\it a priori}. We are\ninterested in understanding how information and learning can be efficiently\nincorporated into system control techniques, and what are the fundamental\nbenefits of doing so. We propose two \\emph{Online Learning-Aided Control}\ntechniques, $\\mathtt{OLAC}$ and $\\mathtt{OLAC2}$, that explicitly utilize the\npast system information in current system control via a learning procedure\ncalled \\emph{dual learning}. We prove strong performance guarantees of the\nproposed algorithms: $\\mathtt{OLAC}$ and $\\mathtt{OLAC2}$ achieve the\nnear-optimal $[O(\\epsilon), O([\\log(1/\\epsilon)]^2)]$ utility-delay tradeoff\nand $\\mathtt{OLAC2}$ possesses an $O(\\epsilon^{-2/3})$ convergence time.\n$\\mathtt{OLAC}$ and $\\mathtt{OLAC2}$ are probably the first algorithms that\nsimultaneously possess explicit near-optimal delay guarantee and sub-linear\nconvergence time. Simulation results also confirm the superior performance of\nthe proposed algorithms in practice. To the best of our knowledge, our attempt\nis the first to explicitly incorporate online learning into stochastic network\noptimization and to demonstrate its power in both theory and practice.\n'
+p1064
+sg8
+(lp1065
+S'Huang, Longbo'
+p1066
+aS'Liu, Xin'
+p1067
+aS'Hao, Xiaohong'
+p1068
+asg13
+S'oai:arXiv.org:1404.1592'
+p1069
+sg15
+S'The Power of Online Learning in Stochastic Network Optimization'
+p1070
+sba(iArxivData
+Paper
+p1071
+(dp1072
+g4
+S'2014-04-16'
+p1073
+sg6
+S'  In his lectures at College de France, P.L. Lions introduced the concept of\nMaster equation, see [5] for Mean Field Games. It is introduced in a heuristic\nfashion, from the system of partial differential equations, associated to a\nNash equilibrium for a large, but finite, number of players. The method, also\nexplained in[2], consists in a formal analogy of terms. The interest of this\nequation is that it contains interesting particular cases, which can be studied\ndirectly, in particular the system of HJB-FP (Hamilton-Jacobi-Bellman,\nFokker-Planck) equations obtained as the limit of the finite Nash equilibrium\ngame, when the trajectories are independent, see [4]. Usually, in mean field\ntheory, one can bypass the large Nash equilibrium, by introducing the concept\nof representative agent, whose action is influenced by a distribution of\nsimilar agents, and obtains directly the system of HJB-FP equations of\ninterest, see for instance [1]. Apparently, there is no such approach for the\nMaster equation. We show here that it is possible. We first do it for the Mean\nField type control problem, for which we interpret completely the Master\nequation. For the Mean Field Games itself, we solve a related problem, and\nobtain again the Master equation.\n'
+p1074
+sg8
+(lp1075
+S'Bensoussan, Alain'
+p1076
+aS'Frehse, Jens'
+p1077
+aS'Yam, Phillip'
+p1078
+asg13
+S'oai:arXiv.org:1404.4150'
+p1079
+sg15
+S'The Master Equation in Mean Field Theory'
+p1080
+sba(iArxivData
+Paper
+p1081
+(dp1082
+g4
+S'2014-04-04'
+p1083
+sg6
+S"  In this paper, we identify sufficient conditions under which static teams and\na class of sequential dynamic teams admit team-optimal solutions. We first\ninvestigate the existence of optimal solutions in static teams where the\nobservations of the decision makers are conditionally independent or satisfy\ncertain regularity conditions. Building on these findings and the static\nreduction method of Witsenhausen, we then extend the analysis to sequential\ndynamic teams. In particular, we show that a large class of dynamic LQG team\nproblems, including the vector version of the well-known Witsenhausen's\ncounterexample and the Gaussian relay channel problem viewed as a dynamic team,\nadmit team-optimal solutions. Results in this paper substantially broaden the\nclass of stochastic control and team problems with non-classical information\nknown to have optimal solutions.\n"
+p1084
+sg8
+(lp1085
+S'Gupta, Abhishek'
+p1086
+aS'Yuksel, Serdar'
+p1087
+aS'Basar, Tamer'
+p1088
+aS'Langbort, Cedric'
+p1089
+asg13
+S'oai:arXiv.org:1404.1404'
+p1090
+sg15
+S'On the Existence of Optimal Policies for a Class of Static and\n  Sequential Dynamic Teams'
+p1091
+sba(iArxivData
+Paper
+p1092
+(dp1093
+g4
+S'2014-03-31'
+p1094
+sg6
+S'  We propose an algorithm for solution of high-dimensional evolutionary\nequations (ODEs and discretized time-dependent PDEs) in tensor product formats.\nThe solution must admit an approximation in a low-rank separation of variables\nframework, and the right-hand side of the ODE (for example, a matrix) must be\ncomputable in the same low-rank format at a given time point. The time\nderivative is discretized via the Chebyshev spectral scheme, and the solution\nis sought simultaneously for all time points from the global space-time linear\nsystem. To compute the solution adaptively in the tensor format, we employ the\nAlternating Minimal Energy algorithm, the DMRG-flavored alternating iterative\ntechnique.\n  Besides, we address the problem of maintaining system invariants inside the\napproximate tensor product scheme. We show how the conservation of a linear\nfunction, defined by a vector given in the low-rank format, or the second norm\nof the solution may be accurately and elegantly incorporated into the tensor\nproduct method.\n  We present three numerical experiments: the transport problem, the chemical\nmaster equation and the Schroedinger equation, and confirm the main beneficial\nproperties of the new approach: conservation of invariants up to the machine\nprecision, and robustness in long evolution against the spurious inflation of\nthe tensor format storage.\n'
+p1095
+sg8
+(lp1096
+S'Dolgov, Sergey V.'
+p1097
+asg13
+S'oai:arXiv.org:1403.8085'
+p1098
+sg15
+S'Alternating minimal energy approach to ODEs and conservation laws in\n  tensor product formats'
+p1099
+sba(iArxivData
+Paper
+p1100
+(dp1101
+g4
+S'2014-04-05'
+p1102
+sg6
+S'  This paper addresses the problem of planning successive Space Debris\nCollecting missions so that they can be achieved at minimal cost by a generic\nvehicle. The problem mixes combinatorial optimization to select and order the\ndebris among a list of candidates, and continuous optimization to fix the\nrendezvous dates and to define the minimum fuel orbital maneuvers. The solution\nmethod proposed consists in three stages. Firstly the orbital transfer problem\nis simplified by considering a generic transfer strategy suited either to a\nhigh thrust or a low thrust vehicle. A response surface modelling is built by\nsolving the reduced problem for all pairs of debris and for discretized dates,\nand storing the results in cost matrices. Secondly a simulated annealing\nalgorithm is applied to find the optimal mission planning. The cost function is\nassessed by interpolation on the response surface based on the cost matrices.\nThis allows the convergence of the simulated algorithm in a limited computation\ntime, yielding an optimal mission planning. Thirdly the successive missions are\nre-optimized in terms of transfer maneuvers and dates without changing the\ndebris order. These continuous control problems yield a refined solution with\nthe performance requirement for designing the future Space Debris Collecting\nvehicle. The method is applicable for large list of debris and for various\nassumptions regarding the cleaning program (number of missions, number of\ndebris per mission, total duration, deorbitation scenario, high or low thrust\nvehicle). It is exemplified on an application case with 3 missions to plan,\neach mission visiting 5 SSO debris to be selected in a list of 21 candidates.\n'
+p1103
+sg8
+(lp1104
+S'Cerf, Max'
+p1105
+asg13
+S'oai:arXiv.org:1404.1446'
+p1106
+sg15
+S'Multiple Space Debris Collecting Mission -- Optimal Mission Planning'
+p1107
+sba(iArxivData
+Paper
+p1108
+(dp1109
+g4
+S'2014-04-01'
+p1110
+sg6
+S'  The generalized Marcum functions appear in problems of technical and\nscientific areas such as, for example, radar detection and communications. In\nmathematical statistics and probability theory these functions are called the\nnoncentral gamma or the noncentral chi-squared cumulative distribution\nfunctions. In this paper we describe a new asymptotic method for inverting the\ngeneralized Marcum $Q-$function and for the complementary Marcum $P-$function.\nAlso, we show how monotonicity and convexity properties of these functions can\nbe used to find initial values for reliable Newton or secant methods to invert\nthe function. We present details of numerical computations that show the\nreliability of the asymptotic approximations.\n'
+p1111
+sg8
+(lp1112
+S'Gil, A.'
+p1113
+aS'Segura, J.'
+p1114
+aS'Temme, N. M.'
+p1115
+asg13
+S'oai:arXiv.org:1404.0302'
+p1116
+sg15
+S'The asymptotic and numerical inversion of the Marcum $Q-$function'
+p1117
+sba(iArxivData
+Paper
+p1118
+(dp1119
+g4
+S'2014-03-30'
+p1120
+sg6
+S'  Many optimization algorithms have been developed by drawing inspiration from\nswarm intelligence (SI). These SI-based algorithms can have some advantages\nover traditional algorithms. In this paper, we carry out a critical analysis of\nthese SI-based algorithms by analyzing their ways to mimic evolutionary\noperators. We also analyze the ways of achieving exploration and exploitation\nin algorithms by using mutation, crossover and selection. In addition, we also\nlook at algorithms using dynamic systems, self-organization and Markov chain\nframework. Finally, we provide some discussions and topics for further\nresearch.\n'
+p1121
+sg8
+(lp1122
+S'Yang, Xin-She'
+p1123
+asg13
+S'oai:arXiv.org:1403.7792'
+p1124
+sg15
+S'Swarm Intelligence Based Algorithms: A Critical Analysis'
+p1125
+sba(iArxivData
+Paper
+p1126
+(dp1127
+g4
+S'2014-04-15'
+p1128
+sg6
+S'  Optical flow is a powerful tool for the study and analysis of motion in a\nsequence of images. In this article we study a Horn-Schunck type\nspatio-temporal regularization functional for image sequences that have a\nnon-Euclidean, time varying image domain. To that end we construct a Riemannian\nmetric that describes the deformation and structure of this evolving surface.\nThe resulting functional can be seen as natural geometric generalization of\nprevious work by Weickert and Schn\\"orr (2001) and Lef\\`evre and Baillet (2008)\nfor static image domains. In this work we show the existence and wellposedness\nof the corresponding optical flow problem and derive necessary and sufficient\noptimality conditions. The functionality of our approach is demonstrated in two\nnumerical experiments.\n'
+p1129
+sg8
+(lp1130
+S'Bauer, Martin'
+p1131
+aS'Grasmair, Markus'
+p1132
+aS'Kirisits, Clemens'
+p1133
+asg13
+S'oai:arXiv.org:1404.3885'
+p1134
+sg15
+S'Optical Flow on Moving Manifolds'
+p1135
+sba(iArxivData
+Paper
+p1136
+(dp1137
+g4
+S'2014-04-01'
+p1138
+sg6
+S'  Resource-constrained systems are prevalent in communications. Such a system\nis composed of many components but only some of them can be allocated with\nresources such as time slots. According to the amount of information about the\nsystem, algorithms are employed to allocate resources and the overall system\nperformance depends on the result of resource allocation. We do not always have\ncomplete information, and thus, the system performance may not be satisfactory.\nIn this work, we propose a general model for the resource-constrained\ncommunication systems. We draw the relationship between system information and\nperformance and derive the performance bounds for the optimal algorithm for the\nsystem. This gives the expected performance corresponding to the available\ninformation, and we can determine if we should put more efforts to collect more\naccurate information before actually constructing an algorithm for the system.\nSeveral examples of applications in communications to the model are also given.\n'
+p1139
+sg8
+(lp1140
+S'Lam, Albert Y. S.'
+p1141
+aS'Geng, Yanhui'
+p1142
+aS'Li, Victor O. K.'
+p1143
+asg13
+S'oai:arXiv.org:1404.0142'
+p1144
+sg15
+S'Information-Theoretic Bounds for Performance of Resource-Constrained\n  Communication Systems'
+p1145
+sba(iArxivData
+Paper
+p1146
+(dp1147
+g4
+S'2014-04-05'
+p1148
+sg6
+S"  In this paper we study mean-field type control problems with risk-sensitive\nperformance functionals. We establish a stochastic maximum principle (SMP) for\noptimal control of stochastic differential equations (SDEs) of mean-field type,\nin which the drift and the diffusion coefficients as well as the performance\nfunctional depend not only on the state and the control but also on the mean of\nthe distribution of the state. Our result extends the risk-sensitive SMP\n(without mean-field coupling) of Lim and Zhou (2005), derived for feedback (or\nMarkov) type optimal controls, to optimal control problems for non-Markovian\ndynamics which may be time-inconsistent in the sense that the Bellman\noptimality principle does not hold. In our approach to the risk-sensitive SMP,\nthe smoothness assumption on the value-function imposed in Lim and Zhou (2005)\nneed not to be satisfied. For a general action space a Peng's type SMP is\nderived, specifying the necessary conditions for optimality. Two examples are\ncarried out to illustrate the proposed risk-sensitive mean-field type SMP under\nlinear stochastic dynamics with exponential quadratic cost function. Explicit\nsolutions are given for both mean-field free and mean-field models.\n"
+p1149
+sg8
+(lp1150
+S'Djehiche, Boualem'
+p1151
+aS'Tembine, Hamidou'
+p1152
+aS'Tempone, Raul'
+p1153
+asg13
+S'oai:arXiv.org:1404.1441'
+p1154
+sg15
+S'A Stochastic Maximum Principle for Risk-Sensitive Mean-Field Type\n  Control'
+p1155
+sba(iArxivData
+Paper
+p1156
+(dp1157
+g4
+S'2014-04-14'
+p1158
+sg6
+S"  Asymptotic analysis of the Hele-Shaw flow with a small moving obstacle is\nperformed. The method of solution utilises the uniform asymptotic formulas for\nGreen's and Neumann functions recently obtained by V. Maz'ya and A. Movchan.\nTheoretical results of the paper are illustrated by the numerical simulations.\n"
+p1159
+sg8
+(lp1160
+S'Mishuris, Gennady'
+p1161
+aS'Rogosin, Sergei'
+p1162
+aS'Wrobel, Michal'
+p1163
+asg13
+S'oai:arXiv.org:1404.3547'
+p1164
+sg15
+S'Moving stone in the Hele-Shaw flow'
+p1165
+sba(iArxivData
+Paper
+p1166
+(dp1167
+g4
+S'2014-03-31'
+p1168
+sg6
+S"  This paper studies the problem of, given the structure of a linear time\ninvariant system and a set of possible inputs (respectively outputs), finding\nthe smallest subset of input (respectively output) vectors that ensures\nsystem's structural controllability (respectively observability). We refer to\nthis problem as the constrained minimal input/output selection (CMIOS) problem,\nsince the selection has to be performed on an initial given set of possible\ninputs/outputs. We show that the CMIOS is NP-complete, which addresses a recent\nopen question of whether there exist polynomial algorithms (in the size of the\nsystem plant matrices) that solve the CMIOS problem. Hence, we show that such\nalgorithms are unlikely to exist (for arbitrarily given input/output sets).\nFurther, we provide a polynomial reduction from the CMIOS to the set covering\nproblem under some additional assumptions on the input/output set instances,\napplicable in the context of certain multi-agent networked control problems\nsuch as leader-follower type control. Finally, we provide an example that\nillustrates our findings.\n"
+p1169
+sg8
+(lp1170
+S'Pequito, Sergio'
+p1171
+aS'Kar, Soummya'
+p1172
+aS'Aguiar, A. Pedro'
+p1173
+asg13
+S'oai:arXiv.org:1404.0072'
+p1174
+sg15
+S'On the NP-completeness of the Constrained Minimal Structural\n  Controllability/Observability Problem'
+p1175
+sba(iArxivData
+Paper
+p1176
+(dp1177
+g4
+S'2014-04-02'
+p1178
+sg6
+S"  Let M be a connection on a complex affine space with poles along a\nhyperplane. In this paper, we prove that the nearby cycles of Abbes and Saito's\nconstruction applied to M satisfy a linearity condition analogous to that\nobtained by Abbes and Saito in the l-adic setting. This generalizes the fact\nthat in dimension one, the module produced by Abbes and Saito's construction is\na direct sum of exponential modules associated to linear forms.\n"
+p1179
+sg8
+(lp1180
+S'Teyssier, Jean-Baptiste'
+p1181
+asg13
+S'oai:arXiv.org:1404.0639'
+p1182
+sg15
+S"Un th\\'eor\\`eme de lin\\'earit\\'e de la construction d'Abbes et Saito\n  pour les connexions m\\'eromorphes"
+p1183
+sba(iArxivData
+Paper
+p1184
+(dp1185
+g4
+S'2014-04-04'
+p1186
+sg6
+S'  We construct an efficient numerical scheme for solving obstacle problems in\ndivergence form. The numerical method is based on a reformulation of the\nobstacle in terms of an L1-like penalty on the variational problem. The\nreformulation is an exact regularizer in the sense that for large (but finite)\npenalty parameter, we recover the exact solution. Our formulation is applied to\nclassical elliptic obstacle problems as well as some related free boundary\nproblems, for example the two-phase membrane problem and the Hele-Shaw model.\nOne advantage of the proposed method is that the free boundary inherent in the\nobstacle problem arises naturally in our energy minimization without any need\nfor problem specific or complicated discretization. In addition, our scheme\nalso works for nonlinear variational inequalities arising from convex\nminimization problems.\n'
+p1187
+sg8
+(lp1188
+S'Tran, Giang'
+p1189
+aS'Schaeffer, Hayden'
+p1190
+aS'Feldman, William M.'
+p1191
+aS'Osher, Stanley J.'
+p1192
+asg13
+S'oai:arXiv.org:1404.1370'
+p1193
+sg15
+S'An L1 Penalty Method for General Obstacle Problems'
+p1194
+sba(iArxivData
+Paper
+p1195
+(dp1196
+g4
+S'2014-04-15'
+p1197
+sg6
+S'  Moment optimization techniques have been recently proposed to solve globally\nvarious classes of optimal control problems. As those methods return truncated\nmoment sequences of occupation measures, this paper explores a numeric method\nfor reconstructing optimal trajectories and controls from this data. In fact,\nby approximating occupation measures by atomic measures on a given grid, the\nproblem reduces to a finite-dimensional linear program. In contrast with\nearlier numerical methods, this linear program is guaranteed to be feasible, no\ntolerance needs to be specified, and its size can be properly controlled. When\ncombined with local optimal control solvers, this yields a powerful and\nflexible numerical approach for tackling difficult control problems, as\ndemonstrated by examples.\n'
+p1198
+sg8
+(lp1199
+S'Claeys, Mathieu'
+p1200
+asg13
+S'oai:arXiv.org:1404.4079'
+p1201
+sg15
+S'Reconstructing trajectories from the moments of occupation measures'
+p1202
+sba(iArxivData
+Paper
+p1203
+(dp1204
+g4
+S'2014-04-10'
+p1205
+sg6
+S"  Calculating portions of eigenvalues and eigenvectors of matrices or matrix\npencils has many applications. An approach to this calculation for Hermitian\nproblems based on a density matrix has been proposed in 2009 and a software\npackage called FEAST has been developed. The density-matrix approach allows\nFEAST's implementation to exploit a key strength of modern computer\narchitectures, namely, multiple levels of parallelism. Consequently, the\nsoftware package has been well received and subsequently commercialized. A\ndetailed theoretical analysis of Hermitian FEAST has also been established very\nrecently. This paper generalizes the FEAST algorithm and theory, for the first\ntime, to tackle non-Hermitian problems. Fundamentally, the new algorithm is\nbasic subspace iteration or Bauer bi-iteration, except applied with a novel\naccelerator based on Cauchy integrals. The resulting algorithm retains the\nmulti-level parallelism of Hermitian FEAST, making it a valuable new tool for\nlarge-scale computational science and engineering problems on leading-edge\ncomputing platforms.\n"
+p1206
+sg8
+(lp1207
+S'Tang, Ping Tak Peter'
+p1208
+aS'Kestyn, James'
+p1209
+aS'Polizzi, Eric'
+p1210
+asg13
+S'oai:arXiv.org:1404.2891'
+p1211
+sg15
+S'A New Highly Parallel Non-Hermitian Eigensolver'
+p1212
+sba(iArxivData
+Paper
+p1213
+(dp1214
+g4
+S'2014-04-05'
+p1215
+sg6
+S'  This paper studies the problem of line spectral estimation in the continuum\nof a bounded interval with one snapshot of array measurement. The\nsingle-snapshot measurement data is turned into a Hankel data matrix which\nadmits the Vandermonde decomposition and is suitable for the MUSIC algorithm.\nThe MUSIC algorithm amounts to finding the null space (the noise space) of the\nHankel matrix, forming the noise-space correlation function and identifying the\ns smallest local minima of the noise-space correlation as the frequency set.\n  In the noise-free case exact reconstruction is guaranteed for any arbitrary\nset of frequencies as long as the number of measurement data is at least twice\nthe number of distinct frequencies to be recovered. In the presence of noise\nthe stability analysis shows that the perturbation of the noise-space\ncorrelation is proportional to the spectral norm of the noise matrix as long as\nthe latter is smaller than the smallest (nonzero) singular value of the\nnoiseless Hankel data matrix. Under the assumption that the true frequencies\nare separated by at least twice the Rayleigh length, the stability of the\nnoise-space correlation is proved by means of novel discrete Ingham\ninequalities which provide bounds on the largest and smallest nonzero singular\nvalues of the noiseless Hankel data matrix.\n  The numerical performance of MUSIC is tested in comparison with other\nalgorithms such as BLO-OMP and SDP (TV-min). While BLO-OMP is the stablest\nalgorithm for frequencies separated above 4RL, MUSIC becomes the best\nperforming one for frequencies separated between 2RL and 3RL. Also, MUSIC is\nmore efficient than other methods. MUSIC truly shines when the frequency\nseparation drops to one RL and below when all other methods fail. Indeed, the\nresolution of MUSIC apparently decreases to zero as noise decreases to zero.\n'
+p1216
+sg8
+(lp1217
+S'Liao, Wenjing'
+p1218
+aS'Fannjiang, Albert'
+p1219
+asg13
+S'oai:arXiv.org:1404.1484'
+p1220
+sg15
+S'MUSIC for Single-Snapshot Spectral Estimation: Stability and\n  Super-resolution'
+p1221
+sba(iArxivData
+Paper
+p1222
+(dp1223
+g4
+S'2014-04-13'
+p1224
+sg6
+S'  We employ the viscosity solution technique to analyze optimal stopping\nproblems with regime switching. Specifically, we obtain the viscosity property\nof value functions, the uniqueness of viscosity solutions, the regularity of\nvalue functions and the form of optimal stopping intervals. Finally, we provide\nan application of the results.\n'
+p1225
+sg8
+(lp1226
+S'Zhang, Na'
+p1227
+aS'Zhang, Yongchao'
+p1228
+asg13
+S'oai:arXiv.org:1404.3372'
+p1229
+sg15
+S'Optimal Stopping Problems with Regime Switching: A Viscosity Solution\n  Method'
+p1230
+sba(iArxivData
+Paper
+p1231
+(dp1232
+g4
+S'2014-04-17'
+p1233
+sg6
+S'  We report on recent work on adaptive timestep control for weakly instationary\ngas flows [16, 18, 17] carried out within SFB 401, TPA3. The method which we\nimplement and extend is a space-time splitting of adjoint error representations\nfor target functionals due to S\\"uli [19] and Hartmann [10]. In this paper, we\nfirst review the method for scalar, 1D, conservation laws. We design a test\nproblem for weakly instationary solutions and show numerical experiments which\nclearly show the possible benefits of the method. Then we extend the approach\nto the 2D Euler equations of gas dynamics. New ingredients are (i) a\nconservative formulation of the adjoint problem which makes its solution robust\nand efficient, (ii) the derivation of boundary conditions for this new\nformulation of the adjoint problem and (iii) the coupling of the adaptive\ntime-stepping with the multiscale spatial adaptation due to M \\"uller [12, 3],\nalso developed within SFB 401. The combined space-time adaptive method provides\nan efficient choice of timesteps for implicit computations of weakly\ninstationary flows. The timestep will be very large in regions of stationary\nflow, and becomes small when a perturbation enters the flow field. The\nefficiency of the Euler solver is investigated by means of an unsteady inviscid\n2D flow over a bump.\n'
+p1234
+sg8
+(lp1235
+S'Noelle, Sebastian'
+p1236
+aS'Steiner, Christina'
+p1237
+asg13
+S'oai:arXiv.org:1404.4503'
+p1238
+sg15
+S'Timestep control for weakly instationary flows'
+p1239
+sba(iArxivData
+Paper
+p1240
+(dp1241
+g4
+S'2014-03-30'
+p1242
+sg6
+S'  Proper heat transfer management is important to key electronic components in\nmicroelectronic applications. Pulsating heat pipes (PHP) can be an efficient\nsolution to such heat transfer problems. However, mathematical modelling of a\nPHP system is still very challenging, due to the complexity and multiphysics\nnature of the system. In this work, we present a simplified, two-phase heat\ntransfer model, and our analysis shows that it can make good predictions about\nstartup characteristics. Furthermore, by considering parameter estimation as a\nnonlinear constrained optimization problem, we have used the firefly algorithm\nto find parameter estimates efficiently. We have also demonstrated that it is\npossible to obtain good estimates of key parameters using very limited\nexperimental data.\n'
+p1243
+sg8
+(lp1244
+S'Yang, Xin-She'
+p1245
+aS'Karamanoglu, Mehmet'
+p1246
+aS'Luan, Tao'
+p1247
+aS'Koziel, Slawomir'
+p1248
+asg13
+S'oai:arXiv.org:1403.7797'
+p1249
+sg15
+S'Mathematical Modelling and Parameter Optimization of Pulsating Heat\n  Pipes'
+p1250
+sba(iArxivData
+Paper
+p1251
+(dp1252
+g4
+S'2014-04-14'
+p1253
+sg6
+S'  We establish sufficient conditions for nodal price response matrix in\nelectric power system to be symmetric and negative semi-definite. The results\nare applicable for electricity markets with nonlinear and intertemporal\nconstraints.\n'
+p1254
+sg8
+(lp1255
+S'Borokhov, Vadim'
+p1256
+asg13
+S'oai:arXiv.org:1404.3678'
+p1257
+sg15
+S'On the properties of nodal price response matrix in electricity markets'
+p1258
+sba(iArxivData
+Paper
+p1259
+(dp1260
+g4
+S'2014-03-31'
+p1261
+sg6
+S'  We consider the problem of computing satisfactory pairs of solutions of the\ndifferential equation for Legendre functions of non-negative integer order\n$\\mu$ and degree $-\\frac12+i\\tau$, where $\\tau$ is a non-negative real\nparameter. Solutions of this equation are the conical functions\n${\\rm{P}}^{\\mu}_{-\\frac12+i\\tau}(x)$ and ${Q}^{\\mu}_{-\\frac12+i\\tau}(x)$,\n$x>-1$. An algorithm for computing a numerically satisfactory pair of solutions\nis already available when $-1<x<1$ (see \\cite{gil:2009:con},\n\\cite{gil:2012:cpc}).In this paper, we present a stable computational scheme\nfor a real valued numerically satisfactory companion of the function\n${\\rm{P}}^{\\mu}_{-\\frac12+i\\tau}(x)$ for $x>1$, the function\n$\\Re\\left\\{e^{-i\\pi \\mu} {{Q}}^{\\mu}_{-\\frac{1}{2}+i\\tau}(x) \\right\\}$. The\nproposed algorithm allows the computation of the function on a large parameter\ndomain without requiring the use of extended precision arithmetic.\n'
+p1262
+sg8
+(lp1263
+S'Dunster, T. M.'
+p1264
+aS'Gil, A.'
+p1265
+aS'Segura, J.'
+p1266
+aS'Temme, N. M.'
+p1267
+asg13
+S'oai:arXiv.org:1403.7927'
+p1268
+sg15
+S'Computation of a numerically satisfactory pair of solutions of the\n  differential equation for conical functions of non-negative integer orders'
+p1269
+sba(iArxivData
+Paper
+p1270
+(dp1271
+g4
+S'2014-04-02'
+p1272
+sg6
+S'  We show that the zip stratification given by an arbitrary $\\Ghat$-zip over a\nscheme is pure. We deduce purity of the level-$m$-stratification for truncated\nBarsotti-Tate groups and purity of the Ekedahl-Oort stratification for special\nfibers of good models of Shimura varieties of Hodge type. We also show that all\nEkedahl-Oort strata are quasi-affine schemes and generalize several properties\nof the Bruhat stratification from the PEL case to the case of Shimura varieties\nof Hodge type.\n'
+p1273
+sg8
+(lp1274
+S'Wedhorn, Torsten'
+p1275
+aS'Yatsyshyn, Yaroslav'
+p1276
+asg13
+S'oai:arXiv.org:1404.0577'
+p1277
+sg15
+S'Purity of Zip Strata with Applications to Ekedahl-Oort Strata of Shimura\n  Varieties of Hodge Type'
+p1278
+sba(iArxivData
+Paper
+p1279
+(dp1280
+g4
+S'2014-04-08'
+p1281
+sg6
+S'  In this paper, we will present advanced discretization methods for solving\nretarded potential integral equations. We employ a $C^{\\infty}$-partition of\nunity method in time and a conventional boundary element method for the spatial\ndiscretization. One essential point for the algorithmic realization is the\ndevelopment of an efficient method for approximation the elements of the\narising system matrix. We present here an approach which is based on quadrature\nfor (non-analytic) $C^{\\infty}$ functions in combination with certain Chebyshev\nexpansions.\n  Furthermore we introduce an a posteriori error estimator for the time\ndiscretization which is employed also as an error indicator for adaptive\nrefinement. Numerical experiments show the fast convergence of the proposed\nquadrature method and the efficiency of the adaptive solution process.\n'
+p1282
+sg8
+(lp1283
+S'Sauter, Stefan'
+p1284
+aS'Veit, Alexander'
+p1285
+asg13
+S'oai:arXiv.org:1404.2322'
+p1286
+sg15
+S'Adaptive Time Discretization for Retarded Potentials'
+p1287
+sba(iArxivData
+Paper
+p1288
+(dp1289
+g4
+S'2014-04-02'
+p1290
+sg6
+S'  We consider partial and total reduction of a nonhomogeneous linear system of\noperator equations with the system matrix in the same particular form as in\npaper [N. Shayanfar, M. Hadizadeh 2013]. Here we present two different\nconcepts, one is concerned with partially reduced systems obtained by using the\nJordan and the rational form of the system matrix. The other one is dealing\nwith totally reduced systems obtained by finding the adjugate matrix of the\ncharacteristic matrix of the system matrix.\n'
+p1291
+sg8
+(lp1292
+S'Jovovic, Ivana'
+p1293
+aS'Malesevic, Branko'
+p1294
+asg13
+S'oai:arXiv.org:1404.0671'
+p1295
+sg15
+S'A Short Note on the Reduction Formulas for Some Systems of Linear\n  Operator Equations'
+p1296
+sba(iArxivData
+Paper
+p1297
+(dp1298
+g4
+S'2014-04-09'
+p1299
+sg6
+S'  It is known that evolution strategies in continuous domains might not\nconverge in the presence of noise. It is also known that, under mild\nassumptions, and using an increasing number of resamplings, one can mitigate\nthe effect of additive noise and recover convergence. We show new sufficient\nconditions for the convergence of an evolutionary algorithm with constant\nnumber of resamplings; in particular, we get fast rates (log-linear\nconvergence) provided that the variance decreases around the optimum slightly\nfaster than in the so-called multiplicative noise model. Keywords: Noisy\noptimization, evolutionary algorithm, theory.\n'
+p1300
+sg8
+(lp1301
+S'Cauwet, Marie-Liesse'
+p1302
+asg13
+S'oai:arXiv.org:1404.2553'
+p1303
+sg15
+S'Noisy Optimization: Convergence with a Fixed Number of Resamplings'
+p1304
+sba(iArxivData
+Paper
+p1305
+(dp1306
+g4
+S'2014-03-31'
+p1307
+sg6
+S'  We analyze the weighted star discrepancy of so-called $p$-sets which go back\nto definitions due to Korobov in the 1950s and Hua and Wang in the 1970s. Since\nthen, these sets have largely been ignored since a number of other\nconstructions have been discovered which achieve a better convergence rate.\nHowever, it has recently been discovered that the $p$-sets perform well in\nterms of the dependence on the dimension.\n  We prove bounds on the weighted star discrepancy of the $p$-sets which hold\nfor any choice of weights. For product weights we give conditions under which\nthe discrepancy bounds are independent of the dimension $s$. This implies\nstrong polynomial tractability for the weighted star discrepancy. We also show\nthat a very weak condition on the product weights suffices to achieve\npolynomial tractability.\n'
+p1308
+sg8
+(lp1309
+S'Dick, Josef'
+p1310
+aS'Pillichshammer, Friedrich'
+p1311
+asg13
+S'oai:arXiv.org:1404.0114'
+p1312
+sg15
+S"The weighted star discrepancy of Korobov's $p$-sets"
+p1313
+sba(iArxivData
+Paper
+p1314
+(dp1315
+g4
+S'2014-04-10'
+p1316
+sg6
+S'  We study the Rayleigh-Stokes problem for a generalized second-grade fluid\nwhich involves a Riemann-Liouville fractional derivative in time, and present\nan analysis of the problem in the continuous, space semidiscrete and fully\ndiscrete formulations. We establish the Sobolev regularity of the homogeneous\nproblem for both smooth and nonsmooth initial data $v$, including $v\\in\nL^2(\\Omega)$. A space semidiscrete Galerkin scheme using continuous piecewise\nlinear finite elements is developed, and optimal with respect to initial data\nregularity error estimates for the finite element approximations are derived.\nFurther, two fully discrete schemes based on the backward Euler method and\nsecond-order backward difference method and the related convolution quadrature\nare developed, and optimal error estimates are derived for the fully discrete\napproximations for both smooth and nonsmooth initial data. Numerical results\nfor one- and two-dimensional examples with smooth and nonsmooth initial data\nare presented to illustrate the efficiency of the method, and to verify the\nconvergence theory.\n'
+p1317
+sg8
+(lp1318
+S'Bazhlekova, Emilia'
+p1319
+aS'Jin, Bangti'
+p1320
+aS'Lazarov, Raytcho'
+p1321
+aS'Zhou, Zhi'
+p1322
+asg13
+S'oai:arXiv.org:1404.2953'
+p1323
+sg15
+S'An Analysis of the Rayleigh-Stokes problem for a Generalized\n  Second-Grade Fluid'
+p1324
+sba(iArxivData
+Paper
+p1325
+(dp1326
+g4
+S'2014-03-31'
+p1327
+sg6
+S'  We show that on the $d$-dimensional cube $I^d\\equiv [0,1]^d$ the discrete\nmoduli of smoothness which use only the values of the function on a diadic mesh\nare sufficient to determine the moduli of smoothness of that function. As an\nimportant special case our result implies for $f\\in C(I^d)$ and given integer\n$r$ that when $0<\\alpha<r$, the condition \\[ \\left|\\Delta^r_{2^{-n}\ne_i}f\\left(\\frac{k_1}{2^n},\\dots,\\frac{k_d}{2^n}\\right)\\right|\\le M2^{-n\\alpha}\n\\] for integers $1\\le i\\le d$, $0\\le k_i\\le 2^n-r$, $0\\le k_j\\le 2^n$ when\n$j\\ne i$, and $n=1,2,\\dots$ is equivalent to \\[ \\Bigl|\\Delta^r_{h\nu}f(x)\\Bigr|\\le M_1 h^\\alpha \\] for $x,u\\in\\mathbb{R}^d$, $h>0$ and $|u|=1$\nsuch that $x,x+rhu\\in I^d$.\n'
+p1328
+sg8
+(lp1329
+S'Ditzian, Z.'
+p1330
+aS'Prymak, A.'
+p1331
+asg13
+S'oai:arXiv.org:1404.0063'
+p1332
+sg15
+S'Discrete $d$-dimensional moduli of smoothness'
+p1333
+sba(iArxivData
+Paper
+p1334
+(dp1335
+g4
+S'2014-04-01'
+p1336
+sg6
+S'  Let $G$ be a finite group acting on the rational function field\n$\\mathbb{C}(x_g : g\\in G)$ by $\\mathbb{C}$-automorphisms $h(x_g)=x_{hg}$ for\nany $g,h\\in G$. Noether\'s problem asks whether the invariant field\n$\\mathbb{C}(G)=k(x_g : g\\in G)^G$ is rational (i.e. purely transcendental) over\n$\\mathbb{C}$. Saltman and Bogomolov, respectively, showed that for any prime\n$p$ there exist groups $G$ of order $p^9$ and of order $p^6$ such that\n$\\mathbb{C}(G)$ is not rational over $\\mathbb{C}$ by showing the non-vanishing\nof the unramified Brauer group: $Br_{nr}(\\mathbb{C}(G))\\neq 0$. For $p=2$, Chu,\nHu, Kang and Prokhorov proved that if $G$ is a 2-group of order $\\leq 32$, then\n$\\mathbb{C}(G)$ is rational over $\\mathbb{C}$. Chu, Hu, Kang and Kunyavskii\nshowed that if $G$ is of order 64, then $\\mathbb{C}(G)$ is rational over\n$\\mathbb{C}$ except for the groups $G$ belonging to the two isoclinism families\n$\\Phi_{13}$ and $\\Phi_{16}$. Bogomolov and B\\"ohning\'s theorem claims that if\n$G_1$ and $G_2$ belong to the same isoclinism family, then $\\mathbb{C}(G_1)$\nand $\\mathbb{C}(G_2)$ are stably $\\mathbb{C}$-isomorphic. We investigate the\nbirational classification of $\\mathbb{C}(G)$ for groups $G$ of order 128 with\n$Br_{nr}(\\mathbb{C}(G))\\neq 0$. Moravec showed that there exist exactly 220\ngroups $G$ of order 128 with $Br_{nr}(\\mathbb{C}(G))\\neq 0$ forming 11\nisoclinism families $\\Phi_j$. We show that if $G_1$ and $G_2$ belong to\n$\\Phi_{16}, \\Phi_{31}, \\Phi_{37}, \\Phi_{39}, \\Phi_{43}, \\Phi_{58}, \\Phi_{60}$\nor $\\Phi_{80}$ (resp. $\\Phi_{106}$ or $\\Phi_{114}$), then $\\mathbb{C}(G_1)$ and\n$\\mathbb{C}(G_2)$ are stably $\\mathbb{C}$-isomorphic with\n$Br_{nr}(\\mathbb{C}(G_i))\\simeq C_2$. Explicit structures of non-rational\nfields $\\mathbb{C}(G)$ are given for each cases including also the case\n$\\Phi_{30}$ with $Br_{nr}(\\mathbb{C}(G))\\simeq C_2\\times C_2$.\n'
+p1337
+sg8
+(lp1338
+S'Hoshi, Akinari'
+p1339
+asg13
+S'oai:arXiv.org:1404.0308'
+p1340
+sg15
+S'Birational classification of fields of invariants for groups of order\n  $128$'
+p1341
+sba(iArxivData
+Paper
+p1342
+(dp1343
+g4
+S'2014-04-16'
+p1344
+sg6
+S'  In this article, we consider mean field games between a dominating player and\na group of representative agents, each of which acts similarly and also\ninteracts with each other through a mean field term being substantially\ninfluenced by the dominating player. We first provide the general theory and\ndiscuss the necessary condition for the optimal controls and game condition by\nadopting adjoint equation approach. We then present a special case in the\ncontext of linear-quadratic framework, in which a necessary and sufficient\ncondition can be asserted by stochastic maximum principle; we finally establish\nthe sufficient condition that guarantees the unique existence of the\nequilibrium control. The proof of the convergence result of finite player game\nto mean field counterpart is provided in Appendix.\n'
+p1345
+sg8
+(lp1346
+S'Bensoussan, Alain'
+p1347
+aS'Chau, Michael'
+p1348
+aS'Yam, Phillip'
+p1349
+asg13
+S'oai:arXiv.org:1404.4148'
+p1350
+sg15
+S'Mean Field Games with a Dominating Player'
+p1351
+sba(iArxivData
+Paper
+p1352
+(dp1353
+g4
+S'2014-04-06'
+p1354
+sg6
+S'  Standard regularization methods that are used to compute solutions to\nill-posed inverse problems require knowledge of the forward model. In many\nreal-life applications, the forward model is not known, but training data is\nreadily available. In this paper, we develop a new framework that uses training\ndata, as a substitute for knowledge of the forward model, to compute an optimal\nlow-rank regularized inverse matrix directly, allowing for very fast\ncomputation of a regularized solution. We consider a statistical framework\nbased on Bayes and empirical Bayes risk minimization to analyze theoretical\nproperties of the problem. We propose an efficient rank update approach for\ncomputing an optimal low-rank regularized inverse matrix for various error\nmeasures. Numerical experiments demonstrate the benefits and potential\napplications of our approach to problems in signal and image processing.\n'
+p1355
+sg8
+(lp1356
+S'Chung, Julianne'
+p1357
+aS'Chung, Matthias'
+p1358
+asg13
+S'oai:arXiv.org:1404.1610'
+p1359
+sg15
+S'An Efficient Approach for Computing Optimal Low-Rank Regularized Inverse\n  Matrices'
+p1360
+sba(iArxivData
+Paper
+p1361
+(dp1362
+g4
+S'2014-03-29'
+p1363
+sg6
+S'  Recovering matrices from compressive and grossly corrupted observations is a\nfundamental problem in robust statistics, with rich applications in computer\nvision and machine learning. In theory, under certain conditions, this problem\ncan be solved in polynomial time via a natural convex relaxation, known as\nCompressive Principal Component Pursuit (CPCP). However, all existing provable\nalgorithms for CPCP suffer from superlinear per-iteration cost, which severely\nlimits their applicability to large scale problems. In this paper, we propose\nprovable, scalable and efficient methods to solve CPCP with (essentially)\nlinear per-iteration cost. Our method combines classical ideas from Frank-Wolfe\nand proximal methods. In each iteration, we mainly exploit Frank-Wolfe to\nupdate the low-rank component with rank-one SVD and exploit the proximal step\nfor the sparse term. Convergence results and implementation details are also\ndiscussed. We demonstrate the scalability of the proposed approach with\npromising numerical experiments on visual data.\n'
+p1364
+sg8
+(lp1365
+S'Mu, Cun'
+p1366
+aS'Zhang, Yuqian'
+p1367
+aS'Wright, John'
+p1368
+aS'Goldfarb, Donald'
+p1369
+asg13
+S'oai:arXiv.org:1403.7588'
+p1370
+sg15
+S'Scalable Robust Matrix Recovery: Frank-Wolfe Meets Proximal Methods'
+p1371
+sba(iArxivData
+Paper
+p1372
+(dp1373
+g4
+S'2014-04-09'
+p1374
+sg6
+S'  We consider a multi-agent system where, at every time instant, many users\nchoose to use one of multiple resources, whose performance depends on the\nnumber of concurrent users. In addition, a central agent has up-to-date\nknowledge of the congestion across all resources. What signals should the\ncentral agent broadcast to the individual users in order to reduce the total\ncongestion? We model users with varying levels of aversion to risk, and a\nheterogeneous population of users over these levels. We consider signaling\nschemes that communicate for each resource an interval of possible congestion\nvalues, instead of scalar values. We show how to optimise over these intervals\nwith respect to the social cost, under constraints that these intervals be\nconsistent with past observations. Moreover, under mild assumptions, the\nresulting distribution of users across resources converges.\n'
+p1375
+sg8
+(lp1376
+S'Marecek, Jakub'
+p1377
+aS'Shorten, Robert'
+p1378
+aS'Yu, Jia Yuan'
+p1379
+asg13
+S'oai:arXiv.org:1404.2458'
+p1380
+sg15
+S'Congestion Management by Interval Signaling'
+p1381
+sba(iArxivData
+Paper
+p1382
+(dp1383
+g4
+S'2014-03-30'
+p1384
+sg6
+S'  This paper provides a quantitative version of the recent result of Kn\\"upfer\nand Muratov ({\\it Commun. Pure Appl. Math.} {\\bf 66} (2013), 1129--1162)\nconcerning the solutions of an extension of the classical isoperimetric problem\nin which a non-local repulsive term involving Riesz potential is present. There\nit was shown that in two space dimensions the minimizer of the considered\nproblem is either a ball or does not exist, depending on whether or not the\nvolume constraint lies in an explicit interval around zero, provided that the\nRiesz kernel decays sufficiently slowly. Here we give an explicit estimate for\nthe exponents of the Riesz kernel for which the result holds.\n'
+p1385
+sg8
+(lp1386
+S'Muratov, Cyrill B.'
+p1387
+aS'Zaleski, Anthony'
+p1388
+asg13
+S'oai:arXiv.org:1403.7808'
+p1389
+sg15
+S'On an isoperimetric problem with a competing non-local term:\n  Quantitative results'
+p1390
+sba(iArxivData
+Paper
+p1391
+(dp1392
+g4
+S'2014-04-01'
+p1393
+sg6
+S"  We develop a theory of ``ad hoc'' Chern characters for twisted matrix\nfactorizations associated to a scheme $X$, a line bundle ${\\mathcal L}$, and a\nregular global section $W \\in \\Gamma(X, {\\mathcal L})$.\n  As an application, we establish the vanishing, in certain cases, of\n$h_c^R(M,N)$, the higher Herbrand difference, and, $\\eta_c^R(M,N)$, the higher\ncodimensional analogue of Hochster's theta pairing, where $R$ is a complete\nintersection of codimension $c$ with isolated singularities and $M$ and $N$ are\nfinitely generated $R$-modules. Specifically, we prove such vanishing if $R =\nQ/(f_1, \\dots, f_c)$ has only isolated singularities, $Q$ is a smooth\n$k$-algebra, $k$ is a field of characteristic $0$, the $f_i$'s form a regular\nsequence, and $c \\geq 2$.\n"
+p1394
+sg8
+(lp1395
+S'Walker, Mark E.'
+p1396
+asg13
+S'oai:arXiv.org:1404.0352'
+p1397
+sg15
+S'Chern Characters for Twisted Matrix Factorizations and the Vanishing of\n  the Higher Herbrand Difference'
+p1398
+sba(iArxivData
+Paper
+p1399
+(dp1400
+g4
+S'2014-04-15'
+p1401
+sg6
+S'  In this paper, we propose to apply the parametrized\nmaximum-principle-preserving (MPP) flux limiter in [Xiong et. al., JCP, 2013]\nto the discontinuous Galerkin (DG) method for solving the convection-diffusion\nequations. The feasibility of applying the MPP flux limiters to the DG solution\nof convection-diffusion problem is based on the fact that the cell averages for\nthe DG solutions are updated in a conservative fashion (by using flux\ndifference) even in the presence of diffusion terms. The main purpose of this\npaper is to address the difficulty of obtaining higher than second order\naccuracy while maintaining a discrete maximum principle for the DG method\nsolving convection diffusion equations. We found that the proposed MPP flux\nlimiter can be applied to arbitrarily high order DG method. Numerical evidence\nis presented to show that the proposed MPP flux limiter method does not\nadversely affect the desired high order accuracy, nor does it require\nrestrictive time steps. Numerical experiments including incompressible\nNavier-Stokes equations demonstrate the high order accuracy preserving, the MPP\nperformance, and the robustness of the proposed method.\n'
+p1402
+sg8
+(lp1403
+S'Xiong, Tao'
+p1404
+aS'Qiu, Jingmei'
+p1405
+aS'Xu, Zhengfu'
+p1406
+asg13
+S'oai:arXiv.org:1404.4060'
+p1407
+sg15
+S'High order maximum principle preserving discontinuous Galerkin method\n  for convection-diffusion equations'
+p1408
+sba(iArxivData
+Paper
+p1409
+(dp1410
+g4
+S'2014-04-08'
+p1411
+sg6
+S'  We establish the existence and characterization of a primal and a dual\nfacelift - discontinuity of the value function at the terminal time - for\nutility-maximization in incomplete semimartingale-driven financial markets.\nUnlike in the lower- and upper-hedging problems, and somewhat unexpectedly, a\nfacelift turns out to exist in utility-maximization despite strict convexity in\nthe objective function. In addition to discussing our results in their natural,\nMarkovian environment, we also use them to show that the dual optimizer cannot\nbe found in the set of countably-additive (martingale) measures in a wide\nvariety of situations.\n'
+p1412
+sg8
+(lp1413
+S'Larsen, Kasper'
+p1414
+aS'Soner, H. Mete'
+p1415
+aS'Zitkovic, Gordan'
+p1416
+asg13
+S'oai:arXiv.org:1404.2227'
+p1417
+sg15
+S'Facelifting in Utility Maximization'
+p1418
+sba(iArxivData
+Paper
+p1419
+(dp1420
+g4
+S'2014-04-02'
+p1421
+sg6
+S'  We construct two dimensional crystalline representation with infinite image\nof the arithmetic fundamental group of a $p$-adic curve via Higgs bundle.\n'
+p1422
+sg8
+(lp1423
+S'Lan, Guitang'
+p1424
+aS'Sheng, Mao'
+p1425
+aS'Yang, Yanhong'
+p1426
+aS'Zuo, Kang'
+p1427
+asg13
+S'oai:arXiv.org:1404.0538'
+p1428
+sg15
+S'Rank-2 systems of Hodge bundles and crystalline representations of\n  $\\pi_1$ of $p$-adic curves'
+p1429
+sba(iArxivData
+Paper
+p1430
+(dp1431
+g4
+S'2014-04-14'
+p1432
+sg6
+S'  We consider the initial/boundary value problem for the fractional diffusion\nand diffusion-wave equations involving a Caputo fractional derivative in time.\nWe develop two simple fully discrete schemes based on the Galerkin finite\nelement method and the implicit backward Euler method/second-order backward\ndifference method, and establish error estimates optimal with respect to the\nregularity of the initial data. These two schemes are first and second-order\naccurate in time for both smooth and nonsmooth initial data. Extensive\nnumerical experiments for one and two-dimension problems confirm the\nconvergence analysis. A detailed comparison with several existing time stepping\nschemes is also performed. The numerical results indicate that the proposed\nfully discrete schemes are accurate and robust for nonsmooth data, and\ncompetitive with existing schemes.\n'
+p1433
+sg8
+(lp1434
+S'Jin, Bangti'
+p1435
+aS'Lazarov, Raytcho'
+p1436
+aS'Zhou, Zhi'
+p1437
+asg13
+S'oai:arXiv.org:1404.3800'
+p1438
+sg15
+S'On Two Schemes for Fractional Diffusion and Diffusion-Wave Equations'
+p1439
+sba(iArxivData
+Paper
+p1440
+(dp1441
+g4
+S'2014-04-09'
+p1442
+sg6
+S'  We have observed an interesting, yet unexplained, phenomenon: Semidefinite\nprogramming (SDP) based relaxations of maximum likelihood estimators (MLE) tend\nto be tight in recovery problems with noisy data, even when MLE cannot exactly\nrecover the ground truth. Several results establish tightness of SDP based\nrelaxations in the regime where exact recovery from MLE is possible. However,\nto the best of our knowledge, their tightness is not understood beyond this\nregime. As an illustrative example, we focus on the generalized Procrustes\nproblem.\n'
+p1443
+sg8
+(lp1444
+S'Bandeira, Afonso S.'
+p1445
+aS'Khoo, Yuehaw'
+p1446
+aS'Singer, Amit'
+p1447
+asg13
+S'oai:arXiv.org:1404.2655'
+p1448
+sg15
+S'Open problem: Tightness of maximum likelihood semidefinite relaxations'
+p1449
+sba(iArxivData
+Paper
+p1450
+(dp1451
+g4
+S'2014-04-10'
+p1452
+sg6
+S'  In this paper, we propose energy-conserving Eulerian solvers for the\ntwo-species Vlasov-Amp\\`{e}re (VA) system and apply the methods to simulate\ncurrent-driven ion-acoustic instability. The algorithm is generalized from our\nprevious work for the single-species VA system and Vlasov-Maxwell (VM) system.\nThe main feature of the schemes is their ability to preserve the total particle\nnumber and total energy on the fully discrete level regardless of mesh size.\nThose are desired properties of numerical schemes especially for long time\nsimulations with under-resolved mesh. The conservation is realized by explicit\nand implicit energy-conserving temporal discretizations, and the discontinuous\nGalerkin (DG) spatial discretizations. We benchmarked our algorithms on a test\nexample to check the one-species limit, and the current-driven ion-acoustic\ninstability. To simulate the current-driven ion-acoustic instability, a slight\nmodification for the implicit method is necessary to fully decouple the split\nequations. This is achieved by a Gauss-Seidel type iteration technique.\nNumerical results verified the conservation and performance of our methods.\n'
+p1453
+sg8
+(lp1454
+S'Cheng, Yingda'
+p1455
+aS'Christlieb, Andrew J.'
+p1456
+aS'Zhong, Xinghui'
+p1457
+asg13
+S'oai:arXiv.org:1404.2880'
+p1458
+sg15
+S'Numerical Study of the Two-Species Vlasov-Amp\\`{e}re System:\n  Energy-Conserving Schemes and the Current-Driven Ion-Acoustic Instability'
+p1459
+sba(iArxivData
+Paper
+p1460
+(dp1461
+g4
+S'2014-04-07'
+p1462
+sg6
+S'  We study a growth maximization problem for a continuous time positive linear\nsystem with switches. This is motivated by a problem of mathematical biology\n(modeling growth-fragmentation processes and the PMCA protocol). We show that\nthe growth rate is determined by the non-linear eigenvalue of a max-plus\nanalogue of the Ruelle-Perron-Frobenius operator, or equivalently, by the\nergodic constant of a Hamilton-Jacobi (HJ) partial differential equation, the\nsolutions or subsolutions of which yield Barabanov and extremal norms,\nrespectively. We exploit contraction properties of order preserving flows, with\nrespect to Hilbert\'s projective metric, to show that the non-linear eigenvector\nof the operator, or the "weak KAM" solution of the HJ equation, does exist. Low\ndimensional examples are presented, showing that the optimal control can lead\nto a limit cycle.\n'
+p1463
+sg8
+(lp1464
+S'Calvez, Vincent'
+p1465
+aS'Gabriel, Pierre'
+p1466
+aVGaubert, Stéphane
+p1467
+asg13
+S'oai:arXiv.org:1404.1868'
+p1468
+sg15
+S'Non-linear eigenvalue problems arising from growth maximization of\n  positive linear dynamical systems'
+p1469
+sba(iArxivData
+Paper
+p1470
+(dp1471
+g4
+S'2014-04-01'
+p1472
+sg6
+S'  This paper presents an approach to externally influencing a team of robots by\nmeans of time-varying density functions. These density functions represent\nrough references for where the robots should be located. To this end, a\ncontinuous-time algorithm is proposed that moves the robots so as to provide\noptimal coverage given the density functions as they evolve over time. The\ndeveloped algorithm represents an extension to previous coverage algorithms in\nthat time-varying densities are explicitly taken into account in a provable\nmanner. A distributed approximation to this algorithm is moreover proposed\nwhereby the robots only need to access information from adjacent robots.\nSimulations and robotic experiments show that the proposed algorithms do indeed\nexhibit the desired behaviors in practice as well as in theory.\n'
+p1473
+sg8
+(lp1474
+S'Lee, Sung G.'
+p1475
+aS'Egerstedt, Magnus'
+p1476
+asg13
+S'oai:arXiv.org:1404.0338'
+p1477
+sg15
+S'Multi-Robot Control Using Time-Varying Density Functions'
+p1478
+sba(iArxivData
+Paper
+p1479
+(dp1480
+g4
+S'2014-04-01'
+p1481
+sg6
+S'  Let K be an algebraically closed, complete nonarchimedean field and let X be\na smooth K-curve. In this paper we elaborate on several aspects of the\nstructure of the Berkovich analytic space X^an. We define semistable vertex\nsets of X^an and their associated skeleta, which are essentially finite metric\ngraphs embedded in X^an. We prove a folklore theorem which states that\nsemistable vertex sets of X are in natural bijective correspondence with\nsemistable models of X, thus showing that our notion of skeleton coincides with\nthe standard definition of Berkovich. We use the skeletal theory to define a\ncanonical metric on H(X^an) := X^an - X(K), and we give a proof of Thuillier\'s\nnonarchimedean Poincar\\\'e-Lelong formula in this language using results of\nBosch and L\\"utkebohmert.\n'
+p1482
+sg8
+(lp1483
+S'Baker, Matthew'
+p1484
+aS'Payne, Sam'
+p1485
+aS'Rabinoff, Joseph'
+p1486
+asg13
+S'oai:arXiv.org:1404.0279'
+p1487
+sg15
+S'On the structure of nonarchimedean analytic curves'
+p1488
+sba(iArxivData
+Paper
+p1489
+(dp1490
+g4
+S'2014-04-10'
+p1491
+sg6
+S'  The Multiscale Finite Element Method (MsFEM) is developed in the vein of\nCrouzeix-Raviart element for solving viscous incompressible flows in genuine\nheterogeneous media. Such flows are relevant in many branches of engineering,\noften at multiple scales and at regions where analytical representations of the\nmicroscopic features of the flows are often unavailable. Full accounts to these\nproblems heavily depend on the geometry of the system under consideration and\nare computationally expensive. Therefore, a method capable of solving\nmultiscale features of the flow without confining itself to fine scale\ncalculations is sought after.\n  The approximation of boundary condition on coarse element edges when\ncomputing the multiscale basis functions critically influences the eventual\naccuracy of any MsFEM approaches. The weakly enforced continuity of Crouzeix -\nRaviart function space across element edges leads to a natural boundary\ncondition for the multiscale basis functions which relaxes the sensitivity of\nour method to complex patterns of obstacles exempt from the needs of\nimplementing any oversampling techniques. Additionally, the application of\npenalization method makes it possible to avoid complex unstructured domain and\nallows extensive use of simpler Cartesian meshes.\n'
+p1492
+sg8
+(lp1493
+S'Muljadi, Bagus Putra'
+p1494
+aS'Narski, Jacek'
+p1495
+aS'Lozinski, Alexei'
+p1496
+aS'Degond, Pierre'
+p1497
+asg13
+S'oai:arXiv.org:1404.2837'
+p1498
+sg15
+S'Non-Conforming Multiscale Finite Element Method for Stokes Flows in\n  Heterogeneous Media. Part I: Methodologies and Numerical Experiments'
+p1499
+sba(iArxivData
+Paper
+p1500
+(dp1501
+g4
+S'2014-04-10'
+p1502
+sg6
+S'  In a call center, staffing decisions must be made before the call arrival\nrate is known with certainty. Then, once the arrival rate becomes known, the\ncall center may be over-staffed, in which case staff are being paid to be idle,\nor under-staffed, in which case many callers hang-up in the face of long wait\ntimes. Firms that have chosen to keep their call center operations in-house can\nmitigate this problem by co-sourcing; that is, by sometimes outsourcing calls.\nThen, the required staffing $N$ depends on how the firm chooses which calls to\noutsource in real-time, after the arrival rate realizes and the call center\noperates as a $M/M/N+M$ queue with an outsourcing option. Our objective is to\nfind a joint policy for staffing and call outsourcing that minimizes the long\nrun average cost of this two-stage stochastic program when there is a linear\nstaffing cost per unit time and linear costs associated with abandonments and\noutsourcing.\n  We propose a policy that uses a square-root safety staffing rule, and\noutsources calls in accordance with a threshold rule that characterizes when\nthe system is "too crowded". Analytically, we establish that our proposed\npolicy is asymptotically optimal, as the mean arrival rate becomes large, when\nthe level of uncertainty in the arrival rate is of the same order as the\ninherent system fluctuations in the number of waiting customers for a known\narrival rate. Through an extensive numerical study, we establish that our\npolicy is extremely robust. In particular, our policy performs remarkably well\nover a wide range of parameters, and far beyond where it is proved to be\nasymptotically optimal.\n'
+p1503
+sg8
+(lp1504
+S'Kocaga, Yasar Levent'
+p1505
+aS'Armony, Mor'
+p1506
+aS'Ward, Amy R.'
+p1507
+asg13
+S'oai:arXiv.org:1404.2938'
+p1508
+sg15
+S'Staffing Call Centers with Uncertain Arrival Rates and Co-sourcing'
+p1509
+sba(iArxivData
+Paper
+p1510
+(dp1511
+g4
+S'2014-04-16'
+p1512
+sg6
+S'  In many physical contexts, evolution convection equations may present some\nvery large amplitude convective terms. As an example, in the context of\nmagnetic confinement fusion, the distribution function which describes the\nplasma satisfies the Vlasvov equation in which some terms are of the same order\nas epsilon << 1 being the characteristic gyrokinetic period of the particles\naround the magnetic lines. In this paper, we aim to present a model hierarchy\nfor modeling the distribution function for any value of $\\epsilon$ by using\nsome two-scale convergence tools. Following Fr\\\'enod & Sonnendr\\"ucker\'s recent\nwork, we choose the framework of a singularly perturbed convection equation\nwhere the convective terms admits a high amplitude part which periodically\noscillates in time with high frequency epsilon << 1. In this abstract\nframework, we derive an expansion with respect to the small parameter\n$\\epsilon$ and we recursively identify each term of this expansion. Finally, we\napply this new model hierarchy to the context of a linear Vlasov equation in\nthe presence of a high amplitude external magnetic field.\n'
+p1513
+sg8
+(lp1514
+S'Mouton, Alexandre'
+p1515
+asg13
+S'oai:arXiv.org:1404.4262'
+p1516
+sg15
+S'Expansion of a singularly perturbed equation with a two-scale converging\n  convection term'
+p1517
+sba(iArxivData
+Paper
+p1518
+(dp1519
+g4
+S'2014-04-01'
+p1520
+sg6
+S'  In this paper, we consider the approximate controllability of partial\ndifferential equations with time derivatives of non-integer order via boundary\ncontrol. We first show the unique existence of the solution under smooth\nboundary conditions using the eigenfunction expansion. Next we also study the\ndual system and apply their results to prove (i) the regularity of the solution\nwith non-smooth boundary conditions and (ii) approximate controllability.\n'
+p1521
+sg8
+(lp1522
+S'Fujishiro, Kenichi'
+p1523
+asg13
+S'oai:arXiv.org:1404.0207'
+p1524
+sg15
+S'Approximate controllability for fractional diffusion equations by\n  Dirichlet boundary control'
+p1525
+sba(iArxivData
+Paper
+p1526
+(dp1527
+g4
+S'2014-04-15'
+p1528
+sg6
+S'  We propose a new exact approach for solving integer linear programming (ILP)\nproblems which we will call projective splitting algorithms (PSAs). Unlike\nclassical methods for solving ILP problems, PSAs conduct the search for the\noptimal solution by generating candidate solutions tailored to specific values\nof the objective function. As a consequence of this strategy, the number of\nvariables in the original ILP problem is systematically reduced without adding\nany additional constraint to the initial formulation. This is the first of a\ntwo-part series on PSAs. In this paper we focus on the resolution of pure\ninteger linear programming (PILP) problems, leaving the treatment of mixed\ninteger linear programming (MILP) formulations to the second part of this\nseries. The proposed algorithm was tested against the IBM ILOG CPLEX [2]\noptimizer on instances of the 0-1 Multidimensional Knapsack Problem (0-1MKP),\nshowing satisfactory results on instances with a large number of variables.\n'
+p1529
+sg8
+(lp1530
+S'Rodes, Federico'
+p1531
+aS'Mendez-Diaz, Isabel'
+p1532
+aS'Zabala, Paula'
+p1533
+asg13
+S'oai:arXiv.org:1404.3965'
+p1534
+sg15
+S'Projective Splitting Algorithms for Integer Linear Programming Part 1:\n  Pure Integer Programs'
+p1535
+sba.
