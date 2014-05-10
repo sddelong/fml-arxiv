@@ -160,7 +160,7 @@ class MarginPerceptronClassifier():
         """ Calculate 2-norm of the weight vector """
         value = 0.
         for word in self.weights:
-            value += weights[word]**2
+            value += self.weights[word]**2
             
         value = np.sqrt(value)
 
@@ -174,13 +174,19 @@ class MarginPerceptronClassifier():
 
     def __repr__(self):
         
-        repstring = 'Perceptron Classifier, eta = %1.3f, rho = ' % (self.eta, self.rho)
+        repstring = 'Margin Perceptron Classifier, eta = %1.3f, rho = %1.3f' % (self.eta, self.rho)
         
         return repstring
 
 
     __str__ = __repr__
 
+def MakeMarginPerceptronClassifier(parameters):
+    """ parameters are learning rate and margin, rho """
+
+    margin_pclassifier = MarginPerceptronClassifier(parameters[0],parameters[1])
+
+    return margin_pclassifier
 
 class WinnowClassifier():
     
