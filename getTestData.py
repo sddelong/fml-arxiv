@@ -55,4 +55,3 @@ if __name__ == '__main__':
     with open(name + 'CustomTestData.pkl','wb') as file:
         dump(unique_paper_list,file)
 
-
