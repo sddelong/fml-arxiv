@@ -418,14 +418,18 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
 
     # create list of papers
 
-    print "number of papers returned by data: ", len(root.findall('.//{http://www.openarchives.org/OAI/2.0/}record'))
+    print len(root.findall('.//{http://www.openarchives.org/OAI/2.0/}record')), 'papers harvested.'
+    if len(root.findall('.//{http://www.openarchives.org/OAI/2.0/}record')) == 1000:
+        print 'Choose smaller date range to receive newer papers.'
+
+    start = time.clock()
     for entry in root.findall('.//{http://www.openarchives.org/OAI/2.0/}record'): #, namespaces=ns):
         this_paper = Paper(entry, 'OAI')
 
         if IsPaperInSubcategories(entry, subcategory_list, ns):
             # check that the paper was published today, not just updated.
             if day and until:
-                if (datetime.strptime(day, '%Y-%m-%d')
+                if (datetime.fromordinal(datetime.strptime(day, '%Y-%m-%d').toordinal()-5)
                     <= datetime.strptime(this_paper.published, '%Y-%m-%d')
                     <= datetime.strptime(until, '%Y-%m-%d')):
                     paper_list.append(this_paper)
