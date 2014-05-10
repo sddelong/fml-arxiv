@@ -124,6 +124,24 @@ class ClassifierTester:
                 print print_str
                 print_str = ""
             print "-"*60
+
+
+            print "        Precision Grid         "
+            print "-"*60
+            print_str = "       | "
+            for p in self.gridsearch_parameters[0]:
+                print_str += str(p) + "    | "
+            print print_str
+            print_str = ""
+            print "-"*50
+            for p2 in self.gridsearch_parameters[1]:
+                print_str +=  "%1.3f" % p2 +  "  || "
+                for p1 in self.gridsearch_parameters[0]:
+                    print_str += "%1.4f" % (self.precision_grid[self._ParamsToString([p1,p2])]) + " | "
+                print print_str
+                print_str = ""
+            print "-"*60
+
                 
             return
 
