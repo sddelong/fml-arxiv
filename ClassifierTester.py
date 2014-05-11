@@ -68,7 +68,6 @@ class ClassifierTester:
 
     def ReportGrid(self):
         
-
         if self.n_params == 1:
             classifier = self.classifier_creator([0.0])
             print classifier.name
@@ -137,6 +136,12 @@ class ClassifierTester:
 
                 
             return
+
+
+    def ReportBest(self):
+        """ Report best classifier """
+    
+    
 
     def _ParamsToString(self,params):
         """ helper function to turn params into a 

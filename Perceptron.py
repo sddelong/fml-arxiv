@@ -159,7 +159,7 @@ def MakeGaussianKernelPerceptronClassifier(parameters):
     
     kclassifier = KernelPerceptronClassifier(parameters[0],g_kernel)
 
-    return klassifier
+    return kclassifier
     
     
     

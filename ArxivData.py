@@ -88,22 +88,6 @@ class TextFeatureVector:
                 weights[word] = C*eta*y*self.words[word]/self.total_words
                 
         return weights
-    
-
-    def __sub__(self,other):
-        """ Subtraction operator """
-        
-        new = TextFeatureVector()x
-        for word in self.words:
-            if word in other.words:
-                new.words[word] = self.words[word] - 
-                
-        
-    def Norm(self):
-        """ calculate norm of a data TextData object """
-        value = 0
-        for word in self.words:
-            value += 
 
     def Distance2(self,y):
         """ Calculate distance squared from self to y. 
@@ -117,7 +101,7 @@ class TextFeatureVector:
 
         for word in y.words:
             if word not in self.words:
-                distance += (y.words/y.total_words)**2
+                distance += (y.words[word]/y.total_words)**2
 
         return distance
                 

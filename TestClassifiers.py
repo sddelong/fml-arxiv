@@ -11,6 +11,8 @@ from Perceptron import PerceptronClassifier
 from Perceptron import MakePerceptronClassifier
 from Perceptron import MarginPerceptronClassifier
 from Perceptron import MakeMarginPerceptronClassifier
+from Perceptron import MakeGaussianKernelPerceptronClassifier
+from Perceptron import KernelPerceptronClassifier
 from ClassifierTester import ClassifierTester
 
 
@@ -32,15 +34,16 @@ if __name__ == "__main__":
     etas = [1.0]
     rhos = [2**(-7),2**(-6),2**(-5),2**(-4),2**(-3),2**(-2)]
     Cs = [2**(-6),2**(-5),2**(-4),2**(-3),2**(-2), 2**(-1), 1.0, 2.0, 4.0, 8.0, 16.0, 32.0]
-    classifier_list = [MakePerceptronClassifier, MakeMarginPerceptronClassifier,MakeOnlineSVMClassifier]
-    parameters_list = [etas, [etas,rhos], [etas,Cs]]
+    sigmas = [0.005, 0.01, 0.02, 0.04, 0.1, 0.5, 1.0]
+    classifier_list = [MakePerceptronClassifier, MakeMarginPerceptronClassifier,MakeOnlineSVMClassifier,MakeGaussianKernelPerceptronClassifier]
+    parameters_list = [etas, [etas,rhos], [etas,Cs], [etas,sigmas]]
     nparams_list = [1, 2, 2, 2]
                       
     
 #go through all classifiers to test
     for cln in range(len(classifier_list)):
         
-        for p in [1.0, 0.1, 'adaptive']:
+        for p in [1.0, 0.1]:
             print "P value is: ", p
         #go through labeled data a few times, 
             for name in names:
