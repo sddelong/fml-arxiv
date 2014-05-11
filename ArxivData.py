@@ -68,7 +68,6 @@ class TextFeatureVector:
 
     def UpdateWeights(self,weights,y,eta):
         """ update weights according to the rule weigts = weights + eta*x*y """
-        
         for word in iter(self.words):
             if word in weights:
                 weights[word] = weights[word] + eta*y*self.words[word]/self.total_words
@@ -89,8 +88,39 @@ class TextFeatureVector:
                 weights[word] = C*eta*y*self.words[word]/self.total_words
                 
         return weights
+    
 
+    def __sub__(self,other):
+        """ Subtraction operator """
+        
+        new = TextFeatureVector()x
+        for word in self.words:
+            if word in other.words:
+                new.words[word] = self.words[word] - 
+                
+        
+    def Norm(self):
+        """ calculate norm of a data TextData object """
+        value = 0
+        for word in self.words:
+            value += 
 
+    def Distance2(self,y):
+        """ Calculate distance squared from self to y. 
+            Used for Gaussian Kernel """
+        distance = 0.
+        for word in self.words:
+            if word in y.words:
+                distance += (self.words[word]/self.total_words - y.words[word]/y.total_words)**2
+            else:
+                distance += (self.words[word]/self.total_words)**2
+
+        for word in y.words:
+            if word not in self.words:
+                distance += (y.words/y.total_words)**2
+
+        return distance
+                
     def __str__(self):
         
         string_rep = "{ "
