@@ -160,9 +160,35 @@ def MakeGaussianKernelPerceptronClassifier(parameters):
     kclassifier = KernelPerceptronClassifier(parameters[0],g_kernel)
 
     return kclassifier
+
+
+def MakePolynomialKernel(c,d):
+    """ create a function which is a 
+    Polynomial Kernel 
+    """
     
+    def PolynomialKernel(x,y):
+        
+        return (x*y + c)**d
     
+    return PolynomialKernel
+                      
+
+def MakePolynomialKernelPerceptronClassifier(parameters):
+    """ wrapper to make Polynomial Kernel Perceptron from a list of 
+    parameters:
+        parameters[0] = c, constant offset
+        parameters[1] = d, degree of polynomial kernel
+        
+        learning rate, eta, is set to a constant 1.0
+    """
+
+    p_kernel = MakePolynomialKernel(parameters[0],parameters[1])
     
+    kclassifier = KernelPerceptronClassifier(1.0,p_kernel)
+
+    return kclassifier
+
 
 class MarginPerceptronClassifier():
     "Margin perceptron for online learning """

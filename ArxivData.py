@@ -2,11 +2,9 @@
     document preferences.  """
 
 import urllib
-import re #for removing namespaces, featurizing abstracts
+import re
 import sys
 from xml.etree import ElementTree as ET
-#from sklearn.feature_extraction.text import TfidfVectorizer
-#import time
 from datetime import datetime
 import cPickle
 import ArxivSubjects as arxs
