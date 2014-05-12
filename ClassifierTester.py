@@ -21,6 +21,7 @@ class ClassifierTester:
 
         self.recall_grid = dict()
         self.precision_grid = dict()
+        self.neg_update_grid = dict()
 
         
     def Test(self,data,labels):
@@ -42,7 +43,6 @@ class ClassifierTester:
             n_recall_wrong = 0
             total_negative_checks = 0
             for i in range(len(data)):
-            
                 x = data[i]
                 y_hat = classifier.Predict(x)
                 y = labels[i]
@@ -81,8 +81,11 @@ class ClassifierTester:
                             total_negative_checks += 1
                             classifier.Update(x,y_hat,y)
 
-                    
-#            print "Total Negative Checks: ", total_negative_checks
+
+
+                            
+            self.neg_update_grid[self._ParamsToString(params)] = total_negative_checks
+            
             if n_pos_right != 0:
                 self.recall_grid[self._ParamsToString(params)] = float(n_pos_right)/float(n_pos_right + n_recall_wrong)
                 self.precision_grid[self._ParamsToString(params)] = float(n_pos_right)/float(n_pos_right + n_precision_wrong)
@@ -90,9 +93,6 @@ class ClassifierTester:
                 self.recall_grid[self._ParamsToString(params)] = 0.0
                 self.precision_grid[self._ParamsToString(params)] = 0.0
                 
-#            if self.classifier_name == "Perceptron":
-#                classifier.ReportHighestWeights()
-
     def ReportGrid(self):
         
         if self.n_params == 1:
@@ -175,6 +175,8 @@ class ClassifierTester:
               best_param - the parameter set that gave the best recall
               max_recall - the value of the recall of this classifier with
                            the best parameters
+             best_neg_updates - number of times algorithm asked for a label on
+                                a negative prediction.
         """
 
         #setup parameters for gridsearch
@@ -186,14 +188,16 @@ class ClassifierTester:
         
         max_recall = 0.
         best_param = None
+        best_neg_updates = 0
         #go through all parameters tested by this object, and return
         # the parameters that gave the best recall
         for param in parameters_list:
             if self.recall_grid[self._ParamsToString(param)] > max_recall:
                 max_recall = self.recall_grid[self._ParamsToString(param)]
                 best_param = param
+                best_neg_updates = self.neg_update_grid[self._ParamsToString(param)]
 
-        return best_param, max_recall
+        return best_param, max_recall, best_neg_updates
 
 
     def ReportBestPrecision(self):
@@ -206,6 +210,8 @@ class ClassifierTester:
               best_param - the parameter set that gave the best precision
               max_precision - the value of the precision of this classifier with
                            the best parameters
+             best_neg_updates - number of times algorithm asked for a label on
+                                a negative prediction.
         """
 
         #setup parameters for gridsearch
@@ -217,14 +223,16 @@ class ClassifierTester:
         
         max_precision = 0.
         best_param = None
+        best_neg_updates = 0
         #go through all parameters tested by this object, and return
         # the parameters that gave the best recall
         for param in parameters_list:
             if self.precision_grid[self._ParamsToString(param)] > max_precision:
                 max_precision = self.precision_grid[self._ParamsToString(param)]
                 best_param = param
+                best_neg_updates = self.neg_update_grid[self._ParamsToString(param)]
 
-        return best_param, max_precision
+        return best_param, max_precision, best_neg_updates
 
     def _ParamsToString(self,params):
         """ helper function to turn params into a 
