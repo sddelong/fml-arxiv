@@ -2,11 +2,9 @@
     document preferences.  """
 
 import urllib
-import re #for removing namespaces, featurizing abstracts
+import re
 import sys
 from xml.etree import ElementTree as ET
-#from sklearn.feature_extraction.text import TfidfVectorizer
-#import time
 from datetime import datetime
 import cPickle
 import ArxivSubjects as arxs
@@ -68,7 +66,6 @@ class TextFeatureVector:
 
     def UpdateWeights(self,weights,y,eta):
         """ update weights according to the rule weigts = weights + eta*x*y """
-        
         for word in iter(self.words):
             if word in weights:
                 weights[word] = weights[word] + eta*y*self.words[word]/self.total_words
@@ -90,7 +87,22 @@ class TextFeatureVector:
                 
         return weights
 
+    def Distance2(self,y):
+        """ Calculate distance squared from self to y. 
+            Used for Gaussian Kernel """
+        distance = 0.
+        for word in self.words:
+            if word in y.words:
+                distance += (self.words[word]/self.total_words - y.words[word]/y.total_words)**2
+            else:
+                distance += (self.words[word]/self.total_words)**2
 
+        for word in y.words:
+            if word not in self.words:
+                distance += (y.words[word]/y.total_words)**2
+
+        return distance
+                
     def __str__(self):
         
         string_rep = "{ "

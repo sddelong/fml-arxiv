@@ -24,6 +24,7 @@ class OnlineSVMClassifier:
         self.weights = dict()
         self.eta = eta
         self.C = C
+        self.name = "Online SVM"
 
         
     def Update(self,x,y_hat,y):

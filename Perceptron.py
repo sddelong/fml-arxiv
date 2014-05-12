@@ -24,6 +24,7 @@ class PerceptronClassifier:
         self.weights = dict()
         self.n_correct = 0
         self.n_wrong = 0
+        self.name = "Perceptron Classifier"
         
     def Update(self,x,y_hat,y):
         """ given that the Perceptron has guessed y_hat for data x, update it 
@@ -89,6 +90,7 @@ class KernelPerceptronClassifier():
         self.kernel = kernel
         self.n_correct = 0
         self.n_wrong = 0
+        self.name = "Kernel Perceptron Clasifier"
         
         
     def Update(self,x,y_hat,y):
@@ -133,6 +135,61 @@ def DotKernel(x,y):
     #multiplication of TextFeatureVectors gives a dot product.
     return x*y
 
+
+def MakeGaussianKernel(sigma):
+    """ create a function which is a 
+    Gaussian Kernel exp(-||x - x'||^2/(2 sigma^2))
+    """
+    
+    def GaussianKernel(x,y):
+        
+        return np.exp(x.Distance2(y)/(2.*sigma))
+    
+    return GaussianKernel
+                      
+
+def MakeGaussianKernelPerceptronClassifier(parameters):
+    """ wrapper to make Gaussian Kernel Perceptron from a list of 
+    parameters:
+        parameters[0] = learning rate
+        parameters[1] = sigma, variance of kernel
+    """
+
+    g_kernel = MakeGaussianKernel(parameters[1])
+    
+    kclassifier = KernelPerceptronClassifier(parameters[0],g_kernel)
+
+    return kclassifier
+
+
+def MakePolynomialKernel(c,d):
+    """ create a function which is a 
+    Polynomial Kernel 
+    """
+    
+    def PolynomialKernel(x,y):
+        
+        return (x*y + c)**d
+    
+    return PolynomialKernel
+                      
+
+def MakePolynomialKernelPerceptronClassifier(parameters):
+    """ wrapper to make Polynomial Kernel Perceptron from a list of 
+    parameters:
+        parameters[0] = c, constant offset
+        parameters[1] = d, degree of polynomial kernel
+        
+        learning rate, eta, is set to a constant 1.0
+    """
+
+    p_kernel = MakePolynomialKernel(parameters[0],parameters[1])
+    
+    kclassifier = KernelPerceptronClassifier(1.0,p_kernel)
+
+    return kclassifier
+
+
 class MarginPerceptronClassifier():
     "Margin perceptron for online learning """
     
@@ -143,6 +200,7 @@ class MarginPerceptronClassifier():
         self.eta = eta
         self.rho = rho
         self.weights = dict()
+        self.name = "Margin Perceptron Classifer"
 
     def Update(self,x,y_hat,y):
         """ Update classifier based on incorrect decision """
@@ -209,6 +267,7 @@ class WinnowClassifier():
         self.weights = np.ones(n)/n
         self.n_correct = 0
         self.n_wrong = 0
+        self.name = "Winnow Classifer"
         
         
     def Update(self,x,y_hat,y):
