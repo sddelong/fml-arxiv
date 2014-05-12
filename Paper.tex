@@ -1,0 +1,127 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb}
+\pagestyle{myheadings}
+\markright{Joseph McDonald}
+
+\textwidth=7in
+\textheight= 9in
+
+\topmargin=-0.5in
+\oddsidemargin=-0.25in
+
+\newcommand{\xbar}{\bar{x}}
+\newcommand{\V}[1]{\boldsymbol{#1}}
+\newcommand{\E}[0]{\mathbb{E}}
+
+\begin{document}
+\title{Online Learning Your arXiv Preferences}
+\author{Steve Delong and Joey McDonald}
+\maketitle
+\begin{abstract}
+Our goal was to construct a tool that feeds a user a selection of abstracts of papers from the online database, arXiv.org, recieves a label indicating whether the user is interested in that article or not, and progressively learns the users preferences through an online learning algorithm. It uses this information to present articles that it believes the user will like. We created and tested this using a few sample users' preferences including each of ours. Beyond constructing the tool we found some theoretical justification for bounding the number of updates in expectation while only presenting a fraction of samples that are predicted to be uninteresting.
+\end{abstract}
+
+\section{Introduction}
+
+The online database arXiv receives several thousand new submissions a month, and sifting through those articles even in just a single subfield to find one of particular interest can be a daunting task. Since arXiv conveniently stores metadata of its submissions in a fairly accessible XML format, a program that compiles and uses this metadata to find papers matching particular research interests could be a great tool for the scientists intending to peruse new research. Essentially this would serve as a ``Pandora," the music recommendation engine, for math, physics, and computer science papers, and it would work by learning the preferences of the user.
+
+The metadata for each article includes an abstract, which should contain enough information to determine the relevance of the article. We decided that performing text classification using the words in the abstracts would give us the feature data needed to create a learning algorithm that would present interesting papers to the user and filter out those that fall outside the user's research interest. Furthermore it seemed most useful that the tool employ online learning, receiving a paper, extracting feature data and obtaining labels from the user, and updating the hypothesis one article at a time, so that the tool can present abstracts while getting progressively more accurate.
+
+One of the important aspects of the algorithm is that it present some articles predicted to be uninteresting. Otherwise there is risk in mislabeling and potentially discarding many articles that are interesting to the user. Nevertheless the goal is to have an active filter on the articles lest the whole purpose of the program be defeated. Since there must be a balance between presenting only interesting articles and having a full understanding of the user's interests, we must choose what fraction of uninteresting articles are presented. In the following section we present a bound on the number of updates made by the Perceptron algorithm we employ, justifying why the algorithm may work towards an accurate hypothesis while receiving labels for only a fraction of the samples labeled uninteresting.
+
+In Section 3, we describe the main components of the program in the python modules we created, and give a description on how to use the tool. We present our results in Section 4, followed by other observations and concluding remarks.
+
+%it is important that not all papers that are predicted uninteresting be discarded by the engine. Without the true there is risk in 
+
+
+\section{Some Theory: Bounding Updates}
+
+The main engine behind the tool is a modified Perceptron algorithm which employs an accept-reject method among the papers it labels uninteresting. The following pseudocode details the algorithm, where $x_t$ denotes feature data, $y_t$ denotes labels, $\widehat{y}_t$ are predictions, $w_t$ are hypotheses, and $k_t$ are i.i.d. random variables used for the accept-reject method. $k_t = 1$ with probability $p$ and $k_t = 0$ with probability $1-p$.\\
+
+
+\noindent Modified Perceptron algorithm:
+\begin{quotation}
+%\noindent Modified Perceptron:\\
+\noindent $w_1=0$\\
+{\tt for $t=1$ to $T$}:\\
+\indent receive($x_t$)\\
+\indent $\widehat{y}_t=\mbox{sign}(w_t\cdot x_t)$\\
+\indent {\tt if} $\widehat{y}_t =1$ {\tt or} ($\widehat{y}_t =0$ {\tt and} $k_t = 1$):\\
+\indent\indent receive($y_t$)\\
+\indent\indent {\tt if $y_t\neq\widehat{y}_t$}:\\
+\indent\indent\indent $w_{t+1} = w_t + y_t x_t$\\
+\indent\indent {\tt else $w_{t+1} = w_t$}\\
+\indent {\tt else if $\widehat{y}_t = 0$ and $k_t=0$}:\\
+\indent\indent $w_{t+1} = w_t$\\
+{\tt return $w_{T+1}$}
+
+\end{quotation}
+
+As mentioned, if the algorithm only made updates when $\widehat{y}=1$ (i.e. interesting) then this would leave the number of mistakes made when $\widehat{y} = 0$ unchecked (and, hence, several lost interesting articles). As a compromise, we generate the i.i.d. variables $k_i$ for each observation when $\widehat{y} = 0$. Note that if $\hat{y} = 0$ and $k=1$, the algorithm will ask for the correct label and make an update, otherwise if $\hat{y} = 0$ and $k=0$, the algorithm does not ask for the correct label, and makes no update.
+
+
+
+
+Let $I_1$ be the set of $t$ where a mistake was made and
+$\hat{y}=1$.  Let $I_2$ be the set where a mistake was made and
+$\hat{y} = 0, k = 1$, and let $I_3$ be the set where a mistake was
+made, $\hat{y} = 0$ and $k = 0$. Finally, let $M_i = |I_i|$ for $i =
+1,2,3$. We then can bound $M_1 + M_2$ in the same way that we bound
+$M$ in the usual perceptron case.  We assume that there exits a $\rho$
+and $R$ satisfying the assumptions of Theorem 7.8 from our text, and a separating hyperplane determined by the vector $v$. Let $M' = M_1 + M_2$, then
+\begin{align*}
+M' =&\ \frac{\V{v}}{\|\V{v}\|}\sum_{I_1 \cup I_2} y_t\V{x}_t \
+ \leq   \left\|\sum_{t \in I_1 \cup I_2} y_t \V{x}_t\right\| \\
+=& \ \left\|\sum_{t \in I_1 \cup I_2} (\V{w}_{t+1} - \V{w}_t) \right\| 
+= \ \|\V{w}_{T+1} \| \\
+=&\ \sqrt{\sum_{t \in I_1 \cup I_2} \|  \V{w}_{t+1}\|^2 - \|\V{w}_t\|^2 }\\
+= &\ \sqrt{\sum_{t \in I_1 \cup I_2} \|  \V{w}_{t} + y_t\V{x}_t\|^2 -
+  \|\V{w}_t\|^2 }\\
+= &\ \sqrt{\sum_{t \in I_1 \cup I_2} 2y_t\V{w}_t\cdot \V{x}_t -
+  \|\V{x}_t\|^2} \\
+\leq &\ \sqrt{\sum_{t \in I_1 \cup I_2} \|\V{x}_t\|^2} \leq
+\sqrt{M'r^2} \end{align*}
+This implies that $M' \leq \frac{r^2}{\rho^2}$.
+We then have that $M = M' + M_3$, so we would like a bound on $M_3$.
+Here we revert to a weaker bound, considering the expectation of
+$M_3$. Since 
+\[M_3 = \sum_{i=1}^m 1_{\left\{\hat{y}_i = 0 \cap y_i = 1\right\}}1_{k_i = 0}, \]
+we get that
+\begin{align*}
+\E[M_3] = & \sum_{i=1}^m \E[1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}]\E[1_{k = 0}] \\
+ = &\ (1 - p)\sum_{i=1}^m \E[1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}],
+\end{align*}
+where the last equality used the fact that $k_i$ is independent of the data.  Now we want to control the sum of expectations in this expression, and to do this we consider the expectation of $M_2$.
+\begin{align*}
+M_2 = & \sum_{i=1}^m 1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}1_{k_i = 1} \\
+\E[M_2] = & \sum_{i=1}^m \E[1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}]\E[1_{k = 1}] \\
+= & p\sum_{i=1}^m \E[1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}]\\
+\Rightarrow E[M_3] = & \frac{1-p}{p}\E[M_2]
+\end{align*}
+We may then apply the crude bound $\E[M_3] \leq  \frac{1-p}{p}
+M'$, since $M_2 \leq M'$. We then bound the expected number of mistakes with
+\begin{align*}
+\E[M]  =  &\ \E[M'] + \E[M_3] \\
+\leq & \ \frac{r^2}{\rho^2} + \frac{1-p}{p}\frac{r^2}{\rho^2} \\
+\leq  & \ \frac{1}{p}\frac{r^2}{\rho^2} \\
+\end{align*}
+Note that this is a weak bound.  Not only is it greater than the
+original perceptron bound by a factor of $\frac{1}{p}$, it is also only a
+bound in expectation.
+
+
+
+\end{document}
+
+%GIVE THE ALGORITHM THEN PRESENT THE BOUND
+
+
+
+
+%Recommendation engines have become an important feature of many services on the internet, and 
+
+% We envisioned that eventually after receiving enough data the tool can tailor the articles it presents to the preferences of the user and offer mostly articles that are ``interesting." The tool would sometimes offer articles it predicts that are uninteresting in order to get a full 
+
+
+
+\end{document}
