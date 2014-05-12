@@ -141,7 +141,6 @@ class ClassifierTester:
     def ReportBest(self):
         """ Report best classifier """
     
-    
 
     def _ParamsToString(self,params):
         """ helper function to turn params into a 
