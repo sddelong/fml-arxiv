@@ -539,17 +539,27 @@ def FeaturizeAbstracts(abstracts):
         abstract_vectors  -  list of TextFeatureVectors, one for each abstract.
 
     """
-    stop_words = ["is","it","that","the","a","an","of","in","this","and"]
+    stop_words = ["is","it","that","the","a","an","of","in","this","and","if","by","are","when","not","with","at","on","also","to"]
 
     feature_list = []
     #initialize feature vector
     for abstract in abstracts:
         text_features = TextFeatureVector()
-    
-        bag_of_words = re.findall(r"[\w']+",abstract)
-        for word in bag_of_words:
-            word = word.lower()
+        abstract_cleaned = re.sub(r'\$\$[^$]*\$\$','',abstract)
+        abstract_cleaned = re.sub(r'\$[^$]*\$','',abstract_cleaned)
+        
+#        abstract_cleaned = re.sub(r'\\begin{align[^\(\end\)]*\\end{align\*?}','',abstract_cleaned)
+        abstract_cleaned = re.sub(r'\$[^$]*\$','',abstract_cleaned)
+        
+        bag_of_words = re.findall(r"[\w']+",abstract_cleaned)
+        for k in range(len(bag_of_words)):
+            word = bag_of_words[k].lower()
             if word not in stop_words:
+ #               if word == "t":
+ #                   print "T CAME FROM"
+ #                   print abstract_cleaned
+                    
+
                 text_features.AddWord(word)
 
         feature_list.append(text_features)

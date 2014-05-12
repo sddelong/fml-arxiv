@@ -59,6 +59,21 @@ class PerceptronClassifier:
     
     __str__ = __repr__
 
+    def ReportHighestWeights(self):
+        #HACK: report the words with the largest absolute weights
+        
+        words_and_weights = [(self.weights[word],word) for word in self.weights]
+            
+        sort_wandw = sorted(words_and_weights, reverse=True)
+        print "10 Most Positive words:"
+        for k in range(10):
+            print sort_wandw[k][1], sort_wandw[k][0]
+        print "10 Most Negative words:"
+        for k in range(10):
+            print sort_wandw[-k][1], sort_wandw[-k][0]
+            
+            
+
 
 #wrapper functions to set up classifiers for testing
 def MakePerceptronClassifier(parameters):

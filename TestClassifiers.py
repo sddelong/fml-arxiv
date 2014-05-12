@@ -1,8 +1,9 @@
-from ArxivData import FeaturizeAbstracts
-from ArxivData import GetAbstracts
 import random
 import numpy as np
 import cPickle
+from matplotlib import pyplot
+from ArxivData import FeaturizeAbstracts
+from ArxivData import GetAbstracts
 from ArxivData import Paper
 from ArxivData import PromptUser
 from OnlineSVM import OnlineSVMClassifier
@@ -32,6 +33,7 @@ if __name__ == "__main__":
     abstracts = GetAbstracts(paper_list)
     abstract_vectors = FeaturizeAbstracts(abstracts)
     
+    #set up lists of parameters and classifiers for grid searches
     etas = [1.0]
     rhos = [2**(-7),2**(-6),2**(-5),2**(-4),2**(-3),2**(-2)]
     Cs = [2**(-6),2**(-5),2**(-4),2**(-3),2**(-2), 2**(-1), 1.0, 2.0, 4.0, 8.0, 16.0, 32.0]
@@ -39,19 +41,22 @@ if __name__ == "__main__":
     cs = [-0.5, -0.25, -0.125, -0.0625, 0.0, 0.0625, 0.125, 0.25]
     ds = [1, 2, 3, 4]
     classifier_list = [MakePerceptronClassifier, MakeMarginPerceptronClassifier,MakeOnlineSVMClassifier,MakeGaussianKernelPerceptronClassifier, MakePolynomialKernelPerceptronClassifier]
+    classifier_names = ["Perceptron","Margin Perceptron","Online SVM","Gaussian Kernel Perceptron","Polynomial Kernel Perceptron"]
     parameters_list = [etas, [etas,rhos], [etas,Cs], [etas,sigmas], [cs, ds]]
     nparams_list = [1, 2, 2, 2, 2]
+    
                       
 #go through all classifiers to test
     for cln in range(len(classifier_list)):
 
         for p in [1.0, 0.1, 'adaptive']:
             print "P value is: ", p
-        #go through labeled data a few times, 
-            for name in names:
+            for k in range(len(names)):
+                #use k to determine plots
+                name = names[k]
                 print "User: ", name
                 #create classifier tester
-                classifier_tester = ClassifierTester(classifier_list[cln],parameters_list[cln],nparams_list[cln],p)
+                classifier_tester = ClassifierTester(classifier_list[cln],parameters_list[cln],nparams_list[cln],p,classifier_names[cln])
 
             #get labels
                 label_filename = name + "labels.pkl"
@@ -88,5 +93,36 @@ if __name__ == "__main__":
 
                 classifier_tester.Test(current_data,current_labels)
                 classifier_tester.ReportGrid()
+                
+                best_r_params, max_recall = classifier_tester.ReportBestRecall()
+
+                best_p_params, max_precision = classifier_tester.ReportBestPrecision()
+                if p == 'adaptive':
+                    pyplot.figure(2*k)
+                    pyplot.bar(cln,max_recall,label=classifier_names[cln])
+
+
+                    pyplot.figure(2*k + 1)
+                    pyplot.bar(cln,max_precision,label=classifier_names[cln])
+                    
+                    
+    for k in range(len(names)):
+        pyplot.figure(2*k)
+        pyplot.xticks(range(len(classifier_names)),classifier_names,rotation=45,fontsize=8)
+#        pyplot.legend()
+        pyplot.savefig("./" + names[k] + "Recall.pdf")
+
+        pyplot.figure(2*k + 1)
+        pyplot.xticks(range(len(classifier_names)),classifier_names,rotation=45,fontsize=8)
+#        pyplot.legend()
+        pyplot.savefig("./" + names[k] + "Precision.pdf")
+            
+                    
+                    
+                               
+                
+
+                
+                
                         
                     

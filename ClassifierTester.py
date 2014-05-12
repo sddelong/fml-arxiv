@@ -5,8 +5,9 @@ import numpy as np
 class ClassifierTester:
     """ Used to test any of the classifiers we use for abstract classification. """
     
-    def __init__(self,classifier_creator,gridsearch_parameters,n_params,p):
+    def __init__(self,classifier_creator,gridsearch_parameters,n_params,p,classifier_name):
         
+        self.classifier_name = classifier_name
         self.n_params = n_params
         if self.n_params not in [1, 2]:
             print "number of parameters must be 1 or 2"
@@ -81,13 +82,16 @@ class ClassifierTester:
                             classifier.Update(x,y_hat,y)
 
                     
-            print "Total Negative Checks: ", total_negative_checks
+#            print "Total Negative Checks: ", total_negative_checks
             if n_pos_right != 0:
                 self.recall_grid[self._ParamsToString(params)] = float(n_pos_right)/float(n_pos_right + n_recall_wrong)
                 self.precision_grid[self._ParamsToString(params)] = float(n_pos_right)/float(n_pos_right + n_precision_wrong)
             else:
                 self.recall_grid[self._ParamsToString(params)] = 0.0
                 self.precision_grid[self._ParamsToString(params)] = 0.0
+                
+#            if self.classifier_name == "Perceptron":
+#                classifier.ReportHighestWeights()
 
     def ReportGrid(self):
         
@@ -161,9 +165,66 @@ class ClassifierTester:
             return
 
 
-    def ReportBest(self):
-        """ Report best classifier """
-    
+    def ReportBestRecall(self):
+        """ Report best classifier by recall
+        
+        inputs:
+              none
+
+        outputs:
+              best_param - the parameter set that gave the best recall
+              max_recall - the value of the recall of this classifier with
+                           the best parameters
+        """
+
+        #setup parameters for gridsearch
+        if self.n_params == 1:
+            parameters_list = [[p] for p in self.gridsearch_parameters]
+        elif self.n_params == 2:
+            parameters_list = [[x,y] for x in self.gridsearch_parameters[0] for y in self.gridsearch_parameters[1]]
+
+        
+        max_recall = 0.
+        best_param = None
+        #go through all parameters tested by this object, and return
+        # the parameters that gave the best recall
+        for param in parameters_list:
+            if self.recall_grid[self._ParamsToString(param)] > max_recall:
+                max_recall = self.recall_grid[self._ParamsToString(param)]
+                best_param = param
+
+        return best_param, max_recall
+
+
+    def ReportBestPrecision(self):
+        """ Report best classifier by precision
+        
+        inputs:
+              none
+
+        outputs:
+              best_param - the parameter set that gave the best precision
+              max_precision - the value of the precision of this classifier with
+                           the best parameters
+        """
+
+        #setup parameters for gridsearch
+        if self.n_params == 1:
+            parameters_list = [[p] for p in self.gridsearch_parameters]
+        elif self.n_params == 2:
+            parameters_list = [[x,y] for x in self.gridsearch_parameters[0] for y in self.gridsearch_parameters[1]]
+
+        
+        max_precision = 0.
+        best_param = None
+        #go through all parameters tested by this object, and return
+        # the parameters that gave the best recall
+        for param in parameters_list:
+            if self.precision_grid[self._ParamsToString(param)] > max_precision:
+                max_precision = self.precision_grid[self._ParamsToString(param)]
+                best_param = param
+
+        return best_param, max_precision
 
     def _ParamsToString(self,params):
         """ helper function to turn params into a 

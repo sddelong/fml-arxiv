@@ -46,31 +46,29 @@ The main engine behind the tool is a modified Perceptron algorithm which employs
 {\tt for $t=1$ to $T$}:\\
 \indent receive($x_t$)\\
 \indent $\widehat{y}_t=\mbox{sign}(w_t\cdot x_t)$\\
-\indent {\tt if} $\widehat{y}_t =1$ {\tt or} ($\widehat{y}_t =0$ {\tt and} $k_t = 1$):\\
+\indent {\tt if} $\widehat{y}_t =1$ {\tt or} ($\widehat{y}_t =-1$ {\tt and} $k_t = 1$):\\
 \indent\indent receive($y_t$)\\
 \indent\indent {\tt if $y_t\neq\widehat{y}_t$}:\\
 \indent\indent\indent $w_{t+1} = w_t + y_t x_t$\\
 \indent\indent {\tt else $w_{t+1} = w_t$}\\
-\indent {\tt else if $\widehat{y}_t = 0$ and $k_t=0$}:\\
+\indent {\tt else if $\widehat{y}_t = -1$ and $k_t=0$}:\\
 \indent\indent $w_{t+1} = w_t$\\
 {\tt return $w_{T+1}$}
 
 \end{quotation}
 
-As mentioned, if the algorithm only made updates when $\widehat{y}=1$ (i.e. interesting) then this would leave the number of mistakes made when $\widehat{y} = 0$ unchecked (and, hence, several lost interesting articles). As a compromise, we generate the i.i.d. variables $k_i$ for each observation when $\widehat{y} = 0$. Note that if $\hat{y} = 0$ and $k=1$, the algorithm will ask for the correct label and make an update, otherwise if $\hat{y} = 0$ and $k=0$, the algorithm does not ask for the correct label, and makes no update.
-
-
+As mentioned, if the algorithm only made updates when $\widehat{y}=1$ (i.e. interesting) then this would leave the number of mistakes made when $\widehat{y} = -1$ unchecked (and, hence, several lost interesting articles). As a compromise, we generate the i.i.d. variables $k_i$ for each observation when $\widehat{y} = 0$. Note that if $\hat{y} = 0$ and $k=1$, the algorithm will ask for the correct label and make an update, otherwise if $\hat{y} = 0$ and $k=0$, the algorithm does not ask for the correct label, and makes no update.
 
 
 Let $I_1$ be the set of $t$ where a mistake was made and
-$\hat{y}=1$.  Let $I_2$ be the set where a mistake was made and
-$\hat{y} = 0, k = 1$, and let $I_3$ be the set where a mistake was
-made, $\hat{y} = 0$ and $k = 0$. Finally, let $M_i = |I_i|$ for $i =
+$\hat{y}=1$ (false positives).  Let $I_2$ be the set where a mistake was made and
+$\hat{y} = -1, k = 1$ (false negatives where the algorithm updates), and let $I_3$ be the set where a mistake was
+made, $\hat{y} = -1$ and $k = 0$ (false negatives where the algorithm does \bold{not} make an update). Finally, let $M_i = |I_i|$ for $i =
 1,2,3$. We then can bound $M_1 + M_2$ in the same way that we bound
 $M$ in the usual perceptron case.  We assume that there exits a $\rho$
 and $R$ satisfying the assumptions of Theorem 7.8 from our text, and a separating hyperplane determined by the vector $v$. Let $M' = M_1 + M_2$, then
 \begin{align*}
-M' =&\ \frac{\V{v}}{\|\V{v}\|}\sum_{I_1 \cup I_2} y_t\V{x}_t \
+M' \rho =&\ \frac{\V{v}}{\|\V{v}\|}\sum_{I_1 \cup I_2} y_t\V{x}_t \
  \leq   \left\|\sum_{t \in I_1 \cup I_2} y_t \V{x}_t\right\| \\
 =& \ \left\|\sum_{t \in I_1 \cup I_2} (\V{w}_{t+1} - \V{w}_t) \right\| 
 = \ \|\V{w}_{T+1} \| \\
@@ -82,7 +80,7 @@ M' =&\ \frac{\V{v}}{\|\V{v}\|}\sum_{I_1 \cup I_2} y_t\V{x}_t \
 \leq &\ \sqrt{\sum_{t \in I_1 \cup I_2} \|\V{x}_t\|^2} \leq
 \sqrt{M'r^2} \end{align*}
 This implies that $M' \leq \frac{r^2}{\rho^2}$.
-We then have that $M = M' + M_3$, so we would like a bound on $M_3$.
+We then have that $M = M' + M_3$, so we would like a bound on $M_3$, the number of mistakes made that the algorithm does not update on.
 Here we revert to a weaker bound, considering the expectation of
 $M_3$. Since 
 \[M_3 = \sum_{i=1}^m 1_{\left\{\hat{y}_i = 0 \cap y_i = 1\right\}}1_{k_i = 0}, \]
@@ -93,9 +91,9 @@ we get that
 \end{align*}
 where the last equality used the fact that $k_i$ is independent of the data.  Now we want to control the sum of expectations in this expression, and to do this we consider the expectation of $M_2$.
 \begin{align*}
-M_2 = & \sum_{i=1}^m 1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}1_{k_i = 1} \\
-\E[M_2] = & \sum_{i=1}^m \E[1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}]\E[1_{k = 1}] \\
-= & p\sum_{i=1}^m \E[1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}]\\
+M_2 = & \sum_{i=1}^m 1_{\left\{\hat{y_i} = -1 \cap y_i = 1\right\}}1_{k_i = 1} \\
+\E[M_2] = & \sum_{i=1}^m \E[1_{\left\{\hat{y_i} = -1 \cap y_i = 1\right\}}]\E[1_{k = 1}] \\
+= & p\sum_{i=1}^m \E[1_{\left\{\hat{y_i} = -1 \cap y_i = 1\right\}}]\\
 \Rightarrow E[M_3] = & \frac{1-p}{p}\E[M_2]
 \end{align*}
 We may then apply the crude bound $\E[M_3] \leq  \frac{1-p}{p}
