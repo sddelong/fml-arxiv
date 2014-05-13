@@ -166,13 +166,12 @@ def MakeGaussianKernel(sigma):
 def MakeGaussianKernelPerceptronClassifier(parameters):
     """ wrapper to make Gaussian Kernel Perceptron from a list of 
     parameters:
-        parameters[0] = learning rate
-        parameters[1] = sigma, variance of kernel
+        parameters[0] = sigma, variance of kernel
     """
 
-    g_kernel = MakeGaussianKernel(parameters[1])
+    g_kernel = MakeGaussianKernel(parameters[0])
     
-    kclassifier = KernelPerceptronClassifier(parameters[0],g_kernel)
+    kclassifier = KernelPerceptronClassifier(1.0,g_kernel)
 
     return kclassifier
 
@@ -257,7 +256,7 @@ class MarginPerceptronClassifier():
 def MakeMarginPerceptronClassifier(parameters):
     """ parameters are learning rate and margin, rho """
 
-    margin_pclassifier = MarginPerceptronClassifier(parameters[0],parameters[1])
+    margin_pclassifier = MarginPerceptronClassifier(1.0, parameters[0])
 
     return margin_pclassifier
 

@@ -62,9 +62,11 @@ class OnlineSVMClassifier:
 
 #wrapper functions to set up classifiers for testing
 def MakeOnlineSVMClassifier(parameters):
-    """ parameters are just eta """
+    """ inputs:
+             parameters[0] - C, penalty in online SVM
+    """
     
-    classifier = OnlineSVMClassifier(parameters[0],parameters[1])
+    classifier = OnlineSVMClassifier(1.0,parameters[0])
     
     return classifier
 

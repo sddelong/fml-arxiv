@@ -63,9 +63,9 @@ if __name__ == "__main__":
 
 
     #set up parameters and their names                                      
-    parameters_list = [etas, [etas,rhos], [etas,Cs], [etas,sigmas], [cs, ds]]
-    parameter_names = [["eta"],["eta","rho"],["eta","C"],["eta","sigma"],["c","d"]]
-    nparams_list = [1, 2, 2, 2, 2]
+    parameters_list = [etas, rhos, Cs, sigmas, [cs, ds]]
+    parameter_names = [["eta"],["rho"],["C"],["sigma"],["c","d"]]
+    nparams_list = [1, 1, 1, 1, 2]
     
                       
 #go through all classifiers to test
@@ -197,17 +197,16 @@ if __name__ == "__main__":
             classifier_r_labels[names[k]][l] = classifier_r_labels[names[k]][l] + param_r_labels[names[k]][l]
         pyplot.xticks(range(len(classifier_names)),classifier_r_labels[names[k]],rotation=35,fontsize=8)
         pyplot.gcf().subplots_adjust(bottom=0.20)
-#        pyplot.gcf().tight_layout() # not working, maybe need a newer version
         pyplot.ylim([0,1])
         pyplot.legend(loc="best",prop={"size":10})
         pyplot.savefig("./" + names[k] + "Recall.pdf")
 
         pyplot.figure(2*k + 1)
         pyplot.title("Precision for " + names[k])
+        #append information about parameters to labels
         for l in range(len(classifier_names)):
             classifier_p_labels[names[k]][l] = classifier_p_labels[names[k]][l] + param_p_labels[names[k]][l]
         pyplot.xticks(range(len(classifier_names)),classifier_p_labels[names[k]], rotation = 35, fontsize=9)
-#       pyplot.gcf().tight_layout()
         pyplot.gcf().subplots_adjust(bottom=0.20)
         pyplot.ylim([0,1])
         pyplot.legend(loc="best",prop={"size":10})
