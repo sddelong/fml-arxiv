@@ -43,6 +43,7 @@ class ClassifierTester:
             n_recall_wrong = 0
             total_negative_checks = 0    #how many negative predictions the user must verify
             total_end_negative_checks = 0 #how many checks we do in the last 100 papers
+            threshold = 50 #hard code threshold = 50 for now
 
             #loop through data and run the algorithm
             for i in range(len(data)):
@@ -50,7 +51,8 @@ class ClassifierTester:
                 y_hat = classifier.Predict(x)
                 y = labels[i]
                 if y == 1 and y_hat == 1:
-                    n_pos_right += 1
+                    if i > threshold:
+                        n_pos_right += 1
                 elif y == -1 and y_hat == -1:
                     #update total_negative_checks count if we had to check, 
                     # and for adaptive p, update value of current_p
@@ -67,13 +69,15 @@ class ClassifierTester:
                             if len(data) - i < 100 :
                                 total_end_negative_checks += 1
 
-                elif y_hat == 1:
+                elif y_hat == 1 and y == -1:
                     #update on false positive, add one to n_wrong
-                    n_precision_wrong += 1
+                    if i > threshold:
+                        n_precision_wrong += 1
                     classifier.Update(x,y_hat,y)
                 else:
                     #maybe update on false negative, depends on p.
-                    n_recall_wrong += 1
+                    if i > threshold:
+                        n_recall_wrong += 1
                     if self.p == 'adaptive':
                         # got it wrong, move current_p toward 1.0
                         # to check more frequently
