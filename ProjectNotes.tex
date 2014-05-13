@@ -14,9 +14,9 @@
 
 \section*{Perceptron with Positive Corrections.}
 
-We would like to modify the perceptron algorithm to only make updates when $\hat{y} = 1$ in order for the user to not have to see every article, but this will leave the number of mistakes made with $\hat{y} = 0$ unbounded.  as a compromise, let us generate iid variables $k_i$ for each observation which are equal to 1 with probability $p$ and equal to $0$ with probability $1-p$.  If $\hat{y} = 0$ and $k=1$, the algorithm will ask for the correct label and make an update, otherwise if $\hat{y} = 0$ and $k=1$, the algorithm does not ask for the correct label, and makes no update.  It seems that in this way, we should still be able to bound the number of mistakes, perhaps in expectation or probabilistically.\\
+We would like to modify the perceptron algorithm to only make updates when $\hat{y} = 1$ in order for the user to not have to see every article, but this will leave the number of mistakes made with $\hat{y} = 0$ unbounded. As a compromise, let us generate iid variables $k_i$ for each observation which are equal to 1 with probability $p$ and equal to $0$ with probability $1-p$.  If $\hat{y} = 0$ and $k=1$, the algorithm will ask for the correct label and make an update, otherwise if $\hat{y} = 0$ and $k=0$, the algorithm does not ask for the correct label, and makes no update.  It seems that in this way, we should still be able to bound the number of mistake, perhaps in expectation or probabilistically.\\
 
-Let us let $I_1$ be the set of $t$ where a mistake was made and,
+Let $I_1$ be the set of $t$ where a mistake was made and
 $\hat{y}=1$.  Let $I_2$ be the set where a mistake was made and
 $\hat{y} = 0, k = 1$, and let $I_3$ be the set where a mistake was
 made, $\hat{y} = 0$ and $k = 0$. Finally, let $M_i = |I_i|$ for $i =

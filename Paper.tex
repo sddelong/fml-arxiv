@@ -34,9 +34,9 @@ In Section 3, we describe the main components of the program in the python modul
 %it is important that not all papers that are predicted uninteresting be discarded by the engine. Without the true there is risk in 
 
 
-\section{Some Theory: Bounding Updates}
+\section{Theory: Algorithm and Bounding Updates}
 
-The main engine behind the tool is a modified Perceptron algorithm which employs an accept-reject method among the papers it labels uninteresting. The following pseudocode details the algorithm, where $x_t$ denotes feature data, $y_t$ denotes labels, $\widehat{y}_t$ are predictions, $w_t$ are hypotheses, and $k_t$ are i.i.d. random variables used for the accept-reject method. $k_t = 1$ with probability $p$ and $k_t = 0$ with probability $1-p$.\\
+The main engine behind the tool is a modified Perceptron algorithm which employs an accept-reject method among the papers it labels uninteresting. The following pseudocode details the algorithm, where $x_t$ denotes feature vectors, $y_t$ denotes labels, $\widehat{y}_t$ are predictions, $w_t$ are hypotheses, and $k_t$ are i.i.d. random variables used for the accept-reject method. $k_t = 1$ with probability $p$ and $k_t = 0$ with probability $1-p$. As mentioned, if the algorithm only made updates when $\widehat{y}=1$ (i.e. interesting) then this would leave the number of mistakes made when $\widehat{y} = -1$ unchecked (hence, several lost interesting articles). As a compromise, we generate the i.i.d. variables $k_t$ for each observation when $\widehat{y} = -1$. Note that if $\widehat{y} = -1$ and $k=1$, the algorithm will ask for the correct label and make an update. Otherwise if $\widehat{y} = -1$ and $k=0$, the algorithm does not ask for the correct label and makes no update.\\
 
 
 \noindent Modified Perceptron algorithm:
@@ -57,61 +57,86 @@ The main engine behind the tool is a modified Perceptron algorithm which employs
 
 \end{quotation}
 
-As mentioned, if the algorithm only made updates when $\widehat{y}=1$ (i.e. interesting) then this would leave the number of mistakes made when $\widehat{y} = -1$ unchecked (and, hence, several lost interesting articles). As a compromise, we generate the i.i.d. variables $k_i$ for each observation when $\widehat{y} = 0$. Note that if $\hat{y} = 0$ and $k=1$, the algorithm will ask for the correct label and make an update, otherwise if $\hat{y} = 0$ and $k=0$, the algorithm does not ask for the correct label, and makes no update.
-
+We learned in the course how it can be shown that the number of updates occuring in the original Perceptron algorithm can be bounded in terms of the separating margin $\rho$ and the size $r$ of the ball containing the feature data. We wanted to find a similar bound in our case where the number of updates is limited by how often we ask for the correct label when $\widehat y = 0$. Naturally we should aim for a probabilistic bound as opposed to a concrete bound since we incorporate the extra random variables $k_t$.
 
 Let $I_1$ be the set of $t$ where a mistake was made and
-$\hat{y}=1$ (false positives).  Let $I_2$ be the set where a mistake was made and
-$\hat{y} = -1, k = 1$ (false negatives where the algorithm updates), and let $I_3$ be the set where a mistake was
-made, $\hat{y} = -1$ and $k = 0$ (false negatives where the algorithm does \bold{not} make an update). Finally, let $M_i = |I_i|$ for $i =
-1,2,3$. We then can bound $M_1 + M_2$ in the same way that we bound
-$M$ in the usual perceptron case.  We assume that there exits a $\rho$
-and $R$ satisfying the assumptions of Theorem 7.8 from our text, and a separating hyperplane determined by the vector $v$. Let $M' = M_1 + M_2$, then
+$\widehat{y}=1$ (false positives).  Let $I_2$ be the set where a mistake was made with
+$\widehat{y} = -1$ and $k = 1$ (false negatives where the algorithm updates), and $I_3$ the set where a mistake was
+made with $\widehat{y} = -1$ and $k = 0$ (false negatives where the algorithm does {\it not} make an update). Finally, let $M_i = |I_i|$ for $i =
+1,2,3$. We bound $M_1 + M_2$ in the same way we bound $M$ in the original Perceptron algorithm. Assume there exists a $\rho$ and $R$ satisfying the assumptions of Theorem 7.8 from our text, and a separating hyperplane determined by the vector $v$. Let $M' = M_1 + M_2$, then
 \begin{align*}
-M' \rho =&\ \frac{\V{v}}{\|\V{v}\|}\sum_{I_1 \cup I_2} y_t\V{x}_t \
- \leq   \left\|\sum_{t \in I_1 \cup I_2} y_t \V{x}_t\right\| \\
-=& \ \left\|\sum_{t \in I_1 \cup I_2} (\V{w}_{t+1} - \V{w}_t) \right\| 
-= \ \|\V{w}_{T+1} \| \\
-=&\ \sqrt{\sum_{t \in I_1 \cup I_2} \|  \V{w}_{t+1}\|^2 - \|\V{w}_t\|^2 }\\
-= &\ \sqrt{\sum_{t \in I_1 \cup I_2} \|  \V{w}_{t} + y_t\V{x}_t\|^2 -
-  \|\V{w}_t\|^2 }\\
-= &\ \sqrt{\sum_{t \in I_1 \cup I_2} 2y_t\V{w}_t\cdot \V{x}_t -
-  \|\V{x}_t\|^2} \\
-\leq &\ \sqrt{\sum_{t \in I_1 \cup I_2} \|\V{x}_t\|^2} \leq
-\sqrt{M'r^2} \end{align*}
-This implies that $M' \leq \frac{r^2}{\rho^2}$.
-We then have that $M = M' + M_3$, so we would like a bound on $M_3$, the number of mistakes made that the algorithm does not update on.
-Here we revert to a weaker bound, considering the expectation of
+M' \rho =&\ \frac{v}{\|v\|}\sum_{I_1 \cup I_2} y_tx_t \
+ \leq   \Bigl\|\sum_{t \in I_1 \cup I_2} y_t x_t\Bigr\| \\
+=& \ \Bigl\|\sum_{t \in I_1 \cup I_2} (w_{t+1} - w_t) \Bigr\| 
+= \ \|w_{T+1} \| \\
+=&\ \sqrt{\sum_{t \in I_1 \cup I_2} \|  w_{t+1}\|^2 - \|w_t\|^2 }\\
+= &\ \sqrt{\sum_{t \in I_1 \cup I_2} \|  w_{t} + y_t x_t\|^2 - \|w_t\|^2 }\\
+= &\ \sqrt{\sum_{t \in I_1 \cup I_2} 2y_t w_t\cdot x_t - \|x_t\|^2} \\
+\leq &\ \sqrt{\sum_{t \in I_1 \cup I_2} \|x_t\|^2}
+\leq \sqrt{M'r^2}.
+\end{align*}
+This implies that $M' \leq \frac{r^2}{\rho^2}$. Since $M = M' + M_3$, a bound on $M_3$ is needed. We revert to a weaker bound and consider the expectation of
 $M_3$. Since 
-\[M_3 = \sum_{i=1}^m 1_{\left\{\hat{y}_i = 0 \cap y_i = 1\right\}}1_{k_i = 0}, \]
+\[M_3 = \sum_{t=1}^T 1_{\left\{\widehat{y}_t = -1 \cap y_t = 1\right\}}1_{k_t = 0}, \]
 we get that
 \begin{align*}
-\E[M_3] = & \sum_{i=1}^m \E[1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}]\E[1_{k = 0}] \\
- = &\ (1 - p)\sum_{i=1}^m \E[1_{\left\{\hat{y_i} = 0 \cap y_i = 1\right\}}],
+\E[M_3] = & \sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 0}] \\
+ = &\ (1 - p)\sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}],
 \end{align*}
-where the last equality used the fact that $k_i$ is independent of the data.  Now we want to control the sum of expectations in this expression, and to do this we consider the expectation of $M_2$.
+where the last equality uses the independence of $k_t$ from the data. To control the sum of expectations in this expression we consider the expectation of $M_2$. Since
+\[
+M_2 =  \sum_{t=1}^T 1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}1_{k_t = 1},
+\]
+then
 \begin{align*}
-M_2 = & \sum_{i=1}^m 1_{\left\{\hat{y_i} = -1 \cap y_i = 1\right\}}1_{k_i = 1} \\
-\E[M_2] = & \sum_{i=1}^m \E[1_{\left\{\hat{y_i} = -1 \cap y_i = 1\right\}}]\E[1_{k = 1}] \\
-= & p\sum_{i=1}^m \E[1_{\left\{\hat{y_i} = -1 \cap y_i = 1\right\}}]\\
-\Rightarrow E[M_3] = & \frac{1-p}{p}\E[M_2]
+\E[M_2] =&\ \sum_{t=1}^T \E[1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 1}] \\
+=&\ p\sum_{t=1}^T \E[1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}].
 \end{align*}
-We may then apply the crude bound $\E[M_3] \leq  \frac{1-p}{p}
-M'$, since $M_2 \leq M'$. We then bound the expected number of mistakes with
+Thus
+\[
+E[M_3] = \ \frac{1-p}{p}\ \E[M_2].
+\]
+We can apply the crude bound $\E[M_3] \leq \frac{1-p}{p}\ \E[M']$, since $M_2 \leq M'$. Thus the expected number of mistakes can be bounded by
 \begin{align*}
 \E[M]  =  &\ \E[M'] + \E[M_3] \\
 \leq & \ \frac{r^2}{\rho^2} + \frac{1-p}{p}\frac{r^2}{\rho^2} \\
-\leq  & \ \frac{1}{p}\frac{r^2}{\rho^2} \\
+\leq  & \ \frac{1}{p}\frac{r^2}{\rho^2}
 \end{align*}
 Note that this is a weak bound.  Not only is it greater than the
 original perceptron bound by a factor of $\frac{1}{p}$, it is also only a
 bound in expectation.
 
+\section{Implementation}
 
+The tool is made from components in multiple Python files, split up according to their function in the program.
+The metadata for each article is obtained using arXiv's Open Archives Initiative protocol which returns an XML file with a list of up to 1000 articles as nodes containing a variety of metadata, including abstracts, authors, submission dates, and fields and subfields, making the data quite accessible and fairly simple to sort.
+The file {\tt ArxivData.py} contains the functions and class definitions used to collect, organize and process data. Included are a class of objects representing papers and a class definition for feature vectors.
+%
+%DESCRIBE BAG OF WORDS APPROACH FOR FEATURE VECTORS SOMEWHERE
+%
+The primary function is {\tt GetPapersOAI()} and its wrapper which prompts the user for a particular subject, any of arXiv's listed subfields for that subject, and a range of dates from which to select the papers.
+Then it draws the XML file of data from arXiv's database, filters the articles using the XML entries according to the subfields, and prepares the stream of abstracts to present the user.
+The user is then asked to label each article as interesting or not, one at a time, with updates made according to the algorithm employed.
+
+
+
+%To use the program, run both scripts {\tt getTestData.py} to collect the papers to rate and then {\tt LabelData.py} 
+
+
+The files {\tt Perceptron.py} and {\tt OnlineSVM.py} house the classes that compose the different classifying algorithms we use.
+The classes contain the methods that run the algorithm and the attributes such as weights and parameters that the algorithm uses and updates.
+Within {\tt Perceptron.py} is the modified Perceptron algorithm we presented earlier, a Margin Perceptron classifier, and a Kernel Perceptron classifier supplied with both a polynomial and Gaussian kernel.
+Similarly, the Online SVM algorithm is implemented in the file {\tt OnlineSVM.py}.
+Each algorithm takes a learning rate $\eta$ as a parameter. The modified Perceptron requires no extra parameters, while the Gaussian Kernel Perceptron classifier requires a $\sigma$ specifying the variance in the kernel.
+The Polynomial Kernel Perceptron takes two parameters $c$ and $d$ which are the constants used in constructing the polynomial kernel.
+The Margin Perceptron requires a parameter $\rho$ designating the separating margin of the feature vectors, and the Online SVM algorithm takes a parameter $C$ for the penalty applied to the update (i.e. $w_{t+1} = w_t -\eta(w_t- Cy_tx_t)$).
+Each algorithm class has an associated wrapper that instantiates a class, and we use each of these algorithms when testing the tool.
+
+There are some additional Python files included that we used primarily for testing. For instance, {\tt getTestData.py} and {\tt LabelData.py} are scripts that call the functions that collect arXiv data and present the abstracts to acquire labels, respectively, which we place in a single script for the user. Additionally {\tt ClassifierTester.py} defines a class for the classification algorithms we include allowing them to be used in a uniform manner despite taking different parameters. This enables us to run tests over each algorithm, with multiple data sets from a few different users, using a set of several values for each parameter in a fairly organized manner in the script {\tt TestClassifiers.py}. Plots are also constructed in that script as well.
+
+One of the most important aspects of this tool is the feature data itself, and what characteristics distinguish 
 
 \end{document}
-
-%GIVE THE ALGORITHM THEN PRESENT THE BOUND
 
 
 
