@@ -185,7 +185,6 @@ class ClassifierTester:
         elif self.n_params == 2:
             parameters_list = [[x,y] for x in self.gridsearch_parameters[0] for y in self.gridsearch_parameters[1]]
 
-        
         max_recall = 0.
         best_param = None
         best_neg_updates = 0
