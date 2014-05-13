@@ -71,8 +71,6 @@ class PerceptronClassifier:
         print "10 Most Negative words:"
         for k in range(10):
             print sort_wandw[-k][1], sort_wandw[-k][0]
-            
-            
 
 
 #wrapper functions to set up classifiers for testing
@@ -80,6 +78,77 @@ def MakePerceptronClassifier(parameters):
     """ parameters are just eta """
     
     classifier = PerceptronClassifier(parameters[0])
+    
+    return classifier
+
+
+class VotedPerceptronClassifier:
+    """ Same as simple perceptron algorithm, but uses average of hypotheses
+        from all rounds """
+    
+    def __init__(self,eta):
+        """ Constructor for Perceptron. 
+
+           Arguments:
+                   eta - learning rate
+        """
+        self.eta = eta
+        self.weights = dict()
+        self.voted_weights = dict()
+        self.T = 1
+        self.name = "Voted Perceptron Classifier"
+        
+    def Update(self,x,y_hat,y):
+        """ given that the Perceptron has guessed y_hat for data x, update it 
+        using the correct value y.
+
+        Note: must be used after prediction to obtain a correct accuracy estimate, 
+        We will only update on some of the predictions where y_hat = -1 (undesireable paper).
+        """
+        if y_hat != y:
+            #update
+            x.UpdateWeights(self.weights,y,self.eta)
+            self.T = self.T + 1
+            for word in self.weights:
+                if word in self.voted_weights:
+                    self.voted_weights[word] = self.voted_weights[word]*(self.T - 1)/self.T + self.weights[word]/self.T
+                else:
+                    self.voted_weights[word] = self.weights[word]/self.T
+        return
+        
+    def Predict(self,x):
+        """ predict y by using sign of a dot product of x with weights """
+        
+        return sign(x.Dot(self.voted_weights))
+
+    def __repr__(self):
+        
+        repstring = 'Perceptron Classifier, eta = %1.3f' % self.eta
+        
+        return repstring
+    
+    __str__ = __repr__
+
+    def ReportHighestWeights(self):
+        #HACK: report the words with the largest absolute weights
+        
+        words_and_weights = [(self.weights[word],word) for word in self.weights]
+            
+        sort_wandw = sorted(words_and_weights, reverse=True)
+        print "10 Most Positive words:"
+        for k in range(10):
+            print sort_wandw[k][1], sort_wandw[k][0]
+        print "10 Most Negative words:"
+        for k in range(10):
+            print sort_wandw[-k][1], sort_wandw[-k][0]
+
+            
+            
+#wrapper functions to set up classifiers for testing
+def MakeVotedPerceptronClassifier(parameters):
+    """ parameters are just eta """
+    
+    classifier = VotedPerceptronClassifier(parameters[0])
     
     return classifier
 

@@ -43,7 +43,7 @@ class ClassifierTester:
             n_recall_wrong = 0
             total_negative_checks = 0    #how many negative predictions the user must verify
             total_end_negative_checks = 0 #how many checks we do in the last 100 papers
-            threshold = 35 #hard code threshold = 35 for now
+            threshold = 50 #hard code threshold = 50 for now
 
             #loop through data and run the algorithm
             for i in range(len(data)):

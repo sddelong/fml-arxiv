@@ -30,7 +30,7 @@ class WeightedMajorityClassifier:
         
 
         #TODO: Tune Beta
-        self.beta = 0.9
+        self.beta = 1.0
         
     def Predict(self,x):
         """ Predict by doing a weighted vote """

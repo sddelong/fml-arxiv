@@ -10,6 +10,7 @@ from OnlineSVM import OnlineSVMClassifier
 from OnlineSVM import MakeOnlineSVMClassifier
 from Perceptron import PerceptronClassifier
 from Perceptron import MakePerceptronClassifier
+from Perceptron import MakeVotedPerceptronClassifier
 from Perceptron import MarginPerceptronClassifier
 from Perceptron import MakeMarginPerceptronClassifier
 from Perceptron import MakeGaussianKernelPerceptronClassifier
@@ -100,7 +101,7 @@ def BestParams(grid, neg_updates):
 #Begin Script here:
 if __name__ == "__main__":
 #names of people who contributed labels
-    names = ["steven","joey","sid","iantobasco","manas","travis"]
+    names = ["steven","joey","sid","iantobasco","manas"]#,"travis"]
     custom_data_dict = {'steven' : 'stevenCustomTestData.pkl', 'joey' : 'joeynewCustomTestData.pkl','travis' : 'travisCustomTestData.pkl', }
     custom_label_dict = {'steven' : 'stevencustomlabels.pkl', 'joey' : 'joeynewcustomlabels.pkl', 'travis' : 'traviscustomlabels.pkl'}
     
@@ -120,8 +121,8 @@ if __name__ == "__main__":
     ds = [1, 2, 3, 4]
     
     #liss of classifiers and their names
-    classifier_list = [MakePerceptronClassifier, MakeMarginPerceptronClassifier,MakeOnlineSVMClassifier,MakeGaussianKernelPerceptronClassifier, MakePolynomialKernelPerceptronClassifier, MakeWeightedMajorityClassifier]
-    classifier_names = ["Perceptron","Margin Perceptron","Online SVM","Gaussian Kernel Perceptron","Polynomial Kernel Perceptron", "Weighted Majority Classifier"]
+    classifier_list = [MakePerceptronClassifier, MakeVotedPerceptronClassifier, MakeMarginPerceptronClassifier,MakeOnlineSVMClassifier,MakeGaussianKernelPerceptronClassifier, MakePolynomialKernelPerceptronClassifier, MakeWeightedMajorityClassifier]
+    classifier_names = ["Perceptron","Voted Perceptron", "Margin Perceptron","Online SVM","Gaussian Kernel Perceptron","Polynomial Kernel Perceptron", "Weighted Majority Classifier"]
 
     #set up empty lists for labels on bar graphs
     # add entry for "__everyone__" to aggregate
@@ -145,9 +146,9 @@ if __name__ == "__main__":
 
 
     #set up parameters and their names                                      
-    parameters_list = [etas, rhos, Cs, sigmas, [cs, ds], [rhos, Cs]]
-    parameter_names = [["eta"],["rho"],["C"],["sigma"],["c","d"], ["rho","C"]]
-    nparams_list = [1, 1, 1, 1, 2, 2]
+    parameters_list = [etas, etas, rhos, Cs, sigmas, [cs, ds], [rhos, Cs]]
+    parameter_names = [["eta"],["eta"],["rho"],["C"],["sigma"],["c","d"], ["rho","C"]]
+    nparams_list = [1, 1, 1, 1, 1, 2, 2]
                       
 #go through all classifiers to test
     for cln in range(len(classifier_list)):
