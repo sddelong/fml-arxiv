@@ -38,7 +38,7 @@ if __name__ == "__main__":
     rhos = [2**(-8), 2**(-7),2**(-6),2**(-5)]
     Cs = [2**(-6),2**(-5),2**(-4),2**(-3),2**(-2), 2**(-1), 1.0, 2.0]
     sigmas = [0.01, 0.02, 0.04,0.2, 1.0]
-    cs = [-0.25, -0.125, -0.0625, -0.03125, 0.0, 0.03125, 0.0625, 0.125]
+    cs = [-0.0625, -0.03125, 0.0, 0.03125, 0.0625]
     ds = [1, 2, 3, 4]
     
     #liss of classifiers and their names
@@ -54,6 +54,13 @@ if __name__ == "__main__":
     for name in names:
         classifier_p_labels[name] = range(len(classifier_names))
 
+    param_r_labels = dict()
+    for name in names:
+        param_r_labels[name] = range(len(classifier_names))
+    param_p_labels = dict()
+    for name in names:
+        param_p_labels[name] = range(len(classifier_names))
+
 
     #set up parameters and their names                                      
     parameters_list = [etas, [etas,rhos], [etas,Cs], [etas,sigmas], [cs, ds]]
@@ -68,6 +75,7 @@ if __name__ == "__main__":
         for p in [1.0, 0.1, 'adaptive']:
             print "P value is: ", p
             #go through users
+            
             for k in range(len(names)):
                 #use k to determine plots
                 name = names[k]
@@ -118,15 +126,20 @@ if __name__ == "__main__":
                 best_r_params, max_recall, r_neg_updates = classifier_tester.ReportBestRecall()
 
                 best_p_params, max_precision, p_neg_updates = classifier_tester.ReportBestPrecision()
-
+                
+                
+                
+                
                 if p == 1.0:
                     pyplot.figure(2*k)
-                    if classifier_names[cln] == "Perceptron":
+                    if cln == 0:
                         pyplot.bar(cln,max_recall,label="p = 1.0",width=0.2, color="blue")
                     else:
                         pyplot.bar(cln,max_recall,width=0.2, color="blue")
                         
                     classifier_r_labels[name][cln] = classifier_names[cln] + "\n Neg updates: " + str(r_neg_updates)
+
+                    param_r_labels[name][cln] = "\n params: " + str(best_r_params)
 
                     pyplot.figure(2*k + 1)
                     if classifier_names[cln] == "Perceptron":
@@ -134,6 +147,7 @@ if __name__ == "__main__":
                     else:
                         pyplot.bar(cln,max_precision,width=0.2, color="blue")
                     classifier_p_labels[name][cln] = classifier_names[cln] + "\n Neg updates: " + str(p_neg_updates)
+                    param_p_labels[name][cln] = "\n params: " + str(best_p_params)
 
 
                 elif p == 0.1: 
@@ -144,6 +158,7 @@ if __name__ == "__main__":
                     else:
                         pyplot.bar(cln + 0.2,max_recall,width=0.2, color="red")
                     classifier_r_labels[name][cln] += ", " + str(r_neg_updates)
+                    param_r_labels[name][cln] += ", " + str(best_r_params)
 
                     pyplot.figure(2*k + 1)
                     if classifier_names[cln] == "Perceptron":                    
@@ -151,6 +166,7 @@ if __name__ == "__main__":
                     else:
                         pyplot.bar(cln + 0.2,max_precision, width=0.2, color="red")
                     classifier_p_labels[name][cln] += ", " + str(p_neg_updates)
+                    param_p_labels[name][cln] += ", " + str(best_p_params)
 
 
 
@@ -161,6 +177,7 @@ if __name__ == "__main__":
                     else:
                         pyplot.bar(cln + 0.4,max_recall,width=0.2, color="green")
                     classifier_r_labels[name][cln] += ", " + str(r_neg_updates)
+                    param_r_labels[name][cln] += ", " + str(best_r_params)
 
                     pyplot.figure(2*k + 1)
                     if classifier_names[cln] == "Perceptron":
@@ -168,13 +185,18 @@ if __name__ == "__main__":
                     else:
                         pyplot.bar(cln + 0.4,max_precision,width=0.2, color="green")
                     classifier_p_labels[name][cln] += ", " + str(p_neg_updates)
+                    param_p_labels[name][cln] += ", " + str(best_p_params)
 
                     
     for k in range(len(names)):
         pyplot.figure(2*k)
         pyplot.title("Recall for " + names[k])
-        pyplot.xticks(range(len(classifier_names)),classifier_r_labels[name],rotation=45,fontsize=8)
-        pyplot.gcf().subplots_adjust(bottom=0.18)
+
+        #append information about parameters to labels
+        for l in range(len(classifier_names)):
+            classifier_r_labels[names[k]][l] = classifier_r_labels[names[k]][l] + param_r_labels[names[k]][l]
+        pyplot.xticks(range(len(classifier_names)),classifier_r_labels[names[k]],rotation=35,fontsize=8)
+        pyplot.gcf().subplots_adjust(bottom=0.20)
 #        pyplot.gcf().tight_layout() # not working, maybe need a newer version
         pyplot.ylim([0,1])
         pyplot.legend(loc="best",prop={"size":10})
@@ -182,9 +204,11 @@ if __name__ == "__main__":
 
         pyplot.figure(2*k + 1)
         pyplot.title("Precision for " + names[k])
-        pyplot.xticks(range(len(classifier_names)),classifier_p_labels[name],fontsize=9)
+        for l in range(len(classifier_names)):
+            classifier_p_labels[names[k]][l] = classifier_p_labels[names[k]][l] + param_p_labels[names[k]][l]
+        pyplot.xticks(range(len(classifier_names)),classifier_p_labels[names[k]], rotation = 35, fontsize=9)
 #       pyplot.gcf().tight_layout()
-        pyplot.gcf().subplots_adjust(bottom=0.18)
+        pyplot.gcf().subplots_adjust(bottom=0.20)
         pyplot.ylim([0,1])
         pyplot.legend(loc="best",prop={"size":10})
         pyplot.savefig("./" + names[k] + "Precision.pdf")

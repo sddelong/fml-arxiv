@@ -41,7 +41,10 @@ class ClassifierTester:
             n_pos_right = 0
             n_precision_wrong = 0
             n_recall_wrong = 0
-            total_negative_checks = 0
+            total_negative_checks = 0    #how many negative predictions the user must verify
+            total_end_negative_checks = 0 #how many checks we do in the last 100 papers
+
+            #loop through data and run the algorithm
             for i in range(len(data)):
                 x = data[i]
                 y_hat = classifier.Predict(x)
@@ -56,9 +59,13 @@ class ClassifierTester:
                         if np.random.binomial(1,self.current_p) == 1:
                             self.current_p = 0.9*self.current_p + 0.001
                             total_negative_checks += 1
+                            if len(data) - i < 100 :
+                                total_end_negative_checks += 1
                     else:
                         if np.random.binomial(1,self.p) == 1:
                             total_negative_checks += 1
+                            if len(data) - i < 100 :
+                                total_end_negative_checks += 1
 
                 elif y_hat == 1:
                     #update on false positive, add one to n_wrong
@@ -73,17 +80,19 @@ class ClassifierTester:
                         k = np.random.binomial(1,self.current_p)
                         if k == 1:
                             total_negative_checks += 1
+                            if len(data) - i < 100 :
+                                total_end_negative_checks += 1
                             classifier.Update(x,y_hat,y)
                             self.current_p = 0.4*self.current_p + 0.6
                     else:
                         k = np.random.binomial(1,self.p)
                         if k == 1:
                             total_negative_checks += 1
+                            if len(data) - i < 100 :
+                                total_end_negative_checks += 1
                             classifier.Update(x,y_hat,y)
 
 
-
-                            
             self.neg_update_grid[self._ParamsToString(params)] = total_negative_checks
             
             if n_pos_right != 0:
