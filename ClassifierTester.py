@@ -67,7 +67,7 @@ class ClassifierTester:
                             if len(data) - i < 100 :
                                 total_end_negative_checks += 1
 
-                elif y_hat == 1:
+                elif y_hat == 1 and y == -1:
                     #update on false positive, add one to n_wrong
                     n_precision_wrong += 1
                     classifier.Update(x,y_hat,y)

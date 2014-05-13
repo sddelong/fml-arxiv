@@ -15,6 +15,8 @@ from Perceptron import MakeMarginPerceptronClassifier
 from Perceptron import MakeGaussianKernelPerceptronClassifier
 from Perceptron import MakePolynomialKernelPerceptronClassifier
 from Perceptron import KernelPerceptronClassifier
+from WeightedMajority import WeightedMajorityClassifier
+from WeightedMajority import MakeWeightedMajorityClassifier
 from ClassifierTester import ClassifierTester
 
 
@@ -98,7 +100,7 @@ def BestParams(grid, neg_updates):
 #Begin Script here:
 if __name__ == "__main__":
 #names of people who contributed labels
-    names = ["steven","sid","iantobasco","joey","manas","travis"]
+    names = ["steven","joey"]#,"sid","iantobasco","manas","travis"]
     custom_data_dict = {'steven' : 'stevenCustomTestData.pkl', 'joey' : 'joeynewCustomTestData.pkl','travis' : 'travisCustomTestData.pkl', }
     custom_label_dict = {'steven' : 'stevencustomlabels.pkl', 'joey' : 'joeynewcustomlabels.pkl', 'travis' : 'traviscustomlabels.pkl'}
     
@@ -118,9 +120,8 @@ if __name__ == "__main__":
     ds = [1, 2, 3, 4]
     
     #liss of classifiers and their names
-    classifier_list = [MakePerceptronClassifier, MakeMarginPerceptronClassifier,MakeOnlineSVMClassifier,MakeGaussianKernelPerceptronClassifier, MakePolynomialKernelPerceptronClassifier]
-    classifier_names = ["Perceptron","Margin Perceptron","Online SVM","Gaussian Kernel Perceptron","Polynomial Kernel Perceptron"]
-
+    classifier_list = [MakePerceptronClassifier, MakeMarginPerceptronClassifier,MakeOnlineSVMClassifier,MakeGaussianKernelPerceptronClassifier, MakePolynomialKernelPerceptronClassifier, MakeWeightedMajorityClassifier]
+    classifier_names = ["Perceptron","Margin Perceptron","Online SVM","Gaussian Kernel Perceptron","Polynomial Kernel Perceptron", "Weighted Majority Classifier"]
 
     #set up empty lists for labels on bar graphs
     # add entry for "__everyone__" to aggregate
@@ -144,10 +145,9 @@ if __name__ == "__main__":
 
 
     #set up parameters and their names                                      
-    parameters_list = [etas, rhos, Cs, sigmas, [cs, ds]]
-    parameter_names = [["eta"],["rho"],["C"],["sigma"],["c","d"]]
-    nparams_list = [1, 1, 1, 1, 2]
-    
+    parameters_list = [etas, rhos, Cs, sigmas, [cs, ds], [rhos, Cs]]
+    parameter_names = [["eta"],["rho"],["C"],["sigma"],["c","d"], ["rho","C"]]
+    nparams_list = [1, 1, 1, 1, 2, 2]
                       
 #go through all classifiers to test
     for cln in range(len(classifier_list)):
@@ -212,13 +212,14 @@ if __name__ == "__main__":
                     total_neg_update_grid = neg_updates
                     total_product_grid = dict()
                     for param in recall_grid:
-                        total_product_grid = 
+                        total_product_grid[param] = recall_grid[param]*precision_grid[param]
                 else:
                     #add values to grids for aggregating
                     for param in recall_grid:
                         total_recall_grid[param] += recall_grid[param]
                         total_precision_grid[param] += precision_grid[param]
                         total_neg_update_grid[param] += neg_updates[param]
+                        total_product_grid[param] += recall_grid[param]*precision_grid[param]
                         
                 best_r_params, max_recall, r_neg_updates = classifier_tester.ReportBestRecall()
 
@@ -262,7 +263,7 @@ if __name__ == "__main__":
 #        pyplot.xticks(range(len(classifier_names)),classifier_r_labels[names[k]],rotation=35,fontsize=8)
         pyplot.xticks([],[])
         pyplot.gcf().subplots_adjust(bottom=0.20)
-        pyplot.ylim([0,1])
+        pyplot.ylim([0,0.6])
         pyplot.legend(loc="best",prop={"size":10})
         pyplot.subplot(212)
         pyplot.title("Number of Negative Updates")
@@ -279,7 +280,7 @@ if __name__ == "__main__":
 #        pyplot.xticks(range(len(classifier_names)),classifier_names, rotation = 35, fontsize=9)
         pyplot.xticks([],[])
         pyplot.gcf().subplots_adjust(bottom=0.20)
-        pyplot.ylim([0,1])
+        pyplot.ylim([0,0.6])
         pyplot.legend(loc="best",prop={"size":10})
         pyplot.subplot(212)
         pyplot.title("Number of Negative Updates")
@@ -298,7 +299,7 @@ pyplot.title("Recall Aggregated over Users")
 #pyplot.xticks(range(len(classifier_names)),classifier_names, rotation = 35, fontsize=9)
 pyplot.xticks([],[])
 pyplot.gcf().subplots_adjust(bottom=0.20)
-pyplot.ylim([0,1])
+pyplot.ylim([0,0.6])
 pyplot.legend(loc="best",prop={"size":10})
 pyplot.subplot(212)
 pyplot.title("Number of Negative Updates")
@@ -314,7 +315,7 @@ pyplot.title("Precision Aggregated over Users")
 #pyplot.xticks(range(len(classifier_names)),classifier_names, rotation = 35, fontsize=9)
 pyplot.xticks([],[])
 pyplot.gcf().subplots_adjust(bottom=0.20)
-pyplot.ylim([0,1])
+pyplot.ylim([0,0.6])
 pyplot.legend(loc="best",prop={"size":10})
 pyplot.subplot(212)
 pyplot.title("Number of Negative Updates")
