@@ -210,6 +210,9 @@ if __name__ == "__main__":
                     total_recall_grid = recall_grid
                     total_precision_grid = precision_grid
                     total_neg_update_grid = neg_updates
+                    total_product_grid = dict()
+                    for param in recall_grid:
+                        total_product_grid = 
                 else:
                     #add values to grids for aggregating
                     for param in recall_grid:

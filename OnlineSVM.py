@@ -66,7 +66,7 @@ def MakeOnlineSVMClassifier(parameters):
              parameters[0] - C, penalty in online SVM
     """
     
-    classifier = OnlineSVMClassifier(1.0,parameters[0])
+    classifier = OnlineSVMClassifier(parameters[0],1.0)
     
     return classifier
 
