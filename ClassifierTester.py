@@ -171,7 +171,7 @@ class ClassifierTester:
             print "-"*60
 
             
-        return self.recall_grid, self.precision_grid
+        return self.recall_grid, self.precision_grid, self.neg_update_grid
 
 
     def ReportBestRecall(self):
