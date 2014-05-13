@@ -34,9 +34,13 @@ class PerceptronClassifier:
         We will only update on some of the predictions where y_hat = -1 (undesireable paper).
         """
         if y_hat != y:
+            if y_hat == 1:
+                eta = self.eta*self.p
+            else:
+                eta = self.eta
             #update
             self.n_wrong += 1
-            x.UpdateWeights(self.weights,y,self.eta)
+            x.UpdateWeights(self.weights,y,eta)
         else:
             self.n_correct += 1
         
@@ -107,7 +111,11 @@ class VotedPerceptronClassifier:
         """
         if y_hat != y:
             #update
-            x.UpdateWeights(self.weights,y,self.eta)
+            if y_hat == 1:
+                eta = self.eta*self.p
+            else:
+                eta = self.eta
+            x.UpdateWeights(self.weights,y,eta)
             self.T = self.T + 1
             for word in self.weights:
                 if word in self.voted_weights:
