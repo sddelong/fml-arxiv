@@ -19,6 +19,39 @@ from ClassifierTester import ClassifierTester
 
 
 
+def AddBarToPlot(cln, max_recall, max_precision, k):
+    """' helper function to add a bar to barplot 2k and 2k+1 , 
+    inputs:
+            cln - classifier number, from test script
+            max_recall - best recall achieved by classifier
+            max_precision - best precision achieved by classifier
+            k - user name number.
+            """
+    
+    if p == 1.0:
+        offset = 0
+        plot_clr = "blue"
+    elif p == 0.1:
+        offset = 0.2
+        plot_clr = "red"
+    elif p == 'adaptive':
+        offset = 0.4
+        plot_clr = "green"
+
+    pyplot.figure(2*k)
+    if cln == 0:
+        pyplot.bar(cln + offset,max_recall,label = "p = " + str(p),width=0.2, color=plot_clr)
+    else:
+        pyplot.bar(cln + offset,max_recall,width=0.2, color=plot_clr)
+
+    pyplot.figure(2*k + 1)
+    if cln == 0:                    
+        pyplot.bar(cln + offset,max_precision,label="p = " + str(p), width=0.2, color=plot_clr)
+    else:
+        pyplot.bar(cln + offset,max_precision, width=0.2, color=plot_clr)
+
+
+
 #Begin Script here:
 if __name__ == "__main__":
 #names of people who contributed labels
@@ -47,19 +80,24 @@ if __name__ == "__main__":
 
 
     #set up empty lists for labels on bar graphs
+    # add entry for "__everyone__" to aggregate
     classifier_r_labels = dict()
     for name in names:
         classifier_r_labels[name] = range(len(classifier_names))
+    classifier_r_labels["__everyone__"] = range(len(classifier_names))
     classifier_p_labels = dict()
     for name in names:
         classifier_p_labels[name] = range(len(classifier_names))
+    classifier_p_labels["__everyone__"] = range(len(classifier_names))
 
     param_r_labels = dict()
     for name in names:
         param_r_labels[name] = range(len(classifier_names))
+    param_r_labels["__everyone__"] = range(len(classifier_names))
     param_p_labels = dict()
     for name in names:
         param_p_labels[name] = range(len(classifier_names))
+    param_p_labels["__everyone__"] = range(len(classifier_names))
 
 
     #set up parameters and their names                                      
@@ -74,8 +112,8 @@ if __name__ == "__main__":
         #go through values for p
         for p in [1.0, 0.1, 'adaptive']:
             print "P value is: ", p
+
             #go through users
-            
             for k in range(len(names)):
                 #use k to determine plots
                 name = names[k]
@@ -121,73 +159,50 @@ if __name__ == "__main__":
                 print "total papers: ", len(current_data)
 
                 classifier_tester.Test(current_data,current_labels)
-                classifier_tester.ReportGrid()
+                recall_grid, precision_grid = classifier_tester.ReportGrid()
                 
+                #set up grid from gridsearch that aggregates over all names:
+                #if it's the first name, make the grid
+                if k == 0:
+                    total_recall_grid = recall_grid
+                    total_precision_grid = precision_grid
+                else:
+                    #add values to grids for aggregating
+                    for param in recall_grid:
+                        total_recall_grid[param] += recall_grid[param]
+                        total_precision_grid[param] += precision_grid[param]
+                        
                 best_r_params, max_recall, r_neg_updates = classifier_tester.ReportBestRecall()
 
                 best_p_params, max_precision, p_neg_updates = classifier_tester.ReportBestPrecision()
                 
-                
-                
-                
+                AddBarToPlot(cln, max_recall, max_precision, k)
+
                 if p == 1.0:
-                    pyplot.figure(2*k)
-                    if cln == 0:
-                        pyplot.bar(cln,max_recall,label="p = 1.0",width=0.2, color="blue")
-                    else:
-                        pyplot.bar(cln,max_recall,width=0.2, color="blue")
-                        
                     classifier_r_labels[name][cln] = classifier_names[cln] + "\n Neg updates: " + str(r_neg_updates)
-
                     param_r_labels[name][cln] = "\n params: " + str(best_r_params)
-
-                    pyplot.figure(2*k + 1)
-                    if classifier_names[cln] == "Perceptron":
-                        pyplot.bar(cln,max_precision,label="p = 1.0",width=0.2, color="blue")
-                    else:
-                        pyplot.bar(cln,max_precision,width=0.2, color="blue")
                     classifier_p_labels[name][cln] = classifier_names[cln] + "\n Neg updates: " + str(p_neg_updates)
                     param_p_labels[name][cln] = "\n params: " + str(best_p_params)
-
-
-                elif p == 0.1: 
-                    # plot offset bars for p = 0.1
-                    pyplot.figure(2*k)
-                    if classifier_names[cln] == "Perceptron":
-                        pyplot.bar(cln + 0.2,max_recall,label = "p = 0.1",width=0.2, color="red")
-                    else:
-                        pyplot.bar(cln + 0.2,max_recall,width=0.2, color="red")
+                else:
                     classifier_r_labels[name][cln] += ", " + str(r_neg_updates)
                     param_r_labels[name][cln] += ", " + str(best_r_params)
-
-                    pyplot.figure(2*k + 1)
-                    if classifier_names[cln] == "Perceptron":                    
-                        pyplot.bar(cln + 0.2,max_precision,label="p = 0.1", width=0.2, color="red")
-                    else:
-                        pyplot.bar(cln + 0.2,max_precision, width=0.2, color="red")
                     classifier_p_labels[name][cln] += ", " + str(p_neg_updates)
                     param_p_labels[name][cln] += ", " + str(best_p_params)
-
-
-
-                elif p == 'adaptive':
-                    pyplot.figure(2*k)
-                    if classifier_names[cln] == "Perceptron":
-                        pyplot.bar(cln + 0.4,max_recall,label = "p = adaptive",width=0.2, color="green")
-                    else:
-                        pyplot.bar(cln + 0.4,max_recall,width=0.2, color="green")
-                    classifier_r_labels[name][cln] += ", " + str(r_neg_updates)
-                    param_r_labels[name][cln] += ", " + str(best_r_params)
-
-                    pyplot.figure(2*k + 1)
-                    if classifier_names[cln] == "Perceptron":
-                        pyplot.bar(cln + 0.4,max_precision,label = "p = adaptive",width=0.2, color="green")
-                    else:
-                        pyplot.bar(cln + 0.4,max_precision,width=0.2, color="green")
-                    classifier_p_labels[name][cln] += ", " + str(p_neg_updates)
-                    param_p_labels[name][cln] += ", " + str(best_p_params)
-
+    
+            
+                #normalize total grids
+                for param in total_recall_grid:
+                    total_recall_grid[param] = total_recall_grid[param]/len(names)
+                    total_precision_grid[param] = total_precision_grid[param]/len(names)
                     
+                #find best parameters, TODO: Implement this.
+#                best_r_params, max_recall = BestParams(total_recall_grid)
+#                best_p_params, max_precision = BestParams(total_recall_grid)
+                
+                
+                
+
+            
     for k in range(len(names)):
         pyplot.figure(2*k)
         pyplot.title("Recall for " + names[k])
@@ -211,13 +226,10 @@ if __name__ == "__main__":
         pyplot.ylim([0,1])
         pyplot.legend(loc="best",prop={"size":10})
         pyplot.savefig("./" + names[k] + "Precision.pdf")
-            
-                    
-                    
-                               
-                
 
-                
-                
-                        
+    
+    
+
+
+    
                     
