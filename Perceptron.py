@@ -9,8 +9,6 @@ def sign(x):
     else:
         return -1
 
-
-
 class PerceptronClassifier:
     """ Simple perceptron algorithm for online learning. """
     
@@ -34,13 +32,9 @@ class PerceptronClassifier:
         We will only update on some of the predictions where y_hat = -1 (undesireable paper).
         """
         if y_hat != y:
-            if y_hat == 1:
-                eta = self.eta*self.p
-            else:
-                eta = self.eta
             #update
             self.n_wrong += 1
-            x.UpdateWeights(self.weights,y,eta)
+            x.UpdateWeights(self.weights,y,self.eta)
         else:
             self.n_correct += 1
         
@@ -111,11 +105,7 @@ class VotedPerceptronClassifier:
         """
         if y_hat != y:
             #update
-            if y_hat == 1:
-                eta = self.eta*self.p
-            else:
-                eta = self.eta
-            x.UpdateWeights(self.weights,y,eta)
+            x.UpdateWeights(self.weights,y,self.eta)
             self.T = self.T + 1
             for word in self.weights:
                 if word in self.voted_weights:

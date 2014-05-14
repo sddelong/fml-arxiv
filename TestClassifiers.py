@@ -101,7 +101,7 @@ def BestParams(grid, neg_updates):
 #Begin Script here:
 if __name__ == "__main__":
 #names of people who contributed labels
-    names = ["steven","joey","sid","manas"]#,"iantobasco","travis"]
+    names = ["steven","joey"] #,"sid","manas","iantobasco","travis"]
     custom_data_dict = {'steven' : 'stevenCustomTestData.pkl', 'joey' : 'joeynewCustomTestData.pkl','travis' : 'travisCustomTestData.pkl', }
     custom_label_dict = {'steven' : 'stevencustomlabels.pkl', 'joey' : 'joeynewcustomlabels.pkl', 'travis' : 'traviscustomlabels.pkl'}
     
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     
     #liss of classifiers and their names
     classifier_list = [MakePerceptronClassifier, MakeVotedPerceptronClassifier, MakeMarginPerceptronClassifier,MakeOnlineSVMClassifier,MakeGaussianKernelPerceptronClassifier, MakePolynomialKernelPerceptronClassifier, MakeWeightedMajorityClassifier]
-    classifier_names = ["Perceptron","Voted Perceptron", "Margin Perceptron","Online SVM","Gaussian Kernel Perceptron","Polynomial Kernel Perceptron", "Weighted Majority Classifier"]
+    classifier_names = ["Perceptron","Voted Perceptron", "Margin Perceptron","Online SVM","Gaussian Kernel Perceptron","Polynomial Kernel Perceptron", "Majority Vote Classifier"]
 
     #set up empty lists for labels on bar graphs
     # add entry for "__everyone__" to aggregate
@@ -155,13 +155,13 @@ if __name__ == "__main__":
 
         #go through values for p
         for p in [1.0, 0.1, 'adaptive']:
-            print "P value is: ", p
+#            print "P value is: ", p
 
             #go through users
             for k in range(len(names)):
                 #use k to determine plots
                 name = names[k]
-                print "User: ", name
+#                print "User: ", name
 
                 #create classifier tester
                 classifier_tester = ClassifierTester(classifier_list[cln],parameters_list[cln],nparams_list[cln],p,classifier_names[cln])
@@ -192,18 +192,15 @@ if __name__ == "__main__":
                     
             #shuffle custom and regular data together
                 packaged_data = [(current_data[i],current_labels[i]) for i in range(len(current_data))]
-                random.seed(1)
+                random.seed(3)
                 random.shuffle(packaged_data)
                     
                 for i in range(len(packaged_data)):
                     current_data[i] = packaged_data[i][0]
                     current_labels[i] = packaged_data[i][1]
 
-                print "total positives: ", sum(np.array(current_labels) == 1)
-                print "total papers: ", len(current_data)
-
                 classifier_tester.Test(current_data,current_labels)
-                recall_grid, precision_grid, neg_updates = classifier_tester.ReportGrid()
+                recall_grid, precision_grid, neg_updates, blah = classifier_tester.ReportGrid(0)
                 
                 #set up grid from gridsearch that aggregates over all names:
                 #if it's the first name, make the grid

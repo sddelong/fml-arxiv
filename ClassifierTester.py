@@ -22,6 +22,7 @@ class ClassifierTester:
         self.recall_grid = dict()
         self.precision_grid = dict()
         self.neg_update_grid = dict()
+        self.last_neg_update_grid = dict()
 
         
     def Test(self,data,labels):
@@ -43,7 +44,7 @@ class ClassifierTester:
             n_recall_wrong = 0
             total_negative_checks = 0    #how many negative predictions the user must verify
             total_end_negative_checks = 0 #how many checks we do in the last 100 papers
-            threshold = 50 #hard code threshold = 50 for now
+            threshold = 150 #hard code threshold = 150 for now
 
             #loop through data and run the algorithm
             for i in range(len(data)):
@@ -58,15 +59,16 @@ class ClassifierTester:
                     # and for adaptive p, update value of current_p
                     if self.p == 'adaptive':
                         #got it correct, reduce p towards 0.01, our minimum
+#                        print "current p is", self.current_p
                         if np.random.binomial(1,self.current_p) == 1:
                             self.current_p = 0.9*self.current_p + 0.001
                             total_negative_checks += 1
-                            if len(data) - i < 100 :
+                            if i  > threshold :
                                 total_end_negative_checks += 1
                     else:
                         if np.random.binomial(1,self.p) == 1:
                             total_negative_checks += 1
-                            if len(data) - i < 100 :
+                            if i  > threshold :
                                 total_end_negative_checks += 1
 
                 elif y_hat == 1 and y == -1:
@@ -81,23 +83,25 @@ class ClassifierTester:
                     if self.p == 'adaptive':
                         # got it wrong, move current_p toward 1.0
                         # to check more frequently
+#                        print "current p is", self.current_p
                         k = np.random.binomial(1,self.current_p)
                         if k == 1:
                             total_negative_checks += 1
-                            if len(data) - i < 100 :
+                            if i  > threshold :
                                 total_end_negative_checks += 1
                             classifier.Update(x,y_hat,y)
-                            self.current_p = 0.4*self.current_p + 0.6
+                            self.current_p = 0.55*self.current_p + 0.4
                     else:
                         k = np.random.binomial(1,self.p)
                         if k == 1:
                             total_negative_checks += 1
-                            if len(data) - i < 100 :
+                            if i  > threshold :
                                 total_end_negative_checks += 1
                             classifier.Update(x,y_hat,y)
 
 
             self.neg_update_grid[self._ParamsToString(params)] = total_negative_checks
+            self.last_neg_update_grid[self._ParamsToString(params)] = total_end_negative_checks
             
             if n_pos_right != 0:
                 self.recall_grid[self._ParamsToString(params)] = float(n_pos_right)/float(n_pos_right + n_recall_wrong)
@@ -106,76 +110,77 @@ class ClassifierTester:
                 self.recall_grid[self._ParamsToString(params)] = 0.0
                 self.precision_grid[self._ParamsToString(params)] = 0.0
                 
-    def ReportGrid(self):
+    def ReportGrid(self, out_flag):
+        """ if out_flag = 1, pring things.  Otherwise don't and just return grids """
         
-        if self.n_params == 1:
-            classifier = self.classifier_creator([0.0])
-            print classifier.name
-            parameters_list = [[p] for p in self.gridsearch_parameters]
-            print "        Recall Grid:            "
-            print "-"*60
-            print_str = ""
-            for p in self.gridsearch_parameters:
-                print_str +=  str(p) +  "    | "
-            print print_str
-            print_str = ""
-            for param in parameters_list:
-                print_str += "%1.4f" % (self.recall_grid[self._ParamsToString(param)]) + " | "
-            print print_str
-            print "-"*60
-            print "\n"
-
-            print "        Precision Grid:            "
-            print "-"*60
-            print_str = ""
-            for p in self.gridsearch_parameters:
-                print_str += str(p) +  "    | "
-            print print_str
-            print_str = ""
-            for param in parameters_list:
-                print_str += "%1.4f" % (self.precision_grid[self._ParamsToString(param)]) + " | "
-            print print_str
-            print "-"*60
-            print "\n"
-            
-        elif self.n_params == 2:
-            classifier = self.classifier_creator([0.0, 0.0])
-            print classifier.name
-            print "        Recall Grid         "
-            print "-"*60
-            print_str = "       | "
-            for p in self.gridsearch_parameters[0]:
-                print_str += str(p) + "    | "
-            print print_str
-            print_str = ""
-            print "-"*50
-            for p2 in self.gridsearch_parameters[1]:
-                print_str +=  "%1.3f" % p2 +  "  || "
-                for p1 in self.gridsearch_parameters[0]:
-                    print_str += "%1.4f" % (self.recall_grid[self._ParamsToString([p1,p2])]) + " | "
+        if out_flag == 1:
+            if self.n_params == 1:
+                classifier = self.classifier_creator([0.0])
+                print classifier.name
+                parameters_list = [[p] for p in self.gridsearch_parameters]
+                print "        Recall Grid:            "
+                print "-"*60
+                print_str = ""
+                for p in self.gridsearch_parameters:
+                    print_str +=  str(p) +  "    | "
                 print print_str
                 print_str = ""
-            print "-"*60
-
-
-            print "        Precision Grid         "
-            print "-"*60
-            print_str = "       | "
-            for p in self.gridsearch_parameters[0]:
-                print_str += str(p) + "    | "
-            print print_str
-            print_str = ""
-            print "-"*50
-            for p2 in self.gridsearch_parameters[1]:
-                print_str +=  "%1.3f" % p2 +  "  || "
-                for p1 in self.gridsearch_parameters[0]:
-                    print_str += "%1.4f" % (self.precision_grid[self._ParamsToString([p1,p2])]) + " | "
+                for param in parameters_list:
+                    print_str += "%1.4f" % (self.recall_grid[self._ParamsToString(param)]) + " | "
+                print print_str
+                print "-"*60
+                print "\n"
+    
+                print "        Precision Grid:            "
+                print "-"*60
+                print_str = ""
+                for p in self.gridsearch_parameters:
+                    print_str += str(p) +  "    | "
                 print print_str
                 print_str = ""
-            print "-"*60
-
+                for param in parameters_list:
+                    print_str += "%1.4f" % (self.precision_grid[self._ParamsToString(param)]) + " | "
+                print print_str
+                print "-"*60
+                print "\n"
+                
+            elif self.n_params == 2:
+                classifier = self.classifier_creator([0.0, 0.0])
+                print classifier.name
+                print "        Recall Grid         "
+                print "-"*60
+                print_str = "       | "
+                for p in self.gridsearch_parameters[0]:
+                    print_str += str(p) + "    | "
+                print print_str
+                print_str = ""
+                print "-"*50
+                for p2 in self.gridsearch_parameters[1]:
+                    print_str +=  "%1.3f" % p2 +  "  || "
+                    for p1 in self.gridsearch_parameters[0]:
+                        print_str += "%1.4f" % (self.recall_grid[self._ParamsToString([p1,p2])]) + " | "
+                    print print_str
+                    print_str = ""
+                print "-"*60
+    
+    
+                print "        Precision Grid         "
+                print "-"*60
+                print_str = "       | "
+                for p in self.gridsearch_parameters[0]:
+                    print_str += str(p) + "    | "
+                print print_str
+                print_str = ""
+                print "-"*50
+                for p2 in self.gridsearch_parameters[1]:
+                    print_str +=  "%1.3f" % p2 +  "  || "
+                    for p1 in self.gridsearch_parameters[0]:
+                        print_str += "%1.4f" % (self.precision_grid[self._ParamsToString([p1,p2])]) + " | "
+                    print print_str
+                    print_str = ""
+                print "-"*60
             
-        return self.recall_grid, self.precision_grid, self.neg_update_grid
+        return self.recall_grid, self.precision_grid, self.neg_update_grid, self.last_neg_update_grid
 
 
     def ReportBestRecall(self):
