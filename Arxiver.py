@@ -1,6 +1,6 @@
 import ArxivSubjects as arxs
 from ArxivData import GetPapersOAI
-
+import Perceptron as perc
 
 class Arxiver:
     
@@ -9,7 +9,9 @@ class Arxiver:
         self.classifier = classifier
         self.subjects = None
         self.subcategories = None
-        
+        self.name = ''
+
+
     def SetUp(self):
         """ Ask for name, subjects and subcategories"""
         
@@ -72,14 +74,102 @@ class Arxiver:
     def CheckTodaysPapers(self):
         """ Use OAI to get today's papers and check them one at a time asking for user input."""
 
-        paper_list = getPapersOAI()
-        
-        
-        
-        
-    
-    
+        paper_list = GetPapersOAI()
 
-                    
+    def Prompt(self):
+        """ Present an abstract to the user 
+        """        
+        
+    def Run(self):
+        """ Run the algorithm by presenting abstracts, receiving labels and calling function to
+                update weights.
+        """
 
-                
+        #filename where data is stored
+        data_filename = "./" + user_name + "CustomTestData.pkl"
+
+        data_file = open(data_filename,"rb")
+
+
+        paper_list = cPickle.load(data_file)
+
+        print paper_list
+
+        #initialize list of labels
+        label_list = []
+
+
+        #Vectorize abstracts
+        classifier = perc.PerceptronClassifier(1.0)
+        for paper in paper_list:
+            print "-"*80
+            #Predict abstract, make y_hat
+            #If prediction is 1, present paper, make update
+            #Else if predition is -1, make k
+            #If k=1 present abstract, make update
+            #If k=0 don't
+            label = PromptUser(paper)
+            label_list.append(label)
+
+
+        out_file = open(str(user_name) + "customlabels.pkl","wb")
+        cPickle.dump(label_list,out_file)
+
+
+
+    def CheckAbstract(x, label)
+        """ Receive data and label for one abstract, make prediction 
+        """
+
+        #for i in range(len(data)):
+            x = data[i]
+            y_hat = classifier.Predict(x)
+            y = label
+            if y == 1 and y_hat == 1:
+                if i > threshold:
+                    n_pos_right += 1
+            elif y == -1 and y_hat == -1:
+                #update total_negative_checks count if we had to check, 
+                # and for adaptive p, update value of current_p
+                if self.p == 'adaptive':
+                    #got it correct, reduce p towards 0.01, our minimum
+                    #print "current p is", self.current_p
+                    if np.random.binomial(1,self.current_p) == 1:
+                        self.current_p = 0.9*self.current_p + 0.001
+                        total_negative_checks += 1
+                        if i  > threshold :
+                            total_end_negative_checks += 1
+                else:
+                    if np.random.binomial(1,self.p) == 1:
+                        total_negative_checks += 1
+                        if i  > threshold :
+                            total_end_negative_checks += 1
+
+            elif y_hat == 1 and y == -1:
+                #update on false positive, add one to n_wrong
+                if i > threshold:
+                    n_precision_wrong += 1
+                classifier.Update(x,y_hat,y)
+            else:
+                #maybe update on false negative, depends on p.
+                if i > threshold:
+                    n_recall_wrong += 1
+                if self.p == 'adaptive':
+                    # got it wrong, move current_p toward 1.0
+                    # to check more frequently
+                    #print "current p is", self.current_p
+                    k = np.random.binomial(1,self.current_p)
+                    if k == 1:
+                        total_negative_checks += 1
+                        if i  > threshold :
+                            total_end_negative_checks += 1
+                        classifier.Update(x,y_hat,y)
+                        self.current_p = 0.55*self.current_p + 0.4
+                else:
+                    k = np.random.binomial(1,self.p)
+                    if k == 1:
+                        total_negative_checks += 1
+                        if i  > threshold :
+                            total_end_negative_checks += 1
+                        classifier.Update(x,y_hat,y)
+
