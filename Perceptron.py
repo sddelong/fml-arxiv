@@ -9,8 +9,6 @@ def sign(x):
     else:
         return -1
 
-
-
 class PerceptronClassifier:
     """ Simple perceptron algorithm for online learning. """
     

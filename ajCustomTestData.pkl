@@ -1,0 +1,3391 @@
+(lp1
+(iArxivData
+Paper
+p2
+(dp3
+S'published'
+p4
+S'2014-04-09'
+p5
+sS'abstract'
+p6
+S'  This paper is a continuation of [7] where we prove a characterization of the\nsupport in H\\"older norm of the law of the solution to a stochastic wave\nequation with three-dimensional space variable and null initial conditions.\nHere we allow for non null initial conditions and therefore the solution does\nnot possess a stationary property in space. As in [7], the support theorem is a\nconsequence of an approximation result, in the convergence of probability, of a\nsequence of evolution equations driven by a family of regularizations of the\ndriving noise. However, the method of the proof differs from [7] since\narguments based on the stationarity property of the solution cannot be used.\n'
+p7
+sS'authors'
+p8
+(lp9
+S'Delgado-Vences, Francisco'
+p10
+aVSanz-Solé, Marta
+p11
+asS'id'
+p12
+S'oai:arXiv.org:1404.2411'
+p13
+sS'title'
+p14
+S'Approximation of a stochastic wave equation in dimension three, with\n  application to a support theorem in H\\"older norm: the non-stationary case'
+p15
+sba(iArxivData
+Paper
+p16
+(dp17
+g4
+S'2014-03-28'
+p18
+sg6
+S"  We apply the techniques developed in Comets and Popov (2003) to present a new\nproof to Sinai's theorem (Sinai, 1982) on one-dimensional random walk in random\nenvironment (RWRE), working in a scale-free way to avoid rescaling arguments\nand splitting the proof in two independent parts: a quenched one, related to\nthe measure $P_\\omega$ conditioned on a fixed, typical realization $\\omega$ of\nthe environment, and an annealed one, related to the product measure\n$\\mathbb{P}$ of the environment $\\omega$. The quenched part still holds even if\nwe use another measure (possibly dependent) for the environment.\n"
+p19
+sg8
+(lp20
+S'Freire, Marcelo Ventura'
+p21
+asg12
+S'oai:arXiv.org:1403.7535'
+p22
+sg14
+S"Application of moderate deviation techniques to prove Sinai's Theorem on\n  RWRE"
+p23
+sba(iArxivData
+Paper
+p24
+(dp25
+g4
+S'2014-03-30'
+p26
+sg6
+S'  We study a family of bivariate orthogonal polynomials associated to the\ndeltoid curve. These polynomials arise when classifying bivariate diffusion\noperators that have discrete spectral decomposition given by orthogonal\npolynomials with respect to some compactly-supported probability measure on the\ninterior of the deltoid curve.\n'
+p27
+sg8
+(lp28
+S'Zribi, Olfa'
+p29
+asg12
+S'oai:arXiv.org:1403.7712'
+p30
+sg14
+S'Orthogonal polynomials associated with the deltoid curve'
+p31
+sba(iArxivData
+Paper
+p32
+(dp33
+g4
+S'2014-04-11'
+p34
+sg6
+S'  We unconditionally prove a central limit theorem for linear statistics of the\nzeros of the Riemann zeta function with diverging variance. Previously,\ntheorems of this sort have been proved under the assumption of the Riemann\nhypothesis. The result mirrors central limit theorems in random matrix theory\nthat have been proved by Szeg\\H{o}, Spohn, and Soshnikov among others, and\ntherefore provides support for the view that the zeros of the zeta function are\ndistributed like the eigenvalues of a random matrix.\n  A key ingredient in our proof is a simple bootstrapping of classical zero\ndensity estimates of Selberg and Jutila for the zeta function, which may be of\nindependent interest.\n'
+p35
+sg8
+(lp36
+S'Maples, Kenneth'
+p37
+aS'Rodgers, Brad'
+p38
+asg12
+S'oai:arXiv.org:1404.3080'
+p39
+sg14
+S'Bootstrapped zero density estimates and a central limit theorem for the\n  zeros of the zeta function'
+p40
+sba(iArxivData
+Paper
+p41
+(dp42
+g4
+S'2014-03-19'
+p43
+sg6
+S'  A bounded curvature path is a continuously differentiable piecewise $C^2$\npath with bounded absolute curvature that connects two points in the tangent\nbundle of a surface. In this note we give necessary and sufficient conditions\nfor two bounded curvature paths, defined in the Euclidean plane, to be in the\nsame connected component while keeping the curvature bounded at every stage of\nthe deformation. Following our previous results here we finish a program\nstarted by Lester Dubins in 1961.\n'
+p44
+sg8
+(lp45
+VAyala, José
+p46
+aS'Rubinstein, Hyam'
+p47
+asg12
+S'oai:arXiv.org:1403.5314'
+p48
+sg14
+S'The Classification of Homotopy Classes of Bounded Curvature Paths'
+p49
+sba(iArxivData
+Paper
+p50
+(dp51
+g4
+S'2014-03-26'
+p52
+sg6
+S'  These are the lecture notes of a "Nachdiplomvorlesung" course taught at ETH\nZurich in the Spring of 2013.\n'
+p53
+sg8
+(lp54
+S'Serfaty, Sylvia'
+p55
+asg12
+S'oai:arXiv.org:1403.6860'
+p56
+sg14
+S'Coulomb Gases and Ginzburg-Landau Vortices'
+p57
+sba(iArxivData
+Paper
+p58
+(dp59
+g4
+S'2014-03-18'
+p60
+sg6
+S'  Let $X$ be a product of locally compact rank one Hadamard spaces and $\\Gamma$\na discrete group of isometries which contains two elements projecting to a pair\nof independent rank one isometries in each factor. In [arXiv:1308.5584] we gave\na precise description of the structure of the geometric limit set of $\\Gamma$;\nour aim in this paper is to describe this set from a measure theoretical point\nof view, using as a basic tool the properties of the exponent of growth of\n$\\Gamma$ established in the aforementioned article. We first show that the\nconformal density obtained from the classical Patterson-Sullivan construction\nis supported in a unique $\\Gamma$-invariant subset of the geometric limit set;\ngeneralizing this classical construction we then obtain measures supported in\neach $\\Gamma$-invariant subset of the regular limit set and investigate their\nproperties.\n  We remark that apart from Kac-Moody groups over finite fields acting on the\nDavis complex of their associated twin building, the probably most interesting\nexamples to which our results apply are isometry groups of reducible\nCAT(0)-cube complexes without Euclidean factors.\n'
+p61
+sg8
+(lp62
+S'Link, Gabriele'
+p63
+asg12
+S'oai:arXiv.org:1403.4858'
+p64
+sg14
+S'Generalized conformal densities for higher products of rank one Hadamard\n  spaces'
+p65
+sba(iArxivData
+Paper
+p66
+(dp67
+g4
+S'2014-03-24'
+p68
+sg6
+S'  We consider a square random matrix of size N of the form A + Y where A is\ndeterministic and Y has iid entries with variance 1/N. Under mild assumptions,\nas N grows, the empirical distribution of the eigenvalues of A+Y converges\nweakly to a limit probability measure \\beta on the complex plane. This work is\ndevoted to the study of the outlier eigenvalues, i.e. eigenvalues in the\ncomplement of the support of \\beta. Even in the simplest cases, a variety of\ninteresting phenomena can occur. As in earlier works, we give a sufficient\ncondition to guarantee that outliers are stable and provide examples where\ntheir fluctuations vary with the particular distribution of the entries of Y or\nthe Jordan decomposition of A. We also exhibit concrete examples where the\noutlier eigenvalues converge in distribution to the zeros of a Gaussian\nanalytic function.\n'
+p69
+sg8
+(lp70
+S'Bordenave, Charles'
+p71
+aS'Capitaine, Mireille'
+p72
+asg12
+S'oai:arXiv.org:1403.6001'
+p73
+sg14
+S'Outlier eigenvalues for deformed i.i.d. random matrices'
+p74
+sba(iArxivData
+Paper
+p75
+(dp76
+g4
+S'2014-03-25'
+p77
+sg6
+S'  In this paper we study progressive filtration expansions with c\\`adl\\`ag\nprocesses. Using results from the theory of the weak convergence of\n$\\sigma$-fields, we first establish a semimartingale convergence theorem. Then\nwe apply it in a filtration expansion with a process setting and provide\nsufficient conditions for a semimartingale of the base filtration to remain a\nsemimartingale in the expanded filtration. Applications to the expansion of a\nBrownian filtration are given. The paper concludes with applications to models\nof insider trading in financial mathematics.\n'
+p78
+sg8
+(lp79
+S'Kchia, Younes'
+p80
+aS'Protter, Philip'
+p81
+asg12
+S'oai:arXiv.org:1403.6323'
+p82
+sg14
+S'On Progressive Filtration Expansions with a Process; Applications to\n  Insider Trading'
+p83
+sba(iArxivData
+Paper
+p84
+(dp85
+g4
+S'2014-03-23'
+p86
+sg6
+S"  Consider a multidimensional diffusion process $X=\\{X\\left(t\\right)\n:t\\in\\lbrack0,1]\\}$. Let $\\varepsilon>0$ be a \\textit{deterministic}, user\ndefined, tolerance error parameter. Under standard regularity conditions on the\ndrift and diffusion coefficients of $X$, we construct a probability space,\nsupporting both $X$ and an explicit, piecewise constant, fully simulatable\nprocess $X_{\\varepsilon}$ such that \\[ \\sup_{0\\leq t\\leq1}\\left\\Vert\nX_{\\varepsilon}\\left(t\\right) -X\\left(t\\right) \\right\\Vert_{\\infty}<\\varepsilon\n\\] with probability one. Moreover, the user can adaptively choose\n$\\varepsilon^{\\prime}\\in\\left(0,\\varepsilon\\right) $ so that\n$X_{\\varepsilon^{\\prime}}$ (also piecewise constant and fully simulatable) can\nbe constructed conditional on $X_{\\varepsilon}$ to ensure an error smaller than\n$\\varepsilon^{\\prime}>0$ with probability one. Our construction requires a\ndetailed study of continuity estimates of the Ito map using Lyon's theory of\nrough paths. We approximate the underlying Brownian motion, jointly with the\nL\\'{e}vy areas with a deterministic $\\varepsilon$ error in the underlying rough\npath metric.\n"
+p87
+sg8
+(lp88
+S'Blanchet, Jose'
+p89
+aS'Chen, Xinyun'
+p90
+aS'Dong, Jing'
+p91
+asg12
+S'oai:arXiv.org:1403.5722'
+p92
+sg14
+S'$\\epsilon$-Strong Simulation for Multidimensional Stochastic\n  Differential Equations via Rough Path Analysis'
+p93
+sba(iArxivData
+Paper
+p94
+(dp95
+g4
+S'2014-03-27'
+p96
+sg6
+S'  We consider the classical Wright-Fisher model with mutation and selection.\nMutations occur independently in each locus, and selection is performed\naccording to the sharp peak landscape. In the asymptotic regime studied in [3],\na quasispecies is formed. We find explicitly the distribution of this\nquasispecies, which turns out to be the same distribution as for the Moran\nmodel.\n'
+p97
+sg8
+(lp98
+S'Dalmau, Joseba'
+p99
+asg12
+S'oai:arXiv.org:1403.6951'
+p100
+sg14
+S'The distribution of the quasispecies for the Wright-Fisher model on the\n  sharp peak landscape'
+p101
+sba(iArxivData
+Paper
+p102
+(dp103
+g4
+S'2014-03-23'
+p104
+sg6
+S'  We point out an easy link between two striking identities on exponential\nfunctionals of the Wiener process and the Wiener bridge originated by Bougerol,\nand Donati-Martin, Matsumoto and Yor, respectively. The link is established\nusing a continuous one-parameter family of Gaussian processes known as\n$\\alpha$-Wiener bridges or scaled Wiener bridges, which in case $\\alpha=0$\ncoincides with a Wiener process and for $\\alpha=1$ is a version of the Wiener\nbridge.\n'
+p105
+sg8
+(lp106
+S'Barczy, Matyas'
+p107
+aS'Kern, Peter'
+p108
+asg12
+S'oai:arXiv.org:1403.5785'
+p109
+sg14
+S"A link between Bougerol's identity and a formula due to Donati-Martin,\n  Matsumoto and Yor"
+p110
+sba(iArxivData
+Paper
+p111
+(dp112
+g4
+S'2014-02-28'
+p113
+sg6
+S"  In this paper we describe a perfect simulation algorithm for the stable\n$M/G/c$ queue. Sigman (2011: Exact Simulation of the Stationary Distribution of\nthe FIFO M/G/c Queue. Journal of Applied Probability, 48A, 209--213) showed how\nto build a dominated CFTP algorithm for perfect simulation of the super-stable\n$M/G/c$ queue operating under First Come First Served discipline, with\ndominating process provided by the corresponding $M/G/1$ queue (using Wolff's\nsample path monotonicity, which applies when service durations are coupled in\norder of initiation of service), and exploiting the fact that the workload\nprocess for the $M/G/1$ queue remains the same under different queueing\ndisciplines, in particular under the Processor Sharing discipline, for which a\ndynamic reversibility property holds. We generalize Sigman's construction to\nthe stable case by comparing the $M/G/c$ queue to a copy run under Random\nAssignment. This allows us to produce a naive perfect simulation algorithm\nbased on running the dominating process back to the time it first empties. We\nalso construct a more efficient algorithm that uses sandwiching by lower and\nupper processes constructed as coupled $M/G/c$ queues started respectively from\nthe empty state and the state of the $M/G/c$ queue under Random Assignment. A\ncareful analysis shows that appropriate ordering relationships can still be\nmaintained, so long as service durations continue to be coupled in order of\ninitiation of service. We summarize statistical checks of simulation output,\nand demonstrate that the mean run-time is finite so long as the second moment\nof the service duration distribution is finite.\n"
+p114
+sg8
+(lp115
+S'Connor, Stephen B.'
+p116
+aS'Kendall, Wilfrid S.'
+p117
+asg12
+S'oai:arXiv.org:1402.7248'
+p118
+sg14
+S'Perfect Simulation of $M/G/c$ Queues'
+p119
+sba(iArxivData
+Paper
+p120
+(dp121
+g4
+S'2014-03-19'
+p122
+sg6
+S'  In this paper, we first establish the existence and uniqueness of $L^p\\\n(p>1)$ solutions for multidimensional backward stochastic differential\nequations (BSDEs) under a weak monotonicity condition together with a general\ngrowth condition in $y$ for the generator $g$. Then, we overview several\nconditions related closely to the weak monotonicity condition and compare them\nin an effective way. Finally, we put forward and prove a stability theorem and\na comparison theorem of $L^p\\ (p>1)$ solutions for this kind of BSDEs.\n'
+p123
+sg8
+(lp124
+S'Fan, ShengJun'
+p125
+asg12
+S'oai:arXiv.org:1403.5005'
+p126
+sg14
+S'$L^p$ solutions of multidimensional BSDEs with weak monotonicity and\n  general growth generators'
+p127
+sba(iArxivData
+Paper
+p128
+(dp129
+g4
+S'2014-03-27'
+p130
+sg6
+S'  We develop a new method for showing that a given sequence of random variables\nverifies an appropriate law of the iterated logarithm. Our tools involve the\nuse of general estimates on multidimensional Wasserstein distances, that are in\nturn based on recently developed inequalities involving Stein matrices and\ntransport distances. Our main application consists in the proof of the exact\nlaw of the iterated logarithm for the Hermite variations of a fractional\nBrownian motion in the critical case.\n'
+p131
+sg8
+(lp132
+S'Azmoodeh, E.'
+p133
+aS'Peccati, G.'
+p134
+aS'Poly, G.'
+p135
+asg12
+S'oai:arXiv.org:1403.7003'
+p136
+sg14
+S'The law of iterated logarithm for subordinated Gaussian sequences:\n  uniform Wasserstein bounds'
+p137
+sba(iArxivData
+Paper
+p138
+(dp139
+g4
+S'2014-03-25'
+p140
+sg6
+S'  The aim of this paper is to develop a sequence of discrete approximations to\na one-dimensional It\\^o diffusion that almost surely converges to a weak\nsolution of the given stochastic differential equation. Under suitable\nconditions, the solution of the stochastic differential equation can be reduced\nto the solution of an ordinary differential equation plus an application of\nGirsanov\'s theorem to adjust the drift. The discrete approximation is based on\na specific strong approximation of Brownian motion by simple, symmetric random\nwalks (the so-called "twist and shrink" method). A discrete It\\^o\'s formula is\nalso used during the discrete approximation.\n'
+p141
+sg8
+(lp142
+S'van der Hoek, John'
+p143
+aS'Szabados, Tamas'
+p144
+asg12
+S'oai:arXiv.org:1403.6517'
+p145
+sg14
+S'An approximation of It\\^o diffusions based on simple random walks'
+p146
+sba(iArxivData
+Paper
+p147
+(dp148
+g4
+S'2014-03-21'
+p149
+sg6
+S'  We consider the problem of minimizing queue-length costs in a system with\nheterogenous parallel servers, operating in a many-server heavy-traffic regime\nwith nondegenerate slowdown. This regime is distinct from the well-studied\nheavy traffic diffusion regimes, namely the (single server) conventional regime\nand the (many-server) Halfin-Whitt regime. It has the distinguishing property\nthat waiting times and service times are of comparable magnitudes. We establish\nan asymptotic lower bound on the cost and devise a sequence of policies that\nasymptotically attain this bound. As in the conventional regime, the\nasymptotics can be described by means of a Brownian control problem, the\nsolution of which exhibits a state space collapse.\n'
+p150
+sg8
+(lp151
+S'Atar, Rami'
+p152
+aS'Gurvich, Itai'
+p153
+asg12
+S'oai:arXiv.org:1403.5399'
+p154
+sg14
+S'Scheduling parallel servers in the nondegenerate slowdown diffusion\n  regime: Asymptotic optimality results'
+p155
+sba(iArxivData
+Paper
+p156
+(dp157
+g4
+S'2014-03-21'
+p158
+sg6
+S'  We study the convergence of a class of Runge-Kutta type schemes for backward\nstochastic differential equations (BSDEs) in a Markovian framework. The schemes\nbelonging to the class under consideration benefit from a certain stability\nproperty. As a consequence, the overall rate of the convergence of these\nschemes is controlled by their local truncation error. The schemes are\ncategorized by the number of intermediate stages implemented between\nconsecutive partition time instances. We show that the order of the schemes\nmatches the number $p$ of intermediate stages for $p\\le3$. Moreover, we show\nthat the so-called order barrier occurs at $p=3$, that is, that it is not\npossible to construct schemes of order $p$ with $p$ stages, when $p>3$. The\nanalysis is done under sufficient regularity on the final condition and on the\ncoefficients of the BSDE.\n'
+p159
+sg8
+(lp160
+VChassagneux, Jean-François
+p161
+aS'Crisan, Dan'
+p162
+asg12
+S'oai:arXiv.org:1403.5394'
+p163
+sg14
+S'Runge-Kutta schemes for backward stochastic differential equations'
+p164
+sba(iArxivData
+Paper
+p165
+(dp166
+g4
+S'2014-03-23'
+p167
+sg6
+S'  We generalise the construction of multivariate Hawkes processes to a possibly\ninfinite network of counting processes on a directed graph $\\mathbb G$. The\nprocess is constructed as the solution to a system of Poisson driven stochastic\ndifferential equations, for which we prove pathwise existence and uniqueness\nunder some reasonable conditions.\n  We next investigate how to approximate a standard $N$-dimensional Hawkes\nprocess by a simple inhomogeneous Poisson process in the mean-field framework\nwhere each pair of individuals interact in the same way, in the limit $N\n\\rightarrow \\infty$. In the so-called linear case for the interaction, we\nfurther investigate the large time behaviour of the process. We study in\nparticular the stability of the central limit theorem when exchanging the\nlimits $N, T\\rightarrow \\infty$ and exhibit different possible behaviours.\n  We finally consider the case $\\mathbb G = \\mathbb Z^d$ with nearest neighbour\ninteractions. In the linear case, we prove some (large time) laws of large\nnumbers and exhibit different behaviours, reminiscent of the infinite setting.\nFinally we study the propagation of a {\\it single impulsion} started at a given\npoint of $\\zz^d$ at time $0$. We compute the probability of extinction of such\nan impulsion and, in some particular cases, we can accurately describe how it\npropagates to the whole space.\n'
+p168
+sg8
+(lp169
+S'Delattre, Sylvain'
+p170
+aS'Fournier, Nicolas'
+p171
+aS'Hoffmann, Marc'
+p172
+asg12
+S'oai:arXiv.org:1403.5764'
+p173
+sg14
+S'High dimensional Hawkes processes'
+p174
+sba(iArxivData
+Paper
+p175
+(dp176
+g4
+S'2014-04-18'
+p177
+sg6
+S'  We study the singular values of certain triangular random matrices. When\ntheir elements are i.i.d. standard complex Gaussian random variables, the\nsquares of the singular values form a biorthogonal ensemble, and with an\nappropriate change in the distribution of the diagonal elements, they give the\nbiorthogonal Laguerre ensemble. For triangular Wigner matrices, we give\nalternative proofs for the convergence of the empirical distribution of the\nappropriately scaled squares of the singular eigenvalues to a distribution with\nsupport $[0, e]$, as well as for the almost sure convergence of the rescaled\nlargest singular eigenvalue to $\\sqrt{e}$ under the additional assumption of\nmean zero and finite fourth moment for the law of the matrix elements.\n'
+p178
+sg8
+(lp179
+S'Cheliotis, Dimitris'
+p180
+asg12
+S'oai:arXiv.org:1404.4730'
+p181
+sg14
+S'Triangular random matrices and biorthogonal ensembles'
+p182
+sba(iArxivData
+Paper
+p183
+(dp184
+g4
+S'2014-03-24'
+p185
+sg6
+S'  We define a volume function for a robot arms in 3-dimensional Euclidean space\nand give geometric conditions for its critical points. For 3-arms this volume\nfunction is an exact topological Morse function on the 3-sphere.\n'
+p186
+sg8
+(lp187
+S'Siersma, Dirk'
+p188
+asg12
+S'oai:arXiv.org:1403.5913'
+p189
+sg14
+S'Extremal Configuration of Robot Arms in Three Dimensions'
+p190
+sba(iArxivData
+Paper
+p191
+(dp192
+g4
+S'2014-03-25'
+p193
+sg6
+S'  We prove the convergence of the extremal processes for variable speed\nbranching Brownian motions with speed functions that lie below their convex\nhull and satisfy a certain weak regularity condition. These limiting objects\nare universal in the sense that they only depend on the slope of the speed\nfunction at $0$ and the final time $t$. The proof is based on previous results\nfor two-speed BBM obtained in a recent paper of ours and uses Gaussian\ncomparison arguments to extend these to the general case.\n'
+p194
+sg8
+(lp195
+S'Bovier, Anton'
+p196
+aS'Hartung, Lisa'
+p197
+asg12
+S'oai:arXiv.org:1403.6332'
+p198
+sg14
+S'Variable speed branching Brownian motion 1. Extremal processes in the\n  weak correlation regime'
+p199
+sba(iArxivData
+Paper
+p200
+(dp201
+g4
+S'2014-04-29'
+p202
+sg6
+S'  We study integral representations of random variables with respect to general\nH\\"older continuous processes and with respect to two particular cases;\nfractional Brownian motion and mixed fractional Brownian motion. We prove that\narbitrary random variable can be represented as an improper integral, and that\nthe stochastic integral can have any distribution. If in addition the random\nvariable is a final value of an adapted H\\"older continuous process, then it\ncan be represented as a proper integral. It is also shown that in the\nparticular case of mixed fractional Brownian motion, any adapted random\nvariable can be represented as a proper integral.\n'
+p203
+sg8
+(lp204
+S'Shevchenko, Georgiy'
+p205
+aS'Viitasaari, Lauri'
+p206
+asg12
+S'oai:arXiv.org:1404.7518'
+p207
+sg14
+S'Adapted integral representations of random variables'
+p208
+sba(iArxivData
+Paper
+p209
+(dp210
+g4
+S'2014-03-23'
+p211
+sg6
+S'  In this paper, we explicitly calculate the quasi-potentials for the damped\nsemilinear stochastic wave equation when the system is of gradient type. We\nshow that in this case the infimum of the quasi-potential with respect to all\npossible velocities does not depend on the density of the mass and does\ncoincide with the quasi-potential of the corresponding stochastic heat equation\nthat one obtains from the zero mass limit. This shows in particular that the\nSmoluchowski-Kramers approximation can be used to approximate long time\nbehavior in the zero noise limit, such as exit time and exit place from a basin\nof attraction.\n'
+p212
+sg8
+(lp213
+S'Cerrai, Sandra'
+p214
+aS'Salins, Michael'
+p215
+asg12
+S'oai:arXiv.org:1403.5743'
+p216
+sg14
+S'Smoluchowski-Kramers approximation and large deviations for infinite\n  dimensional gradient systems'
+p217
+sba(iArxivData
+Paper
+p218
+(dp219
+g4
+S'2014-04-09'
+p220
+sg6
+S'  A double-normal pair of a finite set $S$ of points from Euclidean space is a\npair of points $\\{p,q\\}$ from $S$ such that $S$ lies in the closed strip\nbounded by the hyperplanes through $p$ and $q$ that are perpendicular to $pq$.\nA double-normal pair $pq$ is strict if $S\\setminus\\{p,q\\}$ lies in the open\nstrip. We answer a question of Martini and Soltan (2006) by showing that a set\nof $n\\geq 3$ points in the plane has at most $3\\lfloor n/2\\rfloor$\ndouble-normal pairs. This bound is sharp for each $n\\geq 3$.\n  In a companion paper, we have asymptotically determined this maximum for\npoints in $R^3$. Here we show that if the set lies on some 2-sphere, it has at\nmost $17n/4 - 6$ double-normal pairs. This bound is attained for infinitely\nmany values of $n$.\n  We also establish tight bounds for the maximum number of strict double-normal\npairs in a set of $n$ points in the plane and on the sphere.\n'
+p221
+sg8
+(lp222
+VPach, János
+p223
+aS'Swanepoel, Konrad J.'
+p224
+asg12
+S'oai:arXiv.org:1404.2624'
+p225
+sg14
+S'Double-normal pairs in the plane and on the sphere'
+p226
+sba(iArxivData
+Paper
+p227
+(dp228
+g4
+S'2014-03-26'
+p229
+sg6
+S'  We study ergodic properties of stochastic geometric wave equations on a\nparticular model with the target being the 2D sphere while considering the\nspace variable-independent solutions only. This simplification leads to a\ndegenerate stochastic equation in the tangent bundle of the 2D sphere. Studying\nthis equation, we prove existence and non-uniqueness of invariant probability\nmeasures for the original problem and we obtain also results on attractivity\ntowards an invariant measure. We also present a suitable numerical scheme for\napproximating the solutions subject to a sphere constraint.\n'
+p230
+sg8
+(lp231
+VBanas, L'ubomír
+p232
+aVBrze\u017aniak, Zdzis\u0142aw
+p233
+aS'Neklyudov, Misha'
+p234
+aVOndreját, Martin
+p235
+aS'Prohl, Andreas'
+p236
+asg12
+S'oai:arXiv.org:1403.6811'
+p237
+sg14
+S'Ergodicity for a stochastic geodesic equation in the tangent bundle of\n  the 2D sphere'
+p238
+sba(iArxivData
+Paper
+p239
+(dp240
+g4
+S'2014-03-26'
+p241
+sg6
+S'  We prove the existence and uniqueness of solutions to a class of stochastic\nscalar conservation laws with joint space-time transport noise and\naffine-linear noise driven by a geometric p-rough path. In particular,\nstability of the solutions with respect to the driving rough path is obtained,\nleading to a robust approach to stochastic scalar conservation laws. As\nimmediate corollaries we obtain support theorems, large deviation results and\nthe generation of a random dynamical system.\n'
+p242
+sg8
+(lp243
+S'Friz, Peter K.'
+p244
+aS'Gess, Benjamin'
+p245
+asg12
+S'oai:arXiv.org:1403.6785'
+p246
+sg14
+S'Stochastic scalar conservation laws driven by rough paths'
+p247
+sba(iArxivData
+Paper
+p248
+(dp249
+g4
+S'2014-04-10'
+p250
+sg6
+S'  We prove functional central and non-central limit theorems for generalized\nvariations of the anisotropic d-parameter fractional Brownian sheet (fBs) for\nany natural number d. Whether the central or the non-central limit theorem\napplies depends on the Hermite rank of the variation functional and on the\nsmallest component of the Hurst parameter vector of the fBs. The limiting\nprocess in the former result is another fBs, independent of the original fBs,\nwhereas the limit given by the latter result is an Hermite sheet, which is\ndriven by the same white noise as the original fBs. As an application, we\nderive functional limit theorems for power variations of the fBs and discuss\nwhat is a proper way to interpolate them to ensure functional convergence.\n'
+p251
+sg8
+(lp252
+S'Pakkanen, Mikko S.'
+p253
+aVRéveillac, Anthony
+p254
+asg12
+S'oai:arXiv.org:1404.2822'
+p255
+sg14
+S'Functional limit theorems for generalized variations of the fractional\n  Brownian sheet'
+p256
+sba(iArxivData
+Paper
+p257
+(dp258
+g4
+S'2014-03-20'
+p259
+sg6
+S'  In our previous paper (ArXiv:1306.1492) we have proved that a representation\nof the infinitesimal generators $L$ for Levy processes $X_t$ can be written\ndown in a convolution type form. For the case of non-summable Levy measures we\nconstructed the quasi-potential operators $B$ and investigated the long time\nbehavior of $X_t$. In the present paper we consider Levy processes $X_t$ with\nsummable Levy measures. In this case the form of the quasi-potential operators\n$B$ essentially differs from the form in the case of non-summable Levy\nmeasures. We use this new form in order to study the long time behavior of\n$X_t$ for the case of summable Levy measures.\n'
+p260
+sg8
+(lp261
+S'Sakhnovich, Lev'
+p262
+asg12
+S'oai:arXiv.org:1403.5456'
+p263
+sg14
+S'Levy processes with summable Levy measures, long time behavior'
+p264
+sba(iArxivData
+Paper
+p265
+(dp266
+g4
+S'2014-04-15'
+p267
+sg6
+S'  The theme of this paper is the analysis of bootstrap percolation processes on\nrandom graphs generated by preferential attachment. This is a class of\ninfection processes where vertices have two states: they are either infected or\nsusceptible. At each round every susceptible vertex which has at least $r\\geq\n2$ infected neighbours becomes infected and remains so forever. Assume that\ninitially $a(t)$ vertices are randomly infected, where $t$ is the total number\nof vertices of the graph. Suppose also that $r < m$, where $2m$ is the average\ndegree. We determine a critical function $a_c(t)$ such that when $a(t) \\gg\na_c(t)$, complete infection occurs with high probability as $t \\rightarrow\n\\infty$, but when $a(t) \\ll a_c (t)$, the process does not evolve. The critical\nfunction satisfies $a_c(t)=o(t)$. In other words, a sub-linear initial\ninfection leads to full infection. In contrast, when $r > m$, we show\ndeterministically that the final infected set has size at most $(m+1)a(t)$ and\nthe above phenomenon does not occur regardless of $a(t)$.\n'
+p268
+sg8
+(lp269
+S'Abdullah, Mohammed Amin'
+p270
+aS'Fountoulakis, Nikolaos'
+p271
+asg12
+S'oai:arXiv.org:1404.4070'
+p272
+sg14
+S'Bootstrap percolation processes on preferential attachment graphs: from\n  sparse contagion to pandemics'
+p273
+sba(iArxivData
+Paper
+p274
+(dp275
+g4
+S'2014-03-19'
+p276
+sg6
+S'  Consider two elements in the tangent bundle of the Euclidean plane\n$(x,X),(y,Y)\\in T{\\mathbb R}^2$. In this work we address the problem of\ncharacterizing the paths of bounded curvature of minimal length, admitting self\nintersections, starting at $x$, finishing at $y$ and having tangents at these\npoints $X$ and $Y$ respectively. We introduce the concept of winding number for\nbounded curvature paths that are not necessarily closed, then we classify the\nminimal length elements in spaces of bounded curvature paths whose elements\nsatisfy a prescribed winding number and initial and final points\n$(x,X),(y,Y)\\in T{\\mathbb R}^2$.\n'
+p277
+sg8
+(lp278
+VAyala, José
+p279
+asg12
+S'oai:arXiv.org:1403.4930'
+p280
+sg14
+S'Shortest Bounded Curvature Paths with Self Intersections'
+p281
+sba(iArxivData
+Paper
+p282
+(dp283
+g4
+S'2014-03-24'
+p284
+sg6
+S"  We show that the adjacency matrix $M$ of a uniform random $d$-regular\ndirected graph on $n$ vertices is invertible with high probability, assuming\nthat $d=\\lfloor \\delta n\\rfloor$ for some fixed $\\delta\\in (0,1)$ and $n$ is\nlarge. The proof exploits both local and global symmetries of the distribution\nof $M$. As in the analogous work of Koml\\'os for i.i.d.\\ sign matrices, we\nseparately handle the event that $M$ has null vectors with a certain special\nstructure, and employ an anti-concentration estimate for random walks due to\nErd\\H{o}s. To overcome difficulties arising from the dependencies among the\nentries of $M$ we make use of some discrepancy properties for the digraph.\n"
+p285
+sg8
+(lp286
+S'Cook, Nicholas A.'
+p287
+asg12
+S'oai:arXiv.org:1403.5845'
+p288
+sg14
+S'Random regular digraphs: Singularity and discrepancy'
+p289
+sba(iArxivData
+Paper
+p290
+(dp291
+g4
+S'2014-03-18'
+p292
+sg6
+S"  We establish an invariance principle for a general class of stationary random\nfields indexed by $\\mathbb Z^d$, under Hannan's condition generalized to\n$\\mathbb Z^d$. To do so we first establish a uniform integrability result for\nstationary orthomartingales, and second we establish a coboundary decomposition\nfor certain stationary random fields. At last, we obtain an invariance\nprinciple by developing an orthomartingale approximation. Our invariance\nprinciple improves known results in the literature, and particularly we require\nonly finite second moment.\n"
+p293
+sg8
+(lp294
+S'Volny, Dalibor'
+p295
+aS'Wang, Yizao'
+p296
+asg12
+S'oai:arXiv.org:1403.4613'
+p297
+sg14
+S"An invariance principle for stationary random fields under Hannan's\n  condition"
+p298
+sba(iArxivData
+Paper
+p299
+(dp300
+g4
+S'2014-02-27'
+p301
+sg6
+S'  For a finite state Markov process and a finite collection $\\{ \\Gamma_k, k \\in\nK \\}$ of subsets of its state space, let $\\tau_k$ be the first time the process\nvisits the set $\\Gamma_k$. We derive explicit/recursive formulas for the joint\ndensity and tail probabilities of the stopping times $\\{ \\tau_k, k \\in K\\}$.\nThe formulas are natural generalizations of those associated with the jump\ntimes of a simple Poisson process. We give a numerical example and indicate the\nrelevance of our results to credit risk modeling.\n'
+p302
+sg8
+(lp303
+S'Bielecki, Tomasz R.'
+p304
+aS'Jeanblanc, Monique'
+p305
+aS'Sezer, Ali Devin'
+p306
+asg12
+S'oai:arXiv.org:1402.7093'
+p307
+sg14
+S'Joint Hitting-Time Densities for Finite State Markov Processes'
+p308
+sba(iArxivData
+Paper
+p309
+(dp310
+g4
+S'2014-04-18'
+p311
+sg6
+S'  We use a simple N-player stochastic game with idiosyncratic and common noises\nto introduce the concept of Master Equation originally proposed by Lions in his\nlectures at the Coll\\`ege de France. Controlling the limit N tends to the\ninfinity of the explicit solution of the N-player game, we highlight the\nstochastic nature of the limit distributions of the states of the players due\nto the fact that the random environment does not average out in the limit, and\nwe recast the Mean Field Game (MFG) paradigm in a set of coupled Stochastic\nPartial Differential Equations (SPDEs). The first one is a forward stochastic\nKolmogorov equation giving the evolution of the conditional distributions of\nthe states of the players given the common noise. The second is a form of\nstochastic Hamilton Jacobi Bellman (HJB) equation providing the solution of the\noptimization problem when the flow of conditional distributions is given. Being\nhighly coupled, the system reads as an infinite dimensional Forward Backward\nStochastic Differential Equation (FBSDE). Uniqueness of a solution and its\nMarkov property lead to the representation of the solution of the backward\nequation (i.e. the value function of the stochastic HJB equation) as a\ndeterministic function of the solution of the forward Kolmogorov equation,\nfunction which is usually called the decoupling field of the FBSDE. The\n(infinite dimensional) PDE satisfied by this decoupling field is identified\nwith the \\textit{master equation}. We also show that this equation can be\nderived for other large populations equilibriums like those given by the\noptimal control of McKean-Vlasov stochastic differential equations. The paper\nis written more in the style of a review than a technical paper, and we spend\nmore time and energy motivating and explaining the probabilistic interpretation\nof the Master Equation, than identifying the most general set of assumptions\nunder which our claims are true.\n'
+p312
+sg8
+(lp313
+VCarmona, René
+p314
+aS'Delarue, Francois'
+p315
+asg12
+S'oai:arXiv.org:1404.4694'
+p316
+sg14
+S'The Master Equation for Large Population Equilibriums'
+p317
+sba(iArxivData
+Paper
+p318
+(dp319
+g4
+S'2014-03-20'
+p320
+sg6
+S'  We determine the asymptotic growth of planar graphs with a condition on the\nminimum degree, and properties of random graphs from these classes. In\nparticular we show that the size of the largest tree attached to the core of a\nrandom planar graph is of order c log(n) for an explicit constant c. These\nresults provide new information on the structure of random planar graphs.\n'
+p321
+sg8
+(lp322
+S'Noy, Marc'
+p323
+aS'Ramos, Lander'
+p324
+asg12
+S'oai:arXiv.org:1403.5211'
+p325
+sg14
+S'Random planar graphs with given minimum degree'
+p326
+sba(iArxivData
+Paper
+p327
+(dp328
+g4
+S'2014-04-10'
+p329
+sg6
+S'  We study the coarse Baum-Connes conjecture for product spaces and product\ngroups. We show that a product of CAT(0) groups, polycyclic groups and\nrelatively hyperbolic groups which satisfy some assumptions on peripheral\nsubgroups, satisfies the coarse Baum-Connes conjecture. For this purpose, we\nconstruct and analyze an appropriate compactification and its boundary,\n"corona", of a product of proper metric spaces.\n'
+p330
+sg8
+(lp331
+S'Fukaya, Tomohiro'
+p332
+aS'Oguni, Shin-ichi'
+p333
+asg12
+S'oai:arXiv.org:1404.2770'
+p334
+sg14
+S'Coronae of product spaces and the Coarse Baum-Connes conjecture'
+p335
+sba(iArxivData
+Paper
+p336
+(dp337
+g4
+S'2014-03-27'
+p338
+sg6
+S'  We study subcritical two-dimensional oriented percolation seen from its\nrightmost point on the set of infinite configurations which are bounded above.\nThis a Feller process whose state space is not compact and has no invariant\nmeasures. We prove that it converges in distribution to a measure which charges\nonly finite configurations.\n'
+p339
+sg8
+(lp340
+S'Andjel, E. D.'
+p341
+asg12
+S'oai:arXiv.org:1403.6990'
+p342
+sg14
+S'Convergence in distribution for subcritical 2D oriented percolation seen\n  from its rightmost point'
+p343
+sba(iArxivData
+Paper
+p344
+(dp345
+g4
+S'2014-03-23'
+p346
+sg6
+S'  Problems in econometrics, insurance, reliability engineering, and statistics\nquite often rely on the assumption that certain functions are non-decreasing.\nTo satisfy this requirement, researchers frequently model the underlying\nphenomena using parametric and semi-parametric families of functions, thus\neffectively specifying the required shapes of the functions. To tackle these\nproblems in a non-parametric way, in this paper we suggest indices for\nmeasuring the lack of monotonicity in functions. We investigate properties of\nthe indices and also offer a convenient computational technique for practical\nuse.\n'
+p347
+sg8
+(lp348
+S'Qoyyimi, Danang Teguh'
+p349
+aS'Zitikis, Ricardas'
+p350
+asg12
+S'oai:arXiv.org:1403.5841'
+p351
+sg14
+S'Measuring the lack of monotonicity in functions'
+p352
+sba(iArxivData
+Paper
+p353
+(dp354
+g4
+S'2014-03-25'
+p355
+sg6
+S'  Through set-theoretic formalization of the notion of common knowledge, Aumann\nproved that if two agents have the common priors, and their posteriors for a\ngiven event are common knowledge, then their posteriors must be equal. In this\npaper we investigate the problem of validity of this theorem in the framework\nof quantum(-like) decision making.\n'
+p356
+sg8
+(lp357
+S'Khrennikov, Andrei'
+p358
+aS'Basieva, Irina'
+p359
+asg12
+S'oai:arXiv.org:1403.6279'
+p360
+sg14
+S'Quantum(-like) decision making: on validity of the Aumann theorem'
+p361
+sba(iArxivData
+Paper
+p362
+(dp363
+g4
+S'2014-03-21'
+p364
+sg6
+S'  Focusing on a specific crowd dynamics situation, including real life\nexperiments and measurements, our paper targets a twofold aim: (1) we present a\nBayesian probabilistic method to estimate the value and the uncertainty (in the\nform of a probability density function) of parameters in crowd dynamic models\nfrom the experimental data; and (2) we introduce a fitness measure for the\nmodels to classify a couple of model structures (forces) according to their\nfitness to the experimental data, preparing the stage for a more general\nmodel-selection and validation strategy inspired by probabilistic data\nanalysis. Finally, we review the essential aspects of our experimental setup\nand measurement technique.\n'
+p365
+sg8
+(lp366
+S'Corbetta, Alessandro'
+p367
+aS'Muntean, Adrian'
+p368
+aS'Toschi, Federico'
+p369
+aS'Vafayi, Kiamars'
+p370
+asg12
+S'oai:arXiv.org:1403.5361'
+p371
+sg14
+S'Parameter Estimation of Social Forces in Crowd Dynamics Models via a\n  Probabilistic Method'
+p372
+sba(iArxivData
+Paper
+p373
+(dp374
+g4
+S'2014-03-20'
+p375
+sg6
+S'  We prove the nonlinear local stability of Dirac masses for a kinetic model of\nalignment of particles on the unit sphere, each point of the unit sphere\nrepresenting a direction. A population concentrated in a Dirac mass then\ncorresponds to the global alignment of all individuals. The main difficulty of\nthis model is the lack of conserved quantities and the absence of an energy\nthat would decrease for any initial condition. We overcome this difficulty\nthanks to a functional which is decreasing in time in a neighborhood of any\nDirac mass (in the sense of the Wasserstein distance). The results are then\nextended to the case where the unit sphere is replaced by a general Riemannian\nmanifold.\n'
+p376
+sg8
+(lp377
+S'Degond, Pierre'
+p378
+aS'Frouvelle, Amic'
+p379
+aVRaoul, Gaël
+p380
+asg12
+S'oai:arXiv.org:1403.5233'
+p381
+sg14
+S'Local stability of perfect alignment for a spatially homogeneous kinetic\n  model'
+p382
+sba(iArxivData
+Paper
+p383
+(dp384
+g4
+S'2014-03-24'
+p385
+sg6
+S'  Operator fractional Brownian fields (OFBFs) are Gaussian,\nstationary-increment vector random fields that satisfy the operator\nself-similarity relation {X(c^{E}t)}_{t in R^m} L= {c^{H}X(t)}_{t in R^m}. We\nestablish a general harmonizable representation (Fourier domain stochastic\nintegral) for OFBFs. Under additional assumptions, we also show how the\nharmonizable representation can be reexpressed as a moving average stochastic\nintegral, thus answering an open problem described in Bierme et al.(2007),\n"Operator scaling stable random fields", Stochastic Processes and their\nApplications 117, 312--332.\n'
+p386
+sg8
+(lp387
+S'Baek, Changryong'
+p388
+aS'Didier, Gustavo'
+p389
+aS'Pipiras, Vladas'
+p390
+asg12
+S'oai:arXiv.org:1403.6179'
+p391
+sg14
+S'On integral representations of operator fractional Brownian fields'
+p392
+sba(iArxivData
+Paper
+p393
+(dp394
+g4
+S'2014-03-20'
+p395
+sg6
+S'  We consider a variant of the radial spanning tree introduced by Baccelli and\nBordenave. Like the original model, our model is a tree rooted at the origin,\nbuilt on the realization of a planar Poisson point process. Unlike it, the\npaths of our model have independent jumps. We show that locally our diffusively\nrescaled tree, seen as the collection of the paths connecting its sites to the\nroot, converges in distribution to the Brownian Bridge Web, which is roughly\nspeaking a collection of coalescing Brownian bridges starting from all the\npoints of a planar strip perpendicular to the time axis, and ending at the\norigin.\n'
+p396
+sg8
+(lp397
+S'Fontes, Luiz Renato'
+p398
+aS'Valencia, Leon'
+p399
+aS'Valle, Glauco'
+p400
+asg12
+S'oai:arXiv.org:1403.5286'
+p401
+sg14
+S'Scaling limit of the radial Poissonian web'
+p402
+sba(iArxivData
+Paper
+p403
+(dp404
+g4
+S'2014-03-20'
+p405
+sg6
+S'  The loop measure is associated with a Markov generator. We compute the\nvariation of the loop measure induced by an in nitesimal variation of the\ngenerator a ecting the killing rates or the jumping rates.\n'
+p406
+sg8
+(lp407
+S'Jan, Yves Le'
+p408
+aS'Rosen, Jay'
+p409
+asg12
+S'oai:arXiv.org:1403.5125'
+p410
+sg14
+S'Perturbation of the loop measure'
+p411
+sba(iArxivData
+Paper
+p412
+(dp413
+g4
+S'2014-04-11'
+p414
+sg6
+S'  We consider actions of locally compact groups $G$ on certain CAT(0) spaces\n$X$ by isometries. The CAT(0) spaces we consider have finite dimension at large\nscale. In case $B$ is a $G$-boundary, that is a measurable $G$-space with\namenability and ergodicity properties, we prove the existence of equivariant\nmaps from $B$ to the visual boundary $\\partial X$.\n'
+p415
+sg8
+(lp416
+S'Bader, Uri'
+p417
+aS'Duchesne, Bruno'
+p418
+aVLécureux, Jean
+p419
+asg12
+S'oai:arXiv.org:1404.3187'
+p420
+sg14
+S'Furstenberg Maps For CAT(0) Targets Of Finite Telescopic Dimension'
+p421
+sba(iArxivData
+Paper
+p422
+(dp423
+g4
+S'2014-03-27'
+p424
+sg6
+S'  We prove bounds for the covering numbers of classes of convex functions and\nconvex sets in Euclidean space. Previous results require the underlying convex\nfunctions or sets to be uniformly bounded. We relax this assumption and replace\nit with weaker integral constraints. Existing results can be recovered as\nspecial cases of our results.\n'
+p425
+sg8
+(lp426
+S'Guntuboyina, Adityanand'
+p427
+asg12
+S'oai:arXiv.org:1403.6922'
+p428
+sg14
+S'Covering numbers of $L_p$-balls of convex sets and functions'
+p429
+sba(iArxivData
+Paper
+p430
+(dp431
+g4
+S'2014-03-20'
+p432
+sg6
+S'  The Lukacs property of the free Poisson distribution is studied here. We\nprove that if free $\\X$ and $\\Y$ are free Poisson distributed with suitable\nparameters, then $\\X+\\Y$ and\n$\\left(\\X+\\Y\\right)^{-\\frac{1}{2}}\\X\\left(\\X+\\Y\\right)^{-\\frac{1}{2}}$ are\nfree. As as an auxiliary result we give joint cumulants of $\\X$ and $\\X^{-1}$\nfor free Poisson distributed $\\X$. We also study the Lukacs property of the\nfree gamma distribution.\n'
+p433
+sg8
+(lp434
+S'Szpojankowski, Kamil'
+p435
+asg12
+S'oai:arXiv.org:1403.5300'
+p436
+sg14
+S'On the Lukacs property for free random variables'
+p437
+sba(iArxivData
+Paper
+p438
+(dp439
+g4
+S'2014-04-09'
+p440
+sg6
+S'  Mean field games are studied in the framework of controlled martingale\nproblems, and general existence theorems are proven in which the equilibrium\ncontrol is Markovian. The framework is flexible enough to include degenerate\nvolatility, which may depend on both the control and the mean field. The\nobjectives need not be strictly convex, and the mean field interactions\nconsidered are nonlocal and Wasserstein-continuous. When the volatility is\nnondegenerate, the continuity assumptions may be weakened considerably. The\nproofs first use relaxed controls, which may be interpreted as mixed\nstrategies, to establish the existence of equilibria. Then, strict\n(non-relaxed) Markovian equilibria are constructed from relaxed equilibria by a\nmeasurable selection argument.\n'
+p441
+sg8
+(lp442
+S'Lacker, Daniel'
+p443
+asg12
+S'oai:arXiv.org:1404.2642'
+p444
+sg14
+S'Mean field games via controlled martingale problems: existence of\n  Markovian equilibria'
+p445
+sba(iArxivData
+Paper
+p446
+(dp447
+g4
+S'2014-04-30'
+p448
+sg6
+S'  We study a bivariate mean reverting stochastic volatility model, finding an\nexplicit expression for the decay of cross-asset correlations over time. We\ncompare our result with the empirical time series of the Dow Jones Industrial\nAverage and the Financial Times Stock Exchange 100 in the period 1984-2013,\nfinding an excellent agreement. The main features of the model consist in the\njumps in the volatilities and a nonlinear mean reversion. Based on these\nfeatures, we propose an algorithm for the detection of jumps in the volatility.\n'
+p449
+sg8
+(lp450
+S'Bonino, Mario'
+p451
+aS'Camelia, Matteo'
+p452
+aS'Pigato, Paolo'
+p453
+asg12
+S'oai:arXiv.org:1404.7632'
+p454
+sg14
+S'A multivariate model for financial indexes and an algorithm for\n  detection of jumps in the volatility'
+p455
+sba(iArxivData
+Paper
+p456
+(dp457
+g4
+S'2014-03-28'
+p458
+sg6
+S'  We start with an i.i.d.\\ sequence and consider the product of two\npolynomial-forms moving averages based on that sequence. The coefficients of\nthe polynomial forms are asymptotically slowly decaying homogeneous functions\nso that these processes have long memory. The product of these two polynomial\nforms is a stationary nonlinear process. We want to obtain limit theorems for\nthe normalized sums of this nonlinear process in two cases: exclusion of the\ndiagonal terms of the polynomial form, or inclusion. In either case, if the\nproduct has long memory, then the limits are given by a Wiener chaos, but these\nlimits are quite different. If the diagonals are excluded, then the limit is\nexpressed as in the product formula of two Wiener-It\\^o integrals. When the\ndiagonals are included, the limit stochastic integrals are typically due to a\nsingle factor of the product, namely the one with the strongest memory.\n'
+p459
+sg8
+(lp460
+S'Bai, Shuyang'
+p461
+aS'Taqqu, Murad'
+p462
+asg12
+S'oai:arXiv.org:1403.7544'
+p463
+sg14
+S'The impact of diagonals of polynomial forms on limit theorems with long\n  memory'
+p464
+sba(iArxivData
+Paper
+p465
+(dp466
+g4
+S'2014-03-23'
+p467
+sg6
+S'  We review definitions of multivariate regular variation (MRV) and hidden\nregular variation (HRV) for distributions of random vectors and then summarize\nmethods for generating models exhibiting both properties. We also discuss\ndiagnostic techniques that detect these properties in multivariate data and\nindicate when models exhibiting both MRV and HRV are plausible fits for the\ndata. We illustrate our techniques on simulated data and also two real Internet\ndata sets.\n'
+p468
+sg8
+(lp469
+S'Das, Bikramjit'
+p470
+aS'Resnick, Sidney'
+p471
+asg12
+S'oai:arXiv.org:1403.5774'
+p472
+sg14
+S'Generation and Detection of Multivariate Regular Variation and Hidden\n  Regular Variation'
+p473
+sba(iArxivData
+Paper
+p474
+(dp475
+g4
+S'2014-03-26'
+p476
+sg6
+S"  Biased random walks on supercritical Galton--Watson trees are introduced and\nstudied in depth by Lyons (1990) and Lyons, Pemantle and Peres (1996). We\ninvestigate the slow regime, in which case the walks are known to possess an\nexotic maximal displacement of order $(\\log n)^3$ in the first $n$ steps. Our\nmain result is another --- and in some sense even more --- exotic property of\nbiased walks: the maximal potential energy of the biased walks is of order\n$(\\log n)^2$. More precisely, we prove that, upon the system's non-extinction,\nthe ratio between the maximal potential energy and $(\\log n)^2$ converges\nalmost surely to $\\frac12$, when $n$ goes to infinity.\n"
+p477
+sg8
+(lp478
+S'Hu, Yueyun'
+p479
+aS'Shi, Zhan'
+p480
+asg12
+S'oai:arXiv.org:1403.6799'
+p481
+sg14
+S'The potential energy of biased random walks on trees'
+p482
+sba(iArxivData
+Paper
+p483
+(dp484
+g4
+S'2014-03-19'
+p485
+sg6
+S'  We consider Galton-Watson trees with ${\\rm Bin}(d,p)$ offspring distribution.\nWe let $T_{\\infty}(p)$ denote such a tree conditioned on being infinite. For\n$d=2,3$ and any $1/d\\leq p_1 <p_2 \\leq 1$, we show that there exists a coupling\nbetween $T_{\\infty}(p_1)$ and $T_{\\infty}(p_2)$ such that ${\\mathbb\nP}(T_{\\infty}(p_1) \\subseteq T_{\\infty}(p_2))=1.$\n'
+p486
+sg8
+(lp487
+S'Broman, Erik I.'
+p488
+asg12
+S'oai:arXiv.org:1403.4834'
+p489
+sg14
+S'Stochastic Ordering of Infinite Binomial Galton-Watson Trees'
+p490
+sba(iArxivData
+Paper
+p491
+(dp492
+g4
+S'2014-03-24'
+p493
+sg6
+S'  We introduce an interacting particle system in which two families of\nreflected diffusions interact in a singular manner near a deterministic\ninterface $I$. This system can be used to model the transport of positive and\nnegative charges in a solar cell or the population dynamics of two segregated\nspecies under competition. A related interacting random walk model with\ndiscrete state spaces has recently been introduced and studied in [9]. In this\npaper, we establish the functional law of large numbers for this new system,\nthereby extending the hydrodynamic limit in [9] to reflected diffusions in\ndomains with mixed-type boundary conditions, which include absorption (harvest\nof electric charges). We employ a new and direct approach that avoids going\nthrough the delicate BBGKY hierarchy.\n'
+p494
+sg8
+(lp495
+S'Chen, Zhen-Qing'
+p496
+aS'Wai-Tong'
+p497
+aS'Fan'
+p498
+asg12
+S'oai:arXiv.org:1403.5903'
+p499
+sg14
+S'Systems of interacting diffusions with annihilation through membranes'
+p500
+sba(iArxivData
+Paper
+p501
+(dp502
+g4
+S'2014-03-01'
+p503
+sg6
+S'  The method of \\emph{random integral representation}, that is, the method of\nrepresenting a given probability measure as the probability distribution of\nsome random integral, was quite successful in the past few decades. In this\nnote we will find such a representation for generalized s-selfdecomposable and\nselfdecomposable distributions that have the \\emph{factorization property}.\nThese are the classes $\\mathcal{U}^f_{\\be}$ and $L^f$, respectively.\n'
+p504
+sg8
+(lp505
+S'Czyzewska-Jankowska, A.'
+p506
+aS'Jurek, Zbigniew J.'
+p507
+asg12
+S'oai:arXiv.org:1403.0089'
+p508
+sg14
+S'Factorization Property of Generalized s-self-decomposable measures and\n  class $L^f$ distributions'
+p509
+sba(iArxivData
+Paper
+p510
+(dp511
+g4
+S'2014-04-10'
+p512
+sg6
+S'  Critical points and singularities are encountered in the study of critical\nphenomena in probability and physics. We present recent results concerning the\nvalues of such critical points and the nature of the singularities for two\nprominent probabilistic models, namely percolation and the more general\nrandom-cluster model. The main topic is the statement and proof of the\ncriticality and universality of the canonical measure of bond percolation on\nisoradial graphs (due to the author and Ioan Manolescu). The key technique used\nin this work is the star--triangle transformation, known also as the\nYang--Baxter equation. The second topic reported here is the identification of\nthe critical point of the random-cluster model on the square lattice (due to\nBeffara and Duminil-Copin), and of the criticality of the canonical measure of\nthe random-cluster model with q \\ge 4 on periodic isoradial graphs (by the same\nauthors with Smirnov). The proof of universality for percolation is expected to\nextend to the random-cluster model on isoradial graphs.\n'
+p513
+sg8
+(lp514
+S'Grimmett, Geoffrey R.'
+p515
+asg12
+S'oai:arXiv.org:1404.2831'
+p516
+sg14
+S'Criticality, universality, and isoradiality'
+p517
+sba(iArxivData
+Paper
+p518
+(dp519
+g4
+S'2014-03-19'
+p520
+sg6
+S"  As an application of Stein's method for Poisson approximation, we prove rates\nof convergence for the tail probabilities of two scan statistics that have been\nsuggested for detecting local signals in sequences of independent random\nvariables subject to possible change-points. Our formulation deals\nsimultaneously with ordinary and with large deviations.\n"
+p521
+sg8
+(lp522
+S'Fang, Xiao'
+p523
+aS'Siegmund, David'
+p524
+asg12
+S'oai:arXiv.org:1403.4692'
+p525
+sg14
+S'Poisson approximation for two scan statistics with rates of convergence'
+p526
+sba(iArxivData
+Paper
+p527
+(dp528
+g4
+S'2014-04-09'
+p529
+sg6
+S'  We consider a one-dimensional recurrent random walk in random environment\n(RWRE) when the environment is i.i.d. with a parametric, finitely supported\ndistribution. Based on a single observation of the path, we provide a maximum\nlikelihood estimation procedure of the parameters of the environment. Unlike\nmost of the classical maximum likelihood approach, the limit of the criterion\nfunction is in general a nondegenerate random variable and convergence does not\nhold in probability. Not only the leading term but also the second order\nasymptotics is needed to fully identify the unknown parameter. We present\ndifferent frameworks to illustrate these facts. We also explore the numerical\nperformance of our estimation procedure.\n'
+p530
+sg8
+(lp531
+S'Comets, Francis'
+p532
+aS'Falconnet, Mikael'
+p533
+aS'Loukianov, Oleg'
+p534
+aS'Loukianova, Dasha'
+p535
+asg12
+S'oai:arXiv.org:1404.2551'
+p536
+sg14
+S'Maximum likelihood estimator consistency for recurrent random walk in a\n  parametric random environment with finite support'
+p537
+sba(iArxivData
+Paper
+p538
+(dp539
+g4
+S'2014-03-20'
+p540
+sg6
+S'  We study Minkowski contents and fractal curvatures of arbitrary self-similar\ntilings (constructed on a feasible open set of an IFS) and the general\nrelations to the corresponding functionals for self-similar sets. In\nparticular, we characterize the situation, when these functionals coincide. In\nthis case, the Minkowski content and the fractal curvatures of a self-similar\nset can be expressed completely in terms of the volume function or curvature\ndata, respectively, of the generator of the tiling. In special cases such\nformulas have been obtained recently using tube formulas and complex dimensions\nor Perron-Frobenius theory. Our approach based on the classical Renewal Theorem\nis much simpler and works for a much larger class of self-similar sets and\ntilings. In fact, generator type formulas are obtained for essentially all\nself-similar sets, when suitable volume functions (or curvature functions,\nrespectively) related to the generator are used. We also strengthen known\nresults on the Minkowski measurability of self-similar sets, in particular on\nthe question of non-measurability in the lattice case.\n'
+p541
+sg8
+(lp542
+S'Winter, Steffen'
+p543
+asg12
+S'oai:arXiv.org:1403.5201'
+p544
+sg14
+S'Minkowski content and fractal curvatures of self-similar tilings and\n  generator formulas for self-similar sets'
+p545
+sba(iArxivData
+Paper
+p546
+(dp547
+g4
+S'2014-03-24'
+p548
+sg6
+S'  The additive monotone (resp. boolean) unitary Brownian motion is a\nnon-commutative stochastic process with monotone (resp. boolean) independent\nand stationary increments which are distributed according to the arcsine law\n(resp. Bernoulli law) . We introduce the monotone and booleen unitary Brownian\nmotions and we derive a closed formula for their associated moments. This\nprovides a description of their spectral measures. We prove that, in the\nmonotone case, the multiplicative analog of the arcsine distribution is\nabsolutely continuous with respect to the Haar measure on the unit circle,\nwhereas in the boolean case the multiplicative analog of the Bernoulli\ndistribution is discrete. Finally, we use quantum stochastic calculus to\nprovide a realization of these processes as the stochastic exponential of\nadditive correspondent Brownian motions.\n'
+p549
+sg8
+(lp550
+S'Hamdi, Tarek'
+p551
+asg12
+S'oai:arXiv.org:1403.5908'
+p552
+sg14
+S'Monotone and boolean unitary Brownian motions'
+p553
+sba(iArxivData
+Paper
+p554
+(dp555
+g4
+S'2014-03-26'
+p556
+sg6
+S'  Integrable probability has emerged as an active area of research at the\ninterface of probability/mathematical physics/statistical mechanics on the one\nhand, and representation theory/integrable systems on the other. Informally,\nintegrable probabilistic systems have two properties: 1) It is possible to\nwrite down concise and exact formulas for expectations of a variety of\ninteresting observables (or functions) of the system. 2) Asymptotics of the\nsystem and associated exact formulas provide access to exact descriptions of\nthe properties and statistics of large universality classes and universal\nscaling limits for disordered systems. We focus here on examples of integrable\nprobabilistic systems related to the Kardar-Parisi-Zhang (KPZ) universality\nclass and explain how their integrability stems from connections with symmetric\nfunction theory and quantum integrable systems.\n'
+p557
+sg8
+(lp558
+S'Corwin, Ivan'
+p559
+asg12
+S'oai:arXiv.org:1403.6877'
+p560
+sg14
+S'Macdonald processes, quantum integrable systems and the\n  Kardar-Parisi-Zhang universality class'
+p561
+sba(iArxivData
+Paper
+p562
+(dp563
+g4
+S'2014-04-09'
+p564
+sg6
+S'  We provide a mathematical study of the modified Diffusion Monte Carlo (DMC)\nalgorithm introduced in the companion article \\cite{DMC}. DMC is a simulation\ntechnique that uses branching particle systems to represent expectations\nassociated with Feynman-Kac formulae. We provide a detailed heuristic\nexplanation of why, in cases in which a stochastic integral appears in the\nFeynman-Kac formula (e.g. in rare event simulation, continuous time filtering,\nand other settings), the new algorithm is expected to converge in a suitable\nsense to a limiting process as the time interval between branching steps goes\nto 0. The situation studied here stands in stark contrast to the "na\\"ive"\ngeneralisation of the DMC algorithm which would lead to an exponential\nexplosion of the number of particles, thus precluding the existence of any\nfinite limiting object. Convergence is shown rigorously in the simplest\npossible situation of a random walk, biased by a linear potential. The\nresulting limiting object, which we call the "Brownian fan", is a very natural\nnew mathematical object of independent interest.\n'
+p565
+sg8
+(lp566
+S'Hairer, Martin'
+p567
+aS'Weare, Jonathan'
+p568
+asg12
+S'oai:arXiv.org:1404.2928'
+p569
+sg14
+S'The Brownian fan'
+p570
+sba(iArxivData
+Paper
+p571
+(dp572
+g4
+S'2014-03-19'
+p573
+sg6
+S'  We consider a large-scale flexible service system with two large server pools\nand two types of customers. Servers in pool 1 can only serve type 1 customers,\nwhile server in pool 2 are flexible -- they can serve both types 1 and 2. (This\nis a so-called "N-system." Our results hold for a more general class of systems\nas well.) The service rate of a customer depends both on its type and the pool\nwhere it is served. We study a priority service discipline, where type 2 has\npriority in pool 2, and type 1 prefers pool 1. We consider the Halfin-Whitt\nasymptotic regime, where the arrival rate of customers and the number of\nservers in each pool increase to infinity in proportion to a scaling parameter\n$n$, while the overall system capacity exceeds its load by $O(\\sqrt{n})$.\n  For this system we prove tightness of diffusion-scaled stationary\ndistributions. Our approach relies on a single common Lyapunov function $G(x)$,\ndefined on the entire state space as a functional of the {\\em drift-based fluid\nlimits} (DFL). Specifically, $G(x)=\\int_0^\\infty g(y(t)) dt$, where $y(\\cdot)$\nis the DFL starting at $x$, and $g(\\cdot)$ is a "distance" to the origin. The\nkey part of the analysis is the study of the (first and second) derivatives of\nthe DFLs and function $G(x)$. Our approach, as well as many parts of the\nanalysis, seem quite generic and may be of independent interest.\n'
+p574
+sg8
+(lp575
+S'Stolyar, Alexander L.'
+p576
+asg12
+S'oai:arXiv.org:1403.4896'
+p577
+sg14
+S'Tightness of stationary distributions of a flexible-server system in the\n  Halfin-Whitt asymptotic regime'
+p578
+sba(iArxivData
+Paper
+p579
+(dp580
+g4
+S'2014-04-17'
+p581
+sg6
+S'  We consider products of independent random matrices taken from the induced\nGinibre ensemble with complex or quaternion elements. The joint densities for\nthe complex eigenvalues of the product matrix can be written down exactly for a\nproduct of any fixed number of matrices and any finite matrix size. We show\nthat the squared absolute values of the eigenvalues form a permanental process,\ngeneralising the results of Kostlan and Rider for single matrices to products\nof complex and quaternionic matrices. Based on these findings, we can first\nwrite down exact results and asymptotic expansions for the so-called hole\nprobabilities, that a disc centered at the origin is void of eigenvalues.\nSecond, we compute the asymptotic expansion for the opposite problem, that a\nlarge fraction of complex eigenvalues occupies a disc of fixed radius centered\nat the origin; this is known as the overcrowding problem. While the expressions\nfor finite matrix size depend on the parameters of the induced ensembles, the\nasymptotic results agree to leading order with previous results for products of\nsquare Ginibre matrices.\n'
+p582
+sg8
+(lp583
+S'Akemann, G.'
+p584
+aS'Ipsen, J. R.'
+p585
+aS'Strahov, E.'
+p586
+asg12
+S'oai:arXiv.org:1404.4583'
+p587
+sg14
+S'Permanental processes from products of complex and quaternionic induced\n  Ginibre ensembles'
+p588
+sba(iArxivData
+Paper
+p589
+(dp590
+g4
+S'2014-03-25'
+p591
+sg6
+S'  We present a series of recent results on the well-posedness of very singular\nparabolic stochastic partial differential equations. These equations are such\nthat the question of what it even means to be a solution is highly non-trivial.\nThis problem can be addressed within the framework of the recently developed\ntheory of "regularity structures", which allows to describe candidate solutions\nlocally by a "jet", but where the usual Taylor polynomials are replaced by a\nsequence of custom-built objects. In order to illustrate the theory, we focus\non the particular example of the Kardar-Parisi-Zhang equation, a popular model\nfor interface propagation.\n'
+p592
+sg8
+(lp593
+S'Hairer, Martin'
+p594
+asg12
+S'oai:arXiv.org:1403.6353'
+p595
+sg14
+S'Singular stochastic PDEs'
+p596
+sba(iArxivData
+Paper
+p597
+(dp598
+g4
+S'2014-04-10'
+p599
+sg6
+S'  In a call center, staffing decisions must be made before the call arrival\nrate is known with certainty. Then, once the arrival rate becomes known, the\ncall center may be over-staffed, in which case staff are being paid to be idle,\nor under-staffed, in which case many callers hang-up in the face of long wait\ntimes. Firms that have chosen to keep their call center operations in-house can\nmitigate this problem by co-sourcing; that is, by sometimes outsourcing calls.\nThen, the required staffing $N$ depends on how the firm chooses which calls to\noutsource in real-time, after the arrival rate realizes and the call center\noperates as a $M/M/N+M$ queue with an outsourcing option. Our objective is to\nfind a joint policy for staffing and call outsourcing that minimizes the long\nrun average cost of this two-stage stochastic program when there is a linear\nstaffing cost per unit time and linear costs associated with abandonments and\noutsourcing.\n  We propose a policy that uses a square-root safety staffing rule, and\noutsources calls in accordance with a threshold rule that characterizes when\nthe system is "too crowded". Analytically, we establish that our proposed\npolicy is asymptotically optimal, as the mean arrival rate becomes large, when\nthe level of uncertainty in the arrival rate is of the same order as the\ninherent system fluctuations in the number of waiting customers for a known\narrival rate. Through an extensive numerical study, we establish that our\npolicy is extremely robust. In particular, our policy performs remarkably well\nover a wide range of parameters, and far beyond where it is proved to be\nasymptotically optimal.\n'
+p600
+sg8
+(lp601
+S'Kocaga, Yasar Levent'
+p602
+aS'Armony, Mor'
+p603
+aS'Ward, Amy R.'
+p604
+asg12
+S'oai:arXiv.org:1404.2938'
+p605
+sg14
+S'Staffing Call Centers with Uncertain Arrival Rates and Co-sourcing'
+p606
+sba(iArxivData
+Paper
+p607
+(dp608
+g4
+S'2014-04-19'
+p609
+sg6
+S'  We show that if we have an orthogonal base ($u_1,\\ldots,u_p$) in a\n$p$-dimensional vector space, and select $p+1$ vectors $v_1,\\ldots, v_p$ and\n$w$ such that the vectors traverse the origin, then the probability of $w$\nbeing to closer to all the vectors in the base than to $v_1,\\ldots, v_p$ is at\nleast 1/2 and converges as $p$ increases to infinity to a normal distribution\non the interval [-1,1]; i.e., $\\Phi(1)-\\Phi(-1)\\approx0.6826$. This result has\nrelevant consequences for Principal Components Analysis in the context of\nregression and other learning settings, if we take the orthogonal base as the\ndirection of the principal components.\n'
+p610
+sg8
+(lp611
+S'Diaz-Pachon, Daniel A.'
+p612
+aS'Rao, J. Sunil'
+p613
+aS'Dazard, Jean-Eudes'
+p614
+asg12
+S'oai:arXiv.org:1404.4917'
+p615
+sg14
+S'On the explanatory power of principal components'
+p616
+sba(iArxivData
+Paper
+p617
+(dp618
+g4
+S'2014-04-18'
+p619
+sg6
+S'  The $h$-trimming of a tree is a natural regularization procedure which\nconsists in pruning the small branches of a tree: given $h\\geq0$, it is\nobtained by only keeping the vertices having at least one leaf above them at a\ndistance greater or equal to $h$.\n  The $h$-cut of a function $f$ is the function of minimal total variation\nuniformly approximating the increments of $f$ with accuracy $h$, and can be\nexplicitly constructed via the two-sided Skorohod reflection of $f$ on the\ninterval $[0,h]$.\n  In this work, we show that the contour path of the $h$-trimming of a rooted\nreal tree is given by the $h$-cut of its original contour path. We provide two\napplications of this result. First, we recover a famous result of Neveu and\nPitman, which states that the $h$-trimming of a tree coded by a Brownian\nexcursion is distributed as a standard binary tree. In addition, we provide the\njoint distribution of this Brownian tree and its trimmed version in terms of\nthe local time of the two-sided reflection of its contour path. As a second\napplication, we relate the maximum of a sticky Brownian motion to the local\ntime of its driving process.\n'
+p620
+sg8
+(lp621
+S'Schertzer, Emmanuel'
+p622
+asg12
+S'oai:arXiv.org:1404.4829'
+p623
+sg14
+S'Trimming a Tree and the Two-Sided Skorohod Reflection'
+p624
+sba(iArxivData
+Paper
+p625
+(dp626
+g4
+S'2014-03-21'
+p627
+sg6
+S'  We study the simple genetic algorithm with a ranking selection mechanism\n(linear ranking or tournament). We denote by $\\ell$ the length of the\nchromosomes, by $m$ the population size, by $p_C$ the crossover probability and\nby $p_M$ the mutation probability. We introduce a parameter $\\sigma$, called\nthe selection drift, which measures the selection intensity of the fittest\nchromosome. We show that the dynamics of the genetic algorithm depend in a\ncritical way on the parameter $$\\pi \\,=\\,\\sigma(1-p_C)(1-p_M)^\\ell\\,.$$ If\n$\\pi<1$, then the genetic algorithm operates in a disordered regime: an\nadvantageous mutant disappears with probability larger than $1-1/m^\\beta$,\nwhere $\\beta$ is a positive exponent. If $\\pi>1$, then the genetic algorithm\noperates in a quasispecies regime: an advantageous mutant invades a positive\nfraction of the population with probability larger than a constant $p^*$ (which\ndoes not depend on $m$). We estimate next the probability of the occurrence of\na catastrophe (the whole population falls below a fitness level which was\npreviously reached by a positive fraction of the population). The asymptotic\nresults suggest the following rules: $\\pi=\\sigma(1-p_C)(1-p_M)^\\ell$ should be\nslightly larger than $1$; $p_M$ should be of order $1/\\ell$; $m$ should be\nlarger than $\\ell\\ln\\ell$; the running time should be of exponential order in\n$m$. The first condition requires that $ \\ell p_M +p_C< \\ln\\sigma$. These\nconclusions must be taken with great care: they come from an asymptotic regime,\nand it is a formidable task to understand the relevance of this regime for a\nreal-world problem. At least, we hope that these conclusions provide\ninteresting guidelines for the practical implementation of the simple genetic\nalgorithm.\n'
+p628
+sg8
+(lp629
+VCerf, Raphaël
+p630
+asg12
+S'oai:arXiv.org:1403.5427'
+p631
+sg14
+S'The quasispecies regime for the simple genetic algorithm with ranking\n  selection'
+p632
+sba(iArxivData
+Paper
+p633
+(dp634
+g4
+S'2014-03-23'
+p635
+sg6
+S'  We consider a linear Boltzmann equation that arises in a model for quantum\nfriction. It describes a particle that is slowed down by the emission of\nbosons. We study the stochastic process generated by this Boltzmann equation\nand we show convergence of its spatial trajectory to a multiple of Brownian\nmotion with exponential scaling. The asymptotic position of the particle is\nfinite in mean, even though its absolute value is typically infinite. This is\ncontrasted to an approximation that neglects the influence of fluctuations,\nwhere the mean asymptotic position is infinite.\n'
+p636
+sg8
+(lp637
+S'Bauerschmidt, Roland'
+p638
+aS'de Roeck, Wojciech'
+p639
+aVFröhlich, Jürg
+p640
+asg12
+S'oai:arXiv.org:1403.5790'
+p641
+sg14
+S'Fluctuations in a kinetic transport model for quantum friction'
+p642
+sba(iArxivData
+Paper
+p643
+(dp644
+g4
+S'2014-04-18'
+p645
+sg6
+S"  The aim of this work is to use systematically the symmetries of the (one\ndimensional) bacward heat equation with potentiel in order to solve certain one\ndimensional It\\^o's stochastic differential equations. The special form of the\ndrift (suggested by quantum mechanical considerations) gives, indeed, access to\nan algebrico-geometric method due, in essence, to E.Cartan, and called the\nMethod of Isovectors. A V singular at the origin, as well as a one-factor\naffine model relevant to stochastic finance, are considered as illustrations of\nthe method.\n"
+p646
+sg8
+(lp647
+S'Lescot, Paul'
+p648
+aVQuintard, Hélène
+p649
+aS'Zambrini, Jean-Claude'
+p650
+asg12
+S'oai:arXiv.org:1404.4802'
+p651
+sg14
+S"Solving stochastic differential equations with Cartan's exterior\n  differential systems"
+p652
+sba(iArxivData
+Paper
+p653
+(dp654
+g4
+S'2014-02-28'
+p655
+sg6
+S"  We consider loop-erased random walk (LERW) running between two boundary\npoints of a square grid approximation of a planar simply connected domain. The\nLERW Green's function is simply the probability that the LERW passes through a\ngiven edge in the domain. We prove that this probability, renormalized by a\npower of the mesh size, converges in the lattice size scaling limit to an\nexplicit conformally covariant quantity which coincides with the SLE(2) Green's\nfunction. The proof is based on a combinatorial identity which reduces the\nproblem to obtaining sharp asymptotics for two quantities: the loop measure of\nrandom walk loops of odd winding number about a branch point near the marked\nedge and a ``spinor'' observable for random walk started from one of the\nvertices of the marked edge.\n"
+p656
+sg8
+(lp657
+S'Benes, Christian'
+p658
+aS'Viklund, Fredrik Johansson'
+p659
+aS'Lawler, Gregory F.'
+p660
+asg12
+S'oai:arXiv.org:1402.7345'
+p661
+sg14
+S"Scaling limit of the loop-erased random walk Green's function"
+p662
+sba(iArxivData
+Paper
+p663
+(dp664
+g4
+S'2014-03-26'
+p665
+sg6
+S'  We give a power law for the homogeneity degree of the Martin kernel of the\nfractional Laplacian for the right circular cone when the angle of the cone\ntends to zero.\n'
+p666
+sg8
+(lp667
+S'Bogdan, Krzysztof'
+p668
+aVSiudeja, Bart\u0142omiej
+p669
+aVStós, Andrzej
+p670
+asg12
+S'oai:arXiv.org:1403.6581'
+p671
+sg14
+S'Martin kernel for fractional Laplacian in narrow cones'
+p672
+sba(iArxivData
+Paper
+p673
+(dp674
+g4
+S'2014-03-22'
+p675
+sg6
+S'  We are interested in the clusters formed by a Poisson ensemble of Markovian\nloops on infinite graphs. This model was introduced and studied in [LeJ12] and\n[LL12]. It is a model with long range correlations with two parameters $\\alpha$\nand $\\kappa$. The non-negative parameter $\\alpha$ measures the amount of loops,\nand $\\kappa$ plays the role of killing on vertices penalizing ($\\kappa>0$) or\nfavoring ($\\kappa<0$) appearance of large loops. It was shown in [LL12] that\nfor any fixed $\\kappa$ and large enough $\\alpha$, there exists an infinite\ncluster in the loop percolation on $\\mathbb{Z}^d$. In the present article, we\nshow a non-trivial phase transition on the integer lattice $\\mathbb{Z}^d$\n($d\\geq 3$) for $\\kappa=0$. More precisely, we show that there is no loop\npercolation for $\\kappa=0$ and $\\alpha$ small enough. Interestingly, we observe\na critical like behavior on the whole sub-critical domain of $\\alpha$, namely,\nfor $\\kappa=0$ and any sub-critical value of $\\alpha$, the probability of\none-arm event decays at most polynomially. For $d\\geq 5$, we prove that there\nexists a non-trivial threshold for the finiteness of the expected cluster size.\nFor $\\alpha$ below this threshold, we calculate, up to a constant factor, the\ndecay of the probability of one-arm event, two point function, and the tail\ndistribution of the cluster size. These rates are comparable with the ones\nobtained from a single large loop and only depend on the dimension. For $d=3$\nor $4$, we give better lower bounds on the decay of the probability of one-arm\nevent, which show importance of small loops for long connections. In addition,\nwe show that the one-arm exponent in dimension $3$ depends on the intensity\n$\\alpha$. [LeJ12] Y. Le Jan, Amas de lacets markoviens, C. R. Math. Acad. Sci.\nParis 350 (2012), no.13-14, 643-646. [LL12] Y. Le Jan and S. Lemaire, Markovian\nloop clusters on graphs, arXiv.org:1211.0300\n'
+p676
+sg8
+(lp677
+S'Chang, Yinshan'
+p678
+aVSapozhnikov, Artëm
+p679
+asg12
+S'oai:arXiv.org:1403.5687'
+p680
+sg14
+S'Phase transition in loop percolation'
+p681
+sba(iArxivData
+Paper
+p682
+(dp683
+g4
+S'2014-03-23'
+p684
+sg6
+S'  In this paper, we study the quasi-potential for a general class of damped\nsemilinear stochastic wave equations. We show that, as the density of the mass\nconverges to zero, the infimum of the quasi-potential with respect to all\npossible velocities converges to the quasi-potential of the corresponding\nstochastic heat equation, that one obtains from the zero mass limit. This shows\nin particular that the Smoluchowski-Kramers approximation is not only valid for\nsmall time, but, in the zero noise limit regime, can be used to approximate\nlong-time behaviors such as exit time and exit place from a basin of\nattraction.\n'
+p685
+sg8
+(lp686
+S'Cerrai, Sandra'
+p687
+aS'Salins, Michael'
+p688
+asg12
+S'oai:arXiv.org:1403.5745'
+p689
+sg14
+S'Smoluchowski-Kramers approximation and large deviations for infinite\n  dimensional non-gradient systems with applications to the exit problem'
+p690
+sba(iArxivData
+Paper
+p691
+(dp692
+g4
+S'2014-04-08'
+p693
+sg6
+S'  We study a class of systems of stochastic differential equations describing\ndiffusive phenomena. The Smoluchowski-Kramers approximation is used to describe\ntheir dynamics in the small mass limit. Our systems have arbitrary\nstate-dependent friction and noise coefficients. We identify the limiting\nequation {and,} in particular, the additional drift term which appears in the\nlimit is expressed in terms of the solution to a Lyapunov matrix equation. The\nproof uses a theory of convergence of stochastic integrals developed by Kurtz\nand Protter. The result is sufficiently general to include systems driven by\nboth white and Ornstein-Uhlenbeck colored noises. We discuss applications of\nthe main theorem to several physical phenomena, including the experimental\nstudy of Brownian motion in a diffusion gradient.\n'
+p694
+sg8
+(lp695
+S'Hottovy, Scott'
+p696
+aS'Volpe, Giovanni'
+p697
+aS'Wehr, Jan'
+p698
+asg12
+S'oai:arXiv.org:1404.2330'
+p699
+sg14
+S'The Smoluchowski-Kramers limit of stochastic differential equations with\n  arbitrary state-dependent friction'
+p700
+sba(iArxivData
+Paper
+p701
+(dp702
+g4
+S'2014-03-21'
+p703
+sg6
+S"  We study protected nodes in $m$-ary search trees, by putting them in context\nof generalised P\\'olya urns. We show that the number of two-protected nodes\n(the nodes that are neither leaves nor parents of leaves) in a random ternary\nsearch tree is asymptotically normal. The methods apply in principle to $m\n$-ary search trees with larger $m$ as well, although the size of the matrices\nused in the calculations grow rapidly with $ m $; we conjecture that the method\nyields an asymptotically normal distribution for all $m\\leq 26$.\n  The one-protected nodes, and their complement, i.e., the leaves, are easier\nto analyze. By using a simpler P\\'olya urn (that is similar to the one that has\nearlier been used to study the total number of nodes in $ m $-ary search\ntrees), we prove normal limit laws for the number of one-protected nodes and\nthe number of leaves for all $ m\\leq 26 $.\n"
+p704
+sg8
+(lp705
+S'Holmgren, Cecilia'
+p706
+aS'Janson, Svante'
+p707
+asg12
+S'oai:arXiv.org:1403.5573'
+p708
+sg14
+S'Asymptotic distribution of two-protected nodes in ternary search trees'
+p709
+sba(iArxivData
+Paper
+p710
+(dp711
+g4
+S'2014-03-24'
+p712
+sg6
+S'  Suppose that $\\{S_n,\\ n\\geq0\\}$ is an asymptotically stable random walk. Let\n$g$ be a positive function and $T_g$ be the first time when $S_n$ leaves\n$[-g(n),\\infty)$. In this paper we study asymptotic behaviour of $T_g$. We\nprovide integral tests for function $g$ that guarantee $P(T_g>n)\\sim\nV(g)P(T_0>n)$ where $T_0$ is the first strict descending ladder epoch of\n$\\{S_n\\}$\n'
+p713
+sg8
+(lp714
+S'Denisov, Denis'
+p715
+aS'Wachtel, Vitali'
+p716
+asg12
+S'oai:arXiv.org:1403.5918'
+p717
+sg14
+S'Exact asymptotics for the instant of crossing a curve boundary by an\n  asymptotically stable random walk'
+p718
+sba(iArxivData
+Paper
+p719
+(dp720
+g4
+S'2014-03-24'
+p721
+sg6
+S'  We prove a superdiffusive central limit theorem for the displacement of a\ntest particle in the periodic Lorentz gas in the limit of large times $t$ and\nlow scatterer densities (Boltzmann-Grad limit). The normalization factor is\n$\\sqrt{t\\log t}$, where $t$ is measured in units of the mean collision time.\nThis result holds in any dimension and for a general class of finite-range\nscattering potentials.\n'
+p722
+sg8
+(lp723
+S'Marklof, Jens'
+p724
+aS'Toth, Balint'
+p725
+asg12
+S'oai:arXiv.org:1403.6024'
+p726
+sg14
+S'Superdiffusion in the periodic Lorentz gas'
+p727
+sba(iArxivData
+Paper
+p728
+(dp729
+g4
+S'2014-03-22'
+p730
+sg6
+S'  Following Coxeter we use barycentric coordinates in affine geometry to prove\ntheorems on ratios of areas. In particular, we prove a version of Routh-Steiner\ntheorem for parallelograms.\n'
+p731
+sg8
+(lp732
+S'Abboud, Elias'
+p733
+asg12
+S'oai:arXiv.org:1403.5652'
+p734
+sg14
+S'On Routh-Steiner Theorem and Generalizations'
+p735
+sba(iArxivData
+Paper
+p736
+(dp737
+g4
+S'2014-04-30'
+p738
+sg6
+S"  Stricker's theorem states that a Gaussian process is a semimartingale in its\nnatural filtration if and only if it is the sum of an independent increment\nGaussian process and a Gaussian process of finite variation, see [1983, Z.\nWahrsch. Verw. Gebiete 64(3)]. We consider extensions of this result to non\nGaussian infinitely divisible processes. First we show that the class of\ninfinitely divisible semimartingales is so large that the natural analog of\nStricker's theorem fails to hold. Then, as the main result, we prove that an\ninfinitely divisible semimartingale relative to the filtration generated by a\nrandom measure admits a unique decomposition into an independent increment\nprocess and an infinitely divisible process of finite variation. Consequently,\nthe natural analog of Stricker's theorem holds for all strictly representable\nprocesses (as defined in this paper). Since Gaussian processes are strictly\nrepresentable due to Hida's multiplicity theorem, the classical Stricker's\ntheorem follows from our result. Another consequence is that the question when\nan infinitely divisible process is a semimartingale can often be reduced to a\npath property, when a certain associated infinitely divisible process is of\nfinite variation. Along these lines, using Basse-O'Connor and Rosi\\'nski [2013,\nStochastic Process. Appl. 123(6)], we characterize semimartingales within a\nlarge class of stationary increment infinitely divisible processes; this class\nincludes many infinitely divisible processes of interest, including linear\nfractional processes, mixed moving averages, and supOU processes, as particular\ncases. The proof of the main theorem relies on series representations of jumps\nof c\\`adl\\`ag infinitely divisible processes given in Basse-O'Connor and\nRosi\\'nski [2013, Ann. Probab. 41(6)] combined with techniques of stochastic\nanalysis.\n"
+p739
+sg8
+(lp740
+S"Basse-O'Connor, Andreas"
+p741
+aVRosi\u0144ski, Jan
+p742
+asg12
+S'oai:arXiv.org:1404.7598'
+p743
+sg14
+S'On infinitely divisible semimartingales'
+p744
+sba(iArxivData
+Paper
+p745
+(dp746
+g4
+S'2014-03-19'
+p747
+sg6
+S'  We consider three one-dimensional continuous-time Markov processes on a\nlattice, each of which models the conduction of heat: the family of Brownian\nEnergy Processes with parameter $m$, a Generalized Brownian Energy Process, and\nthe Kipnis-Marchioro-Presutti process. The hydrodynamic limit of each of these\nthree processes is a parabolic equation, the linear heat equation in the case\nof the BEP$(m)$ and the KMP, and a nonlinear heat equation for the GBEP($a$).\nWe prove the hydrodynamic limit rigorously for the BEP$(m)$, and give a formal\nderivation for the GBEP($a$).\n  We then formally derive the pathwise large-deviation rate functional for the\nempirical measure of the three processes. These rate functionals imply\ngradient-flow structures for the limiting linear and nonlinear heat equations.\nWe contrast these gradient-flow structures with those for processes describing\nthe diffusion of mass, most importantly the class of Wasserstein gradient-flow\nsystems. The linear and nonlinear heat-equation gradient-flow structures are\neach driven by entropy terms of the form $-\\log \\rho$; they involve dissipation\nor mobility terms of order $\\rho^2$ for the linear heat equation, and a\nnonlinear function of $\\rho$ for the nonlinear heat equation.\n'
+p748
+sg8
+(lp749
+S'Peletier, Mark A.'
+p750
+aS'Redig, Frank'
+p751
+aS'Vafayi, Kiamars'
+p752
+asg12
+S'oai:arXiv.org:1403.4994'
+p753
+sg14
+S'Large Deviations in Stochastic Heat-Conduction Processes Provide a\n  Gradient-Flow Structure for Heat Conduction'
+p754
+sba(iArxivData
+Paper
+p755
+(dp756
+g4
+S'2014-03-19'
+p757
+sg6
+S'  A bounded curvature path is a continuously differentiable piecewise $C^2$\npath with bounded absolute curvature that connects two points in the tangent\nbundle of a surface. In this work we study the homotopy classes of bounded\ncurvature paths for generic points in the tangent bundle of the Euclidean\nplane. In particular, we characterize the behavior of homotopies of such paths\nin terms of boundedness or unboundedness of their path length. Moreover, for a\ntype of configuration of elements in the tangent bundle we prove the existence\nof a compact planar region in which no bounded curvature path lying on it can\nbe made homotopic to a path outside of the region. In particular, we establish\nthat for such type of configuration, the space of bounded curvature paths is\ndivided into two disjoint components.\n'
+p758
+sg8
+(lp759
+VAyala, José
+p760
+aS'Rubinstein, Hyam'
+p761
+asg12
+S'oai:arXiv.org:1403.4911'
+p762
+sg14
+S'Non-Uniqueness of the Homotopy Class of Bounded Curvature Paths'
+p763
+sba(iArxivData
+Paper
+p764
+(dp765
+g4
+S'2014-03-20'
+p766
+sg6
+S'  We study a Stochastic Landau-Lifschitz Equation with non-zero anisotrophy\nenergy and multidimensional noise. The existence and some regularities of weak\nsolution have been proved.\n'
+p767
+sg8
+(lp768
+VBrze\u017aniak, Zdzis\u0142aw
+p769
+aS'Li, Liang'
+p770
+asg12
+S'oai:arXiv.org:1403.5220'
+p771
+sg14
+S'Weak solutions of the Stochastic Landau-Lifschitz Equations with\n  non-zero anisotrophy energy'
+p772
+sba(iArxivData
+Paper
+p773
+(dp774
+g4
+S'2014-03-21'
+p775
+sg6
+S'  We study random trees which are invariant in law under the operation of\ncontracting each edge independently with probability p \\in (0,1). We show that\nall such trees can be constructed through Poissonian sampling from random\nmeasured real trees satisfying a natural scale invariance property. This has\nconnections to exchangeable partially ordered sets, real-valued self-similar\nincreasing processes and quasi-stationary distributions of Galton-Watson\nprocesses.\n'
+p776
+sg8
+(lp777
+VHénard, Olivier
+p778
+aS'Maillard, Pascal'
+p779
+asg12
+S'oai:arXiv.org:1403.5491'
+p780
+sg14
+S'On trees invariant under edge contraction'
+p781
+sba(iArxivData
+Paper
+p782
+(dp783
+g4
+S'2014-04-09'
+p784
+sg6
+S'  We show that every heptagon is a slice of a $3$-polytope with $6$ vertices.\nThis implies that every $n$-gon with $n\\geq 7$ can be obtained as a slice of a\n$3$-polytope with at most $n-1$ vertices and as a slice of a\n$(3+\\lceil\\frac{n}{7}\\rceil)$-dimensional polytope with at most\n$\\lceil\\frac{6n}{7}\\rceil$ vertices. This provides a geometric proof of the\nfact that every nonnegative $n\\times m$ matrix of rank $3$ such that $7\\leq\nn\\leq m$ has nonnegative rank not larger than $\\lceil\\frac{6n}{7}\\rceil$. This\nresult has been independently proved, with algebraic tools, by Shitov (J.\nCombin. Theory Ser. A 122, 2014).\n'
+p785
+sg8
+(lp786
+S'Padrol, Arnau'
+p787
+aS'Pfeifle, Julian'
+p788
+asg12
+S'oai:arXiv.org:1404.2443'
+p789
+sg14
+S'Polygons as slices of higher-dimensional polytopes'
+p790
+sba(iArxivData
+Paper
+p791
+(dp792
+g4
+S'2014-03-01'
+p793
+sg6
+S'  This paper considers a classical question of approximation of Brownian motion\nby a random walk in the setting of a sub-Riemannian manifold $M$. To construct\nsuch a random walk we first address several issues related to the degeneracy of\nsuch a manifold. In particular, we define a family of sub-Laplacian operators\nnaturally connected to the geometry of the underlining manifold. In the case\nwhen $M$ is a Riemannian (non-degenerate) manifold, we recover the\nLaplace-Beltrami operator. We then construct the corresponding random walk, and\nunder standard assumptions on the sub-Laplacian and $M$ we show that this\nrandom walk weakly converges to a process, horizontal Brownian motion, whose\ninfinitesimal generator is the sub-Laplacian. An example of the Heisenberg\ngroup equipped with a standard sub-Riemannian metric is considered in detail,\nin which case the sub-Laplacian we introduced is shown to be the sum of squares\n(H\\"{o}rmander\'s) operator.\n'
+p794
+sg8
+(lp795
+S'Gordina, Maria'
+p796
+aS'Laetsch, Thomas'
+p797
+asg12
+S'oai:arXiv.org:1403.0142'
+p798
+sg14
+S'A random walk through sub-Riemannian geometry'
+p799
+sba(iArxivData
+Paper
+p800
+(dp801
+g4
+S'2014-03-19'
+p802
+sg6
+S'  We consider the ABC model on a ring in a strongly asymmetric regime. The main\nresult asserts that the particles almost always form three pure domains (one of\neach species) and that this segregated shape evolves, in a proper time scale,\nas a Brownian motion on the circle, which may have a drift. This is, to our\nknowledge, the first proof of a zero-temperature limit for a non-reversible\ndynamics whose invariant measure is not explicitly known.\n'
+p803
+sg8
+(lp804
+S'Misturini, Ricardo'
+p805
+asg12
+S'oai:arXiv.org:1403.4981'
+p806
+sg14
+S'Evolution of the ABC model among the segregated configurations in the\n  zero-temperature limit'
+p807
+sba(iArxivData
+Paper
+p808
+(dp809
+g4
+S'2014-04-30'
+p810
+sg6
+S'  In arXiv:1301.6911, we built and studied a Curie-Weiss model exhibiting\nself-organized criticality : it is a model with a self-interaction leading to\nfluctuations of order $n^{3/4}$ and a limiting law proportional to\n$\\exp(-x^4/12)$. In this paper we modify our model in order to "kill the term\n$x^4$" and to obtain a self-interaction leading to fluctuations of order\n$n^{5/6}$ and a limiting law $C\\,\\exp(-\\lambda x^6)\\,dx$, for suitable positive\nconstants $C$ and $\\lambda$.\n'
+p811
+sg8
+(lp812
+S'Gorny, Matthias'
+p813
+asg12
+S'oai:arXiv.org:1404.7637'
+p814
+sg14
+S'A Self-Interaction Leading to Fluctuations of Order $n^{5/6}$'
+p815
+sba(iArxivData
+Paper
+p816
+(dp817
+g4
+S'2014-03-24'
+p818
+sg6
+S"  We develop connections between Stein's approximation method, logarithmic\nSobolev and transport inequalities by introducing a new class of functional\ninequalities involving the relative entropy, the Stein (factor or) matrix, the\nrelative Fisher information and the Wasserstein distance with respect to a\ngiven reference distribution on $\\mathbb{R}^d$. For the Gaussian model, the\nresults improve upon the classical logarithmic Sobolev inequality and the\nTalagrand quadratic transportation cost inequality. Further examples of\nillustrations include multidimensional gamma distributions, the uniform\ndistribution on a compact interval, as well as families of log-concave\ndensities. As a by-product, the new inequalities are relevant for entropic\nconvergence expressed in terms of the Stein matrix. The tools rely on semigroup\ninterpolation and bounds, in particular by means of the iterated gradients of\nthe Markov generator with invariant measure the distribution under\nconsideration. In a second part, motivated by the recent investigation by\nNourdin, Peccati and Swan on Wiener chaoses, we address the issue of entropic\nbounds on multidimensional functionals $F$ with the Stein matrix via a set of\ndata on $F$ and its gradients rather than on the Fisher information of the\ndensity. A natural framework for this investigation is given by the Markov\nTriple structure $(E, \\mu, \\Gamma)$ in which abstract Malliavin-type arguments\nmay be developed and extend the Wiener chaos setting.\n"
+p819
+sg8
+(lp820
+S'Ledoux, Michel'
+p821
+aS'Nourdin, Ivan'
+p822
+aS'Peccati, Giovanni'
+p823
+asg12
+S'oai:arXiv.org:1403.5855'
+p824
+sg14
+S"Stein's method, logarithmic Sobolev and transport inequalities"
+p825
+sba(iArxivData
+Paper
+p826
+(dp827
+g4
+S'2014-03-21'
+p828
+sg6
+S'  The Internet heavily relies on Content Distribution Networks and transparent\ncaches to cope with the ever-increasing traffic demand of users. Content,\nhowever, is essentially versatile: once published at a given time, its\npopularity vanishes over time. All requests for a given document are then\nconcentrated between the publishing time and an effective perishing time.\n  In this paper, we propose a new model for the arrival of content requests,\nwhich takes into account the dynamical nature of the content catalog. Based on\ntwo large traffic traces collected on the Orange network, we use the\nsemi-experimental method and determine invariants of the content request\nprocess. This allows us to define a simple mathematical model for content\nrequests; by extending the so-called "Che approximation", we then compute the\nperformance of a LRU cache fed with such a request process, expressed by its\nhit ratio. We numerically validate the good accuracy of our model by comparison\nto trace-based simulation.\n'
+p829
+sg8
+(lp830
+S'Olmos, Felipe'
+p831
+aS'Kauffmann, Bruno'
+p832
+aS'Simonian, Alain'
+p833
+aS'Carlinet, Yannick'
+p834
+asg12
+S'oai:arXiv.org:1403.5479'
+p835
+sg14
+S'Catalog Dynamics: Impact of Content Publishing and Perishing on the\n  Performance of a LRU Cache'
+p836
+sba(iArxivData
+Paper
+p837
+(dp838
+g4
+S'2014-03-19'
+p839
+sg6
+S"  Let $X$ be lognormal$(\\mu,\\sigma^2)$ with density $f(x)$, let $\\theta>0$ and\ndefine ${L}(\\theta)=E e^{-\\theta X}$. We study properties of the exponentially\ntilted density (Esscher transform) $f_\\theta(x) =e^{-\\theta\nx}f(x)/{L}(\\theta)$, in particular its moments, its asymptotic form as\n$\\theta\\to\\infty$ and asymptotics for the Cram\\'er function; the asymptotic\nformulas involve the Lambert W function. This is used to provide two different\nnumerical methods for evaluating the left tail probability of lognormal sum\n$S_n=X_1+\\cdots+X_n$: a saddlepoint approximation and an exponential twisting\nimportance sampling estimator. For the latter we demonstrate the asymptotic\nconsistency by proving logarithmic efficiency in terms of the mean square\nerror. Numerical examples for the c.d.f.\\ $F_n(x)$ and the p.d.f.\\ $f_n(x)$ of\n$S_n$ are given in a range of values of $\\sigma^2,n,x$ motivated from portfolio\nValue-at-Risk calculations.\n"
+p840
+sg8
+(lp841
+S'Asmussen, Soren'
+p842
+aS'Jensen, Jens Ledet'
+p843
+aS'Rojas-Nandayapa, Leonardo'
+p844
+asg12
+S'oai:arXiv.org:1403.4689'
+p845
+sg14
+S'Exponential Family Techniques for the Lognormal Left Tail'
+p846
+sba(iArxivData
+Paper
+p847
+(dp848
+g4
+S'2014-04-19'
+p849
+sg6
+S'  We consider the modified Monge-Kantorovich problem with additional\nrestriction: admissible transport plans must vanish on some fixed functional\nsubspace. Different choice of the subspace leads to different additional\nproperties optimal plans need to satisfy. Our main results are quite general\nand include several important examples. In particular, they include\nMonge-Kantorovich problems in the classes of invariant measures and\nmartingales. We formulate and prove a criterion for existence of a solution, a\nduality statement of the Kantorovich type, and a necessary geometric condition\non a support of optimal measure, which is analogues to the usual\n$c$-monotonicity.\n'
+p850
+sg8
+(lp851
+S'Zaev, Danila'
+p852
+asg12
+S'oai:arXiv.org:1404.4962'
+p853
+sg14
+S'On the Monge-Kantorovich problem with additional linear constraints'
+p854
+sba(iArxivData
+Paper
+p855
+(dp856
+g4
+S'2014-03-21'
+p857
+sg6
+S"  The present paper introduces a jump-diffusion extension of the classical\ndiffusion default intensity model by means of subordination in the sense of\nBochner. We start from the bi-variate process $(X,D)$ of a diffusion state\nvariable $X$ driving default intensity and a default indicator process $D$ and\ntime change it with a L\\'{e}vy subordinator ${\\mathcal{T}}$. We characterize\nthe time-changed process\n$(X^{\\phi}_t,D^{\\phi}_t)=(X({\\mathcal{T}}_t),D({\\mathcal{T}}_t))$ as a\nMarkovian--It\\^{o} semimartingale and show from the Doob--Meyer decomposition\nof $D^{\\phi}$ that the default time in the time-changed model has a\njump-diffusion or a pure jump intensity. When $X$ is a CIR diffusion with\nmean-reverting drift, the default intensity of the subordinate model (SubCIR)\nis a jump-diffusion or a pure jump process with mean-reverting jumps in both\ndirections that stays nonnegative. The SubCIR default intensity model is\nanalytically tractable by means of explicitly computed eigenfunction expansions\nof relevant semigroups, yielding closed-form pricing of credit-sensitive\nsecurities.\n"
+p858
+sg8
+(lp859
+S'Mendoza-Arriaga, Rafael'
+p860
+aS'Linetsky, Vadim'
+p861
+asg12
+S'oai:arXiv.org:1403.5402'
+p862
+sg14
+S'Time-changed CIR default intensities with two-sided mean-reverting jumps'
+p863
+sba(iArxivData
+Paper
+p864
+(dp865
+g4
+S'2014-04-08'
+p866
+sg6
+S'  We consider a one-dimensional stochastic differential equations (SDE) with\nirregular coefficients. The purpose of this paper is to estimate the\n$L^p(\\Omega)$-difference of SDEs using the norm of the difference of\ncoefficients, where the discontinuous drift coefficient satisfies a one-sided\nLipschitz condition and the diffusion coefficient is bounded, uniformly\nelliptic and H\\"older continuous. As an application, we consider the stability\nproblem.\n'
+p867
+sg8
+(lp868
+S'Taguchi, Dai'
+p869
+asg12
+S'oai:arXiv.org:1404.2358'
+p870
+sg14
+S'$L^p(\\Omega)$-Difference of One-Dimensional Stochastic Differential\n  Equations with Discontinuous Drift'
+p871
+sba(iArxivData
+Paper
+p872
+(dp873
+g4
+S'2014-03-24'
+p874
+sg6
+S"  We study the record statistics of random walks after $n$ steps, $x_0,\nx_1,\\ldots, x_n$, with arbitrary symmetric and continuous distribution\n$p(\\eta)$ of the jumps $\\eta_i = x_i - x_{i-1}$. We consider the age of the\nrecords, i.e. the time up to which a record survives. Depending on how the age\nof the current last record is defined, we propose three distinct sequences of\nages (indexed by $\\alpha$ = I, II, III) associated to a given sequence of\nrecords. We then focus on the longest lasting record, which is the longest\nelement among this sequence of ages. To characterize the statistics of these\nlongest lasting records, we compute: (i) the probability that the record of the\nlongest age is broken at step $n$, denoted by $Q^{\\alpha}(n)$, which we call\nthe probability of record breaking and: (ii) the duration of the longest\nlasting record, $\\ell_{\\max}^{\\alpha}(n)$. We show that both $Q^{\\alpha}(n)$\nand the full statistics of $\\ell_{\\max}^{\\alpha}(n)$ are universal, i.e.\nindependent of the jump distribution $p(\\eta)$. We compute exactly the large\n$n$ asymptotic behaviors of $Q^{\\alpha}(n)$ as well as $\\langle\n\\ell_{\\max}^{\\alpha}(n)\\rangle$ (when it exists) and show that each case gives\nrise to a different universal constant associated to random walks (including\nL\\'evy flights). While two of them appeared before in the excursion theory of\nBrownian motion, for which we provide here a simpler derivation, the third case\ngives rise to a non-trivial new constant $C^{\\rm III} = 0.241749 \\ldots$\nassociated to the records of random walks. Other observables characterizing the\nages of the records, exhibiting an interesting universal behavior, are also\ndiscussed.\n"
+p875
+sg8
+(lp876
+S'Godreche, Claude'
+p877
+aS'Majumdar, Satya N.'
+p878
+aS'Schehr, Gregory'
+p879
+asg12
+S'oai:arXiv.org:1403.6187'
+p880
+sg14
+S"Universal statistics of longest lasting records of random walks and\n  L\\'evy flights"
+p881
+sba(iArxivData
+Paper
+p882
+(dp883
+g4
+S'2014-04-09'
+p884
+sg6
+S'  Let $r$ and $d$ be positive integers with $r<d$. Consider a random $d$-ary\ntree constructed as follows. Start with a single vertex, and in each time-step\nchoose a uniformly random leaf and give it $d$ newly created offspring. Let\n${\\mathcal T}_t$ be the tree produced after $t$ steps. We show that there\nexists a fixed $\\delta<1$ depending on $d$ and $r$ such that almost surely for\nall large $t$, every $r$-ary subtree of ${\\mathcal T}_t$ has less than\n$t^{\\delta}$ vertices.\n  The proof involves analysis that also yields a related result. Consider the\nfollowing iterative construction of a random planar triangulation. Start with a\ntriangle embedded in the plane. In each step, choose a bounded face uniformly\nat random, add a vertex inside that face and join it to the vertices of the\nface. In this way, one face is destroyed and three new faces are created. After\n$t$ steps, we obtain a random triangulated plane graph with $t+3$ vertices,\nwhich is called a random Apollonian network. We prove that there exists a fixed\n$\\delta<1$, such that eventually every path in this graph has length less than\n$t^{\\delta}$, which verifies a conjecture of Cooper and Frieze.\n'
+p885
+sg8
+(lp886
+S'Collevecchio, Andrea'
+p887
+aS'Mehrabian, Abbas'
+p888
+aS'Wormald, Nick'
+p889
+asg12
+S'oai:arXiv.org:1404.2425'
+p890
+sg14
+S'Longest paths in random Apollonian networks and largest $r$-ary subtrees\n  of random $d$-ary recursive trees'
+p891
+sba(iArxivData
+Paper
+p892
+(dp893
+g4
+S'2014-03-22'
+p894
+sg6
+S"  How does one introduce randomness into a classical dynamical system in order\nto produce something which is related to the `corresponding' quantum system? We\nconsider this question from a probabilistic point of view, in the context of\nsome integrable Hamiltonian systems.\n"
+p895
+sg8
+(lp896
+S"O'Connell, Neil"
+p897
+asg12
+S'oai:arXiv.org:1403.5709'
+p898
+sg14
+S'Stochastic B\\"acklund transformations'
+p899
+sba(iArxivData
+Paper
+p900
+(dp901
+g4
+S'2014-03-19'
+p902
+sg6
+S'  It is well known that for a strictly stationary, reversible, Harris recurrent\nMarkov chain, the $\\rho$-mixing condition is equivalent to geometric ergodicity\nand to a "spectral gap" condition. In this note, it will be shown with an\nexample that for that class of Markov chains, the "interlaced" variant of the\n$\\rho$-mixing condition fails to be equivalent to those conditions.\n'
+p903
+sg8
+(lp904
+S'Bradley, Richard C.'
+p905
+asg12
+S'oai:arXiv.org:1403.4895'
+p906
+sg14
+S'On Mixing Properties of Reversible Markov Chains'
+p907
+sba(iArxivData
+Paper
+p908
+(dp909
+g4
+S'2014-03-21'
+p910
+sg6
+S'  The space of all normal currents with compact support in a metric space in\nthe sense of Ambrosio and Kirchheim becomes a chain complex. Its homology is\nproved to be naturally isomorphic to the measure homology of Thurston on the\ncategory of all weakly locally Lipschitz contractible metric spaces and all\nlocally Lipschitz maps. The class of weakly locally Lipschitz contractible\nmetric spaces is large, including all finite dimensional Alexandrov spaces of\ncurvature bounded locally from below or all locally CAT spaces.\n  To prove this result, a topology on a space of Lipschitz maps between\narbitrary metric spaces is introduced and its fundamental properties are\ninvestigated. Further, the $C^1$-topology on the space of all $C^1$-maps\nbetween Riemannian manifolds is characterized by our topology.\n'
+p911
+sg8
+(lp912
+S'Mitsuishi, Ayato'
+p913
+asg12
+S'oai:arXiv.org:1403.5518'
+p914
+sg14
+S'Current and measure homologies'
+p915
+sba(iArxivData
+Paper
+p916
+(dp917
+g4
+S'2014-04-10'
+p918
+sg6
+S"  We show that the value function in a stochastic differential game does not\nchange if we keep the same space $(\\Omega,\\mathcal{F})$ but introduce\nprobability measures by means of Girsanov's transformation {\\em depending} on\nthe policies of the players. We also show that the value function does not\nchange if we allow the driving Wiener processes to depend on the policies of\nthe players. Finally, we show that the value function does not change if we\nperform a random time change with the rate depending on the policies of the\nplayers.\n"
+p919
+sg8
+(lp920
+S'Krylov, N. V.'
+p921
+asg12
+S'oai:arXiv.org:1404.2972'
+p922
+sg14
+S'On the independence of the value function for stochastic differential\n  games of the probability space'
+p923
+sba(iArxivData
+Paper
+p924
+(dp925
+g4
+S'2014-03-29'
+p926
+sg6
+S'  In this paper we study the Omega risk model with surplus-dependent tax\npayments in a time-homogeneous diffusion setting. The new model incorporates\npractical features from both the Omega risk model(Albrecher and Gerber and Shiu\n(2011)) and the risk model with tax(Albrecher and Hipp (2007)). We explicitly\ncharacterize the Laplace transform of the occupation time of an Azema-Yor\nprocess(e.g. a process refracted by functionals of its running maximum) below a\nconstant level until the first hitting time of another Azema-Yor process or\nuntil an independent exponential time. This result unifies and extends recent\nliterature(Li and Zhou (2013) and Zhang (2014)) incorporating some of their\nresults as special cases. We explicitly characterize the Laplace transform of\nthe time of bankruptcy in the Omega risk model with tax and discuss an\nextension to integral functionals. Finally we present examples using a Brownian\nmotion with drift.\n'
+p927
+sg8
+(lp928
+S'Cui, Zhenyu'
+p929
+asg12
+S'oai:arXiv.org:1403.7680'
+p930
+sg14
+S'Omega risk model with tax'
+p931
+sba(iArxivData
+Paper
+p932
+(dp933
+g4
+S'2014-03-19'
+p934
+sg6
+S'  We study approximate maximum likelihood estimators (MLEs) for the parameters\nof the widely used Heston stock and volatility stochastic differential\nequations (SDEs). We compute explicit closed form estimators maximizing the\ndiscretized log-likelihood of $N$ observations recorded at times $T,2T, \\ldots,\nNT$. We study the asymptotic bias of these parameter estimators first for $T$\nfixed and $N \\to \\infty$, as well as when the global observation time $S= NT\n\\to \\infty$ and $T = S/N \\to 0$. We identify two explicit key functions of the\nparameters which control the type of asymptotic distribution of these\nestimators, and we analyze the dichotomy between asymptotic normality and\nattraction by stable like distributions with heavy tails. \\\\ We present two\nexamples of model fitting for Heston SDEs, one for daily data and one for\nintraday data, with moderate values of $N$.\n'
+p935
+sg8
+(lp936
+S'Azencott, Robert'
+p937
+aS'Gadhyan, Yutheeka'
+p938
+asg12
+S'oai:arXiv.org:1403.4893'
+p939
+sg14
+S'Accuracy of Maximum Likelihood Parameter Estimators for Heston\n  volatility SDE'
+p940
+sba(iArxivData
+Paper
+p941
+(dp942
+g4
+S'2014-04-10'
+p943
+sg6
+S'  We investigate the analytical properties of free stable distributions and\ndiscover many connections with the classical stable distributions. Our main\nresults include an explicit formula for the Mellin transform, series\nrepresentations for the characteristic function and for the density of the free\nstable distribution; all of these explicit formulas exhibit close resemblance\nto the corresponding expressions for classical stable distributions. As\napplications of these results we obtain a new derivation of the duality law\nobtained in [1] and a factorization of a classical stable random variable into\nthe independent (in the classical sense) product of a free stable random\nvariable and a power of Gamma(2) random variable.\n'
+p944
+sg8
+(lp945
+S'Hasebe, Takahiro'
+p946
+aS'Kuznetsov, Alexey'
+p947
+asg12
+S'oai:arXiv.org:1404.2981'
+p948
+sg14
+S'On free stable distributions'
+p949
+sba(iArxivData
+Paper
+p950
+(dp951
+g4
+S'2014-04-11'
+p952
+sg6
+S'  In this note, we investigate the behaviour of suprema for band-limited\nspherical random fields. We prove upper and lower bound for the expected values\nof these suprema, by means of metric entropy arguments and discrete\napproximations; we then exploit the Borell-TIS inequality to establish almost\nsure upper and lower bounds for their fluctuations. Band limited functions can\nbe viewed as restrictions on the sphere of random polynomials with increasing\ndegrees, and our results show that fluctuations scale as the square root of the\nlogarithm of these degrees.\n'
+p953
+sg8
+(lp954
+S'Marinucci, Domenico'
+p955
+aS'Vadlamani, Sreekar'
+p956
+asg12
+S'oai:arXiv.org:1404.3081'
+p957
+sg14
+S'A Note on Global Suprema of Band-Limited Spherical Random Functions'
+p958
+sba(iArxivData
+Paper
+p959
+(dp960
+g4
+S'2014-04-18'
+p961
+sg6
+S'  We compute the joint distribution of the site and the time at which a\n$d$-dimensional standard Brownian motion hits the surface of the unit ball for\nthe first time. The asymptotic form of the density of it is given when either\nthe time or space variable becomes large. Our results entail that if Brownian\nmotion is started at a point x and conditioned to hit a ball centered at the\norigin, at time t, the distribution of the hitting site approaches the uniform\ndistribution or the point mass at the point x/|x| of the unit sphere according\nas |x|/t tends to zero or infinity; in each case we provide a precise\nasymptotic estimate of the density. In the case when |\\x|/t tends to a positive\nconstant we show the convergence of density and derive an analytic expression\nof the limit density.\n'
+p962
+sg8
+(lp963
+S'Uchiyama, Kohei'
+p964
+asg12
+S'oai:arXiv.org:1404.4745'
+p965
+sg14
+S'Density of space-time distribution of Brownian first hitting of a disc\n  and a ball'
+p966
+sba(iArxivData
+Paper
+p967
+(dp968
+g4
+S'2014-03-21'
+p969
+sg6
+S'  In this paper, we present an algorithm for the recovery of wireless networks\nafter a disaster. Considering a damaged wireless network, presenting coverage\nholes or/and many disconnected components, we propose a disaster recovery\nalgorithm which repairs the network. It provides the list of locations where to\nput new nodes in order to patch the coverage holes and mend the disconnected\ncomponents. In order to do this we first consider the simplicial complex\nrepresentation of the network, then the algorithm adds supplementary vertices\nin excessive number, and afterwards runs a reduction algorithm in order to\nreach an optimal result. One of the novelty of this work resides in the\nproposed method for the addition of vertices. We use a determinantal point\nprocess: the Ginibre point process which has inherent repulsion between\nvertices, and has never been simulated before for wireless networks\nrepresentation. We compare both the determinantal point process addition method\nwith other vertices addition methods, and the whole disaster recovery algorithm\nto the greedy algorithm for the set cover problem.\n'
+p970
+sg8
+(lp971
+VVergne, Anaïs
+p972
+aS'Flint, Ian'
+p973
+aS'Decreusefond, Laurent'
+p974
+aS'Martins, Philippe'
+p975
+asg12
+S'oai:arXiv.org:1403.5543'
+p976
+sg14
+S'Disaster Recovery in Wireless Networks: A Homology-Based Algorithm'
+p977
+sba(iArxivData
+Paper
+p978
+(dp979
+g4
+S'2014-03-28'
+p980
+sg6
+S'  We formulate and prove in this report some sufficient conditions for\nexponential tightness (ET) of a family of independent identical distributed\n(i.i.d.) random fields (r.f.) (processes) in the space of continuous functions\ndefined on certain metric compact set.\n  We will use the entropic method as well as too modern approach through the\nmajorizing measures (generic chaining).\n'
+p981
+sg8
+(lp982
+S'Ostrovsky, E.'
+p983
+aS'Sirota, L.'
+p984
+asg12
+S'oai:arXiv.org:1403.7562'
+p985
+sg14
+S'Sufficient conditions for exponential tightness of normed sums of\n  independent random fields in the space of continuous functions'
+p986
+sba(iArxivData
+Paper
+p987
+(dp988
+g4
+S'2014-03-19'
+p989
+sg6
+S"  Consider two elements in the tangent bundle of the Euclidean plane\n$(x,X),(y,Y)\\in T{\\mathbb R}^2$. In this work we address the problem of\ncharacterizing the paths of bounded curvature and minimal length starting at\n$x$, finishing at $y$ and having tangents at these points $X$ and $Y$\nrespectively. This problem was first investigated in the late 50's by Lester\nDubins. In this note we present a constructive proof of Dubins' result giving\nspecial emphasis on the geometric nature of this problem.\n"
+p990
+sg8
+(lp991
+VAyala, José
+p992
+aS'Rubinstein, Hyam'
+p993
+asg12
+S'oai:arXiv.org:1403.4899'
+p994
+sg14
+S'A Geometric Approach to Shortest Bounded Curvature Paths'
+p995
+sba(iArxivData
+Paper
+p996
+(dp997
+g4
+S'2014-04-10'
+p998
+sg6
+S"  Switched queueing networks model wireless networks, input queued switches and\nnumerous other networked communications systems. For single-hop networks, we\nconsider a {($\\alpha,g$)-switch policy} which combines the MaxWeight policies\nwith bandwidth sharing networks -- a further well studied model of Internet\ncongestion. We prove the maximum stability property for this class of\nrandomized policies. Thus these policies have the same first order behavior as\nthe MaxWeight policies. However, for multihop networks some of these\ngeneralized polices address a number of critical weakness of the\nMaxWeight/BackPressure policies.\n  For multihop networks with fixed routing, we consider the Proportional\nScheduler (or (1,log)-policy). In this setting, the BackPressure policy is\nmaximum stable, but must maintain a queue for every route-destination, which\ntypically grows rapidly with a network's size. However, this proportionally\nfair policy only needs to maintain a queue for each outgoing link, which is\ntypically bounded in number. As is common with Internet routing, by maintaining\nper-link queueing each node only needs to know the next hop for each packet and\nnot its entire route. Further, in contrast to BackPressure, the Proportional\nScheduler does not compare downstream queue lengths to determine weights, only\nlocal link information is required. This leads to greater potential for\ndecomposed implementations of the policy. Through a reduction argument and an\nentropy argument, we demonstrate that, whilst maintaining substantially less\nqueueing overhead, the Proportional Scheduler achieves maximum throughput\nstability.\n"
+p999
+sg8
+(lp1000
+S'Walton, Neil'
+p1001
+asg12
+S'oai:arXiv.org:1404.2725'
+p1002
+sg14
+S'Concave Switching in Single and Multihop Networks'
+p1003
+sba(iArxivData
+Paper
+p1004
+(dp1005
+g4
+S'2014-03-25'
+p1006
+sg6
+S'  Cox-Ingersoll-Ross (CIR) processes are widely used in financial modeling such\nas in the Heston model for the approximative pricing of financial derivatives.\nMoreover, CIR processes are mathematically interesting due to the irregular\nsquare root function in the diffusion coefficient. In the literature, positive\nstrong convergence rates for numerical approximations of CIR processes have\nbeen established in the case of an inaccessible boundary point. Since\ncalibrations of the Heston model frequently result in parameters such that the\nboundary is accessible, we focus on this interesting case. Our main result\nshows for every $p \\in (0, \\infty)$ that the drift-implicit square-root Euler\napproximations proposed in Alfonsi (2005) converge in the strong $L^p$-distance\nwith a positive rate for half of the parameter regime in which the boundary\npoint is accessible. A key step in our proof is temporal regularity of Bessel\nprocesses. More precisely, we prove for every $p \\in (0, \\infty)$ that Bessel\nprocesses are temporally $1/2$-H\\"older continuous in $L^p$.\n'
+p1007
+sg8
+(lp1008
+S'Hutzenthaler, Martin'
+p1009
+aS'Jentzen, Arnulf'
+p1010
+aS'Noll, Marco'
+p1011
+asg12
+S'oai:arXiv.org:1403.6385'
+p1012
+sg14
+S'Strong convergence rates and temporal regularity for Cox-Ingersoll-Ross\n  processes and Bessel processes with accessible boundaries'
+p1013
+sba(iArxivData
+Paper
+p1014
+(dp1015
+g4
+S'2014-03-27'
+p1016
+sg6
+S'  Let $X,X_1,X_2,\\ldots$ be i.i.d. mean zero random vectors with values in a\nseparable Banach space $B$, $S_n=X_1+\\cdots+X_n$ for $n\\ge1$, and assume\n$\\{c_n:n\\ge1\\}$ is a suitably regular sequence of constants. Furthermore, let\n$S_{(n)}(t),0\\le t\\le1$ be the corresponding linearly interpolated partial sum\nprocesses. We study the cluster sets $A=C(\\{S_n/c_n\\})$ and\n$\\mathcal{A}=C(\\{S_{(n)}(\\cdot)/c_n\\})$. In particular, $A$ and $\\mathcal{A}$\nare shown to be nonrandom, and we derive criteria when elements in $B$ and\ncontinuous functions $f:[0,1]\\to B$ belong to $A$ and $\\mathcal{A}$,\nrespectively. When $B=\\mathbb{R}^d$ we refine our clustering criteria to show\nboth $A$ and $\\mathcal{A}$ are compact, symmetric, and star-like, and also\nobtain both upper and lower bound sets for $\\mathcal{A}$. When the coordinates\nof $X$ in $\\mathbb{R}^d$ are independent random variables, we are able to\nrepresent $\\mathcal {A}$ in terms of $A$ and the classical Strassen set\n$\\mathcal{K}$, and, except for degenerate cases, show $\\mathcal{A}$ is strictly\nlarger than the lower bound set whenever $d\\ge2$. In addition, we show that for\nany compact, symmetric, star-like subset $A$ of $\\mathbb{R}^d$, there exists an\n$X$ such that the corresponding functional cluster set $\\mathcal{A}$ is always\nthe lower bound subset. If $d=2$, then additional refinements identify\n$\\mathcal{A}$ as a subset of $\\{(x_1g_1,x_2g_2):(x_1,x_2)\\in\nA,g_1,g_2\\in\\mathcal{K}\\}$, which is the functional cluster set obtained when\nthe coordinates are assumed to be independent.\n'
+p1017
+sg8
+(lp1018
+S'Einmahl, Uwe'
+p1019
+aS'Kuelbs, Jim'
+p1020
+asg12
+S'oai:arXiv.org:1403.6971'
+p1021
+sg14
+S'Cluster sets for partial sums and partial sum processes'
+p1022
+sba(iArxivData
+Paper
+p1023
+(dp1024
+g4
+S'2014-04-11'
+p1025
+sg6
+S'  We present the notion of asymptotically large depth for a metric space which\nis (a priory) weaker than having subexponential asymptotic dimension growth and\n(a priory) stronger than property A.\n'
+p1026
+sg8
+(lp1027
+S'Oppenheim, Izhar'
+p1028
+asg12
+S'oai:arXiv.org:1404.3158'
+p1029
+sg14
+S"An intermediate quasi-isometric invariant between subexponential\n  asymptotic dimension growth and Yu's Property A"
+p1030
+sba(iArxivData
+Paper
+p1031
+(dp1032
+g4
+S'2014-03-24'
+p1033
+sg6
+S'  For fixed $m > 1$, we study the product of $m$ independent $N \\times N$\nelliptic random matrices as $N$ tends to infinity. Our main result shows that\nthe empirical spectral distribution of the product converges, with probability\n$1$, to the $m$-th power of the circular law, regardless of the joint\ndistribution of the mirror entries in each matrix. This leads to a new kind of\nuniversality phenomenon: the limit law for the product of independent random\nmatrices is independent of the limit laws for the individual matrices\nthemselves.\n  Our result also generalizes earlier results of G\\"otze-Tikhomirov and\nO\'Rourke-Soshnikov concerning the product of independent iid random matrices.\n'
+p1034
+sg8
+(lp1035
+S"O'Rourke, Sean"
+p1036
+aS'Renfrew, David'
+p1037
+aS'Soshnikov, Alexander'
+p1038
+aS'Vu, Van'
+p1039
+asg12
+S'oai:arXiv.org:1403.6080'
+p1040
+sg14
+S'Products of independent elliptic random matrices'
+p1041
+sba(iArxivData
+Paper
+p1042
+(dp1043
+g4
+S'2014-04-17'
+p1044
+sg6
+S'  The Skorokhod reflection of a continuous semimartingale is unfolded, in a\npossibly skewed manner, into another continuous semimartingale on an enlarged\nprobability space according to the excursion-theoretic methodology of Prokaj\n(2009). This is done in terms of a skew version of the Tanaka equation, whose\nproperties are studied in some detail. The result is used to construct a system\nof two diffusive particles with rank-based characteristics and skew-elastic\ncollisions. Unfoldings of conventional reflections are also discussed, as are\nexamples involving skew Brownian Motions and skew Bessel processes.\n'
+p1045
+sg8
+(lp1046
+S'Ichiba, Tomoyuki'
+p1047
+aS'Karatzas, Ioannis'
+p1048
+asg12
+S'oai:arXiv.org:1404.4662'
+p1049
+sg14
+S'Skew-Unfolding the Skorokhod Reflection of a Continuous Semimartingale'
+p1050
+sba(iArxivData
+Paper
+p1051
+(dp1052
+g4
+S'2014-04-11'
+p1053
+sg6
+S'  For a complete noncompact connected Riemannian manifold with bounded geometry\n$M^n$, we prove that the isoperimetric profile function $I_{M^n}$ is\ncontinuous. Here for bounded geometry we mean that $M$ have $Ricci$ curvature\nbounded below and volume of balls of radius $1$, uniformly bounded below with\nrespect to its centers. Then under an extra hypothesis on the geometry of $M$,\nwe apply this result to prove some differentiability property of $I_M$ and a\ndifferential inequality satisfied by $I_M$, extending in this way well known\nresults for compact manifolds, to this class of noncompact complete Riemannian\nmanifolds.\n'
+p1054
+sg8
+(lp1055
+VFlores, Abraham Muñoz
+p1056
+aS'Nardulli, Stefano'
+p1057
+asg12
+S'oai:arXiv.org:1404.3245'
+p1058
+sg14
+S'Continuity and differentiability properties of the isoperimetric profile\n  in complete noncompact Riemannian manifolds with bounded geometry'
+p1059
+sba(iArxivData
+Paper
+p1060
+(dp1061
+g4
+S'2014-03-24'
+p1062
+sg6
+S'  We consider the contact process with infection rate $\\lambda$ on\n$\\mathbb{T}_n^d$, the $d$-ary tree of height $n$. We study the extinction time\n$\\tau_{\\mathbb{T}_n^d}$, that is, the random time it takes for the infection to\ndisappear when the process is started from full occupancy. We prove two\nconjectures of Stacey regarding $\\tau_{\\mathbb{T}_n^d}$. Let $\\lambda_2$ denote\nthe upper critical value for the contact process on the infinite $d$-ary tree.\nFirst, if $\\lambda < \\lambda_2$, then $\\tau_{\\mathbb{T}_n^d}$ divided by the\nheight of the tree converges in probability, as $n \\to \\infty$, to a positive\nconstant. Second, if $\\lambda > \\lambda_2$, then $\\log\n\\mathbb{E}[\\tau_{\\mathbb{T}_n^d}]$ divided by the volume of the tree converges\nin probability to a positive constant, and\n$\\tau_{\\mathbb{T}_n^d}/\\mathbb{E}[\\tau_{\\mathbb{T}_n^d}]$ converges in\ndistribution to the exponential distribution of mean 1.\n'
+p1063
+sg8
+(lp1064
+S'Cranston, Michael'
+p1065
+aS'Mountford, Thomas'
+p1066
+aS'Mourrat, Jean-Christophe'
+p1067
+aS'Valesin, Daniel'
+p1068
+asg12
+S'oai:arXiv.org:1403.5927'
+p1069
+sg14
+S'The contact process on finite homogeneous trees revisited'
+p1070
+sba(iArxivData
+Paper
+p1071
+(dp1072
+g4
+S'2014-03-19'
+p1073
+sg6
+S'  We provide an equivariant description/classification of all complete (compact\nor not) non-negatively curved manifolds M together with a co-compact action by\na reflection group W, and moreover, classify such W. In particular, we show\nthat the building blocks consist of the classical constant curvature models and\ngeneralized open books with non negatively curved bundle pages, and derive a\ncorresponding splitting theorem for the universal cover.\n'
+p1074
+sg8
+(lp1075
+S'Fang, Fuquan'
+p1076
+aS'Grove, Karsten'
+p1077
+asg12
+S'oai:arXiv.org:1403.5019'
+p1078
+sg14
+S'Reflection groups in non-negative curvature'
+p1079
+sba(iArxivData
+Paper
+p1080
+(dp1081
+g4
+S'2014-04-10'
+p1082
+sg6
+S'  We show a method of uniform approximation of the value functions of uniformly\nnondegenerate stochastic differential games in smooth domains up to a constant\nover $K$ with the ones having second-order derivatives bounded by a constant\ntimes $K$ for any $K\\geq1$\n'
+p1083
+sg8
+(lp1084
+S'Krylov, N. V.'
+p1085
+asg12
+S'oai:arXiv.org:1404.2974'
+p1086
+sg14
+S'Approximating the value functions for stochastic differential games with\n  the ones having bounded second derivatives'
+p1087
+sba(iArxivData
+Paper
+p1088
+(dp1089
+g4
+S'2014-04-18'
+p1090
+sg6
+S"  The fourth moment theorem provides error bounds in the central limit theorem\nfor elements of Wiener chaos of any order. It was proved by Nourdin and Peccati\n(2009) using Stein's method and the Malliavin calculus. It was also proved by\nAzmoodeh, Campese and Poly (2013) using Stein's method and Dirichlet forms.\nThis paper is an exposition on the connections between Stein's method and the\nMalliavin calculus and between Stein's method and Dirichlet forms, and on how\nthese connections are exploited in proving the fourth moment theorem.\n"
+p1091
+sg8
+(lp1092
+S'Chen, Louis H. Y.'
+p1093
+aS'Poly, Guillaume'
+p1094
+asg12
+S'oai:arXiv.org:1404.4784'
+p1095
+sg14
+S"Stein's method, Malliavin calculus, Dirichlet forms and the fourth\n  moment theorem"
+p1096
+sba(iArxivData
+Paper
+p1097
+(dp1098
+g4
+S'2014-04-30'
+p1099
+sg6
+S"  The Kolmogorov distances between a symmetric hypergeometric law with standard\ndeviation $\\sigma$ and its usual normal approximations are computed and shown\nto be less than $1/(\\sqrt{8\\pi}\\,\\sigma)$, with the order $1/\\sigma$ and the\nconstant $1/\\sqrt{8\\pi}$ being optimal. The results of Hipp and Mattner (2007)\nfor symmetric binomial laws are obtained as special cases. Connections to\nBerry-Esseen type results in more general situations concerning sums of simple\nrandom samples or Bernoulli convolutions are explained. Auxiliary results of\nindependent interest include rather sharp normal distribution function\ninequalities, a simple identifiability result for hypergeometric laws, and some\nremarks related to L\\'evy's concentration-variance inequality.\n"
+p1100
+sg8
+(lp1101
+S'Mattner, Lutz'
+p1102
+aS'Schulz, Jona'
+p1103
+asg12
+S'oai:arXiv.org:1404.7657'
+p1104
+sg14
+S'On normal approximations to symmetric hypergeometric laws'
+p1105
+sba(iArxivData
+Paper
+p1106
+(dp1107
+g4
+S'2014-03-26'
+p1108
+sg6
+S"  The new dual-pivot Quicksort by Vladimir Yaroslavskiy - used in Oracle's Java\nruntime library since version 7 - features intriguing asymmetries in its\nbehavior. They were shown to cause a basic variant of this algorithm to use\nless comparisons than classic single-pivot Quicksort implementations. In this\npaper, we extend the analysis to the case where the two pivots are chosen as\nfixed order statistics of a random sample and give the precise leading term of\nthe average number of comparisons, swaps and executed Java Bytecode\ninstructions. It turns out that - unlike for classic Quicksort, where it is\noptimal to choose the pivot as median of the sample - the asymmetries in\nYaroslavskiy's algorithm render pivots with a systematic skew more efficient\nthan the symmetric choice. Moreover, the optimal skew heavily depends on the\nemployed cost measure; most strikingly, abstract costs like the number of swaps\nand comparisons yield a very different result than counting Java Bytecode\ninstructions, which can be assumed most closely related to actual running time.\n"
+p1109
+sg8
+(lp1110
+S'Nebel, Markus E.'
+p1111
+aS'Wild, Sebastian'
+p1112
+asg12
+S'oai:arXiv.org:1403.6602'
+p1113
+sg14
+S"Pivot Sampling in Java 7's Dual-Pivot Quicksort"
+p1114
+sba(iArxivData
+Paper
+p1115
+(dp1116
+g4
+S'2014-03-25'
+p1117
+sg6
+S'  In this paper we present some new asymptotic results for high frequency\nstatistics of Brownian semi-stationary processes. More precisely, we will show\nthat singularities in the weight function, which is one of the ingredients of a\nBSS process, may lead to non-standard limits of the realised quadratic\nvariation. In this case the limiting process is a convex combination of shifted\nintegrals of the intermittency function. Furthermore, we will demonstrate the\ncorresponding stable central limit theorem. Finally, we apply the probabilistic\ntheory to study the asymptotic properties of the realised ratio statistics,\nwhich estimates the smoothness parameter of a BSS process.\n'
+p1118
+sg8
+(lp1119
+S'Gaertner, Kerstin'
+p1120
+aS'Podolskij, Mark'
+p1121
+asg12
+S'oai:arXiv.org:1403.6484'
+p1122
+sg14
+S'On non-standard limits of Brownian semi-stationary processes'
+p1123
+sba(iArxivData
+Paper
+p1124
+(dp1125
+g4
+S'2014-03-24'
+p1126
+sg6
+S'  This paper starts to develop balanced schemes for stochastic differential\nequations (SDEs) with multiplicative noise based on the addition of stabilizing\nfunctions to the drift terms. First, we use the linear scalar SDE as a test\nproblem to show that it is possible to construct efficient almost sure stable\nfirst-order weak balanced schemes. Second, we design balanced schemes for\nbilinear SDEs that achieve the first order of weak convergence, and do not\ninvolve the simulation of multiple stochastic integrals. Numerical experiments\nshow a promising performance of the new numerical methods.\n'
+p1127
+sg8
+(lp1128
+S'Mardones, H. A.'
+p1129
+aS'Mora, C. M.'
+p1130
+asg12
+S'oai:arXiv.org:1403.6142'
+p1131
+sg14
+S'First-order weak balanced schemes for bilinear stochastic differential\n  equations'
+p1132
+sba(iArxivData
+Paper
+p1133
+(dp1134
+g4
+S'2014-04-09'
+p1135
+sg6
+S"  We estimate the observable diameter of the $l_p$-product space $X^n$ of an\nmm-space $X$ by using the limit formula in our previous paper. The idea of our\nproof is based on Gromov's book. As a corollary we obtain the phase transition\nproperty of $\\{X^n\\}_{n=1}^\\infty$ under a discreteness condition.\n"
+p1136
+sg8
+(lp1137
+S'Ozawa, Ryunosuke'
+p1138
+aS'Shioya, Takashi'
+p1139
+asg12
+S'oai:arXiv.org:1404.2679'
+p1140
+sg14
+S'Estimate of observable diameter of $l_p$-product spaces'
+p1141
+sba(iArxivData
+Paper
+p1142
+(dp1143
+g4
+S'2014-04-30'
+p1144
+sg6
+S'  A class of robust estimators of scatter applied to information-plus-impulsive\nnoise samples is studied, where the sample information matrix is assumed of low\nrank; this generalizes the study of (Couillet et al., 2013b) to spiked random\nmatrix models. It is precisely shown that, as opposed to sample covariance\nmatrices which may have asymptotically unbounded (eigen-)spectrum due to the\nsample impulsiveness, the robust estimator of scatter has bounded spectrum and\nmay contain isolated eigenvalues which we fully characterize. We show that, if\nfound beyond a certain detectability threshold, these eigenvalues allow one to\nperform statistical inference on the eigenvalues and eigenvectors of the\ninformation matrix. We use this result to derive new eigenvalue and eigenvector\nestimation procedures, which we apply in practice to the popular array\nprocessing problem of angle of arrival estimation. This gives birth to an\nimproved algorithm based on the MUSIC method, which we refer to as robust\nG-MUSIC.\n'
+p1145
+sg8
+(lp1146
+S'Couillet, Romain'
+p1147
+asg12
+S'oai:arXiv.org:1404.7685'
+p1148
+sg14
+S'Robust spiked random matrices and a robust G-MUSIC estimator'
+p1149
+sba(iArxivData
+Paper
+p1150
+(dp1151
+g4
+S'2014-03-25'
+p1152
+sg6
+S'  Recently, we adapted exploration and martingale arguments of Nachmias and\nPeres, in turn based on ideas of Martin-L\\"of, Karp and Aldous, to prove\nasymptotic normality of the number $L_1$ of vertices in the largest component\n$C$ of the random $r$-uniform hypergraph throughout the supercritical regime.\nIn this paper we take these arguments further to prove two new results: strong\ntail bounds on the distribution of $L_1$, and joint asymptotic normality of\n$L_1$ and the number $M_1$ of edges of $C$.\n'
+p1153
+sg8
+(lp1154
+VBollobás, Béla
+p1155
+aS'Riordan, Oliver'
+p1156
+asg12
+S'oai:arXiv.org:1403.6558'
+p1157
+sg14
+S'Exploring hypergraphs with martingales'
+p1158
+sba(iArxivData
+Paper
+p1159
+(dp1160
+g4
+S'2014-03-26'
+p1161
+sg6
+S'  We study a geometric bootstrap percolation model, line percolation, on the\nd-dimensional grid [n]^d. In line percolation with infection parameter r,\ninfection spreads from a subset A of initially infected lattice points as\nfollows: if there is an axis parallel line L with r or more infected lattice\npoints on it, then every lattice point of [n]^d on L gets infected and we\nrepeat this until the infection can no longer spread. The elements of the set A\nare usually chosen independently, with some density p, and the main question is\nto determine p_c(n,r,d), the critical density at which percolation (infection\nof the entire grid) becomes likely. In this paper, we determine p_c(n,r,2) up\nto a factor of 1+o(1) and p_c(n,r,3) up to multiplicative constants as n tends\nto infinity for every fixed natural number r. We also determine the size of the\nminimal percolating sets in all dimensions and for all values of the infection\nparameter.\n'
+p1162
+sg8
+(lp1163
+S'Balister, Paul N.'
+p1164
+aVBollobás, Béla
+p1165
+aS'Lee, Jonathan D.'
+p1166
+aS'Narayanan, Bhargav P.'
+p1167
+asg12
+S'oai:arXiv.org:1403.6851'
+p1168
+sg14
+S'Line Percolation'
+p1169
+sba(iArxivData
+Paper
+p1170
+(dp1171
+g4
+S'2014-03-24'
+p1172
+sg6
+S'  The double-dimer model consists in superimposing two independent, identically\ndistributed perfect matchings on a planar graph, which produces an ensemble of\nnon-intersecting loops. Kenyon established conformal invariance in the small\nmesh limit by considering topological observables of the model parameterized by\n$\\SL_2(\\C)$ representations of the fundamental group of the punctured domain.\nThe scaling limit is conjectured to be $\\CLE_4$, the Conformal Loop Ensemble at\n$\\kappa=4$.\n  In support of this conjecture, we prove that a large subclass of these\ntopological correlators converge to their putative $\\CLE_4$ limit. Both the\nsmall mesh limit of the double-dimer correlators and the corresponding $\\CLE_4$\ncorrelators are identified in terms of the $\\tau$-functions introduced by\nJimbo, Miwa and Ueno in the context of isomonodromic deformations.\n'
+p1173
+sg8
+(lp1174
+VDubédat, Julien
+p1175
+asg12
+S'oai:arXiv.org:1403.6076'
+p1176
+sg14
+S'Double dimers, conformal loop ensembles and isomonodromic deformations'
+p1177
+sba(iArxivData
+Paper
+p1178
+(dp1179
+g4
+S'2014-03-22'
+p1180
+sg6
+S'  This paper is a direct offspring of Ref. [J. Math. Phys. 54, 072103, (2013)]\nwhere basic tenets of the nonlocally induced random and quantum dynamics were\nanalyzed. A number of mentions was maid with respect to various inconsistencies\nand faulty statements omnipresent in the literature devoted to so-called\nfractional quantum mechanics spectral problems. Presently, we give a decisive\ncomputer-assisted proof, for an exemplary finite and ultimately infinite Cauchy\nwell problem, that spectral solutions proposed so far were plainly wrong. As a\nconstructive input, we provide an explicit spectral solution of the finite\nCauchy well. The infinite well emerges as a limiting case in a sequence of\ndeepening finite wells. The employed numerical methodology (algorithm based on\nthe Strang splitting method) has been tested for an exemplary Cauchy oscillator\nproblem, whose analytic solution is available. An impact of the inherent\nspatial nonlocality of motion generators upon computer-assisted outcomes\n(potentially defective, in view of various cutoffs), i.e. detailed eigenvalues\nand shapes of eigenfunctions, has been analyzed.\n'
+p1181
+sg8
+(lp1182
+S'Zaba, Mariusz'
+p1183
+aS'Garbaczewski, Piotr'
+p1184
+asg12
+S'oai:arXiv.org:1403.5668'
+p1185
+sg14
+S'Solving fractional Schroedinger-type spectral problems: Cauchy\n  oscillator and Cauchy well'
+p1186
+sba(iArxivData
+Paper
+p1187
+(dp1188
+g4
+S'2014-03-23'
+p1189
+sg6
+S'  In this article, we study elliptic stochastic partial differential equations\nwith two reflect- ing walls h1 and h2, driven by multiplicative noise. The\nexistence and uniqueness of the solutions are established.\n'
+p1190
+sg8
+(lp1191
+S'Yue, Wen'
+p1192
+aS'Zhang, Tusheng'
+p1193
+asg12
+S'oai:arXiv.org:1403.5834'
+p1194
+sg14
+S'Elliptic stochastic partial differential equations with two reflecting\n  walls'
+p1195
+sba(iArxivData
+Paper
+p1196
+(dp1197
+g4
+S'2014-03-23'
+p1198
+sg6
+S'  As a continuation to our previous work \\cite{NS1}, we consider a\ngeneralization of carries process. Our results are : (i) right eigenvectors of\nthe transition probability matrix, (ii) correlation of carries between\ndifferent steps, and (iii) a relation to generalized riffle shuffles.\n'
+p1199
+sg8
+(lp1200
+S'Nakano, Fumihiko'
+p1201
+aS'Sadahiro, Taizo'
+p1202
+asg12
+S'oai:arXiv.org:1403.5822'
+p1203
+sg14
+S'A generalization of carries process and a relation to riffle shuffles'
+p1204
+sba(iArxivData
+Paper
+p1205
+(dp1206
+g4
+S'2014-03-20'
+p1207
+sg6
+S'  We prove that all collapsible d-complexes linearly embed in R^{2d}; this is\noptimal.\n  As a consequence, we obtain a Tverberg-type theorem for metric spaces with\ncurvature bounded above: Given (r-1)(2d+1) + 1 points in a non-positively\ncurved d-complex, we can partition them into r subsets whose convex hulls\nintersect.\n  Moreover, all CAT(0) 2-complexes PL-embed in R^4, and all complexes with\ndiscrete Morse vector (1,1,1) embed into R^4 linearly.\n'
+p1208
+sg8
+(lp1209
+S'Adiprasito, Karim Alexander'
+p1210
+aS'Benedetti, Bruno'
+p1211
+asg12
+S'oai:arXiv.org:1403.5217'
+p1212
+sg14
+S'On the embeddability of contractible complexes'
+p1213
+sba(iArxivData
+Paper
+p1214
+(dp1215
+g4
+S'2014-03-22'
+p1216
+sg6
+S'  The paper develops no arbitrage results for trajectory based models by\nimposing general constraints on the trading portfolios. The main condition\nimposed, in order to avoid arbitrage opportunities, is a local continuity\nrequirement on the final portfolio value considered as a functional on the\ntrajectory space. The paper shows this to be a natural requirement by proving\nthat a large class of practical trading strategies, defi?ned by means of\ntrajectory based stopping times, give rise to locally continuous functionals.\nThe theory is illustrated, with some detail, for two specific trajectory models\nof practical interest. The implications for stochastic models which are not\nsemimartingales are described. The present paper extends some of the results in\n[1] by incorporating in the formalism a larger set of trading portfolios.\n'
+p1217
+sg8
+(lp1218
+S'Alvarez, Alexander'
+p1219
+aS'Ferrando, Sebastian'
+p1220
+asg12
+S'oai:arXiv.org:1403.5685'
+p1221
+sg14
+S'Trajectory Based Models, Arbitrage and Continuity'
+p1222
+sba(iArxivData
+Paper
+p1223
+(dp1224
+g4
+S'2014-03-22'
+p1225
+sg6
+S'  Using the Griffiths-Simon construction of the $\\varphi^4$ model and the lace\nexpansion for the Ising model, we prove that, if the strength $\\lambda\\ge0$ of\nnonlinearity is sufficiently small for a large class of short-range models in\ndimensions $d>4$, then the critical $\\varphi^4$ two-point function\n$\\langle\\varphi_o\\varphi_x\\rangle_{\\mu_c}$ is asymptotically $|x|^{2-d}$ times\na model-dependent constant, and the critical point is estimated as\n$\\mu_c=\\mathscr{\\hat\nJ}-\\frac\\lambda2\\langle\\varphi_o^2\\rangle_{\\mu_c}+O(\\lambda^2)$, where\n$\\mathscr{\\hat J}$ is the massless point for the Gaussian model.\n'
+p1226
+sg8
+(lp1227
+S'Sakai, Akira'
+p1228
+asg12
+S'oai:arXiv.org:1403.5714'
+p1229
+sg14
+S'Application of the lace expansion to the $\\varphi^4$ model'
+p1230
+sba(iArxivData
+Paper
+p1231
+(dp1232
+g4
+S'2014-03-28'
+p1233
+sg6
+S'  Consider a family of random walks $S_n^{(a)}=X_1^{(a)}+\\cdots+X_n^{(a)}$ with\nnegative drift $\\mathbf E S_1^{(a)}=-a<0$ and $\\mathbf E\n|S_1^{(a)}|^{2+\\varepsilon}<\\infty$ for some $\\varepsilon>0$. Let\n$M^{(a)}=\\max_{n\\ge 0} S_n^{(a)}$ be the maximum of the random walk. It is\nknown that the probability $\\mathbf P(M^{a}>x)$ decays exponentially fast as\n$a\\to 0$ (heavy traffic asymptotics) and, for subexponential distributions\n$\\mathbf P (M^{(a)}>x)$ decays according the the integrated tail as $x\\to\n\\infty$ (heavy-tail asymptotics). This paper presents a link between these two\nasymptotics and studies the probability $\\mathbf P (M^{(a)}>x)$ as $a\\to 0$ for\n$x=x_a\\to \\infty$ as $a\\to 0$ and identifies the regions of $x$ for which the\nheavy traffic asymptotics and the heavy tail asymptotics hold. Further, the\ndistributions for which a intermediate zone between these two limits exists are\nidentified and the exact limit in this zone is provided. Our approach is not\nbased on a approach via geometric sums, like most of the results on the\nbehaviour of $\\mathbf P (M^{(a)}>x)$ are. Instead we use martingale arguments\nand inequalities.\n'
+p1234
+sg8
+(lp1235
+S'Denisov, Denis'
+p1236
+aS'Kugler, Johannes'
+p1237
+asg12
+S'oai:arXiv.org:1403.7325'
+p1238
+sg14
+S'Heavy traffic and heavy tails for subexponential distributions'
+p1239
+sba(iArxivData
+Paper
+p1240
+(dp1241
+g4
+S'2014-04-19'
+p1242
+sg6
+S'  In this paper, we introduce the concepts of Poisson square-mean almost\nautomorphy and Poisson square-mean weighted pseudo almost automorphy. Using the\ntheory of evolution family and stochastic analysis techniques, we establish the\nexistence and uniqueness results of square-mean weighted pseudo almost\nautomorphic solutions for some linear and semilinear nonautonomous stochastic\ndifferential equations driven by L$\\acute{e}$vy noise. Moreover, we investigate\nthe global and local exponentially stability of the square-mean weighted pseudo\nalmost automorphic solutions.\n'
+p1243
+sg8
+(lp1244
+S'Li, Kexue'
+p1245
+asg12
+S'oai:arXiv.org:1404.4954'
+p1246
+sg14
+S'Square-mean weighted pseudo almost automorphic solutions for\n  nonautonomous stochastic differential equations driven by Levy noise'
+p1247
+sba(iArxivData
+Paper
+p1248
+(dp1249
+g4
+S'2014-04-29'
+p1250
+sg6
+S'  For H\\"older continuous functions $W(t,x)$ and $\\phi_t$, we define nonlinear\nintegral $\\int_a^b W(dt, \\phi_t)$ in various senses, including It\\^o-Skorohod\nand pathwise. We study their properties and relations. The stochastic flow in a\ntime dependent rough vector field associated with $\\dot \\phi_t=(\\partial\n_tW)(t, \\phi_t)$ is also studied and its applications to the transport equation\n$\\partial _t u(t,x)-\\partial _t W(t,x)\\nabla u(t,x)=0$ in rough media is given.\nThe Feynman-Kac solution to the stochastic partial differential equation with\nrandom coefficients $\\partial _t u(t,x)+Lu(t,x) +u(t,x)W(t,x)=0$ are given,\nwhere $L$ is a second order elliptic differential operator with random\ncoefficients (dependent on $W$). To establish such formula the main difficulty\nis the exponential integrability of some nonlinear integrals, which is proved\nto be true under some mild conditions on the covariance of $W$. Along the way,\nwe also obtain an upper bound for increments of stochastic processes on\nmultidimensional rectangles by majorizing measures.\n'
+p1251
+sg8
+(lp1252
+S'Hu, Yaozhong'
+p1253
+aS'Le, Khoa'
+p1254
+asg12
+S'oai:arXiv.org:1404.7582'
+p1255
+sg14
+S'Nonlinear Young integrals and differential systems in H\\"older media'
+p1256
+sba(iArxivData
+Paper
+p1257
+(dp1258
+g4
+S'2014-03-28'
+p1259
+sg6
+S'  Consider a family of $\\Delta$-latticed aperiodic random walks $\\{S^{(a)},0\\le\na\\le a_0\\}$ with increments $X_i^{(a)}$ and non-positive drift $-a$. Suppose\nthat $\\sup_{a\\le a_0}\\mathbf{E}[(X^{(a)})^2]<\\infty$ and $\\sup_{a\\le\na_0}\\mathbf{E}[\\max\\{0,X^{(a)}\\}^{2+\\varepsilon}]<\\infty$ for some\n$\\varepsilon>0$. Assume that $X^{(a)}\\xrightarrow[]{w} X^{(0)}$ as $a\\to 0$ and\ndenote by $M^{(a)}=\\max_{k\\ge 0} S_k^{(a)}$ the maximum of the random walk\n$S^{(a)}$. In this paper we provide the asymptotics of\n$\\mathbf{P}(M^{(a)}=y\\Delta)$ as $a\\to 0$ in the case, when $y\\to \\infty$ and\n$ay=O(1)$. This asymptotics follows from a representation of\n$\\mathbf{P}(M^{(a)}=y\\Delta)$ via a geometric sum and a uniform renewal\ntheorem, which is also proved in this paper.\n'
+p1260
+sg8
+(lp1261
+S'Kugler, Johannes'
+p1262
+asg12
+S'oai:arXiv.org:1403.7372'
+p1263
+sg14
+S'Local limit theorem for the maximum of a random walk'
+p1264
+sba(iArxivData
+Paper
+p1265
+(dp1266
+g4
+S'2014-04-18'
+p1267
+sg6
+S"  Freedman's inequality is a martingale counterpart to Bernstein's inequality.\nThis result shows that the tail probability of a martingale is controlled by\nthe quadratic characteristic and a uniform upper bound for the martingale\ndifference sequence. Replacing the quadratic characteristic with\n$\\textrm{H}_k^y:= \\sum_{i=1}^k\\left(\\mathbf{E}(\\xi_i^2 |\\mathcal{F}_{i-1})\n+\\xi_i^2\\textbf{1}_{\\{|\\xi_i|> y\\}}\\right),$ Dzhaparidze and van Zanten\n(\\emph{Stochastic Process. Appl.}, 2001) have established a generalization of\nFreedman's inequality with non-bounded differences. In this paper, we refine\n$\\textrm{H}_k^y$ to $\\textrm{G}_k^{y} :=\\sum_{i=1}^k\n\\left(\\mathbf{E}(\\xi_i^2\\textbf{1}_{\\{\\xi_i \\leq y\\}} |\\mathcal{F}_{i-1}) +\n\\xi_i^2\\textbf{1}_{\\{\\xi_i> y\\}}\\right)$ with a different method based on\nchanges of probability measure.\n"
+p1268
+sg8
+(lp1269
+S'Fan, Xiequan'
+p1270
+asg12
+S'oai:arXiv.org:1404.4776'
+p1271
+sg14
+S"Freedman's inequality with non-bounded martingale differences"
+p1272
+sba(iArxivData
+Paper
+p1273
+(dp1274
+g4
+S'2014-04-10'
+p1275
+sg6
+S'  We generalise the coarse Ricci curvature method of Ollivier by considering\nthe coarse Ricci curvature of multiple steps in the Markov chain. This implies\nnew spectral bounds and concentration inequalities. We also extend this\napproach to the bounds for MCMC empirical averages obtained by Joulin and\nOllivier. We prove a recursive lower bound on the coarse Ricci curvature of\nmultiple steps in the Markov chain, making our method broadly applicable.\nApplications include the split-merge random walk on partitions, Glauber\ndynamics with random scan and systemic scan for statistical physical spin\nmodels, and random walk on a binary cube with a forbidden region.\n'
+p1276
+sg8
+(lp1277
+S'Paulin, Daniel'
+p1278
+asg12
+S'oai:arXiv.org:1404.2802'
+p1279
+sg14
+S'Mixing and Concentration by Ricci Curvature'
+p1280
+sba(iArxivData
+Paper
+p1281
+(dp1282
+g4
+S'2014-03-24'
+p1283
+sg6
+S'  We show transience of the edge-reinforced random walk for small reinforcement\nin dimension greater than or equal to 3. The argument adapts the proof of\nquasi-diffusive behaviour of the SuSy hyperbolic model for fixed conductances\nby Disertori, Spencer and Zirnbauer (2010), using the representation of\nedge-reinforced random walk as a mixture of vertex-reinforced jump processes\n(VRJP) with independent gamma conductances, and the interpretation of the limit\nlaw of VRJP as a supersymmetric (SuSy) hyperbolic sigma model developed by\nSabot and Tarr\\`es (2012).\n'
+p1284
+sg8
+(lp1285
+S'Disertori, Margherita'
+p1286
+aS'Sabot, Christophe'
+p1287
+aVTarrès, Pierre
+p1288
+asg12
+S'oai:arXiv.org:1403.6079'
+p1289
+sg14
+S'Transience of Edge-Reinforced Random Walk'
+p1290
+sba(iArxivData
+Paper
+p1291
+(dp1292
+g4
+S'2014-02-28'
+p1293
+sg6
+S'  A linear stochastic vector advection equation is considered; the equation may\nmodel a passive magnetic field in a random fluid. When the driving velocity\nfield is rough but deterministic, in particular just H\\"{o}lder continuous and\nbounded, one can construct examples of infinite stretching of the passive\nfield, arising from smooth initial conditions. The purpose of the paper is to\nprove that infinite stretching is prevented if the driving velocity field\ncontains in addition a white noise component.\n'
+p1294
+sg8
+(lp1295
+S'Flandoli, Franco'
+p1296
+aS'Maurelli, Mario'
+p1297
+aS'Neklyudov, Mikhail'
+p1298
+asg12
+S'oai:arXiv.org:1403.0022'
+p1299
+sg14
+S'Noise prevents infinite stretching of the passive field in a stochastic\n  vector advection equation'
+p1300
+sba(iArxivData
+Paper
+p1301
+(dp1302
+g4
+S'2014-03-27'
+p1303
+sg6
+S'  Financial data are as a rule asymmetric, although most econometric models are\nsymmetric. This applies also to continuous-time models for high-frequency and\nirregularly spaced data. We discuss some asymmetric versions of the\ncontinuous-time GARCH model, concentrating then on the GJR-COGARCH. We\ncalculate higher order moments and extend the first jump approximation. These\nresults are prerequisites for moment estimation and pseudo maximum likelihood\nestimation of the GJR-COGARCH parameters, respectively, which we derive in\ndetail.\n'
+p1304
+sg8
+(lp1305
+S'Behme, Anita'
+p1306
+aVKlüppelberg, Claudia
+p1307
+aS'Mayr, Kathrin'
+p1308
+asg12
+S'oai:arXiv.org:1403.7068'
+p1309
+sg14
+S'Asymmetric COGARCH processes'
+p1310
+sba(iArxivData
+Paper
+p1311
+(dp1312
+g4
+S'2014-04-08'
+p1313
+sg6
+S'  We give an algebraic characterization of when a d-dimensional periodic frame-\nwork has no non-trivial, symmetry preserving, motion for any choice of\nperiodicity lattice. Our condition is decidable, and we provide a simple\nalgorithm that does not require complicated algebraic computations. In\ndimension $d = 2$, we give a combinatorial characterization in the special case\nwhen the the number of edge orbits is the minimum possible for ultrarigidity.\nAll our results apply to a fully flexible, fixed area, or fixed periodicity\nlattice.\n'
+p1314
+sg8
+(lp1315
+S'Malestein, Justin'
+p1316
+aS'Theran, Louis'
+p1317
+asg12
+S'oai:arXiv.org:1404.2319'
+p1318
+sg14
+S'Ultrarigid periodic frameworks'
+p1319
+sba(iArxivData
+Paper
+p1320
+(dp1321
+g4
+S'2014-04-26'
+p1322
+sg6
+S'  We introduce and study a new model that we call the {\\em matching model}.\nItems arrive one by one in a buffer and depart from it as soon as possible but\nby pairs. The items of a departing pair are said to be {\\em matched}. There is\na finite set of classes $\\maV$ for the items, and the allowed matchings depend\non the classes, according to a {\\em matching graph} on $\\maV$. Upon arrival, an\nitem may find several possible matches in the buffer. This indeterminacy is\nresolved by a {\\em matching policy}. When the sequence of classes of the\narriving items is i.i.d., the sequence of buffer-contents is a Markov chain,\nwhose stability is investigated. In particular, we prove that the model may be\nstable if and only if the matching graph is non-bipartite.\n'
+p1323
+sg8
+(lp1324
+S'Mairesse, Jean'
+p1325
+aS'Moyal, Pascal'
+p1326
+asg12
+S'oai:arXiv.org:1404.6677'
+p1327
+sg14
+S'Stability of the stochastic matching model'
+p1328
+sba(iArxivData
+Paper
+p1329
+(dp1330
+g4
+S'2014-03-24'
+p1331
+sg6
+S'  We study the absolute continuity of the convolution $\\delta_{e^X}^\\natural\n\\star\\delta_{e^Y}^\\natural$ of two orbital measures on the symmetric spaces\n${\\bf SO}_0(p,p)/{\\bf SO}(p)\\times{\\bf SO}(p)$, $\\SU(p,p)/{\\bf S}({\\bf\nU}(p)\\times{\\bf U}(p))$ and $\\Sp(p,p)/{\\bf Sp }(p)\\times\\Sp(p)$. We prove sharp\nconditions on $X$, $Y\\in\\a$ for the existence of the density of the convolution\nmeasure. This measure intervenes in the product formula for the spherical\nfunctions.\n'
+p1332
+sg8
+(lp1333
+S'Graczyk, Piotr'
+p1334
+aS'Sawyer, Patrice'
+p1335
+asg12
+S'oai:arXiv.org:1403.6098'
+p1336
+sg14
+S'Convolution of orbital measures on symmetric spaces of type $C_p$ and\n  $D_p$'
+p1337
+sba(iArxivData
+Paper
+p1338
+(dp1339
+g4
+S'2014-04-11'
+p1340
+sg6
+S"  Let $X=(x_1,...,x_n)$ be a random vector that satisfies a weak small ball\nproperty and whose coordinates $x_i$ satisfy that $\\|x_i\\|_{L_p} \\lesssim\n\\sqrt{p} \\|x_i\\|_{L_2}$ for $p \\sim \\log n$. In \\cite{LM_compressed}, it was\nshown that $N$ independent copies of $X$ can be used as measurement vectors in\nCompressed Sensing (using the basis pursuit algorithm) to reconstruct any\n$d$-sparse vector with the optimal number of measurements $N\\gtrsim d\n\\log\\big(e n/d\\big)$. In this note we show that the result is almost optimal.\nWe construct a random vector $X$ with iid, mean-zero, variance one coordinates\nthat satisfies the same weak small ball property and whose coordinates satisfy\nthat $\\|x_i\\|_{L_p} \\lesssim \\sqrt{p} \\|x_i\\|_{L_2}$ for $p \\sim (\\log n)/(\\log\nN)$, but the basis pursuit algorithm fails to recover even $1$-sparse vectors.\n  The construction shows that `spiky' measurement vectors may lead to a poor\nperformance by the basis pursuit algorithm, but on the other hand may still\nperform in an optimal way if one chooses a different reconstruction algorithm\n(like $\\ell_0$-minimization). This exhibits the fact that the convex relaxation\nof $\\ell_0$-minimization comes at a significant cost when using `spiky'\nmeasurement vectors.\n"
+p1341
+sg8
+(lp1342
+VLecué, Guillaume
+p1343
+aS'Mendelson, Shahar'
+p1344
+asg12
+S'oai:arXiv.org:1404.3116'
+p1345
+sg14
+S'Necessary moment conditions for exact reconstruction via basis pursuit'
+p1346
+sba(iArxivData
+Paper
+p1347
+(dp1348
+g4
+S'2014-03-20'
+p1349
+sg6
+S'  Using an inverse system of metric graphs as in: J. Cheeger and B. Kleiner,\n"Inverse limit spaces satisfying a Poincar\\\'e inequality", we provide a simple\nexample of a metric space $X$ that admits Poincar\\\'e inequalities for a\ncontinuum of mutually singular measures.\n'
+p1350
+sg8
+(lp1351
+S'Schioppa, Andrea'
+p1352
+asg12
+S'oai:arXiv.org:1403.5121'
+p1353
+sg14
+S"Poincar\\'e inequalities for mutually singular measures"
+p1354
+sba(iArxivData
+Paper
+p1355
+(dp1356
+g4
+S'2014-03-25'
+p1357
+sg6
+S'  We study a class of dynamic decision problems of mean field type with time\ninconsistent cost functionals, and derive a stochastic maximum principle to\ncharacterize subgame perfect Nash equilibrium points. Subsequently, this\napproach is extended to a mean field game to construct decentralized strategies\nand obtain an estimate of their performance.\n'
+p1358
+sg8
+(lp1359
+S'Djehiche, Boualem'
+p1360
+aS'Huang, Minyi'
+p1361
+asg12
+S'oai:arXiv.org:1403.6324'
+p1362
+sg14
+S'A characterization of sub-game perfect Nash equilibria for SDEs of mean\n  field type'
+p1363
+sba(iArxivData
+Paper
+p1364
+(dp1365
+g4
+S'2014-03-20'
+p1366
+sg6
+S'  We prove an invariance principle for a class of tilted (1+1)-dimensional SOS\nmodels or, equivalently, for a class of tilted random walk bridges in Z_+. The\nlimiting objects are stationary reversible ergodic diffusions with drifts given\nby the logarithmic derivatives of the ground states of associated singular\nSturm-Liouville operators. In the case of a linear area tilt, we recover the\nFerrari-Spohn diffusion with log-Airy drift, which was derived by Ferrari and\nSpohn in the context of Brownian motions conditioned to stay above circular and\nparabolic barriers.\n'
+p1367
+sg8
+(lp1368
+S'Ioffe, Dmitry'
+p1369
+aS'Shlosman, Senya'
+p1370
+aS'Velenik, Yvan'
+p1371
+asg12
+S'oai:arXiv.org:1403.5073'
+p1372
+sg14
+S'An invariance principle to Ferrari-Spohn diffusions'
+p1373
+sba(iArxivData
+Paper
+p1374
+(dp1375
+g4
+S'2014-04-09'
+p1376
+sg6
+S'  Consider a network linking the points of a rate-$1$ Poisson point process on\nthe plane. Write $\\Psi^{\\mbox{ave}}(s)$ for the minimum possible mean length\nper unit area of such a network, subject to the constraint that the\nroute-length between every pair of points is at most $s$ times the Euclidean\ndistance. We give upper and lower bounds on the function\n$\\Psi^{\\mbox{ave}}(s)$, and on the analogous "worst-case" function\n$\\Psi^{\\mbox{worst}}(s)$ where the point configuration is arbitrary subject to\naverage density one per unit area. Our bounds are numerically crude, but raise\nthe question of whether there is an exponent $\\alpha$ such that each function\nhas $\\Psi(s) \\asymp (s-1)^{-\\alpha}$ as $s \\downarrow 1$.\n'
+p1377
+sg8
+(lp1378
+S'Aldous, David'
+p1379
+aS'Lando, Tamar'
+p1380
+asg12
+S'oai:arXiv.org:1404.2653'
+p1381
+sg14
+S'The Stretch - Length Tradeoff in Geometric Networks: Average Case and\n  Worst Case Study'
+p1382
+sba(iArxivData
+Paper
+p1383
+(dp1384
+g4
+S'2014-03-21'
+p1385
+sg6
+S"  In a recent paper, K. Raschel and R. Garbit proved that the exponential\ndecreasing rate of the probability that a random walk (with all exponential\nmoments) stays in a $d$-dimensional orthant is given by the minimum on this\northant of the Laplace transform of the random walk increments, as soon as this\nminimum exists. In other cases, the random walk is ''badly oriented'', and the\nexponential rate may depend on the starting point $x$. We prove here that this\nrate is nevertheless asymptotically equal to the infimum of the Laplace\ntransform, as some selected coordinates of $x$ tend to infinity.\n"
+p1386
+sg8
+(lp1387
+S'Garbit, Rodolphe'
+p1388
+asg12
+S'oai:arXiv.org:1403.5540'
+p1389
+sg14
+S'On the exit time from an orthant for badly oriented random walks'
+p1390
+sba.

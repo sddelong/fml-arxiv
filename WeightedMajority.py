@@ -5,6 +5,7 @@
 """
 
 from Perceptron import PerceptronClassifier
+from Perceptron import VotedPerceptronClassifier
 from Perceptron import KernelPerceptronClassifier
 from Perceptron import MarginPerceptronClassifier
 from Perceptron import MakeGaussianKernelPerceptronClassifier
@@ -28,9 +29,7 @@ class WeightedMajorityClassifier:
         self.classifier_list = classifier_list
         self.weights = [1. for k in classifier_list]
         
-
-        #TODO: Tune Beta
-        self.beta = 1.0
+        self.beta = 1.0 #beta = 1, just majority vote seems to do best.
         
     def Predict(self,x):
         """ Predict by doing a weighted vote """
@@ -84,13 +83,14 @@ def MakeWeightedMajorityClassifier(parameters):
     """
 
     pclassifier = PerceptronClassifier(1.0)
+    v_pclassifier = VotedPerceptronClassifier(1.0)
     margin_pclassifier = MarginPerceptronClassifier(1.0, parameters[0])
     svmclassifier = OnlineSVMClassifier(parameters[1], 1.0)
     gk_pclassifier = MakeGaussianKernelPerceptronClassifier([1.0])
     pk_pclassifier = MakePolynomialKernelPerceptronClassifier([0.0, 3])
     
 
-    classifier_list = [pclassifier, margin_pclassifier, svmclassifier, gk_pclassifier, pk_pclassifier]
+    classifier_list = [pclassifier, v_pclassifier, margin_pclassifier, svmclassifier, gk_pclassifier, pk_pclassifier]
     
     wm_classifier = WeightedMajorityClassifier(classifier_list)
     
