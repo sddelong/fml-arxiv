@@ -68,7 +68,7 @@ made with $\widehat{y} = -1$ and $k = 0$ (false negatives where the algorithm do
 M' \rho =&\ \frac{v}{\|v\|}\sum_{I_1 \cup I_2} y_tx_t \
  \leq   \Bigl\|\sum_{t \in I_1 \cup I_2} y_t x_t\Bigr\| \\
 =& \ \Bigl\|\sum_{t \in I_1 \cup I_2} (w_{t+1} - w_t) \Bigr\| 
-= \ \|w_{T+1} \| \\
+=  \|w_{T+1} \| \\
 =&\ \sqrt{\sum_{t \in I_1 \cup I_2} \|  w_{t+1}\|^2 - \|w_t\|^2 }\\
 = &\ \sqrt{\sum_{t \in I_1 \cup I_2} \|  w_{t} + y_t x_t\|^2 - \|w_t\|^2 }\\
 = &\ \sqrt{\sum_{t \in I_1 \cup I_2} 2y_t w_t\cdot x_t - \|x_t\|^2} \\
@@ -104,10 +104,11 @@ We can apply the crude bound $\E[M_3] \leq \frac{1-p}{p}\ \E[M']$, since $M_2 \l
 \end{align*}
 Note that this is a weak bound.  Not only is it greater than the
 original perceptron bound by a factor of $\frac{1}{p}$, it is also only a
-bound in expectation.\\
+bound in expectation.
 
-This algorithm can be also be used with other classifiers.  The set of data on which the scheme updates on is no longer iid, but any bound on the number of mistakes that does not require iid data, like the bound for Perceptron algorithm, could still hold in expectation with a similar modification. We implement this approach with the Online SVM, Margin Perceptron, and Kernel Perceptron algorithms.  \\
-The general method outlined above corrects negative predictions slowly and at a constant rate.  It seems natural that instead we might want to correct a lot of negative predictions when we feel the algorithm is not accurate, and be more lenient when the algorithm is doing well.  In order to achieve this, we introduce an adaptive $p$ scheme.  This scheme starts with some value of $p$, and each time it asks the user to label a data point that it predicted would have a negative label, it modifies $p$.  If it was correct, then $p$ is reduced and it checks negative predictions less often.  On the other hand, if it was incorrect it increases $p$. Psuedocode is given below \\
+This algorithm can be also be used with other classifiers.  The set of data the scheme uses to update itself is no longer i.i.d., but any bound on the number of mistakes that does not require i.i.d. data, like the bound for the Perceptron algorithm, could still hold in expectation with a similar modification. We implement this approach with the Online SVM, Margin Perceptron, and Kernel Perceptron algorithms.
+
+The general method outlined above corrects false negative predictions slowly and with fixed probability.  It seems natural that instead we might want to correct a lot of false negatives when we feel the algorithm is not accurate, and be more lenient when the algorithm is doing well.  In order to achieve this, we introduce an adaptive $p$ scheme.  This scheme starts with some value of $p$, and each time it asks the user to label a data point that it predicted would have a negative label, it modifies $p$.  If it was correct, then $p$ is reduced and it checks negative predictions less often.  On the other hand, if it was incorrect it increases $p$: \\
 
 \noindent Adaptive $p$ Perceptron algorithm:
 \begin{quotation}
@@ -122,18 +123,18 @@ The general method outlined above corrects negative predictions slowly and at a 
 \indent\indent {\tt if $y_t\neq\widehat{y}_t$}:\\
 \indent\indent\indent $w_{t+1} = w_t + y_t x_t$\\
 \indent\indent {\tt else $w_{t+1} = w_t$}\\
-\indent\{\tt else if ($\widehat{y}_t =-1$ {\tt and} $k_t = 1$):\\
+\indent {\tt else if ($\widehat{y}_t =-1$ {\tt and} $k_t = 1$)}:\\
 \indent\indent {\tt if $y_t\neq\widehat{y}_t$}:\\
 \indent\indent\indent $w_{t+1} = w_t + y_t x_t$\\
 \indent\indent\indent $p=p + \gamma_1(1 - p)$\\
 \indent\indent {\tt else }
 \indent\indent\indent $w_{t+1} = w_t + y_t x_t$\\
-\indent\indent\indent $p = p - \gamma_2(p - p_{\min})$}
+\indent\indent\indent $p = p - \gamma_2(p - p_{\min})$
 \indent {\tt else if $\widehat{y}_t = -1$ and $k_t=0$}:\\
 \indent\indent $w_{t+1} = w_t$\\
 {\tt return $w_{T+1}$}
 \end{quotation}
-Where $p_{\min}$, $\gamma_1$ and $\gamma_2$ are parameters that can be tuned. It is easy to extend the bound above from the modified Perceptron to the adaptive $p$ case.  Let $I_i$, $M_i$, and $M'$ be defined as above. The bound $M'\leq r^2/\rho^2$ follows in exactly the same way.  We then bound $M_3$ in expectation, 
+Note that $p_{\min}$, $\gamma_1$ and $\gamma_2$ are parameters that can be tuned. It is easy to extend the bound above from the modified Perceptron to the adaptive $p$ case.  Let $I_i$, $M_i$, and $M'$ be defined as above. The bound $M'\leq r^2/\rho^2$ follows in exactly the same way.  We then bound $M_3$ in expectation, 
 \begin{align*}
 \E[M_3] = & \sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 0}] \\
  \leq &\ (1 - p_{\min})\sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}],
@@ -144,11 +145,11 @@ and bound $\E[M_2]$ from below
 \geq &\ p\sum_{t=1}^T \E[1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}].
 \end{align*}
 Continuing as before, this gives the following bound on $\E[M]$,
-\begin{align}
-\E[M] = &\E[M'] + \E[M_3] \leq \frac{r^2}{\rho^2} + \frac{1-p_{\min}}{p_{\min}} \frac{r^2}{\rho^2}\\
-= & \frac{1}{p_{\min}}\frac{r^2}{\rho^2}\\
+\begin{align*}
+\E[M] = &\ \E[M'] + \E[M_3] \leq \frac{r^2}{\rho^2} + \frac{1-p_{\min}}{p_{\min}} \frac{r^2}{\rho^2}\\
+= &\ \frac{1}{p_{\min}}\frac{r^2}{\rho^2}
 \end{align*}
-Unfortunately, we do not have a stonger theoretical bound for this adaptive $p$ approach, but we test this scheme in section \ref{sec:results} and see that it performs fairly well while requiring less input from the user.\\
+Unfortunately, we do not have a stonger theoretical bound for this adaptive $p$ approach, but we test this scheme in section \ref{sec:results} and see that it performs fairly well while requiring less input from the user.
 
 \section{Implementation}
 The tool is made from components in multiple Python files, split up according to their function in the program.
@@ -185,33 +186,34 @@ Each distinct word corresponds to a different coordinate in the feature space. T
 \section{Results}
 \label{sec:results}
 
-We tested different online learning algorithms with sample data generated by graduate students at NYU.  Several students were asked to use a python script to gather the abstracts from Arxiv in categories that they specified (see SECTION REFERENCE HERE).  Then the students were asked to generate labels for each entry indicating whether they would be interested in reading a paper based on the abstract.  \\
-This data was used to test the following online learning algorithms: Perceptron, Margin Perceptron, Online SVM, Gaussian Kernel Perceptron, and Polynomial Kernel Perceptron.  For each algorithm with tunable parameters, a grid search was performed to determine the best value of each parameter. For each combination of parameters, each classifier was separately trained on the data from each student, and the resulting performance was averaged over students.  Parameters chosen with a grid search are given in table \ref{table:Parametertable}.  \\
+We tested the different online learning algorithms with sample data generated by graduate students at NYU.  Several students were asked to use {\tt getTestData.py} and {\tt LabelData.py} to gather the abstracts from Arxiv in categories that they specified (see SECTION REFERENCE HERE) and generate labels for each entry indicating whether they would be interested in reading a paper based on the abstract.
+
+This data was used to test the following online learning algorithms: Perceptron, Margin Perceptron, Online SVM, Gaussian Kernel Perceptron, and Polynomial Kernel Perceptron.  For each algorithm with tunable parameters, a grid search was performed to determine the best value of each parameter. For each combination of parameters, each classifier was separately trained on the data from each student, and the resulting performance was averaged over students.  Parameters chosen with a grid search are given in Table \ref{table:Parametertable}.  \\
 
 \begin{table}[h]
 \centering
 \begin{tabular}{l | r}
 Algorithm & Parameters Tuned \\
 \hline
-Margin Perceptron &  Margin, $\rho$  \\
-Online SVM & Penalty, $C$ \\
+Margin Perceptron &  margin, $\rho$  \\
+Online SVM & penalty, $C$ \\
 Gaussian Kernel Perceptron &  variance, $\sigma$, \\
 Polynomial Kernel Perceptron &  intercept, $c$, and degree, $d$ \\
 \hline
-\end{tabular}
+\end{tabular} 
 \label{table:Parametertable}
 \caption{Parameters tuned for each classifier used.}
 \end{table}
 
 
-For this particular classification problem, it turned out that overall accuracy was a poor indicator of performance.  Students tended to only label a small subset of papers as ``interesting'', so an algorithm which always predicted a label of $\hat{y} = -1$ (the paper was not interesting to the user) could achieve very high values of accuracy.  Instead, we looked at Recall and Precision.  Recall, $R$, is the percentage of papers labeled $y=1$ by the user that were successfully categorized by the algorithm, $\hat{y} = 1$.  Precision, $P$, is the percentage of papers labeled $\hat{y} = 1$ by the algorithm that were actually interesting to the user, $y = 1$.  The mathematical definitions are as follows 
+For this particular classification problem, it turned out that overall accuracy was a poor indicator of performance.  Students tended to only label a small subset of papers as ``interesting'', so an algorithm which always predicted a label of $\hat{y} = -1$ (the paper was not interesting to the user) could achieve very high values of accuracy.  Instead, we looked at the two quantities recall and precision.  Recall, $R$, is the percentage of papers labeled $y=1$ by the user that were successfully categorized by the algorithm, $\hat{y} = 1$.  Precision, $P$, is the percentage of papers labeled $\hat{y} = 1$ by the algorithm that were actually interesting to the user, $y = 1$.  The mathematical definitions are as follows 
 \begin{align*}
-R(h) = & \frac{\sum_{i=1}^m 1_{\left{h(x_i) = 1 \cap y_i =1\right}}{\sum_{i=1}^m 1_{\left{y_i = 1\right}} \\
-P(h) = & \frac{\sum_{i=1}^m 1_{\left{h(x_i) = 1 \cap y_i =1\right}}}{{\sum_{i=1}^m 1_{\left{h(x_i) = 1\right}}. \\
+R(h) = & \frac{\sum_{i=1}^m 1_{\left\{h(x_i) = 1 \cap y_i =1\right\}}}{\sum_{i=1}^m 1_{\left\{y_i = 1\right\}}} \\
+P(h) = & \frac{\sum_{i=1}^m 1_{\left\{h(x_i) = 1 \cap y_i =1\right\}}}{\sum_{i=1}^m 1_{\left\{h(x_i) = 1\right\}}}.
 \end{align*}
-For each classifier and combination of parameters, the algorithm was shown 50 papers to obtain reasonable weights, and then as it continued to run, the number of correct positive labels, incorrect positive labels, and incorrect negative labels were recorded and used to calculate $R$ and $P$.  These values were then averaged over all students separately. The best average $R$ (over all parameters tested) and the best average $P$ are shown in figure \ref{fig:PrecisionandRecall}, along with the number of negative labels asked of the user.  We can see that the scheme with adaptive $p$ is able to achieve performance close to the the original algorithms but requiring less than half as many negative updates.
+For each classifier and combination of parameters, the algorithm was shown 50 papers to obtain reasonable weights, and then as it continued to run, the number of correct positive labels, incorrect positive labels, and incorrect negative labels were recorded and used to calculate $R$ and $P$.  These values were averaged over all students separately. The best average $R$ (over all parameters tested) and the best average $P$ are shown in Figure \ref{fig:PrecisionandRecall}, along with the number of negative labels asked of the user.  We can see that the scheme with adaptive $p$ is able to achieve performance close to the the original algorithms but requiring less than half as many updates.
 
-\begin{figure}
+\begin{figure}\centering
 \includegraphics[width=0.7\textwidth]{EveryoneRecallPaper.pdf}
 \includegraphics[width=0.7\textwidth]{EveryonePrecisionPaper.pdf}
 \label{fig:PrecisionandRecall}
