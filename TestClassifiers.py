@@ -101,9 +101,9 @@ def BestParams(grid, neg_updates):
 #Begin Script here:
 if __name__ == "__main__":
 #names of people who contributed labels
-    names = ["steven","joey"] #,"sid","manas","iantobasco","travis"]
-    custom_data_dict = {'steven' : 'stevenCustomTestData.pkl', 'joey' : 'joeynewCustomTestData.pkl','travis' : 'travisCustomTestData.pkl', }
-    custom_label_dict = {'steven' : 'stevencustomlabels.pkl', 'joey' : 'joeynewcustomlabels.pkl', 'travis' : 'traviscustomlabels.pkl'}
+    names = ["steven","joey", "aj"] #,"sid","manas","iantobasco","travis"]
+    custom_data_dict = {'steven' : 'stevenCustomTestData.pkl', 'joey' : 'joeynewCustomTestData.pkl','travis' : 'travisCustomTestData.pkl', 'aj' : 'ajCustomTestData.pkl'}
+    custom_label_dict = {'steven' : 'stevencustomlabels.pkl', 'joey' : 'joeynewcustomlabels.pkl', 'travis' : 'traviscustomlabels.pkl', 'aj' : 'ajcustomlabels.pkl'}
     
 #get data
     data_filename = "./OfficialTestData.pkl"
@@ -161,15 +161,16 @@ if __name__ == "__main__":
             for k in range(len(names)):
                 #use k to determine plots
                 name = names[k]
-#                print "User: ", name
+                print "User: ", name
 
                 #create classifier tester
                 classifier_tester = ClassifierTester(classifier_list[cln],parameters_list[cln],nparams_list[cln],p,classifier_names[cln])
 
                #get labels
                 label_filename = name + "labels.pkl"
-                label_file = open(label_filename,"rb")
-                labels = cPickle.load(label_file)
+                if name != 'aj':
+                    label_file = open(label_filename,"rb")
+                    labels = cPickle.load(label_file)
                 
             #get extra data and labels
                 if name in custom_data_dict:
@@ -181,23 +182,33 @@ if __name__ == "__main__":
                         custom_abstracts = GetAbstracts(custom_paper_list)
                         custom_abstract_vectors = FeaturizeAbstracts(custom_abstracts)
                         current_data = abstract_vectors + custom_abstract_vectors
+                        if name == "aj": #aukosh didn't do data 1
+                            current_data = custom_abstract_vectors
                         
                     with open(custom_label_file_name,"rb") as custom_label_file:
                         custom_labels = cPickle.load(custom_label_file)
                         current_labels = labels + custom_labels
-                            
+                        if name == "aj":
+                            current_labels = custom_labels  
+
                 else:
                     current_data = abstract_vectors
                     current_labels = labels
                     
             #shuffle custom and regular data together
                 packaged_data = [(current_data[i],current_labels[i]) for i in range(len(current_data))]
-                random.seed(3)
+                random.seed(2)
                 random.shuffle(packaged_data)
                     
                 for i in range(len(packaged_data)):
                     current_data[i] = packaged_data[i][0]
                     current_labels[i] = packaged_data[i][1]
+                
+                del packaged_data
+
+                print "Total papers: ", len(current_data)
+                print "Total positive: ", sum(np.array(current_labels) > 0)
+                
 
                 classifier_tester.Test(current_data,current_labels)
                 recall_grid, precision_grid, neg_updates, blah = classifier_tester.ReportGrid(0)
