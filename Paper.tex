@@ -107,7 +107,7 @@ original perceptron bound by a factor of $\frac{1}{p}$, it is also only a
 bound in expectation.\\
 
 This algorithm can be also be used with other classifiers.  The set of data on which the scheme updates on is no longer iid, but any bound on the number of mistakes that does not require iid data, like the bound for Perceptron algorithm, could still hold in expectation with a similar modification. We implement this approach with the Online SVM, Margin Perceptron, and Kernel Perceptron algorithms.  \\
-The general method outlined above corrects negative predictions slowly and at a constant rate.  It seems natural that instead we might want to correct a lot of negative predictions when we feel the algorithm is not accurate, and be more lenient when the algorithm is doing well.  In order to achieve this, we introduce an adaptive $p$ scheme.  This scheme starts with some value of $p$, and each time it asks the user to label a data point that it predicted would have a negative label, it modifies $p$.  If it was correct, then $p$ is reduced and it checks negative predictions less often.  On the other hand, if it was incorrect it increases $p$. Psuedocode is given below \\
+The general method outlined above corrects negative predictions slowly and at a constant rate.  It seems natural that instead we might want to correct a lot of negative predictions when we feel the algorithm is not accurate, and be more lenient when the algorithm is doing well.  In order to achieve this, we introduce an adaptive $p$ scheme.  This scheme starts with some value of $p$, and each time it asks the user to label a data point that it predicted would have a negative label, it modifies $p$.  If it was correct, then $p$ is reduced and it checks negative predictions less often.  On the other hand, if it was incorrect it increases $p$. Pseudocode is given below \\
 
 \noindent Adaptive $p$ Perceptron algorithm:
 \begin{quotation}
@@ -122,13 +122,13 @@ The general method outlined above corrects negative predictions slowly and at a 
 \indent\indent {\tt if $y_t\neq\widehat{y}_t$}:\\
 \indent\indent\indent $w_{t+1} = w_t + y_t x_t$\\
 \indent\indent {\tt else $w_{t+1} = w_t$}\\
-\indent\{\tt else if ($\widehat{y}_t =-1$ {\tt and} $k_t = 1$):\\
+\indent {\tt else if ($\widehat{y}_t =-1$ {\tt and} $k_t = 1$):\\
 \indent\indent {\tt if $y_t\neq\widehat{y}_t$}:\\
 \indent\indent\indent $w_{t+1} = w_t + y_t x_t$\\
 \indent\indent\indent $p=p + \gamma_1(1 - p)$\\
-\indent\indent {\tt else }
+\indent\indent {\tt else }\\
 \indent\indent\indent $w_{t+1} = w_t + y_t x_t$\\
-\indent\indent\indent $p = p - \gamma_2(p - p_{\min})$}
+\indent\indent\indent $p = p - \gamma_2(p - p_{\min})$}\\
 \indent {\tt else if $\widehat{y}_t = -1$ and $k_t=0$}:\\
 \indent\indent $w_{t+1} = w_t$\\
 {\tt return $w_{T+1}$}
