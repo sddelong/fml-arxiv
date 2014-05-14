@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+g\documentclass[12pt]{article}
 \usepackage{amsmath,amsthm,amssymb}
 \usepackage{graphicx}
 \pagestyle{myheadings}
@@ -107,8 +107,52 @@ Note that this is a weak bound.  Not only is it greater than the
 original perceptron bound by a factor of $\frac{1}{p}$, it is also only a
 bound in expectation.\\
 
-\section{Implementation}
 
+This algorithm can be also be used with other classifiers.  The set of data on which the scheme updates on is no longer iid, but any bound on the number of mistakes that doesn't require iid data, like the bound for Perceptron algorithm, will still hold in expectation with a similar modification. We apply the same approach to the OnlineSVM, Margin Perceptron, and Kernel Perceptron algorithms.  \\
+The general method outlined above corrects negative predictions slowly and at a constant rate.  It seems natural that instead we might want to correct a lot of negative predictions when we feel the algorithm is not accurate, and be more lenient when the algorithm is doing well.  In order to achieve this, we introduce an adaptive $p$ scheme.  This scheme starts with some value of $p$, and each time it asks the user to label a data point that it predicted would have a negative label, it modifies $p$.  If it was correct, then $p$ is reduced and it checks negative predictions less often.  On the other hand, if it was incorrect it increses $p$. 
+
+\noindent Adaptive $p$ Perceptron algorithm:
+\begin{quotation}
+%\noindent Modified Perceptron:\\
+\noindent $w_1=0$\\
+\noindent $p=1$\\
+{\tt for $t=1$ to $T$}:\\
+\indent receive($x_t$)\\
+\indent $\widehat{y}_t=\mbox{sign}(w_t\cdot x_t)$\\
+\indent {\tt if} $\widehat{y}_t =1$ : \\
+\indent\indent receive($y_t$)\\
+\indent\indent {\tt if $y_t\neq\widehat{y}_t$}:\\
+\indent\indent\indent $w_{t+1} = w_t + y_t x_t$\\
+\indent\indent {\tt else $w_{t+1} = w_t$}\\
+\indent\{\tt else if ($\widehat{y}_t =-1$ {\tt and} $k_t = 1$):\\
+\indent\indent {\tt if $y_t\neq\widehat{y}_t$}:\\
+\indent\indent\indent $w_{t+1} = w_t + y_t x_t$\\
+\indent\indent\indent $p=p + \gamma_1(1 - p)$\\
+\indent\indent {\tt else }
+\indent\indent\indent $w_{t+1} = w_t + y_t x_t$\\
+\indent\indent\indent $p = p - \gamma_2(p - p_{\min})$}
+\indent {\tt else if $\widehat{y}_t = -1$ and $k_t=0$}:\\
+\indent\indent $w_{t+1} = w_t$\\
+{\tt return $w_{T+1}$}
+\end{quotation}
+Where $p_{\min}$, $\gamma_1$ and $\gamma_2$ are parameters that can be tuned by the user. It is easy to extend the bound above to this case.  Let $I_i$, $M_i$, and $M'$ be defined as above. The bound $M'\leq r^2/\rho^2$ follows in exactly the same way.  We then bound $M_3$ in expectation, 
+\begin{align*}
+\E[M_3] = & \sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 0}] \\
+ \leq &\ (1 - p_{\min})\sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}],
+\end{align*}
+and bound $\E[M_2]$ from below
+\begin{align*}
+\E[M_2] =&\ \sum_{t=1}^T \E[1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 1}] \\
+\geq &\ p\sum_{t=1}^T \E[1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}].
+\end{align*}
+Continuing as before, this gives the following bound on $\E[M]$,
+\begin{align}
+\E[M] = &\E[M'] + \E[M_3] \leq \frac{r^2}{\rho^2} + \frac{1-p_{\min}}{p_{\min}} \frac{r^2}{\rho^2}\\
+= & \frac{1}{p_{\min}}\frac{r^2}{\rho^2}\\
+\end{align*}
+Unfortunately, we do not have a stonger theoretical bound for this adaptive $p$ approach, but we test this scheme in section \ref{sef:results} and see that it performs fairly well while requiring less input from the user.\\
+
+\section{Implementation}
 The tool is made from components in multiple Python files, split up according to their function in the program.
 The metadata for each article is obtained using arXiv's Open Archives Initiative protocol which returns an XML file with a list of up to 1000 articles as nodes containing a variety of metadata, including abstracts, authors, submission dates, and fields and subfields, making the data quite accessible and fairly simple to sort.
 The file {\tt ArxivData.py} contains the functions and class definitions used to collect, organize and process data. Included are a class of objects representing papers and a class definition for feature vectors.
@@ -174,6 +218,11 @@ For each classifier and combination of parameters, the algorithm was shown 50 pa
 \label{fig:PrecisionandRecall}
 \caption{Performance of tested online classification algorithms using different values of $p$.  The adaptive $p$ algorithm performs relatively well compared to the original algorithm ($p = 1$), and requires less than half as many negative updates.  Majority vote classifier combines all others in this figure.}
 \end{figure}
+
+
+\section{Conclusion}
+
+
 
 
 \end{document}
