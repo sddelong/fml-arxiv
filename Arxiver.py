@@ -1,5 +1,7 @@
 import ArxivSubjects as arxs
 from ArxivData import GetPapersOAI
+from ArxivData import GetAbstracts
+
 import Perceptron as perc
 
 class Arxiver:
@@ -93,17 +95,36 @@ class Arxiver:
 
         paper_list = cPickle.load(data_file)
 
-        print paper_list
+        #print paper_list
 
         #initialize list of labels
         label_list = []
 
-
         #Vectorize abstracts
+        vectors = FeaturizeAbstracts(GetAbstracts(paper_list))
+
         classifier = perc.PerceptronClassifier(1.0)
-        for paper in paper_list:
-            print "-"*80
+        for i, x in enumerate(vectors):
             #Predict abstract, make y_hat
+            paper = paper_list[i]
+            y_hat = classifier.Predict(x)
+
+            if y_hat == 1:
+                #Present paper, make update if needed
+                y = PromptUser(paper)
+                if y == 1:
+
+
+            elif y_hat == -1:
+                #make k
+
+                if k == 1:
+                    y = PromptUser(paper)
+
+                else:
+                    
+
+            print "-"*80
             #If prediction is 1, present paper, make update
             #Else if predition is -1, make k
             #If k=1 present abstract, make update
@@ -117,14 +138,25 @@ class Arxiver:
 
 
 
-    def CheckAbstract(x, label)
-        """ Receive data and label for one abstract, make prediction 
-        """
+#    def CheckAbstract(x, label)
+#        """ Receive data and label for one abstract, make prediction 
+#        """
+
+
+
+
+
+
+
+
+
+
+
+
 
         #for i in range(len(data)):
             x = data[i]
             y_hat = classifier.Predict(x)
-            y = label
             if y == 1 and y_hat == 1:
                 if i > threshold:
                     n_pos_right += 1
