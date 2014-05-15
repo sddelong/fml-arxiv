@@ -94,8 +94,7 @@ class Arxiver:
 
 
         paper_list = cPickle.load(data_file)
-
-        #print paper_list
+        chosen_papers = []
 
         #initialize list of labels
         label_list = []
@@ -111,26 +110,45 @@ class Arxiver:
 
             if y_hat == 1:
                 #Present paper, make update if needed
+                print "-"*80
                 y = PromptUser(paper)
                 if y == 1:
-
-
-            elif y_hat == -1:
-                #make k
-
-                if k == 1:
-                    y = PromptUser(paper)
-
+                    n_pos_right += 1
+                    chosen_papers.append(paper)
                 else:
+                    classifier.Update(x,y_hat,y)
                     
+            elif y_hat == -1:
+                #make k #update total_negative_checks count if we had to check, 
+                # and for adaptive p, update value of current_p
+                if self.p == 'adaptive':
+                    #got it correct, reduce p towards 0.01, our minimum
+                    if np.random.binomial(1,self.current_p) == 1:
+                        print "-"*80
+                        y = PromptUser(paper)
+                        #check if correct, if so reduce p towards .01
+                        if y == 1:
+                            self.current_p = 0.9*self.current_p + 0.001
+                            total_negative_checks += 1
+                            chosen_papers.append(paper)
+                            if i  > threshold :
+                                total_end_negative_checks += 1
+                else:
+                    if np.random.binomial(1,self.p) == 1:
+                        y = PromptUser(paper)
+                        total_negative_checks += 1
+                        if i  > threshold :
+                            total_end_negative_checks += 1
 
-            print "-"*80
+
+
+        for paper in chosen_papers:
+            print paper.id
+
             #If prediction is 1, present paper, make update
             #Else if predition is -1, make k
             #If k=1 present abstract, make update
             #If k=0 don't
-            label = PromptUser(paper)
-            label_list.append(label)
 
 
         out_file = open(str(user_name) + "customlabels.pkl","wb")
@@ -141,15 +159,6 @@ class Arxiver:
 #    def CheckAbstract(x, label)
 #        """ Receive data and label for one abstract, make prediction 
 #        """
-
-
-
-
-
-
-
-
-
 
 
 
