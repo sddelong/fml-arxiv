@@ -30,14 +30,14 @@ The metadata for each article includes an abstract, which should contain enough 
 
 One of the important aspects of the algorithm is that it present some articles to the user that it predicted to be uninteresting. Otherwise there is risk of mislabeling and potentially discarding many articles that are interesting to the user. Nevertheless the goal is to have an active filter on the articles lest the whole purpose of the program be defeated. Since there must be a balance between presenting only interesting articles and having a full understanding of the user's interests, we must choose what fraction of uninteresting articles are presented. In the following section we present a bound on the number of updates made by the Perceptron algorithm we employ, justifying why the algorithm may work towards an accurate hypothesis while receiving labels for only a fraction of the samples labeled uninteresting.
 
-In Section 3, we describe the main components of the program in the python modules we created, and give a description on how to use the tool. We present our results in Section 4, followed by other observations and concluding remarks in seciont 5.
+In Section 3, we describe the main components of the program in the python modules we created, and give a description on how to use the tool. We present our results in Section 4, followed by other observations and concluding remarks in Section 5.
 
 %it is important that not all papers that are predicted uninteresting be discarded by the engine. Without the true there is risk in 
 
 
 \section{Theory: Algorithm and Bounding Updates}
-
-The main engine behind the tool is a modified Perceptron algorithm which employs an accept-reject method among the papers it labels uninteresting. The following pseudocode details the algorithm, where $x_t$ denotes feature vectors, $y_t$ denotes labels, $\widehat{y}_t$ are predictions, $w_t$ are hypotheses, and $k_t$ are i.i.d. random variables used for the accept-reject method. $k_t = 1$ with probability $p$ and $k_t = 0$ with probability $1-p$. As mentioned, if the algorithm only made updates when $\widehat{y}=1$ (i.e. interesting) then this would leave the number of mistakes made when $\widehat{y} = -1$ unchecked (hence, several lost interesting articles). As a compromise, we generate the i.i.d. variables $k_t$ for each observation when $\widehat{y} = -1$. Note that if $\widehat{y} = -1$ and $k=1$, the algorithm will ask for the correct label and make an update. Otherwise if $\widehat{y} = -1$ and $k=0$, the algorithm does not ask for the correct label and makes no update.\\
+\label{sec:theory}
+The main engine behind the tool is a modified Perceptron algorithm which employs an accept-reject method among the papers it labels uninteresting. The following pseudocode details the algorithm, where $x_t$ denotes feature vectors, $y_t$ denotes labels, $\widehat{y}_t$ are predictions, $w_t$ are weights, and $k_t$ are i.i.d. random variables used for the accept-reject method. $k_t = 1$ with probability $p$ and $k_t = 0$ with probability $1-p$. As mentioned, if the algorithm only made updates when $\widehat{y}=1$ (i.e. interesting) then this would leave the number of mistakes made when $\widehat{y} = -1$ unchecked (hence, several lost interesting articles). As a compromise, we generate the i.i.d. variables $k_t$ for each observation when $\widehat{y} = -1$. If $\widehat{y} = -1$ and $k=1$, the algorithm will ask for the correct label and make an update. Otherwise if $\widehat{y} = -1$ and $k=0$, the algorithm does not ask for the correct label and makes no update.\\
 
 
 \noindent Modified Perceptron algorithm:
@@ -64,7 +64,7 @@ Let $I_1$ be the set of $t$ where a mistake was made and
 $\widehat{y}=1$ (false positives).  Let $I_2$ be the set where a mistake was made with
 $\widehat{y} = -1$ and $k = 1$ (false negatives where the algorithm updates), and $I_3$ the set where a mistake was
 made with $\widehat{y} = -1$ and $k = 0$ (false negatives where the algorithm does {\it not} make an update). Finally, let $M_i = |I_i|$ for $i =
-1,2,3$. We bound $M_1 + M_2$ in the same way we bound $M$ in the original Perceptron algorithm. Assume there exists a $\rho$ and $R$ satisfying the assumptions of Theorem 7.8 from \cite{FML}, and a separating hyperplane determined by the vector $v$. Let $M' = M_1 + M_2$, then
+1,2,3$. We bound $M_1 + M_2$ in the same way we bound $M$ in the original Perceptron algorithm, because these are all the mistakes after which an update is made.. Assume there exists a $\rho$ and $R$ satisfying the assumptions of Theorem 7.8 from \cite{FML}, and a separating hyperplane determined by the vector $v$. Let $M' = M_1 + M_2$, then
 \begin{align*}
 M' \rho =&\ \frac{v}{\|v\|}\sum_{I_1 \cup I_2} y_tx_t \
  \leq   \Bigl\|\sum_{t \in I_1 \cup I_2} y_t x_t\Bigr\| \\
@@ -84,7 +84,7 @@ we get that
 \E[M_3] = & \sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 0}] \\
  = &\ (1 - p)\sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}],
 \end{align*}
-where the last equality uses the independence of $k_t$ from the data. To control the sum of expectations in this expression we consider the expectation of $M_2$. Since
+where the last equality uses the independence of $k_t$ from the data, and the expecation is taken over the realizations of $k_t$. To control the sum of expectations in this expression we consider the expectation of $M_2$. Since
 \[
 M_2 =  \sum_{t=1}^T 1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}1_{k_t = 1},
 \]
@@ -177,14 +177,13 @@ The Polynomial Kernel Perceptron takes two parameters $c$ and $d$ which are the 
 The Margin Perceptron requires a parameter $\rho$ designating the separating margin of the feature vectors, and the Online SVM algorithm takes a parameter $C$ for the penalty applied to the update (i.e. $w_{t+1} = w_t -\eta(w_t- Cy_tx_t)$).
 Each algorithm class has an associated wrapper that instantiates a class, and we use each of these algorithms when testing the tool.
 
-There are some additional Python files included that we used primarily for testing. For instance, {\tt getTestData.py} and {\tt LabelData.py} are scripts that call the functions that collect arXiv data and present the abstracts to acquire labels, respectively, which we place in a single script for the user. Additionally {\tt ClassifierTester.py} defines a class for the classification algorithms we include allowing them to be used in a uniform manner despite taking different parameters. This enables us to run tests over each algorithm, with multiple data sets from a few different users, using a set of several values for each parameter in a fairly organized manner in the script {\tt TestClassifiers.py}. Plots are also constructed in that script as well.
+There are some additional Python files included that we used primarily for testing. For instance, {\tt getTestData.py} and {\tt LabelData.py} are scripts that call the functions that collect arXiv data and present the abstracts to acquire labels, respectively, which we place in a single script for the user. Additionally {\tt ClassifierTester.py} takes a single classifier and tests it on a grid of possible parameters to find the best values. This enables us to run tests over each algorithm, with multiple data sets from a few different users, using a set of several values for each parameter in a fairly organized manner in the script {\tt TestClassifiers.py}. Plots are also constructed in that script as well.\\
 
+To run the tool as a user, we've included a script {\tt Arxiver.py}, which first asks for filters to draw articles including subjects and subcategories. Then it presents abstracts from a subset of those it pulled from arXiv.  As described in Section \ref{sec:theory}, it only asks for some of labels from papers that it predicts are uninteresting. As it runs, {\tt Arxiver} automatically saves the articles that the user labels as interesting.\\
 
-To run the tool as a user, we've included a script {\tt Arxiver.py}, which first asks for filters to draw articles including subject, subfields, and dates. Then it presents a subset of those it pulled from arXiv, filtering out some of those it predicts are uninteresting according to the Perceptron algorithm we've described. When finished {\tt Arxiver} prints out the arXiv ID's for those articles the user labels as interesting.
-
-
-An important aspect of any text classification device is the data used to construct feature vectors. There are several approaches to text classification, itself a large field of research. We take an elementary approach and use a bag-of-words model; that is, performing a word count for each distinct word in the abstract and converting that into a vector. 
-Each distinct word corresponds to a different coordinate in the feature space. This ``vectorization" is defined in a class {\tt TextFeatureVector} in {\tt ArxivData.py} and is called in the function {\tt FeaturizeAbstracts()}, which appears before running the algorithms, naturally. Word counts seems like a naive approach, yet the bag-of-words model is well used and often augmented with other methods. Moreover implementing such a model is not terribly complicated, which makes it a useful and attractive option.   
+An important aspect of any text classification device is the data used to construct feature vectors. There are several approaches to text classification, itself a large field of research. We take an elementary approach and use a bag-of-words model; that is, performing a word count for each distinct word in the abstract and converting that into a vector.  We normalize this vector by the total length of the abstract,  
+Each distinct word corresponds to a different coordinate in the feature space. This ``vectorization" is defined in a class {\tt TextFeatureVector} in {\tt ArxivData.py} and TextFeatureVector objects are created from abstracts using {\tt FeaturizeAbstracts()}. Word counts seems like a naive approach, yet the bag-of-words model is well used and often augmented with other methods. Moreover implementing such a model is not terribly complicated, which makes it a useful and attractive option.   \\
+All of the software used for this tool project is available at ``github.com/skwaap/fml-arxiv'' including scripts for testing.\\
 
 
 %One of the most important aspects of this tool is what is used for feature data. There are several approaches to text categorization that 
@@ -218,15 +217,13 @@ For each classifier and combination of parameters, the algorithm was shown 50 pa
 
 What we can see from the data is that across the different algorithms the Polynomial Kernel Perceptron and Majority Vote Classifier fared better than the others, and the Gaussian Kernel Perceptron was generally the worst performing classifier in all cases. The classifiers generally had better results for precision than they did for recall, which makes a lot of sense since we might find quite a few papers interesting that share no overlap with the previous papers we have liked. Consequently the algorithm won't select this as interesting so recall is hurt. However if the algorithm has selected a paper as interesting it is probably because there is overlap with some previous papers, suggesting that it will be in a similar category.
 
-It was interesting to see how varying $p$ the probability of presenting the paper had an impact on the results, some which might not have been entirely expected. For instance I would expect that asking for the most labels from the user (i.e. $p = 1$) would translate to considerably higher gains in both precision and recall all around. Yet for the best performing algorithms there wasn't a huge difference in recall between the adaptive version and $p = 1$.  For precision, the lower $p$ algorithms actually performed comparably to the original schemes.  
+It was interesting to see how varying $p$ the probability of presenting the paper had an impact on the results.  For the best performing algorithms there wasn't a huge difference in recall between the adaptive version and $p = 1$.  For precision, the lower $p$ algorithms actually performed comparably to the original schemes.  This is not entirely unexpected, since precision measures the number of false positives, and the algorithms outlined here update on all false positives independent of $p$. \\
 
-
-
-\begin{figure}\centering
-\includegraphics[width=0.7\textwidth]{EveryoneRecallPaper.pdf}
-\includegraphics[width=0.7\textwidth]{EveryonePrecisionPaper.pdf}
+\begin{figure}[h]\centering
+\includegraphics[width=0.65\textwidth]{EveryoneRecallPaper.pdf}
+\includegraphics[width=0.65\textwidth]{EveryonePrecisionPaper.pdf}
 \label{fig:PrecisionandRecall}
-\caption{Performance of tested online classification algorithms using different values of $p$.  The adaptive $p$ algorithm performs relatively well compared to the original algorithm ($p = 1$), and requires less than half as many negative updates. The $p = 0.1$ case tends to perform poorly, but requires far fewer updates.  The majority vote classifier combines all others in this figure.}
+\caption{Performance of tested online classification algorithms using different values of $p$.  The adaptive $p$ algorithm performs relatively well compared to the original algorithm ($p = 1$), and requires less than half as many negative updates. The $p = 0.1$ approach has ver poor recall, but requires far fewer updates.  The majority vote classifier combines all others in this figure.}
 \end{figure}
 
 
@@ -235,11 +232,10 @@ It was interesting to see how varying $p$ the probability of presenting the pape
 To summarize our work, we're pleased to have a developed a tool that we believe can be of use for many people across several fields. We use online learning algorithms to incrementally learn the user's preferences and suggest interesting articles daily.\\
 
 In order for this approach to be useful, it cannot present the user with every single prediction.  Instead, we weaken the algorithms to present the user with all articles it predicts will be interesting, and only some of those that it predicts will not be interesting.  We show that in this context, a bound on the expected number of mistakes can still be achieved under the same assumptions as Theorem 7.8 from \cite{FML}.  Finally, we test several algorithms on labeled data, and show that they perform comparably to the original learning algorithms, but require less input from the user.  \\
-In the future, it would be nice to develop tighter theoretical bounds on our modified learning algorithm, and particularly to develop an improved bound on the adaptive $p$ algorithm.  It is possible that such a bound would lead to a more informed decision on how to change $p$ in the algorithm to minimize mistakes. Perhaps giving a different functional form to the way $p$ is changed can produce an algorithm that minimizes the number of labels required from the user.\\
+In the future, it would be nice to develop tighter theoretical bounds on our modified learning algorithm, and particularly to develop an improved bound on the adaptive $p$ algorithm.  It is possible that such a bound would lead to a more informed decision on how to change $p$ in the algorithm to minimize mistakes. Perhaps giving a different functional form to the way $p$ is changed can produce an algorithm that minimizes the number of labels required from the user, and potentially give a clear improvement over the fixed $p$ case.\\
 Finally, it would be worthwhile to explore other online learning algorithms and possibly other features that might improve predictive performance. Considering a wider variety of text classification models would probably produce better results, and the limited time to develop this tool compromised our ability to develop and play around with some of these models.
 \bibliography{paper}
 \end{document}
-
 
 
 \section{Conclusion}
