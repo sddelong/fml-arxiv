@@ -178,6 +178,10 @@ Each algorithm class has an associated wrapper that instantiates a class, and we
 
 There are some additional Python files included that we used primarily for testing. For instance, {\tt getTestData.py} and {\tt LabelData.py} are scripts that call the functions that collect arXiv data and present the abstracts to acquire labels, respectively, which we place in a single script for the user. Additionally {\tt ClassifierTester.py} defines a class for the classification algorithms we include allowing them to be used in a uniform manner despite taking different parameters. This enables us to run tests over each algorithm, with multiple data sets from a few different users, using a set of several values for each parameter in a fairly organized manner in the script {\tt TestClassifiers.py}. Plots are also constructed in that script as well.
 
+
+To run the tool as a user, we've included a script {\tt Arxiver.py}, which first asks for filters to draw articles including subject, subfields, and dates. Then it presents a subset of those it pulled from arXiv, filtering out some of those it predicts are uninteresting according to the Perceptron algorithm we've described. When finished {\tt Arxiver} prints out the arXiv ID's for those articles the user labels as interesting.
+
+
 An important aspect of any text classification device is the data used to construct feature vectors. There are several approaches to text classification, itself a large field of research. We take an elementary approach and use a bag-of-words model; that is, performing a word count for each distinct word in the abstract and converting that into a vector. 
 Each distinct word corresponds to a different coordinate in the feature space. This ``vectorization" is defined in a class {\tt TextFeatureVector} in {\tt ArxivData.py} and is called in the function {\tt FeaturizeAbstracts()}, which appears before running the algorithms, naturally. Word counts seems like a naive approach, yet the bag-of-words model is well used and often augmented with other methods. Moreover implementing such a model is not terribly complicated, which makes it a useful and attractive option. 
 
@@ -212,6 +216,10 @@ P(h) = & \frac{\sum_{i=1}^m 1_{\left\{h(x_i) = 1 \cap y_i =1\right\}}}{\sum_{i=1
 \end{align*}
 For each classifier and combination of parameters, the algorithm was shown 50 papers to obtain reasonable weights, and then as it continued to run, the number of correct positive labels, incorrect positive labels, and incorrect negative labels were recorded and used to calculate $R$ and $P$.  These values were averaged over all students separately. The best average $R$ (over all parameters tested) and the best average $P$ are shown in Figure \ref{fig:PrecisionandRecall}, along with the number of negative labels asked of the user.  We can see that the scheme with adaptive $p$ is able to achieve performance close to the the original algorithms but requiring less than half as many updates.
 
+What we can see from the data is that across the different algorithms the Polynomial Kernel Perceptron and Majority Vote Classifier fared better than the others, and the Gaussian Kernel Perceptron was generally the worst performing classifier in all cases. The classifiers generally had better results for precision than they did for recall, which makes a lot of sense since we might find quite a few papers interesting that share no overlap with the previous papers we have liked. Consequently the algorithm won't select this as interesting so recall is hurt. However if the algorithm has selected a paper as interesting it is probably because there is overlap with some previous papers, suggesting that it will be in a similar category.
+
+It was interesting to see how varying $p$ the probability of presenting the paper had an impact on the results, some which might not have been entirely expected. For instance I would expect that asking for the most labels from the user (i.e. $p = 1$) would translate to considerably higher gains in both precision and recall all around. Yet for the best performing algorithms there wasn't a huge difference in recall between the adaptive version and $p = 1$, and for precision both adaptive $p$ and $p = 0.1$ outperformed $p = 1$. In fact this was generally true for all algorithms.
+
 \begin{figure}\centering
 \includegraphics[width=0.7\textwidth]{EveryoneRecallPaper.pdf}
 \includegraphics[width=0.7\textwidth]{EveryonePrecisionPaper.pdf}
@@ -220,9 +228,19 @@ For each classifier and combination of parameters, the algorithm was shown 50 pa
 \end{figure}
 
 
+
+\section{Conclusions}
+To summarize our work, we're pleased to have a developed a tool that we believe can be of use for many people across several fields and to have employed a number of machine learning features in its construction, from the text categorization model to the classification algorithms. Beyond constructing these features we created some of our own features. For instance the adaptive probability $p$ turned out to perform fairly well in comparison to the tool that didn't filter results based on preferences. It was also interesting to see the bound that we got adapted from the original Perceptron model. One point to mention about future work in this area is that it seems likely that some of the other bounds from the Perceptron algorithm can probably be applied to get similar bounds for this problem as well.
+
+Online learning methods are used to learn the user's preferences over time, but in order for them to be useful, they cannot present the user with every single prediction.  Instead, we weaken the algorithms to present the user with all articles it predicts will be interesting, and only some of those it feels will not be interesting.  We show that in this context, a bound on the expected number of mistakes can still be achieved under the some assumptions.  Finally, we test several algorithms on labeled data, and show that they perform comparably to the original learning algorithms, but require less input from the user.
+
+In the future, it would be nice to develop tighter theoretical bounds on our modified learning algorithm, and particularly to develop an improved bound on the adaptive $p$ algorithm.  It is possible that such a bound would lead to a more informed decision on how to change $p$ in the algorithm to minimize mistakes. Perhaps giving a different functional form to the way $p$ is changed can produce an algorithm that minimizes updates, though this guess is comes from our experience with the AdaBoost algorithm and its modifications.
+
+Finally, it would be worthwhile to explore other online learning algorithms and possibly other features that might improve predictive performance. Considering a wider variety of text classification models would probably produce better results, and the limited time to develop this tool compromised our ability to develop and play around with some of these models. Nevertheless that is a huge body of work in and of itself.
+\end{document}
+
 \section{Conclusion}
 We have developed a tool to present users with potentially interesting articles from the massive number of papers available on Arxiv.  Online learning methods are used to learn the user's preferences over time, but in order for them to be useful, they cannot present the user with every single prediction.  Instead, we weaken the algorithms to present the user with all articles it predicts will be interesting, and only some of those it feels will not be interesting.  We show that in this context, a bound on the expected number of mistakes can still be achieved under the some assumptions.  Finally, we test several algorithms on labeled data, and show that they perform comparably to the original learning algorithms, but require less input from the user.\\
-In the future, it would be nice to develop tighter theoretical bounds on our modified learning algorithm, and particulary to develop an improved bound on the adaptive $p$ algorithm.  It is possible that such a bound would lead to a more informed decision on how to change $p$ in the algorithm to minimize mistakes.  Finally, it would be worthwhile to explore other online learning algorithms and possible other features that might improve predictive performance. \\
 
 
 

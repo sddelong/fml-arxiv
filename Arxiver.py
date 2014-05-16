@@ -203,19 +203,25 @@ class Arxiver:
             paper = paper_list[i]
             y_hat = classifier.Predict(x)
 
+
             if y_hat == 1:
                 #Present paper, make update if needed
                 print "-"*80
                 y = PromptUser(paper)
                 if y == 1:
-                    n_pos_right += 1
                     chosen_papers.append(paper)
+                    if i > threshold:
+                        n_pos_right += 1
                 else:
+                #update on false positive, add one to n_wrong
                     classifier.Update(x,y_hat,y)
-                    
-            elif y_hat == -1:
-                #make k #update total_negative_checks count if we had to check, 
-                # and for adaptive p, update value of current_p
+                    if i > threshold:
+                        n_precision_wrong += 1
+
+            #y_hat == -1:        
+            else: 
+#                #update total_negative_checks count if we had to check, 
+#                # and for adaptive p, update value of current_p
                 if self.p == 'adaptive':
                     #got it correct, reduce p towards 0.01, our minimum
                     if np.random.binomial(1,self.current_p) == 1:
@@ -225,18 +231,28 @@ class Arxiver:
                         if y == 1:
                             self.current_p = 0.9*self.current_p + 0.001 #TODO: This was a wrong negative, increase p
                             total_negative_checks += 1
-                            chosen_papers.append(paper)
                             if i  > threshold :
                                 total_end_negative_checks += 1
+
+#                            self.current_p = 0.9*self.current_p + 0.001
+#                            total_negative_checks += 1
+#                            chosen_papers.append(paper)
+#                            classifier.Update(x,y_hat,y)
+#                            self.current_p = 0.55*self.current_p + 0.4
+#                            if i  > threshold :
+#                                total_end_negative_checks += 1
+
+
                         elif y == -1:
                             #correct negative prediction, leave classifier alone and decrease p
                             self.current_p = 0.9*self.current_p + 0.001
+
                 else:
                     if np.random.binomial(1,self.p) == 1:
-                        y = PromptUser(paper)
-                        total_negative_checks += 1
-                        if i  > threshold :
-                            total_end_negative_checks += 1
+#                        y = PromptUser(paper)
+#                        total_negative_checks += 1
+#                        if i  > threshold :
+#                            total_end_negative_checks += 1
 
         for paper in chosen_papers:
             print paper.id
@@ -257,33 +273,33 @@ class Arxiver:
 
 
         #for i in range(len(data)):
-            x = data[i]
-            y_hat = classifier.Predict(x)
-            if y == 1 and y_hat == 1:
-                if i > threshold:
-                    n_pos_right += 1
+#            x = data[i]
+#            y_hat = classifier.Predict(x)
+#            if y == 1 and y_hat == 1:
+#                if i > threshold:
+#                    n_pos_right += 1
             elif y == -1 and y_hat == -1:
                 #update total_negative_checks count if we had to check, 
                 # and for adaptive p, update value of current_p
-                if self.p == 'adaptive':
+#                if self.p == 'adaptive':
                     #got it correct, reduce p towards 0.01, our minimum
                     #print "current p is", self.current_p
-                    if np.random.binomial(1,self.current_p) == 1:
-                        self.current_p = 0.9*self.current_p + 0.001
-                        total_negative_checks += 1
-                        if i  > threshold :
-                            total_end_negative_checks += 1
+#                    if np.random.binomial(1,self.current_p) == 1:
+#                        self.current_p = 0.9*self.current_p + 0.001
+#                        total_negative_checks += 1
+#                        if i  > threshold :
+#                            total_end_negative_checks += 1
                 else:
                     if np.random.binomial(1,self.p) == 1:
                         total_negative_checks += 1
                         if i  > threshold :
                             total_end_negative_checks += 1
 
-            elif y_hat == 1 and y == -1:
-                #update on false positive, add one to n_wrong
-                if i > threshold:
-                    n_precision_wrong += 1
-                classifier.Update(x,y_hat,y)
+#            elif y_hat == 1 and y == -1:
+#                #update on false positive, add one to n_wrong
+#                if i > threshold:
+#                    n_precision_wrong += 1
+#                classifier.Update(x,y_hat,y)
             else:
                 #maybe update on false negative, depends on p.
                 if i > threshold:
