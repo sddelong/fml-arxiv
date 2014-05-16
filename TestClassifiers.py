@@ -34,12 +34,13 @@ def AddBarToPlot(cln, max_recall, max_precision, r_neg_updates, p_neg_updates, k
     if p == 1.0:
         offset = 0
         plot_clr = "blue"
-    elif p == 0.1:
-        offset = 0.2
-        plot_clr = "red"
     elif p == 'adaptive':
         offset = 0.4
         plot_clr = "green"
+    else:
+        offset = 0.2
+        plot_clr = "red"
+
 
     pyplot.figure(2*k)
     pyplot.subplot(211)
@@ -102,8 +103,8 @@ def BestParams(grid, neg_updates):
 if __name__ == "__main__":
 #names of people who contributed labels
     names = ["steven","joey", "aj"] #,"sid","manas","iantobasco","travis"]
-    custom_data_dict = {'steven' : 'stevenCustomTestData.pkl', 'joey' : 'joeynewCustomTestData.pkl','travis' : 'travisCustomTestData.pkl', 'aj' : 'ajCustomTestData.pkl'}
-    custom_label_dict = {'steven' : 'stevencustomlabels.pkl', 'joey' : 'joeynewcustomlabels.pkl', 'travis' : 'traviscustomlabels.pkl', 'aj' : 'ajcustomlabels.pkl'}
+    custom_data_dict = {'steven' : 'stevenallCustomTestData.pkl', 'joey' : 'joeynewCustomTestData.pkl','travis' : 'travisCustomTestData.pkl', 'aj' : 'ajCustomTestData.pkl'}
+    custom_label_dict = {'steven' : 'stevenallcustomlabels.pkl', 'joey' : 'joeynewcustomlabels.pkl', 'travis' : 'traviscustomlabels.pkl', 'aj' : 'ajcustomlabels.pkl'}
     
 #get data
     data_filename = "./OfficialTestData.pkl"
@@ -154,7 +155,7 @@ if __name__ == "__main__":
     for cln in range(len(classifier_list)):
 
         #go through values for p
-        for p in [1.0, 0.1, 'adaptive']:
+        for p in [1.0, 0.15, 'adaptive']:
 #            print "P value is: ", p
 
             #go through users
@@ -211,7 +212,7 @@ if __name__ == "__main__":
                 
 
                 classifier_tester.Test(current_data,current_labels)
-                recall_grid, precision_grid, neg_updates, blah = classifier_tester.ReportGrid(0)
+                recall_grid, precision_grid, neg_updates, last_neg_updates = classifier_tester.ReportGrid(0)
                 
                 #set up grid from gridsearch that aggregates over all names:
                 #if it's the first name, make the grid
@@ -219,6 +220,7 @@ if __name__ == "__main__":
                     total_recall_grid = recall_grid
                     total_precision_grid = precision_grid
                     total_neg_update_grid = neg_updates
+                    total_last_neg_update_grid = last_neg_updates
                     total_product_grid = dict()
                     for param in recall_grid:
                         total_product_grid[param] = recall_grid[param]*precision_grid[param]
@@ -228,13 +230,14 @@ if __name__ == "__main__":
                         total_recall_grid[param] += recall_grid[param]
                         total_precision_grid[param] += precision_grid[param]
                         total_neg_update_grid[param] += neg_updates[param]
+                        total_last_neg_update_grid[param] += last_neg_updates[param]
                         total_product_grid[param] += recall_grid[param]*precision_grid[param]
                         
-                best_r_params, max_recall, r_neg_updates = classifier_tester.ReportBestRecall()
+                best_r_params, max_recall, r_neg_updates, r_last_neg_updates = classifier_tester.ReportBestRecall()
 
-                best_p_params, max_precision, p_neg_updates = classifier_tester.ReportBestPrecision()
+                best_p_params, max_precision, p_neg_updates, p_last_neg_updates = classifier_tester.ReportBestPrecision()
                 
-                AddBarToPlot(cln, max_recall, max_precision, r_neg_updates, p_neg_updates, k)
+                AddBarToPlot(cln, max_recall, max_precision, r_last_neg_updates, p_last_neg_updates, k)
 
                 if p == 1.0:
                     classifier_r_labels[name][cln] = classifier_names[cln]# + "\n Neg updates: " + str(r_neg_updates)
@@ -253,10 +256,11 @@ if __name__ == "__main__":
                 total_recall_grid[param] = total_recall_grid[param]/len(names)
                 total_precision_grid[param] = total_precision_grid[param]/len(names)
                 total_neg_update_grid[param] = total_neg_update_grid[param]/len(names)
+                total_last_neg_update_grid[param] = total_last_neg_update_grid[param]/len(names)
                     
             #find best parameters, and corresponding neg updates
-            best_r_params, max_recall, r_neg_updates = BestParams(total_recall_grid, total_neg_update_grid)
-            best_p_params, max_precision, p_neg_updates = BestParams(total_precision_grid, total_neg_update_grid)
+            best_r_params, max_recall, r_neg_updates = BestParams(total_recall_grid, total_last_neg_update_grid)
+            best_p_params, max_precision, p_neg_updates = BestParams(total_precision_grid, total_last_neg_update_grid)
 
             #add to bar plot
             AddBarToPlot(cln, max_recall, max_precision, r_neg_updates, p_neg_updates, len(names))
