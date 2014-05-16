@@ -1,22 +1,29 @@
 import ArxivSubjects as arxs
 from ArxivData import GetPapersOAI
 from ArxivData import GetAbstracts
+import urllib
 
 import Perceptron as perc
 
 class Arxiver:
     
-    def __init__(self,classifier):
+    def __init__(self,classifier,p):
 
         self.classifier = classifier
         self.subjects = None
         self.subcategories = None
         self.name = ''
-
+        self.p = p
+        self.current_p = 1.0 #only used if p = 'adaptive'
+        self.gamma_1 = 0.55
+        self.gamma_2 = 0.1
+        
 
     def SetUp(self):
         """ Ask for name, subjects and subcategories"""
         
+        print "Please enter a name for this Arxiver."
+        self.name = raw_input()
         #initialize subjects and subcategories
         self.subjects = []
         self.subcategories = dict()
@@ -73,14 +80,103 @@ class Arxiver:
 
         return
     
-    def CheckTodaysPapers(self):
+    def CheckDaysPapers(self,date):
         """ Use OAI to get today's papers and check them one at a time asking for user input."""
 
-        paper_list = GetPapersOAI()
+        mkdir("./" + self.name + "/" + date)
+        paper_list = []
+        for subject in self.subjects:
+            print "Gathering ", subject, " papers."
+            paper_list += GetPapersOAI(day=date,subject=subject, subcategories=self.subcategories[subject])
+            time.sleep(20)
 
-    def Prompt(self):
-        """ Present an abstract to the user 
+        abstract_vectors = FeaturizeAbstracts(GetAbstracts(paper_list))
+
+        #shuffle data so there is no pattern from getting one subject at a time.
+        
+        random.shuffle(abstract_data)
+
+        for i, x in enumerate(abstract_vectors):
+            y_hat = self.classifier.Predict(x)
+            
+            if y_hat == 1:
+                #Present paper, make update if needed
+                print "-"*60
+                y = self.Prompt(paper,y_hat)
+                if y == 1:
+                    self.SavePaper(paper_list[i],date)
+                else:
+                    self.classifier.Update(x,y_hat,y)
+            elif y_hat == -1:
+                #make k #update total_negative_checks count if we had to check, 
+                # and for adaptive p, update value of current_p
+                if self.p == 'adaptive':
+                    if np.random.binomial(1,self.current_p) == 1:
+                        print "-"*60
+                        y = self.Prompt(paper,y_hat)
+                        #check if correct, if so reduce p towards .01
+                        if y == 1: #incorrect
+                            self.current_p = self.current_p + self.gamma_1*(1. - self.current_p)
+                            self.SavePaper(paper_list[i],date)
+                            self.classifier.Update(x,y_hat,y)
+                        elif y == -1:
+                            #correct negative prediction, leave classifier alone and decrease p
+                            self.current_p = self.current_p - self.gamma_2(self.current_p - self.p_min)
+                else:
+                    #check with fixed probability p
+                    if np.random.binomial(1,self.p) == 1:
+                        y = self.Prompt(paper,y_hat)
+                        if y != y_hat:
+                            # wrong, the paper is good, save it and upate
+                            self.SavePaper(paper_list[i],date)
+                            self.classifier.Update(x,y_hat,y)
+
+        print "-"*60
+        print "-"*60
+        print "Done classifying papers."
+        return
+            
+
+    def Prompt(self, paper,y_hat):
+        """ Present an abstract to the user and ask for a label
         """        
+
+        if y_hat == 1:
+            print "ArxivBuddy thinks you will like this paper: "
+            paper.Print()
+            print "Do you like it?"
+            answered = False
+            while not answered:
+                if input in ['Yes', 'yes', 'y', '1']:
+                    y = 1
+                    answered = True
+                elif input in ['No', 'no', 'n', '0']:
+                    y = -1
+                    answered = True
+        # use quit to leave
+                elif input == 'quit':
+                    raise SystemExit('Exiting.')
+                else:
+                    input = raw_input('Invalid response. Yes/No? Use "quit" to leave.')
+        elif y_hat == -1:
+            print "ArxivBuddy thinks you do NOT like this paper.  Please confirm."
+            paper.Print()
+            print "Do you like it?"
+            answered = False
+            while not answered:
+                if input in ['Yes', 'yes', 'y', '1']:
+                    y = 1
+                    answered = True
+                elif input in ['No', 'no', 'n', '0']:
+                    y = -1
+                    answered = True
+        # use quit to leave
+                elif input == 'quit':
+                    raise SystemExit('Exiting.')
+                else:
+                    input = raw_input('Invalid response. Yes/No? Use "quit" to leave.')
+            
+        return y
         
     def Run(self):
         """ Run the algorithm by presenting abstracts, receiving labels and calling function to
@@ -155,12 +251,9 @@ class Arxiver:
         cPickle.dump(label_list,out_file)
 
 
-
 #    def CheckAbstract(x, label)
 #        """ Receive data and label for one abstract, make prediction 
 #        """
-
-
 
 
         #for i in range(len(data)):
@@ -214,3 +307,10 @@ class Arxiver:
                             total_end_negative_checks += 1
                         classifier.Update(x,y_hat,y)
 
+    def SavePaper(self,paper,date):
+        """ Save paper to folder"""
+
+        urllib.urlretrieve("arxiv.org/pdf/" + paper.id,"./"+ self.name + "/" + date + "/" + paper.title + ".pdf")
+
+        return
+        
