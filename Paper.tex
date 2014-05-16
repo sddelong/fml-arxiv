@@ -3,7 +3,7 @@
 \usepackage{graphicx}
 \usepackage{natbib}
 \pagestyle{myheadings}
-\markright{Joseph McDonald}
+\markright{Joey McDonald, Steve Delong}
 
 \textwidth=7in
 \textheight= 9in
@@ -230,8 +230,7 @@ It was interesting to see how varying $p$ the probability of presenting the pape
 
 \section{Conclusions}
 To summarize our work, we're pleased to have a developed a tool that we believe can be of use for many people across several fields. We use online learning algorithms to incrementally learn the user's preferences and suggest interesting articles daily.\\
-
-In order for this approach to be useful, it cannot present the user with every single prediction.  Instead, we weaken the algorithms to present the user with all articles it predicts will be interesting, and only some of those that it predicts will not be interesting.  We show that in this context, a bound on the expected number of mistakes can still be achieved under the same assumptions as Theorem 7.8 from \cite{FML}.  Finally, we test several algorithms on labeled data, and show that they perform comparably to the original learning algorithms, but require less input from the user.  \\
+In order for this approach to be useful, it cannot present the user with every single prediction.  Instead, we weaken the algorithms to present the user with all articles it predicts will be interesting, and only some of those that it predicts will not be interesting.  We show that in this context, a bound on the expected number of mistakes can still be achieved under the same assumptions as Theorem 7.8 from \cite{FML}.  We also test several algorithms on labeled data, and show that they perform comparably to the original learning algorithms, but require less input from the user. \\
 In the future, it would be nice to develop tighter theoretical bounds on our modified learning algorithm, and particularly to develop an improved bound on the adaptive $p$ algorithm.  It is possible that such a bound would lead to a more informed decision on how to change $p$ in the algorithm to minimize mistakes. Perhaps giving a different functional form to the way $p$ is changed can produce an algorithm that minimizes the number of labels required from the user, and potentially give a clear improvement over the fixed $p$ case.\\
 Finally, it would be worthwhile to explore other online learning algorithms and possibly other features that might improve predictive performance. Considering a wider variety of text classification models would probably produce better results, and the limited time to develop this tool compromised our ability to develop and play around with some of these models.
 \bibliography{paper}
@@ -260,10 +259,7 @@ We have developed a tool to present users with potentially interesting articles 
 %
 
 
-
 \end{document}
-
-
 
 
 %Recommendation engines have become an important feature of many services on the internet, and 
