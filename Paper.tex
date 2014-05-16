@@ -1,9 +1,9 @@
 \documentclass[12pt]{article}
 \usepackage{amsmath,amsthm,amssymb}
 \usepackage{graphicx}
-\usepackage{natbib}
+\usepackage{cite}
 \pagestyle{myheadings}
-\markright{Joey McDonald, Steve Delong}
+\markright{Steven Delong and Joseph McDonald}
 
 \textwidth=7in
 \textheight= 9in
@@ -16,7 +16,7 @@
 \newcommand{\E}[0]{\mathbb{E}}
 \begin{document}
 \title{Online Classification of arXiv Papers Based on Your Preferences}
-\author{Steve Delong and Joey McDonald}
+\author{Steve Delong and Joseph McDonald}
 \maketitle
 \begin{abstract}
 Our goal was to construct a tool that feeds a user a selection of abstracts of papers from the online database, arXiv.org, recieves a label indicating whether the user is interested in that article or not, and progressively learns the users preferences through an online learning algorithm. It uses this information to present articles that it believes the user will like. We created and tested this using a few sample users' preferences including each of ours. Beyond constructing the tool we found some theoretical justification for bounding the number of updates in expectation while only presenting a fraction of samples that are predicted to be uninteresting.
@@ -64,7 +64,7 @@ Let $I_1$ be the set of $t$ where a mistake was made and
 $\widehat{y}=1$ (false positives).  Let $I_2$ be the set where a mistake was made with
 $\widehat{y} = -1$ and $k = 1$ (false negatives where the algorithm updates), and $I_3$ the set where a mistake was
 made with $\widehat{y} = -1$ and $k = 0$ (false negatives where the algorithm does {\it not} make an update). Finally, let $M_i = |I_i|$ for $i =
-1,2,3$. We bound $M_1 + M_2$ in the same way we bound $M$ in the original Perceptron algorithm, because these are all the mistakes after which an update is made.. Assume there exists a $\rho$ and $R$ satisfying the assumptions of Theorem 7.8 from \cite{FML}, and a separating hyperplane determined by the vector $v$. Let $M' = M_1 + M_2$, then
+1,2,3$. We bound $M_1 + M_2$ in the same way we bound $M$ in the original Perceptron algorithm, because these are all the mistakes after which an update is made.. Assume there exists a $\rho$ and $R$ satisfying the assumptions of Theorem 7.8 from ~\cite{FML}, and a separating hyperplane determined by the vector $v$. Let $M' = M_1 + M_2$, then
 \begin{align*}
 M' \rho =&\ \frac{v}{\|v\|}\sum_{I_1 \cup I_2} y_tx_t \
  \leq   \Bigl\|\sum_{t \in I_1 \cup I_2} y_t x_t\Bigr\| \\
@@ -219,21 +219,22 @@ What we can see from the data is that across the different algorithms the Polyno
 
 It was interesting to see how varying $p$ the probability of presenting the paper had an impact on the results.  For the best performing algorithms there wasn't a huge difference in recall between the adaptive version and $p = 1$.  For precision, the lower $p$ algorithms actually performed comparably to the original schemes.  This is not entirely unexpected, since precision measures the number of false positives, and the algorithms outlined here update on all false positives independent of $p$. \\
 
-\begin{figure}[h]\centering
+\begin{figure}[h!]\centering
 \includegraphics[width=0.65\textwidth]{EveryoneRecallPaper.pdf}
 \includegraphics[width=0.65\textwidth]{EveryonePrecisionPaper.pdf}
 \label{fig:PrecisionandRecall}
-\caption{Performance of tested online classification algorithms using different values of $p$.  The adaptive $p$ algorithm performs relatively well compared to the original algorithm ($p = 1$), and requires less than half as many negative updates. The $p = 0.1$ approach has ver poor recall, but requires far fewer updates.  The majority vote classifier combines all others in this figure.}
+\caption{Performance of tested online classification algorithms using different values of $p$.  The adaptive $p$ algorithm performs relatively well compared to the original algorithm ($p = 1$), and requires less than half as many negative updates. The $p = 0.1$ approach has very poor recall, but requires far fewer updates.  The majority vote classifier combines all others in this figure.}
 \end{figure}
-
 
 
 \section{Conclusions}
 To summarize our work, we're pleased to have a developed a tool that we believe can be of use for many people across several fields. We use online learning algorithms to incrementally learn the user's preferences and suggest interesting articles daily.\\
-In order for this approach to be useful, it cannot present the user with every single prediction.  Instead, we weaken the algorithms to present the user with all articles it predicts will be interesting, and only some of those that it predicts will not be interesting.  We show that in this context, a bound on the expected number of mistakes can still be achieved under the same assumptions as Theorem 7.8 from \cite{FML}.  We also test several algorithms on labeled data, and show that they perform comparably to the original learning algorithms, but require less input from the user. \\
-In the future, it would be nice to develop tighter theoretical bounds on our modified learning algorithm, and particularly to develop an improved bound on the adaptive $p$ algorithm.  It is possible that such a bound would lead to a more informed decision on how to change $p$ in the algorithm to minimize mistakes. Perhaps giving a different functional form to the way $p$ is changed can produce an algorithm that minimizes the number of labels required from the user, and potentially give a clear improvement over the fixed $p$ case.\\
-Finally, it would be worthwhile to explore other online learning algorithms and possibly other features that might improve predictive performance. Considering a wider variety of text classification models would probably produce better results, and the limited time to develop this tool compromised our ability to develop and play around with some of these models.
-\bibliography{paper}
+\indent In order for this approach to be useful, it cannot present the user with every single prediction.  Instead, we weaken the algorithms to present the user with all articles it predicts will be interesting, and only some of those that it predicts will not be interesting.  We show that in this context, a bound on the expected number of mistakes can still be achieved under the same assumptions as Theorem 7.8 from \cite{FML}.  We also test several algorithms on labeled data, and show that they perform comparably to the original learning algorithms, but require less input from the user. \\
+\indent In the future, it would be nice to develop tighter theoretical bounds on our modified learning algorithm, and particularly to develop an improved bound on the adaptive $p$ algorithm.  It is possible that such a bound would lead to a more informed decision on how to change $p$ in the algorithm to minimize mistakes. Perhaps giving a different functional form to the way $p$ is changed can produce an algorithm that minimizes the number of labels required from the user, and potentially give a clear improvement over the fixed $p$ case.\\
+\indent Finally, it would be worthwhile to explore other online learning algorithms and possibly other features that might improve predictive performance. Considering a wider variety of text classification models would probably produce better results.
+\bibliography{paper}{}
+\bibliographystyle{plain}
+\bibstyle{plain}
 \end{document}
 
 
