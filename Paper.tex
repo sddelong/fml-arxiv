@@ -66,23 +66,19 @@ $\widehat{y} = -1$ and $k = 1$ (false negatives where the algorithm updates), an
 made with $\widehat{y} = -1$ and $k = 0$ (false negatives where the algorithm does {\it not} make an update). Finally, let $M_i = |I_i|$ for $i =
 1,2,3$. We bound $M_1 + M_2$ in the same way we bound $M$ in the original Perceptron algorithm, because these are all the mistakes after which an update is made.. Assume there exists a $\rho$ and $R$ satisfying the assumptions of Theorem 7.8 from ~\cite{FML}, and a separating hyperplane determined by the vector $v$. Let $M' = M_1 + M_2$, then
 \begin{align*}
-M' \rho =&\ \frac{v}{\|v\|}\sum_{I_1 \cup I_2} y_tx_t \
- \leq   \Bigl\|\sum_{t \in I_1 \cup I_2} y_t x_t\Bigr\| \\
-=& \ \Bigl\|\sum_{t \in I_1 \cup I_2} (w_{t+1} - w_t) \Bigr\| 
-=  \|w_{T+1} \| \\
+M' \rho =&\ \frac{v}{\|v\|}\sum_{I_1 \cup I_2} y_tx_t  \leq \Bigl\|\sum_{t \in I_1 \cup I_2} y_t x_t\Bigr\| \\
+=& \ \Bigl\|\sum_{t \in I_1 \cup I_2} (w_{t+1} - w_t) \Bigr\| =  \|w_{T+1} \| \\
 =&\ \sqrt{\sum_{t \in I_1 \cup I_2} \|  w_{t+1}\|^2 - \|w_t\|^2 }\\
 = &\ \sqrt{\sum_{t \in I_1 \cup I_2} \|  w_{t} + y_t x_t\|^2 - \|w_t\|^2 }\\
 = &\ \sqrt{\sum_{t \in I_1 \cup I_2} 2y_t w_t\cdot x_t - \|x_t\|^2} \\
-\leq &\ \sqrt{\sum_{t \in I_1 \cup I_2} \|x_t\|^2}
-\leq \sqrt{M'r^2}.
+\leq &\ \sqrt{\sum_{t \in I_1 \cup I_2} \|x_t\|^2} \leq \sqrt{M'r^2}.
 \end{align*}
 This implies that $M' \leq \frac{r^2}{\rho^2}$. Since $M = M' + M_3$, a bound on $M_3$ is needed. We revert to a weaker bound and consider the expectation of
 $M_3$. Since 
 \[M_3 = \sum_{t=1}^T 1_{\left\{\widehat{y}_t = -1 \cap y_t = 1\right\}}1_{k_t = 0}, \]
 we get that
 \begin{align*}
-\E[M_3] = & \sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 0}] \\
- = &\ (1 - p)\sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}],
+\E[M_3] = & \sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 0}] = (1 - p)\sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}],
 \end{align*}
 where the last equality uses the independence of $k_t$ from the data, and the expecation is taken over the realizations of $k_t$. To control the sum of expectations in this expression we consider the expectation of $M_2$. Since
 \[
@@ -90,8 +86,7 @@ M_2 =  \sum_{t=1}^T 1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}1_{k_t = 1},
 \]
 then
 \begin{align*}
-\E[M_2] =&\ \sum_{t=1}^T \E[1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 1}] \\
-=&\ p\sum_{t=1}^T \E[1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}].
+\E[M_2] =&\ \sum_{t=1}^T \E[1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 1}] = p\sum_{t=1}^T \E[1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}].
 \end{align*}
 Thus
 \[
@@ -137,20 +132,18 @@ The general method outlined above corrects false negative predictions slowly and
 \end{quotation}
 Note that $p_{\min}$, $\gamma_1$ and $\gamma_2$ are parameters that can be tuned. It is easy to extend the bound above from the modified Perceptron to the adaptive $p$ case.  Let $I_i$, $M_i$, and $M'$ be defined as above. The bound $M'\leq r^2/\rho^2$ follows in exactly the same way.  We then bound $M_3$ in expectation, 
 \begin{align*}
-\E[M_3] = & \sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 0}] \\
- \leq &\ (1 - p_{\min})\sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}],
+\E[M_3] = & \sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 0}] \leq \  (1 - p_{\min})\sum_{t=1}^T \E[1_{\left\{\widehat{y_t} = -1 \cap y_t = 1\right\}}],
 \end{align*}
 and bound $\E[M_2]$ from below
 \begin{align*}
-\E[M_2] =&\ \sum_{t=1}^T \E[1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 1}] \\
-\geq &\ p_{\min}\sum_{t=1}^T \E[1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}].
+\E[M_2] =&\ \sum_{t=1}^T \E[1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}]\E[1_{k_t = 1}] \geq \ p_{\min}\sum_{t=1}^T \E[1_{\left\{\hat{y_t} = -1 \cap y_t = 1\right\}}].
 \end{align*}
 Continuing as before, this gives the following bound on $\E[M]$,
 \begin{align*}
 \E[M] = &\ \E[M'] + \E[M_3] \leq \frac{r^2}{\rho^2} + \frac{1-p_{\min}}{p_{\min}} \frac{r^2}{\rho^2}\\
 = &\ \frac{1}{p_{\min}}\frac{r^2}{\rho^2}
 \end{align*}
-Unfortunately, we do not have a stonger theoretical bound for this adaptive $p$ approach, but we test this scheme in section \ref{sec:results} and see that it performs fairly well while requiring less input from the user.  
+Unfortunately, we do not have a stronger theoretical bound for this adaptive $p$ approach that takes into account the fact that $p$ will become smaller as the algorithm learns. However, we test this scheme in section \ref{sec:results} and see that it performs fairly well while requiring less input from the user.  
 
 \section{Implementation}
 The tool is made from components in multiple Python files, split up according to their function in the program.
@@ -223,7 +216,7 @@ It was interesting to see how varying $p$ the probability of presenting the pape
 \includegraphics[width=0.65\textwidth]{EveryoneRecallPaper.pdf}
 \includegraphics[width=0.65\textwidth]{EveryonePrecisionPaper.pdf}
 \label{fig:PrecisionandRecall}
-\caption{Performance of tested online classification algorithms using different values of $p$.  The adaptive $p$ algorithm performs relatively well compared to the original algorithm ($p = 1$), and requires less than half as many negative updates. The $p = 0.1$ approach has very poor recall, but requires far fewer updates.  The majority vote classifier combines all others in this figure.}
+\caption{ \small Performance of tested online classification algorithms using different values of $p$.  The adaptive $p$ algorithm performs relatively well compared to the original algorithm ($p = 1$), and requires less than half as many negative updates. The $p = 0.1$ approach has very poor recall, but requires far fewer updates.  The majority vote classifier combines all others in this figure.}
 \end{figure}
 
 
