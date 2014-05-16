@@ -44,7 +44,8 @@ class ClassifierTester:
             n_recall_wrong = 0
             total_negative_checks = 0    #how many negative predictions the user must verify
             total_end_negative_checks = 0 #how many checks we do in the last 100 papers
-            threshold = 150 #hard code threshold = 150 for now
+            threshold = 50 #hard code threshold = 50 for now
+            neg_threshold = 100
 
             #loop through data and run the algorithm
             for i in range(len(data)):
@@ -61,14 +62,14 @@ class ClassifierTester:
                         #got it correct, reduce p towards 0.01, our minimum
 #                        print "current p is", self.current_p
                         if np.random.binomial(1,self.current_p) == 1:
-                            self.current_p = 0.9*self.current_p + 0.001
+                            self.current_p = 0.85*self.current_p + 0.0015
                             total_negative_checks += 1
-                            if i  > threshold :
+                            if len(data) - i  < neg_threshold :
                                 total_end_negative_checks += 1
                     else:
                         if np.random.binomial(1,self.p) == 1:
                             total_negative_checks += 1
-                            if i  > threshold :
+                            if len(data) - i  < neg_threshold :
                                 total_end_negative_checks += 1
 
                 elif y_hat == 1 and y == -1:
@@ -87,15 +88,15 @@ class ClassifierTester:
                         k = np.random.binomial(1,self.current_p)
                         if k == 1:
                             total_negative_checks += 1
-                            if i  > threshold :
+                            if len(data) - i  < neg_threshold :
                                 total_end_negative_checks += 1
                             classifier.Update(x,y_hat,y)
-                            self.current_p = 0.55*self.current_p + 0.4
+                            self.current_p = 0.55*self.current_p + 0.45
                     else:
                         k = np.random.binomial(1,self.p)
                         if k == 1:
                             total_negative_checks += 1
-                            if i  > threshold :
+                            if len(data) - i  < neg_threshold:
                                 total_end_negative_checks += 1
                             classifier.Update(x,y_hat,y)
 
@@ -206,6 +207,7 @@ class ClassifierTester:
         max_recall = 0.
         best_param = None
         best_neg_updates = 0
+        best_last_neg_updates = 0
         #go through all parameters tested by this object, and return
         # the parameters that gave the best recall
         for param in parameters_list:
@@ -213,8 +215,9 @@ class ClassifierTester:
                 max_recall = self.recall_grid[self._ParamsToString(param)]
                 best_param = param
                 best_neg_updates = self.neg_update_grid[self._ParamsToString(param)]
+                best_last_neg_updates = self.last_neg_update_grid[self._ParamsToString(param)]
 
-        return best_param, max_recall, best_neg_updates
+        return best_param, max_recall, best_neg_updates, best_last_neg_updates
 
 
     def ReportBestPrecision(self):
@@ -241,6 +244,7 @@ class ClassifierTester:
         max_precision = 0.
         best_param = None
         best_neg_updates = 0
+        best_last_neg_updates = 0
         #go through all parameters tested by this object, and return
         # the parameters that gave the best recall
         for param in parameters_list:
@@ -248,8 +252,9 @@ class ClassifierTester:
                 max_precision = self.precision_grid[self._ParamsToString(param)]
                 best_param = param
                 best_neg_updates = self.neg_update_grid[self._ParamsToString(param)]
+                best_last_neg_updates = self.last_neg_update_grid[self._ParamsToString(param)]
 
-        return best_param, max_precision, best_neg_updates
+        return best_param, max_precision, best_neg_updates, best_last_neg_updates
 
     def _ParamsToString(self,params):
         """ helper function to turn params into a 

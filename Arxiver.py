@@ -92,7 +92,6 @@ class Arxiver:
 
         data_file = open(data_filename,"rb")
 
-
         paper_list = cPickle.load(data_file)
         chosen_papers = []
 
@@ -128,19 +127,20 @@ class Arxiver:
                         y = PromptUser(paper)
                         #check if correct, if so reduce p towards .01
                         if y == 1:
-                            self.current_p = 0.9*self.current_p + 0.001
+                            self.current_p = 0.9*self.current_p + 0.001 #TODO: This was a wrong negative, increase p
                             total_negative_checks += 1
                             chosen_papers.append(paper)
                             if i  > threshold :
                                 total_end_negative_checks += 1
+                        elif y == -1:
+                            #correct negative prediction, leave classifier alone and decrease p
+                            self.current_p = 0.9*self.current_p + 0.001
                 else:
                     if np.random.binomial(1,self.p) == 1:
                         y = PromptUser(paper)
                         total_negative_checks += 1
                         if i  > threshold :
                             total_end_negative_checks += 1
-
-
 
         for paper in chosen_papers:
             print paper.id
