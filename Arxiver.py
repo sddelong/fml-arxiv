@@ -172,7 +172,7 @@ class Arxiver:
                             self.classifier.Update(x,y_hat,y)
                         elif y == -1:
                             #correct negative prediction, leave classifier alone and decrease p
-                            self.current_p = self.current_p - self.gamma_2(self.current_p - self.p_min)
+                            self.current_p = self.current_p - self.gamma_2*(self.current_p - self.p_min)
                 else:
                     #check with fixed probability p
                     if np.random.binomial(1,self.p) == 1:
