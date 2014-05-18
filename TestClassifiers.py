@@ -115,11 +115,11 @@ if __name__ == "__main__":
     
     #set up lists of parameters and classifiers for grid searches
     etas = [1.0]
-    rhos = [2**(-8), 2**(-7),2**(-6),2**(-5)]
-    Cs = [2**(-6),2**(-5),2**(-4),2**(-3),2**(-2), 2**(-1), 1.0, 2.0]
+    rhos = [2**(-8), 2**(-7),2**(-6),2**(-5), 2**(-4)]
+    Cs = [2**(-6),2**(-5),2**(-4),2**(-3),2**(-2), 2**(-1), 1.0, 2.0, 4.0]
     sigmas = [0.01, 0.02, 0.04,0.2, 1.0]
-    cs = [0.0, 0.03125, 0.0625]
-    ds = [1, 2, 3, 4]
+    cs = [0.0, 0.03125, 0.0625, 0.125]
+    ds = [1, 2, 3, 4, 5]
     
     #liss of classifiers and their names
     classifier_list = [MakePerceptronClassifier, MakeVotedPerceptronClassifier, MakeMarginPerceptronClassifier,MakeOnlineSVMClassifier,MakeGaussianKernelPerceptronClassifier, MakePolynomialKernelPerceptronClassifier, MakeWeightedMajorityClassifier]
@@ -156,7 +156,7 @@ if __name__ == "__main__":
 
         #go through values for p
         for p in [1.0, 0.15, 'adaptive']:
-#            print "P value is: ", p
+            print "P value is: ", p
 
             #go through users
             for k in range(len(names)):
@@ -212,7 +212,7 @@ if __name__ == "__main__":
                 
 
                 classifier_tester.Test(current_data,current_labels)
-                recall_grid, precision_grid, neg_updates, last_neg_updates = classifier_tester.ReportGrid(0)
+                recall_grid, precision_grid, neg_updates, last_neg_updates = classifier_tester.ReportGrid(1)
                 
                 #set up grid from gridsearch that aggregates over all names:
                 #if it's the first name, make the grid
@@ -334,11 +334,3 @@ pyplot.subplot(212)
 pyplot.title("Number of Negative Updates")
 pyplot.xticks(range(len(classifier_names)),classifier_names, rotation = 35, fontsize=9)
 pyplot.savefig("./EveryonePrecision.pdf")
-
-
-    
-    
-
-
-    
-                    

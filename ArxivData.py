@@ -8,6 +8,7 @@ from xml.etree import ElementTree as ET
 from datetime import datetime
 import cPickle
 import ArxivSubjects as arxs
+import StopWords
 import time
 
 class TextFeatureVector:
@@ -173,6 +174,7 @@ class Paper:
 
             self.published = entry.find('.//{http://purl.org/dc/elements/1.1/}date').text #, namespaces=ns).text
             self.id = entry.find('.//{http://www.openarchives.org/OAI/2.0/}identifier').text #, namespaces=ns).text
+            self.id = self.id[14:]
         else:
             print "Error: xml_type must be one of: query, rss, OAI"
             raise NotImplementedError
@@ -391,7 +393,7 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
             This function returns a list of Paper objects, populated from Arxiv papers updated on given
             range of days within given subject set
     """
-    
+    until_string = ''
     if arxs.subject_dict[subject]:   
         subcategory_list = [arxs.subject_name[subject]+' - '+subcategory for subcategory in subcategories]
     else:
@@ -437,7 +439,6 @@ def GetPapersOAI(day='', until='', subject='', subcategories=None):
     start = time.clock()
     for entry in root.findall('.//{http://www.openarchives.org/OAI/2.0/}record'): #, namespaces=ns):
         this_paper = Paper(entry, 'OAI')
-
         if IsPaperInSubcategories(entry, subcategory_list, ns):
             # check that the paper was published today, not just updated.
             if day and until:
@@ -539,7 +540,7 @@ def FeaturizeAbstracts(abstracts):
         abstract_vectors  -  list of TextFeatureVectors, one for each abstract.
 
     """
-    stop_words = ["is","it","that","the","a","an","of","in","this","and","if","by","are","when","not","with","at","on","also","to"]
+    stop_words = StopWords.stop_words
 
     feature_list = []
     #initialize feature vector
@@ -547,10 +548,7 @@ def FeaturizeAbstracts(abstracts):
         text_features = TextFeatureVector()
         abstract_cleaned = re.sub(r'\$\$[^$]*\$\$','',abstract)
         abstract_cleaned = re.sub(r'\$[^$]*\$','',abstract_cleaned)
-        
-#        abstract_cleaned = re.sub(r'\\begin{align[^\(\end\)]*\\end{align\*?}','',abstract_cleaned)
         abstract_cleaned = re.sub(r'\$[^$]*\$','',abstract_cleaned)
-        
         bag_of_words = re.findall(r"[\w']+",abstract_cleaned)
         for k in range(len(bag_of_words)):
             word = bag_of_words[k].lower()
