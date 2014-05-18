@@ -375,10 +375,21 @@ class Arxiver:
 #                            total_end_negative_checks += 1
 #                        classifier.Update(x,y_hat,y)
     def SavePaper(self,paper,date):
-        """ Save paper to folder"""
+        """ Clean the title and Save paper to folder"""
 
+        cleaned_title = ''
+        for i in range(len(paper.title)):
+            if paper.title[i] != "/" and paper.title[i:(i+1)] != "\n":
+                cleaned_title += paper.title[i]
+                if paper.title[i:(i+1)] != "\n":
+                    cleaned_title += " "
+                    i = i + 1
+                    
+            elif paper.title[i] == "/":
+                cleaned_title += " "
+                
         urllib.urlretrieve("https://www.arxiv.org/pdf/" + paper.id + ".pdf","./"+ self.name + "/" + date + "/" + paper.title + ".pdf")
-        
+
         return
         
 
