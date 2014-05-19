@@ -29,7 +29,7 @@
 \begin{itemize}
 \item Start: simple perceptron and bag-of-words model.
 \item Update always when  $\hat{y} = 1$, and with probability $p$ if $\hat{y} = -1$.
-\item Can show that this achieves a bound on mistakes in expectation similar to normal perceptron $E[M] \leq \frac{1}{p}\frac{r^2}{\rho^2}$.
+\item Can show that this achieves a bound on mistakes in expectation similar to normal perceptron $\mathbb{E}[M] \leq \frac{1}{p}\frac{r^2}{\rho^2}$.
 \item Much weaker bound, but requires less ``work'' from the user.
 \item Intuitively, maybe we should look at more of the $\hat{y} = -1$ observations when we're less sure of the algorithm.
 \end{itemize}
@@ -42,14 +42,20 @@
 \item Start with $p = 1$, increase $p$ on false negatives, decrease $p$ on correct negative predictions.
 \item Never reduce $p$ below some value $p_\min$. 
 \item Set $p = p + \gamma_1(1 - p)$ when we're wrong, and $p = p - \gamma_2(p - p_\min)$ when correct.
-\item Can show the same bound holds as in the constant $p$ case, using $p = p_\min$.
+\item Can show the same bound holds as in the constant $p$ case, using
+  $p = p_\min$. $\mathbb{E}[M] \leq \frac{1}{p_{\min}}\frac{r^2}{\rho^2}$.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Results}
-We each labeled several articles, shuffled their order, and then tested several online learning algorithms on them.  We measured recall and number of negative labels required in the last 120 papers.
-\includegraphics[width=0.6\textwidth]{EveryoneRecallPaper.pdf}
+We each labeled several articles, shuffled their order, and then
+tested several online learning algorithms on them.  We measured recall
+and number of labels used by the algorithm when $\hat{y} = -1$.
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{EveryoneRecallPaper.pdf}
+\end{figure}
 \end{frame}
 
 
