@@ -8,7 +8,7 @@ from xml.etree import ElementTree as ET
 from datetime import datetime
 import cPickle
 import ArxivSubjects as arxs
-import StopWords
+#import StopWords
 import time
 
 class TextFeatureVector:
@@ -540,7 +540,9 @@ def FeaturizeAbstracts(abstracts):
         abstract_vectors  -  list of TextFeatureVectors, one for each abstract.
 
     """
-    stop_words = StopWords.stop_words
+#    stop_words = StopWords.stop_words
+
+    stop_words = ['is','this','and']
 
     feature_list = []
     #initialize feature vector

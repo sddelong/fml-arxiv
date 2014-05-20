@@ -6,7 +6,7 @@ from WeightedMajority import WeightedMajorityClassifier
 from ArxivData import GetPapersOAI
 from ArxivData import GetAbstracts
 from ArxivData import FeaturizeAbstracts
-from datetime import datetime
+from datetime import date
 import errno, urllib, os, cPickle, time
 import numpy as np
 import Perceptron as perc
@@ -229,151 +229,7 @@ class Arxiver:
                     ans = raw_input('Invalid response. Yes/No? Use "quit" to leave.')
             
         return y
-        
-#    def Run(self):
-#       """ Run the algorithm by presenting abstracts, receiving labels and calling function to
-#                update weights.
-#        """
-#        pass
-        #filename where data is stored
-#        data_filename = "./" + user_name + "CustomTestData.pkl"
-#
-#        data_file = open(data_filename,"rb")
-#
-#        paper_list = cPickle.load(data_file)
-#        chosen_papers = []
-#
-#        #initialize list of labels
-#        label_list = []
-#
-#        #Vectorize abstracts
-#        vectors = FeaturizeAbstracts(GetAbstracts(paper_list))
-#
-#        classifier = perc.PerceptronClassifier(1.0)
-#        for i, x in enumerate(vectors):
-#            #Predict abstract, make y_hat
-#            paper = paper_list[i]
-#            y_hat = classifier.Predict(x)
-#
-#
-#            if y_hat == 1:
-#                #Present paper, make update if needed
-#                print "-"*80
-#                y = PromptUser(paper)
-#                if y == 1:
-#                    chosen_papers.append(paper)
-#                    if i > threshold:
-#                        n_pos_right += 1
-#                else:
-#                #update on false positive, add one to n_wrong
-#                    classifier.Update(x,y_hat,y)
-#                    if i > threshold:
-#                        n_precision_wrong += 1
-#
-#            #y_hat == -1:        
-#            else: 
-#                #update total_negative_checks count if we had to check, 
-#                # and for adaptive p, update value of current_p
-#                if self.p == 'adaptive':
-#                    #got it correct, reduce p towards 0.01, our minimum
-#                    if np.random.binomial(1,self.current_p) == 1:
-#                        print "-"*80
-#                        y = PromptUser(paper)
-#                        #check if correct, if so reduce p towards .01
-#                        if y == 1:
-#                            self.current_p = 0.9*self.current_p + 0.001 #TODO: This was a wrong negative, increase p
-#                            total_negative_checks += 1
-#                            if i  > threshold :
-#                                total_end_negative_checks += 1
-#
-#                            self.current_p = 0.9*self.current_p + 0.001
-#                            total_negative_checks += 1
-#                            chosen_papers.append(paper)
-#                            classifier.Update(x,y_hat,y)
-#                            self.current_p = 0.55*self.current_p + 0.4
-#                            if i  > threshold :
-#                                total_end_negative_checks += 1
-#
-#
-#                        elif y == -1:
-#                            #correct negative prediction, leave classifier alone and decrease p
-#                            self.current_p = 0.9*self.current_p + 0.001
-#
-#                else:
-#                    if np.random.binomial(1,self.p) == 1:
-#                        y = PromptUser(paper)
-#                        total_negative_checks += 1
-#                        if i  > threshold :
-#                            total_end_negative_checks += 1
-#
-#        for paper in chosen_papers:
-#            print paper.id
-#
-#            #If prediction is 1, present paper, make update
-#            #Else if predition is -1, make k
-#            #If k=1 present abstract, make update
-#            #If k=0 don't
-#
-#
-#        out_file = open(str(user_name) + "customlabels.pkl","wb")
-#        cPickle.dump(label_list,out_file)
-#
-#
-#    def CheckAbstract(x, label)
-#        """ Receive data and label for one abstract, make prediction 
-#        """
-#
-#
-#        #for i in range(len(data)):
-#            x = data[i]
-#            y_hat = classifier.Predict(x)
-#            if y == 1 and y_hat == 1:
-#                if i > threshold:
-#                    n_pos_right += 1
-#            elif y == -1 and y_hat == -1:
-#                #update total_negative_checks count if we had to check, 
-#                # and for adaptive p, update value of current_p
-#                if self.p == 'adaptive':
-#                    #got it correct, reduce p towards 0.01, our minimum
-#                    #print "current p is", self.current_p
-#                    if np.random.binomial(1,self.current_p) == 1:
-#                        self.current_p = 0.9*self.current_p + 0.001
-#                        total_negative_checks += 1
-#                        if i  > threshold :
-#                            total_end_negative_checks += 1
-#                else:
-#                    if np.random.binomial(1,self.p) == 1:
-#                        total_negative_checks += 1
-#                        if i  > threshold :
-#                            total_end_negative_checks += 1
-#
-#            elif y_hat == 1 and y == -1:
-#                #update on false positive, add one to n_wrong
-#                if i > threshold:
-#                    n_precision_wrong += 1
-#                classifier.Update(x,y_hat,y)
-#            else:
-#                #maybe update on false negative, depends on p.
-#                if i > threshold:
-#                    n_recall_wrong += 1
-#                if self.p == 'adaptive':
-#                    # got it wrong, move current_p toward 1.0
-#                    # to check more frequently
-#                    #print "current p is", self.current_p
-#                    k = np.random.binomial(1,self.current_p)
-#                    if k == 1:
-#                        total_negative_checks += 1
-#                        if i  > threshold :
-#                            total_end_negative_checks += 1
-#                        classifier.Update(x,y_hat,y)
-#                        self.current_p = 0.55*self.current_p + 0.4
-#                else:
-#                    k = np.random.binomial(1,self.p)
-#                    if k == 1:
-#                        total_negative_checks += 1
-#                        if i  > threshold :
-#                            total_end_negative_checks += 1
-#                        classifier.Update(x,y_hat,y)
+
     def SavePaper(self,paper,date):
         """ Clean the title and Save paper to folder"""
 
@@ -403,7 +259,7 @@ def UpdateArxivers(arxiver_dict):
             print name
         ans = raw_input("")
         if ans in arxiver_dict:
-            arxiver_dict[ans].CheckDaysPapers('2014-05-15')
+            arxiver_dict[ans].CheckDaysPapers(str(datetime.today()))
     
         again = raw_input( "Would you like to update another Arxiver?(y/n)")
         if again in ["no","No","NO","n","0"]:
@@ -430,16 +286,17 @@ if __name__ == "__main__":
     answered = False
     while not answered:
         if ans == "update":
-            UpdateArxivers(arviver_dict)
+            UpdateArxivers(arxiver_dict)
             answered = True
         elif ans == "new":
-            # create a new arxiver then update it.  Use majority vote classifier and adaptive p hardcoded for now.
+            # create a new arxiver then update it.  
+            # Use majority vote classifier and adaptive p hardcoded for now.
             answered = True
             classifier = MakeWeightedMajorityClassifier()
             new_arxiver = Arxiver(classifier,'adaptive')
             
             new_arxiver.SetUp()
-            new_arxiver.CheckDaysPapers('2014-05-15')
+            new_arxiver.CheckDaysPapers(str(datetime.today()))
             print "Saving Arxiver."
             print new_arxiver.name
             arxiver_dict[new_arxiver.name] = new_arxiver
