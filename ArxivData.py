@@ -540,9 +540,8 @@ def FeaturizeAbstracts(abstracts):
         abstract_vectors  -  list of TextFeatureVectors, one for each abstract.
 
     """
-#    stop_words = StopWords.stop_words
+    stop_words = StopWords.stop_words
 
-    stop_words = ['is','this','and']
 
     feature_list = []
     #initialize feature vector
